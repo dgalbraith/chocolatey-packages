@@ -1,0 +1,1 @@
+﻿Install-ChocolateyPackage 'isorecorder' 'MSI' '/quiet' 'http://alexfeinman.com/download/IsoRecorder/ISORecorder31x86.msi' 'http://alexfeinman.com/download/IsoRecorder/ISORecorder31x64.msi' 
