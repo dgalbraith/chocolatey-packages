@@ -1,17 +1,16 @@
-try {
-  $packageName = '{{PackageName}}'
-  $installerType = 'exe'
-  $silentArgs = '/S'
-  $validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
-  $unpath = "HKLM:SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall"
-  $unpath32 = "HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"
-  $osBitness = Get-ProcessorBits
-  if ($osBitness -eq 64) {
-    $unString = (Get-ItemProperty "$unpath\$packageName*" UninstallString).UninstallString
-  } else {
-    $unString = (Get-ItemProperty "$unpath32\$packageName*" UninstallString).UninstallString
-  } 
-  Uninstall-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$unString" -validExitCodes $validExitCodes
-} catch {
-  throw $_.Exception 
-}
+$packageName = '{{PackageName}}'
+$packageSearch = "$packageName"
+$installerType = 'exe'
+$silentArgs = '/S'
+$validExitCodes = @(0)
+
+Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
+                         'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*',
+                         'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*') `
+                 -ErrorAction:SilentlyContinue `
+| Where-Object   {$_.PSChildName -like $packageSearch} `
+| ForEach-Object {Uninstall-ChocolateyPackage -PackageName "$packageName" `
+                                              -FileType "$installerType" `
+                                              -SilentArgs "$($silentArgs)" `
+                                              -File "$($_.UninstallString)" `
+                                              -ValidExitCodes $validExitCodes}
