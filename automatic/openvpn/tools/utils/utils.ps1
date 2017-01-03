@@ -423,3 +423,142 @@ signature file.
         throw "The signature does not match."
     }
 }
+
+function GetCertificateInfo {
+<#
+.DESCRIPTION
+Return a X509Certificate object.
+This function has ben impllemented in a polymorphic way. Either we specify
+a file or we specify a store and a certificate fingerprint.
+
+Usage 1: Specify a file to open as a X509 certificate.
+
+Usage 2: Specify a store and a certificate fingerprint to search for.
+
+.PARAMETER file (usage 1)
+The path and file name to the certificate file.
+
+.PARAMETER store (usage 2)
+The certificate store (X509Store object) which has been previously opened.
+
+.PARAMETER fingerprint (usage 2)
+The fingerprint of the certificate to search for from the certificate store.
+
+.OUTPUTS
+A X509Certificate object cf. https://goo.gl/VRuWkL to see the documentation
+#>
+    param (
+        [Parameter(Mandatory=$true, ParameterSetName="file")]
+        [string]$file,
+        [Parameter(Mandatory=$true, ParameterSetName="fingerprint")]
+        [System.Security.Cryptography.X509Certificates.X509Store]$store,
+        [Parameter(Mandatory=$true, ParameterSetName="fingerprint")]
+        [string]$fingerprint
+    )
+
+    switch ($PsCmdlet.ParameterSetName) {
+        "file" {
+            # New-Object does not respect the rule -ErrorAction
+            # src.: https://goo.gl/bzXAL0
+            try {
+                $cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate `
+                -ArgumentList "$file"
+            } catch {
+                throw "Unable to open the X509certificate '$file'"
+            }
+        }
+        "fingerprint" {
+            # Sanitize the fingerprint
+            if ($fingerprint) {
+                $fingerprint = $fingerprint.replace(' ','')
+            }
+
+            $certificates = New-Object `
+            System.Security.Cryptography.X509Certificates.X509CertificateCollection `
+            -ArgumentList $store.Certificates
+
+            $i = 0
+            while ($i -lt $certificates.Count) {
+                if ("$($certificates.item($i).GetCertHashString())" -eq "$fingerprint") {
+                    $cert = $certificates.item($i)
+                    break
+                }
+                $i++
+            }
+            if ($i -gt $certificates.Count) {
+                throw "Unable to find the certificate in the store '$($store.Name)' at location '$($store.Location)'"
+            }
+        }
+    }
+
+    return $cert
+}
+
+function AddTrustedPublisherCertificate {
+<#
+.DESCRIPTION
+Adds a X509 certificate to the TrustedPublisher certificate store.
+
+.PARAMETER file (usage 1)
+The path and file name to the certificate file.
+#>
+    param (
+        [Parameter(Mandatory=$true)][string]$file
+    )
+
+    $cert = GetCertificateInfo -file "$file"
+
+    $store = New-Object System.Security.Cryptography.X509Certificates.X509Store `
+    -ArgumentList ([System.Security.Cryptography.X509Certificates.StoreName]::TrustedPublisher,`
+    [System.Security.Cryptography.X509Certificates.StoreLocation]::LocalMachine)
+
+    $store.Open([System.Security.Cryptography.X509Certificates.OpenFlags]::ReadWrite)
+
+    $store.Add($cert)
+    $store.Close()
+}
+
+function RemoveTrustedPublisherCertificate {
+<#
+.DESCRIPTION
+Removes a X509 certificate from the TrustedPublisher certificate store.
+This function has ben implemented in a polymorphic way. Either we specify
+a file or we specify a certificate fingerprint.
+
+Usage 1: Specify a file to remove a X509 certificate from the certificate
+         store.
+
+Usage 2: Specify a certificate fingerprint to remove the certificate
+         corresponding to that certificate fingerprint.
+
+.PARAMETER file (usage 1)
+The path and file name to the certificate file.
+
+.PARAMETER fingerprint (usage 2)
+The fingerprint of the certificate to remove from the certificate store.
+#>
+    param (
+        [Parameter(Mandatory=$true, ParameterSetName="file")]
+        [string]$file,
+        [Parameter(Mandatory=$true, ParameterSetName="fingerprint")]
+        [string]$fingerprint
+    )
+
+    $store = New-Object System.Security.Cryptography.X509Certificates.X509Store `
+    -ArgumentList ([System.Security.Cryptography.X509Certificates.StoreName]::TrustedPublisher,`
+    [System.Security.Cryptography.X509Certificates.StoreLocation]::LocalMachine)
+
+    $store.Open([System.Security.Cryptography.X509Certificates.OpenFlags]::ReadWrite)
+
+    switch ($PsCmdlet.ParameterSetName) {
+        "file" {
+            $cert = GetCertificateInfo -file "$file"
+        }
+        "fingerprint" {
+            $cert = GetCertificateInfo -store $store -fingerprint "$fingerprint"
+        }
+    }
+
+    $store.Remove($cert)
+    $store.Close()
+}
