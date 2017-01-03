@@ -325,6 +325,7 @@ signature file.
     # Get temporary folder for the keyring
     # src.: http://stackoverflow.com/a/34559554/3514658
     $tempDirKeyring = Join-Path $(Split-Path $pgpKey) $([System.Guid]::NewGuid())
+    [System.IO.Directory]::CreateDirectory($tempDirKeyring) | Out-Null
 
     $psi = New-object System.Diagnostics.ProcessStartInfo
     $psi.CreateNoWindow = $true
