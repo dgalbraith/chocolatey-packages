@@ -89,7 +89,7 @@ An object made of the following fields:
 
     # Correct to the exact service name
     if ($name -cnotmatch $service.Name) {
-        Write-Warning "The case sensitive service name is '$($service.Name)' not '$name'"
+        Write-Debug "The service name '$name' has been corrected to '$($service.Name)'"
     }
     $properties.name = $service.Name
 
@@ -187,9 +187,9 @@ One of the following service startup type:
         $env:ChocolateyEnvironmentVerbose -eq 'true') {
         Write-Verbose "Before SetServicesProperties:"
         if ($service.delayedStart) {
-            Write-Verbose "Service '$($service.name)' now '$($service.status)', with '$($service.startupType)' startup type and delayed"
+            Write-Verbose "Service '$($service.name)' was '$($service.status)', with '$($service.startupType)' startup type and delayed"
         } else {
-            Write-Verbose "Service '$($service.name)' now '$($service.status)', with '$($service.startupType)' startup type"
+            Write-Verbose "Service '$($service.name)' was '$($service.status)', with '$($service.startupType)' startup type"
         }
     }
 
