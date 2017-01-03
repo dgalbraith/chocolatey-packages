@@ -1,11 +1,4 @@
-# To test function outside of chocolatey, just copy them to another file and
-# run the following command:
-# powershell -ExecutionPolicy Unrestricted -File .\yourFile.ps1
-
-# This function is based on part of the code of the command
-# Install-ChocolateyPackage
-# src.: https://goo.gl/jUpwOQ
-function GetTempDirChocoPackage {
+function CreateTempDirPackageVersion {
 <#
 .DESCRIPTION
 Create a temporary folder in current user temporary location. The folder name
@@ -13,6 +6,11 @@ has the name of the package name and version (if any).
 
 .OUTPUTS
 The location to the created directory
+
+.NOTES
+This function is based on part of the code of the command
+Install-ChocolateyPackage
+src.: https://goo.gl/jUpwOQ
 #>
     $chocTempDir = $env:TEMP
     $tempDir = Join-Path $chocTempDir "$($env:chocolateyPackageName)"
@@ -28,7 +26,7 @@ The location to the created directory
     return $tempDir
 }
 
-function PrintWhenChocoVerbose {
+function PrintWhenVerbose {
 <#
 .DESCRIPTION
 Display the string passed as argument if chocolatey has been run in debug or
@@ -238,8 +236,8 @@ One of the following service startup type:
         # The [void] casting is actually needed to avoid True or False to be displayed
         # on stdout.
         [void]$process.Start()
-        #PrintWhenChocoVerbose $process.StandardOutput.ReadToEnd()
-        #PrintWhenChocoVerbose $process.StandardError.ReadToEnd()
+        #PrintWhenVerbose $process.StandardOutput.ReadToEnd()
+        #PrintWhenVerbose $process.StandardError.ReadToEnd()
         $process.WaitForExit()
         if (!($process.ExitCode -eq 0)) {
             throw "Unable to set the service '$($service.Name)' to a delayed autostart."
@@ -353,8 +351,8 @@ signature file.
     # The [void] casting is actually needed to avoid True or False to be displayed
     # on stdout.
     [void]$process.Start()
-    PrintWhenChocoVerbose $process.StandardOutput.ReadToEnd()
-    PrintWhenChocoVerbose $process.StandardError.ReadToEnd()
+    PrintWhenVerbose $process.StandardOutput.ReadToEnd()
+    PrintWhenVerbose $process.StandardError.ReadToEnd()
     $process.WaitForExit()
     if (!($process.ExitCode -eq 0)) {
         throw "Unable to import PGP key '$pgpKey' in the temporary keyring ($tempDirKeyring\pubring.gpg)."
@@ -394,8 +392,8 @@ signature file.
     # e.g.: ABCDEF01234567890ABCDEF01234567890ABCDEF:6:
     $input = $process.StandardInput
     $input.WriteLine($pgpFingerprint + ":6:")
-    # Not written until the stream is closed. If not closed, the process will still
-    # run and the software will hang.
+    # Not written until the stream is closed. If not closed, the process will
+    # still run and the software will hang.
     # src.: https://goo.gl/5oYgk4
     $input.Close()
     $process.WaitForExit()
@@ -417,8 +415,8 @@ signature file.
         }
     }
     [void]$process.Start()
-    PrintWhenChocoVerbose $process.StandardOutput.ReadToEnd()
-    PrintWhenChocoVerbose $process.StandardError.ReadToEnd()
+    PrintWhenVerbose $process.StandardOutput.ReadToEnd()
+    PrintWhenVerbose $process.StandardError.ReadToEnd()
     $process.WaitForExit()
     if (!($process.ExitCode -eq 0)) {
         throw "The signature does not match."
@@ -429,7 +427,7 @@ function GetCertificateInfo {
 <#
 .DESCRIPTION
 Return a X509Certificate object.
-This function has ben impllemented in a polymorphic way. Either we specify
+This function has ben implemented in a polymorphic way. Either we specify
 a file or we specify a store and a certificate fingerprint.
 
 Usage 1: Specify a file to open as a X509 certificate.
