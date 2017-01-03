@@ -5,8 +5,15 @@
 # This function is based on part of the code of the command
 # Install-ChocolateyPackage
 # src.: https://goo.gl/jUpwOQ
-function GetTempDirChocoPackageFiles {
+function GetTempDirChocoPackage {
+<#
+.DESCRIPTION
+Create a temporary folder in current user temporary location. The folder name
+has the name of the package name and version (if any).
 
+.OUTPUTS
+The location to the created directory
+#>
     $chocTempDir = $env:TEMP
     $tempDir = Join-Path $chocTempDir "$($env:chocolateyPackageName)"
     if ($env:chocolateyPackageVersion -ne $null) {
@@ -22,10 +29,20 @@ function GetTempDirChocoPackageFiles {
 }
 
 function PrintWhenChocoVerbose {
+<#
+.DESCRIPTION
+Display the string passed as argument if chocolatey has been run in debug or
+verbose mode. The string argument is cut automatically and each line is
+prefixed by the "VERBOSE: " statement thanks to the call of Write-Verbose
+cmdlet.
+
+.PARAMETER string
+The string to display in verbose mode
+#>
     param (
         [Parameter(Position=0)]
         [string]
-        $pString
+        $string
     )
 
     # Display the output of the executables if chocolatey is run either in debug
@@ -33,16 +50,18 @@ function PrintWhenChocoVerbose {
     if ($env:ChocolateyEnvironmentDebug -eq 'true' -or
         $env:ChocolateyEnvironmentVerbose -eq 'true') {
 
-        $string = New-Object System.IO.StringReader("$pString")
-        while (($line = $string.ReadLine()) -ne $null) {
+        $stringReader = New-Object System.IO.StringReader("$string")
+        while (($line = $stringReader.ReadLine()) -ne $null) {
            Write-Verbose "$line"
         }
     }
 }
 
+function GetServiceProperties {
 <#
 .DESCRIPTION
 Get service properties
+
 .OUTPUTS
 An object made of the following fields:
 - name (string)
@@ -50,7 +69,6 @@ An object made of the following fields:
 - startupType (string)
 - delayedStart (bool)
 #>
-function GetServiceProperties {
     param (
         [Parameter(Mandatory=$true)][string]$name
     )
@@ -126,11 +144,14 @@ function GetServiceProperties {
     return $properties
 }
 
+function SetServiceProperties {
 <#
 .DESCRIPTION
 Set service properties supporting delayed services
+
 .PARAMETER name
 The service name
+
 .PARAMETER status
 One of the following service status:
 - 'Stopped'
@@ -139,7 +160,8 @@ One of the following service status:
 - 'Running'
 - 'ContinuePending'
 - 'PausePending'
-- 'Paused'.
+- 'Paused'
+
 .PARAMETER startupType
 One of the following service startup type:
 - 'Automatic (Delayed Start)'
@@ -147,7 +169,6 @@ One of the following service startup type:
 - 'Manual'
 - 'Disabled'
 #>
-function SetServiceProperties {
     param (
         # By default parameter are positional, this means the parameter name
         # can be omitted, but needs to repect the order in which the arguments
@@ -258,8 +279,24 @@ function SetServiceProperties {
     }
 }
 
-
 function CheckPGPSignature {
+<#
+.DESCRIPTION
+Check the signature of a file using the public key and signatures provided.
+
+.PARAMETER pgpKey
+The path and file name to PGP public key to check the signature.
+
+.PARAMETER signatureFile
+The path and file name to the signature file. The signature file must keep
+its original filename if the argument 'file' is not specified.
+
+.PARAMETER file (optional)
+GPG can find the filename of the file to check by itself, only if the
+signatureFile has its original file name. What GnuPG does is to retrieve the
+filename of the file to check is to remove the .asc suffix from the
+signature file.
+#>
     param (
         [Parameter(Mandatory=$true)][string]$pgpKey,
         [Parameter(Mandatory=$true)][string]$signatureFile,
