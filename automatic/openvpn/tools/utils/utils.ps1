@@ -501,6 +501,45 @@ Adds a X509 certificate to the TrustedPublisher certificate store.
 
 .PARAMETER file (usage 1)
 The path and file name to the certificate file.
+
+.NOTES
+Sometimes setup executables try to install autosigned drivers. Windows asks us
+if we want to trust the certificate from the software publisher. In order to
+have a complete silent install, it is needed to add that certificate to the
+Windows TrustedPublisher keystore.
+
+In order to recover that certificate for firther use, we have to
+- Install the driver accepting the certificate
+- Tick the checkbox "Always trust software from "Software Publisher, Inc.""
+- As by default, only certificates of the local users are displayed in the
+  certificate manager, we need to add the view for the whole computer first.
+  For that, we need to run the Microsoft Management Console, run mmc.exe
+- Then go to "File -> Add/Remove Snap-in..."
+- Select "Certificates" from the left list view then run certmgr.msc,
+- Click the "Add >" button at the center of the window
+- Select the "Computer account" radio button
+- Click the "Next >" button
+- Click the "Finish" button
+- Click the "OK" button
+- Expand "Certificates (Local Computer) -> Trusted Publishers -> Certificates"
+- Right click the "OpenVPN Technologies, Inc." certificate
+- Select "All Tasks -> Export..."
+- Click the "Next >" button
+- Select the "Base64 encoded x.509 (.CER)" radio button
+- Click the "Next" button
+- Select a destination and a filename you wish to save the certificate
+- Click the "Next >" button
+- Click the "Finish" button
+- Click the "OK" button from the confirmation dialog box
+
+The certificate is now in the location specified.
+src.: https://goo.gl/o3BVGJ
+Next time we install the same piece of software, even if we remove that
+certificate, Windows will not ask us to confirm the installation as the
+driver is cached in the Drivers Store (C:\Windows\Inf).
+
+To simulate a first install we need to remove the cached drivers as well.
+src.: https://goo.gl/Zbcs6T
 #>
     param (
         [Parameter(Mandatory=$true)][string]$file
