@@ -260,10 +260,10 @@ One of the following service startup type:
     # dependent on other services, which seems to be wrong.
     # src.: http://stackoverflow.com/a/39811972/3514658
     if ($status -eq "Stopped") {
-        Stop-Service "$service.Name" -ErrorAction Stop
+        Stop-Service "$($service.Name)" -ErrorAction Stop
     }
 
-    Set-Service -Name "$service.Name" -StartupType "$startupType" -Status "$status" -ErrorAction Stop
+    Set-Service -Name "$($service.Name)" -StartupType "$startupType" -Status "$status" -ErrorAction Stop
 
     if ($env:ChocolateyEnvironmentDebug -eq 'true' -or
         $env:ChocolateyEnvironmentVerbose -eq 'true') {
