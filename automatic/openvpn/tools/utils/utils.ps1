@@ -252,7 +252,7 @@ One of the following service startup type:
     }
 
     # Cast "Automatic (Delayed Start)" to "Automatic" to have a valid name
-    if ($startupType -match "Automatic") {
+    if ($startupType -match "Automatic (Delayed Start)") {
         $startupType = "Automatic"
     }
 
