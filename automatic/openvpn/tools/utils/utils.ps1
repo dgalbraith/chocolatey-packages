@@ -383,9 +383,9 @@ signature file.
     $psi.FileName = 'gpg.exe'
     if ($env:ChocolateyEnvironmentDebug -eq 'true' -or
         $env:ChocolateyEnvironmentVerbose -eq 'true') {
-        $psi.Arguments = "-v --import-ownertrust"
+        $psi.Arguments = "-v --homedir ""$tempDirKeyring"" --import-ownertrust"
     } else {
-        $psi.Arguments = "--import-ownertrust"
+        $psi.Arguments = "--homedir ""$tempDirKeyring"" --import-ownertrust"
     }
     [void]$process.Start()
     # Specify the fingerprint and the trust level to stdin
@@ -403,15 +403,15 @@ signature file.
     if ($env:ChocolateyEnvironmentDebug -eq 'true' -or
         $env:ChocolateyEnvironmentVerbose -eq 'true') {
         if ($file) {
-            $psi.Arguments = "-v --verify ""$signatureFile"" ""$file"""
+            $psi.Arguments = "-v --homedir ""$tempDirKeyring"" --verify ""$signatureFile"" ""$file"""
         } else {
-            $psi.Arguments = "-v --verify ""$signatureFile"""
+            $psi.Arguments = "-v --homedir ""$tempDirKeyring"" --verify ""$signatureFile"""
         }
     } else {
         if ($file) {
-            $psi.Arguments = "--verify ""$signatureFile"" ""$file"""
+            $psi.Arguments = "--homedir ""$tempDirKeyring"" --verify ""$signatureFile"" ""$file"""
         } else {
-            $psi.Arguments = "--verify ""$signatureFile"""
+            $psi.Arguments = "--homedir ""$tempDirKeyring"" --verify ""$signatureFile"""
         }
     }
     [void]$process.Start()
