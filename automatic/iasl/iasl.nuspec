@@ -34,7 +34,7 @@ The iASL compiler/disassembler is a fully-featured translator for the ACPI Sourc
     <copyright>Copyright © 2017 Intel Corporation. All rights reserved.</copyright>
     <licenseUrl>https://acpica.org/sites/acpica/files/licensing.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/warexify/chocolatey-edk2-buildtools/master/icons/iasl.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/warexify/chocolatey-edk2-buildtools/2a46d008/icons/iasl.png</iconUrl>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.3.3" />
     </dependencies>

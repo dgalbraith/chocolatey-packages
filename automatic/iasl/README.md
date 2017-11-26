@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.rawgit.com/warexify/chocolatey-edk2-buildtools/master/icons/iasl.png" width="48" height="48"/> [iASL: ACPI Source Language Optimizing Compiler and Disassembler](https://chocolatey.org/packages/iasl)
+﻿# <img src="https://cdn.rawgit.com/warexify/chocolatey-edk2-buildtools/2a46d008/icons/iasl.png" width="254" height="51"/> [iASL: ACPI Source Language Optimizing Compiler and Disassembler](https://chocolatey.org/packages/iasl)
 
 The iASL compiler/disassembler is a fully-featured translator for the ACPI Source Language (ASL) and ACPI binary data tables. As part of the Intel ACPI Component Architecture, the Intel ASL compiler implements translation for the ACPI Source Language (ASL) to the ACPI Machine Language (AML). The disassembler feature will disassemble compiled AML code back to (nearoriginal) ASL source code.
 
