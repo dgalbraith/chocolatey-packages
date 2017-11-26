@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>iasl</id>
+    <title>iasl (Install)</title>
+    <version>2017.11.10</version>
+    <authors>Intel Corporation</authors>
+    <owners>warexify</owners>
+    <summary>iASL: ACPI Source Language Optimizing Compiler and Disassembler</summary>
+<description><![CDATA[
+The iASL compiler/disassembler is a fully-featured translator for the ACPI Source Language (ASL) and ACPI binary data tables. As part of the Intel ACPI Component Architecture, the Intel ASL compiler implements translation for the ACPI Source Language (ASL) to the ACPI Machine Language (AML). The disassembler feature will disassemble compiled AML code back to (nearoriginal) ASL source code.
+
+## The major features of the iASL compiler include:
+
+- Full support for the ACPI 5.1 Specification including ASL grammar elements and operators.
+- Extensive compiler syntax and semantic error checking, especially in the area of control methods. This reduces the number of errors that are not discovered until the AML code is actually interpreted (i.e., the compile-time error checking reduces the number of run-time errors.)
+- An integrated preprocessor provides C-compatible preprocessor directives and conditional compilation directives such as #define, #if, #ifdef, #else, etc.
+- Multiple types of output files. Besides binary ACPI tables, output options include formatted listing files with intermixed source, several types of AML files, and error messages.
+- Automatic detection and compilation of either ASL source code or ACPI data table source code.
+- Portable code (ANSI C) and source code availability allows the compiler to be easily ported and run on multiple execution platforms.
+- Support for integration with the Microsoft Visual C++ (or similar) development environments.
+- Disassembly of all ACPI tables, including tables that contain AML (DSDT, SSDT) as well as ACPI “data” tables such as the FADT, MADT, SRAT, etc.
+- Support for compilation of non-AML data tables such as the FADT, MADT, SRAT, etc.
+- Support for ASL language extensions that support symbolic math/logical operators and expressions.
+
+]]></description>
+    <projectUrl>https://www.acpica.org</projectUrl>
+    <projectSourceUrl>https://github.com/acpica/acpica/</projectSourceUrl>
+    <docsUrl>https://acpica.org/documentation</docsUrl>
+    <mailingListUrl>https://lists.acpica.org/mailman/listinfo</mailingListUrl>
+    <bugTrackerUrl>https://bugs.acpica.org</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/warexify/chocolatey-edk2-buildtools/tree/master/manual/iasl</packageSourceUrl>
+    <tags>iasl portable compiler disassembler</tags>
+    <copyright>Copyright © 2017 Intel Corporation. All rights reserved.</copyright>
+    <licenseUrl>https://acpica.org/sites/acpica/files/licensing.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/warexify/chocolatey-edk2-buildtools/master/icons/iasl.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
