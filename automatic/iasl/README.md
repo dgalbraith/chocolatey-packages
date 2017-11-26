@@ -3,7 +3,6 @@
 The iASL compiler/disassembler is a fully-featured translator for the ACPI Source Language (ASL) and ACPI binary data tables. As part of the Intel ACPI Component Architecture, the Intel ASL compiler implements translation for the ACPI Source Language (ASL) to the ACPI Machine Language (AML). The disassembler feature will disassemble compiled AML code back to (nearoriginal) ASL source code.
 
 ## The major features of the iASL compiler include:
-
 - Full support for the ACPI 5.1 Specification including ASL grammar elements and operators.
 - Extensive compiler syntax and semantic error checking, especially in the area of control methods. This reduces the number of errors that are not discovered until the AML code is actually interpreted (i.e., the compile-time error checking reduces the number of run-time errors.)
 - An integrated preprocessor provides C-compatible preprocessor directives and conditional compilation directives such as #define, #if, #ifdef, #else, etc.
