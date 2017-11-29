@@ -1,21 +1,31 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Write-Host "iASL compiler/disassembler is going to be installed in '$(Get-ToolsLocation)\ASL'"
+$packageName = 'iasl'
+$url         = 'https://acpica.org/sites/acpica/files/iasl-win-20171110.zip'
+$checksum    = 'EAF676C4F116C6EB749C27BACF8F406B922355A113D748CB9AFEE2217EA394E4'
+$installDir  = 'C:\ASL'
+
 $packageArgs = @{
-    PackageName    = 'iasl'
-    Url            = 'https://acpica.org/sites/acpica/files/iasl-win-20171110.zip'
-    UnzipLocation  = "$(Get-ToolsLocation)\ASL"
-    Checksum       = 'EAF676C4F116C6EB749C27BACF8F406B922355A113D748CB9AFEE2217EA394E4'
-    ChecksumType   = 'sha256'
+  packageName    = $packageName
+  url            = $url
+  checksum       = $checksum
+  checksumType   = 'sha256'
+  unzipLocation  = $installDir
 }
 
+if ($Env:ChocolateyPackageParameters -match '/InstallDir:\s*(.+)') {
+    $installDir = $Matches[1]
+    if ($installDir.StartsWith("'") -or $installDir.StartsWith('"')){  $installDir = $installDir -replace '^.|.$' }
+    $parent = Split-Path $installDir
+    mkdir -force $parent -ea 0 | out-null
+}
+
+Write-Host "Installing to '$installDir'"
 Install-ChocolateyZipPackage @packageArgs
 
-Write-Host "Installing iASL compiler/disassembler to system PATH"
-Install-ChocolateyPath $packageArgs.UnzipLocation -PathType 'Machine'
+Install-ChocolateyPath $installDir -PathType 'Machine'
 
-Write-Host "Creating IASL_PREFIX Environment Variable"
 Install-ChocolateyEnvironmentVariable `
   -VariableName 'IASL_PREFIX' `
-  -VariableValue $packageArgs.UnzipLocation `
+  -VariableValue $installDir `
   -VariableType 'Machine'

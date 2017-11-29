@@ -1,7 +1,8 @@
 $ErrorActionPreference = 'Stop'
-$installLocation = Join-Path $(Get-ToolsLocation) 'ASL'
 
-Write-Host "Removing iASL compiler/disassembler from the '$installLocation'"
+$installDir  = 'c:\ASL'
+
+Write-Host "Removing iASL compiler/disassembler from the '$installDir'"
 Uninstall-ChocolateyZipPackage `
   -PackageName 'iasl' `
   -ZipFileName 'iasl-win-20171110.zip'
