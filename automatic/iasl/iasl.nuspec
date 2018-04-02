@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>iasl</id>
     <title>iASL compiler/disassembler</title>
-    <version>2017.11.10</version>
+    <version>2018.03.13</version>
     <authors>Intel Corporation</authors>
     <owners>warexify</owners>
     <summary>iASL: ACPI Source Language Optimizing Compiler and Disassembler</summary>
@@ -34,12 +34,9 @@ Installation directory, by default `/InstallDir: c:\ASL`
     <bugTrackerUrl>https://bugs.acpica.org</bugTrackerUrl>
     <packageSourceUrl>https://github.com/warexify/chocolatey-edk2-buildtools/tree/master/manual/iasl</packageSourceUrl>
     <tags>iasl portable compiler disassembler</tags>
-    <copyright>Copyright © 2017 Intel Corporation. All rights reserved.</copyright>
+    <copyright>Copyright © 2018 Intel Corporation. All rights reserved.</copyright>
     <licenseUrl>https://acpica.org/sites/acpica/files/licensing.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/warexify/chocolatey-edk2-buildtools/master/icons/iasl.png</iconUrl>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
