@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>naps2.install</id>
+    <version>5.3.0</version>
+    <title>NAPS2 (Not Another PDF Scanner 2) (Install)</title>
+    <authors>Ben Olden-Cooligan</authors>
+    <owners>Melvinkooi</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>https://www.naps2.com/</projectUrl>
+    <iconUrl>https://github.com/Melvinkooi/chocolatey-packages/raw/master/automatic/naps2.install/naps2.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Scan documents to PDF and other file types, as simply as possible.</description>
+    <summary>NAPS2 (Not Another PDF Scanner 2)</summary>
+    <tags>naps2 scanner pdf wia twain ocr cli scan admin</tags>
+    <projectSourceUrl>https://github.com/cyanfish/naps2/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/Melvinkooi/chocolatey-packages/tree/master/automatic/naps2.install</packageSourceUrl>
+    <docsUrl>https://www.naps2.com/support.html</docsUrl>
+    <mailingListUrl>https://sourceforge.net/p/naps2/discussion/general/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/naps2/tickets/</bugTrackerUrl>
+  </metadata>
+</package>
