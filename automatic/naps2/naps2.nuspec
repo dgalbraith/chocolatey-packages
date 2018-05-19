@@ -19,7 +19,7 @@
     <mailingListUrl>https://sourceforge.net/p/naps2/discussion/general/</mailingListUrl>
     <bugTrackerUrl>https://sourceforge.net/p/naps2/tickets/</bugTrackerUrl>
     <dependencies>
-      <dependency id="naps2.install" />
+      <dependency id="naps2.install" version="5.8.1"/>
     </dependencies>
   </metadata>
 </package>
