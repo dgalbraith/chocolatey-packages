@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>naps2.install</id>
-    <version>5.8.2</version>
+    <version>6.1.0</version>
     <title>NAPS2 (Not Another PDF Scanner 2) (Install)</title>
     <authors>Ben Olden-Cooligan</authors>
     <owners>Melvinkooi</owners>
