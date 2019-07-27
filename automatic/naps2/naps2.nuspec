@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>naps2</id>
-    <version>6.1.1</version>
+    <version>6.1.2</version>
     <title>NAPS2 (Not Another PDF Scanner 2)</title>
     <authors>Ben Olden-Cooligan</authors>
     <owners>Melvinkooi</owners>
@@ -20,7 +20,7 @@
     <mailingListUrl>https://sourceforge.net/p/naps2/discussion/general/</mailingListUrl>
     <bugTrackerUrl>https://sourceforge.net/p/naps2/tickets/</bugTrackerUrl>
     <dependencies>
-      <dependency id="naps2.install" version="6.1.1"/>
+      <dependency id="naps2.install" version="6.1.2"/>
     </dependencies>
   </metadata>
 </package>
