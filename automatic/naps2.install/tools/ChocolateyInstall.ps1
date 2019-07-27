@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$downloadUrl  = 'https://github.com/cyanfish/naps2/releases/download/v6.1.1/naps2-6.1.1-setup.msi'
-$checksum     = '090F194398469B09C3A44A35BDE8E78EAA71AD2A86C249D802B554D748219177'
+$downloadUrl  = 'https://github.com/cyanfish/naps2/releases/download/v6.1.2/naps2-6.1.2-setup.msi'
+$checksum     = 'A3AE684694FEDBBC557208320DF571EABE5B4099A4D26C0AC00AAF6EBAB09238'
 
 $packageArgs = @{
   packageName    = "naps2.install"
