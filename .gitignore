@@ -1,0 +1,13 @@
+*.nupkg
+update_vars.ps1
+update_info.xml
+Update-AUPackages.md
+Update-Force-Test*.md
+Update-History.md
+update_info.xml
+Thumbs.db
+.vscode
+*.7z
+*.exe
+*.msip
+*.zip
