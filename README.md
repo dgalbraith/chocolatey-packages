@@ -5,7 +5,7 @@ This repository contains [chocolatey packages](https://chocolatey.org/docs/getti
 ## Automatic Packages
 
 [![](https://ci.appveyor.com/api/projects/status/github/dgalbraith/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[Update status](https://gist.github.com/dgalbraith/677e93405e5476e0545a0f61cdfb8d96)
+[Update status](https://gist.github.com/dgalbraith/aef61e2663a09f3dfdfa40482177e040)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/dgalbraith](https://chocolatey.org/profiles/dgalbraith)
 
