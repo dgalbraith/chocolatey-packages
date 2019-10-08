@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>neck-diagrams</id>
+    <version>2.0.3</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/neck-diagrams</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Neck Diagrams 2</title>
+    <authors>Digital Software Technology Ltd</authors>
+    <projectUrl>https://www.neckdiagrams.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages/automatic/neck-diagrams/icon.png</iconUrl>
+    <copyright>2008-2019 Digital Software Technology Ltd</copyright>
+    <licenseUrl>https://www.neckdiagrams.com/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>neck-diagrams fretboard-diagram chord-chart chord-box-creator fretboard chord-box diagram trial</tags>
+    <summary>Creating fretboard diagrams</summary>
+    <description><![CDATA[
+Neck Diagrams is a powerful tool that creates fretboard diagrams, chord charts and more. It's your magical canvas for fretboards, horizontal for wide fretboard diagrams, or vertical for traditional chord boxes. Annotates your diagrams with neat and nifty text too!
+
+## Features
+
+* Chord box tool
+* Fretboard diagrams
+* Diagram gallery
+* Instrument library
+* Scale generator
+* Diagram export
+
+## Notes
+
+* This package installs a trial of Neck Diagrams which is fully functional apart from:
+  * can be run up to 20 times
+  * up to 8 fret boards per page
+  * print & export watermarks after 10 prints / exports
+  * scale generator can be used up to 10 times
+
+]]></description>
+    <releaseNotes>https://www.neckdiagrams.com/download/version-history</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
