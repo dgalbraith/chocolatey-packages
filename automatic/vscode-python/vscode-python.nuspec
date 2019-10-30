@@ -9,7 +9,7 @@
     <title>Python VSCode Extension</title>
     <authors>Microsoft</authors>
     <projectUrl>https://code.visualstudio.com/docs/languages/python</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages/icons/vscode-python.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@06451096e6d52b43cc821a657a5af03eeccc0485/icons/vscode-python.png</iconUrl>
     <copyright>Copyright 2016-2019 Microsoft Corporation</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-python.python/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -18,18 +18,7 @@
     <bugTrackerUrl>https://github.com/Microsoft/vscode-python/issues</bugTrackerUrl>
     <tags>python vscode-python vscode microsoft</tags>
     <summary>Linting, Debugging (multi-threaded, remote), Intellisense, code formatting, refactoring, unit tests, snippets, and more.</summary>
-    <description><![CDATA[# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@06451096e6d52b43cc821a657a5af03eeccc0485/icons/vscode-python.png" width="48" height="48" /> Python VSCode Extension](<https://chocolatey.org/packages/vscode-python>)
-
-[![GitHub license](https://img.shields.io/github/license/Microsoft/vscode-python)](https://github.com/microsoft/vscode-python/blob/master/LICENSE)
-[![Maintenance status](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
-[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/ms-python.python?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-[![Chocolatey package version](https://img.shields.io/chocolatey/v/neck-diagrams?label=Chocolatey)](<https://chocolatey.org/packages/vscode-python>)
-
-A [Visual Studio Code](https://code.visualstudio.com/) [extension](https://marketplace.visualstudio.com/VSCode) with rich
-support for the [Python language](https://www.python.org/) (for all [actively supported versions](https://devguide.python.org/#status-of-python-branches)
-of the language: 2.7, >=3.5), including features such as IntelliSense, linting, debugging, code navigation, code formatting, Jupyter notebook support,
-refactoring, variable explorer, test explorer, snippets, and more!
+    <description><![CDATA[A [Visual Studio Code](https://code.visualstudio.com/) [extension](https://marketplace.visualstudio.com/VSCode) withrich support for the [Python language](https://www.python.org/) (for all [actively supported versions](https://devguide.python.org/#status-of-python-branches) of the language: 2.7, >=3.5), including features such as IntelliSense, linting, debugging, code navigation, code formatting, Jupyter notebook support, refactoring, variable explorer, test explorer, snippets, and more!
 
 ## Features
 
@@ -58,6 +47,7 @@ refactoring, variable explorer, test explorer, snippets, and more!
     <releaseNotes>https://marketplace.visualstudio.com/items/ms-python.python/changelog</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+      <dependency id="vscode" version="1.38.0" />
     </dependencies>
   </metadata>
   <files>
