@@ -4,7 +4,7 @@
 [![Maintenance status](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
 [![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/ms-python.python?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-[![Chocolatey package version](https://img.shields.io/chocolatey/v/neck-diagrams?label=Chocolatey)](<https://chocolatey.org/packages/vscode-python>)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/vscode-python?label=Chocolatey)](<https://chocolatey.org/packages/vscode-python>)
 
 A [Visual Studio Code](https://code.visualstudio.com/) [extension](https://marketplace.visualstudio.com/VSCode) with rich
 support for the [Python language](https://www.python.org/) (for all [actively supported versions](https://devguide.python.org/#status-of-python-branches)
