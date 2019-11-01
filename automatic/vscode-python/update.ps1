@@ -22,7 +22,17 @@ function global:au_SearchReplace {
   }
 }
 function global:au_BeforeUpdate {
-  Get-RemoteFiles -Purge -NoSuffix $($Latest.FileNameBase)
+  mkdir tools -ea 0 | Out-Null
+  $toolsPath = Resolve-Path tools
+
+  Write-Host 'Purging ' $Latest.FileType
+  Remove-Item -Force "$toolsPath\*.$Latest.FileType" -ea ignore
+
+  $outputFile = "{0}\{1}.{2}" -f $toolsPath, $Latest.FilenameBase, $Latest.FileType
+  Invoke-WebRequest -uri $Latest.Url32 -OutFile $outputFile
+
+  $global:Latest.Checksum32 = Get-FileHash $outputFile -Algorithm $Latest.ChecksumType32 | ForEach-Object Hash
+  $global:Latest.FileName32 = $outputFile
 }
 
 function global:au_GetLatest {
@@ -30,12 +40,13 @@ function global:au_GetLatest {
   $extensionInfo = Get-VSMarketplaceExtensionDetails -Extension $extension -Publisher $publisher
 
   @{
-    Copyright     = $extensionInfo.Copyright
-    Version       = $extensionInfo.Version
-    VSCodeVersion = $extensionInfo.VSCodeVersion
-    URL32         = $extensionInfo.DownloadUrl
-    FileNameBase  = $extensionInfo.Filename -match '(?<Filename>(.*))(.vsix)' | ForEach-Object { $Matches['Filename'] }
-    FileType      = 'vsix'
+    Copyright      = $extensionInfo.Copyright
+    Version        = $extensionInfo.Version
+    VSCodeVersion  = $extensionInfo.VSCodeVersion
+    URL32          = $extensionInfo.DownloadUrl
+    FileNameBase   = $extensionInfo.Filename -match '(?<Filename>(.*))(.vsix)' | ForEach-Object { $Matches['Filename'] }
+    FileType       = 'vsix'
+    ChecksumType32 = 'sha256'
   }
 }
 
