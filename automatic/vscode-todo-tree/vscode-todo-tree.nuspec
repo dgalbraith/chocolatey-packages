@@ -9,7 +9,7 @@
     <title>Todo Tree VSCode Extension</title>
     <authors>Gruntfuggly</authors>
     <projectUrl>https://github.com/Gruntfuggly/todo-tree</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@5804bdc4730cde93947ce391ea948e305c3cc472/icons/vscode-todo-tree.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@451c65bbfc5461b84962d31a776985f395e88e9c/icons/vscode-todo-tree.png</iconUrl>
     <copyright>Copyright 2017-2019 Gruntfuggly</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/Gruntfuggly.todo-tree/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
