@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-java</id>
+    <version>0.52.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/vscode-java</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Java™ Language Support VSCode Extension</title>
+    <authors>Red Hat</authors>
+    <projectUrl>https://github.com/redhat-developer/vscode-java</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@27cefa4e9cecaae41e719fb7ed7564439eb46c46/icons/vscode-java.png</iconUrl>
+    <copyright>Copyright 2016-2019 Red Hat</copyright>
+    <licenseUrl>https://github.com/redhat-developer/vscode-java/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/redhat-developer/vscode-java</projectSourceUrl>
+    <docsUrl>https://github.com/redhat-developer/vscode-java/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/redhat-developer/vscode-java/issues</bugTrackerUrl>
+    <tags>java vscode-java vscode redhat</tags>
+    <summary>Java Linting, Intellisense, formatting, refactoring, Maven/Gradle support and more...</summary>
+    <description><![CDATA[Provides Java™ language support via [Eclipse™ JDT Language Server](<https://github.com/eclipse/eclipse.jdt.ls>), which utilizes [Eclipse™ JDT](<http://www.eclipse.org/jdt>), [M2Eclipse](<http://www.eclipse.org/m2e>) and [Buildship](<https://github.com/eclipse/buildship>).
+
+## Features
+
+* Supports code from Java 1.5 to Java 13
+* Maven pom.xml project support
+* Basic Gradle Java project support (Android, Java 13 not supported)
+* Standalone Java files support
+* As-you-type reporting of parsing and compilation errors
+* Code completion
+* Code/Source actions / Refactoring
+* Javadoc hovers
+* Organize imports
+* Type search
+* Code outline
+* Code folding
+* Code navigation
+* Code lens (references/implementations)
+* Highlights
+* Code formatting (on-type/selection/file)
+* Code snippets
+* Annotation processing support (automatic for Maven projects)
+* Semantic selection
+* Diagnostic tags
+
+## Notes
+
+* This package requires Visual Studio Code.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in any edition of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup
+  if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@27cefa4e9cecaae41e719fb7ed7564439eb46c46/automatic/vscode-java/screenshot.png)
+]]></description>
+    <releaseNotes>https://marketplace.visualstudio.com/items/redhat.java/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+      <dependency id="vscode" version="1.36.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
