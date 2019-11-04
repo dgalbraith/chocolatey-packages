@@ -6,7 +6,7 @@
     <version>0.52.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/vscode-java</packageSourceUrl>
     <owners>dgalbraith</owners>
-    <title>Java™ Language Support VSCode Extension</title>
+    <title>Java Language Support VSCode Extension</title>
     <authors>Red Hat</authors>
     <projectUrl>https://github.com/redhat-developer/vscode-java</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@27cefa4e9cecaae41e719fb7ed7564439eb46c46/icons/vscode-java.png</iconUrl>
@@ -18,7 +18,7 @@
     <bugTrackerUrl>https://github.com/redhat-developer/vscode-java/issues</bugTrackerUrl>
     <tags>java vscode-java vscode redhat</tags>
     <summary>Java Linting, Intellisense, formatting, refactoring, Maven/Gradle support and more...</summary>
-    <description><![CDATA[Provides Java™ language support via [Eclipse™ JDT Language Server](<https://github.com/eclipse/eclipse.jdt.ls>), which utilizes [Eclipse™ JDT](<http://www.eclipse.org/jdt>), [M2Eclipse](<http://www.eclipse.org/m2e>) and [Buildship](<https://github.com/eclipse/buildship>).
+    <description><![CDATA[Provides Java language support via [Eclipse JDT Language Server](<https://github.com/eclipse/eclipse.jdt.ls>), which utilizes [Eclipse JDT](<http://www.eclipse.org/jdt>), [M2Eclipse](<http://www.eclipse.org/m2e>) and [Buildship](<https://github.com/eclipse/buildship>).
 
 ## Features
 
@@ -43,6 +43,8 @@
 * Semantic selection
 * Diagnostic tags
 
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@27cefa4e9cecaae41e719fb7ed7564439eb46c46/automatic/vscode-java/screenshot.png)
+
 ## Notes
 
 * This package requires Visual Studio Code.
@@ -54,7 +56,6 @@
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@27cefa4e9cecaae41e719fb7ed7564439eb46c46/automatic/vscode-java/screenshot.png)
 ]]></description>
     <releaseNotes>https://marketplace.visualstudio.com/items/redhat.java/changelog</releaseNotes>
     <dependencies>
