@@ -9,7 +9,7 @@
     <title>Neck Diagrams 2</title>
     <authors>Digital Software Technology Ltd</authors>
     <projectUrl>https://www.neckdiagrams.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages/automatic/neck-diagrams/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@aaced40197b4b4f40922fd84260d77cd7214efc9/automatic/neck-diagrams/icon.png</iconUrl>
     <copyright>2008-2019 Digital Software Technology Ltd</copyright>
     <licenseUrl>https://www.neckdiagrams.com/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

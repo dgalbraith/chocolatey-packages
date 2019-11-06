@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@5804bdc4730cde93947ce391ea948e305c3cc472/icons/vscode-todo-tree.png" width="48" height="48" /> Todo Tree VSCode Extension](<https://chocolatey.org/packages/vscode-todo-tree>)
+﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@451c65bbfc5461b84962d31a776985f395e88e9c/icons/vscode-todo-tree.png" width="48" height="48" /> Todo Tree VSCode Extension](<https://chocolatey.org/packages/vscode-todo-tree>)
 
 [![GitHub license](https://img.shields.io/github/license/Gruntfuggly/todo-tree)](https://github.com/Gruntfuggly/todo-tree/blob/master/License.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
