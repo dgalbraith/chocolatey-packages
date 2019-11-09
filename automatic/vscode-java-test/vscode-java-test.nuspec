@@ -4,11 +4,11 @@
   <metadata>
     <id>vscode-java-test</id>
     <version>0.20.0</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/vscode-java-test</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-java-test</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Java Test Runner VSCode Extension</title>
     <authors>Microsoft</authors>
-    <projectUrl>https://github.com/microsoft/vscode-java-test/blob/master/README.md</projectUrl>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8efbf94309d2d79bfe2ec5e0ce26104a36a2d4d2/icons/vscode-java-test.png</iconUrl>
     <copyright>Copyright 2017-2019 Microsoft Corporation</copyright>
     <licenseUrl>https://github.com/microsoft/vscode-java-test/blob/master/LICENSE.txt</licenseUrl>
