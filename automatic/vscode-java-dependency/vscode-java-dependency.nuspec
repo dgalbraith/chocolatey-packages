@@ -4,11 +4,11 @@
   <metadata>
     <id>vscode-java-dependency</id>
     <version>0.6.0</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/vscode-java-dependency</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-java-dependency</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Java Dependency Viewer VSCode Extension</title>
     <authors>Microsoft</authors>
-    <projectUrl>https://github.com/Microsoft/vscode-java-dependency/blob/master/README.md</projectUrl>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@33c7b8a0ff12bfe0fc3aedcce40b74c6184c9e11/icons/vscode-java-dependency.png</iconUrl>
     <copyright>Copyright 2018-2019 Microsoft Corporation</copyright>
     <licenseUrl>https://github.com/microsoft/vscode-java-dependency/blob/master/LICENSE</licenseUrl>

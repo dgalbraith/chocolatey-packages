@@ -4,11 +4,11 @@
   <metadata>
     <id>vscode-java</id>
     <version>0.52.0</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/vscode-java</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-java</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Java Language Support VSCode Extension</title>
     <authors>Red Hat</authors>
-    <projectUrl>https://github.com/redhat-developer/vscode-java</projectUrl>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=redhat.java</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@27cefa4e9cecaae41e719fb7ed7564439eb46c46/icons/vscode-java.png</iconUrl>
     <copyright>Copyright 2016-2019 Red Hat</copyright>
     <licenseUrl>https://github.com/redhat-developer/vscode-java/blob/master/LICENSE</licenseUrl>

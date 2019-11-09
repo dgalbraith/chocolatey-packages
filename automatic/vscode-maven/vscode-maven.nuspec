@@ -4,11 +4,11 @@
   <metadata>
     <id>vscode-maven</id>
     <version>0.19.1</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/vscode-maven</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-maven</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Maven for Java VSCode Extension</title>
     <authors>Microsoft</authors>
-    <projectUrl>https://github.com/Microsoft/vscode-maven/blob/v0.19.1/README.md</projectUrl>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@df6a42399764d6755fc05671a467f4fea2904d74/icons/vscode-maven.png</iconUrl>
     <copyright>Copyright 2017-2019 Microsoft Corporation</copyright>
     <licenseUrl>https://github.com/microsoft/vscode-maven/blob/master/LICENSE.txt</licenseUrl>

@@ -4,11 +4,11 @@
   <metadata>
     <id>vscode-java-debug</id>
     <version>0.23.0</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/vscode-java-debug</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-java-debug</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Debugger for Java VSCode Extension</title>
     <authors>Microsoft</authors>
-    <projectUrl>https://github.com/Microsoft/vscode-java-debug/blob/master/README.md</projectUrl>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@003fee8d66c6e11583d5d142c9670f419e859d15/icons/vscode-java-debug.png</iconUrl>
     <copyright>Copyright 2017-2019 Microsoft Corporation</copyright>
     <licenseUrl>https://github.com/microsoft/vscode-java-debug/blob/master/LICENSE.txt</licenseUrl>
