@@ -4,7 +4,7 @@
   <metadata>
     <id>vscode-python</id>
     <version>2019.10.44104</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/vscode-python</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-maven</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Python VSCode Extension</title>
     <authors>Microsoft</authors>
