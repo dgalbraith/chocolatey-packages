@@ -22,6 +22,6 @@ Alternatively the package can be downloaded directly from
   - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-python.python-2019.10.44104.vsix
 
   Type:     sha256
-  Checksum: 95FCA8428386DDEDCB880487951F3B5DE9675F74BED055940E8E653BA3C24F88
+  Checksum: DABEA2670B7ED89B6699D8CBBC04AC5880B75CACC5CF743FA2595F3088E61CCC
 
   File LICENSE.txt is obtained from https://github.com/microsoft/vscode-python/blob/master/LICENSE
