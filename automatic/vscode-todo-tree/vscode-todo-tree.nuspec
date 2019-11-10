@@ -13,7 +13,7 @@
     <copyright>Copyright 2017-2019 Gruntfuggly</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/Gruntfuggly.todo-tree/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree</projectSourceUrl>
+    <projectSourceUrl>https://github.com/Gruntfuggly/todo-tree</projectSourceUrl>
     <docsUrl>https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree</docsUrl>
     <bugTrackerUrl>https://github.com/Gruntfuggly/todo-tree/issues</bugTrackerUrl>
     <tags>todo-tree task tasklist todo vscode gruntfuggly</tags>
