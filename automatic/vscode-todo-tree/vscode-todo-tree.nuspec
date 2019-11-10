@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-todo-tree</id>
-    <version>0.0.161</version>
+    <version>0.0.162</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/vscode-todo-tree</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Todo Tree VSCode Extension</title>
