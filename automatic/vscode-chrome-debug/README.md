@@ -4,7 +4,7 @@
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
 [![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/msjsdiag.debugger-for-chrome?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
-[![Chocolatey package version](https://img.shields.io/chocolatey/v/vscode-firefox-debug?label=Chocolatey)](https://chocolatey.org/packages/vscode-chrome-debug)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/vscode-chrome-debug?label=Chocolatey)](https://chocolatey.org/packages/vscode-chrome-debug)
 
 A VS Code extension to debug your JavaScript code in the Google Chrome browser, or other targets that support the [Chrome DevTools Protocol](https://chromedevtools.github.io/debugger-protocol-viewer/).
 
