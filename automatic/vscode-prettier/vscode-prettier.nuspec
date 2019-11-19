@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-prettier</id>
+    <version>3.6.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-prettier</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Prettier Code Formatter VSCode Extension</title>
+    <authors>Esben Petersen</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d31db90d323ade71b0e3ea960b09d38516d59d0f/icons/vscode-prettier.png</iconUrl>
+    <copyright>Copyright 2017-2019 Prettier</copyright>
+    <licenseUrl>https://github.com/prettier/prettier-vscode/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/prettier/prettier-vscode</projectSourceUrl>
+    <docsUrl>https://github.com/prettier/prettier-vscode/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/prettier/prettier-vscode/issues</bugTrackerUrl>
+    <tags>formatter code vscode prettier</tags>
+    <summary>Debug your JavaScript code in the Chrome browser, or any other target that supports the Chrome Debugger protocol</summary>
+    <description><![CDATA[[Prettier](https://prettier.io/) is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
+
+<p align="center">
+*JavaScript · TypeScript · Flow · JSX · JSON*
+*CSS · SCSS · Less*
+*HTML · Vue · Angular*
+*GraphQL · Markdown · YAML*
+*(Your favorite language?)[https://prettier.io/docs/en/plugins.html]*
+</p>
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d31db90d323ade71b0e3ea960b09d38516d59d0f/automatic/vscode-prettier/screenshot.png)
+
+## Notes
+
+* This package requires Visual Studio Code.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in any edition of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup
+  if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/prettier/prettier-vscode/blob/master/CHANGELOG.md</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+      <dependency id="vscode" version="1.34.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
