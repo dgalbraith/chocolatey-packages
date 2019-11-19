@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-kubernetes</id>
+    <version>1.0.7</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-kubernetes-tools</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Kubernetes Tools VSCode Extension</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@04c2c097ddd064697ce5d666d0dc3138ac671dbc/icons/vscode-kubernetes-tools.png</iconUrl>
+    <copyright>Copyright 2018-2019 Microsoft Corporation</copyright>
+    <licenseUrl>https://github.com/Azure/vscode-kubernetes-tools/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Azure/vscode-kubernetes-tools</projectSourceUrl>
+    <docsUrl>https://github.com/Azure/vscode-kubernetes-tools/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/Azure/vscode-kubernetes-tools/issues</bugTrackerUrl>
+    <tags>kubernetes helm aws azure gcp minikube vscode microsoft</tags>
+    <summary>Develop, deploy and debug Kubernetes applications</summary>
+    <description><![CDATA[The extension for developers building applications to run in Kubernetes clusters and for DevOps staff troubleshooting Kubernetes applications.
+
+Works with any Kubernetes anywhere (Azure, Minikube, AWS, GCP and more!).
+
+## Features
+
+* View your clusters in an explorer tree view, and drill into workloads, services, pods and nodes.
+* Browse Helm repos and install charts into your Kubernetes cluster.
+* Intellisense for Kubernetes resources and Helm charts and templates.
+* Edit Kubernetes resource manifests and apply them to your cluster.
+* Build and run containers in your cluster from Dockerfiles in your project.
+* View diffs of a resource's current state against the resource manifest in your Git repo
+* Easily check out the Git commit corresponding to a deployed application.
+* Run commands or start a shell within your application's pods.
+* Get or follow logs and events from your clusters.
+* Forward local ports to your application's pods.
+* Create Helm charts using scaffolding and snippets.
+* Bootstrap applications using Draft, and rapidly deploy and debug them to speed up the development loop.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@04c2c097ddd064697ce5d666d0dc3138ac671dbc/automatic/vscode-kubernetes-tools/screenshot.png)
+
+## Notes
+
+* This package requires Visual Studio Code.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in any edition of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup
+  if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
+    <releaseNotes>https://github.com/Azure/vscode-kubernetes-tools/blob/master/CHANGELOG.md</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+      <dependency id="vscode" version="1.31.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
