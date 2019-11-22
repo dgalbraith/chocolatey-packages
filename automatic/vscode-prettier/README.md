@@ -8,20 +8,11 @@
 
 [Prettier](https://prettier.io/) is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
 
-<p align="center">
-  <i>
-    JavaScript · TypeScript · Flow · JSX · JSON
-    <br />
-    CSS · SCSS · Less
-    <br />
-    HTML · Vue · Angular
-    <br />
-    GraphQL · Markdown · YAML
-    <br />
-    <a href="https://prettier.io/docs/en/plugins.html">Your favorite language?</a>
-    <br />
-  </i>
-</p>
+**JavaScript · TypeScript · Flow · JSX · JSON**\
+**CSS · SCSS · Less**\
+**HTML · Vue · Angular**\
+**GraphQL · Markdown · YAML**\
+**[Your favorite language?](https://prettier.io/docs/en/plugins.html)**
 
 ![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d31db90d323ade71b0e3ea960b09d38516d59d0f/automatic/vscode-prettier/screenshot.png)
 
