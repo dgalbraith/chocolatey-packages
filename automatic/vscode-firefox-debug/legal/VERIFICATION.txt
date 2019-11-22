@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: E432F7BC96D913016A9DB3D1ABAAE227CC2FBFA2FAFFBAC7C8DA832B89D32AE3
 
-  File LICENSE.txt is obtained from https://raw.githubusercontent.com/firefox-devtools/vscode-firefox-debug/master/LICENSE
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/firefox-devtools.vscode-firefox-debug/license

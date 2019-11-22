@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: 7A90BB26D63930253646643BA5F60E162D4E803F2806C32AC586C4B37B88DBB3
 
-  File LICENSE.txt is obtained from https://github.com/redhat-developer/vscode-java/blob/master/LICENSE
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/redhat.java/license

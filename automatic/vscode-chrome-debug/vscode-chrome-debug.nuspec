@@ -11,7 +11,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@1d50526002930359ca29f0722608cc1f0cf99e37/icons/vscode-chrome-debug.png</iconUrl>
     <copyright>Copyright 2015-2019 Microsoft Corporation</copyright>
-    <licenseUrl>https://github.com/microsoft/vscode-chrome-debug/blob/master/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/msjsdiag.debugger-for-chrome/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Microsoft/vscode-chrome-debug</projectSourceUrl>
     <docsUrl>https://github.com/microsoft/vscode-chrome-debug/blob/master/README.md</docsUrl>
