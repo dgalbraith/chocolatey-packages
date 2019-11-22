@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: 0AD94B76CFBA3CFD6091B9B73CDA79AE7B65AB771BCF06D1F50DC1526EA13C67
 
-  File LICENSE.txt is obtained from https://github.com/microsoft/vscode-maven/blob/master/LICENSE.txt
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscjava.vscode-maven/license

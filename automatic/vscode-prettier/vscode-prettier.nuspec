@@ -11,7 +11,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d31db90d323ade71b0e3ea960b09d38516d59d0f/icons/vscode-prettier.png</iconUrl>
     <copyright>Copyright 2017-2019 Prettier</copyright>
-    <licenseUrl>https://github.com/prettier/prettier-vscode/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/esbenp.prettier-vscode/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/prettier/prettier-vscode</projectSourceUrl>
     <docsUrl>https://github.com/prettier/prettier-vscode/blob/master/README.md</docsUrl>

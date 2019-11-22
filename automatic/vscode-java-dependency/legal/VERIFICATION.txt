@@ -25,4 +25,4 @@ vspackage
   Type:     sha256
   Checksum: B6934E58B92B476476DDE50ADCC5358D9042CC4A81F8FF4F1F49857F5BB97766
 
-  File LICENSE.txt is obtained from https://github.com/microsoft/vscode-java-dependency/blob/master/LICENSE
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscjava.vscode-java-dependency/license

@@ -11,7 +11,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@236a257aaf4920b7b1b4c6b0cd29eca8c5026e91/icons/vscode-edge-debug.png</iconUrl>
     <copyright>Copyright 2016-2019 Microsoft Corporation</copyright>
-    <licenseUrl>https://github.com/microsoft/vscode-edge-debug2/blob/master/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/msjsdiag.debugger-for-edge/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/microsoft/vscode-edge-debug2</projectSourceUrl>
     <docsUrl>https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md</docsUrl>

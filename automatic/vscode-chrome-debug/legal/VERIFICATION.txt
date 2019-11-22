@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: 509B828294DE647893ED6FE53E2B492D9D45C47DEF06EB804C9CE048EC978E78
 
-  File LICENSE.txt is obtained from https://https://raw.githubusercontent.com/microsoft/vscode-chrome-debug/master/LICENSE.txt
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/msjsdiag.debugger-for-chrome/license

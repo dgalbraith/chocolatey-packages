@@ -11,7 +11,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@04c2c097ddd064697ce5d666d0dc3138ac671dbc/icons/vscode-kubernetes-tools.png</iconUrl>
     <copyright>Copyright 2018-2019 Microsoft Corporation</copyright>
-    <licenseUrl>https://github.com/Azure/vscode-kubernetes-tools/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-kubernetes-tools.vscode-kubernetes-tools/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Azure/vscode-kubernetes-tools</projectSourceUrl>
     <docsUrl>https://github.com/Azure/vscode-kubernetes-tools/blob/master/README.md</docsUrl>

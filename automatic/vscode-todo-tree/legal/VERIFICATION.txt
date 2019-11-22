@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: AA7A5CF73C4D6D590E546533D1A2F7B0D29125C1BFD94BE1260CEA3A8A7294B8
 
-  File LICENSE.txt is obtained from https://github.com/Gruntfuggly/todo-tree/blob/master/License.txt
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/Gruntfuggly.todo-tree/license

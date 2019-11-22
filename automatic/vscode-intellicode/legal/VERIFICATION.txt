@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: 9707525B01C9F125ACE2D34342B2E556ADFE73E0E9978371093CD4194BC39EB5
 
-  File LICENSE.txt is obtained from https://raw.githubusercontent.com/MicrosoftDocs/intellicode/master/LICENSE-CODE
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/VisualStudioExptTeam.vscodeintellicode/license

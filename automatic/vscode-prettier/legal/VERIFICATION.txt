@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: 41E54FD90BBD1F75E34B1CC1332A4556D29B500FCC3A228928BE664A84B552A0
 
-  File LICENSE.txt is obtained from https://raw.githubusercontent.com/prettier/prettier-vscode/master/LICENSE
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/esbenp.prettier-vscode/license

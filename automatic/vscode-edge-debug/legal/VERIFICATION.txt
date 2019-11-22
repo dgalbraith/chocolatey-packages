@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: 3B0680C82A4968EB73E7CC1631B1C88C2EC66B37F60BF25272D2A7ACFE3DD3BE
 
-  File LICENSE.txt is obtained from https://raw.githubusercontent.com/microsoft/vscode-edge-debug2/master/LICENSE.txt
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/msjsdiag.debugger-for-edge/license
