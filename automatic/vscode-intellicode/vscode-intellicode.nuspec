@@ -47,7 +47,6 @@ Contextual recommendations are based on practices developed in thousands of high
     </dependencies>
   </metadata>
   <files>
-    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
