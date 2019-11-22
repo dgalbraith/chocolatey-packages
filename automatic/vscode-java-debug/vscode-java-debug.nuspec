@@ -11,7 +11,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@003fee8d66c6e11583d5d142c9670f419e859d15/icons/vscode-java-debug.png</iconUrl>
     <copyright>Copyright 2017-2019 Microsoft Corporation</copyright>
-    <licenseUrl>https://github.com/microsoft/vscode-java-debug/blob/master/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/vscjava.vscode-java-debug/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/microsoft/vscode-java-debug</projectSourceUrl>
     <docsUrl>https://github.com/Microsoft/vscode-java-debug/blob/master/README.md</docsUrl>

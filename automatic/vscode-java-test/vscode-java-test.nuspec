@@ -11,7 +11,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8efbf94309d2d79bfe2ec5e0ce26104a36a2d4d2/icons/vscode-java-test.png</iconUrl>
     <copyright>Copyright 2017-2019 Microsoft Corporation</copyright>
-    <licenseUrl>https://github.com/microsoft/vscode-java-test/blob/master/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/vscjava.vscode-java-test/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/microsoft/vscode-java-test</projectSourceUrl>
     <docsUrl>https://github.com/microsoft/vscode-java-test/blob/master/README.md</docsUrl>

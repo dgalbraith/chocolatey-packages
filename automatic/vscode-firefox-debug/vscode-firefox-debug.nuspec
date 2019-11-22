@@ -11,7 +11,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@268b298a417edf0d8583c0695aab704f7940cef3/icons/vscode-firefox-debug.png</iconUrl>
     <copyright>Copyright 2016-2019 Holger Benl</copyright>
-    <licenseUrl>https://github.com/firefox-devtools/vscode-firefox-debug/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/firefox-devtools.vscode-firefox-debug/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/firefox-devtools/vscode-firefox-debug</projectSourceUrl>
     <docsUrl>https://github.com/firefox-devtools/vscode-firefox-debug/blob/master/README.md</docsUrl>

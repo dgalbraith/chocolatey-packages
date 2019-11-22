@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: DA0D72D6FAB5786551181736A230F50ED4AE2F13E4C28FEF4BAC431140F71C21
 
-  File LICENSE.txt is obtained from https://github.com/microsoft/vscode-java-test/blob/master/LICENSE.txt
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscjava.vscode-java-test/license

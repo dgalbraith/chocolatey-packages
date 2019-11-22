@@ -11,7 +11,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8c5592c5c04a7de4544145427fb03cbe2ac9b969/icons/vscode-intellicode.png</iconUrl>
     <copyright>Copyright 2018-2019 Microsoft</copyright>
-    <licenseUrl>https://github.com/MicrosoftDocs/intellicode/blob/master/LICENSE-CODE</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/VisualStudioExptTeam.vscodeintellicode/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/MicrosoftDocs/intellicode</projectSourceUrl>
     <docsUrl>https://github.com/MicrosoftDocs/intellicode/blob/master/docs/intellicode-visual-studio-code.md</docsUrl>

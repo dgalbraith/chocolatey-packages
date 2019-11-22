@@ -11,7 +11,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@33c7b8a0ff12bfe0fc3aedcce40b74c6184c9e11/icons/vscode-java-dependency.png</iconUrl>
     <copyright>Copyright 2018-2019 Microsoft Corporation</copyright>
-    <licenseUrl>https://github.com/microsoft/vscode-java-dependency/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/vscjava.vscode-java-dependency/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/microsoft/vscode-java-dependency/</projectSourceUrl>
     <docsUrl>https://github.com/Microsoft/vscode-java-dependency/blob/master/README.md</docsUrl>

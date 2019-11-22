@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: 85745A2F742C6352F41DE291679B8E1A6F12FADA9D3E036812C0F33E1373EDF2
 
-  File LICENSE.txt is obtained from https://raw.githubusercontent.com/Azure/vscode-kubernetes-tools/master/LICENSE
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-kubernetes-tools.vscode-kubernetes-tools/license

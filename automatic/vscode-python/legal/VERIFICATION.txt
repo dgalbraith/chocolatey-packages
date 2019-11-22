@@ -24,4 +24,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: 6A9EDF9ECABED14AAC424E6007858068204A3638BF3BB4F235BD6035D823ACC6
 
-  File LICENSE.txt is obtained from https://github.com/microsoft/vscode-python/blob/master/LICENSE
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-python.python/license
