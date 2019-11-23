@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@TODO/icons/vscode-cloud-code.png" width="48" height="48" />Cloud Code VSCode Extension](<https://chocolatey.org/packages/vscode-cloud-code>)
+﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@edf2228388178bdda72db56ab68b5ef8ae7e1359/icons/vscode-cloud-code.png" width="48" height="48" />Cloud Code VSCode Extension](<https://chocolatey.org/packages/vscode-cloud-code>)
 
 [![Software license]https://img.shields.io/badge/license-Proprietary-lightgrey)](https://cloud.google.com/terms/plugins/)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
@@ -20,7 +20,7 @@ Cloud Code for VS Code extends VS Code to bring all the power and convenience of
 * Support for Custom Resources (CRDs) e.g. Istio, KNative
 * Automatically uses your Google Cloud SDK credentials
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@TODO/automatic/vscode-cloud-code/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@edf2228388178bdda72db56ab68b5ef8ae7e1359/automatic/vscode-cloud-code/screenshot.png)
 
 ## Notes
 
