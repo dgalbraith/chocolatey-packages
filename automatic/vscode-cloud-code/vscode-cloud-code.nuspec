@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-cloud-code</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-cloud-code</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Cloud Code VSCode Extension</title>
     <authors>Google</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@todo/icons/vscode-cloud-code.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@edf2228388178bdda72db56ab68b5ef8ae7e1359/icons/vscode-cloud-code.png</iconUrl>
     <copyright>Copyright 2019 Google LLC</copyright>
     <licenseUrl>https://cloud.google.com/terms/plugins/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -32,7 +32,7 @@
 * Support for Custom Resources (CRDs) e.g. Istio, KNative
 * Automatically uses your Google Cloud SDK credentials
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@TODO/automatic/vscode-cloud-code/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@edf2228388178bdda72db56ab68b5ef8ae7e1359/automatic/vscode-cloud-code/screenshot.png)
 
 ## Notes
 
