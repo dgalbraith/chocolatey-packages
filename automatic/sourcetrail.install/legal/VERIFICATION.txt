@@ -1,0 +1,32 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installers have been downloaded from the official download page linked from
+http://sourcetrail.com/downloads and can be verified by:
+
+1. Go to the official download page
+
+  https://github.com/CoatiSoftware/Sourcetrail/releases
+
+and download the installer packages
+
+  32-Bit: https://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.61/Sourcetrail_2019_4_61_Windows_32bit_Installer.ziphttps://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.61/Sourcetrail_2019_4_61_Windows_32bit_Installer.ziphttps://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.61/Sourcetrail_2019_4_61_Windows_32bit_Installer.ziphttps://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.61/Sourcetrail_2019_4_61_Windows_32bit_Installer.ziphttps://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.60/Sourcetrail_2019_4_60_Windows_32bit_Installer.zip
+  64-Bit: https://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.61/Sourcetrail_2019_4_61_Windows_64bit_Installer.ziphttps://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.61/Sourcetrail_2019_4_61_Windows_64bit_Installer.ziphttps://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.61/Sourcetrail_2019_4_61_Windows_64bit_Installer.ziphttps://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.61/Sourcetrail_2019_4_61_Windows_64bit_Installer.ziphttps://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.60/Sourcetrail_2019_4_60_Windows_64bit_Installer.zip
+
+2. The portable packages can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  Get-Filehash Sourcetrail_2019_4_61_Windows_32bit_Installer.zip
+  checksum -t Sourcetrail_2019_4_61_Windows_32bit_Installer.zip
+  Type32:     sha256
+  Checksum32: 48AB6FB5B9D211EF1A0A83E88B7AC05C95036FFE5F1B0202EEA498127AC1E04E48AB6FB5B9D211EF1A0A83E88B7AC05C95036FFE5F1B0202EEA498127AC1E04E48AB6FB5B9D211EF1A0A83E88B7AC05C95036FFE5F1B0202EEA498127AC1E04E48AB6FB5B9D211EF1A0A83E88B7AC05C95036FFE5F1B0202EEA498127AC1E04E48AB6FB5B9D211EF1A0A83E88B7AC05C95036FFE5F1B0202EEA498127AC1E04E
+
+  Get-Filehash Sourcetrail_2019_4_61_Windows_64bit_Installer.zip
+  checksum -t Sourcetrail_2019_4_61_Windows_64bit_Installer.zip
+  Type64:     sha256
+  Checksum64: 5233CBDF78B5E747D2D192A6AD9EAAF723410F92268BC5984385EDA2828A4D6C5233CBDF78B5E747D2D192A6AD9EAAF723410F92268BC5984385EDA2828A4D6C5233CBDF78B5E747D2D192A6AD9EAAF723410F92268BC5984385EDA2828A4D6C5233CBDF78B5E747D2D192A6AD9EAAF723410F92268BC5984385EDA2828A4D6C5233CBDF78B5E747D2D192A6AD9EAAF723410F92268BC5984385EDA2828A4D6C5233CBDF78B5E747D2D192A6AD9EAAF723410F92268BC5984385EDA2828A4D6C
+
+  File LICENSE.txt is obtained from https://github.com/CoatiSoftware/Sourcetrail/blob/master/LICENSE.txt
