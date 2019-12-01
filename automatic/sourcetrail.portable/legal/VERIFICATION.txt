@@ -1,0 +1,32 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installers have been downloaded from the official download page linked from
+http://sourcetrail.com/downloads and can be verified by:
+
+1. Go to the official download page
+
+  https://github.com/CoatiSoftware/Sourcetrail/releases
+
+and download the portable packages
+
+  32-Bit: https://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.61/Sourcetrail_2019_4_61_Windows_32bit_Portable.zip
+  64-Bit: https://github.com/CoatiSoftware/Sourcetrail/releases/download/2019.4.61/Sourcetrail_2019_4_61_Windows_64bit_Portable.zip
+
+2. The portable packages can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  Get-Filehash Sourcetrail_2019_4_61_Windows_32bit_Portable.zip
+  checksum -t sha256 -f Sourcetrail_2019_4_61_Windows_32bit_Portable.zip
+  Type:       sha256
+  Checksum32: 051DC87A324F6AB4E24390D847711F1499719E7486F59B5FA5DF1FEC7B66515D
+
+  Get-Filehash Sourcetrail_2019_4_61_Windows_64bit_Portable.zip
+  checksum -t sha256 -f Sourcetrail_2019_4_61_Windows_64bit_Portable.zip
+  Type:       sha256
+  Checksum64: FA54136D6DC9B15E741311C6A9483C69431C66B934ABFE5FFB540C1C7DC344F0
+
+  File LICENSE.txt is obtained from https://github.com/CoatiSoftware/Sourcetrail/blob/master/LICENSE.txt
