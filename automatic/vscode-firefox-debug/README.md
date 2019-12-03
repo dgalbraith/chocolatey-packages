@@ -22,7 +22,9 @@ A VS Code extension to debug web applications and extensions running in the [Moz
 * Pause on object property changes with [Data breakpoints](https://code.visualstudio.com/docs/editor/debugging#_data-breakpoints) (Works with Firefox 70)
 * Use VS Code's (new UI for column breakpoints)[https://code.visualstudio.com/updates/v1_39#_improved-ui-for-column-breakpoints]
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@268b298a417edf0d8583c0695aab704f7940cef3/automatic/vscode-firefox-debug/screenshot.png)
+
+![screenshot](./screenshot.png)
+
 
 ## Notes
 
@@ -34,3 +36,5 @@ A VS Code extension to debug web applications and extensions running in the [Moz
   See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+![screenshot](./screenshot.png)
