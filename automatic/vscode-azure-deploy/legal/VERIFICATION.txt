@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The Visual Code extension has been downloaded from the official Visual Studio Marketplace public gallery
+and can be verified by:
+
+1. Go to the Visual Studio Marketplace page for the extension
+
+  https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy
+
+and download the extension ms-vscode-deploy-azure.azure-deploy-1.0.0.vsix using the Download Extension link
+in the Resources section of the sidebar.
+
+Alternatively the package can be downloaded directly from
+
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-vscode-deploy-azure/vsextensions/azure-deploy/1.0.0/vspackage
+
+2. The extension can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash ms-vscode-deploy-azure.azure-deploy-1.0.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-vscode-deploy-azure.azure-deploy-1.0.0.vsix
+
+  Type:     sha256
+  Checksum: F115DC15A093F1E8EFBF2D4609ADEBD4925B3498B224D6B497556B3078EB593F
+
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-vscode-deploy-azure.azure-deploy/license
