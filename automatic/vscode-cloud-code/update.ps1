@@ -7,7 +7,11 @@ $publisher = 'GoogleCloudTools'
 function global:au_SearchReplace {
   @{
     "$($Latest.PackageName).nuspec" = @{
-      "(id=`"vscode`"\sversion=`")([0-9]+\.[0-9]+\.[0-9]+)" = "`${1}$($Latest.VSCodeVersion)"
+      "(Visual Studio Code )([0-9]+\.[0-9]+\.[0-9]+)( or newer)" = "`${1}$($Latest.VSCodeVersion)`${3}"
+    }
+
+    ".\README.md" = @{
+      "(Visual Studio Code )([0-9]+\.[0-9]+\.[0-9]+)( or newer)" = "`${1}$($Latest.VSCodeVersion)`${3}"
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
