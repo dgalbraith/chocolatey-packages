@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@268b298a417edf0d8583c0695aab704f7940cef3/icons/vscode-firefox-debug.png" width="48" height="48" />Debugger for Firefox VSCode Extension](<https://chocolatey.org/packages/vscode-firefox-debug>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@268b298a417edf0d8583c0695aab704f7940cef3/icons/vscode-firefox-debug.png" width="48" height="48" />Debugger for Firefox VSCode Extension](<https://chocolatey.org/packages/vscode-firefox-debug>)
 
 [![GitHub license](https://img.shields.io/github/license/firefox-devtools/vscode-firefox-debug)](https://github.com/firefox-devtools/vscode-firefox-debug/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
