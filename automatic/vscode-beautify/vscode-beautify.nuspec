@@ -35,7 +35,7 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/prettier/prettier-vscode/blob/master/CHANGELOG.md</releaseNotes>
+    <releaseNotes>https://marketplace.visualstudio.com/items/HookyQR.beautify/changelog</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.1.0" />
     </dependencies>
