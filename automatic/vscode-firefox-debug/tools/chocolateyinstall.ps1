@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\firefox-devtools.vscode-firefox-debug-2.5.4.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\firefox-devtools.vscode-firefox-debug-2.6.0.vsix"
