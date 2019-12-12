@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-edge-debug</id>
-    <version>1.0.12</version>
+    <version>1.0.13</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-edge-debug</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Debugger for Edge VSCode Extension</title>

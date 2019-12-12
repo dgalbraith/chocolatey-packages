@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@236a257aaf4920b7b1b4c6b0cd29eca8c5026e91/icons/vscode-edge-debug.png" width="48" height="48" />Debugger for Edge VSCode Extension](<https://chocolatey.org/packages/vscode-edge-debug>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@236a257aaf4920b7b1b4c6b0cd29eca8c5026e91/icons/vscode-edge-debug.png" width="48" height="48" />Debugger for Edge VSCode Extension](<https://chocolatey.org/packages/vscode-edge-debug>)
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/vscode-edge-debug)](https://github.com/microsoft/vscode-edge-debug2/blob/master/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
