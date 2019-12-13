@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8efbf94309d2d79bfe2ec5e0ce26104a36a2d4d2/icons/vscode-java-test.png" width="48" height="48" />Debugger for Java VSCode Extension](<https://chocolatey.org/packages/vscode-java-test>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8efbf94309d2d79bfe2ec5e0ce26104a36a2d4d2/icons/vscode-java-test.png" width="48" height="48" />Debugger for Java VSCode Extension](<https://chocolatey.org/packages/vscode-java-test>)
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/vscode-java-test)](https://raw.githubusercontent.com/microsoft/vscode-java-test/master/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
@@ -26,7 +26,7 @@ The [Java Test Runner](https://marketplace.visualstudio.com/items?itemName=vscja
 
 ## Notes
 
-* This package requires Visual Studio Code 1.32.0 or newer.
+* This package requires Visual Studio Code 1.41.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
