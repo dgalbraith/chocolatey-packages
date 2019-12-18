@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=vscjava.maven
 
-and download the extension vscjava.vscode-maven-0.20.0.vsix using the Download Extension link
+and download the extension vscjava.vscode-maven-0.20.1.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-maven/0.20.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-maven/0.20.1/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-maven-0.20.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-maven-0.20.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-maven-0.20.1.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-maven-0.20.1.vsix
 
   Type:     sha256
-  Checksum: 613084B6DDB1E2CC1635B9CD28B2F6A5BDE99C0EA6199178C528BA3D81752555
+  Checksum: 34E556D32EADB27358618F202B67737657677B86F09761E790FB7F846A0723A8
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscjava.vscode-maven/license

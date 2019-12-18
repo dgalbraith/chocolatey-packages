@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@df6a42399764d6755fc05671a467f4fea2904d74/icons/vscode-maven.png" width="48" height="48" />Maven for Java VSCode Extension](<https://chocolatey.org/packages/vscode-maven>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@df6a42399764d6755fc05671a467f4fea2904d74/icons/vscode-maven.png" width="48" height="48" />Maven for Java VSCode Extension](<https://chocolatey.org/packages/vscode-maven>)
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/vscode-maven)](https://github.com/microsoft/vscode-maven/blob/master/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
