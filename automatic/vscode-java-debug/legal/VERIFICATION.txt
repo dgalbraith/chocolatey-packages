@@ -15,7 +15,7 @@ in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vcsjava/vsextensions/vscode-java/0.24.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vcsjava/vsextensions/vscode-java-debug/0.24.0/vspackage
 
 2. The extension can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-java-debug-0.24.0.vsix
