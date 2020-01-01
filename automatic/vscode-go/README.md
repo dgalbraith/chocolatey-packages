@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f6955499323841ec9a33508345bfe5257fcfee78/icons/vscode-go.png" width="48" height="48" />Go VSCode Extension](<https://chocolatey.org/packages/vscode-go>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f6955499323841ec9a33508345bfe5257fcfee78/icons/vscode-go.png" width="48" height="48" />Go VSCode Extension](<https://chocolatey.org/packages/vscode-go>)
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/vscode-edge-debug)](https://github.com/microsoft/vscode-go/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
