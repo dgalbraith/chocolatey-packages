@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e40e5a5cd5cb19d59ff6dfc195d74ab6df635b5a/icons/vscode-arduino.png" width="48" height="48" />Arduino VSCode Extension](<https://chocolatey.org/packages/vscode-arduino>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e40e5a5cd5cb19d59ff6dfc195d74ab6df635b5a/icons/vscode-arduino.png" width="48" height="48" />Arduino VSCode Extension](<https://chocolatey.org/packages/vscode-arduino>)
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/vscode-arduino)](https://github.com/microsoft/vscode-arduino/blob/master/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
