@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>clipto-pro</id>
+    <version>1.8.6</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/clipto-pro</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Clipto Pro</title>
+    <authors>Workbasket Ltd</authors>
+    <projectUrl>https://clipto.pro</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@b56738f52acff6769413b64b6a0468efac33d100/icons/clipto-pro.png</iconUrl>
+    <copyright>Copyright Workbasket Ltd</copyright>
+    <licenseUrl>https://clipto.pro/#/terms</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/clipto-pro/</projectSourceUrl>
+    <docsUrl>https://github.com/clipto-pro/Desktop/blob/master/README.md/</docsUrl>
+    <bugTrackerUrl>https://github.com/clipto-pro/Desktop/issues</bugTrackerUrl>
+    <tags>notes clipboard productivity workbasket</tags>
+    <summary>Clipto Pro is an effortless, super fast and flexible notes taking app and clipboard manager</summary>
+    <description><![CDATA[
+[Clipto](https://clipto.pro) is cross-platform, community driven Clipboard and Notes app with a focus on speed and productivity.
+
+The idea of the application is to make it easy, fast and convenient to work with any text and binary data, regardless of the platform where you use it.
+
+Therefore, the application allows not only manual creation and editing of notes of any complexity, but also automatic, using all available methods on the specific device:
+
+* Clipboard tracking
+* Contextual actions
+* Notification actions
+* Share actions
+
+Most of the functionality is based on user feedback and is improved by following this rule.
+
+## Features
+
+* Instant sync across all platforms (Android, Windows, Mac, Linux and Web. iOS version is still in progress)
+* Fully offline work and ability to sync instantly when internet is available
+* Supports Universal Clipboard (Copy content on one device and Paste on another)
+* View and Edit notes in variety of formats (Plain Text, QR code, Text with clickable links, Markdown, HTML, Text with copied lines, Text with copied tokens, etc.)
+* Highly flexible and customisable interface with configurable fonts, text sizes, sorting rules, view modes
+* Very simple and fast search of your notes by any content with highlighting of the results
+* Attachments of any type
+* Fast navigation with one click
+* Community driven
+* No-Ads
+* Free
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@b56738f52acff6769413b64b6a0468efac33d100/automatic/clipto-pro/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/clipto-pro/Desktop/releases/latest</releaseNotes>
+    <dependencies>
+      <dependency id="autohotkey.install" version="1.1.32" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
