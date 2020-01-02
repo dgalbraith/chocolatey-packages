@@ -1,0 +1,31 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The Clipto Pro installer has been downloaded from the official release distribution page
+and can be verified by:
+
+1. Go to the Github release distribution page for the application
+
+  https://github.com/clipto-pro/Desktop/releases/latest
+
+and download the clipto.pro-1.8.6.exe installer.
+
+Alternatively the package can be downloaded directly from
+
+  https://github.com/clipto-pro/Desktop/releases/download/v1.8.6/clipto.pro-1.8.6.exe
+
+2. The extension can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash clipto.pro-1.8.6.exe
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f clipto.pro-1.8.6.exe
+
+  Type:     sha256
+  Checksum: 969591FBABC3226EF399C60ED555F09AEAE9DAEC943DEB3CACF3CD444B224920
+
+Authorisation to redistribute the Clipto Pro binaries has been provided by the the software
+authors and can be found in the Reddit message
+
+  https://www.reddit.com/message/messages/l1d3bb
+
+or in the file CliptoProBinaryDistributionAuthorisation.pdf.
