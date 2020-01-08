@@ -2,7 +2,21 @@
 
 $silentArgs = '/quiet /norestart /IAcceptLicenseTerms'
 
+[regex]$reedition = “(?i)^(Dev|Eval|ExprAdv)$”
+
 $pp = Get-PackageParameters
+
+# check the edition parameter and default to Eval if not supplied
+if ($null -eq $pp["Edition"] -or $pp["Edition"] -eq '') { $pp["Edition"] = 'Eval' }
+
+if ($pp['Edition'] -notmatch $reedition) {
+  Write-Output "Unsupported edition $($pp.Edition)"
+  exit (1)
+}
+
+$pp.Remove['Edition']
+
+# append remaining package arguments to the silent arguments
 $silentArgs += ($pp.GetEnumerator() | ForEach-Object { " /$($_.name)=`"$($_.value)`"" })
 
 $packageArgs = @{
