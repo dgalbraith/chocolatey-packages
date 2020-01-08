@@ -26,19 +26,19 @@
 
 ## Package Parameters
 
-* `/log <file>` specifies the setup log file location.  By default log files are created under `%TEMP%`.
-    > Example: `/log log.txt`
+* `/log file` specifies the setup log file location.  By default log files are created under `%TEMP%`.
+  Example: `/log log.txt`
 * `/InstallFolder` sets the install folder.
-    > Default: `"C:\Program Files\Microsoft SQL Server Reporting Services"`\
-    > Example: `choco install -y ssrs-2010 --package-parameters='"/InstallFolder:"'C:\Program Files\SSRS'""'`
+  Default: `"C:\Program Files\Microsoft SQL Server Reporting Services"`
+  Example: `choco install -y ssrs-2019 --package-parameters='"/InstallFolder:"'C:\Program Files\SSRS'""'`
 * `/PID` sets the custom license key.
-    > Example: `choco install -y ssrs-2010 --package-parameters='"/PID:12345-12345-12345-12345-12345"'`
+  Example: `choco install -y ssrs-2019 --package-parameters='"/PID:12345-12345-12345-12345-12345"'`
 * `/Edition` sets the custom free edition.  Options are `Dev`, `Eval`, or `ExprAdv`.
-    > Default: `Eval`\
-    > Example: `choco install -y ssrs-2010 --package-parameters='"/Edition:Dev"'`
+  Default: `Eval`
+  Example: `choco install -y ssrs-2019 --package-parameters='"/Edition:Dev"'`
 * `/EditionUpgrade` upgrades the edition of the installed product.  Required `/PID` or `/Edition` flag.
-    > Example: `choco install -y ssrs-2010 --package-parameters='"/EditionUpgrade /Edition:Dev"'`\
-    > Example: `choco install -y ssrs-2010 --package-parameters='"/EditionUpgrade /PID:PID:12345-12345-12345-12345-12345"'`
+  Example: `choco install -y ssrs-2019 --package-parameters='"/EditionUpgrade /Edition:Dev"'`
+  Example: `choco install -y ssrs-2019 --package-parameters='"/EditionUpgrade /PID:PID:12345-12345-12345-12345-12345"'`
 
 ## Notes
 
