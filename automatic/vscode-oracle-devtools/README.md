@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@82e06bc18df415a03c0782f4891ce74a4ad38a87/icons/vscode-oracle-devtools.png" width="48" height="48" />Oracle Developer Tolols VSCode Extension](<https://chocolatey.org/packages/vscode-oracle-devtools>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@acfad5f2b064ccdc27c724a0354fd92a413d05aa/icons/vscode-oracle-devtools.png" width="48" height="48" />Oracle Developer Tolols VSCode Extension](<https://chocolatey.org/packages/vscode-oracle-devtools>)
 
 [![Software license](https://img.shields.io/badge/license-proprietary-lightgrey)](https://marketplace.visualstudio.com/items/Oracle.oracledevtools/license)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
