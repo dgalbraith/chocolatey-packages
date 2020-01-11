@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@33c7b8a0ff12bfe0fc3aedcce40b74c6184c9e11/icons/vscode-java-dependency.png" width="48" height="48" />Java Dependency Viewer VSCode Extension](<https://chocolatey.org/packages/vscode-java-dependency>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@33c7b8a0ff12bfe0fc3aedcce40b74c6184c9e11/icons/vscode-java-dependency.png" width="48" height="48" />Java Dependency Viewer VSCode Extension](<https://chocolatey.org/packages/vscode-java-dependency>)
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/vscode-java-dependency)](https://github.com/microsoft/vscode-java-dependency/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
@@ -17,7 +17,7 @@ A lightweight extension to provide additional Java project explorer features. It
 
 ## Notes
 
-* This package requires Visual Studio Code 1.28.0 or newer.
+* This package requires Visual Studio Code 1.31.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
