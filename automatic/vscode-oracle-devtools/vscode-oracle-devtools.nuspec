@@ -9,7 +9,7 @@
     <title>Oracle Developer Tools for VS Code</title>
     <authors>Oracle</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=Oracle.oracledevtools</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@82e06bc18df415a03c0782f4891ce74a4ad38a87/icons/vscode-oracle-devtools.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@acfad5f2b064ccdc27c724a0354fd92a413d05aa/icons/vscode-oracle-devtools.png</iconUrl>
     <copyright>Copyright 2019-2020 Oracle</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/Oracle.oracledevtools/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
