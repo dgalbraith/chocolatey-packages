@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-intellicode</id>
-    <version>1.2.0</version>
+    <version>1.2.3</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-intellicode</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>IntelliCode VSCode Extension</title>
     <authors>Microsoft</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8c5592c5c04a7de4544145427fb03cbe2ac9b969/icons/vscode-intellicode.png</iconUrl>
-    <copyright>Copyright 2018-2019 Microsoft</copyright>
+    <copyright>Copyright 2018-2020 Microsoft</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/VisualStudioExptTeam.vscodeintellicode/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/MicrosoftDocs/intellicode</projectSourceUrl>

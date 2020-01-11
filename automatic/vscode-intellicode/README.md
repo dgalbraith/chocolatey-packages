@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8c5592c5c04a7de4544145427fb03cbe2ac9b969/icons/vscode-intellicode.png" width="48" height="48" />IntelliCode for VSCode Extension](<https://chocolatey.org/packages/vscode-intellicode>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8c5592c5c04a7de4544145427fb03cbe2ac9b969/icons/vscode-intellicode.png" width="48" height="48" />IntelliCode for VSCode Extension](<https://chocolatey.org/packages/vscode-intellicode>)
 
 [![GitHub license](https://img.shields.io/github/license/MicrosoftDocs/intellicode)](https://github.com/MicrosoftDocs/intellicode/blob/master/LICENSE-CODE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
