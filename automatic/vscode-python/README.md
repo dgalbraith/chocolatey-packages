@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@06451096e6d52b43cc821a657a5af03eeccc0485/icons/vscode-python.png" width="48" height="48" /> Python VSCode Extension](<https://chocolatey.org/packages/vscode-python>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@06451096e6d52b43cc821a657a5af03eeccc0485/icons/vscode-python.png" width="48" height="48" /> Python VSCode Extension](<https://chocolatey.org/packages/vscode-python>)
 
 [![GitHub license](https://img.shields.io/github/license/Microsoft/vscode-python)](https://github.com/microsoft/vscode-python/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)

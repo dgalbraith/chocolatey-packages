@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-python</id>
-    <version>2019.11.50794</version>
+    <version>2020.1.58038</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-maven</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Python VSCode Extension</title>
     <authors>Microsoft</authors>
     <projectUrl>https://code.visualstudio.com/docs/languages/python</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@06451096e6d52b43cc821a657a5af03eeccc0485/icons/vscode-python.png</iconUrl>
-    <copyright>Copyright 2016-2019 Microsoft Corporation</copyright>
+    <copyright>Copyright 2016-2020 Microsoft Corporation</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-python.python/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/microsoft/vscode-python</projectSourceUrl>
