@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>winaero-tweaker.portable</id>
+    <version>0.16.1.0</version>
+    <owners>bcurran3,dgalbraith</owners>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/winaero-tweaker.portable</packageSourceUrl>
+    <title>Winaero Tweaker</title>
+    <authors>Sergey Tkachenko</authors>
+    <projectUrl>http://winaero.com/index.php</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@13e084a993db7ca0e2260759355fb12d225be4dd/icons/winaero-tweaker.png</iconUrl>
+    <copyright>© Winaero.com</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://winaero.com/blog/winaero-tweaker-faq/</docsUrl>
+    <bugTrackerUrl>http://winaero.com/comment.php?comment.news.1836</bugTrackerUrl>
+    <tags>winaero tweaker windows aero system utility</tags>
+    <summary>Customize the appearance and behavior of the Windows operating system</summary>
+    <description>
+Winaero Tweaker is essential software for every Windows 10, Windows 8 and Windows 7 user. It allows you to customize the appearance and behavior of the operating system in a flexible way.
+
+## Features
+
+* A complete list of [Winaero Tweaker features](https://winaero.com/blog/the-list-of-winaero-tweaker-features/)
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@13e084a993db7ca0e2260759355fb12d225be4dd/manual/winaero-tweaker/screenshot.png)
+
+## Notes
+
+* This package is currently manually updated and the package will always download the latest version.
+* Versions released after the package will cause checksums to fail.  If this is the case please contact the maintainer(s) and let them know the package requires updating.
+
+    </description>
+    <releaseNotes>https://winaero.com/blog/winaero-tweaker-0-16-1-is-out/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
