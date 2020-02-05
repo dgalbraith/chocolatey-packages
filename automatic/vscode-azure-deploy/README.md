@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@5d2eb9faae63c97246c26e86310ce1d07140eb88/icons/vscode-azure-deploy.png" width="48" height="48" />Deploy to Azure VSCode Extension](<https://chocolatey.org/packages/vscode-azure-deploy>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@5d2eb9faae63c97246c26e86310ce1d07140eb88/icons/vscode-azure-deploy.png" width="48" height="48" />Deploy to Azure VSCode Extension](<https://chocolatey.org/packages/vscode-azure-deploy>)
 
 [![GitHub license](https://img.shields.io/badge/badges-MIT-green.svg)](https://marketplace.visualstudio.com/items/ms-vscode-deploy-azure.azure-deploy/license)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)

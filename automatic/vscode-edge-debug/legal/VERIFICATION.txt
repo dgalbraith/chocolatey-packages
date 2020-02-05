@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge
 
-and download the extension msjsdiag.debugger-for-edge-1.0.13.vsix using the Download Extension link
+and download the extension msjsdiag.debugger-for-edge-1.0.14.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/msjsdiag/vsextensions/debugger-for-edge/1.0.13/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/msjsdiag/vsextensions/debugger-for-edge/1.0.14/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash msjsdiag.debugger-for-edge-1.0.13.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f msjsdiag.debugger-for-edge-1.0.13.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash msjsdiag.debugger-for-edge-1.0.14.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f msjsdiag.debugger-for-edge-1.0.14.vsix
 
   Type:     sha256
-  Checksum: 6DD4B31CA45FA7168709A76C45246067B205278A2B6FBA32FEE80EEE5F24DC53
+  Checksum: 52228BA7927D5BDC29440C6B3348C7905A9B8EFB7D7F6B549B29E0FB8F70F80B
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/msjsdiag.debugger-for-edge/license
