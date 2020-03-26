@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@04c2c097ddd064697ce5d666d0dc3138ac671dbc/icons/vscode-kubernetes-tools.png" width="48" height="48" />Kubernetes Tools VSCode Extension](<https://chocolatey.org/packages/vscode-kubernetes-tools>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@04c2c097ddd064697ce5d666d0dc3138ac671dbc/icons/vscode-kubernetes-tools.png" width="48" height="48" />Kubernetes Tools VSCode Extension](<https://chocolatey.org/packages/vscode-kubernetes-tools>)
 
 [![GitHub license](https://img.shields.io/github/license/azure/vscode-kubernetes-tools)](https://github.com/Azure/vscode-kubernetes-tools/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
