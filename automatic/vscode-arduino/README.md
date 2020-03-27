@@ -26,7 +26,7 @@ The Arduino extension makes it easy to develop, build, deploy and debug your Ard
 
 * This package requires an Arduino IDE 1.6.x or newer.
   You can install a version using the [Arduino Chocolatey package](https://www.chocolatey.org/packages/arduino) or using the [official distribution](https://www.arduino.cc/en/main/software#download). Note the Windows Store / App version is **not** supported.
-* This package requires Visual Studio Code 1.23.0 or newer.
+* This package requires Visual Studio Code 1.43.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
