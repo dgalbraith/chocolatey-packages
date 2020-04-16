@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go
 
-and download the extension ms-vscode.Go-0.12.0.vsix using the Download Extension link
+and download the extension ms-vscode.Go-0.14.1.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-vscode/vsextensions/Go/0.12.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-vscode/vsextensions/Go/0.14.1/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash ms-vscode.Go-0.12.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-vscode.Go-0.12.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash ms-vscode.Go-0.14.1.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-vscode.Go-0.14.1.vsix
 
   Type:     sha256
-  Checksum: FB2D1BAD54504C161629DA3E7450A9EBF0CFE8396EE75F1E15FCBCD16258F181
+  Checksum: 8A2A04B5CFD9E2493060891F6F59D00E2468D26A42766ED33CD94AAE413D48FE
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-vscode.Go/license
