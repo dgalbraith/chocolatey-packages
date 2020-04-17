@@ -4,13 +4,13 @@
   <metadata>
     <id>neck-diagrams</id>
     <version>2.0.3</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/automatic/neck-diagrams</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/neck-diagrams</packageSourceUrl>
     <owners>dgalbraith</owners>
-    <title>Neck Diagrams 2</title>
+    <title>Neck Diagrams</title>
     <authors>Digital Software Technology Ltd</authors>
     <projectUrl>https://www.neckdiagrams.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@aaced40197b4b4f40922fd84260d77cd7214efc9/automatic/neck-diagrams/icon.png</iconUrl>
-    <copyright>2008-2019 Digital Software Technology Ltd</copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@aaced40197b4b4f40922fd84260d77cd7214efc9/icons/neck-diagrams.png</iconUrl>
+    <copyright>2008-2020 Digital Software Technology Ltd</copyright>
     <licenseUrl>https://www.neckdiagrams.com/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>neck-diagrams fretboard-diagram chord-chart chord-box-creator fretboard chord-box diagram trial</tags>
@@ -36,7 +36,7 @@ Neck Diagrams is a powerful tool that creates fretboard diagrams, chord charts a
   * scale generator can be used up to 10 times
 
 ]]></description>
-    <releaseNotes>https://www.neckdiagrams.com/download/version-history</releaseNotes>
+    <releaseNotes>https://www.neckdiagrams.com/download/release-notes</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

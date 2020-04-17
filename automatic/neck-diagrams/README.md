@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@aaced40197b4b4f40922fd84260d77cd7214efc9/icons/neck-diagrams.png" width="48" height="48" /> Neck Diagrams 2](<https://chocolatey.org/packages/neck-diagrams>)
+﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@aaced40197b4b4f40922fd84260d77cd7214efc9/icons/neck-diagrams.png" width="48" height="48" /> Neck Diagrams](<https://chocolatey.org/packages/neck-diagrams>)
 
 [![Software license](https://img.shields.io/badge/license-Proprietary-lightgrey)](https://www.neckdiagrams.com/license)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
