@@ -10,7 +10,7 @@
     <authors>Sergey Tkachenko</authors>
     <projectUrl>http://winaero.com/index.php</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@13e084a993db7ca0e2260759355fb12d225be4dd/icons/winaero-tweaker.png</iconUrl>
-    <copyright>Sergey Tkachenko</copyright>
+    <copyright>Copyright Sergey Tkachenko</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>http://winaero.com/blog/winaero-tweaker-faq/</docsUrl>
     <bugTrackerUrl>http://winaero.com/comment.php?comment.news.1836</bugTrackerUrl>
