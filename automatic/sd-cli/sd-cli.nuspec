@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sd-cli</id>
+    <version>0.7.5</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sd-cli</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>sd - s[earch] &amp; d[isplace]</title>
+    <authors>chmln</authors>
+    <projectUrl>https://github.com/chmln/sd</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@870b9adb7bb9949508f14b26a492cbc5c0fa6759/icons/sd-cli.png</iconUrl>
+    <copyright>Copyright Gregory</copyright>
+    <licenseUrl>https://github.com/chmln/sd/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://github.com/chmln/sd/blob/master/README.md</docsUrl>
+    <tags>search-displace text-processing regex search find replace command-line cli chmln</tags>
+    <summary>Intuitive find and replace CLI</summary>
+    <description><![CDATA[`sd` is an intuitive find and replace CLI.
+
+## Features
+
+* Painless regular expressions - `sd` uses regex syntax that you already know from JavaScript and Python. Forget about dealing with quirks of `sed` or `awk` - get productive immediately.
+* String-literal mode - Non-regex find & replace. No more backslashes or remembering which characters are special and need to be escaped.
+* Easy to read, easy to write - Find & replace expressions are split up, which makes them easy to read and write. No more messing with unclosed and escaped slashes.
+* Smart, common-sense defaults - Defaults follow common sense and are tailored for typical daily use.
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/chmln/sd/releases/latest</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
