@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official GitHub releases page
+and can be verified by:
+
+1. Go to the GitHub releases page for the application
+
+  https://github.com/chmln/sd/releases/tag/v0.7.5
+
+and download the binary distribution sd.0.7.5-.x86_64-pc-windows-msvc.zip using the
+link in the Assets section of the page.
+
+Alternatively the distribution can be downloaded directly from
+
+  https://github.com/chmln/sd/releases/download/v0.7.5/sd.0.7.5-.x86_64-pc-windows-msvc.zip
+
+2. The extension can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash sd.0.7.5-.x86_64-pc-windows-msvc.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f sd.0.7.5-.x86_64-pc-windows-msvc.zip
+
+  Type:     sha256
+  Checksum: B27672506F38C6A4BF6E26EC5DDCCE8497C42EAEEDBFFD43A1DE29E70E30F9EA
+
+  Contents of file LICENSE.txt is obtained from https://github.com/chmln/sd/blob/master/LICENSE
