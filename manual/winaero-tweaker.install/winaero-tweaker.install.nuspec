@@ -31,6 +31,9 @@ Winaero Tweaker is essential software for every Windows 10, Windows 8 and Window
 * Versions released after the package will cause checksums to fail.  If this is the case please contact the maintainer(s) and let them know the package requires updating.
 
     </description>
+    <dependencies>
+      <dependency id="kb2919355" version="1.0.20160915" />
+    </dependencies>
     <releaseNotes>https://winaero.com/blog/winaero-tweaker-0-17-is-available/</releaseNotes>
   </metadata>
   <files>
