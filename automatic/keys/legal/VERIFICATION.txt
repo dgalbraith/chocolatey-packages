@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the application home page
+
+  https://keys.pub
+
+and download the installer Keys-0.0.45.msi using the Download for Windows link
+in the Install section of the main page.
+
+Alternatively the distribution can be downloaded directly from
+
+  https://github.com/keys-pub/app/releases/download/v0.0.45/Keys-0.0.45.msi
+
+2. The installer can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash Keys-0.0.45.msi
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Keys-0.0.45.msi
+
+  Type:     sha256
+  Checksum: 46A6AA016DC2B33F8C6CB227F79434337627D9F65688B636151009DCDBD27471
+
+  Contents of file LICENSE.txt is obtained from https://github.com/keys-pub/keys/blob/master/LICENSE
