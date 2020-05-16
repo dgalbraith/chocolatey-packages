@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-drawio</id>
+    <version>0.3.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-drawio</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Draw.io VSCode Extension</title>
+    <authors>Henning Dieterichs</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ad34a1763216744b71bb9261fe8cd9927d26f34b/icons/vscode-drawio.png</iconUrl>
+    <copyright>Copyright 2020 Henning Dieterichs</copyright>
+    <licenseUrl>https://github.com/hediet/vscode-drawio/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/hediet/vscode-drawio</projectSourceUrl>
+    <docsUrl>https://github.com/hediet/vscode-drawio/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/hediet/vscode-drawio/issues</bugTrackerUrl>
+    <tags>draw.io diagram sketch vscode hediot</tags>
+    <summary>Draw.io integration for Visual Studio Code</summary>
+    <description><![CDATA[This extension integrates [Draw.io](https://app.diagrams.net/) into VS Code.
+
+## Features
+
+* Edit `.drawio`, `.dio` or `.drawio.svg` files in the Draw.io editor.
+* To create a new diagram, simply create an empty `*.drawio` or `*.drawio.svg` file and open it!
+* `.drawio.svg` are valid `.svg` files that can be embedded in Github readme files! No export needed.
+* To convert a Draw.io file from `.drawio` to `.drawio.svg`, use the `File: Save As` command.
+* Uses an offline version of Draw.io by default.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ad34a1763216744b71bb9261fe8cd9927d26f34b/automatic/vscode-drawio/screenshot.png)
+
+## Notes
+
+* This package requires Visual Studio Code 1.44.0 or newer.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in all editions of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://marketplace.visualstudio.com/items/hediet.vscode-drawio/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
