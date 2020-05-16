@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@6524dd81768c37021fdcf6d6a0ab9b15243005aa/icons/keys.png" width="48" height="48"/>keys](<https://chocolatey.org/packages/keys>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@6524dd81768c37021fdcf6d6a0ab9b15243005aa/icons/keys.png" width="48" height="48"/>Keys - Cryptographic Key Management](<https://chocolatey.org/packages/keys>)
 
 [![GitHub license](https://img.shields.io/github/license/keys-pub/keys)](https://github.com/keys-pub/keys/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
