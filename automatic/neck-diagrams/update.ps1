@@ -5,16 +5,16 @@ $ErrorActionPreference = 'STOP'
 $releases = 'https://www.neckdiagrams.com/download'
 
 function global:au_SearchReplace {
-    @{
-        ".\tools\chocolateyInstall.ps1" = @{
-          "(\s*url\s*=\s*)('.*')"             = "`$1'$($Latest.URL32)'"
-          "(\s*url64bit\s*=\s*)('.*')"        = "`$1'$($Latest.URL64)'"
-          "(\s*checksum\s*=\s*)('.*')"        = "`$1'$($Latest.Checksum32)'"
-          "(\s*checksumType\s*=\s*)('.*')"    = "`$1'$($Latest.ChecksumType32)'"
-          "(\s*checksum64\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum64)'"
-          "(\s*checksumType64\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType64)'"
-      }
+  @{
+      ".\tools\chocolateyInstall.ps1" = @{
+        "(\s*url\s*=\s*)('.*')"             = "`$1'$($Latest.URL32)'"
+        "(\s*url64bit\s*=\s*)('.*')"        = "`$1'$($Latest.URL64)'"
+        "(\s*checksum\s*=\s*)('.*')"        = "`$1'$($Latest.Checksum32)'"
+        "(\s*checksumType\s*=\s*)('.*')"    = "`$1'$($Latest.ChecksumType32)'"
+        "(\s*checksum64\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum64)'"
+        "(\s*checksumType64\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType64)'"
     }
+  }
 }
 
 function global:au_GetLatest {
@@ -36,7 +36,7 @@ function global:au_GetLatest {
 
   $version = $Matches.Version
 
-  $regex = [regex] '(?<Version>[32|64]+bit).*[>](?<Type>[a-zA-Z0-9]*\s)checksum:\s(?<Digest>[a-zA-Z0-9]*)'
+  $regex = [regex] "(?s)(\'(?<File>NeckDiagrams-(?<Version>\d+\.\d+\.\d+)-Setup-(?<Bits>(32|64)bit)\.exe\')).*?((?<Type>[a-zA-Z0-9]+)\schecksum:\s(?<Digest>[a-zA-Z0-9]*))"
   $allmatches = $regex.Matches($download_page.Content)
   foreach ($match in $allmatches) {
     if ($match -match '32bit') {
@@ -61,4 +61,4 @@ function global:au_GetLatest {
   }
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckUrl -NoReadme

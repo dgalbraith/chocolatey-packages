@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-Proprietary-lightgrey)](https://www.neckdiagrams.com/license)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Chocolatey package version](https://img.shields.io/chocolatey/v/neck-diagrams?label=Chocolatey)](<https://chocolatey.org/packages/neck-diagrams>)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/neck-diagrams?label=Chocolatey)](https://chocolatey.org/packages/neck-diagrams)
 
 Neck Diagrams is a powerful tool that creates fretboard diagrams, chord charts and more. It's your magical canvas for fretboards, horizontal for wide fretboard diagrams, or vertical for traditional chord boxes. Annotates your diagrams with neat and nifty text too!
 
