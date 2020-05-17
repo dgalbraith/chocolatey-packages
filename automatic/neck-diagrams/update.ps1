@@ -36,7 +36,7 @@ function global:au_GetLatest {
 
   $version = $Matches.Version
 
-  $regex = [regex] '(?<Version>[32|64]+bit).*[>](?<Type>[a-zA-Z0-9]*\s)checksum:\s(?<Digest>[a-zA-Z0-9]*)'
+  $regex = [regex] "(?s)(\'(?<File>NeckDiagrams-(?<Version>\d+\.\d+\.\d+)-Setup-(?<Bits>(32|64)bit)\.exe\')).*?((?<Type>[a-zA-Z0-9]+)\schecksum:\s(?<Digest>[a-zA-Z0-9]*))"
   $allmatches = $regex.Matches($download_page.Content)
   foreach ($match in $allmatches) {
     if ($match -match '32bit') {
