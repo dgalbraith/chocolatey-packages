@@ -1,4 +1,4 @@
-﻿# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@1d50526002930359ca29f0722608cc1f0cf99e37/icons/vscode-chrome-debug.png" width="48" height="48" />Debugger for Chrome VSCode Extension](<https://chocolatey.org/packages/vscode-chrome-debug>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@1d50526002930359ca29f0722608cc1f0cf99e37/icons/vscode-chrome-debug.png" width="48" height="48" />Debugger for Chrome VSCode Extension](<https://chocolatey.org/packages/vscode-chrome-debug>)
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/vscode-chrome-debug)](https://github.com/microsoft/vscode-chrome-debug/blob/master/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
@@ -27,7 +27,7 @@ A VS Code extension to debug your JavaScript code in the Google Chrome browser, 
 
 ## Notes
 
-* This package requires Visual Studio Code 1.32.0 or newer.
+* This package requires Visual Studio Code 1.41.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
