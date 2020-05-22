@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kyma-cli</id>
+    <version>1.12.1</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/kyma-cli</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Kyma CLI - Install, Manage and Test Kyma</title>
+    <authors>Kyma Project</authors>
+    <projectUrl>https://kyma-project.io/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ed7c4cc026f0f3a9f578dddea34adee6e38e45f0/icons/kyma-cli.png</iconUrl>
+    <copyright>Kyma Project</copyright>
+    <licenseUrl>https://github.com/kyma-project/cli/blob/master/LICENCE/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/kyma-project/cli</projectSourceUrl>
+    <docsUrl>https://github.com/kyma-project/cli/blob/master/README.md</docsUrl>
+    <tags>kubernetes cli install manage test kyma</tags>
+    <summary>Simple set of commands to manage a Kyma installation </summary>
+    <description><![CDATA[Kyma CLI is a command line tool which supports Kyma developers. It provides a set of commands you can use to install, manage, and test Kyma.
+
+## Features
+
+* Generates and displays the bash or zsh completion script
+* Launches the Kyma Console in a browser window
+* Installs Kyma on a cluster based on the current or specified release
+* Provisions a new cluster on a platform of your choice. Currently, this command supports cluster provisioning on GCP, Azure, Gardener, and Minikube
+* Runs and manages tests on a provisioned Kyma cluster. Using child commands, you can run tests, view test definitions, list and delete test suites, display test status, and fetch the logs of the tests
+* Shows the cluster version and the Kyma CLI version
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ed7c4cc026f0f3a9f578dddea34adee6e38e45f0/automatic/kyma-cli/screenshot.png)
+
+## Prerequisites
+
+Kyma CLI requires the following software:
+
+* [kubectl](https://github.com/kubernetes/kubectl)
+* [Minikube](https://www.chocolatey.org/packages/Minikube)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/kyma-project/cli/releases/latest</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
