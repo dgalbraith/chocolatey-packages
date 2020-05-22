@@ -1,0 +1,33 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/kyma-project/cli/releases/
+
+and download the archive kyma_Windows_i386.zip or kyma_Windows_x86_64.zip using
+the links in the relevant assets section of the page.
+
+Alternatively the distributions can be downloaded directly from
+
+  https://github.com/kyma-project/cli/releases/download/1.12.1/kyma_Windows_i386.zip
+  https://github.com/kyma-project/cli/releases/download/1.12.1/kyma_Windows_x86_64.zip
+
+2. The installer can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash kyma_Windows_i386.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f kyma_Windows_x86_64.zip
+
+  File32:         kyma_Windows_i386.zip
+  ChecksumType32: sha256
+  Checksum32:     9DEF61E505012DDBD11218FF6AAC4C437E020899AB80AF7EE9E61A95FA7E3D0B
+
+  File64:         kyma_Windows_x86_64.zip
+  ChecksumType64: sha256
+  Checksum64:     3CB5659877B5B06147D9394E454944D0F7BB1A62F7D045668E2C0B01E8317846
+
+  Contents of file LICENSE.txt is obtained from https://github.com/kyma-project/cli/blob/master/LICENCE
