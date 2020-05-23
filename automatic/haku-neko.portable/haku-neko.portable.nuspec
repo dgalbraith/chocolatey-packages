@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>haku-neko.portable</id>
+    <version>6.1.7</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/haku-neko.portable</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>HakuNeko (Portable) - Download Manga and Anime</title>
+    <authors>Ronny Wegener</authors>
+    <projectUrl>https://github.com/manga-download/hakuneko</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4c651ae6f23cfc1b5703782011a8a78fe0ff17c7/icons/haku-neko.png</iconUrl>
+    <copyright>None</copyright>
+    <licenseUrl>https://github.com/manga-download/hakuneko/blob/master/UNLICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/manga-download/hakuneko</projectSourceUrl>
+    <docsUrl>https://github.com/manga-download/hakuneko/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/manga-download/hakuneko/issues/</bugTrackerUrl>
+    <tags>manga anime download manga-downloader anime-downloader portable haku-neko</tags>
+    <summary>Manga and anime downloader and viewer</summary>
+    <description><![CDATA[HakuNeko is a cross-platform downloader for manga and anime from various websites.
+
+## Features
+
+* Manga List - all available mangas from different sources such as websites, bookmarks and clipboard along with simple search to filter the list
+* Chapter List - all available chapters for the currently selected manga with basic sorting and advanced filtering options
+* Download Queue - status and progress of chapters that are currently downloading
+* Preview Panel - preview pages for the currently selected manga or play an anime episode
+* Reader - display and navigate manga
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4c651ae6f23cfc1b5703782011a8a78fe0ff17c7/automatic/haku-neko.portable/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/manga-download/hakuneko/releases/tag/v6.1.7</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

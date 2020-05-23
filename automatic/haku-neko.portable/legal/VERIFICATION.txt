@@ -1,0 +1,37 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/manga-download/hakuneko/releases
+
+and download the archive hakuneko-desktop_6.1.7_windows-portable_i386.zip or
+hakuneko-desktop_6.1.7_windows-portable_amd64.zip using the links in the relevant
+assets section of the page.
+
+Alternatively the archives can be downloaded directly from
+
+  https://github.com/manga-download/hakuneko/releases/download/v6.1.7/hakuneko-desktop_6.1.7_windows-portable_i386.zip
+  https://github.com/manga-download/hakuneko/releases/download/v6.1.7/hakuneko-desktop_6.1.7_windows-portable_amd64.zip
+
+2. The installer can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash hakuneko-desktop_6.1.7_windows-portable_i386.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hakuneko-desktop_6.1.7_windows-portable_i386.zip
+
+  File32:         hakuneko-desktop_6.1.7_windows-portable_i386.zip
+  ChecksumType32: sha256
+  Checksum32: C3C36FF824FBA2258788F33AD2ED83B730443000CD554032C5433716162121D3
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash hakuneko-desktop_6.1.7_windows-portable_amd64.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hakuneko-desktop_6.1.7_windows-portable_amd64.zip
+
+  File64:         hakuneko-desktop_6.1.7_windows-portable_amd64.zip
+  ChecksumType64: sha256
+  Checksum64: 170E50B5E95A945FAC9172F2AB7F2B8015C486F91468A6311593AC33075073F2
+
+  Contents of file LICENSE.txt is obtained from https://github.com/manga-download/hakuneko/blob/master/UNLICENSE
