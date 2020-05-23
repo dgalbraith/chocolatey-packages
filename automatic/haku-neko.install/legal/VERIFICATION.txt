@@ -1,0 +1,37 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/manga-download/hakuneko/releases
+
+and download the installer hakuneko-desktop_6.1.7_windows-setup_i386.exe or
+hakuneko-desktop_6.1.7_windows-setup_amd64.exe using the links in the relevant
+assets section of the page.
+
+Alternatively the installers can be downloaded directly from
+
+  https://github.com/manga-download/hakuneko/releases/download/v6.1.7/hakuneko-desktop_6.1.7_windows-setup_i386.exe
+  https://github.com/manga-download/hakuneko/releases/download/v6.1.7/hakuneko-desktop_6.1.7_windows-setup_amd64.exe
+
+2. The installer can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash hakuneko-desktop_6.1.7_windows-setup_i386.exe
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hakuneko-desktop_6.1.7_windows-setup_i386.exe
+
+  File32:         hakuneko-desktop_6.1.7_windows-setup_i386.exe
+  ChecksumType32: sha256
+  Checksum32: BB517338C7F1D6CAD4913625A6320FFEC7D696214BF5DC44D9AF5D49492ABEA2
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash hakuneko-desktop_6.1.7_windows-setup_amd64.exe
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hakuneko-desktop_6.1.7_windows-setup_amd64.exe
+
+  File64:         hakuneko-desktop_6.1.7_windows-setup_amd64.exe
+  ChecksumType64: sha256
+  Checksum64: 94022C4A6E33BC590FED54918D0BFCD7237642805E90051219FBA786F1BBD667
+
+  Contents of file LICENSE.txt is obtained from https://github.com/manga-download/hakuneko/blob/master/UNLICENSE
