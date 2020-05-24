@@ -10,7 +10,7 @@
     <authors>Ronny Wegener</authors>
     <projectUrl>https://github.com/manga-download/hakuneko</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4c651ae6f23cfc1b5703782011a8a78fe0ff17c7/icons/haku-neko.png</iconUrl>
-    <copyright>None</copyright>
+    <copyright>None - HakuNeko is dedicated to the public domain</copyright>
     <licenseUrl>https://github.com/manga-download/hakuneko/blob/master/UNLICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/manga-download/hakuneko</projectSourceUrl>
