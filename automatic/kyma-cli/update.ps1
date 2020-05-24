@@ -42,7 +42,7 @@ function global:au_GetLatest {
   $url64SegmentSize = $([System.Uri]$url64).Segments.Length
   $filename64 = $([System.Uri]$url64).Segments[$url64SegmentSize - 1]
 
-  $url -match $reversion
+  $url64 -match $reversion
   $version = $Matches.Version
 
   return @{
