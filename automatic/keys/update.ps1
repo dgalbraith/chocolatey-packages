@@ -16,7 +16,7 @@ function global:au_SearchReplace {
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      "(\s')(sd.+64.+\.zip)" = "`${1}$($Latest.Filename64)"
+      "(Keys.+msi)" = "$($Latest.Filename64)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
