@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tunein-radio</id>
+    <version>1.18.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/tunein-radio</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>TuneIn Radio Desktop</title>
+    <authors>TuneIn Inc.</authors>
+    <projectUrl>https://tunein.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4ca4bb149356048ba158a4e3e0ae5ae1d0b9ac22/icons/tunin-radio.png</iconUrl>
+    <copyright>Copyright TuneIn Inc.</copyright>
+    <licenseUrl>https://tunein.com/policies/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://help.tunein.com/</docsUrl>
+    <tags>radio internet-radio music podcast tunein</tags>
+    <summary>TuneIn Radio desktop application</summary>
+    <description><![CDATA[The TuneIn desktop app improves how you browse and discover content from all over the world, and enables you to seamlessly listen and save favorites across all of your devices.
+
+## Features
+
+* Live sports, music, news, podcasts, and internet radio from around the world
+* Listen to the audio you love on any device and let the moments move you
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4ca4bb149356048ba158a4e3e0ae5ae1d0b9ac22/automatic/tunein-radio/screenshot.png)
+
+## Notes
+
+* The installer is a combined installer containing both 32 and 64-bit versions but it is not possible to specify which to install on a 64-bit system.  The
+  installer will always use the version of the application matching the bitness of the OS.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
