@@ -9,7 +9,7 @@
     <title>TuneIn Radio Desktop</title>
     <authors>TuneIn Inc.</authors>
     <projectUrl>https://tunein.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4ca4bb149356048ba158a4e3e0ae5ae1d0b9ac22/icons/tunin-radio.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4ca4bb149356048ba158a4e3e0ae5ae1d0b9ac22/icons/tunein-radio.png</iconUrl>
     <copyright>Copyright TuneIn Inc.</copyright>
     <licenseUrl>https://tunein.com/policies/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
