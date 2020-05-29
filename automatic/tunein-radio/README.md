@@ -17,7 +17,7 @@ The TuneIn desktop app improves how you browse and discover content from all ove
 
 ## Notes
 
-* The installer is a combined installer containing both 32 and 64-bit versions but it is not possible to specify which to install on a 64-bit system.  The
-  installer will always use the version of the application matching the bitness of the OS.
+* The installer is a combined installer containing both 32 and 64-bit versions but it is not possible to specify which to install on a 64-bit
+  system.  The installer will always use the version of the application matching the bitness of the OS.
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
