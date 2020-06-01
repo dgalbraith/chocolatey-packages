@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/beekeeper-studio/beekeeper-studio/releases
+
+and download the installer Beekeeper-Studio-Setup-1.4.0.exe using
+the links in the relevant assets section of the page.
+
+Alternatively the installer can be downloaded directly from
+
+  https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v1.4.0/Beekeeper-Studio-Setup-1.4.0.exe
+
+2. The installer can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Beekeeper-Studio-Setup-1.4.0.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Beekeeper-Studio-Setup-1.4.0.exe
+
+  File64:     Beekeeper-Studio-Setup-1.4.0.exe
+  Type64:     sha256
+  Checksum64: 1CFB3E1B59D06AB8519F1D4699932DB43C06A9A5CBC76C8DD107F8F673B7C7F6
+
+Contents of file LICENSE.txt is obtained from https://github.com/beekeeper-studio/beekeeper-studio/blob/master/LICENSE.md
