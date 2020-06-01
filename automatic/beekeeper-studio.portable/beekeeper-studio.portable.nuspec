@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>beekeeper-studio.portable</id>
+    <version>1.4.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/beekeeper-studio.portable</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Beekeeper Studio (Portable) - SQL Editor and Database Manager</title>
+    <authors>Rathbone Labs LLC</authors>
+    <projectUrl>https://www.beekeeperstudio.io/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@681eb28f08e5fdf2807bf338a7b0852780cd6f93/icons/beekeeper-studio.png</iconUrl>
+    <copyright>Copyright Matthew Rathbone and Gregory Garden</copyright>
+    <licenseUrl>https://github.com/beekeeper-studio/beekeeper-studio/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/beekeeper-studio/beekeeper-studio</projectSourceUrl>
+    <docsUrl>https://docs.beekeeperstudio.io/</docsUrl>
+    <bugTrackerUrl>https://github.com/beekeeper-studio/beekeeper-studio/issues</bugTrackerUrl>
+    <tags>database sql sqlite mysql portgress sql-server electron beekeeper-studio</tags>
+    <summary>Use Beekeeper Studio to query and manage your relational databases, like MySQL, Postgres, SQLite, and SQL Server</summary>
+    <description><![CDATA[Beekeeper Studio is a free and open source SQL editor and database manager.
+
+## Features
+
+* Autocomplete SQL query editor with syntax highlighting
+* Tabbed interface, so you can multitask
+* Sort and filter table data to find just what you need
+* Sensible keyboard-shortcuts
+* Save queries for later
+* Query run-history, so you can find that one query you got working 3 days ago
+* Default dark theme
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@681eb28f08e5fdf2807bf338a7b0852780cd6f93/automatic/beekeeper-studio/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v1.4.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
