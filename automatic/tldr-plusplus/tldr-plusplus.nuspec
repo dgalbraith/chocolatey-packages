@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tldr-plusplus</id>
+    <version>0.6.1</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/tldr-plusplus</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>tldr++ - Interactive TLDR Client</title>
+    <authors>İbrahim Serdar Açıkgöz</authors>
+    <projectUrl>https://isacikgoz.me/tldr/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@fbd93afdbed3586c5e8caccd8d16dc157139be9a/icons/tldr.png</iconUrl>
+    <copyright>Copyright İbrahim Serdar Açıkgöz</copyright>
+    <licenseUrl>https://github.com/isacikgoz/tldr/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/isacikgoz/tldr</projectSourceUrl>
+    <docsUrl>https://isacikgoz.me/tldr/archives/</docsUrl>
+    <bugTrackerUrl>https://github.com/isacikgoz/tldr/issues</bugTrackerUrl>
+    <tags>documentation man-pages tldr-pages examples help tldr tldr++</tags>
+    <summary>Interactive tldr client</summary>
+    <description><![CDATA[Interactive tldr client.
+
+Community-driven man pages improved with smart user interaction.  [tldr++](https://isacikgoz.me/tldr/) seperates itself from any other
+[tldr](https://tldr.sh/) client with convenient user guidance features.
+
+## Features
+
+* Fully Interactive (fill the command arguments easily)
+* Search from commands to find your desired command (exact + fuzzy search)
+* Smart file suggestions (further suggestions will be added)
+* Simple implementation
+* One of the fastest clients, even fastest (see [Benchmarks](https://github.com/isacikgoz/tldr/wiki/Benchmarks))
+* Pure-go (even contains built-in git)
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@fbd93afdbed3586c5e8caccd8d16dc157139be9a/automatic/tldr-plusplus/screenshot.png)
+
+## Notes
+
+* tldr++ only provides a 64-bit version
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/isacikgoz/tldr/releases/tag/v0.6.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
