@@ -10,18 +10,18 @@ be verified by:
 
   https://keys.pub
 
-and download the installer  using the Download for Windows link
+and download the installer Keys-0.0.47.msi using the Download for Windows link
 in the Install section of the main page.
 
 Alternatively the distribution can be downloaded directly from
 
-  https://github.com/
+  https://github.com/keys-pub/app/releases/download/v0.0.47/Keys-0.0.47.msi
 
 2. The installer can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash 
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f 
+  - Use powershell function 'Get-Filehash' - Get-Filehash Keys-0.0.47.msi
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Keys-0.0.47.msi
 
   Type:     sha256
-  Checksum: 
+  Checksum: 2CDC6034567C754D0B1D5C07A3B03BCB6E96ED67FC3B1D39D2D7AE4590E08A0F
 
   Contents of file LICENSE.txt is obtained from https://github.com/keys-pub/keys/blob/master/LICENSE
