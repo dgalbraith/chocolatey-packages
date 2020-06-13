@@ -28,12 +28,10 @@ The [tldr pages](https://tldr.sh/) are a community effort to simplify the belove
 
 * This is a meta-package which resolves to a preferred Windows client for tldr.  This is currently the [tldr++](https://isacikgoz.me/tldr/) client by
 İbrahim Serdar Açıkgöz but this may change over time.
-* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
-  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
     <dependencies>
-      <dependency id="tldr-plusplus" version="(0.6.1,)" />
+      <dependency id="tldr-plusplus" />
     </dependencies>
   </metadata>
   <files>
