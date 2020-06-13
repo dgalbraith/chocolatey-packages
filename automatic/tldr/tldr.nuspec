@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tldr</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/tldr</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>tldr - Simplified Community-Driven Man Pages</title>
+    <authors>tldr-pages team</authors>
+    <projectUrl>https://tldr.sh/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@fbd93afdbed3586c5e8caccd8d16dc157139be9a/icons/tldr.png</iconUrl>
+    <copyright>Copyright 2014-Present tldr-pages team and contributors</copyright>
+    <licenseUrl>https://github.com/tldr-pages/tldr/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/tldr-pages/tldr</projectSourceUrl>
+    <docsUrl>https://github.com/tldr-pages/tldr/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/tldr-pages/tldr/issues</bugTrackerUrl>
+    <tags>documentation man-pages tldr-pages  examples help tldr</tags>
+    <summary>Simplified and community-driven man pages</summary>
+    <description><![CDATA[Simplified and community-driven man pages.
+
+The [tldr pages](https://tldr.sh/) are a community effort to simplify the beloved [man pages](https://en.wikipedia.org/wiki/Man_page) with practical examples.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@fbd93afdbed3586c5e8caccd8d16dc157139be9a/automatic/tldr/screenshot.png)
+
+## Notes
+
+* This is a meta-package which resolves to a preferred Windows client for tldr.  This is currently the [tldr++](https://isacikgoz.me/tldr/) client by
+İbrahim Serdar Açıkgöz but this may change over time.
+
+]]></description>
+    <dependencies>
+      <dependency id="tldr-plusplus" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tldr.nuspec" target="tldr.nuspec" />
+  </files>
+</package>

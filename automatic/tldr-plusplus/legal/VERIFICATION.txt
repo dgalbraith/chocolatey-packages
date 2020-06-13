@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/isacikgoz/tldr/releases
+
+and download the archive tldr_0.6.1_windows_amd64.zip using the links in the relevant assets section of the page.
+
+Alternatively the installer can be downloaded directly from
+
+  https://github.com/isacikgoz/tldr/releases/download/v0.6.1/tldr_0.6.1_windows_amd64.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 tldr_0.6.1_windows_amd64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f tldr_0.6.1_windows_amd64.zip
+
+  File64:     tldr_0.6.1_windows_amd64.zip
+  Type64:     sha256
+  Checksum64: 355A8483F70F5CC5462D0618DAA9FFC13217CE2B4F90CF669B0065BB08FF6788
+
+Contents of file LICENSE.txt is obtained from https://github.com/isacikgoz/tldr/blob/master/LICENSE
