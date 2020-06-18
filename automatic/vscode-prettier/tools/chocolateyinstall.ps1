@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\esbenp.prettier-vscode-5.0.0.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\esbenp.prettier-vscode-5.0.1.vsix"
