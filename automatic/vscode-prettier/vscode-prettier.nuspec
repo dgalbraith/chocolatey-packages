@@ -14,7 +14,7 @@
     <licenseUrl>https://marketplace.visualstudio.com/items/esbenp.prettier-vscode/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/prettier/prettier-vscode</projectSourceUrl>
-    <docsUrl>https://github.com/prettier/prettier-vscode/blob/master/README.md</docsUrl>
+    <docsUrl>https://github.com/prettier/prettier-vscode/blob/main/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/prettier/prettier-vscode/issues</bugTrackerUrl>
     <tags>formatter code vscode prettier</tags>
     <summary>Debug your JavaScript code in the Chrome browser, or any other target that supports the Chrome Debugger protocol</summary>
@@ -39,7 +39,7 @@
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/prettier/prettier-vscode/blob/master/CHANGELOG.md</releaseNotes>
+    <releaseNotes>https://github.com/prettier/prettier-vscode/blob/main/CHANGELOG.md</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.1.0" />
     </dependencies>
