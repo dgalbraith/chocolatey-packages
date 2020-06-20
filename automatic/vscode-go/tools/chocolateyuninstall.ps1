@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Uninstall-VsCodeExtension -extensionId 'ms-vscode.Go'
+Uninstall-VsCodeExtension -extensionId 'golang.Go'
