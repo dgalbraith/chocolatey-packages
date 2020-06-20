@@ -1,8 +1,10 @@
-Import-Module au
+﻿Import-Module au
 Import-Module ..\..\scripts\vs-marketplace\VS-Marketplace.psd1
 
+$ErrorActionPreference = 'Stop'
+
 $extension = 'Go'
-$publisher = 'ms-vscode'
+$publisher = 'golang'
 
 function global:au_SearchReplace {
   @{
