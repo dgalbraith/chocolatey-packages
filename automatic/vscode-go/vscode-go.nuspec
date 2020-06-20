@@ -3,38 +3,37 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-go</id>
-    <version>0.14.3</version>
+    <version>0.14.4</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-go</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Go VSCode Extension</title>
-    <authors>Microsoft</authors>
-    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go</projectUrl>
+    <authors>Go Authors</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=golang.Go</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f6955499323841ec9a33508345bfe5257fcfee78/icons/vscode-go.png</iconUrl>
-    <copyright>Copyright 2015-2019 Microsoft Corporation</copyright>
-    <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.Go/license</licenseUrl>
+    <copyright>Copyright 2015-2020 Microsoft Corporation, Copyright 2020-Present The Go Authors</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/golang.Go/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/Microsoft/vscode-go</projectSourceUrl>
-    <docsUrl>https://github.com/microsoft/vscode-go/blob/master/README.md</docsUrl>
-    <bugTrackerUrl>https://github.com/Microsoft/vscode-go/issues</bugTrackerUrl>
-    <tags>go debug debugger vscode microsoft</tags>
+    <projectSourceUrl>https://github.com/golang/vscode-go</projectSourceUrl>
+    <docsUrl>https://github.com/golang/vscode-go/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/golang/vscode-go/issues</bugTrackerUrl>
+    <tags>go debug debugger vscode vscode-go golang</tags>
     <summary>Rich Go language support for Visual Studio Code</summary>
     <description><![CDATA[This extension adds rich language support for the [Go language](https://golang.org/) to VS Code.
 
 ## Features
 
-* [Intellisense](https://github.com/microsoft/vscode-go/blob/master/README.md#intellisense)
-* [Code Navigation](https://github.com/microsoft/vscode-go/blob/master/README.md#code-navigation)
-* [Code Editing](https://github.com/microsoft/vscode-go/blob/master/README.md#code-editing)
-* [Diagnostics](https://github.com/microsoft/vscode-go/blob/master/README.md#diagnostics)
-* [Testing](https://github.com/microsoft/vscode-go/blob/master/README.md#testing)
-* [Debugging](https://github.com/microsoft/vscode-go/blob/master/README.md#debugging)
-* [Others](https://github.com/microsoft/vscode-go/blob/master/README.md#others)
+* [Intellisense](https://github.com/golang/vscode-go/blob/master/docs/features.md#intellisense)
+* [Code Navigation](https://github.com/golang/vscode-go/blob/master/docs/features.md#code-navigation)
+* [Code Editing](https://github.com/golang/vscode-go/blob/master/docs/features.md#code-editing)
+* [Diagnostics](https://github.com/golang/vscode-go/blob/master/docs/features.md#diagnostics)
+* [Testing](https://github.com/golang/vscode-go/blob/master/docs/features.md#run-and-test-in-the-editor)
+* [Debugging](https://github.com/golang/vscode-go/blob/master/README.md#debugging)
 
 ![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f6955499323841ec9a33508345bfe5257fcfee78/automatic/vscode-go/screenshot.png)
 
 ## Notes
 
-* Additional Go tool setup is required to use this extension so follow the instructions in [how to use this extension](https://github.com/microsoft/vscode-go/blob/master/README.md#how-to-use-this-extension)
+* Additional Go tool setup is required to use this extension so follow the [getting started](https://github.com/golang/vscode-go/blob/master/README.md#getting-started) instructions.
 * This package requires Visual Studio Code 1.41.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
@@ -44,7 +43,7 @@
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://marketplace.visualstudio.com/items/ms-vscode.Go/changelog</releaseNotes>
+    <releaseNotes>https://marketplace.visualstudio.com/items/golang.Go/changelog</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.1.0" />
     </dependencies>

@@ -8,20 +8,20 @@ and can be verified by:
 
 1. Go to the Visual Studio Marketplace page for the extension
 
-  https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go
+  https://marketplace.visualstudio.com/items?itemName=golang.Go
 
-and download the extension ms-vscode.Go-0.14.3.vsix using the Download Extension link
+and download the extension golang.Go-0.14.4.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-vscode/vsextensions/Go/0.14.3/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/golang/vsextensions/Go/0.14.4/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash ms-vscode.Go-0.14.3.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-vscode.Go-0.14.3.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash golang.Go-0.14.4.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f golang.Go-0.14.4.vsix
 
   Type:     sha256
-  Checksum: 3290B6A7D4A504B253384534C0C3F3174484ADC754CBAC36140E4504AE44D84F
+  Checksum: F112E50B36495DB05FA604F85C53ACF191FAF88AB2984A7B9CC44852FB1E2DE6
 
-  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-vscode.Go/license
+  File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/golang.Go/license
