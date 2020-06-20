@@ -1,6 +1,6 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d31db90d323ade71b0e3ea960b09d38516d59d0f/icons/vscode-prettier.png" width="48" height="48" />Prettier Code Formatter VSCode Extension](<https://chocolatey.org/packages/vscode-prettier>)
 
-[![GitHub license](https://img.shields.io/github/license/prettier/prettier-vscode)](https://github.com/prettier/prettier-vscode/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/prettier/prettier-vscode)](https://github.com/prettier/prettier-vscode/blob/main/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
 [![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/esbenp.prettier-vscode?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
