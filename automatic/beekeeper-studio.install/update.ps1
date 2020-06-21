@@ -29,8 +29,7 @@ function global:au_SearchReplace {
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      "($re64)"             = "$($Latest.FileName64)"
-      "(Checksum64:\s)(.+)" = "`${1}$($Latest.Checksum64)"
+      "($re64)" = "$($Latest.FileName64)"
     }
   }
 }
