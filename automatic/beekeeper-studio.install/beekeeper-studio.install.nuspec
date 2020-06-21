@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>beekeeper-studio.install</id>
-    <version>1.5.2</version>
+    <version>1.5.3</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/beekeeper-studio.install</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Beekeeper Studio (Install) - SQL Editor and Database Manager</title>
