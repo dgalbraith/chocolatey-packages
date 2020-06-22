@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The Visual Code extension has been downloaded from the official Visual Studio Marketplace public gallery
+and can be verified by:
+
+1. Go to the Visual Studio Marketplace page for the extension
+
+   https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github
+
+and download the extension GitHub.vscode-pull-request-github-0.17.0.vsix using the Download Extension link
+in the Resources section of the sidebar.
+
+Alternatively the package can be downloaded directly from
+
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/vscode-pull-request-github/0.17.0/vspackage
+
+2. The extension can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash GitHub.vscode-pull-request-github-0.17.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f GitHub.vscode-pull-request-github-0.17.0.vsix
+
+  Type:     sha256
+  Checksum: 0A3C11F4D7BB68B5EA04373CB1D53E579870706DDF59F19F06C7C338877641BD
+
+  Contents of LICENSE.txt is obtained from https://github.com/microsoft/vscode-pull-request-github/blob/master/LICENSE
