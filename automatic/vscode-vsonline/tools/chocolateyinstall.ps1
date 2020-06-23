@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -extensionId 'ms-vsonline.vsonline@1.0.2361'
+Install-VsCodeExtension -extensionId 'ms-vsonline.vsonline@1.0.2390'
