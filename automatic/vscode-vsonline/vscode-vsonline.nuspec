@@ -16,7 +16,7 @@
     <projectSourceUrl>https://github.com/MicrosoftDocs/vsonline</projectSourceUrl>
     <docsUrl>https://aka.ms/vso-docs</docsUrl>
     <bugTrackerUrl>https://github.com/MicrosoftDocs/vsonline/issues</bugTrackerUrl>
-    <tags>vsonline azure vscode microsoft</tags>
+    <tags>vsonline azure vscode codespaces vscode-codespaces microsoft</tags>
     <summary>Intelligent productivity and collaboration, from anywhere, powered by the cloud</summary>
     <description><![CDATA[Visual Studio Online provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio ([sign up for the Private Preview(https://aka.ms/vsfutures-signup)]), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Online at no cost.
 
