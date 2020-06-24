@@ -6,11 +6,11 @@
     <version>1.0.2361</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-vsonline</packageSourceUrl>
     <owners>dgalbraith</owners>
-    <title>Visual Studio Online VSCode Extension</title>
+    <title>Visual Studio Codespaces VSCode Extension</title>
     <authors>Microsoft</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vsonline.vsonline</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9678bf5fd1d07c6f7a2dd3d08da205d8ad75ca59/icons/vscode-vsonline.png</iconUrl>
-    <copyright>Copyright 2019 Microsoft Corporation</copyright>
+    <copyright>Copyright 2019-2020 Microsoft Corporation</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-vsonline.vsonline/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/MicrosoftDocs/vsonline</projectSourceUrl>
@@ -24,7 +24,7 @@ Additionally, Visual Studio Online brings many of the benefits of DevOps, like r
 
 Learn more at [online.visualstudio.com](http://online.visualstudio.com/).
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9678bf5fd1d07c6f7a2dd3d08da205d8ad75ca59/automatic/vscode-vsonline/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@db4cd0d0836bc43830830eb3bd2f5f25c706dd5e/automatic/vscode-vsonline/screenshot.png)
 
 ## Notes
 
