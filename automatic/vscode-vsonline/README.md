@@ -1,10 +1,10 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9678bf5fd1d07c6f7a2dd3d08da205d8ad75ca59/icons/vscode-cloud-code.png" width="48" height="48" />Visual Studio Online VSCode Extension](<https://chocolatey.org/packages/vscode-vsonline>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9678bf5fd1d07c6f7a2dd3d08da205d8ad75ca59/icons/vscode-online.png" width="48" height="48" />Visual Studio Codespaces VSCode Extension](<https://chocolatey.org/packages/vscode-vsonline>)
 
 [![Software license](https://img.shields.io/badge/license-Proprietary-lightgrey)](https://marketplace.visualstudio.com/items/ms-vsonline.vsonline/license)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
 [![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/ms-vsonline.vsonline?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=ms-vsonline.vsonline)
-[![Chocolatey package version](https://img.shields.io/chocolatey/v/vscode-cloud-code?label=Chocolatey)](https://chocolatey.org/packages/vscode-vsonline)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/vscode-vsonline?label=Chocolatey)](https://chocolatey.org/packages/vscode-vsonline)
 
 Visual Studio Online provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Online at no cost.
 
@@ -12,7 +12,7 @@ Additionally, Visual Studio Online brings many of the benefits of DevOps, like r
 
 Learn more at [online.visualstudio.com](http://online.visualstudio.com/).
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9678bf5fd1d07c6f7a2dd3d08da205d8ad75ca59/automatic/vscode-vsonline/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@db4cd0d0836bc43830830eb3bd2f5f25c706dd5e/automatic/vscode-vsonline/screenshot.png)
 
 ## Notes
 
