@@ -41,7 +41,7 @@ training/mentoring, hack-a-thons), this can dramatically help reduce the barrier
 ]]></description>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.1.0" />
-      <dependency id="vscode-live-share" version="1.0.2377" />
+      <dependency id="vscode-vsliveshare" version="1.0.2377" />
     </dependencies>
   </metadata>
   <files>
