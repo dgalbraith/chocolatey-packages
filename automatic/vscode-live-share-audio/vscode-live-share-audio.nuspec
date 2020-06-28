@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-live-share-audio</id>
+    <version>0.1.85</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-live-share-audio</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Live Share Audio VSCode Extension</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-audio</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@53c9d779f0f73975196bcc6bac1b1718dcfe71a0/icons/vscode-live-share-audio.png</iconUrl>
+    <copyright>Copyright 2018-2020 Microsoft Corporation</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/MS-vsliveshare.vsliveshare-audio/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/MicrosoftDocs/live-share</projectSourceUrl>
+    <docsUrl>https://docs.microsoft.com/en-us/visualstudio/liveshare/</docsUrl>
+    <bugTrackerUrl>https://github.com/MicrosoftDocs/live-share/issues</bugTrackerUrl>
+    <tags>live-share-audio collaboration audio call voice vscode microsoft</tags>
+    <summary>Adds audio calling capabilities to Visual Studio Live Share</summary>
+    <description><![CDATA[
+
+Visual Studio Live Share Audio enhances the existing [Visual Studio Live Share](https://aka.ms/vsls) experience, by
+enabling you to quickly spin up an audio call directly from within Visual Studio Code, without needing to use a
+separate tool or service. Participants within a Live Share session can automatically join the call, and chat amongst
+each other, without needing to first coordinate which voice communication tool to use. For certain use cases (e.g. online
+training/mentoring, hack-a-thons), this can dramatically help reduce the barriers for collaboration.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@53c9d779f0f73975196bcc6bac1b1718dcfe71a0/automatic/vscode-live-share-audio/screenshot.png)
+
+## Notes
+
+* This package requires Visual Studio Code 1.21.0 or newer.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in all editions of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+      <dependency id="vscode-live-share" version="1.0.2377" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
