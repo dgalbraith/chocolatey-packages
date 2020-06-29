@@ -3,7 +3,7 @@ Import-Module ..\..\scripts\vs-marketplace\VS-Marketplace.psd1
 
 $ErrorActionPreference = 'Stop'
 
-$extension = 'vsliveshare'
+$extension = 'vsliveshare-audio'
 $publisher = 'MS-vsliveshare'
 
 function global:au_SearchReplace {
