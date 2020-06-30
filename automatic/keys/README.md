@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/keys-pub/keys)](https://github.com/keys-pub/keys/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/version-0.0.47-blue)](https://github.com/keys-pub/app/releases/tag/v0.0.47)
+[![Software version](https://img.shields.io/badge/version-0.0.48-blue)](https://github.com/keys-pub/app/releases/tag/v0.0.48)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/keys?label=Chocolatey)](https://chocolatey.org/packages/keys)
 
 Key management is hard. We need tools, libraries, apps and documentation to help us.

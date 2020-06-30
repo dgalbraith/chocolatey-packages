@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -extensionId 'VisualStudioExptTeam.vscodeintellicode@1.2.6'
+Install-VsCodeExtension -extensionId 'VisualStudioExptTeam.vscodeintellicode@1.2.9'
