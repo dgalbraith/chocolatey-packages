@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-pylance</id>
+    <version>2020.6.1</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-pylance</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Pylance VSCode Extension</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@213f8fd6ef930c15ec50d9ff5290cbdb80c13c5b/icons/vscode-pylance.png</iconUrl>
+    <copyright>Copyright 2020 Microsoft Corporation</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-python.vscode-pylance/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/microsoft/pylance-release</projectSourceUrl>
+    <docsUrl>https://github.com/microsoft/pylance-release/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/microsoft/pylance-release/issues</bugTrackerUrl>
+    <tags>python vscode-python vscode pyright intellisense microsoft</tags>
+    <summary>Fast, feature-rich language support for Python</summary>
+    <description><![CDATA[Pylance is an extension that works alongside Python in Visual Studio Code to provide performant
+language support. Under the hood, Pylance is powered by [Pyright](https://github.com/microsoft/pyright), Microsoft's static type checking tool. Using Pyright,
+Pylance has the ability to supercharge your Python IntelliSense experience with rich type information, helping you write better code faster.
+
+The Pylance name is a small ode to [Monty Python's Lancelot](https://hero.fandom.com/wiki/Sir_Lancelot_(Monty_Python)) who was the first knight to answer the
+bridgekeeper's questions in the [Holy Grail](https://en.wikipedia.org/wiki/Monty_Python_and_the_Holy_Grail).
+
+## Features
+
+* Docstrings
+* Signature help, with type information
+* Parameter suggestions
+* Code completion
+* Auto-imports (as well as add and remove import code actions)
+* As-you-type reporting of code errors and warnings (diagnostics)
+* Code outline
+* Code navigation
+* Code lens (references/implementations)
+* Type checking mode
+* Native multi-root workspace support
+* IntelliCode compatibility
+* Jupyter Notebooks compatibility
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@213f8fd6ef930c15ec50d9ff5290cbdb80c13c5b/automatic/vscode-pylance/screenshot.png)
+
+## Notes
+
+* This package requires Visual Studio Code 1.46.0 or newer.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in all editions of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/microsoft/pylance-release/blob/master/CHANGELOG.md</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+      <dependency id="vscode-python" version="2020.6.91350" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
