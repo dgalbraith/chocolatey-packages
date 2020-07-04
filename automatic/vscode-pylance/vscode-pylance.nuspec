@@ -57,6 +57,7 @@ bridgekeeper's questions in the [Holy Grail](https://en.wikipedia.org/wiki/Monty
     <releaseNotes>https://github.com/microsoft/pylance-release/blob/master/CHANGELOG.md</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+      <dependency id="vscode-python" version="2020.6.91350" />
     </dependencies>
   </metadata>
   <files>
