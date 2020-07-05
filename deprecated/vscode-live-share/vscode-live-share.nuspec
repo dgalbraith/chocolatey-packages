@@ -3,13 +3,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-live-share</id>
-    <version>1.0.2377</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-live-share</packageSourceUrl>
+    <version>1.0.2427</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/deprecated/vscode-live-share</packageSourceUrl>
     <owners>dgalbraith</owners>
-    <title>Live Share VSCode Extension</title>
+    <title>[Deprecated] Live Share VSCode Extension</title>
     <authors>Microsoft</authors>
     <projectUrl>https://aka.ms/vsls</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@76935c808211166e58f5e5c59367dee255635018/icons/vscode-live-share.png</iconUrl>
     <copyright>Copyright 2016-2020 Microsoft Corporation</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/MS-vsliveshare.vsliveshare/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -19,42 +18,12 @@
     <tags>live-shjare collaboration sharing co-debug co-edit vscode microsoft</tags>
     <summary>Real-time collaborative development from the comfort of your favorite tools</summary>
     <description><![CDATA[
-Live Share enables you to collaboratively edit and debug with others in real time, regardless of the programming
-languages you're using or app types you're building. You can instantly and securely share your current project, start
-a joint debugging session, share terminal instances, forward localhost web apps, and more!
-
-Unlike traditional pair programming, Visual Studio Live Share allows developers to work together, while retaining their
-personal editor preferences (e.g. theme, keybindings), as well as having their own cursor. This allows you to
-seamlesslytransition between following one another, and being able to explore ideas/tasks on your own. This ability to
-work together and independently provides a collaboration experience that feels much like in-person collaboration.
-
-## Features
-
-* **Live Editing** - author and edit code together in real time
-* **Group debugging** - set breakpoints and step through code together
-* **Focus and follow** - bring attention to your cursor or follow along as others navigate
-* **Shared servers** - view web apps and databases without exposing ports to the internet
-* **Shared terminal** - run commands and tasks, with output streamed to team members
-
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@76935c808211166e58f5e5c59367dee255635018/automatic/vscode-live-share/screenshot.png)
-
-## Notes
-
-* This package requires Visual Studio Code 1.40.0 or newer.
-  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
-* The extension will be installed in all editions of Visual Studio Code which can be found.
-* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
-  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
-* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
-  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+This package has been **deprecated**.  The software may be installed using the [Live Share VSCode Extension](https://chocolatey.org/packages/vscode-vsliveshare) package.
 
 ]]></description>
-    <releaseNotes>https://marketplace.visualstudio.com/items/MS-vsliveshare.vsliveshare/changelog</releaseNotes>
     <dependencies>
-      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+      <dependency id="vscode-vsliveshare" version="1.0.2427" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+  <files />
 </package>
