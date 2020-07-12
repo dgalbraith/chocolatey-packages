@@ -1,0 +1,49 @@
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@173a172f9194c0956fe278cf3c7c69f61f0e71cf/icons/vscode-mongodb.png" width="48" height="48" />MongoDB VSCode Extension](https://chocolatey.org/packages/vscode-mongodb)
+
+[![GitHub license](https://img.shields.io/github/license/mongodb-js/vscode)](https://marketplace.visualstudio.com/items/mongodb.mongodb-vscode/license)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/mongodb.mongodb-vscode?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/vscode-mongodb?label=Chocolatey)](https://chocolatey.org/packages/vscode-mongodb)
+
+Connect to MongoDB and [Atlas](https://www.mongodb.com/cloud/atlas) directly from your VS Code
+environment, navigate your databases and collections, inspect your schema and use playgrounds to
+prototype queries and aggregations.
+
+## Features
+
+### Navigate your MongoDB Data
+
+* Navigate your database, collections and read-only views
+* See the documents in your collections
+* Get a quick overview of your schema
+
+### MongoDB Playgrounds
+
+MongoDB Playgrounds are the most convenient way to prototype and execute CRUD operations and other MongoDB commands directly inside VS Code.
+
+* Prototype your queries, aggregations, and MongoDB commands with MongoDB syntax highlighting and intelligent autocomplete for MongoDB shell API, MongoDB operators,
+and for database, collection, and field names.
+* Run your playgrounds and see the results instantly. Click the play button in the tab bar to see the output.
+* Save your playgrounds in your workspace and use them to document how your application interacts with MongoDB
+* Build aggregations quickly with helpful and well-commented stage snippets
+
+### Quick access to the MongoDB Shell
+
+Launch the MongoDB Shell from the command palette to quickly connect to the same cluster you have active in VS Code.
+
+### Terraform snippet for MongoDB Atlas
+
+* If you use Terraform to manage your infrastructure, MongoDB for VS Code helps you get started with the [MongoDB Atlas Provider](https://www.terraform.io/docs/providers/mongodbatlas/index.html).  Just open a Terraform file, type atlas and you are good to go.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@173a172f9194c0956fe278cf3c7c69f61f0e71cf/automatic/vscode-mongodb/screenshot.png)
+
+## Notes
+
+* This package requires Visual Studio Code 1.41.0 or newer.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in all editions of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
