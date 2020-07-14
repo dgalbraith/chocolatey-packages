@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mongodb-shell</id>
+    <version>0.0.1</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mongodb-shell</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>MongoDB Shell</title>
+    <authors>MongoDB</authors>
+    <projectUrl>https://www.mongodb.com/products/shell</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8392d21c6a607d9648fb3c5d2bfe558a2ac1dd09/icons/mongodb-shell.png</iconUrl>
+    <copyright>Copyright 2020 MongoDB Inc</copyright>
+    <licenseUrl>https://github.com/mongodb-js/mongosh/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/mongodb-js/mongosh</projectSourceUrl>
+    <docsUrl>https://docs.mongodb.com/mongodb-shell/</docsUrl>
+    <bugTrackerUrl>https://jira.mongodb.org/projects/MONGOSH</bugTrackerUrl>
+    <tags>mongodb database atlas mongodb-atlas</tags>
+    <summary>The quickest way to connect to MongoDB and Atlas to work with your data and configure your database</summary>
+    <description><![CDATA[
+
+The [MongoDB Shell](https://www.mongodb.com/products/shell) lets you connect to MongoDB to work with
+your data and configure your database.  With its enhanced usability features (command autocomplete
+and syntax highlighting, easy to understand error messages and contextual help), it’s the quickest
+way to connect to [MongoDB](https://www.mongodb.com/) and [Atlas](https://www.mongodb.com/cloud/atlas).
+
+## Features
+
+### Syntax Highlighting
+
+Input and output are easy to read with colorization
+
+### Clear Error Messages
+
+When something goes wrong, error messages are clear and to the point
+
+### Intelligent Autocomplete
+
+Gives you autocomplete options based on the version of the server you are connected to
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8392d21c6a607d9648fb3c5d2bfe558a2ac1dd09/automatic/mongodb-shell/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]>
+    </description>
+    <releaseNotes>https://github.com/mongodb-js/mongosh/releases/tag/v0.0.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
