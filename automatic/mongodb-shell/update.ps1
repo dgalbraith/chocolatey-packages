@@ -14,6 +14,10 @@ function global:au_BeforeUpdate {
 
 function global:au_SearchReplace {
   @{
+    "$($Latest.PackageName).nuspec" = @{
+      "(\/v)([\d]+\.[\d]+\.[\d]+)" = "`${1}$($Latest.Version)"
+    }
+
     ".\README.md" = @{
       "([\d]+\.[\d]+\.[\d]+)" = "$($Latest.Version)"
     }
