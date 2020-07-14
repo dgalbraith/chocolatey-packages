@@ -10,19 +10,19 @@ be verified by:
 
   https://github.com/mongodb-js/mongosh/releases
 
-and download the archive mongosh-0.0.5-win32.zip using the links in the relevant
+and download the archive mongosh-0.0.6-win32.zip using the links in the relevant
 asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/mongodb-js/mongosh/releases/download/v0.0.5/mongosh-0.0.5-win32.zip
+  https://github.com/mongodb-js/mongosh/releases/download/v0.0.6/mongosh-0.0.6-win32.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mongosh-0.0.5-win32.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f mongosh-0.0.5-win32.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mongosh-0.0.6-win32.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f mongosh-0.0.6-win32.zip
 
-  File:     mongosh-0.0.5-win32.zip
+  File:     mongosh-0.0.6-win32.zip
   Type:     sha256
-  Checksum: D7A1926BF7FEDC0475216020DFC083A217861FBFCE2217603396C4AD4FAEBE08
+  Checksum: 05F66D4BCBEB7C491BC5F264E94888DEB9389BF52ADE16CCE5D12A88C81FB0E2
 
 Contents of file LICENSE.txt is obtained from https://github.com/mongodb-js/mongosh/blob/master/LICENSE
