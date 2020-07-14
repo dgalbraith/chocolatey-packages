@@ -48,7 +48,7 @@ Gives you autocomplete options based on the version of the server you are connec
 
 ]]>
     </description>
-    <releaseNotes>https://jira.mongodb.org/issues/?jql=project%20%3D%20MONGOSH%20AND%20fixVersion%20%3D%200.0.1</releaseNotes>
+    <releaseNotes>https://github.com/mongodb-js/mongosh/releases/tag/v0.0.1</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
