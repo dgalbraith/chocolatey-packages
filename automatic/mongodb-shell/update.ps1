@@ -3,7 +3,7 @@
 $ErrorActionPreference = 'STOP'
 
 $domain   = 'https://github.com'
-$releases = "${domain}/mongodb-js/mongosh/releases"
+$releases = "${domain}/mongodb-js/mongosh/releases/latest"
 
 $re64      = '(mongosh-.+win32\.zip)' # despite the filename the archive contains a 64-bit executable
 $reversion = '((\/|%20|-|v)(?<Version>([\d]+\.[\d]+\.[\d]+)))'
@@ -19,13 +19,12 @@ function global:au_SearchReplace {
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "$($re64)"          = "$($Latest.Filename64)"
-      "(\/v)([\d]+\.[\d]+\.[\d]+)"     = "`${1}$($Latest.Version)"
-      "(Checksum:\s)(.+)" = "`${1}$($Latest.Checksum64)"
+      "$($re64)"                   = "$($Latest.Filename64)"
+      "(\/v)([\d]+\.[\d]+\.[\d]+)" = "`${1}$($Latest.Version)"
+      "(Checksum:\s)(.+)"          = "`${1}$($Latest.Checksum64)"
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      #"(\s')(m.+\.zip)" = "`${1}$($Latest.Filename64)"
       "(\s')$($re64)" = "`${1}$($Latest.Filename64)"
     }
   }
