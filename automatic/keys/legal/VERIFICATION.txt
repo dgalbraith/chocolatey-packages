@@ -10,18 +10,19 @@ be verified by:
 
   https://keys.pub
 
-and download the installer  using the Download for Windows link
+and download the installer Keys-0.0.48.msi using the Download for Windows link
 in the Install section of the main page.
 
 Alternatively the distribution can be downloaded directly from
 
-  https://github.com/
+  https://github.com/Keys-0.0.48.msi
 
 2. The installer can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash 
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f 
+  - Use powershell function 'Get-Filehash' - Get-Filehash Keys-0.0.48.msi
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Keys-0.0.48.msi
 
   Type:     sha256
-  Checksum: 
+  Checksum: 2A2623786CBCD124E7F21B1643618C17CA4588F46D8F35D7BB9642ECC0F338AB
 
   Contents of file LICENSE.txt is obtained from https://github.com/keys-pub/keys/blob/master/LICENSE
+  
