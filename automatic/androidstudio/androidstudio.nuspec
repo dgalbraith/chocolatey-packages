@@ -4,12 +4,12 @@
   <metadata>
     <id>androidstudio</id>
     <version>4.0.1.0</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/androidstudio</packageSourceUrl>
-    <owners>Justin James, ludicrousByte</owners>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/androidstudio</packageSourceUrl>
+    <owners>dgalbraith, Justin James, ludicrousByte</owners>
     <title>Android Studio (Install)</title>
     <authors>Google JetBrains</authors>
     <projectUrl>https://developer.android.com/studio/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/3f331dbb/icons/androidstudio.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9cba6e3678771538f289e2459ce02c96de9ea842/icons/androidstudio.png</iconUrl>
     <copyright>© 2018 Google LLC</copyright>
     <licenseUrl>http://opensource.org/licenses/BSD-3-Clause</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
