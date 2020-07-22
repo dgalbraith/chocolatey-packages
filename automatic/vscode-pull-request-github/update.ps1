@@ -3,8 +3,8 @@ Import-Module ..\..\scripts\vs-marketplace\VS-Marketplace.psd1
 
 $ErrorActionPreference = 'Stop'
 
-$extension = 'vscode-spring-boot'
-$publisher = 'Pivotal'
+$extension = 'vscode-pull-request-github'
+$publisher = 'GitHub'
 
 function global:au_SearchReplace {
   @{
