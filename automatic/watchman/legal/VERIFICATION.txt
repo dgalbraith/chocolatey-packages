@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/facebook/watchman/releases
+
+and download the archive watchman-v2020.07.13.00-windows.zip using the links in the relevant
+asset section of the page.
+
+Alternatively the build can be downloaded directly from
+
+  https://github.com/facebook/watchman/releases/download/v2020.07.13.00/watchman-v2020.07.13.00-windows.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 watchman-v2020.07.13.00-windows.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f watchman-v2020.07.13.00-windows.zip
+
+  File:     watchman-v2020.07.13.00-windows.zip
+  Type:     sha256
+  Checksum: 3D3E791CD8F02A8E2329E1E7CD4F20202E1588185ADF20A0333F36EA85C0D2EB
+
+Contents of file LICENSE.txt is obtained from https://github.com/facebook/watchman/blob/master/LICENSE
