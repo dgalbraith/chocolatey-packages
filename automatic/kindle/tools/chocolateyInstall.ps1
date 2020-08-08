@@ -1,7 +1,13 @@
-﻿Install-ChocolateyPackage `
-  -PackageName 'kindle' `
-  -InstallerType 'EXE' `
-  -SilentArgs '/S' `
-  -Url 'https://s3.amazonaws.com/kindleforpc/55076/KindleForPC-installer-1.26.55076.exe' `
-  -Checksum 'c9d104c4aad027a89ab92a521b7d64bdee422136cf562f8879f0af96abd74511' `
-  -ChecksumType 'SHA256'
+﻿$ErrorActionPreference = 'Stop';
+
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  fileType      = 'exe'
+  url           = 'https://s3.amazonaws.com/kindleforpc/57030/KindleForPC-installer-1.28.57030.exe'
+  checksum      = '6FEEA6EC44FF3D3B7BE23E7A969FE14AB884A7B19E23BC2C74237730411559F6'
+  checksumType  = 'sha256'
+  silentArgs    = '/S'
+  validExitCodes= @(0)
+}
+
+Install-ChocolateyPackage @packageArgs

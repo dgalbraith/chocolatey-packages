@@ -1,27 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kindle</id>
-    <title>Kindle for PC</title>
-    <version>1.25.52064</version>
+    <version>1.28.57030</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/kindle</packageSourceUrl>
+    <owners>dgalbraith, Anthony Mastrean, mew1033</owners>
+    <title>Kindle for PC - SQL Editor and Database Manager</title>
     <authors>Amazon</authors>
-    <owners>Anthony Mastrean, mew1033</owners>
-    <summary>Read Everywhere with our Free Reading Apps</summary>
-    <description>
-The Kindle app is available for most major smartphones, tablets and computers. That means with our free Kindle reading apps, you can buy a Kindle book once, and read it on any device with the Kindle app installed*. You can also read that same Kindle book on a Kindle device if you own one.
-    </description>
     <projectUrl>https://www.amazon.com/kindle-dbs/fd/kcp</projectUrl>
-    <releaseNotes>https://www.amazon.com/kindle-dbs/fd/kcp</releaseNotes>
-    <docsUrl>https://www.amazon.com/gp/help/customer/display.html?nodeId=G3YXTENMKSKMKG43</docsUrl>
-    <bugTrackerUrl>https://www.amazonforum.com/forums/digital-content/kindle-books?filter-prefix=194</bugTrackerUrl>
-    <mailingListUrl>https://www.amazonforum.com/new-content?filter-prefix=194&filter-thread-search=&filter-date-range-type=1&filter-association-type=1</mailingListUrl>
-    <packageSourceUrl>https://github.com/AnthonyMastrean/chocolateypackages</packageSourceUrl>
-    <tags>admin amazon kindle</tags>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@358006820854a3d17ec7aaa3cf00d3968618bb1b/icons/kindle.png</iconUrl>
+    <copyright>Copyright 1996-2020 Amazon.com Inc. or its affiliates</copyright>
     <licenseUrl>https://www.amazon.com/gp/help/customer/display.html?nodeId=200499360</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/AnthonyMastrean/chocolateypackages/master/public/icons/kindle.png</iconUrl>
-    <dependencies>
-        <dependency id="chocolatey-core.extension" version="[1.0,)" />
-    </dependencies>
+    <docsUrl>https://www.amazon.com/gp/help/customer/display.html?nodeId=G3YXTENMKSKMKG43</docsUrl>
+    <bugTrackerUrl>https://www.amazonforum.com/forums/digital-content/kindle-books?filter-prefix=194</bugTrackerUrl>
+    <tags>kindle ebook e-book ereader e-reader epub azw azw3 kfx amazon</tags>
+    <summary>A free Kindle reader for your PC</summary>
+    <description><![CDATA[
+
+Your library on your PC - read your books on your PC with the free Kindle app.
+
+## Features
+
+* **Dictionary & X-Ray** - lookup words, people and places while you read
+* **Adjust the font** - customise text size, font type, margins, text alignment,
+  background color, and more
+* **Track your reading progress** - see what percentage of the book you have read,
+  or how much time you have left in the chapter or book based on your actual
+  reading speed
+* **Notes and Highlights** - bookmark places you want to revisit, and make notes
+  and highlights you can share, search and see in one place
+* **Page Flip** - flip between pages or get a bird's-eye view of your book
+* **Kindle + Audible** - switch seamlessly from reading your Kindle book to listening
+  to the Audible audiobook
+* **Alexa** - have Alexa play your Audible books for you
+* **Word Wise** - show simple definitions and synonyms  above difficult words while
+  you read
+* **Immersive Reading** - listen to Audible narration and read the Kindle book at the
+  same time
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@46c9d8030c679f4ed5aa5e1d18eec86df6f10625/automatic/kindle/screenshot.png)
+
+## Notes
+
+* Older versions of this package may not function as Amazon removes installers
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://www.amazon.com/kindle-dbs/fd/kcp</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
+
