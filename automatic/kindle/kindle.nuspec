@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kindle</id>
+    <version>1.28.57030</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/kindle</packageSourceUrl>
+    <owners>dgalbraith, Anthony Mastrean, mew1033</owners>
+    <title>Kindle for PC - SQL Editor and Database Manager</title>
+    <authors>Amazon</authors>
+    <projectUrl>https://www.amazon.com/kindle-dbs/fd/kcp</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@358006820854a3d17ec7aaa3cf00d3968618bb1b/icons/kindle.png</iconUrl>
+    <copyright>Copyright 1996-2020 Amazon.com Inc. or its affiliates</copyright>
+    <licenseUrl>https://www.amazon.com/gp/help/customer/display.html?nodeId=200499360</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.amazon.com/gp/help/customer/display.html?nodeId=G3YXTENMKSKMKG43</docsUrl>
+    <mailingListUrl>https://www.amazonforum.com/s/kindle-reading-apps</mailingListUrl>
+    <tags>kindle ebook e-book ereader e-reader epub azw azw3 kfx amazon</tags>
+    <summary>A free Kindle reader for your PC</summary>
+    <description><![CDATA[
+
+Your library on your PC - read your books on your PC with the free Kindle app.
+
+## Features
+
+* **Dictionary & X-Ray** - lookup words, people and places while you read
+* **Adjust the font** - customise text size, font type, margins, text alignment,
+  background color, and more
+* **Track your reading progress** - see what percentage of the book you have read,
+  or how much time you have left in the chapter or book based on your actual
+  reading speed
+* **Notes and Highlights** - bookmark places you want to revisit, and make notes
+  and highlights you can share, search and see in one place
+* **Page Flip** - flip between pages or get a bird's-eye view of your book
+* **Kindle + Audible** - switch seamlessly from reading your Kindle book to listening
+  to the Audible audiobook
+* **Alexa** - have Alexa play your Audible books for you
+* **Word Wise** - show simple definitions and synonyms  above difficult words while
+  you read
+* **Immersive Reading** - listen to Audible narration and read the Kindle book at the
+  same time
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@46c9d8030c679f4ed5aa5e1d18eec86df6f10625/automatic/kindle/screenshot.png)
+
+## Notes
+
+* Older versions of this package may not function as Amazon removes installers
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://www.amazon.com/kindle-dbs/fd/kcp</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+
