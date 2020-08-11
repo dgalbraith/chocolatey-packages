@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The Visual Code extension has been downloaded from the official Visual Studio Marketplace public gallery
+and can be verified by:
+
+1. Go to the Visual Studio Marketplace page for the extension
+
+  https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter
+
+and download the extension LittleFoxTeam.vscode-python-test-adapter-0.4.5.vsix using the Download Extension link
+in the Resources section of the sidebar.
+
+Alternatively the package can be downloaded directly from
+
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/LittleFoxTeam/vsextensions/vscode-python-test-adapter/0.4.5/vspackage
+
+2. The extension can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash LittleFoxTeam.vscode-python-test-adapter-0.4.5.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f LittleFoxTeam.vscode-python-test-adapter-0.4.5.vsix
+
+  Type:     sha256
+  Checksum: 0105A8962BB298E02BBD9D51CC8D0D7B1CDA567DE0F9D8D1052500E105CE52C3
+
+  Contents of the file LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/LittleFoxTeam.vscode-python-test-adapter/license
