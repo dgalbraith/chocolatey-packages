@@ -16,7 +16,7 @@
     <projectSourceUrl>https://github.com/swellaby/vscode-rust-test-adapter</projectSourceUrl>
     <docsUrl>https://github.com/swellaby/vscode-rust-test-adapter/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/swellaby/vscode-rust-test-adapter/issues</bugTrackerUrl>
-    <tags>test testing unit-test test-runner test-discovery rust vscode-test-explorer vscode-test-explorer-adapter vscode ethan-reesorswellaby
+    <tags>test testing unit-test test-runner test-discovery rust vscode-test-explorer vscode-test-explorer-adapter vscode ethan-reesorswellaby</tags>
     <summary>View and run your Rust tests in the Sidebar of Visual Studio Code</summary>
     <description><![CDATA[
 
