@@ -1,0 +1,23 @@
+{
+  "Author":
+  {
+    "Go Team at Google": "Google LLC"
+  },
+  "DisplayPublishers":
+  {
+    "Microsoft": "Microsoft Corporation"
+  },
+  "Publisher":
+  {
+    "GitHub": "Microsoft Corporation",
+    "golang": "Google LLC",
+    "googlecloudtools": "Google LLC",
+    "mongodb": "MongoDB Inc",
+    "msjsdiag": "Microsoft Corporation",
+    "ms-kubernetes-tools": "Microsoft Corporation",
+    "ms-vscode-deploy-azure": "Microsoft Corporation",
+    "MS-vsliveshare": "Microsoft Corporation",
+    "vscjava": "Microsoft Corporation",
+    "vsciot-vscode": "Microsoft Corporation"
+  }
+}

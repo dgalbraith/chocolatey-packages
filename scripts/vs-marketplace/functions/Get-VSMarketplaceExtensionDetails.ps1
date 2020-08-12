@@ -96,6 +96,9 @@ Function Get-CopyrightString() {
         extension maniefest details passed in JSON - if an Author is available it will be used with a fallback to
         Publisher if not available.
 
+        Overrides may be specified for each of Author, Display Publisher and Publisher in the copyright.json file
+        if necessary.
+
     .PARAMETER $Released
         The year of intitial publication
 
@@ -148,22 +151,48 @@ Function Get-CopyrightString() {
     $copyrightRange = 'Copyright {0}' -f $Released
   }
   else {
-    $copyrightRange = 'Copyright {0}-{1}' -f $Released, $Updated
+    if ($Released -eq $Updated) {
+      $copyrightRange = 'Copyright {0}' -f $Released
+    } else {
+      $copyrightRange = 'Copyright {0}-{1}' -f $Released, $Updated
+    }
   }
 
+  # retrieve the known key --> name copyright mappings
+  $mappings = Get-VSMarketplaceCopyrightMappings
+
   # determine copyright attribution - start with Author and fall back to publisher display name followed by publisher
-  # which must always be present
+  # which must always be present.  If any override mappings are configured they are applied.
   if ($JSON.author) {
     switch ($JSON.author.getType().Name) {
       'PSCustomObject' { $copyrightAttribution = $JSON.author.name }
       default { $copyrightAttribution = $JSON.author }
     }
+
+    # apply an author override if available
+    $mappedAuthor = $mappings.Authors[$copyrightAttribution]
+    if (![string]::IsNullOrWhiteSpace($mappedAuthor)) {
+      $copyrightAttribution = $mappedAuthor
+    }
   }
   elseif (![string]::IsNullOrWhiteSpace($JSON.__metadata.publisherDisplayName)) {
     $copyrightAttribution = $JSON.__metadata.publisherDisplayName
+
+    # apply a display publisher override if available
+    $mappedDisplayPublisher = $mappings.DisplayPublishers[$copyrightAttribution]
+    if (![string]::IsNullOrWhiteSpace($mappedDisplayPublisher)) {
+      $copyrightAttribution = $mappedDisplayPublisher
+    }
   }
   else {
+    # otherwise fall back to the publisher
     $copyrightAttribution = $JSON.publisher
+
+    # apply a publisher override if available
+    $mappedPublisher = $mappings.Publishers[$copyrightAttribution]
+    if (![string]::IsNullOrWhiteSpace($mappedPublisher)) {
+      $copyrightAttribution = $mappedPublisher
+    }
   }
 
   '{0} {1}' -f $copyrightRange, $copyrightAttribution
