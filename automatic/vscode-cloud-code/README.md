@@ -1,6 +1,6 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@edf2228388178bdda72db56ab68b5ef8ae7e1359/icons/vscode-cloud-code.png" width="48" height="48" />Cloud Code VSCode Extension](<https://chocolatey.org/packages/vscode-cloud-code>)
 
-[![Software license]https://img.shields.io/badge/license-Proprietary-lightgrey)](https://cloud.google.com/terms/plugins/)
+[![Software license](https://img.shields.io/badge/license-Proprietary-lightgrey)](https://cloud.google.com/terms/plugins/)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
 [![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/GoogleCloudTools.cloudcode?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode)
