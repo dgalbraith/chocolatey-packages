@@ -45,7 +45,7 @@ function global:au_GetLatest {
   $extensionInfo = Get-VSMarketplaceExtensionDetails -Extension $extension -Publisher $publisher
 
   @{
-    Copyright      = [System.Net.WebUtility]::HtmlEncode($extensionInfo.Copyright)
+    Copyright      = $extensionInfo.Copyright -replace "\s<.*>",""
     Version        = $extensionInfo.Version
     VSCodeVersion  = $extensionInfo.VSCodeVersion
     URL32          = $extensionInfo.DownloadUrl
