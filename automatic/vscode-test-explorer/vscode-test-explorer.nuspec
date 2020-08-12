@@ -10,7 +10,7 @@
     <authors>Holger Benl</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@84caa278732a2ec09d33dae120723b2f8de96bc2/icons/vscode-test-explorer.png</iconUrl>
-    <copyright>Copyright 2018-2020 Holger Benl &lt;hbenl@evandor.de&gt;</copyright>
+    <copyright>Copyright 2018-2020 Holger Benl</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/hbenl.vscode-test-explorer/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/hbenl/vscode-test-explorer</projectSourceUrl>
