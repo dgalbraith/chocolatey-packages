@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-rust-test-adapter</id>
+    <version>0.11.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-rust-test-adapter</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Rust Test Explorer VSCode Extension</title>
+    <authors>Swellaby</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=swellaby.vscode-rust-test-adapter</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0f91b01ec8207cb79082d01f6cb9ef431b0fc69e/icons/vscode-rust-test-adapter.png</iconUrl>
+    <copyright>Copyright 2018-2019 Swellaby</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/swellaby.vscode-rust-test-adapter/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/swellaby/vscode-rust-test-adapter</projectSourceUrl>
+    <docsUrl>https://github.com/swellaby/vscode-rust-test-adapter/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/swellaby/vscode-rust-test-adapter/issues</bugTrackerUrl>
+    <tags>test testing unit-test test-runner test-discovery rust vscode-test-explorer vscode-test-explorer-adapter vscode ethan-reesorswellaby
+    <summary>View and run your Rust tests in the Sidebar of Visual Studio Code</summary>
+    <description><![CDATA[
+
+Rust Test Explorer for VS Code that enables viewing and running your Rust tests
+from the VS Code Sidebar.
+
+## Features
+
+* Detected unit tests will be viewable and runnable from the Test Explorer window
+as long as there is a Cargo.toml file in the root of the directory
+* Works with Cargo Workspaces
+* Works with packages that have both bin and lib targets
+* Test tree will reflect the `package -> target -> module -> ...` hierarchical
+structure
+* Test tree will flatten the package level if there's only a single package,
+and/or at the target level if a package only has a single target containing
+unit tests
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0f91b01ec8207cb79082d01f6cb9ef431b0fc69e/automatic/vscode-rust-test-adapter/screenshot.png)
+
+## Notes
+
+* This package requires Visual Studio Code 1.21.0 or newer.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in all editions of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.f you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+      <dependency id="vscode-test-explorer" version="2.19.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
