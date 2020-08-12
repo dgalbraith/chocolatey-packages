@@ -226,7 +226,7 @@ Function Get-VSMarketplaceCopyrightMappings() {
   Param()
 
   try {
-      $json = Get-Content -Path "CopyrightMappings.json" -ErrorAction 'Stop' | Out-String | ConvertFrom-Json
+      $json = Get-Content -Path "$PSScriptRoot\CopyrightMappings.json" -ErrorAction 'Stop' | Out-String | ConvertFrom-Json
       $authors = @{}
       $json.Author.psobject.properties | Foreach { $authors[$_.Name] = $_.Value }
       $displayPublishers = @{}
