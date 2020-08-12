@@ -10,7 +10,7 @@
     <authors>Ethan Reesor</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ethan-reesor.vscode-go-test-adapter</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8b519032ce75071e44d5d46b3ea8ae89dadd8537/icons/vscode-go-test-adapter.png</iconUrl>
-    <copyright>Copyright 2020 Ethan Reesor &lt;ethan.reesor@gmail.com&gt;</copyright>
+    <copyright>Copyright 2020 Ethan Reesor</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/ethan-reesor.vscode-go-test-adapter/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://gitlab.com/firelizzard/vscode-go-test-adapter</projectSourceUrl>
