@@ -3,17 +3,19 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>keys</id>
-    <version>0.0.48</version>
+    <version>0.1.7</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/keys</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Keys - Cryptographic Key Management</title>
     <authors>Gabriel Handford</authors>
     <projectUrl>https://keys.pub/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@6524dd81768c37021fdcf6d6a0ab9b15243005aa/icons/keys.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ea605aa7b94cc03226b076a979a37f9b026ab791/icons/keys.png</iconUrl>
     <copyright>Copyright Gabriel Handford</copyright>
     <licenseUrl>https://github.com/keys-pub/keys/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/keys-pub/app</projectSourceUrl>
     <docsUrl>https://keys.pub/</docsUrl>
+    <bugTrackerUrl>https://github.com/keys-pub/app/issues</bugTrackerUrl>
     <tags>key-management cyptographic-keys sigchains identities encrypt decrypt sign verify secure-connection keys</tags>
     <summary>Cryptographic key management, signing and encryption, including keys/saltpack and keys/keyring</summary>
     <description><![CDATA[Key management is hard. We need tools, libraries, apps and documentation to help us.
@@ -31,7 +33,7 @@ and [user identities](https://keys.pub/docs/specs/user.html).
 * Most features are available in both the app and on the command line.
 * 100% open source ([github.com/keys-pub](http://github.com/keys-pub)).
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@6524dd81768c37021fdcf6d6a0ab9b15243005aa/automatic/keys/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ea605aa7b94cc03226b076a979a37f9b026ab791/automatic/keys/screenshot.png)
 
 ## Notes
 
