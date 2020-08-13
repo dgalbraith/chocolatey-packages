@@ -20,7 +20,7 @@ function global:au_SearchReplace {
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "(Keys.+msi)"                = "$($Latest.Filename32)"
+      "(\/v.*\/)(Keys.+msi)"       = "`${1}$($Latest.Filename32)"
       "(Checksum:\s)(.+)"          = "`${1}$($Latest.Checksum32)"
       "(\/v)([\d]+\.[\d]+\.[\d]+)" = "`${1}$($Latest.Version)"
     }
