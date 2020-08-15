@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-test-explorer-diagnostics</id>
+    <version>0.0.1</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-test-explorer-diagnostics</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Test Explorer Diagnostics VSCode Extension</title>
+    <authors>Emily Strickland</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=emilylilylime.vscode-test-explorer-diagnostics</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@285318c5a827a9f0d7579e1ca2f733210781e47e/icons/vscode-test-explorer-diagnostics.png</iconUrl>
+    <copyright>Copyright 2020 Emily Strickland</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/emilylilylime.vscode-test-explorer-diagnostics/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/emilyst/vscode-test-explorer-diagnostics</projectSourceUrl>
+    <docsUrl>https://github.com/emilyst/vscode-test-explorer-diagnostics/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/emilyst/vscode-test-explorer-diagnostics/issues</bugTrackerUrl>
+    <tags>test testing unit-test diagnostics problems vscode-test-explorer vscode-test-explorer-diagnostics vscode-test-explorer-controller code vscode emilyst</tags>
+    <summary>Display unit test outcomes as diagnostics in the Visual Studio Code Problems panel</summary>
+    <description><![CDATA[
+
+A Visual Studio Code extension for the [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer) which populates test outcomes as diagnostics in the Problems panel.
+
+Using the test states known to the Test Explorer, it populates diagnostics in Visual Studio Code. These appear in the Problems panel.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@285318c5a827a9f0d7579e1ca2f733210781e47e/automatic/vscode-test-explorer-diagnostics/screenshot.png)
+
+## Notes
+
+* This package requires Visual Studio Code 1.45.0 or newer.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in all editions of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+      <dependency id="vscode-test-explorer" version="2.19.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
