@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=emilylilylime.vscode-test-explorer-diagnostics
 
-and download the extension emilylilylime.vscode-test-explorer-diagnostics-0.0.1.vsix using the Download Extension link
+and download the extension emilylilylime.vscode-test-explorer-diagnostics-0.1.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/emilylilylime/vsextensions/vscode-test-explorer-diagnostics/0.0.1/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/emilylilylime/vsextensions/vscode-test-explorer-diagnostics/0.1.0/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash emilylilylime.vscode-test-explorer-diagnostics-0.0.1.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f emilylilylime.vscode-test-explorer-diagnostics-0.0.1.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash emilylilylime.vscode-test-explorer-diagnostics-0.1.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f emilylilylime.vscode-test-explorer-diagnostics-0.1.0.vsix
 
   Type:     sha256
-  Checksum: F3C5F651A0EDD16737891BE871C293016763B2D173D4F41C4A6FAB480E912E29
+  Checksum: 623EAC3263D93BD2F96765B21233AB84DF36771C48CD2F15A32459351E36715E
 
   Contents of the file LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/emilylilylime.vscode-test-explorer-diagnostics/license
