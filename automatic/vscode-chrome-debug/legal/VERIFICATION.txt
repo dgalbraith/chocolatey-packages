@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome
 
-and download the extension msjsdiag.debugger-for-chrome-4.12.9.vsix using the Download Extension link
+and download the extension msjsdiag.debugger-for-chrome-4.12.10.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/msjsdiag/vsextensions/debugger-for-chrome/4.12.9/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/msjsdiag/vsextensions/debugger-for-chrome/4.12.10/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash msjsdiag.debugger-for-chrome-4.12.9.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f msjsdiag.debugger-for-chrome-4.12.9.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash msjsdiag.debugger-for-chrome-4.12.10.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f msjsdiag.debugger-for-chrome-4.12.10.vsix
 
   Type:     sha256
-  Checksum: 422EE110AECE149D0041D66AA01874B818088E33D4D48223CBE03290DE8556AD
+  Checksum: D2FB2C7D4CCDEFAD1529C8A65DF53B2B815CAD81D1CEE93472C768E9F1748546
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/msjsdiag.debugger-for-chrome/license
