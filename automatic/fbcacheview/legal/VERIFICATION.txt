@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.nirsoft.net/utils/facebook_cache_viewer.html
+  
+and download the archive fbcacheview.zip using the Download FBCacheView
+link on the page.
+
+Alternatively the archive can be downloaded directly from
+
+  https://www.nirsoft.net/utils/fbcacheview.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash fbcacheview.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f fbcacheview.zip
+
+  File32:         fbcacheview.zip
+  ChecksumType32: sha256
+  Checksum32:     7ffa4b63de826c02bfb1c406b3a32c7c9544c8c700803f65f6ee6a881a75c31b
+
+  Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/facebook_cache_viewer.html

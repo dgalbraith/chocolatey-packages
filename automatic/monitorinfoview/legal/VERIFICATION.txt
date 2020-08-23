@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.nirsoft.net/utils/monitor_info_view.html
+  
+and download the archive monitorinfoview.zip using the Download MonitorInfoView
+link on the page.
+
+Alternatively the archive can be downloaded directly from
+
+  https://www.nirsoft.net/utils/monitorinfoview.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash monitorinfoview.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f monitorinfoview.zip
+
+  File32:         monitorinfoview.zip
+  ChecksumType32: sha256
+  Checksum32:     9ed7ac01f40c5c5a1708d0a0323d21b7e203d8250f05d93c571e5221c6eeb4e6
+
+  Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/monitor_info_view.html

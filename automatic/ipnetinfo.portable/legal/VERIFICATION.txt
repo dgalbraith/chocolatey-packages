@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.nirsoft.net/utils/ipnetinfo.html
+  
+and download the archive ipnetinfo.zip using the Download IPNetInfo (in ZIP file)
+link on the page.
+
+Alternatively the archive can be downloaded directly from
+
+  https://www.nirsoft.net/utils/ipnetinfo.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash ipnetinfo.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ipnetinfo.zip
+
+  File32:         ipnetinfo.zip
+  ChecksumType32: sha256
+  Checksum32:     fd23d3849fbf267078aa196b94c5f61ada751efa53b0bcdd07dbf41c73094f68
+
+  Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/country_traceroute.html
