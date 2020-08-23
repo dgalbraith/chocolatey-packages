@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ipnetinfo</id>
-    <version>1.85</version>
+    <version>1.95</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/ipnetinfo</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>IPNetInfo - Retrieve IP Address Information</title>
@@ -39,7 +39,7 @@ IPNetInfo automatically extracts all IP addresses from the message headers, and 
     ]]></description>
     <releaseNotes>http://www.nirsoft.net/utils/ipnetinfo.html</releaseNotes>
     <dependencies>
-      <dependency id="ipnetinfo.install" version="1.85" />
+      <dependency id="ipnetinfo.install" version="1.95" />
     </dependencies>
   </metadata>
   <files>

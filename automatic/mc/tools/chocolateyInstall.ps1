@@ -2,7 +2,7 @@
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$installer = Join-Path $toolsDir 'mcwin32-build209-setup.exe'
+$installer = Join-Path $toolsDir 'mcwin32-build214-setup.exe'
 
 $silentArgs= '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 

@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-freeware-orange)](http://www.nirsoft.net/utils/facebook_cache_viewer.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.16-blue.svg)](http://www.nirsoft.net/utils/facebook_cache_viewer.html)
+[![Software version](https://img.shields.io/badge/Source-v1.161.20-blue.svg)](http://www.nirsoft.net/utils/facebook_cache_viewer.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/fbcacheview?label=Chocolatey)](https://chocolatey.org/packages/fbcacheview)
 
 FBCacheView is a simple tool that scans the cache of your Web browser (Internet Explorer, Firefox, or Chrome), and lists all images displayed in Facebook pages that you previously visited, including profile pictures, images uploaded to Facebook, and images taken from other Web sites.

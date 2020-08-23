@@ -24,13 +24,13 @@ Alternatively the archives can be downloaded directly from
 
   File32:         gdiview.zip
   ChecksumType32: sha256
-  Checksum32:     26b1c14d0e70ddec39800279021eef24b1d99564
+  Checksum32: 30DC7EDA83EEE7826E677C5F27A89D8389FB632476D4E413E332AE73769C32F6
 
   - Use powershell function 'Get-Filehash' - Get-Filehash gdiview-x64.zip
   - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f gdiview-x64.zip
 
   File64:         gdiview-x64.zip
   ChecksumType64: sha256
-  Checksum64:     e025459a67cca78b08dfce740b5eb4c070250863
+  Checksum64: 45AECA625ED56662DF1D52CCA0F1B6E4ECD373B58CE8DCF07106F07F8DBC63E4
   
   Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/gdi_handles.html

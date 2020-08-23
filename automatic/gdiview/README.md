@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-freeware-orange)](http://www.nirsoft.net/utils/gdi_handles.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.25-blue.svg)](http://www.nirsoft.net/utils/gdi_handles.html)
+[![Software version](https://img.shields.io/badge/Source-v1.26-blue.svg)](http://www.nirsoft.net/utils/gdi_handles.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/gdiview?label=Chocolatey)](https://chocolatey.org/packages/gdiview)
 
 GDIView is a unique tool that displays the list of GDI handles (brushes, pens, fonts, bitmaps, and others) opened by every process. It displays the total count for each type of GDI handle, as well as detailed information about each handle.

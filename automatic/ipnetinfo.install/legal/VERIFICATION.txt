@@ -23,6 +23,6 @@ Alternatively the archive can be downloaded directly from
 
   File32:         ipnetinfo_setup.exe
   ChecksumType32: sha256
-  Checksum32:     7df142e00a0896a37848d4a38f31f3e5dcb660ff05d45e0e526025eb483e43c4
+  Checksum32: F59C71CB1052BA66D3FE01CDBAC717491A5A0340B11D813AE35A16E1EFCB92B1
 
   Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/country_traipnetinfo.html

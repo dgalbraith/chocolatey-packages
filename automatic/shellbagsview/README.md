@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-freeware-orange)](http://www.nirsoft.net/utils/shell_bags_view.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.21-blue.svg)](http://www.nirsoft.net/utils/shell_bags_view.html)
+[![Software version](https://img.shields.io/badge/Source-v1.30-blue.svg)](http://www.nirsoft.net/utils/shell_bags_view.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/shellbagsview?label=Chocolatey)](https://chocolatey.org/packages/shellbagsview)
 
 Each time that you open a folder in Explorer, Windows automatically save the settings of this folder into the Registry.

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mc</id>
-    <version>4.8.21.209</version>
+    <version>4.8.24.214</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mc</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Midnight Commander</title>
