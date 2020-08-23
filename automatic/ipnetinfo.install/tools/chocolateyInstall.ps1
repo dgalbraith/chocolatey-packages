@@ -1,15 +1,22 @@
-﻿$packageName = '{{PackageName}}'
-$installerType = 'exe'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
-$checksumType = 'sha256'
-$silentArgs = '/S'
-$validExitCodes = @(0)
+﻿$ErrorActionPreference = 'Stop';
 
-Install-ChocolateyPackage -PackageName "$packageName" `
-                          -FileType "$installerType" `
-                          -Url "$url" `
-                          -SilentArgs "$silentArgs" `
-                          -ValidExitCodes $validExitCodes `
-                          -Checksum "$checksum" `
-                          -ChecksumType "$checksumType"
+$toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
+
+$installer = Join-Path $toolsDir 'ipnetinfo_setup.exe'
+
+$packageArgs = @{
+  PackageName    = $env:ChocolateyPackageName
+  File           = $installer
+  FileType       = 'exe'
+  SilentArgs     = '/S'
+  ValidExitCodes = @(0)
+}
+
+Install-ChocolateyInstallPackage @packageArgs
+
+$files = Get-ChildItem $toolsDir -include *.exe -recurse
+
+foreach ($file in $files) {
+  #generate an ignore file
+  New-Item "$file.ignore" -type file -force | Out-Null
+}

@@ -1,0 +1,36 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.nirsoft.net/utils/lsa_secrets_view.html
+  
+and download the archive lsasecretsview.zip using the Download LSASecretsView link or the archive
+lsasecretsview-x64.zip using the Download LSASecretsView for x64 link.
+
+Alternatively the archives can be downloaded directly from
+
+  https://www.nirsoft.net/utils/lsasecretsview.zip
+  https://www.nirsoft.net/utils/lsasecretsview-x64.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash lsasecretsview.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f lsasecretsview.zip
+
+  File32:         lsasecretsview.zip
+  ChecksumType32: sha256
+  Checksum32:     62aa19e9aa4bbf6b1a0104d71ea2b4d450162287
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash lsasecretsview-x64.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f lsasecretsview-x64.zip
+
+  File64:         lsasecretsview-x64.zip
+  ChecksumType64: sha256
+  Checksum64:     cde2e9a0c8fdd9ede970fdf07bc8570426fe6107
+  
+  Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/lsa_secrets_view.html

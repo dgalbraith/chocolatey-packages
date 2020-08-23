@@ -1,46 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <title>BlueJ Combined Installer (includes JDK)</title>
-    <version>{{PackageVersion}}</version>
+    <id>bluej-bundled</id>
+    <version>3.1.7</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/bluej-bundled</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>BlueJ - Beginners Java Development Environment</title>
     <authors>Michael Kölling</authors>
-    <owners>dtgm</owners>
-    <summary>Integrated Development Environment for Java</summary>
-    <description>
-An Integrated Development Environment for Java, developed mainly for educational purposes, but also suitable for small-scale software development.
-	
-It was developed to support the learning and teaching of object-oriented programming, and its design differs from other development environments as a result.
-
-Oracle JDK is included with the installer allowing for portable usage. A non-JDK bundled version of [BlueJ](https://chocolatey.org/packages/bluej) is available.
-
-#### Documentation
-* [Features](http://www.bluej.org/about.html)
-* [FAQ](http://www.bluej.org/faq.html)
-* [Install instructions](http://www.bluej.org/generic-installation-instructions.html)
-* [API](http://www.bluej.org/extensions/extensions.html)
-* [Manual](http://www.bluej.org/objects-first/)
-
-#### Community
-* [Forum](http://blueroom.bluej.org/)
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
-    <projectUrl>http://www.bluej.org/</projectUrl>
-    <projectSourceUrl>http://www.bluej.org/versions.html</projectSourceUrl>
-    <bugTrackerUrl>http://bugs.bluej.org/bluej</bugTrackerUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/658bb3ac1353ce9c7f245eb81f60a5bce5471272/icons/{{PackageName}}.png</iconUrl>
-    <tags>programming ide java educational portable admin</tags>
-    <copyright>© BlueJ team</copyright>
-    <licenseUrl>http://www.bluej.org/about/LICENSE.txt</licenseUrl>
+    <projectUrl>https://www.bluej.org</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/bluej-bundled.png</iconUrl>
+    <copyright>M. Kölling and J. Rosenberg</copyright>
+    <licenseUrl>https://www.bluej.org/about/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
-* [Roadmap](http://bugs.bluej.org/bluej/roadmap)
-* [Changelog](http://www.bluej.org/versions.html)
+    <projectSourceUrl>https://www.bluej.org/download/files/source/BlueJ-source-317.zip</projectSourceUrl>
+    <docsUrl>https://www.bluej.org/doc/documentation.html</docsUrl>
+    <mailingListUrl>http://blueroom.bluej.org/</mailingListUrl>
+    <bugTrackerUrl>http://bugs.bluej.org/projects/BLUEJ/issues</bugTrackerUrl>
+    <tags>bluej java jdk ide</tags>
+    <summary>Beginners Java development environment that allows you to develop Java programs quickly and easily</summary>
+    <description><![CDATA[
 
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+BlueJ is a development environment that allows you to develop Java programs quickly and easily. Its main features are that it is:
+
+* **Simple** BlueJ has a deliberately smaller and simpler interface than professional environments like NetBeans or Eclipse. This allows beginners to get started more quickly, and without being overwhelmed.
+* **Designed** for teaching BlueJ is deliberately designed with good pedagogy in mind. There is a popular textbook designed for teaching introductory university/college courses with BlueJ, and a site full of teaching resources.
+* **Interactive** BlueJ allows you to interact with objects. You can inspect their value, call methods on them, pass them as parameters and more. You can also directly invoke Java expressions without compiling. Thus BlueJ is a powerful graphical shell/REPL for Java.
+* **Portable** BlueJ runs on Windows, Mac OS X, Linux and other platforms which run Java. It can also run without installation from a USB stick.
+* **Mature** BlueJ is over fifteen years old, but continues to be updated and supported by a full-time team. We aim to respond to all technical support requests within one working day.
+* **Innovative** BlueJ has several features not seen before in other IDEs. Its object bench, code pad, and scope colouring were all original BlueJ features.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@48b2855247b0e422e994f50e85b9bf8c8ca98c79/automatic/bluej-bundled/screenshot.png)
+
+## Notes
+
+* The bundled version of BlueJ is no longer updated at source.  For later versions use the [BlueJ package](https://chocolatey.org/packages/bluej).
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+    ]]></description>
+    <releaseNotes>https://www.bluej.org/versions.html</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

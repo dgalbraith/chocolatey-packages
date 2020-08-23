@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.nirsoft.net/utils/shell_bags_view.html
+  
+and download the archive shellbagsview.zip using the Download ShellBagsView link.
+
+Alternatively the archives can be downloaded directly from
+
+  https://www.nirsoft.net/utils/shellbagsview.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash shellbagsview.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f shellbagsview.zip
+
+  File32:         shellbagsview.zip
+  ChecksumType32: sha256
+  Checksum32:     8ea9c638220d70effb8c9e491e8dca6c0096cd0da8224e576a07bb7c385c2db6
+ 
+  Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/shell_bags_view.html

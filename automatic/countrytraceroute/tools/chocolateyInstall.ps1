@@ -1,15 +1,13 @@
-﻿$packageName = '{{PackageName}}'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
-$checksumType = 'sha256'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$installFile = Join-Path $toolsDir "$($packageName).exe"
+﻿$ErrorActionPreference = 'Stop';
 
-Install-ChocolateyZipPackage -PackageName "$packageName" `
-                             -Url "$url" `
-                             -UnzipLocation "$toolsDir" `
-                             -Checksum "$checksum" `
-                             -ChecksumType "$checksumType"
+$toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-Set-Content -Path ("$installFile.gui") `
-            -Value $null
+$archive = Join-Path $toolsDir 'countrytraceroute.zip'
+
+$unzipArgs = @{
+  PackageName  = $env:ChocolateyPackageName
+  FileFullPath = $archive
+  Destination  = $toolsDir
+}
+
+Get-ChocolateyUnzip @unzipArgs
