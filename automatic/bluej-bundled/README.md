@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/bluej-bundled.png" width="48" height="48"/>BlueJ - Beginners Java Development Environment](https://chocolatey.org/packages/bluej-bundled)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/bluej-bundled.png" width="48" height="48"/>BlueJ Cominbed Installer (Includes JDK)](https://chocolatey.org/packages/bluej-bundled)
 
 [![Software license](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://www.bluej.org/about/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)

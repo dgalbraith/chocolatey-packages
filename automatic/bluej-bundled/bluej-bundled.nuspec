@@ -6,7 +6,7 @@
     <version>3.1.7</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/bluej-bundled</packageSourceUrl>
     <owners>dgalbraith</owners>
-    <title>BlueJ - Beginners Java Development Environment</title>
+    <title>BlueJ Combined Installer (Includes JDK)</title>
     <authors>Michael Kölling</authors>
     <projectUrl>https://www.bluej.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/bluej-bundled.png</iconUrl>
