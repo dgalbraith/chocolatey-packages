@@ -3,8 +3,8 @@ Import-Module ..\..\scripts\vs-marketplace\VS-Marketplace.psd1
 
 $ErrorActionPreference = 'Stop'
 
-$extension = 'haskall'
-$publisher = 'haskall'
+$extension = 'haskell'
+$publisher = 'haskell'
 
 function global:au_SearchReplace {
   @{
