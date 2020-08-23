@@ -1,32 +1,41 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <title>CountryTraceroute</title>
-    <version>{{PackageVersion}}</version>
+    <id>countrytraceroute</id>
+    <version>1.30</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/countrytraceroute</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>CountryTraceRoute - Traceroute with IP Country Information</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
-    <summary>Fast Traceroute with IP country information</summary>
-    <description>
-CountryTraceRoute is a Traceroute utility, similar to the tracert tool of Windows, but with graphical user interface, and it's also much faster than tracert of Windows.
+    <projectUrl>https://www.nirsoft.net/utils/country_traceroute.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/countrytraceroute.png</iconUrl>
+    <copyright>Copyright 2012-2019 Nir Sofer</copyright>
+    <licenseUrl>http://www.nirsoft.net/utils/country_traceroute.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://www.nirsoft.net/utils/country_traceroute.html</docsUrl>
+    <tags>traceroute ip geolocation gui nirsoft</tags>
+    <summary>Fast GUI Traceroute with IP country information</summary>
+    <description><![CDATA[
+
+CountryTraceRoute is a Traceroute utility, similar to the tracert tool of Windows, but with a graphical user interface, and it's also much faster than tracert of Windows.
 
 CountryTraceRoute also displays the country of the owner of every IP address found in the Traceroute.
 
-After the Traceroute is completed, you can select all items (Ctrl+A) and then save them into csv/tab-delimited/html/xml file with 'Save Selected Items' option (Ctrl+S) or copy them to the clipboard (Ctrl+C) and then paste the result into Excel or other spreadsheet application.
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
-    <projectUrl>http://www.nirsoft.net/utils/country_traceroute.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/countrytraceroute.png</iconUrl>
-    <tags>traceroute ip gui</tags>
-    <copyright>© 2012 NirSoft</copyright>
-    <licenseUrl>http://www.nirsoft.net/utils/country_traceroute.html</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+After the Traceroute is completed, you can select all items (Ctrl+A) and then save them into csv/tab-delimited/html/xml file with 'Save Selected Items' option (Ctrl+S) or copy them to the clipboard (Ctrl+C) and then paste the result into Excel or another spreadsheet application.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@48b2855247b0e422e994f50e85b9bf8c8ca98c79/automatic/countrytraceroute/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+    ]]></description>
+    <releaseNotes>http://www.nirsoft.net/utils/country_traceroute.html</releaseNotes>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

@@ -1,32 +1,46 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <title>FBCacheView</title>
-    <version>{{PackageVersion}}</version>
+    <id>fbcacheview</id>
+    <version>1.16</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/fbcacheview</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>FBCacheView - View Cached Facebook Images</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
-    <summary>View Facebook images stored in the cache of your Web browser</summary>
-    <description>
-FBCacheView is a simple tool that scans the cache of your Web browser (Internet Explorer, Firefox, or Chrome), and lists all images displayed in Facebook pages that you previously visited, including profile pictures, images uploaded to Facebook, and images taken from other Web sites. 
-
-For every Facebook image, the following information is displayed: 
-
-URL of the image, Web browser that was used to visit the page, image type, date/time of the image, visit time, image file size, and external URL (For images taken from another Web site).
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
-    <projectUrl>http://www.nirsoft.net/utils/facebook_cache_viewer.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/fbcacheview.png</iconUrl>
-    <tags>images jpeg facebook cache browser</tags>
-    <copyright>© 2013 NirSoft</copyright>
-    <licenseUrl>http://www.nirsoft.net/utils/facebook_cache_viewer.html</licenseUrl>
+    <projectUrl>https://www.nirsoft.net/utils/facebook_cache_viewer.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/fbcacheview.png</iconUrl>
+    <copyright>Copyright 2013-2018 Nir Sofer</copyright>
+    <licenseUrl>https://www.nirsoft.net/utils/facebook_cache_viewer.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+    <docsUrl>https://www.nirsoft.net/utils/facebook_cache_viewer.html</docsUrl>
+    <tags>facebook cache browser gui nirsoft</tags>
+    <summary>View Facebook images stored in the cache of your Web browser</summary>
+    <description><![CDATA[
+
+FBCacheView is a simple tool that scans the cache of your Web browser (Internet Explorer, Firefox, or Chrome), and lists all images displayed in Facebook pages that you previously visited, including profile pictures, images uploaded to Facebook, and images taken from other Web sites.
+
+For every Facebook image, the following information is displayed:
+* URL of the image
+* Web browser that was used to visit the page*
+* image type
+* date/time of the image
+* visit time
+* image file size
+* external URL (For images taken from another Web site)
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@48b2855247b0e422e994f50e85b9bf8c8ca98c79/automatic/fbcacheview/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+    ]]></description>
+    <releaseNotes>http://www.nirsoft.net/utils/facebook_cache_viewer.html</releaseNotes>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
