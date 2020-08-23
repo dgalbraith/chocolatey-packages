@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gdiview</id>
+    <version>1.25</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/gdiview</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>GDIView - Display GDI Handles</title>
+    <authors>Nir Sofer</authors>
+    <projectUrl>https://www.nirsoft.net/utils/gdi_handles.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/gdiview.png</iconUrl>
+    <copyright>Copyright 2007-2016 Nir Sofer</copyright>
+    <licenseUrl>http://www.nirsoft.net/utils/gdi_handles.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://www.nirsoft.net/utils/gdi_handles.html</docsUrl>
+    <tags>gdi resources handles brushes pens fonts bitmaps leak gui nirsoft</tags>
+    <summary>View GDI handles/resources list and detect GDI leaks</summary>
+    <description><![CDATA[
+
+GDIView is a unique tool that displays the list of GDI handles (brushes, pens, fonts, bitmaps, and others) opened by every process. It displays the total count for each type of GDI handle, as well as detailed information about each handle.
+
+This tool can be useful for developers that need to trace GDI resources leak in their software.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@48b2855247b0e422e994f50e85b9bf8c8ca98c79/automatic/gdiview/screenshot.png)
+
+## Notes
+
+* The 32-bit version of GDIView will not run in a 64-bit environment and the installation will fail if forced with `--forceX86`
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+    ]]></description>
+    <releaseNotes>http://www.nirsoft.net/utils/gdi_handles.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://sourceforge.net/projects/mcwin32/
+  
+and download the installer mcwin32-build209-setup.exe using the Download button.
+
+Alternatively the installer can be downloaded directly from
+
+  https://sourceforge.net/projects/mcwin32/files/mcwin32-build209-setup.exe
+
+2. The installer can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash mcwin32-build209-setup.exe
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f mcwin32-build209-setup.exe
+
+  File32:         mcwin32-build209-setup.exe
+  ChecksumType32: sha256
+  Checksum32:     C2B6A0E40ABCA0A89181CA4D4052742B5FC99D8EE9AAEDE64E86E97FA85BD1EC
+ 
+Contents of file LICENSE.txt is obtained from https://github.com/adamyg/mcwin32/blob/master/mcsrc/doc/COPYING

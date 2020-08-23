@@ -1,0 +1,36 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.nirsoft.net/utils/gdi_handles.html
+  
+and download the archive gdiview.zip using the Download GDIView link or the archive gdiview-x64.zip using the
+Download GDIView - x64 link.
+
+Alternatively the archives can be downloaded directly from
+
+  https://www.nirsoft.net/utils/gdiview.zip
+  https://www.nirsoft.net/utils/gdiview-x64.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash gdiview.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f gdiview.zip
+
+  File32:         gdiview.zip
+  ChecksumType32: sha256
+  Checksum32:     26b1c14d0e70ddec39800279021eef24b1d99564
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash gdiview-x64.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f gdiview-x64.zip
+
+  File64:         gdiview-x64.zip
+  ChecksumType64: sha256
+  Checksum64:     e025459a67cca78b08dfce740b5eb4c070250863
+  
+  Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/gdi_handles.html
