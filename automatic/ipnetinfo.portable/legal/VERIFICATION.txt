@@ -23,6 +23,6 @@ Alternatively the archive can be downloaded directly from
 
   File32:         ipnetinfo.zip
   ChecksumType32: sha256
-  Checksum32:     fd23d3849fbf267078aa196b94c5f61ada751efa53b0bcdd07dbf41c73094f68
+  Checksum32: F3DB23A0E915F490A00B8D241BC8F2524C67EBAFB37B6D28939CB7BBA11EA399
 
   Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/country_traceroute.html

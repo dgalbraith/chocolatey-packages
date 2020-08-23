@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ipnetinfo.portable</id>
-    <version>1.85</version>
+    <version>1.95</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/ipnetinfo.portable</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>IPNetInfo (Portable) - Retrieve IP Address Information</title>

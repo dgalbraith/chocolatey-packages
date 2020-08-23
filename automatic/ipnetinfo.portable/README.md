@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-freeware-orange)](http://www.nirsoft.net/utils/ipnetinfo.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.85-blue.svg)](http://www.nirsoft.net/utils/ipnetinfo.html)
+[![Software version](https://img.shields.io/badge/Source-v1.851.95-blue.svg)](http://www.nirsoft.net/utils/ipnetinfo.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/ipnetinfo.portable?label=Chocolatey)](https://chocolatey.org/packages/ipnetinfo.portable)
 
 IPNetInfo is a small utility that allows you to easily find all available information about an IP address:

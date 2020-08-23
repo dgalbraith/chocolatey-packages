@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gdiview</id>
-    <version>1.25</version>
+    <version>1.26</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/gdiview</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>GDIView - Display GDI Handles</title>
