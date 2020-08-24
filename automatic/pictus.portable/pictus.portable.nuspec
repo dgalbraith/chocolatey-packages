@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pictus.portable</id>
+    <version>1.6.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/pictus.install</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Pictus Image Viewer (Portable)</title>
+    <authors>Pontus Mårdnäs</authors>
+    <projectUrl>https://poppeman.se/pictus</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@85fbad928f7a769e4ac72266ceb44bd68633fe8c/icons/pictus.png</iconUrl>
+    <copyright>Copyright 2014-2016 Pontus Mårdnäs</copyright>
+    <licenseUrl>https://github.com/poppeman/Pictus/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/poppeman/Pictus</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/poppeman/Pictus/issues</bugTrackerUrl>
+    <tags>image image-viewer thumbnails exif bmp gif jpg pcx png psd psp tga tiff wbmp webp xyz pictus</tags>
+    <summary>Fast, free image viewer</summary>
+    <description><![CDATA[
+
+Pictus is a fast, free image viewer. It is designed to be small, fast and just totally sweet. If you are content with your current photo viewer software you can still install Pictus and just let it help Windows Explorer show thumbnails for even more images.
+
+##Features
+
+* Loads images in advance.
+* Designed for responsiveness.
+* Very uncluttered interface.
+* Rotation and basic realtime color adjustment.
+* Supports BMP, GIF, JPG, PCX, PNG, PSD (Adobe Photoshop), PSP (Corel Paint Shop Pro), TGA, TIFF, WBMP, WEBP and XYZ
+* Helps Windows Explorer show thumbnails for those formats.
+* Fullscreen support.
+* Very customizable controls.
+* Handles EXIF orientation data.
+* Supports Windows Vista, Windows 7, Windows 8/8.1 and Windows 10.
+* A whopping selection of Swedish and English interface.
+* Free!
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@85fbad928f7a769e4ac72266ceb44bd68633fe8c/automatic/pictus/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/poppeman/Pictus/releases/latest</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
