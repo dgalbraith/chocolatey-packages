@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/poppeman/Pictus/releases
+
+and download the installer PicInst.exe using the links in the relevant assets section of the page.
+
+Alternatively the installer can be downloaded directly from
+
+  https://github.com/poppeman/Pictus/releases/download/v1.6.0/PictInst.exe
+
+2. The installer can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 PicInst.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f PicInst.exe
+
+  File:     PicInst.exe
+  Type:     sha256
+  Checksum: B266050F90C08627D17209AA4F23DE407F9F0DF61DA8B852605CDC726D6DD3CF
+
+Contents of file LICENSE.txt is obtained from https://raw.githubusercontent.com/poppeman/Pictus/master/LICENSE
