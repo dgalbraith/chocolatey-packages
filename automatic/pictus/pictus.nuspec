@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pictus</id>
-    <version>1.6.0</version>
+    <version>1.7.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/pictus</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Pictus Image Viewer</title>
@@ -46,7 +46,7 @@ Pictus is a fast, free image viewer. It is designed to be small, fast and just t
 ]]></description>
     <releaseNotes>https://github.com/poppeman/Pictus/releases/latest</releaseNotes>
     <dependencies>
-      <dependency id="pictus.install" version="[1.6.0]" />
+      <dependency id="pictus.install" version="[1.7.0]" />
     </dependencies>
   </metadata>
   <files>
