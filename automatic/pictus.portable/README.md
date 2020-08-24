@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/poppeman/Pictus)](https://github.com/poppeman/Pictus/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-1.6.0-blue.svg)](https://github.com/poppeman/Pictus/releases/tag/v1.6.0)
+[![Software version](https://img.shields.io/badge/Source-1.7.0-blue.svg)](https://github.com/poppeman/Pictus/releases/tag/v1.7.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/pictus.portable?label=Chocolatey)](https://chocolatey.org/packages/pictus.portable)
 
 Pictus is a fast, free image viewer. It is designed to be small, fast and just totally sweet. If you are content with your current photo viewer software you can still install Pictus and just let it help Windows Explorer show thumbnails for even more images.

@@ -14,7 +14,7 @@ and download the installer PicInst.exe using the links in the relevant assets se
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/poppeman/Pictus/releases/download/v1.6.0/PictInst.exe
+  https://github.com/poppeman/Pictus/releases/download/v1.7.0/PictInst.exe
 
 2. The installer can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 PicInst.exe
@@ -22,6 +22,6 @@ Alternatively the installer can be downloaded directly from
 
   File:     PicInst.exe
   Type:     sha256
-  Checksum: B266050F90C08627D17209AA4F23DE407F9F0DF61DA8B852605CDC726D6DD3CF
+  Checksum: 8773893FA76619E2B1D738BDCD03897A92C405C09D9F696B3096A51BCF9906E1
 
 Contents of file LICENSE.txt is obtained from https://raw.githubusercontent.com/poppeman/Pictus/master/LICENSE

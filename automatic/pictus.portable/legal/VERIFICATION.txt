@@ -15,8 +15,8 @@ assets section of the page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/poppeman/Pictus/releases/download/v1.6.0/pictus32.zip
-  https://github.com/poppeman/Pictus/releases/download/v1.6.0/pictus64.zip
+  https://github.com/poppeman/Pictus/releases/download/v1.7.0/pictus32.zip
+  https://github.com/poppeman/Pictus/releases/download/v1.7.0/pictus64.zip
 
 2. The archives can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 pictus32.zip
@@ -24,13 +24,13 @@ Alternatively the installer can be downloaded directly from
 
   File32:         pictus32.zip
   ChecksupType32: sha256
-  Checksum32:     923FCE5B1A4A3CB79C4E0783F4426AF1E65894A69C22513A3B68D6D3237E0C41
+  Checksum32:     108F92E7EF36A8322FF5233BBA69D77F864725D9D349750F12FD1A30D545CB3B
 
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 pictus64.zip
   - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f pictus64.zip
 
   File64:         pictus64.zip
   ChecksupType64: sha256
-  Checksum64:     2E909574D68C50D587267153CBCD960F438F8BFAD6F921BA89C6504B2C461D47
+  Checksum64:     519FB7FF338354700790A5FFA68CA39582ADB9E34080360E909535E55AA00D3F
 
 Contents of file LICENSE.txt is obtained from https://raw.githubusercontent.com/poppeman/Pictus/master/LICENSE
