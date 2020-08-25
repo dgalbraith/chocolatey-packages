@@ -1,34 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <title>USBDeview</title>
-    <version>{{PackageVersion}}</version>
+    <id>usbdeview</id>
+    <version>2.80</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/usbdeview</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>USBDeview - List USB Devices</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
-    <summary>View any installed/connected USB device on your system</summary>
-    <description>
+    <projectUrl>https://www.nirsoft.net/utils/usb_devices_view.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@75270d34d3938b0270530f92c038b52aedefe76c/icons/usbdeview.png</iconUrl>
+    <copyright>Copyright 2006-2020 Nir Sofer</copyright>
+    <licenseUrl>https://www.nirsoft.net/utils/usb_devices_view.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.nirsoft.net/utils/usb_devices_view.html</docsUrl>
+    <tags>usb devices usb-devices gui nirsoft</tags>
+    <summary>List connected and previously connected USB devices</summary>
+    <description><![CDATA[
+
 USBDeview is a small utility that lists all USB devices that currently connected to your computer, as well as all USB devices that you previously used.
 
 For each USB device, extended information is displayed: Device name/description, device type, serial number (for mass storage devices), the date/time that device was added, VendorID, ProductID, and more...
 
 USBDeview also allows you to uninstall USB devices that you previously used, disconnect USB devices that are currently connected to your computer, as well as to disable and enable USB devices.
 
-You can also use USBDeview on a remote computer, as long as you login to that computer with admin user.
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
-    <projectUrl>http://www.nirsoft.net/utils/usb_devices_view.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/usbdeview.png</iconUrl>
-    <tags>usb metadata info</tags>
-    <copyright>© 2006 NirSoft</copyright>
-    <licenseUrl>http://www.nirsoft.net/utils/usb_devices_view.html</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+You can also use USBDeview on a remote computer, as long as you login to that computer as an admin user.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@3d80afd75d41ce3f21b745e4de24d91b81738d59/automatic/usbdeview/screenshot.png)
+
+## Notes
+
+* The 32-bit version of USBDeview will not run in a 64-bit environment and the installation will fail if forced with `--forceX86`
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+    ]]></description>
+    <releaseNotes>https://www.nirsoft.net/utils/usb_devices_view.html</releaseNotes>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

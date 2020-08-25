@@ -1,0 +1,36 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.nirsoft.net/utils/usb_devices_view.html
+
+and download the archive usbdeview.zip using the Download USBDeview link or the archive usbdeview-x64.zip using the
+Download USBDeview for x64 systems link.
+
+Alternatively the archives can be downloaded directly from
+
+  https://www.nirsoft.net/utils/usbdeview.zip
+  https://www.nirsoft.net/utils/usbdeview-x64.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash gdiusbdeview.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f usbdeview.zip
+
+  File32:         usbdeview.zip
+  ChecksumType32: sha256
+  Checksum32:     18d10ce84e1c67c99e6fdfdf432d9d77f933e21d72a23b099183743bff3eba13
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash usbdeview-x64.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f usbdeview-x64.zip
+
+  File64:         usbdeview-x64.zip
+  ChecksumType64: sha256
+  Checksum64:     5cbf8c5879e52e6d9ff87990cd7c78f4991a45de6f5b3514566d611d1e05254f
+
+  Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/usb_devices_view.html
