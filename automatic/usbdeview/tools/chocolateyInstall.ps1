@@ -1,21 +1,23 @@
-﻿$packageName = '{{PackageName}}'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
-$checksumType = 'sha256'
-$url64 = '{{DownloadUrlx64}}'
-$checksum64 = '{{Checksumx64}}'
-$checksumType64 = 'sha256'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$installFile = Join-Path $toolsDir "$($packageName).exe"
+﻿$ErrorActionPreference = 'Stop';
 
-Install-ChocolateyZipPackage -PackageName "$packageName" `
-                             -Url "$url" `
-                             -UnzipLocation "$toolsDir" `
-                             -Url64bit "$url64" `
-                             -Checksum "$checksum" `
-                             -ChecksumType "$checksumType" `
-                             -Checksum64 "$checksum64" `
-                             -ChecksumType64 "$checksumType64"
+$toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-Set-Content -Path ("$installFile.gui") `
-            -Value $null
+if ((Get-ProcessorBits 32) -eq 'true') {
+  $archive = Join-Path $toolsDir 'usbdeview.zip'
+}
+else {
+  # fail if a 32-bit install is forced in a 64-bit environment
+  if ($env:ChocolateyForceX86 -eq 'true') {
+      Write-Error('32-bit install not supported in a 64-bit environment')
+  } else {
+    $archive = Join-Path $toolsDir 'usbdeview-x64.zip'
+  }
+}
+
+$unzipArgs = @{
+  PackageName  = $env:ChocolateyPackageName
+  FileFullPath = $archive
+  Destination  = $toolsDir
+}
+
+Get-ChocolateyUnzip @unzipArgs
