@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino
 
-and download the extension vsciot-vscode.vscode-arduino-0.3.0.vsix using the Download Extension link
+and download the extension vsciot-vscode.vscode-arduino-0.3.2.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vsciot-vscode/vsextensions/vscode-arduino/0.3.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vsciot-vscode/vsextensions/vscode-arduino/0.3.2/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash vsciot-vscode.vscode-arduino-0.3.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f HookyQRvsciot-vscode.vscode-arduino-0.3.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash vsciot-vscode.vscode-arduino-0.3.2.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f HookyQRvsciot-vscode.vscode-arduino-0.3.2.vsix
 
   Type:     sha256
-  Checksum: 08F59EB7ECAF0E6CB3B787815742F7DAD03A9F19B326E66567C423665CCF8776
+  Checksum: AF854F9BF0750A4487FCF1403C4052E9223FEFD3A4BEEEF77542F198178DD11C
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vsciot-vscode.vscode-arduino/license
