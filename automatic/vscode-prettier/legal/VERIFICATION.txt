@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
-and download the extension esbenp.prettier-vscode-5.3.0.vsix using the Download Extension link
+and download the extension esbenp.prettier-vscode-5.5.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/esbenp/vsextensions/prettier-vscode/5.3.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/esbenp/vsextensions/prettier-vscode/5.5.0/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash esbenp.prettier-vscode-5.3.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f esbenp.prettier-vscode-5.3.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash esbenp.prettier-vscode-5.5.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f esbenp.prettier-vscode-5.5.0.vsix
 
   Type:     sha256
-  Checksum: 3FA7911318C65EA70678E7FBF13104F9849994AE08C08348C4236B6C0C3ECBB4
+  Checksum: CC8E64A653B5DDDC680893AF6ADD5E20A267A7767A31F7A956580D5E90468643
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/esbenp.prettier-vscode/license
