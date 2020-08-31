@@ -1,15 +1,12 @@
-﻿$packageName = '{{PackageName}}'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
-$checksumType = 'sha1'
-$installerType = 'exe'
-$silentArgs = '/S'
-$validExitCodes = @(0)
+﻿$ErrorActionPreference = 'Stop'
 
-Install-ChocolateyPackage -PackageName "$packageName" `
-                          -FileType "$installerType" `
-                          -SilentArgs "$silentArgs" `
-                          -Url "$url" `
-                          -ValidExitCodes $validExitCodes `
-                          -Checksum "$checksum" `
-                          -ChecksumType "$checksumType"
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+
+$packageArgs = @{
+  PackageName    = $env:ChocolateyPackageName
+  File           = "$toolsDir\stunnel-5.56-win64-installer.exe"
+  SilentArgs     = '/S'
+  ValidExitCodes = @(0)
+}
+
+Install-ChocolateyInstallPackage @packageArgs
