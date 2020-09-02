@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-proprietary-lightgrey)](https://www.microsoft.com/sql-server/sql-server-2019-pricing/)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/version-15.0.7243.37714-blue)](https://www.microsoft.com/download/details.aspx?id=100122)
+[![Software version](https://img.shields.io/badge/version-15.0.7545.4810-blue)](https://www.microsoft.com/download/details.aspx?id=100122)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/ssrs-2019?label=Chocolatey)](https://chocolatey.org/packages/ssrs-2019)
 
 SQL Server Reporting Services (SSRS) provides a set of on-premises tools and services that create, deploy, and manage mobile and paginated reports.
