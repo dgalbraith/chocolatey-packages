@@ -10,18 +10,18 @@ and can be verified by:
 
    https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-spring-boot
 
-and download the extension Pivotal.vscode-spring-boot-1.19.0.vsix using the Download Extension link
+and download the extension Pivotal.vscode-spring-boot-1.21.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Pivotal/vsextensions/vscode-spring-boot/1.19.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Pivotal/vsextensions/vscode-spring-boot/1.21.0/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash Pivotal.vscode-spring-boot-1.19.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Pivotal.vscode-spring-boot-1.19.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash Pivotal.vscode-spring-boot-1.21.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Pivotal.vscode-spring-boot-1.21.0.vsix
 
   Type:     sha256
-  Checksum: D34B45CE2CA4B01E1E806359AC892F51BC0A3BB4537436519436C36052F47513
+  Checksum: 585B19AE822AB5F364FE8C2B6D78F48FE8F6B15ED695F0CE440DF105532E8D89
 
   Contents of LICENSE.txt is obtained from https://github.com/spring-projects/sts4/blob/master/license.txt
