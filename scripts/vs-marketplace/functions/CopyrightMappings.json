@@ -9,6 +9,7 @@
   },
   "Publisher":
   {
+    "formulahendry": "Jun Han",
     "GitHub": "Microsoft Corporation",
     "golang": "Google LLC",
     "googlecloudtools": "Google LLC",
