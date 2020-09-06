@@ -2,7 +2,7 @@
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$ant_home = Join-Path $toolsDir 'apache-ant-1.10.5'
+$ant_home = Join-Path $toolsDir 'apache-ant-1.10.6'
 $ant_bat  = Join-Path $ant_home 'bin/ant.bat'
 
 $environmentArgs = @{

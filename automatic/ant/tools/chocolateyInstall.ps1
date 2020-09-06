@@ -3,7 +3,7 @@
 $tools = Split-Path $MyInvocation.MyCommand.Definition
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'apache-ant-1.10.5-bin.zip'
+$archive  = Join-Path $toolsDir 'apache-ant-1.10.6-bin.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
