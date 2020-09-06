@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary archive page
+
+  https://archive.apache.org/dist/ant/binaries/
+
+and download the archive apache-ant-1.10.7-bin.zip using the links on the page.
+
+Alternatively the archive can be downloaded directly from
+
+  https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.7-bin.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha512 apache-ant-1.10.7-bin.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f apache-ant-1.10.7-bin.zip
+  - Download the checksums from https://archive.apache.org/ant/binaries/apache-ant-1.10.7-bin.zip.sha512
+
+  File:     apache-ant-1.10.7-bin.zip
+  Type:     sha512
+  Checksum: 4AFBF7D474B38DA07992E820F22F2979E28FA8DB71997CCB8EE63FE5CB32478FE26E1675FEABB70321AF24F25A37747C0F6D198A9E43BA747B65E3F8076F3DFF
+
+Contents of file LICENSE.txt is obtained from https://gitbox.apache.org/repos/asf?p=ant.git;a=blob;f=LICENSE
