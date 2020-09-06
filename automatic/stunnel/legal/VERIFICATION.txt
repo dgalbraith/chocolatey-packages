@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.stunnel.org/downloads.html
+
+and download the installer stunnel-5.56-win64-installer.exe using the links in the relevant assets section of the page.
+
+Alternatively the installer can be downloaded directly from
+
+  https://www.stunnel.org/downloads/stunnel-5.56-win64-installer.exe
+
+2. The installer can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm stunnel-5.56-win64-installer.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f stunnel-5.56-win64-installer.exe
+
+  File64:     stunnel-5.56-win64-installer.exe
+  Type64:     sha256
+  Checksum64: E9D7DEA3976219F0FC89CFB4F645F47B1291EBEC8CE55CFF46DBBFBB2E9B4084
+
+Contents of file LICENSE.txt is obtained from https://www.stunnel.org/COPYING.html
