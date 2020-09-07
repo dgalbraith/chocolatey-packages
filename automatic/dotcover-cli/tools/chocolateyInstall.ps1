@@ -11,4 +11,4 @@ $unzipArgs = @{
 
 Get-ChocolateyUnzip @unzipArgs
 
-Get-ChildItem $toolsDir -include *.exe -exclude 'dotCover.exe' -recurse  | Select-Object { New-Item "$_.ignore" -type file -force | Out-Null }
+Get-ChildItem $toolsDir -include *.exe -exclude 'dotCover.exe' -recurse  | Select-Object { New-Item "$_.ignore" -type file -force } | Out-Null
