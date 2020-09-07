@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.jetbrains.com/dotcover/download/#section=commandline
+
+and download the archive JetBrains.dotCover.CommandLineTools.2020.2.zip for Windows using the Download button on the page.
+
+Alternatively the archive can be downloaded directly from
+
+  https://download.jetbrains.com/resharper/dotUltimate.2020.2/JetBrains.dotCover.CommandLineTools.2020.2.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 JetBrains.dotCover.CommandLineTools.2020.2.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f JetBrains.dotCover.CommandLineTools.2020.2.zip
+  - Download the checksums from https://download.jetbrains.com/resharper/dotUltimate.2020.2/JetBrains.dotCover.CommandLineTools.2020.2.zip.sha256
+
+  File:     JetBrains.dotCover.CommandLineTools.2020.2.zip
+  Type:     sha256
+  Checksum: bb53566d56ce14ed7e87d90346094f714e91681db51c0942c93422689eb29897
+
+Contents of file LICENSE.txt is obtained from https://www.jetbrains.com/legal/agreements/user.html
