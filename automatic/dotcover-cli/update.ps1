@@ -5,7 +5,7 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://data.services.jetbrains.com'
 $releases = "${domain}/products?code=DCCLT&release.type=release"
 
-$refile    = "J.+zip"
+$refile    = "(\/|'|\s'|e\s|\s)(J.+zip)"
 $reversion = '(-v)(\d+\.\d\.*\d*)'
 
 function global:au_BeforeUpdate {
@@ -26,7 +26,7 @@ function global:au_SearchReplace {
     }
 
     ".\tools\chocolateyInstall.ps1" = @{
-      "$($refile)"    = "$($Latest.FileName32)"
+      "$($refile)" = "`${1}$($Latest.FileName32)"
     }
   }
 }

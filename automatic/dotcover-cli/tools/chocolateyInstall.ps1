@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = 'JetBrains.dotCover.CommandLineTools.2020.2.2.zip'
+$archive  = Join-Path $toolsDir 'JetBrains.dotCover.CommandLineTools.2020.2.1.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
-  FileFullPath = Join-Path $toolsDir $archive
+  FileFullPath = $archive
   Destination  = $toolsDir
 }
 
