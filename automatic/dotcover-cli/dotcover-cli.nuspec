@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dotcover-cli</id>
+    <version>2020.2.1</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/dotcover-cli</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>dotCover Command Line Tools</title>
+    <authors>JetBrains</authors>
+    <projectUrl>https://www.jetbrains.com/dotcover/download/#section=commandline</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@7e9ae106859434f2bdde98f74517f9f3fbea1424/icons/dotcover-cli.png</iconUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/legal/agreements/user.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_Line.html</docsUrl>
+    <mailingListUrl>https://dotnettools-support.jetbrains.com/hc/en-us/community/topics/200379915-dotCover-discussions</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.com/oauth?state=%2Fissues%2FDCVR</bugTrackerUrl>
+    <tags>testing code coverage code-coverage jetbrains</tags>
+    <summary>A standalone command line package that enables analysing code coverage outside of Visual Studio</summary>
+    <description><![CDATA[
+
+dotCover Command Line Tools is a free redistributable package which enables analysing the code coverage outside of Visual Studio.  dotCover Command Line Tools can be integrated with a Continuous Integration server.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@7e9ae106859434f2bdde98f74517f9f3fbea1424/automatic/dotcover-cli/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+    ]]></description>
+    <releaseNotes>https://www.jetbrains.com/dotcover/whatsnew/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

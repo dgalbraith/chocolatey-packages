@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-chrome-debug</id>
-    <version>4.12.10</version>
+    <version>4.12.11</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-chrome-debug</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Debugger for Chrome VSCode Extension</title>
