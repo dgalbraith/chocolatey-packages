@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\ms-vscode-deploy-azure.azure-deploy-1.1.4.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\ms-vscode-deploy-azure.azure-deploy-1.1.5.vsix"
