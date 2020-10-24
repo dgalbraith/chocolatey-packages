@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-vsonline</id>
-    <version>1.0.3007</version>
+    <version>1.0.3073</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-vsonline</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Visual Studio Codespaces VSCode Extension</title>
