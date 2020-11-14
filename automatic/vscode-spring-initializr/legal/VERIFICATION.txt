@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr
 
-and download the package vscjava.vscode-spring-initializr-0.5.0.vsix using the Download Extension link
+and download the package vscjava.vscode-spring-initializr-0.6.1.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-spring-initializr/0.5.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-spring-initializr/0.6.1/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-spring-initializr-0.5.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-spring-initializr-0.5.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-spring-initializr-0.6.1.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-spring-initializr-0.6.1.vsix
 
   Type:     sha256
-  Checksum: BDED799AB34807F8EA296A4DB7DE7F592A5F4A9EEA616047DE191D903B288C73
+  Checksum: A17A26A1222BA8D8168530AF4A7B1BF45D4E1830A182C8F094F685AA49DA9046
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscjava.vscode-spring-initializr/license
