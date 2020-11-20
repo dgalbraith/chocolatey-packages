@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\ms-python.python-2020.11.367453362.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\ms-python.python-2020.11.371526539.vsix"
