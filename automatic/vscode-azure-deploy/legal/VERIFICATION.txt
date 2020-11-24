@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy
 
-and download the extension ms-vscode-deploy-azure.azure-deploy-1.2.0.vsix using the Download Extension link
+and download the extension ms-vscode-deploy-azure.azure-deploy-1.2.1.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-vscode-deploy-azure/vsextensions/azure-deploy/1.2.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-vscode-deploy-azure/vsextensions/azure-deploy/1.2.1/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash ms-vscode-deploy-azure.azure-deploy-1.2.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-vscode-deploy-azure.azure-deploy-1.2.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash ms-vscode-deploy-azure.azure-deploy-1.2.1.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-vscode-deploy-azure.azure-deploy-1.2.1.vsix
 
   Type:     sha256
-  Checksum: E17B020E3649F185B23775B6C361324014910C24F012FD567AB77334C9B2EAFE
+  Checksum: 3DD78E90F9790BAFA2D0A964D82CCBB6CE3117394C3CF593D107CC97308F291D
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-vscode-deploy-azure.azure-deploy/license
