@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-python-test-adapter</id>
-    <version>0.6.3</version>
+    <version>0.6.4</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-python-test-adapter</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Python Test Explorer VSCode Extension</title>
