@@ -15,14 +15,14 @@ in the Install section of the main page.
 
 Alternatively the distribution can be downloaded directly from
 
-  https://github.com/keys-pub/app/releases/download/v0.1.20/Keys-0.1.20.msi
+  https://github.com/keys-pub/app/releases/download/v0.2.3/Keys-0.2.3.msi
 
 2. The installer can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash Keys-0.1.7.msi
   - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Keys-0.1.7.msi
 
   Type:     sha256
-  Checksum: 5D40000360EF229FE32C9A750B0EF5A53ECFEEC12D7D829D39C532DCAABD6842
+  Checksum: 39124643AEC71BD6C202C7D91CAC446ACD3A304C50F2AC6AE8EBE27E6100383C
 
   Contents of file LICENSE.txt is obtained from https://github.com/keys-pub/keys/blob/master/LICENSE
 
