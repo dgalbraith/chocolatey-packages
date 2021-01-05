@@ -10,19 +10,19 @@ be verified by:
 
   https://github.com/facebook/watchman/releases
 
-and download the archive watchman-v2020.12.28.00-windows.zip using the links in the relevant
+and download the archive watchman-v2021.01.04.00-windows.zip using the links in the relevant
 asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/facebook/watchman/releases/download/v2020.12.28.00/watchman-v2020.12.28.00-windows.zip
+  https://github.com/facebook/watchman/releases/download/v2021.01.04.00/watchman-v2021.01.04.00-windows.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 watchman-v2020.12.28.00-windows.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f watchman-v2020.12.28.00-windows.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 watchman-v2021.01.04.00-windows.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f watchman-v2021.01.04.00-windows.zip
 
-  File:     watchman-v2020.12.28.00-windows.zip
+  File:     watchman-v2021.01.04.00-windows.zip
   Type:     sha256
-  Checksum: 25B0D79F2E24B24C75F6FC8049F1759B946A4999C6DCDDE95B73BD433A520D1D
+  Checksum: C18D7888129F819B4DB5319A8514DD95DC5AA27AC81AC789EA64215BAF072353
 
 Contents of file LICENSE.txt is obtained from https://github.com/facebook/watchman/blob/master/LICENSE
