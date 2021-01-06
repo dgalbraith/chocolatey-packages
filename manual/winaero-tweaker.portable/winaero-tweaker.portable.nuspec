@@ -3,17 +3,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winaero-tweaker.portable</id>
-    <version>0.17.1.0</version>
+    <version>0.18.0.0</version>
     <owners>bcurran3,dgalbraith</owners>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/winaero-tweaker.portable</packageSourceUrl>
     <title>Winaero Tweaker (Portable)</title>
     <authors>Sergey Tkachenko</authors>
-    <projectUrl>https://winaero.com/index.php</projectUrl>
+    <projectUrl>https://winaero.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@13e084a993db7ca0e2260759355fb12d225be4dd/icons/winaero-tweaker.png</iconUrl>
     <copyright>Copyright Sergey Tkachenko</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <docsUrl>https://winaero.com/blog/winaero-tweaker-faq/</docsUrl>
-    <bugTrackerUrl>https://winaero.com/comment.php?comment.news.1836</bugTrackerUrl>
+    <docsUrl>https://winaero.com/winaero-tweaker-faq/</docsUrl>
+    <bugTrackerUrl>https://winaero.com/winaero-tweaker/</bugTrackerUrl>
     <tags>winaero tweaker windows aero system utility</tags>
     <summary>Customize the appearance and behavior of the Windows operating system</summary>
     <description>
@@ -21,7 +21,7 @@ Winaero Tweaker is essential software for every Windows 10, Windows 8 and Window
 
 ## Features
 
-* A complete list of [Winaero Tweaker features](https://winaero.com/blog/the-list-of-winaero-tweaker-features/)
+* A complete list of [Winaero Tweaker features](https://winaero.com/the-list-of-winaero-tweaker-features/)
 
 ![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@7e8b9e573aef0ea98700df580f115d5f765f9669/manual/winaero-tweaker/screenshot.png)
 
@@ -34,7 +34,7 @@ Winaero Tweaker is essential software for every Windows 10, Windows 8 and Window
     <dependencies>
       <dependency id="kb2919355" version="1.0.20160915" />
     </dependencies>
-    <releaseNotes>https://winaero.com/blog/winaero-tweaker-0-17-1-is-here-with-2-fixes-and-1-new-feature/</releaseNotes>
+    <releaseNotes>https://winaero.com/winaero-tweaker-0-18-is-out-with-windows-10-version-20h2-support-and-new-features/</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
