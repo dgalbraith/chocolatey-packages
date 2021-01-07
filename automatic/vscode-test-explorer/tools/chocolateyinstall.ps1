@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\hbenl.vscode-test-explorer-2.19.3.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\hbenl.vscode-test-explorer-2.19.4.vsix"

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-test-explorer</id>
-    <version>2.19.3</version>
+    <version>2.19.4</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-test-explorer</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Test Explorer UI VSCode Extension</title>
