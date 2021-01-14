@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = 'JetBrains.dotCover.CommandLineTools.2020.3.2.zip'
+$archive  = Join-Path $toolsDir 'JetBrains.dotCover.CommandLineTools.2020.3.2.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
@@ -10,5 +10,5 @@ $unzipArgs = @{
 }
 
 Get-ChocolateyUnzip @unzipArgs
-Remove-Item $toolsPath\*.zip -ea 0
+Remove-Item $toolsDir\*.zip -ea 0
 Get-ChildItem $toolsDir -include *.exe -exclude 'dotCover.exe' -recurse  | Select-Object { New-Item "$_.ignore" -type file -force } | Out-Null
