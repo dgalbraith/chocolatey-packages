@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=haskell.haskell
 
-and download the extension haskell.haskell-1.1.0.vsix using the Download Extension link
+and download the extension haskell.haskell-1.2.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/haskell/vsextensions/haskell/1.1.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/haskell/vsextensions/haskell/1.2.0/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash haskell.haskell-1.1.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hhaskell.haskell-1.1.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash haskell.haskell-1.2.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hhaskell.haskell-1.2.0.vsix
 
   Type:     sha256
-  Checksum: EB015AF8B049C3485A2244F483F9433F7DB0CFD30780F84C93C962303D35E0F1
+  Checksum: 9EFEE31692286C403B64E798D44EE32C3102D0BE91917BCBC52AD82334B1BA6F
 
   Contents of the file LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/haskell.haskell/license

@@ -5,7 +5,7 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://data.services.jetbrains.com'
 $releases = "${domain}/products?code=DCCLT&release.type=release"
 
-$refile    = "(\/|'|\s'|e\s|\s)(J.+zip)"
+$refile    = "\b(\/|'|\s'|e\s|\s)(J.+zip)"
 $reversion = '(-v)(\d+\.\d\.*\d*)'
 
 function global:au_BeforeUpdate {

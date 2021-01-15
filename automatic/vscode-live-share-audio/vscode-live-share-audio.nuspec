@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-live-share-audio</id>
-    <version>0.1.85</version>
+    <version>0.1.91</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-live-share-audio</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Live Share Audio VSCode Extension</title>

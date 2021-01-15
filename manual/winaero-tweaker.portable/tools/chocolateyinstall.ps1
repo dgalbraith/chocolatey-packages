@@ -6,12 +6,12 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   fileType      = 'zip'
-  url           = 'https://winaero.com/e107_files/downloads/winaerotweaker.zip'
-  checksum      = '8349864814D217EC366DD2EFD8513F51CC5B3FEC84DDCCF6E1CAD0D9504A40AD'
+  url           = 'https://winaero.com/downloads/winaerotweaker.zip'
+  checksum      = '2AFB617F444D801CD39C5C94DF3E6DFED265752160C3963082B7B34C5A48449E'
   checksumType  = 'sha256'
   options = @{
     headers = @{
-      referer = "https://winaero.com/download.php?view.1796"
+      referer = "https://winaero.com/download-winaero-tweaker/"
     }
   }
 }
@@ -23,7 +23,7 @@ $packageArgs = @{
   fileType      = 'exe'
   softwareName  = 'Winaero Tweaker'
   file          = "$toolsDir\WinaeroTweaker-$env:packageVersion-setup.exe"
-  checksum      = '8E33F423C30D3977E48F4E57D5F05CF467FCD3468A093E0E8E5B2036F9439595'
+  checksum      = '820217E028C858D059D9BE4DCD75EC790B36C68FEF2F33346AC9D0B26815076C'
   checksumType  = 'sha256'
   silentArgs    = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /PORTABLE  /DIR=`"$toolsDir`""
   validExitCodes= @(0)

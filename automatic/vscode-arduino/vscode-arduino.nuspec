@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-arduino</id>
-    <version>0.3.2</version>
+    <version>0.3.4</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-arduino</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Arduino VSCode Extension</title>
@@ -37,7 +37,7 @@
 
 * This package requires an Arduino IDE 1.6.x or newer.
   You can install a version using the [Arduino Chocolatey package](https://www.chocolatey.org/packages/arduino) or using the [official distributions](https://www.arduino.cc/en/main/software#download). Note the Windows Store / App version is **not** supported.
-* This package requires Visual Studio Code 1.43.0 or newer.
+* This package requires Visual Studio Code 1.50.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.

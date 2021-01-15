@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-proprietary-lightgrey)](https://tunein.com/policies/)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/version-1.18.0-blue)](https://tunein.com/get-tunein/download/)
+[![Software version](https://img.shields.io/badge/version-1.19.0-blue)](https://tunein.com/get-tunein/download/)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/tunein-radio?label=Chocolatey)](https://chocolatey.org/packages/tunein-radio)
 
 The TuneIn desktop app improves how you browse and discover content from all over the world, and enables you to seamlessly listen and save favorites across all of your devices.

@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=ethan-reesor.vscode-go-test-adapter
 
-and download the extension ethan-reesor.vscode-go-test-adapter-0.1.3.vsix using the Download Extension link
+and download the extension ethan-reesor.vscode-go-test-adapter-0.1.5.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ethan-reesor/vsextensions/vscode-go-test-adapter/0.1.3/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ethan-reesor/vsextensions/vscode-go-test-adapter/0.1.5/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash ethan-reesor.vscode-go-test-adapter-0.1.3.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ethan-reesor.vscode-go-test-adapter-0.1.3.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash ethan-reesor.vscode-go-test-adapter-0.1.5.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ethan-reesor.vscode-go-test-adapter-0.1.5.vsix
 
   Type:     sha256
-  Checksum: 97CC2373A67AC8B81C2A08E39AAF14FC5F0D2631A13BAAF7725C8D31A0C77062
+  Checksum: 3394AB031D2D08276FBADF8B091E815EA190214EBE90617A59BD63DF0A0325DC
 
   Contents of the file LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ethan-reesor.vscode-go-test-adapter/license

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-jupyter</id>
+    <version>2020.12.414227025</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-jupyter</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Visual Studio Jupyter VSCode Extension</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0fe70bbd7b56bf474007df2012f64bcecc623d0a/icons/vscode-jupyter.png</iconUrl>
+    <copyright>Copyright 2020 Microsoft Corporation</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-toolsai.jupyter/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/microsoft/vscode-jupyter</projectSourceUrl>
+    <docsUrl>https://github.com/microsoft/vscode-jupyter/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/Microsoft/vscode-jupyter/issues</bugTrackerUrl>
+    <tags>jupyter python julia r vscode microsoft</tags>
+    <summary>Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more</summary>
+    <description><![CDATA[
+    
+A [Visual Studio Code](https://code.visualstudio.com/) [extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+that provides basic notebook support for [language kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels) that are supported in
+[Jupyter Notebooks](https://jupyter.org/) today.  Many language kernels will work with no modification.  To enable advanced features,
+modifications may be needed in the VS Code language extensions.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0fe70bbd7b56bf474007df2012f64bcecc623d0a/automatic/vscode-jupyter/screenshot.png)
+
+## Notes
+
+* This package requires Visual Studio Code 1.49.0 or newer.
+  You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
+* The extension will be installed in all editions of Visual Studio Code which can be found.
+* While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
+  See [Extension auto-update](https://code.visualstudio.com/docs/editor/extension-gallery#_extension-autoupdate) for instructions on how to disable auto-update.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://marketplace.visualstudio.com/items/ms-toolsai.jupyter/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
