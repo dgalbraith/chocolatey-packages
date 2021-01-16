@@ -6,7 +6,7 @@ $domain   = 'https://github.com'
 $releases = "${domain}/AlDanial/cloc/releases/latest"
 
 $refile    = '(cloc-\d.+\d+\.exe)'
-$reversion = '(-v|\/|s-)(?<Version>([\d]+\.[\d]+))'
+$reversion = '(-v|g\/|d\/|s-)(?<Version>([\d]+\.[\d]+))'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
@@ -23,17 +23,17 @@ function global:au_SearchReplace {
     }
 
     ".\tools\chocolateyInstall.ps1" = @{
-      "$($refile)" = "$($Latest.FileName32)"
+      "$($refile)" = "$($Latest.FileName64)"
     }
 
     ".\tools\chocolateyUninstall.ps1" = @{
-      "$($refile)" = "$($Latest.FileName32)"
+      "$($refile)" = "$($Latest.FileName64)"
     }
 
     ".\legal\VERIFICATION.txt"      = @{
-      "$($refile)"         = "$($Latest.FileName32)"
+      "$($refile)"         = "$($Latest.FileName64)"
       "$($reversion)"      = "`${1}$($Latest.Version)"
-      "(Checksum:\s*)(.*)" = "`${1}$($Latest.Checksum32)"
+      "(Checksum:\s*)(.*)" = "`${1}$($Latest.Checksum64)"
     }
   }
 }
@@ -50,8 +50,8 @@ function global:au_GetLatest {
   $version = $Matches.Version
 
   return @{
-    FileName32 = $filename
-    Url32      = $url
+    FileName64 = $filename
+    Url64      = $url
     Version    = $version
   }
 }

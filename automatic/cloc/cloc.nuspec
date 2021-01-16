@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cloc</id>
-    <version>1.84</version>
+    <version>1.86</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/cloc</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Count Lines of Code (CLOC)</title>
@@ -44,11 +44,17 @@ OpenBSD, Mac OS X, AIX, HP-UX, Solaris, IRIX, z/OS, and Windows.
 
 ## Notes
 
+* Current versions of cloc provide 64-bit support only - for a 32-bit operating system use [cloc 1.84](https://chocolatey.org/packages/cloc/1.84).
+  
+  ```powershell
+  choco install cloc --version 1.84
+  choco pin add -n=cloc --version 1.84
+  ```
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/AlDanial/cloc/releases/download/1.84/release_notes-1.84.txt</releaseNotes>
+    <releaseNotes>https://github.com/AlDanial/cloc/releases/download/1.86/release_notes-1.86.txt</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
