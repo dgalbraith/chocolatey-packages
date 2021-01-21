@@ -1,23 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>kindlepreviewer</id>
-    <version>3.50</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/kindlepreviewer</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>Kindle Previewer</title>
-    <authors>Amazon</authors>
-    <projectUrl>http://www.amazon.com/gp/feature.html?docId=1000765261</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@53619ae4c9b43750b7f5801f620a5c94155a641d/icons/kindlepreviewer.png</iconUrl>
-    <copyright>Copyright Amazon.com 2020</copyright>
-    <licenseUrl>https://www.amazon.com/gp/feature.html?docId=1000599251</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <docsUrl>http://kindlepreviewer3.s3.amazonaws.com/UserGuide320_EN.pdf</docsUrl>
-    <mailingListUrl>https://www.amazonforum.com/s/global-search/previewer</mailingListUrl>
-    <tags>kindlepreview kindlepreviewer kindle amazon</tags>
-    <summary>A graphical user interface tool that emulates how books display across Kindle devices and apps</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@53619ae4c9b43750b7f5801f620a5c94155a641d/icons/kindlepreviewer.png" width="48" height="48" />Kindle Previewer](https://chocolatey.org/packages/kindlepreviewer)
+
+[![Software license](https://img.shields.io/badge/license-Proprietary-lightgrey)](https://www.amazon.com/gp/feature.html?docId=1000599251)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/source-v3.50-blue.svg)](https://www.amazon.com/gp/feature.html?docId=1000765261)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/kindlepreviewer?label=Chocolatey)](https://chocolatey.org/packages/kindlepreviewer)
 
 Kindle Previewer is a graphical user interface tool that emulates how books display across Kindle devices and apps. Kindle Previewer makes it easy for publishers to preview the layout of a book and make sure its text displays properly for any orientation or font size to ensure publishers produce and submit the highest quality Kindle books.
 
@@ -48,11 +35,3 @@ As a best practice we recommend you use the Kindle Previewer to review how their
 * The application is only available in a 64-bit version - there is no 32-bit support
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]></description>
-    <releaseNotes>https://s3.amazonaws.com/kindlepreviewer/UG_ReleaseNotes_EN.txt</releaseNotes>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>

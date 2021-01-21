@@ -1,7 +1,13 @@
-﻿Install-ChocolateyPackage `
-    -PackageName 'kindlepreviewer' `
-    -Url 'https://s3.amazonaws.com/kindlepreviewer3/KindlePreviewerInstaller.exe' `
-    -Checksum 'E9C4654C52314F72C1CAB0A60871480BF40931B333B84C0D2A33FF544AF12AF4' `
-    -ChecksumType 'SHA256' `
-    -FileType 'EXE' `
-    -SilentArgs '/S'
+﻿$ErrorActionPreference = 'Stop';
+
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  fileType      = 'exe'
+  url           = 'https://s3.amazonaws.com/kindlepreviewer3/KindlePreviewerInstaller.exe'
+  checksum      = '8474d50d7ae57f2e7274f6c9aae236eeeb9950c4b66291c949fcd1411ba86838'
+  checksumType  = 'sha256'
+  silentArgs    = '/S'
+  validExitCodes= @(0)
+}
+
+Install-ChocolateyPackage @packageArgs
