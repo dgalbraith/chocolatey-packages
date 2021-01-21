@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\Gruntfuggly.todo-tree-0.0.195.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\Gruntfuggly.todo-tree-0.0.196.vsix"
