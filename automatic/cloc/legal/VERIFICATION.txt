@@ -10,19 +10,19 @@ be verified by:
 
   https://github.com/AlDanial/cloc/releases/
 
-and download the file cloc-1.86.exe using the links on the page.
+and download the file cloc-1.88.exe using the links on the page.
 
 Alternatively the file can be downloaded directly from
 
-  https://github.com/AlDanial/cloc/releases/download/1.86/cloc-1.86.exe
+  https://github.com/AlDanial/cloc/releases/download/1.88/cloc-1.88.exe
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 cloc-1.86.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f cloc-1.86.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 cloc-1.88.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f cloc-1.88.exe
 
-  File:     cloc-1.86.exe
+  File:     cloc-1.88.exe
   Type:     sha256
-  Checksum: 1B2E189DF1834411B34534DB446330D1C379B4BC008AF3042EE9ADE818C6A1C8
+  Checksum: 97D5D2631D1CCCDBFD99267AB8A4CF5968816BBE52C0F9324E72E768857F642D
 
 
 Contents of file LICENSE.txt is obtained from https://github.com/AlDanial/cloc/blob/master/LICENSE
