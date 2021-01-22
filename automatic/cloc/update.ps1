@@ -41,8 +41,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
-  $urls           = $download_page.links | where-object href -match $reurl | select-object -expand href | foreach-object { $domain + $_ }
-  $url            = $urls -match $re | select-object -first 1
+  $url            = $download_page.links | where-object href -match $refile | select-object -first 1 -expand href | foreach-object { $domain + $_ }
   $urlSegmentSize = $([System.Uri]$url).Segments.Length
   $filename       = $([System.Uri]$url).Segments[$urlSegmentSize - 1]
 
