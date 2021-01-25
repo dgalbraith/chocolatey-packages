@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Free-green.svg)](https://www.mersenne.org/legal/#EULA)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v29.8.6-blue)](https://www.mersenne.org/download/)
+[![Software version](https://img.shields.io/badge/Source-v30.3.6-blue)](https://www.mersenne.org/download/)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/prime95?label=Chocolatey)](https://chocolatey.org/packages/prime95)
 
 The [Great Internet Mersenne Prime Search (GIMPS)](https://www.mersenne.org) is a collaborative project of volunteers
@@ -28,11 +28,11 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 ## Notes
 
-* If support for 32-bit Windows XP is required use the legacy version [Prime95 29.8.6](https://chocolatey.org/packages/prime95/29.8.6).
+* If support for 32-bit Windows XP is required use the legacy version [Prime95 30.3.6](https://chocolatey.org/packages/prime95/30.3.6).
 
   ```powershell
-  choco install prime95 --version 29.8.6
-  choco pin pin add -n=bluejprime95 --version 29.8.6
+  choco install prime95 --version 30.3.6
+  choco pin pin add -n=bluejprime95 --version 30.3.6
   ```
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
