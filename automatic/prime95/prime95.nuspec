@@ -1,25 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>prime95</id>
-    <version>29.4</version>
+    <version>29.8.6</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/prime95</packageSourceUrl>
+    <owners>dgalbraith</owners>
     <title>Great Internet Mersenne Prime Search (GIMPS)</title>
     <authors>George Woltman</authors>
-    <owners>Anthony Mastrean</owners>
-    <summary>This program is used to find Mersenne Prime numbers.</summary>
-    <description>
-This program is used to find Mersenne Prime numbers. See http://www.utm.edu/research/primes/mersenne.shtml for a good description of Mersenne primes. Mersenne numbers can be proved composite (not prime) by either finding a factor or by running a Lucas-Lehmer primality test.
-    </description>
-    <licenseUrl>http://www.mersenne.org/legal/#EULA</licenseUrl>
     <projectUrl>http://mersenne.org</projectUrl>
-    <releaseNotes>https://www.mersenne.org/download/whatsnew_294b7.txt</releaseNotes>
-    <packageSourceUrl>https://github.com/AnthonyMastrean/chocolateypackages/</packageSourceUrl>
-    <projectSourceUrl>https://mersenne.org/download/#source</projectSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@699888431c179087758a7021bed3ea5be50f9611/icons/prime95.png</iconUrl>
+    <copyright>Copyright Mersenne Research, Inc.  All rights reserved</copyright>
+    <licenseUrl>http://www.mersenne.org/legal/#EULA</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://www.mersenne.org/download/#source</projectSourceUrl>
     <docsUrl>http://www.mersenne.org/download/readme.txt</docsUrl>
-    <mailingListUrl>http://www.mersenneforum.org/</mailingListUrl>
     <bugTrackerUrl>mailto:woltman@alum.mit.edu</bugTrackerUrl>
-    <iconUrl>https://cdn.rawgit.com/AnthonyMastrean/chocolateypackages/f1c74e9b15d0d968b5e30080a70dec377d83a36c/public/icons/prime95.png</iconUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <tags>prime gimps</tags>
+    <mailingListUrl>http://www.mersenneforum.org/</mailingListUrl>
+    <tags>prime prime95 mersenne stress stress-test burn-in gimps</tags>
+    <summary>Find Mersenne Prime numbers or stress test systems</summary>
+    <description><![CDATA[
+
+The [Great Internet Mersenne Prime Search (GIMPS)](https://www.mersenne.org) is a collaborative project of volunteers
+using the Prime95 client to participate in a distributed computing effort to find [Mersenne Prime numbers](http://www.utm.edu/research/primes/mersenne.shtml).
+
+The Prime95 client can also be used as a stress testing tool.  The Prime95 client includes a "torture test" that places
+a heavy computational load on a system.  Continuous computations are run and checked against tolerances while they are
+executing with the final results being compared to the known correct answers.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@699888431c179087758a7021bed3ea5be50f9611/automatic/prime95/screenshot.png)
+
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/AddToDesktop` - this puts a shortcut on your desktop to Prime95.
+
+This parameter can be passed to the installer with the use of `--params`.
+For example: `--params '"/AddToDesktop"'`.
+
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://www.mersenne.org/download/whatsnew.txt</releaseNotes>
   </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
