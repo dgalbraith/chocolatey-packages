@@ -1,0 +1,41 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.mersenne.org/download/
+
+and download the package p95v303b6.win32.zip or p95v303b6.win64.zip using the
+links in the relevant section of the page.
+
+Alternatively the packages can be downloaded directly from
+
+  http://www.mersenne.org/ftp_root/gimps/p95v298b6.win32.zip
+  http://www.mersenne.org/ftp_root/gimps/p95v298b6.win64.zip
+
+2. The package can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash p95v298b6.win32.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f p95v298b6.win32.zip
+
+  File32:         p95v298b6.win32.zip
+  ChecksumType32: sha256
+  Checksum32:     CDD32B4C358869D3F588AE430BC67D9E88A5A69506002F864ADAC3C477C9202A
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash p95v298b6.win64.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f p95v298b6.win64.zip
+
+  File64:         p95v298b6.win64.zip
+  ChecksumType64: sha256
+  Checksum64:     CDE7E4C490F060E303A58D3CDC85B6E47B9133E84381EF5805651A1C6AB3FB3D
+
+Contents of file LICENSE.txt is obtained from https://www.mersenne.org/legal
+
+The license for Prime95 does not provide authorization for redistribution of the application
+but George Woltman, Prime95 author and President Mersenne Research Inc., has authorized the
+redistribution of Prime95 from the Chocolatey Community Repository.  A copy of this
+authorization is included in Prime95BinaryRedistributionAuthorisation.pdf.
