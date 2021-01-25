@@ -28,11 +28,12 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 ## Notes
 
-* If support for 32-bit Windows XP is required use the legacy version [Prime95 30.3.6](https://chocolatey.org/packages/prime95/30.3.6).
+* If support for 32-bit Windows XP is required use the legacy version [Prime95 29.8.6](https://chocolatey.org/packages/prime95/29.8.6).
 
   ```powershell
-  choco install prime95 --version 30.3.6
-  choco pin pin add -n=bluejprime95 --version 30.3.6
+  choco install prime95 --version 29.8.6
+  choco pin pin add -n=prime95 --version 29.8.6
   ```
+
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
