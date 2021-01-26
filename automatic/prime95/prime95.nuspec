@@ -15,7 +15,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://www.mersenne.org/download/#source</projectSourceUrl>
     <docsUrl>http://www.mersenne.org/download/readme.txt</docsUrl>
-    <bugTrackerUrl>mailto:woltman@alum.mit.edu</bugTrackerUrl>
     <mailingListUrl>http://www.mersenneforum.org/</mailingListUrl>
     <tags>prime prime95 mersenne stress stress-test burn-in gimps</tags>
     <summary>Find Mersenne Prime numbers or stress test systems</summary>
@@ -47,7 +46,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
   ```powershell
   choco install prime95 --version 29.8.6
-  choco pin pin add -n=bluejprime95 --version 29.8.6
+  choco pin pin add -n=prime95 --version 29.8.6
   ```
 
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).

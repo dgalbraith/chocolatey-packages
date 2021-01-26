@@ -17,7 +17,7 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "(\d+\.\d+.\d+)" = "$($Latest.Version)"
+      "(v)(\d+\.\d+.\d+)" = "`${1}$($Latest.Version)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
