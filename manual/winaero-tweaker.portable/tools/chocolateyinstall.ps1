@@ -7,7 +7,7 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   fileType      = 'zip'
   url           = 'https://winaero.com/downloads/winaerotweaker.zip'
-  checksum      = '2AFB617F444D801CD39C5C94DF3E6DFED265752160C3963082B7B34C5A48449E'
+  checksum      = 'BE7EDE2B4C9853346B089B45041240B92FC5C22B647D1BF01D49137F174E16E5'
   checksumType  = 'sha256'
   options = @{
     headers = @{
@@ -23,7 +23,7 @@ $packageArgs = @{
   fileType      = 'exe'
   softwareName  = 'Winaero Tweaker'
   file          = "$toolsDir\WinaeroTweaker-$env:packageVersion-setup.exe"
-  checksum      = '820217E028C858D059D9BE4DCD75EC790B36C68FEF2F33346AC9D0B26815076C'
+  checksum      = '4A5478DC18665C4AB7496467CDC3E549610EBBC8AD86BA1E7289E5EE2EC44B15'
   checksumType  = 'sha256'
   silentArgs    = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /PORTABLE  /DIR=`"$toolsDir`""
   validExitCodes= @(0)
