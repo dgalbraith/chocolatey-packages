@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winaero-tweaker.install</id>
-    <version>0.18.0.0</version>
+    <version>0.19.1.0</version>
     <owners>bcurran3,dgalbraith</owners>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/winaero-tweaker.install</packageSourceUrl>
     <title>Winaero Tweaker (Install)</title>
     <authors>Sergey Tkachenko</authors>
     <projectUrl>https://winaero.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@13e084a993db7ca0e2260759355fb12d225be4dd/icons/winaero-tweaker.png</iconUrl>
-    <copyright>Copyright Sergey Tkachenko</copyright>
+    <copyright>Copyright 2015-2021 winaero.com</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://winaero.com/winaero-tweaker-faq/</docsUrl>
     <bugTrackerUrl>https://winaero.com/winaero-tweaker/</bugTrackerUrl>
@@ -34,7 +34,7 @@ Winaero Tweaker is essential software for every Windows 10, Windows 8 and Window
     <dependencies>
       <dependency id="kb2919355" version="1.0.20160915" />
     </dependencies>
-    <releaseNotes>https://winaero.com/winaero-tweaker-0-18-is-out-with-windows-10-version-20h2-support-and-new-features/</releaseNotes>
+    <releaseNotes>https://winaero.com/winaero-tweaker-0-19-released/</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
