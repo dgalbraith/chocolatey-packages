@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -extensionId 'GoogleCloudTools.cloudcode@1.7.2'
+Install-VsCodeExtension -extensionId 'GoogleCloudTools.cloudcode@1.8.0'
