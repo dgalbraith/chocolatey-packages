@@ -1,24 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>cdex</id>
-    <version>2.24</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/cdex/</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>CDex</title>
-    <authors>Ariane Paola Gomes, Georgy Berdyshev, Albert L Faber</authors>
-    <projectUrl>http://cdex.mu/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@da67221b3b1b40c66454b28186f8b87c17118440/icons/cdex.png</iconUrl>
-    <copyright>Ariane Paola Gomes, Georgy Berdyshev, Albert L Faber</copyright>
-    <licenseUrl>http://cdex.mu/license</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>http://cdex.mu/sourcecode</projectSourceUrl>
-    <docsUrl>http://cdex.mu/support</docsUrl>
-    <bugTrackerUrl>https://cdex.mu/faq</bugTrackerUrl>
-    <tags>cdex audio cd ripper extract cdda encoder wav mp3 flac aac wma ogg</tags>
-    <summary>Open source digital audio CD extractor</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@da67221b3b1b40c66454b28186f8b87c17118440/icons/cdex.png" width="48" height="48" />CDex](https://chocolatey.org/packages/cdex)
+
+[![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://cdex.mu/license)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/Source-2.24-blue.svg)](https://cdex.mu/sourcecode)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/cdex?label=Chocolatey)](https://chocolatey.org/packages/cdex)
 
 CDex can extract the data directly (digital) from an Audio CD, which is generally called a CD Ripper or a CDDA utility.
 The resulting audio file can be a plain WAV file (useful for making compilation audio CDs) or the ripped audio data can
@@ -56,7 +42,7 @@ ripping process.
 * Advanced jitter correction (based on the cd-paranoia ripping library)
 * Indicates track progress and jitter control
 * Normalization of audio signal
-* Supports many CD-Drive from many manufacters
+* Supports many CD-Drive from many manufactures
 * Conversion of external WAV files
 * Support for M3U and PLS play list files
 * Best of all, it's free (GPL license, source code available)
@@ -68,15 +54,3 @@ ripping process.
 * Upon install completion the default browser will be launched on the page (https://cdex.mu/donate).
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]></description>
-    <releaseNotes>https://cdex.mu/#main-content</releaseNotes>
-    <dependencies>
-      <dependency id="autohotkey.portable" />
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="legal\**" target="legal" />
-    <file src="tools\**" target="tools" />
-  </files>
-</package>

@@ -1,18 +1,16 @@
-﻿$packageName = '{{PackageName}}'
-$installerType = 'exe'
-$silentArgs = '/S'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
-$checksumType = 'sha256'
-$validExitCodes = @(0)
-$scriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
-$ahkFile = "$scriptPath\chocolateyInstall.ahk"
+﻿$ErrorActionPreference = 'Stop';
 
-Start-Process 'AutoHotKey' $ahkFile
-Install-ChocolateyPackage -PackageName "$packageName" `
-                          -FileType "$installerType" `
-                          -SilentArgs "$silentArgs" `
-                          -Url "$url" `
-                          -ValidExitCodes $validExitCodes `
-                          -Checksum "$checksum" `
-                          -ChecksumType "$checksumType"
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+
+$packageArgs = @{
+  packageName    = $env:ChocolateyPackageName
+  fileType       = 'exe'
+  file           = "$toolsDir\CDex-2.24.exe"
+  checksumType   = 'sha256'
+  silentArgs     = @('/S')
+  validExitCodes = @(0)
+}
+
+Start-Process 'AutoHotKey' "$toolsDir\chocolateyInstall.ahk"
+
+Install-ChocolateyInstallPackage @packageArgs
