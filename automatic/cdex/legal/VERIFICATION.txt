@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary downloads page
+
+  https://cdex.mu/download
+
+and download the installer CDex-2.24.exe using the links on the page.
+
+Alternatively the archive can be downloaded directly from
+
+  http://mirror.cdex.mu/CDex-2.24.exe
+
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 CDex-2.24.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f CDex-2.24.exe
+
+  File:     CDex-2.24.exe
+  Type:     sha256
+  Checksum: 49F8E02B42034E69D6F03FC105C79E2A077E9902AD9CF426AFBEB62524062E67
+
+Contents of file LICENSE.txt is obtained from https://cdex.mu/license
