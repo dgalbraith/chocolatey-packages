@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64      = 'https://redirector.gvt1.com/edgedl/android/studio/install/4.1.1.0/android-studio-ide-201.6953283-windows.exe'
-$checksum64 = '88d1576b5f672e67035bc4cde55697cf4cc0e63f9c9740f82f4ef8e09ddb05d4'
+$url64      = 'https://redirector.gvt1.com/edgedl/android/studio/install/4.1.2.0/android-studio-ide-201.7042882-windows.exe'
+$checksum64 = '22CDCFEFFABE384E788B679C5C03238684FA3F1F4C73E2A3744F2FE5AAB7F97F'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -18,14 +18,14 @@ $pp = Get-PackageParameters
 
 Install-ChocolateyPackage @packageArgs
 
-if ($pp.PinnedToTaskbar) { 
+if ($pp.PinnedToTaskbar) {
     Write-Host "Param: PinToTaskbar - Pinning Android Studio to Taskbar..."
     Install-ChocolateyPinnedTaskBarItem -TargetFilePath "${env:ProgramFiles}\Android\Android Studio\bin\studio64.exe"
 }
 
-if ($pp.AddToDesktop) { 
+if ($pp.AddToDesktop) {
     Write-Host "Param: AddToDesktop - Adding Android Studio Shortcut to Desktop..."
-    
+
     $desktopPath = [Environment]::GetFolderPath("Desktop")
 
     Install-ChocolateyShortcut `
