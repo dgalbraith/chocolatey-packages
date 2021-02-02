@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>isowriter</id>
+    <version>0.6.1.20200129</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/isowriter</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>ISO Writer</title>
+    <authors>Alex Feinman</authors>
+    <projectUrl>https://web.archive.org/web/20171001223928/http://isorecorder.alexfeinman.com/ISOWriter.htm</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@7e9ae106859434f2bdde98f74517f9f3fbea1424/icons/isowriter.png</iconUrl>
+    <copyright>Alex Feinman 2010</copyright>
+    <licenseUrl>https://web.archive.org/web/20171001223928/http://isorecorder.alexfeinman.com/ISOWriter.htm</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://web.archive.org/web/20171001223928/http://isorecorder.alexfeinman.com/ISOWriter.htm</docsUrl>
+    <tags>iso writer burn iso9660 cd dvd bluray isowriter</tags>
+    <summary>Command line tool for buring ISO images</summary>
+    <description><![CDATA[
+
+ISOWriter utility is designed as a command-line-based alternative to the GUI-based [ISO Recorder](https://chocolatey.org/packages/isorecorder).
+It has has been designed to allow for unattended operations from batch files. A non-zero exit code is returned on failure.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@33f8c2fec7386e32ee8e85568835b8e589091622/manual/isowriter/screenshot.png)
+
+## Notes
+
+* This application is no longer supported or maintained.
+* The package is for the last released version and is distributed from a snapshot captured at [archive.org](https://archive.org).
+
+]]>
+    </description>
+    <releaseNotes>https://web.archive.org/web/20171001223928/http://isorecorder.alexfeinman.com/ISOWriter.htm</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
