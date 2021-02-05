@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+<metadata>
+    <id>go-fonts</id>
+    <title>Go Fonts</title>
+    <version>2.004</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/go-fonts</packageSourceUrl>
+    <authors>Bigelow &amp; Holmes Inc.</authors>
+    <owners>dgalbraith</owners>
+    <projectUrl>https://blog.golang.org/go-fonts</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec2d3c7b3ed472b9024c58cf27f766a9909f62bd/icons/go-fonts.png</iconUrl>
+    <copyright>Copyright (c) 2016 Bigelow &amp; Holmes Inc.. All rights reserved.</copyright>
+    <licenseUrl>https://golang.org/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://go.googlesource.com/image/+/master/font/gofont/ttfs</projectSourceUrl>
+    <docsUrl>https://blog.golang.org/go-fonts</docsUrl>
+    <mailingListUrl>https://groups.google.com/g/golang-nuts</mailingListUrl>
+    <bugTrackerUrl>https://github.com/golang/go/issues</bugTrackerUrl>
+    <tags>proportional sans-serif monospaced slab-serif font go go-fonts</tags>
+    <summary>The Go font family includes proportional and fixed-width faces in normal, bold, and italic renderings</summary>
+    <description><![CDATA[
+
+The Go font family includes proportional and fixed-width faces in normal, **bold**, and *italic* renderings.
+
+The fonts have been tested for technical uses, particularly programming. Go source code looks particularly good when
+displayed in Go fonts, as its name implies, with things like punctuation characters easily distinguishable and
+operators lined up and placed consistently.
+
+## Features
+
+* Provides 2 sets - Go Proportional, which is sans-serif, and Go Mono, which is slab-serif
+* Conforms to the DIN 1450 legibility standard
+* Offers the WGL4 character set
+* Go proportional fonts are nearly metrically compatible with standard Helvetica or Arial characters
+* Go fixed-width fonts are metrically compatible with Courier and other monospaced fonts that match the "Pica"
+typewriter type widths of 10 characters per linear inch at 12 point
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec2d3c7b3ed472b9024c58cf27f766a9909f62bd/manual/go-fonts/screenshot.png)
+
+## Notes
+
+* This package is  manually updated.
+* If the package does not represent the latest version please contact the maintainer(s) and let them know the package requires updating.
+
+]]></description>
+    <releaseNotes>https://go.googlesource.com/image/+/b7f8df6bc082334698d4505fb85fa05e99156b72</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-font-helpers.extension" version="0.0.3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
