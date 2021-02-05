@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'image-b7f8df6bc082334698d4505fb85fa05e99156b72-font-gofont-ttfs.tar.gz'
+$archive  = Join-Path $toolsDir 'image-f03a046406d4d7fbfd4ed29f554da8f6114049fc-font-gofont-ttfs.tar.gz'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName

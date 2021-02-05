@@ -4,7 +4,7 @@
 <metadata>
     <id>go-fonts</id>
     <title>Go Fonts</title>
-    <version>2.004</version>
+    <version>2.008</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/go-fonts</packageSourceUrl>
     <authors>Bigelow &amp; Holmes Inc.</authors>
     <owners>dgalbraith</owners>
@@ -21,7 +21,8 @@
     <summary>The Go font family includes proportional and fixed-width faces in normal, bold, and italic renderings</summary>
     <description><![CDATA[
 
-The Go font family includes proportional and fixed-width faces in normal, **bold**, and *italic* renderings.
+The Go font family includes proportional and fixed-width faces in normal, **bold**, and *italic* renderings with a
+smallcaps face in a normal and *italic* renderings.
 
 The fonts have been tested for technical uses, particularly programming. Go source code looks particularly good when
 displayed in Go fonts, as its name implies, with things like punctuation characters easily distinguishable and
@@ -29,14 +30,14 @@ operators lined up and placed consistently.
 
 ## Features
 
-* Provides 2 sets - Go Proportional, which is sans-serif, and Go Mono, which is slab-serif
+* Provides 3 sets - Go Proportional, which is sans-serif, Go Mono, which is slab-serif and Go Smallcaps
 * Conforms to the DIN 1450 legibility standard
 * Offers the WGL4 character set
 * Go proportional fonts are nearly metrically compatible with standard Helvetica or Arial characters
 * Go fixed-width fonts are metrically compatible with Courier and other monospaced fonts that match the "Pica"
 typewriter type widths of 10 characters per linear inch at 12 point
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec2d3c7b3ed472b9024c58cf27f766a9909f62bd/manual/go-fonts/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f6b0bd1dcc65148e2645e0665a3b774edb602aef/manual/go-fonts/screenshot.png)
 
 ## Notes
 
@@ -44,7 +45,7 @@ typewriter type widths of 10 characters per linear inch at 12 point
 * If the package does not represent the latest version please contact the maintainer(s) and let them know the package requires updating.
 
 ]]></description>
-    <releaseNotes>https://go.googlesource.com/image/+/b7f8df6bc082334698d4505fb85fa05e99156b72</releaseNotes>
+    <releaseNotes>https://go.googlesource.com/image/+/f03a046406d4d7fbfd4ed29f554da8f6114049fc</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-font-helpers.extension" version="0.0.3.1" />
     </dependencies>
