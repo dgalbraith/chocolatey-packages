@@ -8,20 +8,20 @@ be verified by:
 
 1. Go to the version control repository
 
-  https://go.googlesource.com/image/+/b7f8df6bc082334698d4505fb85fa05e99156b72/font/gofont/
+  https://go.googlesource.com/image/+/f03a046406d4d7fbfd4ed29f554da8f6114049fc/font/gofont/
 
-and download the image-b7f8df6bc082334698d4505fb85fa05e99156b72-font-gofont-ttfs.tar.gz archive using the [tgz] link on the page.
+and download the image-f03a046406d4d7fbfd4ed29f554da8f6114049fc-font-gofont-ttfs.tar.gz archive using the [tgz] link on the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://go.googlesource.com/image/+archive/b7f8df6bc082334698d4505fb85fa05e99156b72/font/gofont/ttfs.tar.gz
+  https://go.googlesource.com/image/+archive/f03a046406d4d7fbfd4ed29f554da8f6114049fc/font/gofont/ttfs.tar.gz
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 image-b7f8df6bc082334698d4505fb85fa05e99156b72-font-gofont-ttfs.tar.gz
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f image-b7f8df6bc082334698d4505fb85fa05e99156b72-font-gofont-ttfs.tar.gz
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 image-f03a046406d4d7fbfd4ed29f554da8f6114049fc-font-gofont-ttfs.tar.gz
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f image-f03a046406d4d7fbfd4ed29f554da8f6114049fc-font-gofont-ttfs.tar.gz
 
-  File:     image-b7f8df6bc082334698d4505fb85fa05e99156b72-font-gofont-ttfs.tar.gz
+  File:     image-f03a046406d4d7fbfd4ed29f554da8f6114049fc-font-gofont-ttfs.tar.gz
   Type:     sha256
-  Checksum: A3287E62A4DBDF7B046F088F40D2DD39DB5C4FC286A6F437785589BC137D97BF
+  Checksum: 2BDCEE442358A9D1808C1213DC829CA813C4DCA4B2910972F9DA3555346423A5
 
-Contents of file LICENSE.txt is obtained from https://go.googlesource.com/image/+/b7f8df6bc082334698d4505fb85fa05e99156b72/font/gofont/ttfs/README
+Contents of file LICENSE.txt is obtained from https://go.googlesource.com/image/+/f03a046406d4d7fbfd4ed29f554da8f6114049fc/font/gofont/ttfs/README
