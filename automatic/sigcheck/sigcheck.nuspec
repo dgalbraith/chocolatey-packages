@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sigcheck</id>
+    <version>2.72</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sigcheck</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Sigcheck - Windows Sysinternals</title>
+    <authors>Mark Russinovich</authors>
+    <projectUrl>https://docs.microsoft.com/en-us/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://docs.microsoft.com/en-us/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck</docsUrl>
+    <mailingListUrl>https://docs.microsoft.com/en-us/answers/products/sysinternals</mailingListUrl>
+    <tags>verify signature security tools sysinternals</tags>
+    <summary>Dump file version information and verify that images on your system are digitally signed</summary>
+    <description><![CDATA[
+
+Sigcheck is a command-line utility that shows file version number, timestamp information, and digital signature
+details, including certificate chains. It also includes an option to check a file’s status on [VirusTotal](https://www.virustotal.com/),
+a site that performs automated file scanning against over 40 antivirus engines, and an option to upload a file for
+scanning.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/automatic/sigcheck/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
