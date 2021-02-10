@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/IBM/kui/releases
+
+and download the installer Kui-win32-x64.zip using
+the links in the relevant assets section of the page.
+
+Alternatively the installer can be downloaded directly from
+
+  https://github.com/IBM/kui/releases/download/v10.0.1/Kui-win32-x64.zip
+
+2. The installer can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Kui-win32-x64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Kui-win32-x64.zip
+
+  File64:     Kui-win32-x64.zip
+  Type64:     sha256
+  Checksum64: D03DB3451968CF896D4CF83703AFE0FAF05520ECB8917E009AA0B55F55836A2C
+
+Contents of file LICENSE.txt is obtained from https://github.com/IBM/kui/blob/master/LICENSE

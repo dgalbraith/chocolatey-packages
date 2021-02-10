@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kui</id>
+    <version>10.0.1</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/kui</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Kui - CLI Driven Graphics for Kubernetes</title>
+    <authors>Kui Contributors</authors>
+    <projectUrl>https://kui.tools</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ac9e0ef462b93905584b248422198303de1a4823/icons/kui.png</iconUrl>
+    <copyright>Kui Contributors</copyright>
+    <licenseUrl>https://github.com/beekeeper-studio/beekeeper-studio/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/IBM/kui</projectSourceUrl>
+    <docsUrl>https://github.com/IBM/kui/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/IBM/kui/issues</bugTrackerUrl>
+    <tags>cli kubernetes k8s kubectl openwhisk ui electron ibm</tags>
+    <summary>A hybrid command-line/UI development experience for cloud-native development</summary>
+    <description><![CDATA[
+
+We love CLIs, and think they are critical for interacting in a flexible way with the cloud. We need the power to go off
+the rails.  But ASCII is tedious.  Kui takes your normal kubectl command line requests and responds with graphics.
+Instead of ASCII tables, you are presented with sortable ones.  Instead of copying and pasting long auto-generated
+resource names to drill down, in Kui **you just click**.
+
+Kui enhances your CLI experience, but is also fast.  It launches in 1-2 seconds, and can process standard `kubectl`
+commands **2-3 times faster** than `kubectl` itself.
+
+## Features
+
+* Works with any Kubernetes or OpenWhisk provider
+* View output from `watch` and `apply` requests in live tables
+* Browse facets of your resources in a tabbed UI
+* Drill down, drill up and view logs or events related to the resource of interest
+* View details from table rows in a side terminal
+* Display jobs in a waterfall diagram
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ac9e0ef462b93905584b248422198303de1a4823/automatic/kui/screenshot.png)
+
+## Notes
+
+* Kui only provides a 64-bit application
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/IBM/kui/releases/tag/v10.0.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
