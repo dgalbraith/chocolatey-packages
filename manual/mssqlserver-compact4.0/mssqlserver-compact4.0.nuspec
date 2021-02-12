@@ -46,21 +46,21 @@ The `language` package parameter can be set to install the package with the spec
 specified the install will default to English.
 
 * `/language=[language-code]` - installs the package using the specified language.  Supported languages are:
-  - br - Brazilian (Portuguese) - `--params '"/language=br"'`
-  - cz - Czech - `--params '"/language=cz"'`
-  - de - German - `--params '"/language=de"'`
-  - en - English - `--params '"/language=en"'`
-  - es - Spanish - `--params '"/language=es"'`
-  - fr - French - `--params '"/language=fr"'`
-  - it - Italian - `--params '"/language=it"'`
-  - ja - Japanese - `--params '"/language=ja"'`
-  - ko - Korean - `--params '"/language=ko"'`
-  - pl - Polish - `--params '"/language=pl"'`
-  - ru - Russian - `--params '"/language=ru"'`
-  - tr - Turkish - `--params '"/language=tr"'`
-  - zh - Chinese (Simplified) - `--params '"/language=zh"'`
-  - zh-CN - Chinese (Simplified) - `--params '"/language=zh-CN"'`
-  - zh-TW - Chinese (Tradition) - `--params '"/language=gz-TW"'`
+  * br - Brazilian (Portuguese) - `--params '"/language=br"'`
+  * cz - Czech - `--params '"/language=cz"'`
+  * de - German - `--params '"/language=de"'`
+  * en - English - `--params '"/language=en"'`
+  * es - Spanish - `--params '"/language=es"'`
+  * fr - French - `--params '"/language=fr"'`
+  * it - Italian - `--params '"/language=it"'`
+  * ja - Japanese - `--params '"/language=ja"'`
+  * ko - Korean - `--params '"/language=ko"'`
+  * pl - Polish - `--params '"/language=pl"'`
+  * ru - Russian - `--params '"/language=ru"'`
+  * tr - Turkish - `--params '"/language=tr"'`
+  * zh - Chinese (Simplified) - `--params '"/language=zh"'`
+  * zh-CN - Chinese (Simplified) - `--params '"/language=zh-CN"'`
+  * zh-TW - Chinese (Tradition) - `--params '"/language=gz-TW"'`
 
 For example: `choco install mssqlserver-compact4.0 --params '"/language=fr"'` to install the package with French
 
