@@ -1,0 +1,224 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installers have been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the software distribtion page
+
+  https://www.microsoft.com/download/details.aspx?id=30709
+
+and retrieve the SSCERuntime files by selecting the relevant language in the
+dropdown followed by the download button and file selection.
+
+2. The archives can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-CHS.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-CHS.exe
+
+  File:     SSCERuntime_x86-CHS.exe
+  Type:     sha256
+  Checksum: EEB5218D93BF89DF18479DE3817D49811E8FD0D6108A5A4B8F1CD56354734256
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-CHT.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-CHT.exe
+
+  File:     SSCERuntime_x86-CHT.exe
+  Type:     sha256
+  Checksum: 3C0F5C1D3A60072F31BB5834F73388CFA5D41466DB5B5B167ACF6076696B304F
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-CSY.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-CSY.exe
+
+  File:     SSCERuntime_x86-CSY.exe
+  Type:     sha256
+  Checksum: 3767F675EBB6A08431B439BC6217A93CC7F70B9754A59FBE9CBB251EFBBA969D
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-DEU.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-DEU.exe
+
+  File:     SSCERuntime_x86-DEU.exe
+  Type:     sha256
+  Checksum: 814BF99DF12696A7E98DA77B84AA84EA43C22C5B41A05895F577C9F288010CC4
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-ENU.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-ENU.exe
+
+  File:     SSCERuntime_x86-ENU.exe
+  Type:     sha256
+  Checksum: 44CA2585C7BD9EF66979C1C903A8A053B922A69BEAAD4DCC47015CD99FCF3CD4
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-ESN.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-ESN.exe
+
+  File:     SSCERuntime_x86-ESN.exe
+  Type:     sha256
+  Checksum: DE3D25C5EDB5CD5126121B92735CF974E90FDE471A4026B2B16321F15682F5FC
+
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-FRA.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-FRA.exe
+
+  File:     SSCERuntime_x86-FRA.exe
+  Type:     sha256
+  Checksum: C9DA688C6F749AD55E52D0B783FCE5EE98CD29BBCA6D65E3A9E8F5DFE50661C7
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-ITA.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-ITA.exe
+
+  File:     SSCERuntime_x86-ITA.exe
+  Type:     sha256
+  Checksum: CFB25AC4A7FD7EB71EF00270EC0E11AAB563D38F8E01EC73530BBC8D0345C98A
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-JPN.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-JPN.exe
+
+  File:     SSCERuntime_x86-JPN.exe
+  Type:     sha256
+  Checksum: 2B48C0C7AC8147D14A3DC271DCD9FCCBA2A0CDF455665206EEE03C92A8F8A5D9
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-KOR.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-KOR.exe
+
+  File:     SSCERuntime_x86-KOR.exe
+  Type:     sha256
+  Checksum: 06069E54827480E91DAF17012878D929F02AF8A279B46ADFEFEF4593C26F6310
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-PLK.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-PLK.exe
+
+  File:     SSCERuntime_x86-PLK.exe
+  Type:     sha256
+  Checksum: 0B8AAA75BAFCF96DF141B91B1A4437B6F7ADAB5F88791CC436839058D01F291A
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-PTB.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-PTB.exe
+
+  File:     SSCERuntime_x86-PTB.exe
+  Type:     sha256
+  Checksum: 1A2DFB186B3BC7BCC6DB1663AAC6BEE610346F7F7124F6734C3533FD894E17C4
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-RUS.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-RUS.exe
+
+  File:     SSCERuntime_x86-RUS.exe
+  Type:     sha256
+  Checksum: 87C2BBEF40C59297893FAA562C7FF398822D621201FAA74DF76D8083B5AFE9BF
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-TRK.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-TRK.exe
+
+  File:     SSCERuntime_x86-TRK.exe
+  Type:     sha256
+  Checksum: 5FE905F71907FAA7CEFDEE2C3439E5C3A6BA6F0334C67E8A6B3811B0653922E4
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-CHS.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-CHS.exe
+
+  File:     SSCERuntime_x64-CHS.exe
+  Type:     sha256
+  Checksum: 6679A33F37BD37D2B1163465995AE09CB9EF6AF4B4026A20924CCB03FB03BC4B
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-CHT.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-CHT.exe
+
+  File:     SSCERuntime_x64-CHT.exe
+  Type:     sha256
+  Checksum: C536AAA413F4EDB12B50D81E6FE5C6FDCFD03B39500F2CBD15BA02F488E9A865
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-CSY.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-CSY.exe
+
+  File:     SSCERuntime_x64-CSY.exe
+  Type:     sha256
+  Checksum: 1853A00F79684A175243E9D5DED003A0E53BB3D4272452E04EF38A79CF16C578
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-DEU.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-DEU.exe
+
+  File:     SSCERuntime_x64-DEU.exe
+  Type:     sha256
+  Checksum: F86BAC8C81C3F42DC7100EAFA7CA1FA6CB587ADB49774DD1C67CC0072E8FCA3C
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-ENU.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-ENU.exe
+
+  File:     SSCERuntime_x64-ENU.exe
+  Type:     sha256
+  Checksum: 443D149C7A1A3D5C26189BF727A55287341FAD620225FD7AED610BA1762286E4
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-ESN.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-ESN.exe
+
+  File:     SSCERuntime_x64-ESN.exe
+  Type:     sha256
+  Checksum: 3FB0C8BCF3C22F37A5A3BB4F4A8537149AAEA038442D1FBCBDA4780912E913FC
+
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-FRA.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-FRA.exe
+
+  File:     SSCERuntime_x64-FRA.exe
+  Type:     sha256
+  Checksum: 6DE2AB2799BB4FEF47B6E677DC052C9927D8C2F7F2FB7A05B2AF8BB664D09C77
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-ITA.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-ITA.exe
+
+  File:     SSCERuntime_x64-ITA.exe
+  Type:     sha256
+  Checksum: D00A3EAE732A8492FCE582B607E0CA2359FD5010368E3238A900FEC4CDADF0E2
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-JPN.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-JPN.exe
+
+  File:     SSCERuntime_x64-JPN.exe
+  Type:     sha256
+  Checksum: 1B57600E4D69AF91D8B01FA6FD55FA2F2791F0C0B048E8F9B3B1AA8F918357E1
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-KOR.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-KOR.exe
+
+  File:     SSCERuntime_x64-KOR.exe
+  Type:     sha256
+  Checksum: B1C9E335CD55131BBCE4C0F0EEBD9C15658ADA2812E48083EF1748C5A4C4A436
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-PLK.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-PLK.exe
+
+  File:     SSCERuntime_x64-PLK.exe
+  Type:     sha256
+  Checksum: B9A6A18366C94E883BB5BD9DF87BB89A82115F170D457D9ABFCA827066F31B38
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-PTB.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-PTB.exe
+
+  File:     SSCERuntime_x64-PTB.exe
+  Type:     sha256
+  Checksum: 5C1271D8F54135B5B84FBC20C0CD985F870495DB728047CFCAA04257209DA138
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-RUS.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-RUS.exe
+
+  File:     SSCERuntime_x64-RUS.exe
+  Type:     sha256
+  Checksum: 440CAE3F6097CA69A999AFC7637B0640B64A589AD77DEE62830151D80FA3EC93
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-TRK.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-TRK.exe
+
+  File:     SSCERuntime_x64-TRK.exe
+  Type:     sha256
+  Checksum: 09BBDDB3B16983EA1F6AEDDB93DBEA00C1035EAEBB70197F95B2041B484E1CAA
+
+Contents of file LICENSE.txt is obtained from the software distribution page
+under the Additional Information section (screenshot in the enclosed
+RedistributionAuthority.pdf) and the software post installation in the files
+EULA_ENU.rtf and REDIST_ENU.txt.  These files may also be located in the
+distribution packages SSCERuntime_x86-ENU.exe and SSCERuntime_x64-ENU.exe as:
+
+  SSCERuntime_x86-ENU.exe/SSCERuntime_x86-ENU.msi/EULA.rtf_x86
+  SSCERuntime_x86-ENU.exe/SSCERuntime_x86-ENU.msi/REDIST.TXT_x86
+  SSCERuntime_x64-ENU.exe/SSCERuntime_x64-ENU.msi/EULA.rtf_x64
+  SSCERuntime_x64-ENU.exe/SSCERuntime_x64-ENU.msi/REDIST.TXT_x64
