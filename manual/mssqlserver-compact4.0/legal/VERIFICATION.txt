@@ -6,7 +6,7 @@ in verifying that this package's contents are trustworthy.
 The installers have been downloaded from the official distribution and can
 be verified by:
 
-1. Go to the software distribtion page
+1. Go to the software distribution page
 
   https://www.microsoft.com/download/details.aspx?id=30709
 
@@ -14,6 +14,7 @@ and retrieve the SSCERuntime files by selecting the relevant language in the
 dropdown followed by the download button and file selection.
 
 2. The archives can be validated by comparing checksums
+
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-CHS.exe
   - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-CHS.exe
 
@@ -55,7 +56,6 @@ dropdown followed by the download button and file selection.
   File:     SSCERuntime_x86-ESN.exe
   Type:     sha256
   Checksum: DE3D25C5EDB5CD5126121B92735CF974E90FDE471A4026B2B16321F15682F5FC
-
 
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x86-FRA.exe
   - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x86-FRA.exe
@@ -154,7 +154,6 @@ dropdown followed by the download button and file selection.
   File:     SSCERuntime_x64-ESN.exe
   Type:     sha256
   Checksum: 3FB0C8BCF3C22F37A5A3BB4F4A8537149AAEA038442D1FBCBDA4780912E913FC
-
 
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 SSCERuntime_x64-FRA.exe
   - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f SSCERuntime_x64-FRA.exe

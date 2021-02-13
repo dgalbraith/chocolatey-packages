@@ -2,7 +2,6 @@
 
 [![Software License](https://img.shields.io/badge/license-proprietary-lightgrey)](https://www.microsoft.com/download/details.aspx?id=30709)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
-[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
 [![Software version](https://img.shields.io/badge/Source-v4.0.8876.1-blue.svg)](https://www.microsoft.com/download/details.aspx?id=30709)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/go-fonts?label=Chocolatey)](https://chocolatey.org/packages/mssqlserver-compact4.0)
 
@@ -49,7 +48,7 @@ specified the install will default to English.
   * zh-CN - Chinese (Simplified) - `--params '"/language=zh-CN"'`
   * zh-TW - Chinese (Tradition) - `--params '"/language=gz-TW"'`
 
-For example: `choco install mssqlserver-compact4.0 --params '"/language=fr"'` to install the package with French
+For example: `choco install mssqlserver-compact4.0 --params '"/language=fr"'` to install the French version of the package
 
 ## Notes
 

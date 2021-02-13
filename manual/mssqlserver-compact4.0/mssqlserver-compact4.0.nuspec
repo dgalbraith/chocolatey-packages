@@ -62,7 +62,7 @@ specified the install will default to English.
   * zh-CN - Chinese (Simplified) - `--params '"/language=zh-CN"'`
   * zh-TW - Chinese (Tradition) - `--params '"/language=gz-TW"'`
 
-For example: `choco install mssqlserver-compact4.0 --params '"/language=fr"'` to install the package with French
+For example: `choco install mssqlserver-compact4.0 --params '"/language=fr"'` to install the French version of the package
 
 ## Notes
 

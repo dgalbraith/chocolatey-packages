@@ -14,28 +14,30 @@ if ((Get-ProcessorBits 32) -eq 'true') {
   Write-Error 'Unsupported CPU architecture'
 }
 
-class Language {
-    [string]$Code
-    [string]$Name
-    [string]$mapping
+add-type @"
+public struct Language {
+   public string Code;
+   public string Name;
+   public string Mapping;
 }
+"@
 
 $languages =  @{
-    'br'    = [Language] @{ Code='br';    Name = 'Brazil (Portuguese)';   Mapping = 'PTB' }
-    'cz'    = [Language] @{ Code='cz';    Name = 'Czech';                 Mapping = 'CSY' }
-    'de'    = [Language] @{ Code='de';    Name = 'German';                Mapping = 'DEU' }
-    'en'    = [Language] @{ Code='en';    Name = 'English';               Mapping = 'ENU' }
-    'es'    = [Language] @{ Code='es';    Name = 'Spanish';               Mapping = 'ESN' }
-    'fr'    = [Language] @{ Code='fr';    Name = 'French';                Mapping = 'FRA' }
-    'it'    = [Language] @{ Code='it';    Name = 'Italian';               Mapping = 'ITA' }
-    'ja'    = [Language] @{ Code='ja';    Name = 'Japanese';              Mapping = 'JPN' }
-    'ko'    = [Language] @{ Code='ko';    Name = 'Korean';                Mapping = 'KOR' }
-    'pl'    = [Language] @{ Code='pl';    Name = 'Polish';                Mapping = 'PLK' }
-    'ru'    = [Language] @{ Code='ru';    Name = 'Russian';               Mapping = 'RUS' }
-    'tr'    = [Language] @{ Code='tr';    Name = 'Turkish';               Mapping = 'TRK' }
-    'zh'    = [Language] @{ Code='zh';    Name = 'Chinese';               Mapping = 'CHS' }
-    'zh-CN' = [Language] @{ Code='zh-CN'; Name = 'Chinese (Simplified)';  Mapping = 'CHS' }
-    'zh-TW' = [Language] @{ Code='zh-TW'; Name = 'Chinese (Traditional)'; Mapping = 'CHT' }
+    'br'    = [Language] @{ Code='br';    Name = 'Brazilian (Portuguese)';   Mapping = 'PTB' }
+    'cz'    = [Language] @{ Code='cz';    Name = 'Czech';                    Mapping = 'CSY' }
+    'de'    = [Language] @{ Code='de';    Name = 'German';                   Mapping = 'DEU' }
+    'en'    = [Language] @{ Code='en';    Name = 'English';                  Mapping = 'ENU' }
+    'es'    = [Language] @{ Code='es';    Name = 'Spanish';                  Mapping = 'ESN' }
+    'fr'    = [Language] @{ Code='fr';    Name = 'French';                   Mapping = 'FRA' }
+    'it'    = [Language] @{ Code='it';    Name = 'Italian';                  Mapping = 'ITA' }
+    'ja'    = [Language] @{ Code='ja';    Name = 'Japanese';                 Mapping = 'JPN' }
+    'ko'    = [Language] @{ Code='ko';    Name = 'Korean';                   Mapping = 'KOR' }
+    'pl'    = [Language] @{ Code='pl';    Name = 'Polish';                   Mapping = 'PLK' }
+    'ru'    = [Language] @{ Code='ru';    Name = 'Russian';                  Mapping = 'RUS' }
+    'tr'    = [Language] @{ Code='tr';    Name = 'Turkish';                  Mapping = 'TRK' }
+    'zh'    = [Language] @{ Code='zh';    Name = 'Chinese';                  Mapping = 'CHS' }
+    'zh-CN' = [Language] @{ Code='zh-CN'; Name = 'Chinese (Simplified)';     Mapping = 'CHS' }
+    'zh-TW' = [Language] @{ Code='zh-TW'; Name = 'Chinese (Traditional)';    Mapping = 'CHT' }
 }
 
 $pp = Get-PackageParameters
