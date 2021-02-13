@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>adexplorer</id>
-    <version>1.44</version>
+    <version>1.50</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/adexplorer</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Active Directory Explorer - Sysinternals</title>
