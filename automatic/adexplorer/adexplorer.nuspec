@@ -1,29 +1,43 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <title>Active Directory Explorer</title>
-    <version>{{PackageVersion}}</version>
-    <authors>Mark Russinovich,Bryce Cogswell</authors>
-    <owners>dtgm</owners>
-    <summary>Active Directory Explorer is an advanced Active Directory (AD) viewer and editor</summary>
-    <description>
-Active Directory Explorer (AD Explorer) is an advanced Active Directory (AD) viewer and editor. You can use AD Explorer to easily navigate an AD database, define favorite locations, view object properties and attributes without having to open dialog boxes, edit permissions, view an object's schema, and execute sophisticated searches that you can save and re-execute.
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
-    <projectUrl>http://technet.microsoft.com/sysinternals/bb963907</projectUrl>
-    <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
-    <tags>ad active-directory sysinternals gui</tags>
-    <copyright>© 2007-2012 Mark Russinovich, Bryce Cogswell</copyright>
-    <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
-* [News](http://blogs.technet.com/Sysinternals)
+    <id>adexplorer</id>
+    <version>1.44</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/adexplorer</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Active Directory Explorer - Sysinternals</title>
+    <authors>Mark Russinovich</authors>
+    <projectUrl>https://docs.microsoft.com/en-us/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8db5a88b299f1d4dc567f6ba592c9544455b0b7a/icons/adexplorer.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://docs.microsoft.com/en-us/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/adexplorer</docsUrl>
+    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
+    <tags>adexplorer ad active-directory tools sysinternals</tags>
+    <summary>Active Directory Explorer (AD Explorer) is an advanced Active Directory (AD) viewer and editor</summary>
+    <description><![CDATA[
 
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+Active Directory Explorer (AD Explorer) is an advanced Active Directory (AD) viewer and editor. You can use AD Explorer
+to easily navigate an AD database, define favorite locations, view object properties and attributes without having to
+open dialog boxes, edit permissions, view an object's schema, and execute sophisticated searches that you can save and
+re-execute.
+
+AD Explorer also includes the ability to save snapshots of an AD database for off-line viewing and comparisons. When
+you load a saved snapshot, you can navigate and explore it as you would a live database. If you have two snapshots of
+an AD database you can use AD Explorer's comparison functionality to see what objects, attributes and security
+permissions changed between them.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@8db5a88b299f1d4dc567f6ba592c9544455b0b7a/automatic/adexplorer/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
