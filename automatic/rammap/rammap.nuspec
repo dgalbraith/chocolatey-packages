@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rammap</id>
+    <version>1.52</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/rammap</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>RAMMap - Windows Sysinternals</title>
+    <authors>Mark Russinovich</authors>
+    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@322b8f7b992fe34d94f428a694033a94dad7c8ad/icons/rammap.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/rammap</docsUrl>
+    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
+    <tags>memory map debug tools sysinternals</tags>
+    <summary>Advanced physical memory usage analysis</summary>
+    <description><![CDATA[
+
+Have you ever wondered exactly how Windows is assigning physical memory, how much file data is cached in RAM, or how
+much RAM is used by the kernel and device drivers? RAMMap makes answering those questions easy. RAMMap is an advanced
+physical memory usage analysis utility for Windows Vista and higher. It presents usage information in different ways on
+its several different tabs:
+
+* Use Counts: usage summary by type and paging list
+* Processes: process working set sizes
+* Priority Summary: prioritized standby list sizes
+* Physical Pages: per-page use for all physical memory
+* Physical Ranges: physical memory addresses
+* File Summary: file data in RAM by file
+* File Details: individual physical pages by file
+
+Use RAMMap to gain understanding of the way Windows manages memory, to analyze application memory usage, or to answer
+specific questions about how RAM is being allocated. RAMMap’s refresh feature enables you to update the display and it
+includes support for saving and loading memory snapshots.
+
+For definitions of the labels RAMMap uses as well as to learn about the physical-memory allocation algorithms used by
+the Windows memory manager, please see [Windows Internals](https://docs.microsoft.com/en-us/sysinternals/resources/windows-internals).
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ab7733d9bd5714cac138fe9e5eec447633fb3d75/automatic/rammap/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vmmap</id>
+    <version>3.25</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vmmap</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>VMMap - Windows Sysinternals</title>
+    <authors>Mark Russinovich</authors>
+    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@322b8f7b992fe34d94f428a694033a94dad7c8ad/icons/vmmap.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/vmmap</docsUrl>
+    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
+    <tags>memory process debug tools sysinternals</tags>
+    <summary>VMMap is a process virtual and physical memory analysis utility</summary>
+    <description><![CDATA[
+
+VMMap is a process virtual and physical memory analysis utility. It shows a breakdown of a process's committed virtual
+memory types as well as the amount of physical memory (working set) assigned by the operating system to those types.
+Besides graphical representations of memory usage, VMMap also shows summary information and a detailed process memory
+map. Powerful filtering and refresh capabilities allow you to identify the sources of process memory usage and the
+memory cost of application features.
+
+Besides flexible views for analyzing live processes, VMMap supports the export of data in multiple forms, including a
+native format that preserves all the information so that you can load back in. It also includes command-line options
+that enable scripting scenarios.
+
+VMMap is the ideal tool for developers wanting to understand and optimize their application's memory resource usage.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ab7733d9bd5714cac138fe9e5eec447633fb3d75/automatic/vmmap/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

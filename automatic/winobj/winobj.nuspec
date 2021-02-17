@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>winobj</id>
+    <version>2.22</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/winobj</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>WinObj - Windows Sysinternals</title>
+    <authors>Mark Russinovich</authors>
+    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@82934eb1f90fc6c02f7e9b6f036124287a8e2642/icons/winobj.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/winobj</docsUrl>
+    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
+    <tags>object namespace object-manager security debug tools sysinternals</tags>
+    <summary>Object Manager namespace viewer</summary>
+    <description><![CDATA[
+
+WinObj is a must-have tool if you are a system administrator concerned about security, a developer tracking down
+object-related problems, or just curious about the Object Manager namespace.
+
+WinObj is a 32-bit Windows NT program that uses the native Windows NT API (provided by NTDLL.DLL) to access and display
+information on the NT Object Manager's name space. Winobj may seem similar to the Microsoft SDK's program of the same
+#name, but the SDK version suffers from numerous significant bugs that prevent it from displaying accurate information
+(e.g. its handle and reference counting information are totally broken). In addition, our WinObj understands many more
+object types. Finally, Version 2.0 of our WinObj has user-interface enhancements, knows how to open device objects, and
+will let you view and change object security information using native NT security editors.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ab7733d9bd5714cac138fe9e5eec447633fb3d75/automatic/winobj/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>coreinfo</id>
+    <version>3.31</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/coreinfo</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Coreinfo - Windows Sysinternals</title>
+    <authors>Mark Russinovich</authors>
+    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/coreinfo</docsUrl>
+    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
+    <tags>cpu info tools sysinternals</tags>
+    <summary>Query processor information</summary>
+    <description><![CDATA[
+
+Coreinfo is a command-line utility that shows you the mapping between logical processors and the physical processor,
+NUMA node, and socket on which they reside, as well as the cache’s assigned to each logical processor. It uses the
+Windows’ [GetLogicalProcessorInformation](https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getlogicalprocessorinformation)
+function to obtain this information and prints it to the screen, representing a mapping to a logical processor with an
+asterisk e.g. ‘*’. Coreinfo is useful for gaining insight into the processor and cache topology of your system.
+
+Usage: `coreinfo [-c][-f][-g][-l][-n][-s][-m][-v]`
+
+Parameter | Description
+:--------:|------------
+-c        | Dump information on cores.
+-f        | Dump core feature information.
+-g        | Dump information on groups.
+-l        | Dump information on caches.
+-n        | Dump information on NUMA nodes.
+-s        | Dump information on sockets.
+-m        | Dump NUMA access cost.
+-v        | Dump only virtualization-related features including support for second level address translation.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ab7733d9bd5714cac138fe9e5eec447633fb3d75/automatic/coreinfo/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

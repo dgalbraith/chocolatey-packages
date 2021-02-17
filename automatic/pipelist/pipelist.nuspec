@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pipelist</id>
+    <version>1.01</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/pipelist</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>PipeList - Windows Sysinternals</title>
+    <authors>Mark Russinovich</authors>
+    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/pipelist</docsUrl>
+    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
+    <tags>pipe npfs named-pipe tools sysinternals</tags>
+    <summary>Displays the named pipes on a system, including the number of maximum instances and active instances for each pipe</summary>
+    <description><![CDATA[
+
+Displays the named pipes on your system, including the number of maximum instances and active instances for each pipe.
+
+The device driver that implements named pipes is actually a file system driver? In fact, the driver's name is NPFS.SYS,
+for "Named Pipe File System". What you might also find surprising is that its possible to obtain a directory listing of
+the named pipes defined on a system. This fact is not documented, nor is it possible to do this using the Win32 API.
+Directly using NtQueryDirectoryFile, the native function that the Win32 FindFile APIs rely on, makes it possible to
+list the pipes. The directory listing NPFS returns also indicates the maximum number of pipe
+instances set for each pipe and the number of active instances.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ab7733d9bd5714cac138fe9e5eec447633fb3d75/automatic/pipelist/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
