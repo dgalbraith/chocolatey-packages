@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v2.40-blue)](https://docs.microsoft.com/sysinternals/downloads/diskview)
+[![Software version](https://img.shields.io/badge/Source-v2.41-blue)](https://docs.microsoft.com/sysinternals/downloads/diskview)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/diskview?label=Chocolatey)](https://chocolatey.org/packages/diskview)
 
 DiskView shows you a graphical map of your disk, allowing you to determine where a file is located or, by clicking on a

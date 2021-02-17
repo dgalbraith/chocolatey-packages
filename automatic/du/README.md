@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/en-us/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.61-blue)](https://docs.microsoft.com/sysinternals/downloads/du)
+[![Software version](https://img.shields.io/badge/Source-v1.62-blue)](https://docs.microsoft.com/sysinternals/downloads/du)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/du?label=Chocolatey)](https://chocolatey.org/packages/du)
 
 Du (disk usage) reports the disk space usage for the directory you specify. By default it recurses directories to show

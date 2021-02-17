@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.01-blue)](https://docs.microsoft.com/sysinternals/downloads/logonsessions)
+[![Software version](https://img.shields.io/badge/Source-v1.02-blue)](https://docs.microsoft.com/sysinternals/downloads/logonsessions)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/pipelist?label=Chocolatey)](https://chocolatey.org/packages/pipelist)
 
 Displays the named pipes on your system, including the number of maximum instances and active instances for each pipe.

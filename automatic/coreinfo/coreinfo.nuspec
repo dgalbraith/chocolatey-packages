@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>coreinfo</id>
-    <version>3.31</version>
+    <version>6.13</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/coreinfo</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Coreinfo - Windows Sysinternals</title>

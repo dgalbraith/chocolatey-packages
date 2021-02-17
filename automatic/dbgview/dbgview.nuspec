@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dbgview</id>
-    <version>4.81</version>
+    <version>4.90</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/dbgview</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>DebugView - Windows Sysinternals</title>

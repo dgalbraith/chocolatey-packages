@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/logonSessions.zip'
-  checksum      = '19585B9D74A403CD0D5F7DBFE6E226B264816EB0CBD9A90BC030CFDD5D6ABBEC'
+  checksum      = '19585b9d74a403cd0d5f7dbfe6e226b264816eb0cbd9a90bc030cfdd5d6abbec'
   checksumType  = 'sha256'
 }
 

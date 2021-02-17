@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/en-us/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v4.81-blue)](https://docs.microsoft.com/sysinternals/downloads/dbgview)
+[![Software version](https://img.shields.io/badge/Source-v4.90-blue)](https://docs.microsoft.com/sysinternals/downloads/dbgview)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/dbgview?label=Chocolatey)](https://chocolatey.org/packages/dbgview)
 
 DebugView is an application that lets you monitor debug output on your local system, or any computer on the network

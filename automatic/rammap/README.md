@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.52-blue)](https://docs.microsoft.com/sysinternals/downloads/rammap)
+[![Software version](https://img.shields.io/badge/Source-v1.60-blue)](https://docs.microsoft.com/sysinternals/downloads/rammap)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/rammap?label=Chocolatey)](https://chocolatey.org/packages/rammap)
 
 Have you ever wondered exactly how Windows is assigning physical memory, how much file data is cached in RAM, or how

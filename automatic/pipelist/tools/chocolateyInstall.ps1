@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/PipeList.zip'
-  checksum      = 'b03e6c90d2a4f49ce0cc543ba487d23fc9dbf974'
+  checksum      = '7bfef3046bfcce3efa666c4ae235b3a903ddc8ddba830a5c3ee4178e0a712b8d'
   checksumType  = 'sha256'
 }
 

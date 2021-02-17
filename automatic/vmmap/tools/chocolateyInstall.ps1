@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/VMMap.zip'
-  checksum      = 'ba65e6c8c5c4ded122d577c671d651e99d4151b5619475154e5c2bf3cd04588e'
+  checksum      = 'e23baef492dfeb974ef42f07c3835fac7456a326ab20a7f2442e25d3d7d07273'
   checksumType  = 'sha256'
 }
 

@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/LiveKD.zip'
-  checksum      = '334823D4113F2CB41326A934721138C6B595AD6B429A00708AEDEA68E24773F8'
+  checksum      = '334823d4113f2cb41326a934721138c6b595ad6b429a00708aedea68e24773f8'
   checksumType  = 'sha256'
 }
 

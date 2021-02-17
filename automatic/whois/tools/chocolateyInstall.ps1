@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/WhoIs.zip'
-  checksum      = 'f4965fc138de2441999c7ad705f15d5274be8e5343f915ae11e1b7daa6ba5228'
+  checksum      = '43d82eb09a93c788030b31668a1b578d4953c52875dccf5c5ebc98059fa834a1'
   checksumType  = 'sha256'
 }
 

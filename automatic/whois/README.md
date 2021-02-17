@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.20-blue)](https://docs.microsoft.com/sysinternals/downloads/whois)
+[![Software version](https://img.shields.io/badge/Source-v1.21-blue)](https://docs.microsoft.com/sysinternals/downloads/whois)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/whois?label=Chocolatey)](https://chocolatey.org/packages/whois)
 
 Whois performs a registration record lookup for the specified domain name or IP address.

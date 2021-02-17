@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.40-blue)](https://docs.microsoft.com/sysinternals/downloads/logonsessions)
+[![Software version](https://img.shields.io/badge/Source-v1.41-blue)](https://docs.microsoft.com/sysinternals/downloads/logonsessions)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/logonsessions?label=Chocolatey)](https://chocolatey.org/packages/logonsessions)
 
 If you think that when you logon to a system there's only one active logon session, this utility will surprise you. It

@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/en-us/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v5.4-blue)](https://docs.microsoft.com/sysinternals/downloads/livekd)
+[![Software version](https://img.shields.io/badge/Source-v5.63-blue)](https://docs.microsoft.com/sysinternals/downloads/livekd)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/livekd?label=Chocolatey)](https://chocolatey.org/packages/livekd)
 
 Run the Kd and Windbg Microsoft kernel debuggers, which are part of the [Debugging Tools for Windows package](https://www.microsoft.com/whdc/devtools/debugging/default.mspx),

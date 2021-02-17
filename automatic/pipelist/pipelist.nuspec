@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pipelist</id>
-    <version>1.01</version>
+    <version>1.02</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/pipelist</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>PipeList - Windows Sysinternals</title>

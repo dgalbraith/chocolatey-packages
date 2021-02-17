@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/DiskView.zip'
-  checksum      = '2399ccdad1a79438a2b55495267c098f75c27c49'
+  checksum      = '0ceac1623419ce74cfd079823130a76e23d1932ba6cc396157a299e9f23ebe2d'
   checksumType  = 'sha256'
 }
 
