@@ -1,35 +1,38 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <title>DebugView</title>
-    <version>{{PackageVersion}}</version>
+    <id>dbgview</id>
+    <version>4.81</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/dbgview</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>DebugView - Windows Sysinternals</title>
     <authors>Mark Russinovich</authors>
-    <owners>dtgm</owners>
+    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@54a7be0af6b7a76a706d99797b00f8295bb34f27/icons/dbgview.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/debugview</docsUrl>
+    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
+    <tags>debug monitor capture tools sysinternals</tags>
     <summary>View and record debug session output without an active debugger</summary>
-    <description>
-This program intercepts calls made to DbgPrint by device drivers and OutputDebugString made by Win32 programs. It allows for viewing and recording of debug session output on your local machine or across the Internet without an active debugger.
+    <description><![CDATA[
 
-DebugView is an application that lets you monitor debug output on your local system, or any computer on the network that you can reach via TCP/IP. It is capable of displaying both kernel-mode and Win32 debug output, so you don't need a debugger to catch the debug output your applications or device drivers generate, nor do you need to modify your applications or drivers to use non-standard debug output APIs.
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
-    <projectUrl>https://technet.microsoft.com/sysinternals/bb896647</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/3f6e4d43f7acaa0b47bbcbed1bfe3a279d948a29/icons/{{PackageName}}.png</iconUrl>
-    <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
-    <tags>debug kernel sysinternals</tags>
-    <copyright>© 1998-2012 Mark Russinovich</copyright>
-    <licenseUrl>https://technet.microsoft.com/sysinternals/bb469936</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
-* [News](http://blogs.technet.com/Sysinternals)
+DebugView is an application that lets you monitor debug output on your local system, or any computer on the network
+that you can reach via TCP/IP. It is capable of displaying both kernel-mode and Win32 debug output, so you don't need
+a debugger to catch the debug output your applications or device drivers generate, nor do you need to modify your
+applications or drivers to use non-standard debug output APIs.
 
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
-    <replaces>
-      <dependency id="debugview" />
-    </replaces>
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ab7733d9bd5714cac138fe9e5eec447633fb3d75/automatic/dbgview/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

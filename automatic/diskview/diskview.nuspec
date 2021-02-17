@@ -1,30 +1,37 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <title>DiskView</title>
-    <version>{{PackageVersion}}</version>
+    <id>diskview</id>
+    <version>2.40</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/diskview</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>DiskView - Windows Sysinternals</title>
     <authors>Bryce Cogswell</authors>
-    <owners>dtgm</owners>
-    <summary>Graphical disk sector utility</summary>
-    <description>
-DiskView shows you a graphical map of your disk, allowing you to determine where a file is located or, by clicking on a cluster, seeing which file occupies it. Double-click to get more information about a file to which a cluster is allocated.
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
-    <projectUrl>http://technet.microsoft.com/sysinternals/bb896650</projectUrl>
-    <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/cf1efc0aac843672fbf1ca0e15082e4e11357df9/icons/{{PackageName}}.png</iconUrl>
-    <tags>physical disk map sysinternals gui admin</tags>
-    <copyright>© 2004-2010 Mark Russinovich</copyright>
-    <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
-* [News](http://blogs.technet.com/Sysinternals)
+    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@97a0850cfce108d539f5829bdb7dfd7da4b79e19/icons/diskview.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/diskview</docsUrl>
+    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
+    <tags>disk map tools sysinternals</tags>
+    <summary>Physical disk usage analysis</summary>
+    <description><![CDATA[
 
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+DiskView shows you a graphical map of your disk, allowing you to determine where a file is located or, by clicking on a
+cluster, seeing which file occupies it. Double-click to get more information about a file to which a cluster is
+allocated.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ab7733d9bd5714cac138fe9e5eec447633fb3d75/automatic/diskview/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

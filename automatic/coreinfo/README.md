@@ -1,23 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>coreinfo</id>
-    <version>3.31</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/coreinfo</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>Coreinfo - Windows Sysinternals</title>
-    <authors>Mark Russinovich</authors>
-    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png</iconUrl>
-    <copyright>Mark Russinovich</copyright>
-    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/coreinfo</docsUrl>
-    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
-    <tags>cpu info tools sysinternals</tags>
-    <summary>Query processor information</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png" width="48" height="48" />Coreinfo - Windows Sysinternals](https://chocolatey.org/packages/coreinfo)
+
+[![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/en-us/sysinternals/license-terms)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/Source-v3.31-blue)](https://docs.microsoft.com/sysinternals/downloads/coreinfo)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/coreinfo?label=Chocolatey)](https://chocolatey.org/packages/coreinfo)
 
 Coreinfo is a command-line utility that shows you the mapping between logical processors and the physical processor,
 NUMA node, and socket on which they reside, as well as the cache’s assigned to each logical processor. It uses the
@@ -44,11 +31,3 @@ Parameter | Description
 
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]></description>
-    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>

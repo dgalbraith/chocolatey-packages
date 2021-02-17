@@ -1,23 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>livekd</id>
-    <version>5.4</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/livekd</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>LiveKd - Windows Sysinternals</title>
-    <authors>Mark Russinovich and Ken Johnson</authors>
-    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png</iconUrl>
-    <copyright>Mark Russinovich and Ken Johnson</copyright>
-    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/livekd</docsUrl>
-    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
-    <tags>kernel debug kd windbg tools sysinternals</tags>
-    <summary>Run the Kd and Windbg Microsoft kernel debuggers locally on a live system</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png" width="48" height="48" />LiveKd - Windows Sysinternals](https://chocolatey.org/packages/livekd)
+
+[![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/en-us/sysinternals/license-terms)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/Source-v5.4-blue)](https://docs.microsoft.com/sysinternals/downloads/livekd)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/livekd?label=Chocolatey)](https://chocolatey.org/packages/livekd)
 
 Run the Kd and Windbg Microsoft kernel debuggers, which are part of the [Debugging Tools for Windows package](https://www.microsoft.com/whdc/devtools/debugging/default.mspx),
 locally on a live system. Execute all the debugger commands that work on crash dump files to look deep inside the
@@ -47,8 +34,8 @@ Parameter | Description
 -p        | Pauses the target Hyper-V VM while LiveKd is active (recommended for use with -o).
 -n        | Specifies the name or GUID of the Hyper-V VM to debug.
 -hvl      | Lists the names and GUIDs of running Hyper-V VMs.
--vsym     | Displays verbose debugging information about symbol load operations.
--w        | Runs windbg instead of kd.
+-vsym     |  Displays verbose debugging information about symbol load operations.
+-w        |  Runs windbg instead of kd.
 
 ![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ab7733d9bd5714cac138fe9e5eec447633fb3d75/automatic/livekd/screenshot.png)
 
@@ -57,11 +44,3 @@ Parameter | Description
 * Requires an installation of [Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger) to function
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]></description>
-    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>

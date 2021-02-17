@@ -1,7 +1,7 @@
 import-module au
 
-$releases = 'https://docs.microsoft.com/sysinternals/downloads/du'
-$download = 'https://download.sysinternals.com/files/DU.zip'
+$releases = 'https://docs.microsoft.com/sysinternals/downloads/accesschk'
+$download = 'https://download.sysinternals.com/files/AccessChk.zip'
 
 $reVersion = '(v)(?<Version>(\d+\.\d+))'
 

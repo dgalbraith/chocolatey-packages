@@ -1,23 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>rammap</id>
-    <version>1.52</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/rammap</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>RAMMap - Windows Sysinternals</title>
-    <authors>Mark Russinovich</authors>
-    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@322b8f7b992fe34d94f428a694033a94dad7c8ad/icons/rammap.png</iconUrl>
-    <copyright>Mark Russinovich</copyright>
-    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/rammap</docsUrl>
-    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
-    <tags>memory map debug tools sysinternals</tags>
-    <summary>Advanced physical memory usage analysis</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@322b8f7b992fe34d94f428a694033a94dad7c8ad/icons/rammap.png" width="48" height="48" />RAMMap - Windows Sysinternals](https://chocolatey.org/packages/rammap)
+
+[![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/sysinternals/license-terms)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/Source-v1.52-blue)](https://docs.microsoft.com/sysinternals/downloads/rammap)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/rammap?label=Chocolatey)](https://chocolatey.org/packages/rammap)
 
 Have you ever wondered exactly how Windows is assigning physical memory, how much file data is cached in RAM, or how
 much RAM is used by the kernel and device drivers? RAMMap makes answering those questions easy. RAMMap is an advanced
@@ -45,11 +32,3 @@ the Windows memory manager, please see [Windows Internals](https://docs.microsof
 
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]></description>
-    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>

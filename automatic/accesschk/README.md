@@ -1,23 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>accesschk</id>
-    <version>6.12</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/accesschk</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>AccessChk - Windows Sysinternals</title>
-    <authors>Mark Russinovich</authors>
-    <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png</iconUrl>
-    <copyright>Mark Russinovich</copyright>
-    <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://docs.microsoft.com/sysinternals/downloads/accesschk</docsUrl>
-    <mailingListUrl>https://docs.microsoft.com/answers/products/sysinternals</mailingListUrl>
-    <tags>permissions security tools sysinternals</tags>
-    <summary>Reports effective permissions for securable objects</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png" width="48" height="48" />AccessChk - Windows Sysinternals](https://chocolatey.org/packages/accesschk)
+
+[![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/en-us/sysinternals/license-terms)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/Source-v6.12-blue)](https://docs.microsoft.com/sysinternals/downloads/accesschk)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/accesschk?label=Chocolatey)](https://chocolatey.org/packages/accesschk)
 
 AccessChk is a command-line tool for viewing the effective permissions on files, registry keys, services, processes,
 kernel objects, and more.
@@ -56,11 +43,3 @@ Parameter | Description
 
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]></description>
-    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog</releaseNotes>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
