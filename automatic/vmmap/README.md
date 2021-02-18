@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@322b8f7b992fe34d94f428a694033a94dad7c8ad/icons/vmmap.png" width="48" height="48" />VMMap - Windows Sysinternals](https://chocolatey.org/packages/vmmap)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4a952cb67d3ba380d5d8dc2c26f1c41270affedf/icons/vmmap.png" width="48" height="48" />VMMap - Windows Sysinternals](https://chocolatey.org/packages/vmmap)
 
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
