@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@54a7be0af6b7a76a706d99797b00f8295bb34f27/icons/dbgview.png" width="48" height="48" />DebugView - Windows Sysinternals](https://chocolatey.org/packages/dbgview)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4a952cb67d3ba380d5d8dc2c26f1c41270affedf/icons/dbgview.png" width="48" height="48" />DebugView - Windows Sysinternals](https://chocolatey.org/packages/dbgview)
 
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/en-us/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)

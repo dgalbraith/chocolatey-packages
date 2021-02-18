@@ -9,7 +9,7 @@
     <title>VMMap - Windows Sysinternals</title>
     <authors>Mark Russinovich</authors>
     <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@322b8f7b992fe34d94f428a694033a94dad7c8ad/icons/vmmap.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4a952cb67d3ba380d5d8dc2c26f1c41270affedf/icons/vmmap.png</iconUrl>
     <copyright>Mark Russinovich</copyright>
     <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@97a0850cfce108d539f5829bdb7dfd7da4b79e19/icons/diskview.png" width="48" height="48" />DiskView - Windows Sysinternals](https://chocolatey.org/packages/diskview)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4a952cb67d3ba380d5d8dc2c26f1c41270affedf/icons/diskview.png" width="48" height="48" />DiskView - Windows Sysinternals](https://chocolatey.org/packages/diskview)
 
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
