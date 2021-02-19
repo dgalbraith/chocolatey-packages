@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>flashpoint-launcher</id>
+    <version>9.1.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/flashpoint-launcher</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Flashpoint Launcher - Launcher for BlueMaxima's Flashpoint</title>
+    <authors>Flashpoint Contributors</authors>
+    <projectUrl>https://bluemaxima.org/flashpoint</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@71d741b5e9171786eff61aea63d42c7c6ef286c6/icons/flashpoint.png</iconUrl>
+    <copyright>Copyright Jesper Gustafsson, Noah Loomans and Colin Berry</copyright>
+    <licenseUrl>https://github.com/FlashpointProject/launcher/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/FlashpointProject/launcher</projectSourceUrl>
+    <docsUrl>https://bluemaxima.org/flashpoint/Manual.pdf</docsUrl>
+    <mailingListUrl>https://bluemaxima.org/flashpoint/datahub/Main_Page</mailingListUrl>
+    <bugTrackerUrl>https://github.com/FlashpointProject/launcher/issues</bugTrackerUrl>
+    <tags>flashpoint flash preservation sandbox electron bluepoint</tags>
+    <summary>An open-source desktop application used to browse, manage and run applications from the Flashpoint project</summary>
+    <description><![CDATA[
+
+The Flashpoint Launcher (FPL) is a desktop application made for browsing, storing and launching other applications
+(games, animations, web apps etc.). It is specifically made for BlueMaxima's Flashpoint, which is a web preservation
+project.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@71d741b5e9171786eff61aea63d42c7c6ef286c6/automatic/flashpoint-launcher/screenshot.png))
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/FlashpointProject/launcher/releases/latest</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
