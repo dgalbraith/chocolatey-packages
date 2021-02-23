@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>flashpoint-infinity</id>
+    <version>8.2</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/flashpoint-infinity</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Flashpoint Infinity - BlueMaxima's Flashpoint Infinity Distrbution</title>
+    <authors>Flashpoint Contributors</authors>
+    <projectUrl>https://bluemaxima.org/flashpoint</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@71d741b5e9171786eff61aea63d42c7c6ef286c6/icons/flashpoint.png</iconUrl>
+    <copyright>Copyright Jesper Gustafsson, Noah Loomans and Colin Berry</copyright>
+    <licenseUrl>https://github.com/FlashpointProject</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/FlashpointProject</projectSourceUrl>
+    <docsUrl>https://bluemaxima.org/flashpoint/Manual.pdf</docsUrl>
+    <mailingListUrl>https://bluemaxima.org/flashpoint/datahub/Main_Page</mailingListUrl>
+    <bugTrackerUrl>https://github.com/FlashpointProject/launcher/issues</bugTrackerUrl>
+    <tags>flashpoint infinity flashpoint-infinity flash preservation sandbox electron bluepoint</tags>
+    <summary>Run applications from the Flashpoint project with on-demand download and installation</summary>
+    <description><![CDATA[
+
+BlueMaxima's Flashpoint is a webgame preservation project dedicated to preserving as many experiences from web
+platforms, including but not limited to Adobe Flash,  as possible, so that they aren't lost to time.
+
+Flashpoint utilizes a strong selection of open-source software. By combining the power of Apache, a custom-built
+launcher, and our own application called the Flashpoint Secure Player, we can play web-based media in a quick,
+user-friendly environment without leaving permanent changes or security holes on your computer.
+
+Flashpoint Infinity is a smaller distribution of the Flashpoint Launcher (FPL) that allows you to download and play
+content at will.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@61675e066fbd84d13a0e55342c158cfb39b1e211/automatic/flashpoint-infinity/screenshot.png))
+
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/AddToDesktop` - this puts a shortcut on your desktop to Flashpoint.
+
+These parameters can be passed to the installer with the use of `--params`.
+For example: `--params '"/AddToDesktop"'`.
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Notes
+
+* You may be prompted by the Windows Firewall to allow the Apache HTTP Server on first execution
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://bluemaxima.org/flashpoint/changelog.txt</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

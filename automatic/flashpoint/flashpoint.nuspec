@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>flashpoint</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/flashpoint</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Flashpoint - BlueMaxima's Flashpoint Web Preservation Project</title>
+    <authors>Flashpoint Contributors</authors>
+    <projectUrl>https://bluemaxima.org/flashpoint</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@71d741b5e9171786eff61aea63d42c7c6ef286c6/icons/flashpoint.png</iconUrl>
+    <copyright>Copyright Jesper Gustafsson, Noah Loomans and Colin Berry</copyright>
+    <licenseUrl>https://github.com/FlashpointProject</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/FlashpointProject</projectSourceUrl>
+    <docsUrl>https://bluemaxima.org/flashpoint/Manual.pdf</docsUrl>
+    <mailingListUrl>https://bluemaxima.org/flashpoint/datahub/Main_Page</mailingListUrl>
+    <bugTrackerUrl>https://github.com/FlashpointProject/launcher/issues</bugTrackerUrl>
+    <tags>flashpoint flash preservation sandbox electron bluepoint</tags>
+    <summary>Run applications from the Flashpoint project</summary>
+    <description><![CDATA[
+
+BlueMaxima's Flashpoint is a webgame preservation project.
+
+Internet history and culture is important, and content made on web platforms including, but not limited to Adobe Flash,
+make up a significant portion of that culture. This project is dedicated to preserving as many experiences from these
+platforms as possible, so that they aren't lost to time.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@61675e066fbd84d13a0e55342c158cfb39b1e211/automatic/flashpoint/screenshot.png))
+
+## Notes
+
+* This is a meta-package which resolves to the preferred Flashpoint distribution.  This is currently the
+[Flashpoint Infinity](https://chocolatey.org/packages/flashpoint-infinity) client but this may change over time.
+
+]]></description>
+    <releaseNotes>https://bluemaxima.org/flashpoint/news</releaseNotes>
+    <dependencies>
+      <dependency id="flashpoint-infinity" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="flashpoint.nuspec" target="flashpoint.nuspec" />
+  </files>
+</package>
