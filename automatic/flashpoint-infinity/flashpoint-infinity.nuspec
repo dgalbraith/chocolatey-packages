@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>flashpoint-infinity</id>
-    <version>8.2</version>
+    <version>9.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/flashpoint-infinity</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Flashpoint Infinity - BlueMaxima's Flashpoint Infinity Distrbution</title>
