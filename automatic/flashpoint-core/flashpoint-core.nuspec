@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>flashpoint-core</id>
-    <version>8.2</version>
+    <version>9.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/flashpoint-core</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Flashpoint Core - BlueMaxima's Flashpoint Core Distrbution</title>
