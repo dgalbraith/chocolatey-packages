@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree
 
-and download the extension Gruntfuggly.todo-tree-0.0.197.vsix using the Download Extension link
+and download the extension Gruntfuggly.todo-tree-0.0.198.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Gruntfuggly/vsextensions/todo-tree/0.0.197/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Gruntfuggly/vsextensions/todo-tree/0.0.198/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash Gruntfuggly.todo-tree-0.0.197.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Gruntfuggly.todo-tree-0.0.197.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash Gruntfuggly.todo-tree-0.0.198.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Gruntfuggly.todo-tree-0.0.198.vsix
 
   Type:     sha256
-  Checksum: 3F414D10BE9C4CF25E826D0D7CE3F4946A9926196C8E363CD9420C20522D5B0C
+  Checksum: 76F5B3BFCEAE9E453AA3D312A18B20FE20F8517624A03D379AD7EAD5D0143E66
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/Gruntfuggly.todo-tree/license
