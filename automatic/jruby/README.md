@@ -1,25 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>jruby</id>
-    <version>9.2.14.0</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/jruby</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>JRuby - The Ruby Programming Language on the JVM</title>
-    <authors>Charles Oliver Nutter, Thomas Enebo, Ola Bini and Nick Sieger</authors>
-    <projectUrl>https://www.jruby.org</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@29b127e2ca776b16ae8749e68f7d9b71f03087a7/icons/jruby.png</iconUrl>
-    <copyright>Copyright The JRuby Project</copyright>
-    <licenseUrl>https://github.com/jruby/jruby/blob/master/COPYING</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/jruby/jruby/</projectSourceUrl>
-    <docsUrl>https://www.jruby.org/documentation</docsUrl>
-    <mailingListUrl>https://github.com/jruby/jruby/wiki/MailingLists</mailingListUrl>
-    <bugTrackerUrl>https://github.com/jruby/jruby/issues</bugTrackerUrl>
-    <tags>jruby ruby ruby-language jvm java dynamic reflective object-oriented language</tags>
-    <summary>An implementation of the Ruby programming language on the Java Virtual Machine</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@29b127e2ca776b16ae8749e68f7d9b71f03087a7/icons/jruby.png" width="48" height="48"/>JRuby - The Ruby Programming Language on the JVM](https://chocolatey.org/packages/jruby)
+
+[![GitHub license](https://img.shields.io/badge/license-EPL%20v2.0%20%7C%20GPL%20v2%20%7C%20LGPL%20v2.1-blue)](https://github.com/jruby/jruby/blob/master/COPYING)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/Source-v9.2.14.0-blue)](https://github.com/jruby/jruby/releases/tag/9.2.14.0)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/jruby?label=Chocolatey)](https://chocolatey.org/packages/jruby)
 
 JRuby is a 100% Java implementation of the Ruby programming language. It is Ruby for the JVM.
 
@@ -52,15 +37,6 @@ To have Chocolatey remember parameters on upgrade, be sure to set `choco feature
 ## Notes
 
 * Requires an installation of Java SE 1.8+ to be available on the machine.
-* The path will be updated by the installation unless explicitly suppressed using the `/NoPath` option.
+* The user path will be updated by the installation unless explicitly suppressed using the `/NoPath` option.
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]></description>
-    <releaseNotes>https://github.com/jruby/jruby/releases/tag/9.2.14.0</releaseNotes>
-  </metadata>
-  <files>
-    <file src="legal\**" target="legal" />
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
