@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>jruby</id>
+    <version>9.2.14.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/jruby</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>JRuby - The Ruby Programming Language on the JVM</title>
+    <authors>Charles Oliver Nutter, Thomas Enebo, Ola Bini and Nick Sieger</authors>
+    <projectUrl>https://www.jruby.org</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@29b127e2ca776b16ae8749e68f7d9b71f03087a7/icons/jruby.png</iconUrl>
+    <copyright>Copyright The JRuby Project</copyright>
+    <licenseUrl>https://github.com/jruby/jruby/blob/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/jruby/jruby/</projectSourceUrl>
+    <docsUrl>https://www.jruby.org/documentation</docsUrl>
+    <mailingListUrl>https://github.com/jruby/jruby/wiki/MailingLists</mailingListUrl>
+    <bugTrackerUrl>https://github.com/jruby/jruby/issues</bugTrackerUrl>
+    <tags>jruby ruby ruby-language jvm java dynamic reflective object-oriented language</tags>
+    <summary>An implementation of the Ruby programming language on the Java Virtual Machine</summary>
+    <description><![CDATA[
+
+JRuby is a 100% Java implementation of the Ruby programming language. It is Ruby for the JVM.
+
+JRuby provides a complete set of core "builtin" classes and syntax for the Ruby language, as well as most of the Ruby
+Standard Libraries. The standard libraries are mostly Ruby's own complement of `.rb` files, but a few that depend on
+C language-based extensions have been reimplemented.
+
+## Features
+
+* aims to provide a complete, correct and fast implementation of Ruby
+* concurrency without a global-interpreter-lock
+* true parallelism
+* embed a JRuby interpreter into any Java application
+* tight integration with the Java language to allow the use of Java classes in your Ruby program
+* full two-way access between Java and Ruby code
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d4bd3c3759406a1c76caf7e507d448c06d066eb6/automatic/jruby/screenshot.png)
+
+## Package Parameters
+
+* `/AddToDesktop` - adds a desktop shortcut for the JRuby IRB Console
+e.g. `choco install -y jruby --package-parameters="/AddToDesktop"`
+* `/InstallDir` - sets the directory in which to install JRuby.  The installation defaults to `C:\Tools\jrubyXY` where XY are the major and minor version parts
+e.g. `choco install -y jruby --package-parameters="/InstallDir:C:\Tools\jruby"`
+* `/NoPath` - do not add the jruby bin folder to the user PATH
+e.g. `choco install -y jruby --package-parameters="/NoPath"`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Notes
+
+* Requires an installation of Java SE 1.8+ to be available on the machine.
+* The path will be updated by the installation unless explicitly suppressed using the `/NoPath` option.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/jruby/jruby/releases/tag/9.2.14.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
