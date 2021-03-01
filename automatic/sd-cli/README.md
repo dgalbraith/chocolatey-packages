@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/chmln/sd)](https://github.com/chmln/sd/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/version-0.7.5-blue)](https://github.com/chmln/sd/releases/tag/v0.7.5)
+[![Software version](https://img.shields.io/badge/version-v0.7.5-blue)](https://github.com/chmln/sd/releases/tag/v0.7.5)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/sd-search-displace?label=Chocolatey)](https://chocolatey.org/packages/sd-cli)
 
 `sd` is an intuitive find and replace CLI.

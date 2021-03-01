@@ -5,8 +5,9 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/beekeeper-studio/beekeeper-studio/releases/latest"
 
-$re64      = '(B.+\.exe)'
-$reversion = '(\/v|\[|-)(?<Version>([\d]+\.[\d]+\.[\d]+))'
+$reInstall  = '(B.+(?!portable).+\.exe)'
+$rePortable = '(B.+(?=portable).+\.exe)'
+$reVersion  = '(v|\[)(?<Version>([\d]+\.[\d]+\.[\d]+))'
 
 function global:au_BeforeUpdate {
 }
@@ -14,30 +15,35 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$($reversion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "`${1}$($Latest.Version)"
     }
 
     "$($Latest.PackageName).nuspec" = @{
-      "$($reversion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "`${1}$($Latest.Version)"
     }
   }
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
-  $urls = $download_page.links | where-object href -match $reurl | select-object -expand href | foreach-object { $domain + $_ }
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  
+  $reUrl = '(B.+\.exe$)'
+  $urls  = $downloadPage.links | where-object href -match $reUrl | select-object -expand href | foreach-object { $domain + $_ }
+  
+  $urlInstall      = $urls -match $reInstall | Select-Object -First 1
+  $fileNameInstall = $urlInstall -split '/'  | Select-Object -Last 1
 
-  $url64 = $urls -match $re64 | select-object -first 1
-  $url64SegmentSize = $([System.Uri]$url64).Segments.Length
-  $filename64 = $([System.Uri]$url64).Segments[$url64SegmentSize - 1]
+  $urlPortable      = $urls -match $rePortable | Select-Object -First 1
+  $fileNamePortable = $urlPortable -split '/'  | Select-Object -Last 1
 
-  $url64 -match $reversion
-  $version = $Matches.Version
+  $version = $downloadPage.Content -match $reversion | foreach-object { $Matches.Version }
 
   return @{
-    FileName64 = $filename64
-    Url64      = $url64
-    Version    = $version
+    UrlInstall       = $urlInstall
+    FileNameInstall  = $fileNameInstall
+    UrlPortable      = $urlPortable 
+    FileNamePortable = $fileNamePortable
+    Version          = $version
   }
 }
 

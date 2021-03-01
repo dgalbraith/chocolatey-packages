@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 
 if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
   Write-Error -Message "32-bit version of Watchman not available" -Category ResourceUnavailable

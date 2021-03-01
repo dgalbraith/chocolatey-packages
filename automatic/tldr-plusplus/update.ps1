@@ -6,7 +6,7 @@ $domain   = 'https://github.com'
 $releases = "${domain}/isacikgoz/tldr/releases/latest"
 
 $re64      = '(tldr.+_w.+\.zip)'
-$reversion = '(\/v|-)(?<Version>([\d]+\.[\d]+\.[\d]+))'
+$reVersion = "(v|')(?<Version>([\d]+\.[\d]+\.[\d]+))"
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
@@ -15,11 +15,15 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$($reversion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "`${1}$($Latest.Version)"
     }
 
     "$($Latest.PackageName).nuspec" = @{
-      "$($reversion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "`${1}$($Latest.Version)"
+    }
+
+    ".\Update.ps1" = @{
+      "$($reVersion)" = "`${1}$($Latest.Version)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
@@ -36,14 +40,18 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
-  $urls = $download_page.links | where-object href -match $reurl | select-object -expand href | foreach-object { $domain + $_ }
 
-  $url64 = $urls -match $re64 | select-object -first 1
-  $url64SegmentSize = $([System.Uri]$url64).Segments.Length
-  $filename64 = $([System.Uri]$url64).Segments[$url64SegmentSize - 1]
+  $url64 = $download_page.links | where-object href -match $re64 | select-object -expand href | foreach-object { $domain + $_ }
+  $filename64 = $url64 -split '/' | select-object -last 1
 
-  $url64 -match $reversion
-  $version = $Matches.Version
+  $version = $url64 -match $reVersion | foreach-object { $Matches.Version }
+
+  # windows binaries are not released for all versions of this package so populate $version with the current version if
+  # there are no windows binaries available.  The nuspec has not been parsed at this stage so the current version is not
+  # available in the environment - hardcode here and use the package update process to rewrite
+  if ([string]::IsNullOrWhiteSpace($version)) {
+    $version = '0.6.1'
+  }
 
   return @{
     FileName64 = $filename64

@@ -9,7 +9,6 @@ $re64      = '(K.+win32-x64\.zip)'
 $reversion = '(v)(?<Version>([\d]+\.[\d]+\.[\d]+))'
 
 function global:au_BeforeUpdate {
-  Write-Host('downloading file')
   Get-RemoteFiles -Purge -NoSuffix
 }
 
@@ -33,8 +32,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
-  $urls       = $downloadPage.links | where-object href -match $reurl | select-object -expand href | foreach-object { $domain + $_ }
-  $url64      = $urls -match $re64 | select-object -first 1
+  $url64      = $downloadPage.links | where-object href -match $re64 | select-object -expand href | select-object -first 1 | foreach-object { $domain + $_ }
   $filename64 = $url64 -split '/' | select-object -last 1
 
   $version = $downloadPage.Content -match $reversion | foreach-object { $Matches.Version }
@@ -46,4 +44,4 @@ function global:au_GetLatest {
   }
 }
 
-update -ChecksumFor none -NoCheckUrl -NoReadme
+update -ChecksumFor none -NoReadme
