@@ -6,7 +6,7 @@ $domain   = 'https://github.com'
 $releases = "${domain}/mongodb-js/mongosh/releases/latest"
 
 $re64      = '(mongosh-.+win32\.zip)' # despite the filename the archive contains a 64-bit executable
-$reversion = '((\/|%20|-|v)(?<Version>([\d]+\.[\d]+\.[\d]+)))'
+$reVersion = '(v)(?<Version>([\d]+\.[\d]+\.[\d]+))'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
@@ -15,35 +15,32 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     "$($Latest.PackageName).nuspec" = @{
-      "(\/v)([\d]+\.[\d]+\.[\d]+)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "`${1}$($Latest.Version)"
     }
 
     ".\README.md" = @{
-      "([\d]+\.[\d]+\.[\d]+)" = "$($Latest.Version)"
+      "$($reVersion)" = "`${1}$($Latest.Version)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "$($re64)"                   = "$($Latest.Filename64)"
-      "(\/v)([\d]+\.[\d]+\.[\d]+)" = "`${1}$($Latest.Version)"
-      "(Checksum:\s)(.+)"          = "`${1}$($Latest.Checksum64)"
+      "$($re64)"          = "$($Latest.Filename64)"
+      "$($reVersion)"     = "`${1}$($Latest.Version)"
+      "(Checksum:\s)(.+)" = "`${1}$($Latest.Checksum64)"
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      "(\s')$($re64)" = "`${1}$($Latest.Filename64)"
+      "$($re64)" = "$($Latest.Filename64)"
     }
   }
 }
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
-  $urls = $download_page.links | select-object -expand href | foreach-object { $domain + $_ }
+  
+  $url64      = $download_page.links | where-object href -match $re64 | select-object -expand href | foreach-object { $domain + $_ }
+  $filename64 = $url64 -split '/' | select-object -last 1
 
-  $url64            = $urls -match $re64 | select-object -first 1
-  $url64SegmentSize = $([System.Uri]$url64).Segments.Length
-  $filename64       = $([System.Uri]$url64).Segments[$url64SegmentSize - 1]
-
-  $url64 -match $reversion
-  $version = $Matches.Version
+  $version = $url64 -match $reversion | foreach-object { $Matches.Version }
 
   return @{
     FileType   = 'zip'
@@ -53,4 +50,4 @@ function global:au_GetLatest {
   }
 }
 
-update -ChecksumFor none -NoCheckUrl -NoReadme
+update -ChecksumFor none -NoReadme

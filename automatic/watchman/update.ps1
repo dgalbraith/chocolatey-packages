@@ -6,7 +6,7 @@ $domain   = 'https://github.com'
 $releases = "${domain}/facebook/watchman/releases/latest"
 
 $re64      = '(watchman-v.*windows\.zip)'
-$reVersion = '(\/v|e-)(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]+))'
+$reVersion = "(v|')(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]+))"
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
@@ -18,6 +18,10 @@ function global:au_SearchReplace {
       "$($reVersion)" = "`${1}$($Latest.Version)"
     }
 
+    ".\Update.ps1" = @{
+      "$($reVersion)" = "`${1}$($Latest.Version)"
+    }
+
     ".\legal\VERIFICATION.txt" = @{
       "$($re64)"          = "$($Latest.Filename64)"
       "$($reVersion)"     = "`${1}$($Latest.Version)"
@@ -25,21 +29,25 @@ function global:au_SearchReplace {
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      "(\s')$($re64)" = "`${1}$($Latest.Filename64)"
+      "$($re64)" = "`${1}$($Latest.Filename64)"
     }
   }
 }
 
 function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
-  $urls = $downloadPage.links | select-object -expand href | foreach-object { $domain + $_ }
 
-  $url64            = $urls -match $re64 | select-object -first 1
-  $url64SegmentSize = $([System.Uri]$url64).Segments.Length
-  $filename64       = $([System.Uri]$url64).Segments[$url64SegmentSize - 1]
+  $url64      = $downloadPage.links | where-object href -match $re64 | select-object -expand  href | select-object -first 1 | foreach-object { $domain + $_ }
+  $filename64 = $url64 -split '/' | select-object -last 1
 
-  $url64 -match $reVersion
-  $version = $Matches.Version
+  $version = $url64 -match $reVersion | foreach-object { $Matches.Version }
+  
+  # windows binaries are not released for all versions of this package so populate $version with the current version if
+  # there are no windows binaries available.  The nuspec has not been parsed at this stage so the current version is not
+  # available in the environment - hardcode here and use the package update process to rewrite
+  if ([string]::IsNullOrWhiteSpace($version)) {
+    $version = '2021.01.11.00'
+  }
 
   return @{
     FileType   = 'zip'

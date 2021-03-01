@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/isacikgoz/tldr)](https://github.com/isacikgoz/tldr/blob/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-0.6.1-blue.svg)](https://github.com/isacikgoz/tldr/releases/tag/v0.6.1)
+[![Software version](https://img.shields.io/badge/Source-v0.6.1-blue.svg)](https://github.com/isacikgoz/tldr/releases/tag/v0.6.1)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/tldr-plusplus?label=Chocolatey)](https://chocolatey.org/packages/tldr-plusplus)
 
 Interactive tldr client.

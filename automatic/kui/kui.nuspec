@@ -11,7 +11,7 @@
     <projectUrl>https://kui.tools</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ac9e0ef462b93905584b248422198303de1a4823/icons/kui.png</iconUrl>
     <copyright>Kui Contributors</copyright>
-    <licenseUrl>https://github.com/beekeeper-studio/beekeeper-studio/blob/master/LICENSE.md</licenseUrl>
+    <licenseUrl>https://github.com/IBM/kui/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/IBM/kui</projectSourceUrl>
     <docsUrl>https://github.com/IBM/kui/wiki</docsUrl>
