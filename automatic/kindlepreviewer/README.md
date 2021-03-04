@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-Proprietary-lightgrey)](https://www.amazon.com/gp/feature.html?docId=1000599251)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/source-v3.50-blue.svg)](https://www.amazon.com/gp/feature.html?docId=1000765261)
+[![Software version](https://img.shields.io/badge/source-v3.51-blue.svg)](https://www.amazon.com/gp/feature.html?docId=1000765261)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/kindlepreviewer?label=Chocolatey)](https://chocolatey.org/packages/kindlepreviewer)
 
 Kindle Previewer is a graphical user interface tool that emulates how books display across Kindle devices and apps. Kindle Previewer makes it easy for publishers to preview the layout of a book and make sure its text displays properly for any orientation or font size to ensure publishers produce and submit the highest quality Kindle books.
