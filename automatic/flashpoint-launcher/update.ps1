@@ -5,10 +5,10 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/FlashpointProject/launcher/releases/latest"
 
-$re32 = 'F.+win-ia32\.7z'
-$re64 = 'F.+win-x64\.7z'
+$re32 = '(Flashpoint-(?=[^\s]+win-ia32)[^\s]+\.7z)'
+$re64 = '(Flashpoint-(?=[^\s]+win-x64)[^\s]+\.7z)'
 
-$reversion = '(?<Version>(\d+\.\d+\.\d))'
+$reVersion = '(?<Version>(\d+\.\d+\.\d+))'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
@@ -17,7 +17,7 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$($reversion)" = "$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
@@ -26,9 +26,11 @@ function global:au_SearchReplace {
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "(\/v.*\/)(Keys.+msi)"       = "`${1}$($Latest.Filename32)"
-      "(Checksum:\s)(.+)"          = "`${1}$($Latest.Checksum32)"
-      "(\/v)([\d]+\.[\d]+\.[\d]+)" = "`${1}$($Latest.Version)"
+      "$($re32)"                  = "$($Latest.Filename32)"
+      '(Checksum32:\s*)(.+)'      = "`${1}$($Latest.Checksum32)"
+      "$($re64)"                  = "$($Latest.Filename64)"
+      '(Checksum64:\s*)(.+)'      = "`${1}$($Latest.Checksum64)"
+      '(\/)([\d]+\.[\d]+\.[\d]+)' = "`${1}$($Latest.Version)"
     }
   }
 }

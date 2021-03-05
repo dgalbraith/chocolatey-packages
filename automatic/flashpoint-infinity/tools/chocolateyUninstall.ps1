@@ -1,13 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$launchScript = "Flashpoint.cmd"
+Uninstall-BinFile -Name 'Flashpoint' -Path 'Flashpoint.cmd'
 
-Uninstall-BinFile -Name 'Flashpoint' -Path $launchScript
-
-$desktopPath  = [Environment]::GetFolderPath("Desktop")
-$executable   = Get-ChildItem $toolsDir -Include 'Flashpoint.exe' -Recurse
-$shortcutPath = Join-Path $desktopPath $executable.Name.Replace($executable.Extension, '.lnk')
-
-if (Test-Path $shortcutPath) {
-  Remove-Item -Path $shortcutPath -Force | Out-Null
+$packageArgs = @{
+  PackageName = $env:ChocolateyPackageName
+  ZipFileName = 'Flashpoint 9.0 Infinity.exe'
 }
+
+UnInstall-ChocolateyZipPackage @packageArgs
+
+$installDir = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
+
+Remove-Item $installDir -Force  -Recurse -ErrorAction SilentlyContinue | Out-Null

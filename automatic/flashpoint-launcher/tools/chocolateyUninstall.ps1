@@ -4,7 +4,7 @@ Uninstall-BinFile -Name 'Flashpoint' -Path 'Flashpoint.cmd'
 
 $packageArgs = @{
   PackageName = $env:ChocolateyPackageName
-  ZipFileName = 'Flashpoint Core 9.7z'
+  ZipFileName = (Get-ChildItem -path $env:ChocolateyPackageFolder -include 'F*.7z.txt' -name).TrimEnd('.txt')
 }
 
 UnInstall-ChocolateyZipPackage @packageArgs

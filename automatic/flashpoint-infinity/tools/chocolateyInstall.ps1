@@ -4,7 +4,7 @@ $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
   PackageName   = $env:ChocolateyPackageName
-  UnzipLocation = $toolsDir
+  UnzipLocation = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
   Url           = 'https://bluemaxima.org/flashpoint/downloads/../Flashpoint%209.0%20Infinity.exe'
   Checksum      = 'fba50092c763f9e13d877e3fa861fa9426332bc51298a8bf2174b536bb43514f'
   ChecksumType  = 'sha256'
@@ -12,7 +12,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$files = Get-ChildItem $toolsDir -include *.exe -recurse
+$files = Get-ChildItem $packageArgs.UnzipLocation -include *.exe -recurse
 
 foreach ($file in $files) {
   New-Item "$file.ignore" -type file -force | Out-Null
@@ -42,18 +42,18 @@ Install-Binfile -Name 'Flashpoint' -Path $launchScript -UseStart
 # and Chocolatey seems to have an issue with the uninstall of a package containing a directory
 # where the ReadOnly attribute is set
 
-Get-ChildItem $toolsDir -Recurse -Force -ErrorAction SilentlyContinue | Where-Object {
+Get-ChildItem $workingDirectory -Recurse -Force -ErrorAction SilentlyContinue | Where-Object {
   $_.PSIsContainer -and $_.Attributes -match "ReadOnly" } | foreach-object { $_.Attributes="" }
 
 $pp = Get-PackageParameters
 
 if ($pp.AddToDesktop) {
   $desktopPath  = [Environment]::GetFolderPath("Desktop")
-  $shortcutPath = Join-Path $desktopPath $applicationBinary.ReplaceEnd($executable.Extension, '.lnk')
+  $shortcutPath = Join-Path $desktopPath 'Flashpoint Infinity.lnk'
 
   $shortcutArgs = @{
     ShortcutFilePath = $shortcutPath
-    TargetPath       = $applictionBinary
+    TargetPath       = $applicationBinary
     WorkingDirectory = $workingDirectory
   }
 
