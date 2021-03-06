@@ -25,7 +25,7 @@ The following package parameter can be set:
 * `/AddToDesktop` - this puts a shortcut on your desktop to Flashpoint.
 
 These parameters can be passed to the installer with the use of `--params`.
-For example: `--params '"/AddToDesktop"'`.
+For example: `--params "/AddToDesktop"`.
 
 To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 

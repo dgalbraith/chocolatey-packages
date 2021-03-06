@@ -12,6 +12,17 @@ which is a web preservation project.
 
 ![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@71d741b5e9171786eff61aea63d42c7c6ef286c6/automatic/flashpoint-launcher/screenshot.png)
 
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/AddToDesktop` - this puts a shortcut on your desktop to Flashpoint.
+
+These parameters can be passed to the installer with the use of `--params`.
+For example: `--params "/AddToDesktop"`.
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
 ## Notes
 
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
