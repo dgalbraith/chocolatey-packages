@@ -33,7 +33,7 @@ function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
   $urlInfinity = $downloadPage.links | where-object href -match $reInfinityUrl | select-object -expand href | foreach-object { $releases + $_ }
-  $archive     = $urlInfinity.split('/') | select-object -last 1 -replace '%20',' '
+  $archive     = ($urlInfinity.split('/') | select-object -last 1) -replace '%20',' '
   $version     = $downloadPage.Content -match $reInfinityVersion | foreach-object { $Matches.Version }
 
   return @{
