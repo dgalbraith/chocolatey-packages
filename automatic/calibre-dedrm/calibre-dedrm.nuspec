@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>calibre-dedrm</id>
+    <version>7.1.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/calibre-dedrm</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>DeDRM - Calibre DRM Removal Plugin</title>
+    <authors>DeDRM Contributors</authors>
+    <projectUrl>https://apprenticealf.wordpress.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ea0f988a4cfad988a1f4ede817d493f70da0b74a/icons/calibre-dedrm.png</iconUrl>
+    <copyright>Copyright Apprentice Harper et al</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/apprenticeharper/DeDRM_tools</projectSourceUrl>
+    <docsUrl>https://github.com/apprenticeharper/DeDRM_tools/blob/master/FAQs.md</docsUrl>
+    <mailingListUrl>https://github.com/apprenticeharper/DeDRM_tools/discussions</mailingListUrl>
+    <bugTrackerUrl>https://github.com/apprenticeharper/DeDRM_tools/issues</bugTrackerUrl>
+    <tags>dedrm ebook obok drm drm-removal calibre plugin calibre-plugin</tags>
+    <summary>A Calibre plugin to remove DRM from eBooks</summary>
+    <description><![CDATA[
+
+DeDRM is a plugin for [Calibre](https://calibre-ebook.com) that removes DRM from ebooks as they are imported into Calibre.
+
+The DeDRM plugin can remove DRM from Kindle eBooks (but not rented Kindle ebooks, books downloaded to a Kindle Fire,
+Kindle for iOS or the Windows Store Kindle App), Barnes & Noble ePub ebooks (but not books downloaded to the Windows
+Store Nook App) , any ebooks using Adobe Digital Editions DRM (this includes ePubs from Kobo and Sony that are
+downloaded for Adobe Digital Editions), and the older Mobipocket and eReader ebooks.
+
+There are two Calibre plugins installed: DeDRM and Obok. The DeDRM plugin handles books that use Amazon DRM, Adobe
+Digital Editions DRM (version 1), Barnes & Noble DRM, and some historical formats. The Obok plugin handles Kobo DRM.
+
+To use the plugin, simply import DRMed ebooks into Calibre, and the DRM will be removed. If ebooks have already been
+imported into Calibre, they will need to be removed and imported again to remove the DRM.
+
+## Anti-Piracy Notice
+
+Please only use these tools for gaining full access to your own ebooks for archiving/conversion/convenience. De-drmed
+ebooks should not be uploaded to open servers, torrents, or other methods of mass distribution. Authors, retailers
+and publishers all need to make a living, so that they can continue to produce books for us to read. Don’t be a
+parasite.
+
+## Notes
+
+* Current versions of DeDRM are for Calibre 5.x+. For the earlier 4.x versions you must use [DeDRM 6.8.1](https://chocolatey.org/packages/calibre-dedrm/6.8.1).
+  
+  ```powershell
+  choco install calibre --version 4.23
+  choco pin add -n=calibre --version 4.23
+  choco install calibre-dedrm --version 6.8.1
+  choco pin add -n=calibre-dedrm --version 6.8.1
+  ```
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v7.1.0</releaseNotes>
+    <dependencies>
+      <dependency id="calibre" version="[5.0.0,)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
