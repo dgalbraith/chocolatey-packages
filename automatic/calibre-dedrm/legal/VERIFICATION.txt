@@ -8,22 +8,22 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v6.8.1
+  https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v7.1.0
 
-and download the archive DeDRM_tools_6.8.1.zip using the relevant links in the
+and download the archive DeDRM_tools_7.1.0.zip using the relevant links in the
 asset section of the distribution page.
 
 Alternatively the distribution can be downloaded directly from
 
-  https://github.com/apprenticeharper/DeDRM_tools/releases/download/v6.8.1/DeDRM_tools_6.8.1.zip
+  https://github.com/apprenticeharper/DeDRM_tools/releases/download/v7.1.0/DeDRM_tools_7.1.0.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash DeDRM_tools_6.8.1.zip
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f DeDRM_tools_6.8.1.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash DeDRM_tools_7.1.0.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f DeDRM_tools_7.1.0.zip
 
-  File:         DeDRM_tools_6.8.1.zip
+  File:         DeDRM_tools_7.1.0.zip
   ChecksumType: sha256
-  Checksum:     A83A963E07DA7887314E5FA44FA45D73F23CB36C6C96032E6ACBA462ED797DD0
+  Checksum:     D06EB1B7770E67AB88E1AC1546F3C2741F4C3E50D44FED970294F925D01D6B94
 
   Contents of file LICENSE.txt is obtained from https://github.com/apprenticeharper/DeDRM_tools/blob/master/DeDRM_plugin/__init__.py
   and https://www.gnu.org/licenses/gpl-3.0.txt

@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-GPLv3-blue)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v6.8.1-blue)](https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v6.8.1)
+[![Software version](https://img.shields.io/badge/Source-v7.1.0-blue)](https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v7.1.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/calibre-dedrm?label=Chocolatey)](https://chocolatey.org/packages/calibre-dedrm)
 
 DeDRM is a plugin for Calibre that removes DRM from ebooks as they are imported into Calibre.
