@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-code-runner</id>
-    <version>0.11.2</version>
+    <version>0.11.3</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-code-runner</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Code Runner VSCode Extension</title>
@@ -42,7 +42,7 @@ The Code Runner extension provides support for executing code snippets or files 
 
 ## Notes
 
-* This package requires Visual Studio Code 1.35.0 or newer.
+* This package requires Visual Studio Code 1.54.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
