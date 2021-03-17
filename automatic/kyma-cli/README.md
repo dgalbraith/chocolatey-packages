@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/kyma-project/kyma-cli)](https://github.com/kyma-project/cli/blob/master/LICENCE/)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/version-1.19.0-blue)](https://github.com/kyma-project/cli/releases/tags/1.19.0)
+[![Software version](https://img.shields.io/badge/version-1.20.0-blue)](https://github.com/kyma-project/cli/releases/tags/1.20.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/kyma-cli?label=Chocolatey)](https://chocolatey.org/packages/kyma-cli)
 
 Kyma CLI is a command line tool which supports Kyma developers. It provides a set of commands you can use to install, manage, and test Kyma.

@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-spring-boot</id>
-    <version>1.24.0</version>
+    <version>1.25.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-spring-boot</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Spring Boot Tools VSCode Extension</title>
     <authors>Pivotal</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-spring-boot</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0bf6a976385899a2fff0d6c1adb822da42a08d10/icons/vscode-spring-boot.png</iconUrl>
-    <copyright>Copyright 2018-2020 Pivotal</copyright>
+    <copyright>Copyright 2018-2021 Pivotal</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/Pivotal.vscode-spring-boot/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/spring-projects/sts4</projectSourceUrl>
