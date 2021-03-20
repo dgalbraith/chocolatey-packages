@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=Oracle.oracledevtools
 
-and download the extension Oracle.oracledevtools-19.3.3.vsix using the Download Extension link
+and download the extension Oracle.oracledevtools-19.3.4.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Oracle/vsextensions/oracledevtools/19.3.3/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Oracle/vsextensions/oracledevtools/19.3.4/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash Oracle.oracledevtools-19.3.3.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Oracle.oracledevtools-19.3.3.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash Oracle.oracledevtools-19.3.4.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Oracle.oracledevtools-19.3.4.vsix
 
   Type:     sha256
-  Checksum: C26833DB496213FDF82C64CC3E602764A66AB42B395CCD2870AE792D4BA9C68F
+  Checksum: F7D32B2C9EF0282D859A6E2EB157FF093409A968AF02D3D73BD30853CDC3D9FC
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/Oracle.oracledevtools/license

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>beekeeper-studio.portable</id>
-    <version>1.9.4</version>
+    <version>1.10.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/beekeeper-studio.portable</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Beekeeper Studio (Portable) - SQL Editor and Database Manager</title>
