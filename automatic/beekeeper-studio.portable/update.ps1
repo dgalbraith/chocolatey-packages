@@ -28,6 +28,11 @@ function global:au_SearchReplace {
     ".\tools\chocolateyinstall.ps1" = @{
       "($rePortable)" = "$($Latest.FileName64)"
     }
+
+    ".\tools\chocolateyuninstall.ps1" = @{
+      "($rePortable)" = "$($Latest.FileName64)"
+    }
+
   }
 }
 
