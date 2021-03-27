@@ -22,6 +22,10 @@ function global:au_SearchReplace {
       "$($reVersion)"        = "`${1}$($Latest.Version)"
       "(Checksum64:\s*)(.+)" = "`${1}$($Latest.Checksum64)"
     }
+
+    ".\tools\chocolateyinstall.ps1" = @{
+      "($reInstall)" = "$($Latest.FileName64)"
+    }
   }
 }
 
