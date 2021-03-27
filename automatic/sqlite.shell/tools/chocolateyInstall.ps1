@@ -1,5 +1,6 @@
-﻿$packageName = 'sqlite.shell'
-$url = '{{DownloadUrl}}'
-$PSScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Definition
+﻿$ErrorActionPreference = 'Stop'
 
-Install-ChocolateyZipPackage $packageName $url $PSScriptRoot
+$toolsDir   = Split-Path -parent $MyInvocation.MyCommand.Definition
+$executable = Get-ChildItem -Path $toolsDir 'sqlite?.exe' -Recurse
+
+Install-BinFile -Name $executable.Name -Path $executable

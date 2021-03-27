@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>sqlite.shell</id>
+    <version>3.35.2</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sqllite.shell</packageSourceUrl>
+    <owners>dgalbraith</owners>
     <title>SQLite Shell</title>
-    <version>{{PackageVersion}}</version>
     <authors>D. Richard Hipp, SQLite contributors</authors>
-    <owners>Rob Reynolds</owners>
-    <summary>SQLite Shell – command shell for accessing SQLite databases</summary>
-    <description>SQLite is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine. SQLite is the most widely deployed SQL database engine in the world. SQLite Shell is a command-line shell for accessing and modifying SQLite databases. This program is compatible with all versions of SQLite through this version and beyond.</description>
-    <projectUrl>http://www.sqlite.org</projectUrl>
-    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
-    <tags>sqlite db database embedded</tags>
+    <projectUrl>https://www.sqlite.org</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@35b12b29a0d812446e72152623467d25daf0d7c6/icons/sqlite.png</iconUrl>
+    <copyright>None - SQLite Shell is dedicated to the public domain</copyright>
     <licenseUrl>http://www.sqlite.org/copyright.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/sqlite.svg</iconUrl>
+    <projectSourceUrl>http://www.sqlite.org/src</projectSourceUrl>
+    <docsUrl>https://www.sqlite.org/cli.html</docsUrl>
+    <mailingListUrl>https://sqlite.org/forum/forum</mailingListUrl>
+    <bugTrackerUrl>https://www.sqlite.org/src/rptview?rn=1</bugTrackerUrl>
+    <tags>shell sqlite db database embedded hwaci</tags>
+    <summary>A simple command-line shell for accessing and modifying SQLite databases</summary>
+    <description><![CDATA[
+
+SQLite Shell is a command-line shell that allows the user to manually enter and execute SQL statements against an SQLite database.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@35b12b29a0d812446e72152623467d25daf0d7c6/automatic/sqlite.shell/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://sqlite.org/changes.html</releaseNotes>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- character encoding: “UTF-8” -->
