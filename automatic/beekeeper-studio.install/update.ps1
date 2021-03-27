@@ -6,6 +6,8 @@ function global:au_BeforeUpdate {
   $Latest.FileName64 = "$($Latest.FileNameInstall)"
   $Latest.Url64      = "$($Latest.UrlInstall)"
 
+  Write-Host($Latest.FileName64)
+
   Get-RemoteFiles -Purge -NoSuffix
 }
 

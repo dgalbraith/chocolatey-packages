@@ -15,7 +15,7 @@ the links in the relevant assets section of the page.
 
 Alternatively the application can be downloaded directly from
 
-  https://githuBeekeeper-Studio-1.10.1-portable.exe
+https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v1.10.1/Beekeeper-Studio-1.10.1-portable.exe
 
 2. The application can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Beekeeper-Studio-1.10.1-portable.exe
