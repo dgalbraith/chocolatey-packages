@@ -1,5 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$executable = Join-Path $installDir 'Beekeeper-Studio-1.9.4-portable.exe'
+$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+
+$executable = Join-Path $toolsDir 'Beekeeper-Studio-1.10.2-portable.exe'
 
 Uninstall-BinFile -Name 'BeekeeperStudio' -Path "$executable"
