@@ -15,6 +15,10 @@ function global:au_SearchReplace {
       "$($reVersion)" = "`${1}$($Latest.Version)"
     }
 
+    "$($Latest.PackageName).nuspec" = @{
+      "$($reVersion)" = "`${1}$($Latest.Version)"
+    }
+
     ".\legal\VERIFICATION.txt" = @{
       "$($rePortable)"       = "$($Latest.FileName64)"
       "$($reVersion)"        = "`${1}$($Latest.Version)"
