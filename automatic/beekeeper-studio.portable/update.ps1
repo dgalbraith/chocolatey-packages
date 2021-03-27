@@ -15,10 +15,18 @@ function global:au_SearchReplace {
       "$($reVersion)" = "`${1}$($Latest.Version)"
     }
 
+    "$($Latest.PackageName).nuspec" = @{
+      "$($reVersion)" = "`${1}$($Latest.Version)"
+    }
+
     ".\legal\VERIFICATION.txt" = @{
       "$($rePortable)"       = "$($Latest.FileName64)"
       "$($reVersion)"        = "`${1}$($Latest.Version)"
       "(Checksum64:\s*)(.+)" = "`${1}$($Latest.Checksum64)"
+    }
+
+    ".\tools\chocolateyinstall.ps1" = @{
+      "($rePortable)" = "$($Latest.FileName64)"
     }
   }
 }

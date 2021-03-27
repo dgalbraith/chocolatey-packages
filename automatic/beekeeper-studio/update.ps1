@@ -5,9 +5,9 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/beekeeper-studio/beekeeper-studio/releases/latest"
 
-$reInstall  = '((?<=\d\/|\s)(B.+(?=Setup).+\.exe))'
-$rePortable = '((?<=\d\/|\s)(B.+(?=portable).+\.exe))'
-$reVersion  = '(v|\[)(?<Version>([\d]+\.[\d]+\.[\d]+))'
+$reInstall  = "((?<=\\|\d\/|\s)(B.+(?=Setup).+\.exe))"
+$rePortable = "((?<='|\d\/|\s)(B.+(?=portable).+\.exe))"
+$reVersion  = '(v|\[)(?<Version>([\d]+\.[\d]+\.[\d]+.*\d*))'
 
 function global:au_BeforeUpdate {
 }
