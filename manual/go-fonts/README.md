@@ -1,9 +1,9 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec2d3c7b3ed472b9024c58cf27f766a9909f62bd/icons/go-fonts.png" width="48" height="48" />Go Fonts](https://chocolatey.org/packages/go-fonts)
 
-[![Software License](https://img.shields.io/badge/license-proprietary-lightgrey)](https://go.googlesource.com/image/+/b7f8df6bc082334698d4505fb85fa05e99156b72/font/gofont/ttfs/README)
+[![Software License](https://img.shields.io/badge/license-proprietary-lightgrey)](https://go.googlesource.com/image/+/f03a046406d4d7fbfd4ed29f554da8f6114049fc/font/gofont/ttfs/README)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v2.004-blue.svg)](https://go.googlesource.com/image/+/b7f8df6bc082334698d4505fb85fa05e99156b72)
+[![Software version](https://img.shields.io/badge/Source-v2.008-blue.svg)](https://go.googlesource.com/image/+/f03a046406d4d7fbfd4ed29f554da8f6114049fc)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/go-fonts?label=Chocolatey)](https://chocolatey.org/packages/go-fonts)
 
 The Go font family includes proportional and fixed-width faces in normal, **bold**, and *italic* renderings with a

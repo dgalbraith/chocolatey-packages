@@ -3,25 +3,70 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The application has been downloaded from the official distribution and can
+The fonts have been downloaded from the official distribution and can
 be verified by:
 
-1. Go to the version control repository
+1. Clone the version control repository and reset the contents to the commit id f03a046406d4d7fbfd4ed29f554da8f6114049fc
 
-  https://go.googlesource.com/image/+/f03a046406d4d7fbfd4ed29f554da8f6114049fc/font/gofont/
+  git clone https://go.googlesource.com/image/
+  git reset --hard f03a046406d4d7fbfd4ed29f554da8f6114049fc
 
-and download the image-f03a046406d4d7fbfd4ed29f554da8f6114049fc-font-gofont-ttfs.tar.gz archive using the [tgz] link on the page.
-
-Alternatively the archive can be downloaded directly from
+Alternatively the fonts archive can be downloaded directly from
 
   https://go.googlesource.com/image/+archive/f03a046406d4d7fbfd4ed29f554da8f6114049fc/font/gofont/ttfs.tar.gz
 
-2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 image-f03a046406d4d7fbfd4ed29f554da8f6114049fc-font-gofont-ttfs.tar.gz
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f image-f03a046406d4d7fbfd4ed29f554da8f6114049fc-font-gofont-ttfs.tar.gz
+2. The fonts can be validated by comparing checksums of the cloned repository in the directory .\image\font\gofont\ttfs
+   or the contents of the image-f03a046406d4d7fbfd4ed29f554da8f6114049fc-font-gofont-ttfs.tar.gz archive
 
-  File:     image-f03a046406d4d7fbfd4ed29f554da8f6114049fc-font-gofont-ttfs.tar.gz
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 [filename]
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f [filename]
+
+  File:     Go-Bold.ttf
   Type:     sha256
-  Checksum: 2BDCEE442358A9D1808C1213DC829CA813C4DCA4B2910972F9DA3555346423A5
+  Checksum: 08BD7247CA7807ED101E844ED7B663B51BC3470351AC9BAEF6ED906AAFCF7497
+
+  File:     Go-Bold-Italic.ttf
+  Type:     sha256
+  Checksum: 54317F92767EB67F842238479996D99AE69358277AB51B2CDD701C7834715820
+
+  File:     Go-Italic.ttf
+  Type:     sha256
+  Checksum: A5F0C4CD287E59AA1966852E01B93D1076709B3581D0EBEBE26107E239C00B40
+
+  File:     Go-Medium.ttf
+  Type:     sha256
+  Checksum: 1C7442895C518888D6D3FC0B9ACA2DB9268F3ACF4CAE9F87D4D977ACDEDAE68C
+
+  File:     Go-Medium-Italic.ttf
+  Type:     sha256
+  Checksum: 950A3AED1848A3382AEB50DEFBCF14209A3B141F14FAC1F03BA3ABEE1DEECC34
+
+  File:     Go-Mono.ttf
+  Type:     sha256
+  Checksum: B219CB3AE5214941BFB95A5B9A0AF769D2EA1986DF6CDD48F09F821EF0616BFC
+
+  File:     Go-Mono-Bold.ttf
+  Type:     sha256
+  Checksum: 0731484182480165D26A0E61648E6DB8F006ABB8129E2F9D4AC75A6E919E67E7
+
+  File:     Go-Mono-Bold-Italic.ttf
+  Type:     sha256
+  Checksum: E78BA223CF1D1744A8EE58E23D4A28E88EA9E6EBD5C8E9244DA0D32DBA3F1D0F
+
+  File:     Go-Mono-Italic.ttf
+  Type:     sha256
+  Checksum: 50557B8C54E5A70D5D1D458349E28FC671A069A1712BE80A54833D59238F8124
+
+  File:     Go-Regular.ttf
+  Type:     sha256
+  Checksum: 4BB829593136416C6A39ECDC45482E052F75AC374E6459B9AF68D4FBA279396C
+
+  File:     Go-Smallcaps.ttf
+  Type:     sha256
+  Checksum: EE1984FC28D442CE191F3B7EDC68B557155E158D77511DE304DC9FA8AC4A1D14
+
+  File:     Go-Smallcaps-Italic.ttf
+  Type:     sha256
+  Checksum: 316EBBED451D06AA3D7E428851A388456B97AFA272B50D827E6EAA6595018A32
 
 Contents of file LICENSE.txt is obtained from https://go.googlesource.com/image/+/f03a046406d4d7fbfd4ed29f554da8f6114049fc/font/gofont/ttfs/README
