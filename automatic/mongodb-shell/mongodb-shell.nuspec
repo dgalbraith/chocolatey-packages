@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mongodb-shell</id>
-    <version>0.10.0</version>
+    <version>0.10.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mongodb-shell</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>MongoDB Shell</title>
@@ -48,7 +48,7 @@ Gives you autocomplete options based on the version of the server you are connec
 
 ]]>
     </description>
-    <releaseNotes>https://github.com/mongodb-js/mongosh/releases/tag/v0.10.0</releaseNotes>
+    <releaseNotes>https://github.com/mongodb-js/mongosh/releases/tag/v0.10.1</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
