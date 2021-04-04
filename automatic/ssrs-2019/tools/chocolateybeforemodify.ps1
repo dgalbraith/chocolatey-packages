@@ -1,1 +1,1 @@
-Get-Service SqlServerReportingServices -ErrorAction SilentlyContinue | Stop-Service
+﻿Get-Service SqlServerReportingServices -ErrorAction SilentlyContinue | Stop-Service
