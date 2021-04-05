@@ -9,15 +9,14 @@ $download     = "${base}confirmation.aspx?id=${productId}"
 $reversion    = '(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]+))'
 $reexecutable = 'p>(?<Executable>(.*\.exe))<'
 
+function au_BeforeUpdate {
+  $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64Bit
+}
+
 function global:au_SearchReplace {
   @{
-    "$($Latest.PackageName).nuspec" = @{
-      #"(>)([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)(<\/)" = "`${1}$($Latest.Version)`${3}"
-      "(>)$($reversion)(<\/)" = "`${1}$($Latest.Version)`${3}"
-    }
-
     ".\README.md" = @{
-      "(-)$($reversion)(-)" = "`${1}$($Latest.Version)`${3}"
+      "$($reversion)" = "$($Latest.Version)"
     }
 
     'tools\ChocolateyInstall.ps1' = @{
@@ -40,14 +39,11 @@ function global:au_GetLatest {
 
   $url = $download_page.Links | where-object { $_ -Match $filename } | Select-Object -ExpandProperty href | Select-Object -First 1
 
-  $checksum = Get-RemoteChecksum $url
-
   @{
     Version        = $version
     URL64Bit       = $url
     Filename64     = $filename
-    Checksum64     = $checksum
-    ChecksumType64 = "sha256"
+    ChecksumType64 = 'sha256'
   }
 }
 

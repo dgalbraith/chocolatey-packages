@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 
 $silentArgs = '/quiet /norestart /IAcceptLicenseTerms'
 
@@ -6,15 +6,19 @@ $silentArgs = '/quiet /norestart /IAcceptLicenseTerms'
 
 $pp = Get-PackageParameters
 
-# check the edition parameter and default to Eval if not supplied
-if ($null -eq $pp["Edition"] -or $pp["Edition"] -eq '') { $pp["Edition"] = 'Eval' }
+# edition and PID parameters are mutually exclusive so only check/default
+# the edition if no PID is provided
+if ($null -eq $pp["PID"] -or $pp["PID"] -eq '') {
+  # check the edition parameter and default to Eval if not supplied
+  if ($null -eq $pp["Edition"] -or $pp["Edition"] -eq '') {
+    $pp["Edition"] = 'Eval'
+  }
 
-if ($pp['Edition'] -notmatch $reedition) {
-  Write-Output "Unsupported edition $($pp.Edition)"
-  exit (1)
+  if ($pp['Edition'] -notmatch $reedition) {
+    Write-Output "Unsupported edition $($pp.Edition)"
+    exit (1)
+  }
 }
-
-$pp.Remove['Edition']
 
 # append remaining package arguments to the silent arguments
 $silentArgs += ($pp.GetEnumerator() | ForEach-Object { " /$($_.name)=`"$($_.value)`"" })
