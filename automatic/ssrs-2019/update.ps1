@@ -11,13 +11,8 @@ $reexecutable = 'p>(?<Executable>(.*\.exe))<'
 
 function global:au_SearchReplace {
   @{
-    "$($Latest.PackageName).nuspec" = @{
-      #"(>)([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)(<\/)" = "`${1}$($Latest.Version)`${3}"
-      "(>)$($reversion)(<\/)" = "`${1}$($Latest.Version)`${3}"
-    }
-
     ".\README.md" = @{
-      "(-)$($reversion)(-)" = "`${1}$($Latest.Version)`${3}"
+      "$($reversion)" = "$($Latest.Version)"
     }
 
     'tools\ChocolateyInstall.ps1' = @{
