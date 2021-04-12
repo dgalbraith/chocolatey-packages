@@ -11,7 +11,7 @@ function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
 
   $archive = Join-Path $toolsDir $Latest.FileName32 
-  Expand-Archive -Path $archive -Destination $toolsDir
+  Expand-Archive -Path $archive -DestinationPath $toolsDir
 
   $executable = Get-ChildItem -Path $toolsDir 'sqlite?.exe' -Recurse
   $Latest.Executable = $executable.Name
