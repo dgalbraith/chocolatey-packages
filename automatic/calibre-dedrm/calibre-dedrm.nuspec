@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>calibre-dedrm</id>
-    <version>7.1.0</version>
+    <version>7.2.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/calibre-dedrm</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>DeDRM - Calibre DRM Removal Plugin</title>
@@ -56,7 +56,7 @@ parasite.
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v7.1.0</releaseNotes>
+    <releaseNotes>https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v7.2.1</releaseNotes>
     <dependencies>
       <dependency id="calibre" version="[5.0.0,)" />
     </dependencies>
