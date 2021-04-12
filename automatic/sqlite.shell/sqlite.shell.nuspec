@@ -4,7 +4,7 @@
   <metadata>
     <id>sqlite.shell</id>
     <version>3.35.2</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sqllite.shell</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sqlite.shell</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>SQLite Shell</title>
     <authors>D. Richard Hipp, SQLite contributors</authors>
