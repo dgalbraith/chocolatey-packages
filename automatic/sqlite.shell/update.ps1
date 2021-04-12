@@ -12,25 +12,16 @@ function global:au_BeforeUpdate {
 
   $archive = Join-Path $toolsDir $Latest.FileName32 
 
-  Write-Host('Extracting archive ' + $archive)
   Expand-Archive -Path $archive -DestinationPath $toolsDir
 
-  Write-Host('Resolving executable')
   $executable = Get-ChildItem -Path $toolsDir 'sqlite?.exe' -Recurse
-  Write-Host('Fully qualified executable is ' + $executable)
   $Latest.Executable = $executable.Name
-  Write-Host('Executable name is ' + $Latest.Executable)
-  $Latest.Checksum32 = (Get-Filehash -algorithm sha256 $executable).Hash
-  Write-Host('Checksum for executable is ' + $Latest.Checksum32)
+  $Latest.Checksum32 = (Get-Filehash -algorithm sha256 $executable.FullName).Hash
 
-  Write-Host('Relocating executable to ' + $toolsDir)
-  Move-Item -Path $executable $toolsDir
+  Move-Item -Path $executable.FullName $toolsDir
 
-  Write-Host('Cleaning archive ' + $archive)
   Remove-Item $archive -ea 0 -Force | Out-Null
-  Write-Host('Cleaning directory ' + $executable.Directory)
   Remove-Item -Path $executable.Directory -Recurse -Force | Out-Null
-  Write-Host('Complete')
 }
 
 function global:au_SearchReplace {
