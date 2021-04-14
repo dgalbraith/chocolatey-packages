@@ -1,0 +1,30 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://sqlite.org/download.html
+  
+and download the archive sqlite-tools-win32-x86-3350300.zip using the link in
+the Precompiled Binaries for Windows section.
+
+Alternatively the archives can be downloaded directly from
+
+  https://sqlite.org/2021/sqlite-tools-win32-x86-3350300.zip
+
+2. Extract the file sqlite3.exe from the archive
+
+3. The executable can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 sqlite3.exe
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f sqlite3_analyzer.exe
+
+  File:         sqlite3_analyzer.exe
+  ChecksumType: sha256
+  Checksum:     57B1D19F360715FD58888B11F2E5081F3E7E751B559959F136EEDF04FE205EC0
+ 
+  Contents of file LICENSE.txt is obtained from http://www.sqlite.org/copyright.html
