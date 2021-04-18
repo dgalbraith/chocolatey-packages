@@ -9,8 +9,8 @@
     <title>Apache Ant</title>
     <authors>Apache</authors>
     <projectUrl>https://ant.apache.org</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@94f5f2f8b70ba6ef43ce4f978218f5733afcd3b6/icons/ant.png</iconUrl>
-    <copyright>Copyright 1999-2020 The Apache Software Foundation</copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@170f8cefaff042f0fb37731acc25ce804e878d88/icons/ant.png</iconUrl>
+    <copyright>Copyright 1999-2021 The Apache Software Foundation</copyright>
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://gitbox.apache.org/repos/asf/ant.git</projectSourceUrl>
@@ -20,7 +20,7 @@
     <tags>ant build build-management script build-script java xml apache</tags>
     <summary>Apache Ant is a Java library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other</summary>
     <description><![CDATA[
-    
+
 Apache Ant is a Java library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other. The main known usage of Ant is the build of Java applications. Ant supplies a number of built-in tasks allowing to compile, assemble, test and run Java applications. Ant can also be used effectively to build non Java applications, for instance C or C++ applications. More generally, Ant can be used to pilot any type of process which can be described in terms of targets and tasks.
 
 Ant is written in Java. Users of Ant can develop their own "antlibs" containing Ant tasks and types, and are offered a large number of ready-made commercial or open-source "antlibs".
@@ -31,7 +31,14 @@ Software development projects looking for a solution combining build tool and de
 
 The Apache Ant project is part of the [Apache Software Foundation](https://www.apache.org/).
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@824f1c860214ef2b12885731deeff348b16e391b/automatic/ant/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@170f8cefaff042f0fb37731acc25ce804e878d88/automatic/ant/screenshot.png)
+
+## Package Parameters
+
+* `/User` - override the default behaviour and set the `ANT_HOME` environment variable for the current user only
+  e.g. `choco install -y ant --package-parameters="/User"`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ## Notes
 
