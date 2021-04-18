@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@94f5f2f8b70ba6ef43ce4f978218f5733afcd3b6/icons/ant.png" width="48" height="48" />Apache Ant](https://chocolatey.org/packages/ant)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@170f8cefaff042f0fb37731acc25ce804e878d88/icons/ant.png" width="48" height="48" />Apache Ant](https://chocolatey.org/packages/ant)
 
 [![Software license](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://gitbox.apache.org/repos/asf?p=ant.git;a=blob;f=LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
@@ -16,7 +16,14 @@ Software development projects looking for a solution combining build tool and de
 
 The Apache Ant project is part of the [Apache Software Foundation](https://www.apache.org/).
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@824f1c860214ef2b12885731deeff348b16e391b/automatic/ant/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@170f8cefaff042f0fb37731acc25ce804e878d88/automatic/ant/screenshot.png)
+
+## Package Parameters
+
+* `/User` - override the default behaviour and set the `ANT_HOME` environment variable for the current user only.
+  e.g. `choco install -y ant --package-parameters="/User"`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ## Notes
 
