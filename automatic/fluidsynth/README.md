@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@b88007b58b05fbad5dfa762525117160741cd06a/icons/fluidsynth.png" width="48" height="48" />FluidSynth SoundFront Synthesizer](https://chocolatey.org/packages/fluidsynth)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@b88007b58b05fbad5dfa762525117160741cd06a/icons/fluidsynth.png" width="48" height="48" />FluidSynth SoundFont Synthesizer](https://chocolatey.org/packages/fluidsynth)
 
 [![Software license](https://img.shields.io/badge/License-LGPLv2.1-blue.svg)](https://github.com/FluidSynth/fluidsynth/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
