@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug
 
-and download the extension firefox-devtools.vscode-firefox-debug-2.9.3.vsix using the Download Extension link
+and download the extension firefox-devtools.vscode-firefox-debug-2.9.4.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/firefox-devtools/vsextensions/vscode-firefox-debug/2.9.3/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/firefox-devtools/vsextensions/vscode-firefox-debug/2.9.4/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash firefox-devtools.vscode-firefox-debug-2.9.3.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f firefox-devtools.vscode-firefox-debug-2.9.3.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash firefox-devtools.vscode-firefox-debug-2.9.4.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f firefox-devtools.vscode-firefox-debug-2.9.4.vsix
 
   Type:     sha256
-  Checksum: 0CC09E315C86D04066FEBCB59F96981143753B1A3A7168197ABBE3C9CFAFFAB6
+  Checksum: B320A649AA808F61CC3A5A537ADE82B77017D6FFA00335F2BE786A3B503CDF01
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/firefox-devtools.vscode-firefox-debug/license

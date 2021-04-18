@@ -10,19 +10,19 @@ be verified by:
 
   https://archive.apache.org/dist/ant/binaries/
 
-and download the archive apache-ant-1.10.9-bin.zip using the links on the page.
+and download the archive apache-ant-1.10.10-bin.zip using the links on the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.9-bin.zip
+  https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.10-bin.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha512 apache-ant-1.10.9-bin.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f apache-ant-1.10.9-bin.zip
-  - Download the checksums from https://archive.apache.org/ant/binaries/apache-ant-1.10.9-bin.zip.sha512
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha512 apache-ant-1.10.10-bin.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f apache-ant-1.10.10-bin.zip
+  - Download the checksums from https://archive.apache.org/ant/binaries/apache-ant-1.10.10-bin.zip.sha512
 
-  File:     apache-ant-1.10.9-bin.zip
+  File:     apache-ant-1.10.10-bin.zip
   Type:     sha512
-  Checksum: D085F59349EDF22A93D835AA30AEA2521ED39BDB99D57D941F1EBD8D115A561BB28AECC781915FF2A0D9F7CAF7BAE536CDDA0910BB432B2A4BCE8B7B90C2903B
+  Checksum: D6FC3B77FE6D32C7442A9E232F2442EC701D17A570022E9BDFED2F08A031D6D04507B2EF78C1118E7CBDADCE9997D70DA1AF27E83B566328DBF0B9D63DA604A3
 
 Contents of file LICENSE.txt is obtained from https://gitbox.apache.org/repos/asf?p=ant.git;a=blob;f=LICENSE
