@@ -20,34 +20,7 @@ Get-ChocolateyUnzip @unzipArgs
 $files = Get-ChildItem $toolsDir -include *.exe -recurse
 
 foreach ($file in $files) {
-  New-Item "$file.ignore" -type file -force | Out-Null
+  if ($file.Name -ne 'rsync.exe') {
+    New-Item "$file.ignore" -type file -force | Out-Null
+  }
 }
-
-$pp = Get-PackageParameters
-
-if ($pp.User) {
-  $variableType = 'User'
-} else {
-  $variableType = 'Machine'
-}
-
-$cwrsync_home = $archive -split '.zip' | Select-Object -first 1
-$rsync_bat    = Join-Path $toolsDir 'rsync.bat'
-
-$environmentArgs = @{
-    VariableName  = 'CWRSYNC_HOME'
-    VariableValue = $cwrsync_home
-    VariableType  = $variableType
-}
-
-Install-ChocolateyEnvironmentVariable @environmentArgs
-
-Install-BinFile -Name 'rsync' -Path $rsync_bat
-
-$files = Get-ChildItem $toolsDir -include *.exe -recurse
-
-foreach ($file in $files) {
-  New-Item "$file.ignore" -type file -force | Out-Null
-}
-
-Update-SessionEnvironment

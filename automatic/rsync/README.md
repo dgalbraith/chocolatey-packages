@@ -15,14 +15,9 @@ normally requires local access to both files.
 
 ![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@2b1c888fbc68d148d638cae0b6f0222b97f156db/automatic/rsync/screenshot.png)
 
-## Package Parameters
-
-* `/User` - override the default behavior and set the `CWRSYNC_HOME` environment variable for the current user only
-  e.g. `choco install -y rsync --package-parameters="/User"`
-
-To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 ## Notes
 
+* cwRSync uses the Windows user profile directories as home
 * Current versions of rsync are only provided as a 64-bit version
 * If support for 32-bit Windows is required use the legacy version [rsync 5.5.0.20190204](https://chocolatey.org/packages/rsync/5.5.0.20190204).
 
