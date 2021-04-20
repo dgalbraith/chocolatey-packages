@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.itefix.net/cwrsync?qt-cwrsync_client=1&qt-cwrsync=1#qt-cwrsync
+
+and download the archive cwrsync_6.2.0_x64_free.zip using the link on the page.
+
+Alternatively the archive can be downloaded directly from
+
+  https://itefix.net/dl/free-software/cwrsync_6.2.0_x64_free.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 cwrsync_6.2.0_x64_free.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f cwrsync_6.2.0_x64_free.zip
+
+  File:     cwrsync_6.2.0_x64_free.zip
+  Type:     sha256
+  Checksum: ECC47B408C782DD887D47892E9F65903DE44D7928CAF98B699199F116815CE79
+
+Contents of file LICENSE.txt is obtained from https://itefix.net/simplified-bsd-license as referenced
+from https://www.itefix.net/content/cwrsync-license-version.
