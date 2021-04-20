@@ -1,27 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rsync</id>
+    <version>6.2.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/rsync</packageSourceUrl>
+    <owners>dgalbraith</owners>
     <title>cwRsync (Free Edition)</title>
-    <version>5.5.0.20190204</version>
     <authors>Itefix</authors>
-    <owners>Anthony Mastrean</owners>
-    <summary>Rsync is a fast and extraordinarily versatile file copying tool for both remote and local files.</summary>
-    <description>
-Rsync uses a delta-transfer algorithm which provides a very fast method for bringing remote files into sync.  It does this by sending just the differences in the files across the link, without requiring that both sets of files are present at one of the ends of the link beforehand.  At first glance this may seem impossible because the calculation of diffs between two files normally requires local access to both files.
-
----
-
-This package now provides only `rsync`. The shims for `ssh` and `ssh-keygen` have been removed since these are included by default in the latest versions of Windows 10.
-    </description>
-    <projectUrl>https://www.itefix.net/content/cwrsync-free-edition</projectUrl>
-    <releaseNotes>https://www.itefix.net/content/cwrsync-rsync-312</releaseNotes>
-    <packageSourceUrl>https://github.com/AnthonyMastrean/chocolateypackages</packageSourceUrl>
-    <tags>rsync ssh ssh-keygen</tags>
-    <licenseUrl>https://www.itefix.net/content/cwrsync-licenseversion</licenseUrl>
+    <projectUrl>https://www.itefix.net/cwrsync</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@2b1c888fbc68d148d638cae0b6f0222b97f156db/icons/rsync.png</iconUrl>
+    <copyright>Copyright itefix.net</copyright>
+    <licenseUrl>https://www.itefix.net/cwrsync?qt-cwrsync=1&amp;qt-cwrsync_client=3#qt-cwrsync_client</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <mailingListUrl>https://www.itefix.net/forum</mailingListUrl>
-    <bugTrackerUrl>https://www.itefix.net/support</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/WayneD/rsync</projectSourceUrl>
     <docsUrl>https://www.itefix.net/cwrsync</docsUrl>
+    <mailingListUrl>https://rsync.samba.org/FAQ.html</mailingListUrl>
+    <bugTrackerUrl>https://github.com/WayneD/rsync/issues</bugTrackerUrl>
+    <tags>rsync tool file copy cygwin itefix</tags>
+    <summary>cwRsync is a minimal distribution of rsync packaged with Cygwin libraries</summary>
+    <description><![CDATA[
+
+Rsync is a fast and extraordinarily versatile file copying tool for both remote and local files.
+
+Rsync uses a delta-transfer algorithm which provides a very fast method for bringing remote files into sync. It does
+this by sending just the differences in the files across the link, without requiring that both sets of files are at one
+of the ends of the link beforehand. At first glance this may seem impossible because the calculation of diffs two files
+normally requires local access to both files.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@2b1c888fbc68d148d638cae0b6f0222b97f156db/automatic/rsync/screenshot.png)
+
+## Package Parameters
+
+* `/User` - override the default behavior and set the `CWRSYNC_HOME` environment variable for the current user only
+  e.g. `choco install -y rsync --package-parameters="/User"`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Notes
+
+* Current versions of rsync are only provided as a 64-bit version
+* If support for 32-bit Windows is required use the legacy version [rsync 5.5.0.20190204](https://chocolatey.org/packages/rsync/5.5.0.20190204).
+
+  ```powershell
+  choco install rsync --version 5.5.0.20190204
+  choco pin add -n=rsync --version 5.5.0.20190204
+  ```
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://www.itefix.net/cwrsync?qt-cwrsync=1&amp;qt-cwrsync_client=3#qt-cwrsync_client</releaseNotes>
   </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

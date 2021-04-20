@@ -1,23 +1,53 @@
-﻿$tools = Split-Path $MyInvocation.MyCommand.Definition
-$package = Split-Path $tools
-$content = Join-Path $package 'cwrsync_5.5.0_x86_free'
+﻿$ErrorActionPreference = 'Stop'
 
-Install-ChocolateyZipPackage `
-    -PackageName 'rsync' `
-    -Url 'https://web.archive.org/web/20160613105413/https://www.itefix.net/dl/cwRsync_5.5.0_x86_Free.zip' `
-    -Checksum '37E8EF21AC975D4EE86C9D3BE40C8935E8B9D0BA84E9302FC106B9452296CB85' `
-    -ChecksumType 'SHA256' `
-    -UnzipLocation $package
+if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
+  Write-Warning "Itefix no longer provide a 32-bit build of cwRsync"
+  Write-Warning "32 bit users should specify version 5.5.0.20190204"
+  Write-Error -Message "32-bit version of rsync not available" -Category ResourceUnavailable
+}
 
-Install-ChocolateyEnvironmentVariable `
-    -VariableName 'CWRSYNC_HOME' `
-    -VariableValue $content `
-    -VariableType 'Machine'
+$toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
+$archive  = Join-Path $toolsDir 'cwrsync_6.2.0_x64_free.zip'
 
-# This package requires the CWRSYNC_HOME directory on the PATH and a HOME
-# environment variable. This cannot be provided with Chocolatey's automatic
-# shimming. I have to shim custom batch files.
-Get-ChildItem $tools\*.bat | %{ Install-BinFile -Name $_.BaseName -Path $_ }
-Get-ChildItem $content\bin\*.exe | %{ New-Item -Type 'File' -Path "$_.ignore" -Force | Out-Null }
+$unzipArgs = @{
+  PackageName  = $env:ChocolateyPackageName
+  FileFullPath = $archive
+  Destination  = $toolsDir
+}
+
+Get-ChocolateyUnzip @unzipArgs
+
+$files = Get-ChildItem $toolsDir -include *.exe -recurse
+
+foreach ($file in $files) {
+  New-Item "$file.ignore" -type file -force | Out-Null
+}
+
+$pp = Get-PackageParameters
+
+if ($pp.User) {
+  $variableType = 'User'
+} else {
+  $variableType = 'Machine'
+}
+
+$cwrsync_home = $archive -split '.zip' | Select-Object -first 1
+$rsync_bat    = Join-Path $toolsDir 'rsync.bat'
+
+$environmentArgs = @{
+    VariableName  = 'CWRSYNC_HOME'
+    VariableValue = $cwrsync_home
+    VariableType  = $variableType
+}
+
+Install-ChocolateyEnvironmentVariable @environmentArgs
+
+Install-BinFile -Name 'rsync' -Path $rsync_bat
+
+$files = Get-ChildItem $toolsDir -include *.exe -recurse
+
+foreach ($file in $files) {
+  New-Item "$file.ignore" -type file -force | Out-Null
+}
 
 Update-SessionEnvironment
