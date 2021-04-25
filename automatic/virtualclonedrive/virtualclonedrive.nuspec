@@ -6,7 +6,7 @@
     <version>5.5.2.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/virtualclonedrive</packageSourceUrl>
     <owners>dgalbraith</owners>
-    <title>Virtual CLoneDrive</title>
+    <title>Virtual CloneDrive</title>
     <authors>Elaborate Bytes</authors>
     <projectUrl>https://www.elby.ch/en/products/vcd.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@035d53ae4064356b41c51a5397ff1cba8a9c409f/icons/virtualclonedrive.png</iconUrl>
