@@ -1,24 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>virtualclonedrive</id>
-    <version>5.5.1.0</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/virtualclonedrive</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>Virtual CLoneDrive</title>
-    <authors>Elaborate Bytes</authors>
-    <projectUrl>https://www.elby.ch/en/products/vcd.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@035d53ae4064356b41c51a5397ff1cba8a9c409f/icons/virtualclonedrive.png</iconUrl>
-    <copyright>Copyright Elaborate Bytes AG Huenenberg, Switzerland</copyright>
-    <licenseUrl>http://www.elby.ch/download/SetupVirtualCloneDrive5.xml</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <docsUrl>https://www.elby.ch/en/products/vcd.html</docsUrl>
-    <mailingListUrl>https://forum.redfox.bz/forums/virtual-clonedrive.21</mailingListUrl>
-    <bugTrackerUrl>https://www.elby.ch/en/contact.html</bugTrackerUrl>
-    <tags>iso bin img udf ccd cd dvd blueray freeware elaborate-bytes elby</tags>
-    <summary>Mount ISO files and use them like a physical drive</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@035d53ae4064356b41c51a5397ff1cba8a9c409f/icons/virtualclonedrive.png" width="48" height="48"/>Virtual CloneDrive](https://chocolatey.org/packages/virtualclonedrive)
+
+[![GitHub license](https://img.shields.io/badge/license-Proprietary-grey)](http://www.elby.ch/download/SetupVirtualCloneDrive5.xml)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/Source-v5.5.1.0-blue)](https://www.elby.ch/en/products/vcd.html)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/virtualclonedrive?label=Chocolatey)](https://chocolatey.org/packages/virtualclonedrive)
 
 Virtual CloneDrive works and behaves just like a physical CD, DVD, or Blu-ray drive, although it only exists virtually.
 Image files can be "inserted" into the virtual drive from your harddisk or from a network drive by just a double-click,
@@ -57,14 +43,3 @@ To have Chocolatey remember parameters on upgrade, be sure to set `choco feature
 * For versions of Windows prior to Windows 10 a reboot is required before the software can be used
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]></description>
-    <releaseNotes>https://www.redfox.bz/download/changes_vcd.txt</releaseNotes>
-    <dependencies>
-      <dependency id="autohotkey.portable" />
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
