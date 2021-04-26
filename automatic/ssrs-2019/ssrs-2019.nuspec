@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ssrs-2019</id>
-    <version>15.0.7545.20210404</version>
+    <version>15.0.7765.17516</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/ssrs-2019</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Microsoft SQL Server 2019 Reporting Services</title>
