@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bluej</id>
-    <version>5.0.0</version>
+    <version>5.0.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/bluej</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>BlueJ - Beginners Java Development Environment</title>
@@ -13,7 +13,7 @@
     <copyright>M. Kölling and J. Rosenberg</copyright>
     <licenseUrl>https://www.bluej.org/about/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://www.bluej.org/download/files/source/BlueJ-source-500.zip</projectSourceUrl>
+    <projectSourceUrl>https://www.bluej.org/download/files/source/BlueJ-source-501.zip</projectSourceUrl>
     <docsUrl>https://www.bluej.org/doc/documentation.html</docsUrl>
     <mailingListUrl>http://blueroom.bluej.org/</mailingListUrl>
     <bugTrackerUrl>http://bugs.bluej.org/projects/BLUEJ/issues</bugTrackerUrl>
