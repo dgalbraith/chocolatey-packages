@@ -6,7 +6,7 @@ $domain   = 'https://github.com'
 $releases = "${domain}/AlDanial/cloc/releases/latest"
 
 $refile    = '(cloc-\d.+\d+\.exe)'
-$reversion = '(-v|g\/|d\/|s-)(?<Version>([\d]+\.[\d]+))'
+$reversion = '([-\/dgs][v\/-])(?<Version>([\d]+\.[\d]+))'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
