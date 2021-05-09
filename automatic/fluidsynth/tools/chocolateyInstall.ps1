@@ -3,10 +3,10 @@
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 if ((Get-ProcessorBits 32) -eq 'true' -or $env:ChocolateyForceX86 -eq 'true') {
-  $archive = Join-Path $toolsDir 'fluidsynth-2.2.0-winXP-x86.zip'
+  $archive = Join-Path $toolsDir 'fluidsynth-2.2.1-winXP-x86.zip'
 }
 else {
-  $archive = Join-Path $toolsDir 'fluidsynth-2.2.0-win10-x64.zip'
+  $archive = Join-Path $toolsDir 'fluidsynth-2.2.1-win10-x64.zip'
 }
 
 $unzipArgs = @{
