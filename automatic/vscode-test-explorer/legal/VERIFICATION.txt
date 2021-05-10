@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer
 
-and download the extension hbenl.vscode-test-explorer-2.19.6.vsix using the Download Extension link
+and download the extension hbenl.vscode-test-explorer-2.20.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/hbenl/vsextensions/vscode-test-explorer/2.19.6/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/hbenl/vsextensions/vscode-test-explorer/2.20.0/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash hbenl.vscode-test-explorer-2.19.6.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hbenl.vscode-test-explorer-2.19.6.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash hbenl.vscode-test-explorer-2.20.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hbenl.vscode-test-explorer-2.20.0.vsix
 
   Type:     sha256
-  Checksum: FC34C09437134BFCF2887FA0B044666D3FF32365EF25C8B898E1255566DAA96D
+  Checksum: F3AB0B76A321D0DF20E38D3D707ED8B454F914F705107F28383CFC145EDB6C56
 
   Contents of the file LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/hbenl.vscode-test-explorer/license
