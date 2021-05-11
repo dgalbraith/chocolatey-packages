@@ -13,8 +13,8 @@ if ($pp.InstallDir) {
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  File           = Join-Path $toolsDir 'Slik-Subversion-1.11.1-win32.msi'
-  File64         = Join-Path $toolsDir 'Slik-Subversion-1.11.1-x64.msi'
+  File           = Join-Path $toolsDir 'Slik-Subversion-1.12.0-win32.msi'
+  File64         = Join-Path $toolsDir 'Slik-Subversion-1.12.0-x64.msi'
   FileType       = 'msi'
   SilentArgs     = $silentArgs
   ValidExitCodes = @(0, 3010, 1641)
