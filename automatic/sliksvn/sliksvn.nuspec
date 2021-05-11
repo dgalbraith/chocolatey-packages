@@ -1,21 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <version>{{PackageVersion}}</version>
-    <title>Slik SVN</title>
-    <authors>Slik Company</authors>
-    <projectUrl>http://www.sliksvn.com/</projectUrl>
-    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/sliksvn.png</iconUrl>
+    <id>sliksvn</id>
+    <version>1.11.1</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sliksvn</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Slik SVN - Command Line Subersion Client</title>
+    <authors>Apache Software Foundation</authors>
+    <projectUrl>https://sliksvn.com/download/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ca5faf67d35c123083f63c7517c1a7b01ad28728/icons/sliksvn.png</iconUrl>
+    <copyright>Apache Software Foundation</copyright>
+    <licenseUrl>https://svn.apache.org/repos/asf/subversion/trunk/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>We provide a standalone command line Subversion package for Windows. The installer contains all command line tools (svn, svnadmin, svnsync, svnserve, svnmucc, etc.) but no application bindings nor Apache modules. The tools are fully side-by-side compatible with other packages. Ideal for automated build and deploy scripts</description>
-    <summary>Slik subversion reliable version control starts here</summary>
-    <copyright>Slik Company</copyright>
-    <tags>sliksvn svn subversion version control admin</tags>
+    <projectSourceUrl>https://svn.apache.org/repos/asf/subversion</projectSourceUrl>
+    <docsUrl>https://subversion.apache.org/docs</docsUrl>
+    <mailingListUrl>https://subversion.apache.org/mailing-lists.html</mailingListUrl>
+    <bugTrackerUrl>https://issues.apache.org/jira/projects/SVN/issues</bugTrackerUrl>
+    <tags>svn subversion vcs sliksvn</tags>
+    <summary>Standalone command-line Subversion client for Windows</summary>
+    <description><![CDATA[
+
+A standalone command-line Subversion client for Windows. The installer contains all command line tools (svn, svnadmin,
+svnsync, svnserve, svnmucc) but no application bindings nor Apache modules. The tools are fully side-by-side
+compatible with other packages. Ideal for build systems, deploy scripts, et cetera.
+
+The software contained in the Slik Subversion package is “Apache Subversion”. Slik Subversion simply packages the
+Apache free software for easier installation.
+
+## Features
+
+* The command line client works the same on each platform. You can use the same knowledge if you need to work on a
+remote system, for instance a unix system with only shell access
+* Very fast and has a small memory footprint
+* Often does not require modifications to the system, installation of shell hooks, et cetera
+* Very simple to integrate in batch scripts, build/continuous integration systems, or other automated applications
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ca5faf67d35c123083f63c7517c1a7b01ad28728/automatic/sliksvn/screenshot.png))
+
+## Package Parameters
+
+* `/AddToStartMenu` - add a Subversion documentation folder to the start menu
+  e.g. `choco install -y sliksvn --package-parameters="AddToStartMenu"`
+* `/InstallDir=[directory]` - set the installation directory to `[directory]`
+  e.g. `choco install -y sliksvn --package-parameters="InstallDir=C:\Tools"`
+* `/NoPath` - override the default behaviour and do not add the package `bin` folder to the system `PATH`
+  e.g. `choco install -y sliksvn --package-parameters="NoPath"`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://subversion.apache.org/docs/release-notes</releaseNotes>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- character encoding: “UTF-8” -->
