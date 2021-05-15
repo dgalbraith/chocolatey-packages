@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'angband-win-4.2.1.zip'
+$archive  = Join-Path $toolsDir 'Angband-4.2.2-win.zip'
 
 $installDir = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
 

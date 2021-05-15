@@ -8,22 +8,22 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/angband/angband/releases/tag/4.2.1
+  https://github.com/angband/angband/releases/tag/4.2.2
 
-and download the archive angband-win-4.2.1.zip using the relevant link in the
+and download the archive Angband-4.2.2-win.zip using the relevant link in the
 assets section on the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://github.com/angband/angband/releases/download/4.2.1/angband-win-4.2.1.zip
+  https://github.com/angband/angband/releases/download/4.2.2/Angband-4.2.2-win.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 angband-win-4.2.1.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f angband-win-4.2.1.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 Angband-4.2.2-win.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Angband-4.2.2-win.zip
 
-  File:     angband-win-4.2.1.zip
+  File:     Angband-4.2.2-win.zip
   Type:     sha256
-  Checksum: AD5D06B1D5FBC90A39198CE1F76FE76A02AE28E097E8C0AF6A35D1B982252301
+  Checksum: A5C1BC5F7B10FFB96ECA526873E65DBA8618A5D2A5227F3773C8CE6D19AE486F
 
 Contents of file LICENSE.txt is obtained from https://github.com/angband/angband/blob/master/src/angband.h and
 https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt - the Angband license is contained in the source code

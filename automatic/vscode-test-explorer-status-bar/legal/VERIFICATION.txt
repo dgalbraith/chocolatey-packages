@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=connorshea.vscode-test-explorer-status-bar
 
-and download the extension connorshea.vscode-test-explorer-status-bar-1.1.2.vsix using the Download Extension link
+and download the extension connorshea.vscode-test-explorer-status-bar-1.2.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/connorshea/vsextensions/vscode-test-explorer-status-bar/1.1.2/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/connorshea/vsextensions/vscode-test-explorer-status-bar/1.2.0/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash connorshea.vscode-test-explorer-status-bar-1.1.2.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f connorshea.vscode-test-explorer-status-bar-1.1.2.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash connorshea.vscode-test-explorer-status-bar-1.2.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f connorshea.vscode-test-explorer-status-bar-1.2.0.vsix
 
   Type:     sha256
-  Checksum: D5BA18C1261BE3B5EE4F7012EE1E6F60DEE03DC639EFD52F517FF6E6C0AEE6CD
+  Checksum: DC08D580413BB94CE1104EC5649D5244C17051A31139AE87BE3E0B1D6AF94FD0
 
   Contents of the file LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/connorshea.vscode-test-explorer-status-bar/license
