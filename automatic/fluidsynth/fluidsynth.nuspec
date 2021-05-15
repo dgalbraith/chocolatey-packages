@@ -6,7 +6,7 @@
     <version>2.2.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/fluidsynth</packageSourceUrl>
     <owners>dgalbraith</owners>
-    <title>FluidSynth SoundFront Synthesizer</title>
+    <title>FluidSynth SoundFont Synthesizer</title>
     <authors>FluidSynth Contributors</authors>
     <projectUrl>https://www.fluidsynth.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@b88007b58b05fbad5dfa762525117160741cd06a/icons/fluidsynth.png</iconUrl>
