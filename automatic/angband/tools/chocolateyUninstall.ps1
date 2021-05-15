@@ -1,4 +1,5 @@
-﻿$shortcutdir = @{$true='CommonPrograms';$false='Programs'}[($PSVersionTable.PSVersion -gt '2.0.0.0')]
-$shortcut = Join-Path ([System.Environment]::GetFolderPath($shortcutdir)) 'Angband.lnk'
+﻿$ErrorActionPreference = 'Stop'
 
-Remove-Item -Path $shortcut -Force | Out-Null
+Uninstall-BinFile -Name 'Angband' -Path 'Angband.exe'
+
+Uninstall-ChocolateyZipPackage 'Angband' 'angband-win-4.2.1.zip'
