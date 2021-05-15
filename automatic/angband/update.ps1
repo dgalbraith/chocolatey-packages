@@ -27,6 +27,10 @@ function global:au_SearchReplace {
       "$($reFileName)" = "$($Latest.Filename32)"
     }
 
+    ".\tools\chocolateyUninstall.ps1" = @{
+      "$($reFileName)" = "$($Latest.Filename32)"
+    }
+
     ".\legal\VERIFICATION.txt" = @{
       "$($reFileName)" = "$($Latest.Filename32)"
       "$($reChecksum)" = "`${1}$($Latest.Checksum32)"
