@@ -10,27 +10,27 @@ be verified by:
 
   https://sliksvn.com/pub/
   
-and download the installers Slik-Subversion-1.12.0-win32.msi or Slik-Subversion-1.12.0-x64.msi
+and download the installers Slik-Subversion-1.14.1-win32.msi or Slik-Subversion-1.14.1-x64.msi
 using the relevant links.
 
 Alternatively the installers can be downloaded directly from
 
-  https://sliksvn.com/pub/Slik-Subversion-1.12.0-win32.msi or
-  https://sliksvn.com/pub/Slik-Subversion-1.12.0-x64.msi
+  https://sliksvn.com/pub/Slik-Subversion-1.14.1-win32.msi or
+  https://sliksvn.com/pub/Slik-Subversion-1.14.1-x64.msi
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.12.0-win32.msi
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.12.0-win32.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.14.1-win32.msi
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.14.1-win32.msi
 
-  File32:         Slik-Subversion-1.12.0-win32.msi
+  File32:         Slik-Subversion-1.14.1-win32.msi
   ChecksumType32: sha256
-  Checksum32:     39889D54356556CAF0CCE01F20A9B9678024BB10A7A0CDC60CFE277CA415A06F
+  Checksum32:     9BE8737D1357415ED286A1E68205F7CA932B6EE146DCFF97DB2EEFE86AD90B1D
  
-  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.12.0-x64.msi
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.12.0-x64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.14.1-x64.msi
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.14.1-x64.msi
 
-  File64:         Slik-Subversion-1.12.0-x64.msi
+  File64:         Slik-Subversion-1.14.1-x64.msi
   ChecksumType64: sha256
-  Checksum64:     66C432172FDD490EF8B5ADADB95D37C06ECAFC68AA93B2CECFA763EAF63126F1
+  Checksum64:     DB82F788DDA35B5374B7383722935067AF56F7B4420956EE9A2ECE526BCA5D3D
 
 Contents of the file LICENSE.txt is obtained from https://svn.apache.org/repos/asf/subversion/trunk/LICENSE
