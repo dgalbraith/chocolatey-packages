@@ -5,7 +5,7 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/mongodb-js/mongosh/releases/latest"
 
-$re64      = '(mongosh-.+win32\.zip)' # despite the filename the archive contains a 64-bit executable
+$re64      = '(mongosh-.+win32-x64\.zip)' # despite the filename the archive contains a 64-bit executable
 $reVersion = '(v)(?<Version>([\d]+\.[\d]+\.[\d]+))'
 
 function global:au_BeforeUpdate {
@@ -36,7 +36,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
-  
+
   $url64      = $download_page.links | where-object href -match $re64 | select-object -expand href | foreach-object { $domain + $_ }
   $filename64 = $url64 -split '/' | select-object -last 1
 
