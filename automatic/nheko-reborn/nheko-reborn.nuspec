@@ -2,14 +2,14 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>nheko</id>
+    <id>nheko-reborn</id>
     <version>0.8.1</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/nheko</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/nheko-reborn</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Nheko - Native Desktop Matrix Client</title>
     <authors>Nheko Contributors</authors>
     <projectUrl>https://nheko-reborn.github.io/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d4d6d4432c6248668a32dab64b172d06b352b2ae/icons/nheko.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f5d3fa14c22b9e41d51db5a9a5532e7cd94832a2/icons/nheko-reborn.png</iconUrl>
     <copyright>Copyright Nheko Contributors</copyright>
     <licenseUrl>https://github.com/Nheko-Reborn/nheko/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -42,7 +42,7 @@ like a mainstream chat app ([Element](https://element.io/), Telegram etc) and le
 * Light, Dark & System themes
 * Creating separate profiles (command line only, use `-p name`)
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d4d6d4432c6248668a32dab64b172d06b352b2ae/automatic/nheko/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f5d3fa14c22b9e41d51db5a9a5532e7cd94832a2/automatic/nheko-reborn/screenshot.png)
 
 ## Notes
 
