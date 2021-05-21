@@ -1,0 +1,37 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installers has been downloaded from the official distribution page and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.torifier.com/download.html
+
+and download the installers trfy104_x86.msi and trfy104_x64.msi using the links
+on the page.  Note that the links will redirect to the cnet website for the
+downloads.
+
+Alternatively the installer can be downloaded directly from
+
+  https://download.cnet.com/Torifier-32-bit/3000-2144_4-76456037.html
+  https://download.cnet.com/Torifier-64-bit/3000-2144_4-76456038.html
+
+2. The installers can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 trfy104_x86.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f trfy104_x86.msi
+
+  File32:     trfy104_x86.msi
+  Type32:     sha256
+  Checksum32: BCD9C11B4BFFF5742FC21F548BCD614D5BB5412991E962DC23AA373E63BC1238
+
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 trfy104_x64.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f trfy104_x64.msi
+
+  File64:     trfy104_x64.msi
+  Type64:     sha256
+  Checksum64: 20AA01E54A155B0CCE8AA5FA5C066F50B8F1411E0031E4BB007E0BDD512DEFA1
+
+Contents of file LICENSE.txt is obtained from the EULA PDF from https://www.torifier.com/eula.pdf

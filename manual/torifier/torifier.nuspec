@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>torifier</id>
+    <version>1.04</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/torifier</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Torifier - Tunnel Applications Through the TOR Network</title>
+    <authors>Serguei Birj</authors>
+    <projectUrl>https://www.torifier.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@a19cfe52bc7daab271473b3932f67c9e8bad55da/icons/torifier.png</iconUrl>
+    <copyright>Copyright Serguei Birj, all rights reserved</copyright>
+    <licenseUrl>https://www.torifier.com/eula.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.torifier.com/faq.html</docsUrl>
+    <tags>tor torify proxy transparent-proxy tunnel</tags>
+    <summary>Tor bundle and torification tool that lets you tunnel network applications through the Tor network without the need to reconfigure them</summary>
+    <description><![CDATA[
+
+Torifier lets you tunnel software applications through Tor without the need to reconfigure them. An application is not
+required to have native proxy support in order to work with Torifier. Torifier is a Tor bundle, meaning the program
+will install the Tor software and will manage it for you.
+
+## Features
+
+* Torify any application
+* Intuitive graphical user interface
+* Flexible firewall-bypass options
+* Change your visible IP address with a single click
+* Route DNS requests through Tor
+* Automatically block UDP requests
+* Optionally, torify all programs
+* Emulate system-wide support for .onion names
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@a19cfe52bc7daab271473b3932f67c9e8bad55da/manual/torifier/screenshot.png)
+
+## Notes
+
+* Runs Tor version 0.2.7.6 (git-7a489a6389110120)
+* The 32-bit version can only be installed on a 32-bit os.
+* The application may indicate that the trial period has expired if it is run in a different acount to that in which it
+was installed.  If this occurs (refer to the [FAQ](https://www.torifier.com/faq.html) Torifier may be activated using
+the product key `7TMU-QVWK-RMPU-YAIA`.
+* This package is  manually updated.
+* If the package does not represent the latest version please contact the maintainer(s) and let them know the package requires updating.
+
+]]></description>
+    <releaseNotes>https://github.com/angband/angband/releases/tag/4.2.2</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
