@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nheko-reborn</id>
-    <version>0.8.1</version>
+    <version>0.8.2</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/nheko-reborn</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Nheko - Native Desktop Matrix Client</title>
@@ -50,7 +50,7 @@ like a mainstream chat app ([Element](https://element.io/), Telegram etc) and le
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/Nheko-Reborn/nheko/releases/tag/v0.8.1</releaseNotes>
+    <releaseNotes>https://github.com/Nheko-Reborn/nheko/releases/tag/v0.8.2</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />

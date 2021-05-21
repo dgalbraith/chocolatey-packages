@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/Nheko-Reborn/nheko/blob/master/COPYING)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v0.8.1-blue.svg)](https://github.com/Nheko-Reborn/nheko/releases/tag/v0.8.1)
+[![Software version](https://img.shields.io/badge/Source-v0.8.2-blue.svg)](https://github.com/Nheko-Reborn/nheko/releases/tag/v0.8.2)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/nheko-reborn?label=Chocolatey)](https://chocolatey.org/packages/nheko-reborn)
 
 The motivation behind the project is to provide a native desktop app for [Matrix](https://matrix.org/) that feels more
