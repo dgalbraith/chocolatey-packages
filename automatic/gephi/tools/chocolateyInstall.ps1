@@ -21,7 +21,7 @@ if (-Not ($pp.count = 0)) {
         Write-Verbose("A desktop shortcut will be created for $env:ChocolateyPackageName")
         $tasks += 'desktopicon'
       }
-      'AddToQuickLauncch' {
+      'AddToQuickLaunch' {
         Write-Verbose("A shortcut on the quick launch menu will be created for $env:ChocolateyPackageName")
         $tasks += 'quicklaunchicon'
       }
