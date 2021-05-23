@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://nethack.org/v362/ports/download-win.html
+  https://nethack.org/v366/ports/download-win.html
 
-and download the archive NetHack-362-win-x86.zip using the 'Download this file' link
+and download the archive nethack-366-win-x86-1_25_2021.zip using the 'Download this file' link
 on the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://nethack.org/download/3.6.2/NetHack-362-win-x86.zip
+  https://nethack.org/download/3.6.6.2021125/nethack-366-win-x86-1_25_2021.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 NetHack-362-win-x86.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f NetHack-362-win-x86.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 nethack-366-win-x86-1_25_2021.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f nethack-366-win-x86-1_25_2021.zip
 
-  File:     NetHack-362-win-x86.zip
+  File:     nethack-366-win-x86-1_25_2021.zip
   Type:     sha256
-  Checksum: 244FFD07C59740FC076F1A86034256ECB95ED2E6076AE8099D9DF8929FD89140
+  Checksum: C0B18D87495DEA71E1302DFB00B319B7025FA4935CA6B78089C69CE1A2F358E3
 
 Contents of file LICENSE.txt is obtained from https://nethack.org/common/license.html
