@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nethack</id>
+    <version>3.6.2</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/nethack</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Nethack - Single Player Dungeon Exploration</title>
+    <authors>Nethack Developers</authors>
+    <projectUrl>https://nethack.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@fe013b8fec16af504e14dc2217b085507a4ea791/icons/nethack.png</iconUrl>
+    <copyright>Copyright Stichting Mathematisch Centrum and M. Stephenson</copyright>
+    <licenseUrl>https://www.nethack.org/common/license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/NetHack/NetHack</projectSourceUrl>
+    <docsUrl>https://nethack.org/v362/Guidebook.html</docsUrl>
+    <mailingListUrl>https://www.nethack.org/common/usenet.html</mailingListUrl>
+    <bugTrackerUrl>https://github.com/NetHack/NetHack/issues</bugTrackerUrl>
+    <tags>nethack game rogue roguelike rogue-like</tags>
+    <summary>Nethack is a free, single-player dungeon exploration game</summary>
+    <description><![CDATA[
+
+NetHack is a single player dungeon exploration game that runs on a wide variety of computer systems, with a variety of
+graphical and text interfaces all using the same game engine. Unlike many other Dungeons &amp; Dragons-inspired games,
+the emphasis in NetHack is on discovering the detail of the dungeon and not simply killing everything in sight - in
+fact, killing everything in sight is a good way to die quickly. Each game presents a different landscape - the random
+number generator provides an essentially unlimited number of variations of the dungeon and its denizens to be
+discovered by the player in one of a number of characters: you can pick your race, your role, and your gender.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0bf5df88f64a0574fba394651f89a836283b651f/automatic/nethack/screenshot.png)
+
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/AddToDesktop` - add desktop shortcuts for Nethack.  By default the shortcuts will be added for all users
+e.g. `choco install nethack --package-parameters="/AddToDesktop"`
+* `/AddToStartMenu` - add entries to the Start Menu for Nethack.  By default the shortcut will be added for
+all users e.g. `choco install nethack --package-parameters="/AddToStartMenu"`
+* `/User` - where the user parameter is specified any shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`)
+will only be added for the current user
+e.g. `choco install nethack --package-parameters="/AddToDesktop /User"`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Notes
+
+* Two versions of Nethack will be installed by the package - Nethack and Nethack Classic.  The underlying game engine
+is the same but Nethack presents a Windows interface with graphical tiles while Nethack Classic provides the traditional
+console experience 
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://nethack.org/v362/release.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
