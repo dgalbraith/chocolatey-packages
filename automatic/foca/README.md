@@ -1,24 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>foca</id>
-    <version>3.4.6.2</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/foca</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>FOCA - Fingerprinting Organizations with Collected Archives</title>
-    <authors>Eleven Paths</authors>
-    <projectUrl>https://www.elevenpaths.com/innovation-labs/technologies/foca</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@a5529e7b188f10bb91d6dafe44560118ade9030a/icons/foca.png</iconUrl>
-    <copyright>Copyright Telefónica Cybersecurity &amp; Cloud Tech, S.L.U.</copyright>
-    <licenseUrl>https://github.com/ElevenPaths/FOCA/blob/master/LICENSE.txt</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/ElevenPaths/FOCA</projectSourceUrl>
-    <docsUrl>https://github.com/ElevenPaths/FOCA/wiki</docsUrl>
-    <bugTrackerUrl>https://github.com/ElevenPaths/FOCA/issues</bugTrackerUrl>
-    <tags>metadata documents information security infosec forensics</tags>
-    <summary>Tool to find metadata and hidden information in documents</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@a5529e7b188f10bb91d6dafe44560118ade9030a/icons/foca.png" width="48" height="48" />FOCA - Fingerprinting Organizations with Collected Archives](https://chocolatey.org/packages/foca)
+
+[![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/ElevenPaths/FOCA/blob/master/LICENSE.txt)
+[![Maintenance status](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/Source-v3.4.6.2-blue.svg)](https://github.com/ElevenPaths/FOCA/releases/tag/v3.4.6.2)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/foca?label=Chocolatey)](https://chocolatey.org/packages/foca)
 
 FOCA is a tool used mainly to find metadata and hidden information in the documents it scans. These documents may be on
 web pages, and can be downloaded and analysed with FOCA.
@@ -77,15 +63,3 @@ To have Chocolatey remember parameters on upgrade, be sure to set `choco feature
 window for introducing a connection string.
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]></description>
-    <releaseNotes>https://github.com/ElevenPaths/FOCA/releases/tag/v3.4.6.2</releaseNotes>
-    <dependencies>
-        <dependency id="dotnetfx" version="4.7.1.0"/>
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="legal\**" target="legal" />
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
