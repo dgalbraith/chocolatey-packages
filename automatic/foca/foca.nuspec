@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>foca</id>
-    <version>3.4.6.2</version>
+    <version>3.4.7.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/foca</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>FOCA - Fingerprinting Organizations with Collected Archives</title>
@@ -79,9 +79,9 @@ window for introducing a connection string.
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/ElevenPaths/FOCA/releases/tag/v3.4.6.2</releaseNotes>
+    <releaseNotes>https://github.com/ElevenPaths/FOCA/releases/tag/v3.4.7.0</releaseNotes>
     <dependencies>
-        <dependency id="dotnetfx" version="4.7.1.0"/>
+        <dependency id="dotnetfx" version="4.7.1.0" />
     </dependencies>
   </metadata>
   <files>

@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'FOCA-v3.4.6.2.zip'
+$archive  = Join-Path $toolsDir 'FOCA-v3.4.7.0.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
