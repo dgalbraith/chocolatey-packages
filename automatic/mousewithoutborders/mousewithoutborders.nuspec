@@ -1,24 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mousewithoutborders</id>
     <version>2.1.8.105</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mousewithoutborders</packageSourceUrl>
+    <owners>dgalbraith</owners>
     <title>Mouse Without Borders</title>
-    <authors>Microsoft Garage,Truong Do</authors>
-    <owners>Anthony Mastrean</owners>
-    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=35460</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/AnthonyMastrean/chocolateypackages/98c0ba0689a3cdbfff5cf4298d9ef995018af522/public/icons/mousewithoutborders.png</iconUrl>
+    <authors>Truong Do, Mouse Without Borders Contributors, Microsoft Garage, </authors>
+    <projectUrl>https://www.microsoft.com/en-us/garage/profiles/mouse-without-borders</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@172818799a8c19127ae166c7b6168b0f57d256df/icons/mousewithoutborders.png</iconUrl>
+    <copyright>Copyright Microsoft Corporation</copyright>
+    <licenseUrl>https://github.com/dgalbraith/chocolatey-packages/blob/master/automatic/mousewithoutborders/legal/LICENSE.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://aka.ms/mm</docsUrl>
     <mailingListUrl>http://aka.ms/mm</mailingListUrl>
     <bugTrackerUrl>http://aka.ms/mm</bugTrackerUrl>
-    <packageSourceUrl>https://github.com/AnthonyMastrean/chocolateypackages/</packageSourceUrl>
-    <releaseNotes>
-New in this release: Bug fixes and improvements.
-    </releaseNotes>
-    <summary>Mouse without Borders is a project that allows you to reach across your PCs as if they were part of one single desktop.</summary>
-    <description>
-Mouse without Borders is a product that makes you the captain of your computer fleet by allowing you to control up to four computers from a single mouse and keyboard. This means that with Mouse without Borders you can copy text or drag and drop files across computers.
-    </description>
-    <tags>microsoft garage mouse monitor</tags>
+    <tags>mouse keyboard microsoft-garage mouse-without-borders microsoft</tags>
+    <summary>Control up to 4 computers using a single mouse and keyboard</summary>
+    <description><![CDATA[
+
+[Mouse Without Borders](http://aka.ms/mm) is a product that makes you the captain of your computer fleet by allowing
+you to control up to four computers from a single mouse and keyboard. This means that with Mouse without Borders you
+can copy text or drag and drop files across computers.
+
+## Features
+
+* Control multiple computers seamlessly using a single mouse and keyboard
+* Peer-to-peer system: Any machine can be a master machine
+* Multiple mode: Keyboard/mouse repeat in all machines
+* Shared clipboard: copy text/image/screenshot from one machine and paste to other machines
+* Drag/drop file across machines
+* Selective screen capture (**Ctrl+Shift+S**)
+* Support on logon/UAC desktop
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@172818799a8c19127ae166c7b6168b0f57d256df/automatic/mousewithoutborders/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://www.microsoft.com/download/details.aspx?id=35460</releaseNotes>
+    <dependencies />
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
