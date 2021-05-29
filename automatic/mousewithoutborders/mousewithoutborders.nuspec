@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mousewithoutborders</id>
-    <version>2.1.8.105</version>
+    <version>2.2.1.327</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mousewithoutborders</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Mouse Without Borders</title>

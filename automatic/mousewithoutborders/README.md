@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-proprietary-lightgrey)](https://github.com/dgalbraith/chocolatey-packages/blob/master/automatic/mousewithoutborders/legal/LICENSE.pdf)
 [![Maintenance status](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/version-2.1.8.105-blue)](https://www.microsoft.com/download/details.aspx?id=35460)
+[![Software version](https://img.shields.io/badge/version-2.2.1.327-blue)](https://www.microsoft.com/download/details.aspx?id=35460)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/mousewithoutborders?label=Chocolatey)](https://chocolatey.org/packages/mousewithoutborders)
 
 [Mouse Without Borders](http://aka.ms/mm) is a product that makes you the captain of your computer fleet by allowing
