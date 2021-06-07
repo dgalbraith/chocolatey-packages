@@ -1,7 +1,6 @@
 
 Import-Module au
 
-Import-Module .\tools\chocolateyInstall.ps1
 Import-Module ..\..\scripts\chocolatey-helpers\Chocolatey-Helpers.psd1
 
 $ErrorActionPreference = 'STOP'
