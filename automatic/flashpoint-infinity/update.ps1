@@ -4,8 +4,9 @@ $ErrorActionPreference = 'STOP'
 
 $releases = 'https://bluemaxima.org/flashpoint/downloads/'
 
+$reChecksum        = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
 $reInfinityUrl     = 'F.+Infinity\.exe$'
-$reInfinityVersion = '>F.+Infinity\s(?<Version>(\d+\.\d+))<'
+$reInfinityVersion = '(?<Version>([\d]+\.?[\d]*))(?=\sInfinity\.exe)'
 $reVersion         = '(?<Version>(\d+\.\d+))'
 
 function global:au_BeforeUpdate {
@@ -19,8 +20,8 @@ function global:au_SearchReplace {
     }
 
     ".\tools\chocolateyInstall.ps1" = @{
-      '(http.*\.exe)'           = "$($Latest.Url)"
-      "(Checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum)'"
+      '(http.*\.exe)' = "$($Latest.Url)"
+      "$reChecksum"   = "$($Latest.Checksum)"
     }
 
     ".\tools\chocolateyUninstall.ps1" = @{
@@ -33,8 +34,12 @@ function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
   $urlInfinity = $downloadPage.links | where-object href -match $reInfinityUrl | select-object -expand href | foreach-object { $releases + $_ }
-  $archive     = ($urlInfinity.split('/') | select-object -last 1) -replace '%20',' '
-  $version     = $downloadPage.Content -match $reInfinityVersion | foreach-object { $Matches.Version }
+  $archive = ($urlInfinity.split('/') | select-object -last 1) -replace '%20',' '
+  $version = $archive -match $reInfinityVersion | foreach-object { $Matches.Version }
+
+  if (-not ($version -match '\.')) {
+    $version = $version + '.0'
+  }
 
   return @{
     Archive = $archive

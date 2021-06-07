@@ -4,8 +4,9 @@ $ErrorActionPreference = 'STOP'
 
 $releases = 'https://bluemaxima.org/flashpoint/downloads/'
 
+$reChecksum    = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
 $reCoreUrl     = 'F.+Core.+\.7z$'
-$reCoreVersion = '>F.+Core\s(?<Version>(\d+\.\d+))<'
+$reCoreVersion = '(?<=Core\s)((?<Version>([\d]+\.*[\d]*))\.7z)'
 $reVersion     = '(?<Version>(\d+\.\d+))'
 
 function global:au_BeforeUpdate {
@@ -19,8 +20,8 @@ function global:au_SearchReplace {
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      '(http.*\.7z)'            = "$($Latest.Url)"
-      "(Checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum)'"
+      '(http.*\.7z)' = "$($Latest.Url)"
+      "$reChecksum"  = "$($Latest.Checksum)"
     }
 
     ".\tools\chocolateyUninstall.ps1" = @{
@@ -34,7 +35,11 @@ function global:au_GetLatest {
 
   $urlCore = $downloadPage.links | where-object href -match $reCoreUrl | select-object -expand href | foreach-object { $releases + $_ }
   $archive = ($urlCore.split('/') | select-object -last 1) -replace '%20',' '
-  $version = $downloadPage.Content -match $reCoreVersion | foreach-object { $Matches.Version }
+  $version = $archive -match $reCoreVersion | foreach-object { $Matches.Version }
+
+  if (-not ($version -match '\.')) {
+    $version = $version + '.0'
+  }
 
   return @{
     Archive = $archive
