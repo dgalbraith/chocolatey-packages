@@ -1,23 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sqljdbc</id>
-    <title>Microsoft JDBC Driver for SQL Server</title>
     <version>7.0.0.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sqljdbc</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Microsoft JDBC Driver for SQL Server</title>
     <authors>Microsoft</authors>
-    <owners>Anthony Mastrean</owners>
-    <summary>A Type 4 JDBC driver that provides database connectivity through the standard JDBC application program interfaces (APIs) available in Java Platform, Enterprise Editions.</summary>
-    <description>
-In our continued commitment to interoperability, Microsoft provides a Java Database Connectivity (JDBC) driver for use with SQL Server, and Azure SQL Database. The driver is available at no additional charge and provides Java database connectivity from any Java application, application server, or Java-enabled applet. This driver is a Type 4 JDBC driver that provides database connectivity through the standard JDBC application program interfaces (APIs).
-
-The Microsoft JDBC Driver for SQL Server has been tested against major application servers such as IBM WebSphere, and SAP NetWeaver.
-    </description>
-    <projectUrl>https://msdn.microsoft.com/library/mt484311.aspx</projectUrl>
-    <packageSourceUrl>https://github.com/AnthonyMastrean/chocolateypackages</packageSourceUrl>
-    <tags>sql server jdbc java admin not-silent</tags>
-    <licenseUrl>https://raw.githubusercontent.com/Microsoft/mssql-jdbc/dev/LICENSE</licenseUrl>
-    <releaseNotes>https://docs.microsoft.com/en-us/sql/connect/jdbc/release-notes-for-the-jdbc-driver?view=sql-server-2017</releaseNotes>
+    <projectUrl>https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@7b66886c48c75ece0a8c80b175ac993b7d30cff0/icons/sqljdbc.png</iconUrl>
+    <copyright>Copyright Microsoft Corporation</copyright>
+    <licenseUrl>https://github.com/microsoft/mssql-jdbc/blob/master/mssql-jdbc_auth_LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/AnthonyMastrean/chocolateypackages/973d6f98f4472b88b19989811d6fad890c0475c5/public/icons/microsoft.png</iconUrl>
+    <projectSourceUrl>https://github.com/Microsoft/mssql-jdbc</projectSourceUrl>
+    <docsUrl>https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server</docsUrl>
+    <mailingListUrl>https://answers.microsoft.com/en/search/search?SearchTerm=sql%20server%20jdbc%20driver</mailingListUrl>
+    <bugTrackerUrl>https://github.com/microsoft/mssql-jdbc/issues</bugTrackerUrl>
+    <tags>sql sql-server java jdbc microsoft</tags>
+    <summary>A type 4 Java Database Connectivity (JDBC) 4.2 compliant driver that provides robust data access to SQL Server and Azure SQL databases</summary>
+    <description><![CDATA[
+
+Java Database Connectivity (JDBC) driver for use with SQL Server, and Azure SQL Database. The driver is available at no
+extra charge and provides Java database connectivity from any Java application, application server, or Java-enabled
+applet. This driver is a Type 4 JDBC driver that provides database connectivity through the standard JDBC application
+program interfaces (APIs).
+
+The Microsoft JDBC Driver for SQL Server has been tested against major application servers such as IBM WebSphere, and
+SAP NetWeaver.
+
+## Package Parameters
+
+The `Languages` package parameter can be set to install the package with the specified language.  If no language is
+specified the install will default to English.
+
+Multiple languages can be installed by providing a comma-separated list of language codes.
+
+* `/Languages=[language-codes]` - installs the package using the specified languages.  The languages must be supplied
+as a comma-separated listSupported languages are:
+
+|Language              |Code   |Mapping |Parameters                    |
+|----------------------|:-----:|:------:|------------------------------|
+Brazilian (Portuguese) | br    | ptb    |`--params "/Languages=br"`
+German                 | de    | deu    |`--params "/Languages=de"`
+English                | en    | enu    |`--params "/Languages=en"`
+Spanish                | es    | esn    |`--params "/Languages=es"`
+French                 | fr    | fra    |`--params "/Languages=fr"`
+Italian                | it    | ita    |`--params "/Languages=it"`
+Japanese               | ja    | jpn    |`--params "/Languages=ja"`
+Korean                 | ko    | kor    |`--params "/Languages=ko"`
+Russian                | ru    | rus    |`--params "/Languages=ru"`
+Chinese (Simplified)   | zh    | chs    |`--params "/Languages=zh"`
+Chinese (Simplified)   | zh-CN | chs    |`--params "/Languages=zh-CN"`
+Chinese (Traditional)  | zh-TW | cht    |`--params "/Languages=zh-TW"`
+
+For example: `choco install sqljdbc --params "/Languages=en,fr"` to install the English and French versions of the driver
+
+* `/InstallDir` - sets the directory in which to install sqljdbc.  The installation defaults to the system
+directory `[Environment]::GetFolderPath('ProgramFiles')\Microsoft JDBC DRIVER for SQL Server`
+* `/User` - override the default installation directory and install the driver in the user directory
+`[Environment]::GetFolderPath('Programs')\Microsoft JDBC DRIVER for SQL Server`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Notes
+
+* The drivers will be installed under `[InstallDir]\sqljdbc_X.Y\[LanguageMaping]` where `X.Y` represents the
+`Major.Minor` versions of the package and `LanguageMapping` is the sub directory representing the mapping for
+the default (English - `enu`) or other specified languages
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://docs.microsoft.com/en-us/sql/connect/jdbc/release-notes-for-the-jdbc-driver</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
