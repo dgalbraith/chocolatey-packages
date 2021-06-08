@@ -6,8 +6,8 @@ $installDir = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
 $packageArgs = @{
   PackageName   = $env:ChocolateyPackageName
   UnzipLocation = $installDir
-  Url           = 'https://bluemaxima.org/flashpoint/downloads/../Flashpoint%20Core%209.7z'
-  Checksum      = 'ab929031af7d872e9bca0f9146bcc165a15b8a17a4e56786e53be061be3d7f16'
+  Url           = 'https://bluemaxima.org/flashpoint/downloads/../Flashpoint%20Core%2010.7z'
+  Checksum      = '32e078556b4d1f080b62f6a0bc313797b239ece88020c67db9b557431946787d'
   ChecksumType  = 'sha256'
 }
 

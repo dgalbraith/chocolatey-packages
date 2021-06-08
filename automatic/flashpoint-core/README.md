@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-Various-blue)](https://github.com/FlashpointProject)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v9.0-blue)](https://bluemaxima.org/flashpoint/downloads)
+[![Software version](https://img.shields.io/badge/Source-v10.0-blue)](https://bluemaxima.org/flashpoint/downloads)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/flashpoint-core?label=Chocolatey)](https://chocolatey.org/packages/flashpoint-core)
 
 BlueMaxima's Flashpoint is a webgame preservation project dedicated to preserving as many experiences from web
