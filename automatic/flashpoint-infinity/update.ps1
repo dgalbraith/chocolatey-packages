@@ -4,7 +4,7 @@ $ErrorActionPreference = 'STOP'
 
 $releases = 'https://bluemaxima.org/flashpoint/downloads/'
 
-$reChecksum        = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
+$reChecksum        = "(?<=Checksum\s*=\s*')(?<Checksum>([^']+))"
 $reInfinityUrl     = 'F.+Infinity\.exe$'
 $reInfinityVersion = '(?<Version>([\d]+\.?[\d]*))(?=\sInfinity\.exe)'
 $reVersion         = '(?<Version>(\d+\.\d+))'
