@@ -4,7 +4,7 @@ $ErrorActionPreference = 'STOP'
 
 $releases = 'https://bluemaxima.org/flashpoint/downloads/'
 
-$reChecksum    = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
+$reChecksum    = "(?<=Checksum\s*=\s*')(?<Checksum>([^']+))"
 $reCoreUrl     = 'F.+Core.+\.7z$'
 $reCoreVersion = '(?<=Core\s)((?<Version>([\d]+\.*[\d]*))\.7z)'
 $reVersion     = '(?<Version>(\d+\.\d+))'
