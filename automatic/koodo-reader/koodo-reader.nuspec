@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>koodo-reader</id>
+    <version>1.2.5</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/koodo-reader</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Koodo Reader - All-in-one eBook Reader</title>
+    <authors>Troye Guo</authors>
+    <projectUrl>https://koodo.960960.xyz</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d1474eaa642bfb53bc936d7c15ddfdff8b6e6ed2/icons/koodo-reader.png</iconUrl>
+    <copyright>Copyright Troye Guo</copyright>
+    <licenseUrl>https://github.com/troyeguo/koodo-reader/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/troyeguo/koodo-reader</projectSourceUrl>
+    <docsUrl>https://github.com/troyeguo/koodo-reader/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/troyeguo/koodo-reader/issues</bugTrackerUrl>
+    <tags>ebook book reader azw3 djvu epub markdown mobi pdf txt koodo koodo-reader</tags>
+    <summary>All-in-one eBook reader</summary>
+    <description><![CDATA[
+
+Koodo Reader is a full-featured ebook manager to help you better study and digest your books.
+
+## Features
+
+* Supports epub, pdf, mobi, azw3, txt, Markdown and djvu files
+* Runs on Windows, macOS, Linux and Web
+* Single-column, two-column, or continuous scrolling layouts
+* Text-to-speech, Translation
+* Bookmarks, Notes, Digests, Shelves and Tags
+* Adjust font, line-spacing, background color, text color and margins
+* Support for touch screens
+* Night mode and Color Themes
+* Text highlight, underline, Italic and shadow
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d1474eaa642bfb53bc936d7c15ddfdff8b6e6ed2/automatic/koodo/screenshot.png)
+
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/AddToDesktop` - add desktop shortcuts for Koodoo Reader.  By default the shortcuts will be added for all users  
+e.g. `choco install koodo-reader --package-parameters="/AddToDesktop"`
+* `/AddToStartMenu` - add entries to the Start Menu for Koodoo Reader.  By default the shortcut will be added for all
+users  
+e.g. `choco install koodo-reader --package-parameters="/AddToStartMenu"`
+* `/User` - where the user parameter is specified any shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`)
+will only be added for the current user  
+e.g. `choco install koodo-reader --package-parameters="/AddToDesktop /User"`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://koodo.960960.xyz/log</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

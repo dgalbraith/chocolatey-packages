@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/troyeguo/koodo-reader/releases/tag/v1.2.5
+
+and download the archive Koodo-Reader-1.2.5-Win.7z using the relevant link in the
+assets section on the page.
+
+Alternatively the archive can be downloaded directly from
+
+  https://github.com/troyeguo/koodo-reader/releases/download/v1.2.5/Koodo-Reader-1.2.5-Win.7z
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 Koodo-Reader-1.2.5-Win.7z
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Koodo-Reader-1.2.5-Win.7z
+
+  File:     Koodo-Reader-1.2.5-Win.7z
+  Type:     sha256
+  Checksum: 8BB0C94C3E9B4B0FBD05660A8021097E7E0DFE569B71CFCBA644652289133EF8
+
+Contents of file LICENSE.txt is obtained from https://github.com/troyeguo/koodo-reader/blob/master/LICENSE
