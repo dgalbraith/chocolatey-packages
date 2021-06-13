@@ -3,7 +3,7 @@
 $ErrorActionPreference = 'STOP'
 
 function global:au_BeforeUpdate {
-  $Lagest.FileName64 = "$($Latest.FileName64Install)"
+  $Latest.FileName64 = "$($Latest.FileName64Install)"
   $Latest.Url64      = "$($Latest.Url64Install)"
   
   Get-RemoteFiles -Purge -NoSuffix
