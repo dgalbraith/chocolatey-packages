@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mongodb-cli.install</id>
-    <version>1.15.0</version>
+    <version>1.16.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mongodb-cli.install</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>MongoDB Command Line Interface (Install)</title>
@@ -14,7 +14,7 @@
     <licenseUrl>https://github.com/mongodb/mongocli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/mongodb/mongocli</projectSourceUrl>
-    <docsUrl>https://docs.mongodb.com/mongocli/v1.15</docsUrl>
+    <docsUrl>https://docs.mongodb.com/mongocli/v1.16</docsUrl>
     <bugTrackerUrl>https://github.com/mongodb/mongocli/issues</bugTrackerUrl>
     <tags>mongodb mongocli cli mongodb-atlas mongodb-cloud-manager mongodb-ops-manager</tags>
     <summary>Manage your MongoDB in the cloud</summary>
@@ -48,7 +48,7 @@ If you find it is out of date by more than a day or two, please contact the main
 
 ]]>
     </description>
-    <releaseNotes>https://docs.mongodb.com/mongocli/v1.15/release-notes</releaseNotes>
+    <releaseNotes>https://docs.mongodb.com/mongocli/v1.16/release-notes</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
