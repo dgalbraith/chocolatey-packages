@@ -24,6 +24,10 @@ function global:au_SearchReplace {
       "$($rePortable)" = "$($Latest.FileName64)"
       "$($reVersion)"  = "$($Latest.Version)"
     }
+
+    ".\tools\chocolateyinstall.ps1" = @{
+      "$($rePortable)" = "$($Latest.FileName64)"
+    }
   }
 }
 
