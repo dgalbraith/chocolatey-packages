@@ -5,10 +5,11 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/mongodb/mongocli/releases/latest"
 
-$reChecksum = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
-$reInstall  = "(?<=\d\/|\s|')(?<Filename>(m.+w.+msi))"
-$rePortable = "(?<=\d\/|\s|')(?<Filename>(m.+w.+zip))"
-$reVersion  = '(?<=v|\[)(?<Version>([\d]+\.[\d]+\.[\d]+\.?[\d]*))'
+$reChecksum     = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
+$reInstall      = "(?<=\d\/|\s|')(?<Filename>(m.+w.+msi))"
+$rePortable     = "(?<=\d\/|\s|')(?<Filename>(m.+w.+zip))"
+$reShortVersion = '(?<=v)(?<ShortVersion>([\d]+\.[\d]+))'
+$reVersion      = '(?<=v|\[)(?<Version>([\d]+\.[\d]+\.[\d]+\.?[\d]*))'
 
 function global:au_BeforeUpdate {
 }
@@ -16,7 +17,8 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     "$($Latest.PackageName).nuspec" = @{
-      "$($reVersion)" = "$($Latest.Version)"
+      "$($reVersion)"      = "$($Latest.Version)"
+      "$($reShortVersion)" = "$($Latest.ShortVersion)"
     }
 
     ".\README.md" = @{
@@ -34,13 +36,15 @@ function global:au_GetLatest {
   $url64Portable = $downloadPage.links | where-object href -match $rePortable | select-object -expand href | foreach-object { $domain + $_ }
   $fileName64Portable = $url64Portable -split '/' | select-object -last 1
 
-  $version = $url64Portable -match $reversion | foreach-object { $Matches.Version }
+  $version      = $url64Portable -match $reVersion | foreach-object { $Matches.Version }
+  $shortVersion = $version -match '(?<ShortVersion>([\d]+\.[\d]+))'  | foreach-object { $Matches.ShortVersion }
 
   return @{
     Url64Install       = $url64Install
     FileName64Install  = $fileName64Install
     Url64Portable      = $url64Portable
     FileName64Portable = $fileName64Portable
+    ShortVersion       = $shortVersion
     Version            = $version
   }
 }

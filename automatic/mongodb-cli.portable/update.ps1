@@ -11,6 +11,10 @@ function global:au_BeforeUpdate {
 
 function global:au_SearchReplace {
   @{
+    "$($Latest.PackageName).nuspec" = @{
+      "$($reShortVersion)" = "$($Latest.ShortVersion)"
+    }
+
     ".\README.md" = @{
       "$($reVersion)" = "$($Latest.Version)"
     }
