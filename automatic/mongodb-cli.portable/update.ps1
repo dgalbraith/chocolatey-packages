@@ -21,7 +21,7 @@ function global:au_SearchReplace {
 
     ".\legal\VERIFICATION.txt" = @{
       "$($reChecksum)" = "$($Latest.Checksum64)"
-      "$($reInstall)"  = "$($Latest.FileName64)"
+      "$($rePortable)" = "$($Latest.FileName64)"
       "$($reVersion)"  = "$($Latest.Version)"
     }
   }
