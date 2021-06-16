@@ -2,7 +2,7 @@
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  PackageSearch  = 'jruby 9.2.18.0'
+  PackageSearch  = 'jruby 9.2.19.0'
   SilentArgs     = '-q'
   ValidExitCodes = @(0)
 }
