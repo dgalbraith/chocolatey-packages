@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nushell.install</id>
+    <version>0.31.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/nushell</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Nushell - A new type of shell</title>
+    <authors>Jonathan Turner, Yehuda Katz, Andrés Robalino, Nushell Contributors</authors>
+    <projectUrl>https://www.nushell.sh</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e1f9ccab58bbb3818c8b08f2ed977c0cbfae1d87/icons/nushell.png</iconUrl>
+    <copyright>Copyright 2019-2021 Yehuda Katz, Jonathan Turner</copyright>
+    <licenseUrl>https://github.com/nushell/nushell/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/nushell/nushell</projectSourceUrl>
+    <docsUrl>https://www.nushell.sh/book/</docsUrl>
+    <mailingListUrl>https://github.com/nushell/nushell/discussions</mailingListUrl>
+    <bugTrackerUrl>https://github.com/nushell/nushell/issues</bugTrackerUrl>
+    <tags>nushell shell cli</tags>
+    <summary>A new type of shell (Install)</summary>
+    <description><![CDATA[
+
+Nushell, or Nu for short, is a new shell that takes a modern, structured approach to your commandline. It works
+seamlessly with the data from your filesystem, operating system, and a growing number of file formats to make it easy
+to build powerful commandline pipelines.
+
+## Features
+
+* **Control your system with powerful pipelines** Pipelines let you command your system like never before. Your system
+belongs to you, and it awaits your command
+* **Everything is data** Rather than having the need to remember all the parameters to all the commands, we can just use
+the same, regardless of where it came from
+* **Powerful Plugins** Nu can't come with everything you might want to do with it, so you can extend using its powerful
+plugin system
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e1f9ccab58bbb3818c8b08f2ed977c0cbfae1d87/automatic/nushell/screenshot.png)
+
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/AddToDesktop` - add a desktop shortcuts for Nu Shell.  By default the shortcuts will be added for all users  
+e.g. `choco install nushell.install --package-parameters="/AddToDesktop"`
+* `/AddToStartMenu` - add entries to the Start Menu for Koodoo Reader.  By default the shortcut will be added for all
+users  
+e.g. `choco install nushell.install --package-parameters="/AddToStartMenu"`
+* `/User` - where the user parameter is specified any shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`)
+will only be added for the current user  
+e.g. `choco install nushell.install --package-parameters="/AddToDesktop /User"`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Notes
+
+* Nushell only provides a 64-bit version
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/nushell/nushell/releases/tag/0.31.0</releaseNotes>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
