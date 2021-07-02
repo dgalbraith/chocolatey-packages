@@ -10,18 +10,18 @@ be verified by:
 
   https://github.com/nushell/nushell/releases/tag/0.32.0
 
-and download the archive nu_0_32_0_windows.msi using the relevant link in the
+and download the archive nu_0_32_0_windows.zip using the relevant link in the
 assets section on the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://github.com/nushell/nushell/releases/download/0.32.0/nu_0_32_0_windows.msi
+  https://github.com/nushell/nushell/releases/download/0.32.0/nu_0_32_0_windows.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 nu_0_32_0_windows.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f nu_0_32_0_windows.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 nu_0_32_0_windows.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f nu_0_32_0_windows.zip
 
-  File:     nu_0_32_0_windows.msi
+  File:     nu_0_32_0_windows.zip
   Type:     sha256
   Checksum: C471CB4919AE15BC649C5661473EDD0BB961EAC32303A410EEEB7C18D562C070
 
