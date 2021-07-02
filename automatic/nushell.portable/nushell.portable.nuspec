@@ -6,7 +6,7 @@
     <version>0.32.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/nushell</packageSourceUrl>
     <owners>dgalbraith</owners>
-    <title>Nushell - A new type of shell</title>
+    <title>Nushell - A new type of shell (Portable)</title>
     <authors>Jonathan Turner, Yehuda Katz, Andrés Robalino, Nushell Contributors</authors>
     <projectUrl>https://www.nushell.sh</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e1f9ccab58bbb3818c8b08f2ed977c0cbfae1d87/icons/nushell.png</iconUrl>
@@ -40,13 +40,13 @@ plugin system
 
 The following package parameter can be set:
 
-* `/AddToDesktop` - add a desktop shortcuts for Nu Shell.  By default the shortcuts will be added for all users  
+* `/AddToDesktop` - add a desktop shortcuts for Nu Shell.  By default the shortcuts will be added for all users
 e.g. `choco install nushell.install --package-parameters="/AddToDesktop"`
 * `/AddToStartMenu` - add entries to the Start Menu for Koodoo Reader.  By default the shortcut will be added for all
-users  
+users
 e.g. `choco install nushell.install --package-parameters="/AddToStartMenu"`
 * `/User` - where the user parameter is specified any shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`)
-will only be added for the current user  
+will only be added for the current user
 e.g. `choco install nushell.install --package-parameters="/AddToDesktop /User"`
 
 To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
