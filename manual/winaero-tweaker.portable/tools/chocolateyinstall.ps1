@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
@@ -7,11 +7,11 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   fileType      = 'zip'
   url           = 'https://winaero.com/downloads/winaerotweaker.zip'
-  checksum      = 'BE7EDE2B4C9853346B089B45041240B92FC5C22B647D1BF01D49137F174E16E5'
+  checksum      = 'F72DC5F81312D9AED5702752B2AC2C1A4594B74747FF093E9C6FF818C0A9C485'
   checksumType  = 'sha256'
   options = @{
     headers = @{
-      referer = "https://winaero.com/download-winaero-tweaker/"
+      referer = "https://winaero.com/download-winaero-tweaker"
     }
   }
 }
@@ -19,14 +19,11 @@ $packageArgs = @{
 Install-ChocolateyZipPackage @packageArgs
 
 $packageArgs = @{
-  packageName   = $packageName
-  fileType      = 'exe'
-  softwareName  = 'Winaero Tweaker'
-  file          = "$toolsDir\WinaeroTweaker-$env:packageVersion-setup.exe"
-  checksum      = '4A5478DC18665C4AB7496467CDC3E549610EBBC8AD86BA1E7289E5EE2EC44B15'
-  checksumType  = 'sha256'
-  silentArgs    = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /PORTABLE  /DIR=`"$toolsDir`""
-  validExitCodes= @(0)
+  packageName    = $packageName
+  fileType       = 'exe'
+  file           = '{0}\WinaeroTweaker-{1}-setup.exe' -f $toolsDir, ($env:packageVersion -split '(\.\d+)(?!.*\d)')[0]
+  silentArgs     = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /PORTABLE  /DIR=`"$toolsDir`""
+  validExitCodes = @(0)
 }
 
 Install-ChocolateyInstallPackage @packageArgs
