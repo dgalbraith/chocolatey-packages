@@ -3,7 +3,7 @@
 [![Software license ©Sergey Tkachenko](https://img.shields.io/badge/license-Copyright-lightgrey)](https://winaero.com/winaero-tweaker)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-1.20.0.0-blue.svg)](https://winaero.com/winaero-tweaker)
+[![Software version](https://img.shields.io/badge/Source-1.20.1.0-blue.svg)](https://winaero.com/winaero-tweaker)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/winaero-tweaker.install?label=Chocolatey)](https://chocolatey.org/packages/winaero-tweaker.install)
 
 Winaero Tweaker is essential software for every Windows 10, Windows 8 and Windows 7 user. It allows you to customize the appearance and behavior of the operating system in a flexible way.
