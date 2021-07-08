@@ -1,16 +1,16 @@
-﻿$packageName = 'naps2.portable'
-$url = 'https://github.com/cyanfish/naps2/releases/download/v5.3.3/naps2-5.3.3-portable.zip'
-$checksum = '1df1408ef0af95057c8f3e5466cad12f2e479c1c007e8e998f55ce410bf8e690'
-$checksumType = 'sha256'
+﻿$ErrorActionPreference = 'Stop'
+
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
+$archive  = Join-Path $toolsDir 'naps2-6.1.2-portable.7z'
 
-Install-ChocolateyZipPackage -PackageName "$packageName" `
-                             -Url "$url" `
-                             -UnzipLocation "$toolsDir" `
-                             -Checksum "$checksum" `
-                             -ChecksumType "$checksumType"
+$unzipArgs = @{
+  PackageName  = $env:ChocolateyPackageName
+  FileFullPath = $archive
+  Destination  = $toolsDir
+}
 
-Write-Verbose "Creating GUI executable sidecar for shimgen.exe"
-$guiExe = Join-Path $toolsDir "NAPS2.Portable.exe"
-Set-Content -Path ("$guiExe.gui") `
-            -Value $null
+Get-ChocolateyUnzip @unzipArgs
+
+Remove-Item $toolsDir\*.zip -ea 0
+
+Get-ChildItem $toolsDir -include *.exe -exclude 'NAPS2.exe','NAPS2.Console.exe' -recurse  | Select-Object { New-Item "$_.ignore" -type file -force } | Out-Null

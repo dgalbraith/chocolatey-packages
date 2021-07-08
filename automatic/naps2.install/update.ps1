@@ -1,39 +1,35 @@
-﻿import-module au
+﻿. $PSScriptRoot\..\naps2\update.ps1
 
-$releases = 'https://api.github.com/repos/cyanfish/naps2/releases/latest'
+$ErrorActionPreference = 'STOP'
+
+function global:au_BeforeUpdate {
+  $Latest.FileName32 = "$($Latest.FileNameInstall)"
+  $Latest.Url32      = "$($Latest.UrlInstall)"
+
+  Get-RemoteFiles -Purge -NoSuffix
+}
 
 function global:au_SearchReplace {
-    @{
-        'tools\ChocolateyInstall.ps1' = @{
-            "(^[$]downloadUrl\s*=\s*)('.*')" = "`$1'$($Latest.URL)'"
-            "(^[$]checksum\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum)'"
-        }
-     }
+  @{
+    "$($Latest.PackageName).nuspec" = @{
+      "$($reCopyright)" = "$($Latest.UpdateYear)"
+      "$($reVersion)"   = "$($Latest.Version)"
+    }
+
+    ".\README.md" = @{
+      "$($reVersion)" = "$($Latest.Version)"
+    }
+
+    ".\legal\VERIFICATION.txt" = @{
+      "$($reChecksum)" = "$($Latest.Checksum32)"
+      "$($reInstall)"  = "$($Latest.FileName32)"
+      "$($reVersion)"  = "$($Latest.Version)"
+    }
+
+    ".\tools\chocolateyinstall.ps1" = @{
+      "$($reInstall)" = "$($Latest.FileName32)"
+    }
+  }
 }
 
-function global:au_GetLatest {
-    $json = $(Invoke-WebRequest -Uri $releases | ConvertFrom-Json)
-    $msi_release = $json.assets | Where-Object { $_.name.EndsWith(".msi") }
-
-    # Get Version
-    $version = $($json | Select-Object -ExpandProperty "name")
-
-    # Get URL
-    $url = $($msi_release | Select-Object -ExpandProperty "browser_download_url")
-
-    # Get Checksum
-    $filename = $($msi_release | Select-Object -ExpandProperty "name")
-    $temp_file = $env:TEMP + '\' + $filename
-    Invoke-WebRequest $url -OutFile $temp_file
-    $checksum = $(Get-FileHash $temp_file -Algorithm SHA256 | Select-Object -ExpandProperty Hash)
-
-    $Latest = @{ URL = $url; Checksum = $checksum; Version = $version }
-    return $Latest
-}
-
-update -ChecksumFor 32
-
-if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-    update -ChecksumFor none
-    if ($global:au_old_force -is [bool]) { $global:au_force = $global:au_old_force }
-}
+update -ChecksumFor none -NoReadme

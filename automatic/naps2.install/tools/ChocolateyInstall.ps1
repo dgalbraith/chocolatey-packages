@@ -1,17 +1,22 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 
-$downloadUrl  = 'https://github.com/cyanfish/naps2/releases/download/v6.1.2/naps2-6.1.2-setup.msi'
-$checksum     = 'A3AE684694FEDBBC557208320DF571EABE5B4099A4D26C0AC00AAF6EBAB09238'
+$toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
+
+$installer = Join-Path $toolsDir 'naps2-6.1.2-setup.msi'
+
+$silentArgs = '/quiet /qn /norestart'
+
+if ($pp.InstallDir) {
+  $silentArgs += " INSTALLFOLDER=`"$($pp.InstallDir)`""
+}
 
 $packageArgs = @{
-  packageName    = "naps2.install"
-  softwareName   = "NAPS2 (Not Another PDF Scanner 2)"
-  url            = $downloadUrl
-  checksum       = $checksum
-  checksumType   = 'sha256'
-  fileType       = 'msi'
-  silentArgs     = '/quiet /norestart'
-  validExitCodes = @(0)
+  PackageName    = $env:ChocolateyPackageName
+  FileType       = 'msi'
+  SoftwareName   = 'NAPS2'
+  File           = $installer
+  SilentArgs     = $silentArgs
+  ValidExitCodes = @(0, 1641, 3010)
 }
 
 Install-ChocolateyPackage @packageArgs

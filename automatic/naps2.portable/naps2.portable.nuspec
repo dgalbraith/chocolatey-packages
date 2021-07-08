@@ -1,42 +1,58 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>naps2.portable</id>
+    <version>6.1.2</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/naps2.portable</packageSourceUrl>
+    <owners>dgalbraith</owners>
     <title>NAPS2 (Not Another PDF Scanner 2) (Portable)</title>
-    <version>5.3.3</version>
     <authors>Ben Olden-Cooligan</authors>
-    <owners>dtgm</owners>
-    <summary>Scan documents to PDF and other file formats, as simply as possible</summary>
-    <description>
-NAPS2 is a document scanning application with a focus on simplicity and ease of use. Scan your documents from WIA- and TWAIN-compatible scanners, organize the pages as you like, and save them as PDF, TIFF, JPEG, PNG, and other file formats.
-
-#### Graphical User Interface
-* Executable: `NAPS2.Portable.exe`
-
-#### Conmmand-line Interface
-* Manual page: https://www.naps2.com/doc-command-line.html
-* Executable: `NAPS2.Console.exe`
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/naps2.portable/</packageSourceUrl>
-    <projectUrl>https://www.naps2.com/</projectUrl>
-    <projectSourceUrl>https://github.com/cyanfish/naps2/</projectSourceUrl>
-    <bugTrackerUrl>https://sourceforge.net/p/naps2/tickets/</bugTrackerUrl>
-    <mailingListUrl>https://sourceforge.net/p/naps2/discussion/</mailingListUrl>
-	<docsUrl>https://www.naps2.com/support.html</docsUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/e38cf75b80e07e0cea93463f2642235715382af5/icons/naps2.portable.png</iconUrl>
-    <tags>ocr scanner wia twain pdf cli gui</tags>
-    <copyright>© 2012 Ben Olden-Cooligan</copyright>
-    <licenseUrl>https://github.com/cyanfish/naps2/blob/master/NAPS2/Setup/license.txt</licenseUrl>
+    <projectUrl>https://www.naps2.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@c809e86a58e0c324229204801a3ebecd82edbfa7/icons/naps2.png</iconUrl>
+    <copyright>Copyright 2009, 2012-2021 NAPS2 Contributors</copyright>
+    <licenseUrl>https://github.com/cyanfish/naps2/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
-* [Release notes](https://www.naps2.com/changelog.html)
+    <projectSourceUrl>https://github.com/cyanfish/naps2</projectSourceUrl>
+    <docsUrl>https://www.naps2.com/support.html</docsUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/naps2/tickets</bugTrackerUrl>
+    <mailingListUrl>https://sourceforge.net/p/naps2/discussion/general</mailingListUrl>
+    <tags>naps2 scanner pdf wia twain ocr cli scan</tags>
+    <summary>Scan documents to PDF and other file types, as simply as possible</summary>
+    <description><![CDATA[
+NAPS2 is a document scanning application with a focus on simplicity and ease of use. Scan your documents from WIA- and
+TWAIN-compatible scanners, organize the pages as you like, and save them as PDF, TIFF, JPEG, PNG, and other file
+formats.
 
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+## Features
+
+* Scan documents using WIA- and TWAIN-compatible scanners
+* Scan as many pages as you like from glass or ADF, including duplex support
+* Rotate, crop, and rearrange scanned pages
+* Save as PDF, TIFF, JPEG, PNG, or other file formats
+* Directly email PDFs
+* Use OCR to make PDFs searchable
+* Import, merge, and edit PDFs
+* Configure brightness, contrast, resolution, and other scan options
+* Save your configurations as profiles to be easily reused later
+* Optional command-line interface (CLI) for automation and scripting
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@c809e86a58e0c324229204801a3ebecd82edbfa7/automatic/naps2/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]>
+    </description>
+    <releaseNotes>https://github.com/cyanfish/naps2/releases/tag/v6.1.2</releaseNotes>
+    <dependencies>
+      <dependency id="dotnetfx" version="4.8.0.0" />
+    </dependencies>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
-</package>
+</package>
