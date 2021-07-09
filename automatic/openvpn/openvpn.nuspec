@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek
+     uppercase omega letter enclosed in quotation marks, you should use an
+     editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>openvpn</id>
+        <title>OpenVPN</title>
+        <version>2.4.5</version>
+        <authors>OpenVPN Technologies, Inc</authors>
+        <owners>wget, Okhoshi</owners>
+        <summary>OpenVPN is a multiplatform and open source VPN server and client solution</summary>
+        <description><![CDATA[
+This repository contains the sources of the [package OpenVPN](https://chocolatey.org/packages/openvpn/) for [Chocolatey, the package manager for Windows](https://chocolatey.org/).
+
+[For more information, please refer to the instructions available in the parent repository](https://github.com/wget/chocolatey-packages).
+]]></description>
+        <projectUrl>https://openvpn.net/index.php/open-source/</projectUrl>
+        <tags>openvpn community tunnel ssl admin</tags>
+        <copyright>OpenVPN Technologies, Inc</copyright>
+        <licenseUrl>https://openvpn.net/index.php/license.html</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <!-- Important note about https://cdn.rawgit.com: Files are cached
+             permanently after the first request. Use commit URLs when updating
+             the icon. -->
+        <iconUrl>https://cdn.rawgit.com/wget/chocolatey-package-openvpn/master/icon.png</iconUrl>
+        <dependencies>
+            <!-- The id is the lowest version required to make the package work.
+                 If we do not specify one, the chocolatey web validator will
+                 report a warning to be fixed in order to respect guidelines. -->
+            <dependency id="chocolatey" version="0.10.8" />
+            <dependency id="gpg4win-vanilla" version="2.3.4" />
+        </dependencies>
+        <releaseNotes>https://openvpn.net/index.php/open-source/documentation/release-notes.html</releaseNotes>
+        <!-- Specific to Chocolatey -->
+        <projectSourceUrl>https://github.com/OpenVPN/openvpn</projectSourceUrl>
+        <docsUrl>https://community.openvpn.net/openvpn/wiki</docsUrl>
+        <bugTrackerUrl>https://community.openvpn.net/openvpn/report/1</bugTrackerUrl>
+        <packageSourceUrl>https://github.com/wget/chocolatey-package-openvpn</packageSourceUrl>
+    </metadata>
+    <files>
+        <file src="tools\**" target="tools" exclude="**\utils\.git;**\utils\README.*" />
+        <file src="legal\**" target="legal" />
+    </files>
+</package>
