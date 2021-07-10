@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/mongodb-js/mongosh)](https://github.com/mongodb-js/mongosh/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/version-v0.15.6-blue)](https://github.com/mongodb-js/mongosh/releases/tag/v0.15.6)
+[![Software version](https://img.shields.io/badge/version-v1.0.0-blue)](https://github.com/mongodb-js/mongosh/releases/tag/v1.0.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/mongodb-shell?label=Chocolatey)](https://chocolatey.org/packages/mongodb-shell)
 
 The [MongoDB Shell](https://www.mongodb.com/products/shell) lets you connect to MongoDB to work with
