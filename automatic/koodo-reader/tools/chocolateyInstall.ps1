@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'Koodo-Reader-1.2.5-Win.7z'
+$archive  = Join-Path $toolsDir 'Koodo-Reader-1.2.7-Win.7z'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName

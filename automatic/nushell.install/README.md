@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/github/license/nushell/nushell)](https://github.com/nushell/nushell/blob/main/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v0.32.0-blue.svg)](https://github.com/nushell/nushell/releases/tag/0.32.0)
+[![Software version](https://img.shields.io/badge/Source-v0.34.0-blue.svg)](https://github.com/nushell/nushell/releases/tag/0.34.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/nushell.install?label=Chocolatey)](https://chocolatey.org/packages/nushell.install)
 
 Nushell, or Nu for short, is a new shell that takes a modern, structured approach to your commandline. It works
