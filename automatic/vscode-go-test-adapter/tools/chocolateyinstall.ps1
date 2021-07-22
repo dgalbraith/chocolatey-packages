@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\ethan-reesor.vscode-go-test-adapter-0.1.5.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\ethan-reesor.vscode-go-test-adapter-0.1.6.vsix"
