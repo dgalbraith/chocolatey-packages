@@ -4,7 +4,7 @@
 <metadata>
     <id>apachedirectorystudio</id>
     <title>Apache Directory Studio</title>
-    <version>2.0.0-M16</version>
+    <version>2.0.0-M17</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/apachedirectorystudio</packageSourceUrl>
     <authors>Apache</authors>
     <owners>dgalbraith</owners>
