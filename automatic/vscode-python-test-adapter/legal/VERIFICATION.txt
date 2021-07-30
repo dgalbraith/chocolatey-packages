@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter
 
-and download the extension LittleFoxTeam.vscode-python-test-adapter-0.6.8.vsix using the Download Extension link
+and download the extension LittleFoxTeam.vscode-python-test-adapter-0.7.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/LittleFoxTeam/vsextensions/vscode-python-test-adapter/0.6.8/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/LittleFoxTeam/vsextensions/vscode-python-test-adapter/0.7.0/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash LittleFoxTeam.vscode-python-test-adapter-0.6.8.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f LittleFoxTeam.vscode-python-test-adapter-0.6.8.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash LittleFoxTeam.vscode-python-test-adapter-0.7.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f LittleFoxTeam.vscode-python-test-adapter-0.7.0.vsix
 
   Type:     sha256
-  Checksum: DEBA03CA86E98730D093D1959E97BE464000A8589947111526B0568E762F9AD3
+  Checksum: 920CFBEBB769FBFFF82F1E7D2660C2F5A2AAF3D015A5F8045624357EAD7D84CB
 
   Contents of the file LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/LittleFoxTeam.vscode-python-test-adapter/license
