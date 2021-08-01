@@ -2,4 +2,4 @@
 
 Uninstall-BinFile -Name 'Angband' -Path 'Angband.exe'
 
-Uninstall-ChocolateyZipPackage 'Angband' 'angband-win-4.2.2.zip'
+Uninstall-ChocolateyZipPackage 'Angband-4.2.3-win.zip'
