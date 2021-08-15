@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winaero-tweaker</id>
-    <version>1.20.1.0</version>
+    <version>1.30.0</version>
     <owners>bcurran3,dgalbraith</owners>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/winaero-tweaker</packageSourceUrl>
     <title>Winaero Tweaker</title>
@@ -35,7 +35,7 @@ Winaero Tweaker is essential software for every Windows 10, Windows 8 and Window
     </description>
     <releaseNotes>https://winaero.com/winaero-tweaker-1-20-is-out-with-windows-11-support-and-tons-of-new-features</releaseNotes>
     <dependencies>
-      <dependency id="winaero-tweaker.install" version="[1.20.1.0]" />
+      <dependency id="winaero-tweaker.install" version="[1.30.0]" />
     </dependencies>
   </metadata>
     <files>
