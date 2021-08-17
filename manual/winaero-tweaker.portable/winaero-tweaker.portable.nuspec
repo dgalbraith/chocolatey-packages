@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winaero-tweaker.portable</id>
-    <version>1.30.0</version>
+    <version>1.30.0.0</version>
     <owners>bcurran3,dgalbraith</owners>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/winaero-tweaker.portable</packageSourceUrl>
     <title>Winaero Tweaker (Portable)</title>
@@ -36,7 +36,7 @@ Winaero Tweaker is essential software for every Windows 10, Windows 8 and Window
     <dependencies>
       <dependency id="kb2919355" version="1.0.20160915" />
     </dependencies>
-    <releaseNotes>https://winaero.com/winaero-tweaker-1-20-is-out-with-windows-11-support-and-tons-of-new-features</releaseNotes>
+    <releaseNotes>https://winaero.com/winaero-tweaker-1-30-is-here-allows-you-to-move-windows-11-taskbar-and-more/</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
