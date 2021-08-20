@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/WinObj.zip'
-  checksum      = '26d08770eabcd7fb8817c66ff73c38446d3fbee3cdd5cdc7c38dffaab81af311'
+  checksum      = '88b08330c064319968b106b83bf4dff66a781eb13aa4f4ccd3b85987c9a14c92'
   checksumType  = 'sha256'
 }
 
