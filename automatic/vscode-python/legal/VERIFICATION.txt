@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
-and download the package ms-python.python-2021.8.1147840270.vsix using the Download Extension link
+and download the package ms-python.python-2021.8.1159798656.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-python/vsextensions/python/2021.8.1147840270/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-python/vsextensions/python/2021.8.1159798656/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash ms-python.python-2021.8.1147840270.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-python.python-2021.8.1147840270.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash ms-python.python-2021.8.1159798656.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-python.python-2021.8.1159798656.vsix
 
   Type:     sha256
-  Checksum: 0E30BB63AA078448E85011E20F2A83614CA261248D3CE97A77C1A233ACCE3596
+  Checksum: 278FB64F4CCFD8748436A2A63EFC5456E5039B968DB8CF714D318EA2438A1A0C
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-python.python/license
