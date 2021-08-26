@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=haskell.haskell
 
-and download the extension haskell.haskell-1.6.0.vsix using the Download Extension link
+and download the extension haskell.haskell-1.6.1.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/haskell/vsextensions/haskell/1.6.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/haskell/vsextensions/haskell/1.6.1/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash haskell.haskell-1.6.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hhaskell.haskell-1.6.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash haskell.haskell-1.6.1.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hhaskell.haskell-1.6.1.vsix
 
   Type:     sha256
-  Checksum: 3C3AB17D2ECE9986EDEF5B18685852E627BB42DAAD7B333D4B305B7A2C3FC805
+  Checksum: 56BFDFA80EACCEEF527343131082C2A3C5D533F09AE85F6713E6063CF1CAD6D0
 
   Contents of the file LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/haskell.haskell/license
