@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-arduino</id>
-    <version>0.4.3</version>
+    <version>0.4.4</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-arduino</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Arduino VSCode Extension</title>
