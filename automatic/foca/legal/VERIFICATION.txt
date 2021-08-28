@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/ElevenPaths/FOCA/releases/tag/v3.4.7.0
+  https://github.com/ElevenPaths/FOCA/releases/tag/v3.4.7.1
 
-and download the archive FOCA-v3.4.7.0.zip using the relevant links in the
+and download the archive FOCA-v3.4.7.1.zip using the relevant links in the
 asset section of the distribution page.
 
 Alternatively the distribution can be downloaded directly from
 
-  https://github.com/ElevenPaths/FOCA/releases/download/v3.4.7.0/FOCA-v3.4.7.0.zip
+  https://github.com/ElevenPaths/FOCA/releases/download/v3.4.7.1/FOCA-v3.4.7.1.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 FOCA-v3.4.7.0.zip
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f FOCA-v3.4.7.0.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 FOCA-v3.4.7.1.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f FOCA-v3.4.7.1.zip
 
-  File:     FOCA-v3.4.7.0.zip
+  File:     FOCA-v3.4.7.1.zip
   Type:     sha256
-  Checksum: EF0F0632F1B6F5279851835006D010B8D244C4BE436295B58422BAF772B88A93
+  Checksum: 2B7F2CA60DC56245C0101BF171F13A1AE3E89AB93022A969011A08D06270E7FD
 
   Contents of file LICENSE.txt is obtained from https://github.com/ElevenPaths/FOCA/blob/master/LICENSE.txt

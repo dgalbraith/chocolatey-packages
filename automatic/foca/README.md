@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/ElevenPaths/FOCA/blob/master/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.4.7.0-blue.svg)](https://github.com/ElevenPaths/FOCA/releases/tag/v3.4.7.0)
+[![Software version](https://img.shields.io/badge/Source-v3.4.7.1-blue.svg)](https://github.com/ElevenPaths/FOCA/releases/tag/v3.4.7.1)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/foca?label=Chocolatey)](https://chocolatey.org/packages/foca)
 
 FOCA is a tool used mainly to find metadata and hidden information in the documents it scans. These documents may be on
