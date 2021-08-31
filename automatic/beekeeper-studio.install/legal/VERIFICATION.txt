@@ -10,19 +10,19 @@ be verified by:
 
   https://github.com/beekeeper-studio/beekeeper-studio/releases
 
-and download the installer Beekeeper-Studio-Setup-1.13.2.exe using
+and download the installer Beekeeper-Studio-Setup-2.0.0.exe using
 the links in the relevant assets section of the page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v1.13.2/Beekeeper-Studio-Setup-1.13.2.exe
+  https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v2.0.0/Beekeeper-Studio-Setup-2.0.0.exe
 
 2. The installer can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Beekeeper-Studio-Setup-1.13.2.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Beekeeper-Studio-Setup-1.13.2.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Beekeeper-Studio-Setup-2.0.0.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Beekeeper-Studio-Setup-2.0.0.exe
 
-  File64:     Beekeeper-Studio-Setup-1.13.2.exe
+  File64:     Beekeeper-Studio-Setup-2.0.0.exe
   Type64:     sha256
-  Checksum64: 25B21F58D0AF6F8549282D9A30500776F1746314F8C325277D0C7D841DC2089B
+  Checksum64: C1E97FE15A7E076D9C61DFD99830BA21B7EBC10A40E5F18BED9BA8F43E07A717
 
 Contents of file LICENSE.txt is obtained from https://github.com/beekeeper-studio/beekeeper-studio/blob/master/LICENSE.md
