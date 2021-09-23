@@ -8,30 +8,30 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/FlashpointProject/launcher/releases/tag/10.0.0
+  https://github.com/FlashpointProject/launcher/releases/tag/10.1.0
 
-and download the binaries Flashpoint-10.0.0_win-ia32.7z or Flashpoint-10.0.0_win-x64.7z
+and download the binaries Flashpoint-10.1.0_win-ia32.7z or Flashpoint-10.1.0_win-x64.7z
 using the relevant links in the asset section of the distribution page.
 
 Alternatively the distribution can be downloaded directly from
 
-  https://github.com/FlashpointProject/launcher/releases/download/10.0.0/Flashpoint-10.0.0_win-ia32.7z
-  https://github.com/FlashpointProject/launcher/releases/download/10.0.0/Flashpoint-10.0.0_win-x64.7z
+  https://github.com/FlashpointProject/launcher/releases/download/10.1.0/Flashpoint-10.1.0_win-ia32.7z
+  https://github.com/FlashpointProject/launcher/releases/download/10.1.0/Flashpoint-10.1.0_win-x64.7z
 
 2. The installer can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash Flashpoint-10.0.0_win-ia32.7z
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Flashpoint-10.0.0_win-ia32.7z
+  - Use powershell function 'Get-Filehash' - Get-Filehash Flashpoint-10.1.0_win-ia32.7z
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Flashpoint-10.1.0_win-ia32.7z
 
-  File32:         Flashpoint-10.0.0_win-ia32.7z
+  File32:         Flashpoint-10.1.0_win-ia32.7z
   ChecksumType32: sha256
-  Checksum32:     281841C2960F3B490269FFDD018ED02BDF08EF1C39E1B05E7DD264DABD75B5A1
+  Checksum32:     47E6A82D762ECC836AFCD60C0539C52C044DB153E023D5DBF191F1B7FBABEDF0
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash Flashpoint-10.0.0_win-x64.7z
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Flashpoint-10.0.0_win-x64.7z
+  - Use powershell function 'Get-Filehash' - Get-Filehash Flashpoint-10.1.0_win-x64.7z
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Flashpoint-10.1.0_win-x64.7z
 
-  File64:         Flashpoint-10.0.0_win-x64.7z
+  File64:         Flashpoint-10.1.0_win-x64.7z
   ChecksumType64: sha256
-  Checksum64:     16FA3108CB446F3B289DE79BFD947296740204B1CC5E1FF461D487F0600B3523
+  Checksum64:     791BD6D1F97F3900F25C40E7DF69FDA375708BBA989E531A955ADA978F23C2BA
 
   Contents of file LICENSE.txt is obtained from https://github.com/FlashpointProject/launcher/blob/master/LICENSE
 
