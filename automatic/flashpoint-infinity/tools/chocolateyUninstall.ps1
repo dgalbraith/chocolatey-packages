@@ -4,7 +4,7 @@ Uninstall-BinFile -Name 'Flashpoint' -Path 'Flashpoint.cmd'
 
 $packageArgs = @{
   PackageName = $env:ChocolateyPackageName
-  ZipFileName = 'Flashpoint 10 Infinity.exe'
+  ZipFileName = 'Flashpoint 10.1 Infinity.exe'
 }
 
 UnInstall-ChocolateyZipPackage @packageArgs

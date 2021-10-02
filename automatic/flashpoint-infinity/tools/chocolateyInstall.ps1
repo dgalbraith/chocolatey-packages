@@ -5,8 +5,8 @@ $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $packageArgs = @{
   PackageName   = $env:ChocolateyPackageName
   UnzipLocation = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
-  Url           = 'https://bluemaxima.org/flashpoint/downloads/../Flashpoint%2010%20Infinity.exe'
-  Checksum      = 'a1508e9c92639032909df1a6624d91ae9f10ccf3258d8d0206963f6bb630cd9c'
+  Url           = 'https://bluemaxima.org/flashpoint/downloads/../Flashpoint%2010.1%20Infinity.exe'
+  Checksum      = 'a5acf96bdc3a78a3de0f2022100cbdd39d51e50916b76ddd9e8e3c1412ba9a27'
   ChecksumType  = 'sha256'
 }
 
