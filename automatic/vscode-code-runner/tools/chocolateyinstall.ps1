@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\formulahendry.code-runner-0.11.5.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\formulahendry.code-runner-0.11.6.vsix"
