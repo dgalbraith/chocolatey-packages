@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.12-blue)](https://docs.microsoft.com/sysinternals/downloads/winobj)
+[![Software version](https://img.shields.io/badge/Source-v3.13-blue)](https://docs.microsoft.com/sysinternals/downloads/winobj)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/winobj?label=Chocolatey)](https://chocolatey.org/packages/winobj)
 
 WinObj is a must-have tool if you are a system administrator concerned about security, a developer tracking down
