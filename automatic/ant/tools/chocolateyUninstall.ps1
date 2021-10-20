@@ -2,7 +2,7 @@
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$ant_home = Join-Path $toolsDir 'apache-ant-1.10.11'
+$ant_home = Join-Path $toolsDir 'apache-ant-1.10.12'
 $ant_bat  = Join-Path $ant_home 'bin/ant.bat'
 
 # we don't have access to the install parameters so we need to adopt a coarse approach to remove the ANT_HOME variable
