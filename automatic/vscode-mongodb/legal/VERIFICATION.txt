@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode
 
-and download the package mongodb.mongodb-vscode-0.6.12.vsix using the Download Extension link
+and download the package mongodb.mongodb-vscode-0.6.14.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/mongodb/vsextensions/mongodb-vscode/0.6.12/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/mongodb/vsextensions/mongodb-vscode/0.6.14/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash mongodb.mongodb-vscode-0.6.12.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f mongodb.mongodb-vscode-0.6.12.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash mongodb.mongodb-vscode-0.6.14.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f mongodb.mongodb-vscode-0.6.14.vsix
 
   Type:     sha256
-  Checksum: 248B69D82C0D53A6C56C0CF71C07A66B3AD04CCE23275943E44359A2151C53BF
+  Checksum: 7D8D894E101E3EA7042859D0B1846E302D5128AB269B75265A18ACACE3546703
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/mongodb.mongodb-vscode/license
