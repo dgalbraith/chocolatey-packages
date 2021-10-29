@@ -4,7 +4,7 @@
 <metadata>
     <id>mssqlserver-compact4.0</id>
     <title>Microsoft SQLServer Compact 4.0 with SP1</title>
-    <version>4.0.8876.1</version>
+    <version>4.0.8876.100</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/mssqlserver-compact4.0</packageSourceUrl>
     <authors>Microsoft</authors>
     <owners>dgalbraith</owners>
