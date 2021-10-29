@@ -80,7 +80,7 @@ Install-ChocolateyInstallPackage @packageArgs
 $files = Get-ChildItem $toolsDir -include *.exe -recurse
 
 foreach ($file in $files) {
-  Remove-Item "$file.ignore" -Type file -Force -ErrorAction Ignore | Out-Null
+  New-Item "$file.ignore" -Type file -Force | Out-Null
 }
 
 Remove-Item -Path $tempDir -Recurse -Force -ErrorAction Ignore | Out-Null
