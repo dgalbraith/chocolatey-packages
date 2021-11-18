@@ -7,7 +7,7 @@ if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
 }
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'cwrsync_6.2.3_x64_free.zip'
+$archive  = Join-Path $toolsDir 'cwrsync_6.2.4_x64_free.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
