@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-LGPLv2.1-blue.svg)](https://github.com/FluidSynth/fluidsynth/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v2.2.3-blue.svg)](https://github.com/FluidSynth/fluidsynth/releases/tag/v2.2.3)
+[![Software version](https://img.shields.io/badge/Source-v2.2.4-blue.svg)](https://github.com/FluidSynth/fluidsynth/releases/tag/v2.2.4)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/fluidsynth?label=Chocolatey)](https://chocolatey.org/packages/fluidsynth)
 
 FluidSynth is a real-time software synthesizer based on the SoundFont 2 specifications and has reached widespread
