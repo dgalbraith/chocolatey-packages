@@ -10,28 +10,28 @@ be verified by:
 
   https://www.mersenne.org/download/
 
-and download the package p95v303b6.win32.zip or p95v303b6.win64.zip using the
+and download the package p95v307b9.win32.zip or p95v307b9.win64.zip using the
 links in the relevant section of the page.
 
 Alternatively the packages can be downloaded directly from
 
-  http://www.mersenne.org/ftp_root/gimps/p95v303b6.win32.zip
-  http://www.mersenne.org/ftp_root/gimps/p95v303b6.win64.zip
+  http://www.mersenne.org/ftp_root/gimps/p95v307b9.win32.zip
+  http://www.mersenne.org/ftp_root/gimps/p95v307b9.win64.zip
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash p95v303b6.win32.zip
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f p95v303b6.win32.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash p95v307b9.win32.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f p95v307b9.win32.zip
 
-  File32:         p95v303b6.win32.zip
+  File32:         p95v307b9.win32.zip
   ChecksumType32: sha256
-  Checksum32:     CA712CEB3C3A9642ACB6C6A45B9F3164A1F0AAEC72DAB4E47083AB07916B03F4
+  Checksum32:     6747BCA84D089B803AEBE3428A2506A613177DD106DE5E9415135FFCB601433A
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash p95v303b6.win64.zip
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f p95v303b6.win64.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash p95v307b9.win64.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f p95v307b9.win64.zip
 
-  File64:         p95v303b6.win64.zip
+  File64:         p95v307b9.win64.zip
   ChecksumType64: sha256
-  Checksum64:     533EDA6A585CD047B3D41FBA85BD52798AD6F4D8572B25A5F01FFDAAE11509DA
+  Checksum64:     119480C2910CD4FE6AEE6B408BC24A063B33F444D92CFEFD70AF5D85F58A645D
 
 Contents of file LICENSE.txt is obtained from https://www.mersenne.org/legal
 
