@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\mongodb.mongodb-vscode-0.6.14.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\mongodb.mongodb-vscode-0.7.0.vsix"
