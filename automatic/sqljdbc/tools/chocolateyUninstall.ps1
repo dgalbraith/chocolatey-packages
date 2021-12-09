@@ -13,7 +13,7 @@ if (Test-Path -Path $zipTargetFile) {
   $parentDirectory = Split-Path $unzipDirectory
 }
 
-Uninstall-ChocolateyZipPackage 'sqljdbc' 'sqljdbc_9.4.0.0_*.zip'
+Uninstall-ChocolateyZipPackage 'sqljdbc' 'sqljdbc_9.4.1.0_*.zip'
 
 # Uninstall-ChocolateyZipPackage only removes child directories unpacked from
 # the archive so remove the main and parent directories if empty
