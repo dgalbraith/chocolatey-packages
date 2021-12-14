@@ -11,11 +11,15 @@ Kyma CLI is a command line tool which supports Kyma developers. It provides a se
 ## Features
 
 * Generates and displays the bash or zsh completion script
-* Launches the Kyma Console in a browser window
-* Installs Kyma on a cluster based on the current or specified release
-* Provisions a new cluster on a platform of your choice. Currently, this command supports cluster provisioning on GCP, Azure, Gardener, and Minikube
-* Runs and manages tests on a provisioned Kyma cluster. Using child commands, you can run tests, view test definitions, list and delete test suites, display test status, and fetch the logs of the tests
+* Launches the Kyma dashboard in a browser window
+* Creates a system on the Kyma cluster with the specified name
+* Deploys Kyma on a cluster based on the current or specified release
+* Imports certificates to local certificates storage or adds domains to the local host file
+* Provisions a new cluster on a platform of your choice. Currently, this command supports cluster provisioning on GCP, Azure, Gardener, and k3d
 * Shows the cluster version and the Kyma CLI version
+* Creates, applies and synchronizes local resources for you Function in the Kyma cluster
+* Runs a Function in Docker from local sources
+* [DEPRECATED] Runs and manages tests on a provisioned Kyma cluster. Using child commands, you can run tests, view test definitions, list and delete test suites, display test status, and fetch the logs of the tests
 
 ![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ed7c4cc026f0f3a9f578dddea34adee6e38e45f0/automatic/kyma-cli/screenshot.png)
 
@@ -24,7 +28,7 @@ Kyma CLI is a command line tool which supports Kyma developers. It provides a se
 Kyma CLI requires the following software:
 
 * [kubectl](https://github.com/kubernetes/kubectl)
-* [Minikube](https://www.chocolatey.org/packages/Minikube)
+* [k3d](https://www.chocolatey.org/packages/k3d)
 
 ## Notes
 
