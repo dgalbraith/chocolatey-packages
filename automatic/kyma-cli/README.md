@@ -7,7 +7,7 @@
 [![Software version](https://img.shields.io/badge/version-2.0.0-blue)](https://github.com/kyma-project/cli/releases/tags/2.0.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/kyma-cli?label=Chocolatey)](https://chocolatey.org/packages/kyma-cli)
 
-Kyma CLI is a command line tool that supports Kyma developers. It provides a set of commands you can use to install and manage Kyma.
+[Kyma CLI](https://github.com/kyma-project/cli) is a command line tool that supports [Kyma](https://kyma-project.io/) developers. It provides a set of commands you can use to install and manage [Kyma](https://kyma-project.io/).
 
 
 ## Features
@@ -16,8 +16,8 @@ Kyma CLI is a command line tool that supports Kyma developers. It provides a set
   * Installs and updates Kyma on a Kubernetes cluster supporting custom configuration
   * Shows the cluster version and the Kyma CLI version
 * Local Environment
-  * Provisions a local K3D cluster
-  * Launches the Kyma dashboard in a browser window
+  * Provisions a local k3d cluster
+  * Launches the Kyma Dashboard in a browser window
   * Imports certificates to local certificates storage
   * Generates hosts file entries
 * Serverless support
