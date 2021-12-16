@@ -24,8 +24,6 @@
   * Creates, applies and synchronizes local resources to Functions in a Kyma cluster
   * Runs a Function in Docker from local sources
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ed7c4cc026f0f3a9f578dddea34adee6e38e45f0/automatic/kyma-cli/screenshot.png)
-
 ## Prerequisites
 
 To use Kyma CLI, you must install the following software:
