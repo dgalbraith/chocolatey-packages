@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/AdExplorer.zip'
-  checksum      = '3f4137464df5156c629c8e1827151cbfc7fa99cc10c43e187d7899e6500791ec'
+  checksum      = '63c9a57ac7abd64f1fbae0949eebdd8b7132c1a0825c9fce487234aeb6a6f0be'
   checksumType  = 'sha256'
 }
 
