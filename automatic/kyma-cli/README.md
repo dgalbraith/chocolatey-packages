@@ -1,6 +1,5 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ed7c4cc026f0f3a9f578dddea34adee6e38e45f0/icons/kyma-cli.png" width="48" height="48"/>Kyma CLI - Install and Manage Kyma](<https://chocolatey.org/packages/kyma-cli>)
 
-
 [![GitHub license](https://img.shields.io/github/license/kyma-project/kyma-cli)](https://github.com/kyma-project/cli/blob/master/LICENCE/)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
@@ -8,7 +7,6 @@
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/kyma-cli?label=Chocolatey)](https://chocolatey.org/packages/kyma-cli)
 
 [Kyma CLI](https://github.com/kyma-project/cli) is a command line tool that supports [Kyma](https://kyma-project.io/) developers. It provides a set of commands you can use to install and manage [Kyma](https://kyma-project.io/).
-
 
 ## Features
 
@@ -27,7 +25,6 @@
 ## Prerequisites
 
 To use Kyma CLI, you must install the following software:
-
 
 * [kubectl](https://github.com/kubernetes/kubectl)
 * [k3d](https://www.chocolatey.org/packages/k3d)
