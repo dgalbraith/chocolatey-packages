@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/nushell/nushell/releases/tag/0.41.0
+  https://github.com/nushell/nushell/releases/tag/0.42.0
 
-and download the archive nu_0_41_0_windows.msi using the relevant link in the
+and download the archive nu_0_42_0_windows.msi using the relevant link in the
 assets section on the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://github.com/nushell/nushell/releases/download/0.41.0/nu_0_41_0_windows.msi
+  https://github.com/nushell/nushell/releases/download/0.42.0/nu_0_42_0_windows.msi
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 nu_0_41_0_windows.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f nu_0_41_0_windows.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 nu_0_42_0_windows.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f nu_0_42_0_windows.msi
 
-  File:     nu_0_41_0_windows.msi
+  File:     nu_0_42_0_windows.msi
   Type:     sha256
-  Checksum: B57AD484993DE3E9975293B3DC4598DAEB7F45917B0EDC287C2521D40C05501D
+  Checksum: AB3E671864D4F640BBE538B7FD55A48D632AAF8AEA4AF2A4226E29D03505447F
 
 Contents of file LICENSE.txt is obtained from https://github.com/nushell/nushell/blob/main/LICENSE
