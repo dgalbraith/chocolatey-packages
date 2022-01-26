@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-maven</id>
-    <version>0.34.2</version>
+    <version>0.35.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-maven</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Maven for Java VSCode Extension</title>
@@ -14,7 +14,7 @@
     <licenseUrl>https://marketplace.visualstudio.com/items/vscjava.vscode-maven/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/microsoft/vscode-maven/</projectSourceUrl>
-    <docsUrl>https://github.com/Microsoft/vscode-maven/blob/v0.34.2/README.md</docsUrl>
+    <docsUrl>https://github.com/Microsoft/vscode-maven/blob/v0.35.0/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/microsoft/vscode-maven/issues</bugTrackerUrl>
     <tags>maven java vscode-maven vscode microsoft</tags>
     <summary>Maven extension for VS Code</summary>
@@ -31,7 +31,7 @@
 
 ## Notes
 
-* This package requires Visual Studio Code 1.56.0 or newer.
+* This package requires Visual Studio Code 1.62.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
