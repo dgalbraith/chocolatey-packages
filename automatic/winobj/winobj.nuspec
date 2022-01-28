@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winobj</id>
-    <version>3.13</version>
+    <version>3.14</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/winobj</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>WinObj - Windows Sysinternals</title>

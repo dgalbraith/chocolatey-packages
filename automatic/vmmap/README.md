@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.31-blue)](https://docs.microsoft.com/sysinternals/downloads/vmmap)
+[![Software version](https://img.shields.io/badge/Source-v3.32-blue)](https://docs.microsoft.com/sysinternals/downloads/vmmap)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/vmmap?label=Chocolatey)](https://chocolatey.org/packages/vmmap)
 
 VMMap is a process virtual and physical memory analysis utility. It shows a breakdown of a process's committed virtual
