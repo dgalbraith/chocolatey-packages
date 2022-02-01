@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-proprietary-lightgrey)](https://www.jetbrains.com/legal/agreements/user.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v2021.3.2-blue.svg)](https://www.jetbrains.com/dotcover/download/#section=commandline)
+[![Software version](https://img.shields.io/badge/Source-v2021.3.3-blue.svg)](https://www.jetbrains.com/dotcover/download/#section=commandline)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/dotcover-cli?label=Chocolatey)](https://chocolatey.org/packages/dotcover-cli)
 
 dotCover Command Line Tools is a free redistributable package which enables analyzing the code coverage outside of Visual Studio.
