@@ -5,6 +5,8 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/kyma-project/cli/releases/latest"
 
+$reVersion = '((?<=\\|-)(?<Version>([\d]+\.[\d]+\.[\d]+(\.[\d]+)?)))'
+
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
 }
@@ -12,13 +14,13 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "([\d]+\.[\d]+\.[\d]+)" = "$($Latest.Version)"
+      "$($reversion)" = "$($Latest.Version)"
     }
 
-    ".\legal\VERIFICATION.txt"      = @{
-      "([\d]+\.[\d]+\.[\d]+)" = "$($Latest.Version)"
-      "(Checksum32:\s)(.+)"   = "`${1}$($Latest.Checksum32)"
-      "(Checksum64:\s)(.+)"   = "`${1}$($Latest.Checksum64)"
+    ".\legal\VERIFICATION.txt" = @{
+      "$($reversion)"        = "$($Latest.Version)"
+      "(Checksum32:\s*)(.+)" = "`${1}$($Latest.Checksum32)"
+      "(Checksum64:\s*)(.+)" = "`${1}$($Latest.Checksum64)"
     }
   }
 }
@@ -27,7 +29,6 @@ function global:au_GetLatest {
   $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
   $reurl = '(kyma_Windows_(i386|x86_64).+zip)'
-  $reversion = '(\/(?<Version>([\d]+\.[\d]+\.[\d]+)))'
 
   $re32 = 'i386\.zip'
   $re64 = 'x86_64\.zip'
@@ -42,7 +43,7 @@ function global:au_GetLatest {
   $url64SegmentSize = $([System.Uri]$url64).Segments.Length
   $filename64 = $([System.Uri]$url64).Segments[$url64SegmentSize - 1]
 
-  $url64 -match $reversion
+  $url64 -match $reVersion
   $version = $Matches.Version
 
   return @{

@@ -24,10 +24,10 @@ Alternatively the distributions can be downloaded directly from
 
   File32:         kyma_Windows_i386.zip
   ChecksumType32: sha256
-  Checksum32: CD32342784335CFC8AC643526A361095FA692F88BC7F830F9C423352D2507464
+  Checksum32:     CD32342784335CFC8AC643526A361095FA692F88BC7F830F9C423352D2507464
 
   File64:         kyma_Windows_x86_64.zip
   ChecksumType64: sha256
-  Checksum64: BFB608D4D59E53E7FD7FA2BCA0D81B65F7524607677699EC49136D3482CC1574
+  Checksum64:     BFB608D4D59E53E7FD7FA2BCA0D81B65F7524607677699EC49136D3482CC1574
 
   Contents of file LICENSE.txt is obtained from https://github.com/kyma-project/cli/blob/master/LICENCE

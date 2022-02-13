@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ed7c4cc026f0f3a9f578dddea34adee6e38e45f0/icons/kyma-cli.png" width="48" height="48"/>Kyma CLI - Install and Manage Kyma](<https://chocolatey.org/packages/kyma-cli>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@d383fd7535734bf188270215b83a0aa2291e431e/icons/kyma-cli.png" width="48" height="48"/>Kyma CLI - Install and Manage Kyma](https://chocolatey.org/packages/kyma-cli)
 
 [![GitHub license](https://img.shields.io/github/license/kyma-project/kyma-cli)](https://github.com/kyma-project/cli/blob/master/LICENCE/)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
