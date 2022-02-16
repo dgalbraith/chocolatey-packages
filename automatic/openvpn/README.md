@@ -1,43 +1,69 @@
-# OpenVPN
-[![Build status](https://ci.appveyor.com/api/projects/status/ljn8uk100etk8dcc?svg=true)](https://ci.appveyor.com/project/wget/chocolatey-package-openvpn)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f88f45a98e56426605b776a6a57ce1e8211ccaa4/icons/openvpn.png" width="48" height="48" />OpenVPN - Open Source SSL VPN Solution](https://chocolatey.org/packages/openvpn)
 
-OpenVPN provides flexible VPN solutions to secure your data communications, whether it's for Internet privacy, remote access for employees, securing IoT, or for networking Cloud data centers.
+[![Software license](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://github.com/OpenVPN/openvpn/blob/master/COPYING)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/source-v2.5.4-blue.svg)](https://openvpn.net/community-downloads)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/openvpn?label=Chocolatey)](https://chocolatey.org/packages/openvpn)
+
+OpenVPN is a full-featured open source SSL VPN solution that accommodates a wide
+range of configurations, including remote access, site-to-site VPNs, Wi-Fi security,
+and enterprise-scale remote access solutions with load balancing, failover, and
+fine-grained access-controls. Starting with the fundamental premise that complexity
+is the enemy of security, OpenVPN offers a cost-effective, lightweight alternative
+to other VPN technologies that is well-adapted for the SME and enterprise markets.
+
+## Features
+
+* Tunnel any IP subnetwork or virtual ethernet adapter over a single UDP or TCP port
+* Configure a scalable, load-balanced VPN server farm using one or more machines which can handle thousands of dynamic connections from incoming VPN clients
+* Use all of the encryption, authentication, and certification features of the SSL library to protect your private network traffic as it transits the internet
+* Use any cipher, key size, or HMAC digest (for datagram integrity checking) supported by the SSL library
+* Choose between static-key based conventional encryption or certificate-based public key encryption
+* Use static, pre-shared keys or TLS-based dynamic key exchange
+* Use real-time adaptive link compression and traffic-shaping to manage link bandwidth utilization
+* Tunnel networks whose public endpoints are dynamic such as DHCP or dial-in clients
+* Tunnel networks through connection-oriented stateful firewalls without having to use explicit firewall rules
+* Tunnel networks over NAT
+* Create secure ethernet bridges using virtual tap devices
+* Control OpenVPN using a GUI
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0fe79d362c7502419f1479bd6614ada16b439e8b/automatic/openvpn/screenshot.png)
+
+## Package Parameters
+
+If any package parameters are supplied no defaults will be used - only supplied parameters will be applied. The
+following package parameter can be set:
+
+* `/InstallDir`       - install OpenVPN to the specified folder
+* `/AddToDesktop`     - add a desktop shortcut for the OpenVPN GUI
+* `/NoStartMenu`      - do not create start menu entries for OpenVPN
+* `/Gui`              - install the OpenVPN GUI by Mathias Sundman
+* `/OnLogon`          - launch the OpenVPN GUI on user logon
+* `/Service`          - install OpenVPN service wrappers
+* `/EasyRsa`          - install EasyRSA 3 scripts for X509 certificate management
+* `/TapDriver`        - install the TAP-Windows driver (NDIS6)
+* `/WintunDriver`     - install the layer 3 TUN driver for Windows
+* `/Documentation`    - install the OpenVPN documentation
+* `/OpenSSL`          - install OpelSSL utilities for generating public/private key pairs
+* `/SampleConfig`     - install OpenVPN client/server configuration examples
+
+eg. `choco install -y openvpn --package-parameters="/InstallDir=C:\Tools\OpenVPN /AddToDesktop /Gui /OnLogon /EasyRsa /TapDriver /WintunDriver /OpenSSL"`
+
+An installation with no parameters specified will use the same defaults as the installer other than there will be no desktop shortcut to the OpenVPN GUI:
+
+`choco install -y openvpn --package-parameters="/Gui /OnLogon /TapDriver /WintunDriver /Documentation /OpenSSL /SampleConfig"`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Documentation
+
+* For detailed information on OpenVPN, including examples, see the [man page](http://openvpn.net/man.html),
+  [the WIKI](https://community.openvpn.net/openvpn) or the [community resources](https://openvpn.net/community-resources)
+* For a sample VPN configuration, see http://openvpn.net/howto.html
 
 ## Notes
 
-* This Chocolatey package:
-  * installs the old tap driver (9.22.1) when Windows Server or Secure Boot is detected
-  * installs the new driver in other cases
-
-  These steps were needed in order to fix the following upstream bug:
-  * Upstream installer I601 included tap-windows6 driver 9.22.1 which had one security fix and dropped Windows Vista support.
-  * Upstream installer I602 reverted back to tap-windows 9.21.2 due to driver being rejected on freshly installed Windows 10 rev 1607 and later when Secure Boot was enabled. The failure was due to the new, more strict driver signing requirements required by Microsoft.
-
-* This Chocolatey package considers the following [upstream parameters](https://github.com/OpenVPN/openvpn-build/blob/c92af79befec86f21b257b5defba0becb3d7641f/windows-nsis/openvpn.nsi#L551). By default, when not specified, they are considered as being set to `1`.
-
-  * `/SELECT_OPENVPN`: Install OpenVPN user-space components, including openvpn.exe.
-  * `/SELECT_OPENVPNGUI`: Install OpenVPN GUI by Mathias Sundman.
-  * `/SELECT_TAP`: Install/upgrade the TAP virtual device driver.
-  * `/SELECT_EASYRSA`: Install OpenVPN RSA scripts for X509 certificate management. Due to popular demand and contrary to the upstream installer, this Chocolatey package is installing them by default.
-  * `/SELECT_OPENSSLDLLS`: Install OpenSSL DLLs locally (may be omitted if DLLs are already installed globally).
-  * `/SELECT_LZODLLS`: Install LZO DLLs locally (may be omitted if DLLs are already installed globally).
-  * `/SELECT_PKCS11DLLS`: Install PKCS#11 helper DLLs locally (may be omitted if DLLs are already installed globally).
-  * `/SELECT_SERVICE`: Install the OpenVPN service wrappers.
-  * `/SELECT_OPENSSL_UTILITIES`: Install the OpenSSL Utilities (used for generating public/private key pairs).
-  * `/SELECT_PATH`: Add OpenVPN executable directory to the current user's PATH.
-  * `/SELECT_SHORTCUTS`: Add OpenVPN shortcuts to the current user's desktop and start menu.
-  * `/SELECT_ASSOCIATIONS`: Register OpenVPN config file association (*.ovpn).
-  * `/SELECT_LAUNCH`: Launch OpenVPN GUI on user logon.
-
-* Setting options to `0` while previous installations defined them to `1` won't necessarily disable/remove the feature. This hugely depends on the underling upstream installer. e.g. if you set `/SELECT_TAP=0` while the TAP driver has been previously installed by other means, this doesn't automatically uninstall the TAP driver.
-
-* Using these parameters is done [like described in the Chocolatey docs](https://chocolatey.org/docs/how-to-parse-package-parameters-argument#installing-with-package-parameters). e.g. to prevent desktop and start menu shortcuts and file associations from being created, use the following command:
-  ```
-  choco install openvpn --params "'/SELECT_SHORTCUTS=0 /SELECT_ASSOCIATIONS=0'"
-  ```
-
-## Contributions
-
-* This repository contains the sources of the [package OpenVPN](https://chocolatey.org/packages/openvpn/) for [Chocolatey, the package manager for Windows](https://chocolatey.org/).
-
-* Please report [here](https://github.com/wget/chocolatey-package-openvpn/issues) any issue you may encounter with this Chocolatey package.
+* The 32-bit version of OpenVPN will not run in a 64-bit environment and the installation will fail if forced with `--forceX86`
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

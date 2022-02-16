@@ -1,48 +1,66 @@
 ﻿import-module au
 
-$releases = "https://build.openvpn.net/downloads/releases/"
-$openvpnInstallerUrl = 'https://build.openvpn.net/downloads/releases/latest/openvpn-install-latest-stable.exe'
-$openvpnInstallerPgpSignatureUrl = 'https://build.openvpn.net/downloads/releases/latest/openvpn-install-latest-stable.exe.asc'
+$ErrorActionPreference = 'STOP'
 
-function global:au_SearchReplace {
-   @{
-        ".\tools\chocolateyInstall.ps1" = @{
-            "(^[$]openvpnInstallerHash\s*=\s*)('.*')"    = "`$1'$($Latest.openvpnInstallerHash)'"
-            "(^[$]openvpnInstallerPgpSignatureHash\s*=\s*)('.*')" = "`$1'$($Latest.openvpnInstallerPgpSignatureHash)'"
-        }
-    }
+$domain   = 'https://openvpn.net'
+$releases = "${domain}/community-downloads"
+
+$reUrl        = '.+?msi$'
+$re32         = 'OpenVPN.+-x86\.msi'
+$re64         = 'OpenVPN.+-amd64\.msi'
+$reChecksum32 = '(?<=Checksum32:\s+)(.+)'
+$reChecksum64 = '(?<=Checksum64:\s+)(.+)'
+$reVersion    = '(?<=[v|-])(?<Version>(\d+\.\d+\.\d+(\.\d+)?))'
+
+function global:au_BeforeUpdate {
+  Get-RemoteFiles -Purge -NoSuffix -Algorithm $Latest.ChecksumType
 }
 
-function au_BeforeUpdate {
-    # We can't rely on Get-RemoteChecksum as we want to have the files locally
-    # as well and this function will download a local copy of the file, just to
-    # compute its hashes, then drop it. We can't rely completely on
-    # Get-RemoteFiles either as that function is only taking Latest URLs (x64
-    # and x32) into account. The signatures are not supported.
-    # src.: https://github.com/majkinetor/au/tree/master/AU/Public
-    $client = New-Object System.Net.WebClient
-    $toolsPath = Resolve-Path tools
+function global:au_SearchReplace {
+  @{
+    "$($Latest.PackageName).nuspec" = @{
+      "$($reVersion)" = "$($Latest.Version)"
+    }
 
-    $filePath = "$toolsPath/openvpn_installer.exe"
-    Write-Host "Downloading installer to '$filePath'..."
-    $client.DownloadFile($openvpnInstallerUrl, $filePath)
-    $Latest.openvpnInstallerHash = Get-FileHash $filePath -Algorithm sha512 | % Hash
+    ".\README.md" = @{
+      "$($reVersion)" = "$($Latest.Version)"
+    }
 
-    $filePath = "$toolsPath/openvpn_installer.exe.asc"
-    Write-Host "Downloading installer signature to '$filePath'..."
-    $client.DownloadFile($openvpnInstallerPgpSignatureUrl, $filePath)
-    $Latest.openvpnInstallerPgpSignatureHash = Get-FileHash $filePath -Algorithm sha512 | % Hash
+    ".\legal\VERIFICATION.txt" = @{
+      "$($re32)"         = "$($Latest.FileName32)"
+      "$($reChecksum32)" = "$($Latest.Checksum32)"
+      "$($re64)"         = "$($Latest.FileName64)"
+      "$($reChecksum64)" = "$($Latest.Checksum64)"
+    }
+
+    ".\tools\chocolateyinstall.ps1" = @{
+      "$($re32)" = "$($Latest.FileName32)"
+      "$($re64)" = "$($Latest.FileName64)"
+    }
+  }
 }
 
 function global:au_GetLatest {
-    $versionPage = $releases + "latest/LATEST.txt"
-    $versionPage = Invoke-WebRequest -UseBasicParsing -Uri $versionPage
-    $version = $versionPage.Content -match "(?<=OpenVPN stable version: )[0-9.]+"
-    $version = $matches[0]
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
-    @{
-        version = $version
-    }
+  $urls = $downloadPage.links | where-object href -Match $reUrl | select-object -Expand href
+
+  $url32      = $urls -Match $re32 | select-object -First 1
+  $filename32 = $url32 -split '/' | select-object -Last 1
+
+  $url64      = $urls -Match $re64 | select-object -First 1
+  $fileName64 = $url64 -split '/' | select-object -Last 1
+
+  $version = $fileName64 -match $reVersion | foreach-object { $Matches.Version }
+
+  return @{
+    Url32        = $url32
+    Url64        = $url64
+    FileName32   = $fileName32
+    FileName64   = $fileName64
+    Version      = $version
+    ChecksumType = 'sha512'
+  }
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoReadme

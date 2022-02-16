@@ -1,45 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek
-     uppercase omega letter enclosed in quotation marks, you should use an
-     editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <metadata>
-        <id>openvpn</id>
-        <title>OpenVPN</title>
-        <version>2.4.5</version>
-        <authors>OpenVPN Technologies, Inc</authors>
-        <owners>wget, Okhoshi</owners>
-        <summary>OpenVPN is a multiplatform and open source VPN server and client solution</summary>
-        <description><![CDATA[
-This repository contains the sources of the [package OpenVPN](https://chocolatey.org/packages/openvpn/) for [Chocolatey, the package manager for Windows](https://chocolatey.org/).
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>openvpn</id>
+    <version>2.5.4</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/openvpn</packageSourceUrl>
+    <owners>dgalbraith,wget,Okhoshi</owners>
+    <title>OpenVPN - Open Source SSL VPN Solution</title>
+    <authors>OpenVPN Technologies, Inc</authors>
+    <projectUrl>https://openvpn.net/community</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f88f45a98e56426605b776a6a57ce1e8211ccaa4/icons/openvpn.png</iconUrl>
+    <copyright>Copyright (C) 2002-2021 OpenVPN Inc</copyright>
+    <licenseUrl>https://openvpn.net/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/OpenVPN/openvpn</projectSourceUrl>
+    <docsUrl>https://openvpn.net/community-resources</docsUrl>
+    <mailingListUrl>https://forums.openvpn.net</mailingListUrl>
+    <bugTrackerUrl>https://community.openvpn.net/openvpn/report/1</bugTrackerUrl>
+    <tags>openvpn vpn tunnel ssl</tags>
+    <summary>A full-featured open source SSL VPN solution</summary>
+    <description><![CDATA[
 
-[For more information, please refer to the instructions available in the parent repository](https://github.com/wget/chocolatey-packages).
+OpenVPN is a full-featured open source SSL VPN solution that accommodates a wide
+range of configurations, including remote access, site-to-site VPNs, Wi-Fi security,
+and enterprise-scale remote access solutions with load balancing, failover, and
+fine-grained access-controls. Starting with the fundamental premise that complexity
+is the enemy of security, OpenVPN offers a cost-effective, lightweight alternative
+to other VPN technologies that is well-adapted for the SME and enterprise markets.
+
+## Features
+
+* Tunnel any IP subnetwork or virtual ethernet adapter over a single UDP or TCP port
+* Configure a scalable, load-balanced VPN server farm using one or more machines which can handle thousands of dynamic connections from incoming VPN clients
+* Use all of the encryption, authentication, and certification features of the SSL library to protect your private network traffic as it transits the internet
+* Use any cipher, key size, or HMAC digest (for datagram integrity checking) supported by the SSL library
+* Choose between static-key based conventional encryption or certificate-based public key encryption
+* Use static, pre-shared keys or TLS-based dynamic key exchange
+* Use real-time adaptive link compression and traffic-shaping to manage link bandwidth utilization
+* Tunnel networks whose public endpoints are dynamic such as DHCP or dial-in clients
+* Tunnel networks through connection-oriented stateful firewalls without having to use explicit firewall rules
+* Tunnel networks over NAT
+* Create secure ethernet bridges using virtual tap devices
+* Control OpenVPN using a GUI
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0fe79d362c7502419f1479bd6614ada16b439e8b/automatic/openvpn/screenshot.png)
+
+## Package Parameters
+
+If any package parameters are supplied no defaults will be used - only supplied parameters will be applied. The
+following package parameter can be set:
+
+* `/InstallDir`       - install OpenVPN to the specified folder
+* `/AddToDesktop`     - add a desktop shortcut for the OpenVPN GUI
+* `/NoStartMenu`      - do not create start menu entries for OpenVPN
+* `/Gui`              - install the OpenVPN GUI by Mathias Sundman
+* `/OnLogon`          - launch the OpenVPN GUI on user logon
+* `/Service`          - install OpenVPN service wrappers
+* `/EasyRsa`          - install EasyRSA 3 scripts for X509 certificate management
+* `/TapDriver`        - install the TAP-Windows driver (NDIS6)
+* `/WintunDriver`     - install the layer 3 TUN driver for Windows
+* `/Documentation`    - install the OpenVPN documentation
+* `/OpenSSL`          - install OpelSSL utilities for generating public/private key pairs
+* `/SampleConfig`     - install OpenVPN client/server configuration examples
+
+eg. `choco install -y openvpn --package-parameters="/InstallDir=C:\Tools\OpenVPN /AddToDesktop /Gui /OnLogon /EasyRsa /TapDriver /WintunDriver /OpenSSL"`
+
+An installation with no parameters specified will use the same defaults as the installer other than creating a desktop shortcut:
+
+`choco install -y openvpn --package-parameters="/Gui /OnLogon /TapDriver /WintunDriver /Documentation /OpenSSL /SampleConfig"`
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Documentation
+
+* For detailed information on OpenVPN, including examples, see the [man page](http://openvpn.net/man.html),
+  [the WIKI](https://community.openvpn.net/openvpn) or the [community resources](https://openvpn.net/community-resources)
+* For a sample VPN configuration, see http://openvpn.net/howto.html
+
+## Notes
+
+* The 32-bit version of OpenVPN will not run in a 64-bit environment and the installation will fail if forced with `--forceX86`
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
 ]]></description>
-        <projectUrl>https://openvpn.net/index.php/open-source/</projectUrl>
-        <tags>openvpn community tunnel ssl admin</tags>
-        <copyright>OpenVPN Technologies, Inc</copyright>
-        <licenseUrl>https://openvpn.net/index.php/license.html</licenseUrl>
-        <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <!-- Important note about https://cdn.rawgit.com: Files are cached
-             permanently after the first request. Use commit URLs when updating
-             the icon. -->
-        <iconUrl>https://cdn.rawgit.com/wget/chocolatey-package-openvpn/master/icon.png</iconUrl>
-        <dependencies>
-            <!-- The id is the lowest version required to make the package work.
-                 If we do not specify one, the chocolatey web validator will
-                 report a warning to be fixed in order to respect guidelines. -->
-            <dependency id="chocolatey" version="0.10.8" />
-            <dependency id="gpg4win-vanilla" version="2.3.4" />
-        </dependencies>
-        <releaseNotes>https://openvpn.net/index.php/open-source/documentation/release-notes.html</releaseNotes>
-        <!-- Specific to Chocolatey -->
-        <projectSourceUrl>https://github.com/OpenVPN/openvpn</projectSourceUrl>
-        <docsUrl>https://community.openvpn.net/openvpn/wiki</docsUrl>
-        <bugTrackerUrl>https://community.openvpn.net/openvpn/report/1</bugTrackerUrl>
-        <packageSourceUrl>https://github.com/wget/chocolatey-package-openvpn</packageSourceUrl>
-    </metadata>
-    <files>
-        <file src="tools\**" target="tools" exclude="**\utils\.git;**\utils\README.*" />
-        <file src="legal\**" target="legal" />
-    </files>
+    <releaseNotes>https://github.com/OpenVPN/openvpn/releases/tag/v2.5.4</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.5.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
 </package>
