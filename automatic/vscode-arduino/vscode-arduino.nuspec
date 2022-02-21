@@ -9,12 +9,12 @@
     <title>Arduino VSCode Extension</title>
     <authors>Microsoft</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e40e5a5cd5cb19d59ff6dfc195d74ab6df635b5a/icons/vscode-arduino.png</iconUrl>
-    <copyright>Copyright 2017-2019 Microsoft Corporation</copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@37a39ec04193c88886db685779f97edac192b21b/icons/vscode-arduino.png</iconUrl>
+    <copyright>Copyright 2017-2022 Microsoft Corporation</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/vsciot-vscode.vscode-arduino/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Microsoft/vscode-arduino</projectSourceUrl>
-    <docsUrl>https://github.com/microsoft/vscode-arduino/blob/master/README.md</docsUrl>
+    <docsUrl>https://github.com/microsoft/vscode-arduino/blob/main/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/microsoft/vscode-arduino/issues</bugTrackerUrl>
     <tags>arduino debugger sketch vscode microsoft</tags>
     <summary>Arduino for Visual Studio Code</summary>

@@ -1,6 +1,6 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e40e5a5cd5cb19d59ff6dfc195d74ab6df635b5a/icons/vscode-arduino.png" width="48" height="48" />Arduino VSCode Extension](<https://chocolatey.org/packages/vscode-arduino>)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@37a39ec04193c88886db685779f97edac192b21b/icons/vscode-arduino.png" width="48" height="48" />Arduino VSCode Extension](https://chocolatey.org/packages/vscode-arduino)
 
-[![GitHub license](https://img.shields.io/github/license/microsoft/vscode-arduino)](https://github.com/microsoft/vscode-arduino/blob/master/LICENSE.txt)
+[![GitHub License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/microsoft/vscode-arduino/blob/main/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
 [![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/vsciot-vscode.vscode-arduino?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino)

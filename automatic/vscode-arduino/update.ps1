@@ -18,6 +18,10 @@ function global:au_SearchReplace {
       "([0-9]+\.[0-9]+\.[0-9]+)" = "$($Latest.Version)"
     }
 
+    ".\tools\chocolateyunstall.ps1" = @{
+      "([0-9]+\.[0-9]+\.[0-9]+)" = "$($Latest.Version)"
+    }
+
     ".\legal\VERIFICATION.txt"      = @{
       "([0-9]+\.[0-9]+\.[0-9]+)" = "$($Latest.Version)"
       "(Checksum:\s*)(.*)"       = "`${1}$($Latest.Checksum32)"
