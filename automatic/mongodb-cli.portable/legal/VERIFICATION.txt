@@ -10,18 +10,18 @@ be verified by:
 
   https://github.com/mongodb/mongocli/releases/tag/v1.19.0
 
-and download the archive mongocli_1.19.0_windows_x86_64.msi using the links in the relevant
+and download the archive mongocli_1.19.0_windows_x86_64.zip using the links in the relevant
 asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/mongodb/mongocli/releases/download/v1.19.0/mongocli_1.19.0_windows_x86_64.msi
+  https://github.com/mongodb/mongocli/releases/download/v1.19.0/mongocli_1.19.0_windows_x86_64.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mongocli_1.19.0_windows_x86_64.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f mongocli_1.19.0_windows_x86_64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mongocli_1.19.0_windows_x86_64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f mongocli_1.19.0_windows_x86_64.zip
 
-  File:     mongocli_1.19.0_windows_x86_64.msi
+  File:     mongocli_1.19.0_windows_x86_64.zip
   Type:     sha256
   Checksum: BA32AE0518C970A493E442D8325CE3D5B98D33B3F626F6032AA3F6132DA1CD5A
 
