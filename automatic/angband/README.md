@@ -4,7 +4,7 @@
 [![GPLv2](https://img.shields.io/badge/GPLv2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v4.2.3-blue.svg)](https://github.com/angband/angband/releases/tag/4.2.3)
+[![Software version](https://img.shields.io/badge/Source-v4.2.4-blue.svg)](https://github.com/angband/angband/releases/tag/4.2.4)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/angband?label=Chocolatey)](https://chocolatey.org/packages/angband)
 
 Angband is a complex single player dungeon simulation. A player (you!) creates a character, choosing from a variety of

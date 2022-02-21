@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>angband</id>
-    <version>4.2.3</version>
+    <version>4.2.4</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/angband</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Angband - Single Player Dungeon Exploration</title>
@@ -52,7 +52,7 @@ To have Chocolatey remember parameters on upgrade, be sure to set `choco feature
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/angband/angband/releases/tag/4.2.3</releaseNotes>
+    <releaseNotes>https://github.com/angband/angband/releases/tag/4.2.4</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
