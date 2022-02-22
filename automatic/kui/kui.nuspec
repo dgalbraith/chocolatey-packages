@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kui</id>
-    <version>11.2.5</version>
+    <version>11.3.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/kui</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Kui - CLI Driven Graphics for Kubernetes</title>
@@ -46,7 +46,7 @@ commands **2-3 times faster** than `kubectl` itself.
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/IBM/kui/releases/tag/v11.2.5</releaseNotes>
+    <releaseNotes>https://github.com/IBM/kui/releases/tag/v11.3.0</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
