@@ -4,7 +4,7 @@ $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
-  FileFullPath = Join-Path $toolsDir 'DeDRM_tools_10.0.0.zip'
+  FileFullPath = Join-Path $toolsDir 'DeDRM_tools_10.0.1.zip'
   Destination  = $toolsDir
 }
 
