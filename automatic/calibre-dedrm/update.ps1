@@ -3,7 +3,7 @@
 $ErrorActionPreference = 'STOP'
 
 $domain   = 'https://github.com'
-$releases = "${domain}/apprenticeharper/DeDRM_tools/releases/latest"
+$releases = "${domain}/noDRM/DeDRM_tools/releases/latest"
 
 $re32      = '(DeDRM(?=[^\/])[^\/\s]+\d\.zip)'
 $reVersion = '(v)(?<Version>(\d+\.\d+\.\d+))'

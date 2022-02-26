@@ -1,9 +1,9 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ea0f988a4cfad988a1f4ede817d493f70da0b74a/icons/calibre-dedrm.png" width="48" height="48"/>DeDRM - Calibre DRM Removal Plugin](https://chocolatey.org/packages/calibre-dedrm)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@5dfbb270aae8af37c0dd9041d47bed6ceb5f4695/icons/calibre-dedrm.png" width="48" height="48"/>DeDRM - Calibre DRM Removal Plugin](https://chocolatey.org/packages/calibre-dedrm)
 
 [![GitHub license](https://img.shields.io/badge/license-GPLv3-blue)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v7.2.1-blue)](https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v7.2.1)
+[![Software version](https://img.shields.io/badge/Source-v10.0.0-blue)](https://github.com/noDRM/DeDRM_tools/releases/tag/v10.0.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/calibre-dedrm?label=Chocolatey)](https://chocolatey.org/packages/calibre-dedrm)
 
 DeDRM is a plugin for Calibre that removes DRM from ebooks as they are imported into Calibre.
@@ -28,14 +28,8 @@ parasite.
 
 ## Notes
 
-* Current versions of DeDRM are for Calibre 5.x+. For the earlier 4.x versions you must use [DeDRM 6.8.1](https://chocolatey.org/packages/calibre-dedrm/6.8.1).
-  
-  ```powershell
-  choco install calibre --version 4.23
-  choco pin add -n=calibre --version 4.23
-  choco install calibre-dedrm --version 6.8.1
-  choco pin add -n=calibre-dedrm --version 6.8.1
-  ```
-
+* The [icon](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@T5dfbb270aae8af37c0dd9041d47bed6ceb5f4695ODO/icons/calibre-dedrm.png) used for the
+  package was produced by the [Free Software Foundation](https://www.fsf.org) and is used as-is under the provisions
+  of the [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
