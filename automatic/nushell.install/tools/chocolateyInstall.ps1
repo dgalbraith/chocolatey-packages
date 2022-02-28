@@ -25,7 +25,7 @@ $uninstallKey    = Get-UninstallRegistryKey -SoftwareName 'Nu'
 $installLocation = $uninstallKey.InstallLocation
 
 Get-ChildItem $installLocation -recurse -include '*.exe' | foreach-object {
-  Install-BinFile -Name $_.Name -Path $_.FullName
+  Install-BinFile -Name ($_.Name -Replace '\..*') -Path $_.FullName
 }
 
 $pp = Get-PackageParameters
