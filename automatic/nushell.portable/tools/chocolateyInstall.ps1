@@ -4,7 +4,7 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $unzipArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  FileFullPath64 = Join-Path $toolsDir 'nu_0_34_0_windows.zip'
+  FileFullPath64 = Join-Path $toolsDir 'nu_0_44_0_windows.zip'
   Destination    = $toolsDir
 }
 
