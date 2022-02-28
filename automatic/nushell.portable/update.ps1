@@ -5,7 +5,8 @@ $ErrorActionPreference = 'STOP'
 function global:au_BeforeUpdate {
   $Latest.FileName64 = "$($Latest.FileName64Portable)"
   $Latest.Url64      = "$($Latest.Url64Portable)"
-  
+  $Latest.FileType   = 'zip'
+
   Get-RemoteFiles -Purge -NoSuffix
 }
 
@@ -15,7 +16,7 @@ function global:au_SearchReplace {
       "$($reVersion)"   = "$($Latest.Version)"
       "$($reCopyright)" = "$($Latest.UpdateYear)"
     }
-    
+
     ".\README.md" = @{
       "$($reVersion)" = "$($Latest.Version)"
     }
