@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dbgate.install</id>
+    <version>4.7.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/dbgate.install</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>DbGate - The Smartest (no)SQL Database Client (Install)</title>
+    <authors>Jan Prochazka</authors>
+    <projectUrl>https://dbgate.org</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@29da18f87fbac2bbe3e9321728c76c57dce0eb9a/icons/dbgate.png</iconUrl>
+    <copyright>Copyright Jan Prochazka</copyright>
+    <licenseUrl>https://github.com/dbgate/dbgate/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/dbgate/dbgate</projectSourceUrl>
+    <docsUrl>https://dbgate.org/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/dbgate/dbgate/issues</bugTrackerUrl>
+    <tags>database database-gui database-manager sql nosql dbgate</tags>
+    <summary>DbGate is a cross-platform (no)SQL database client</summary>
+    <description><![CDATA[
+
+DbGate is cross-platform database manager. It's designed to be simple to use and effective, when working
+with more databases simultaneously. But there are also many advanced features like schema compare, visual
+query designer, chart visualisation or batch export and import.
+
+## Features
+
+* Table data editing, with SQL change script preview
+* Edit table schema, indexes, primary and foreign keys
+* Compare and synchronize database structure
+* ER diagram
+* Light and dark theme
+* Master/detail views, foreign key lookups
+* Query designer
+* Form view for comfortable work with tables with many columns
+* JSON view on MongoDB collections
+* Explore tables, views, procedures, functions, MongoDB collections
+* SQL editor
+  * execute SQL script
+  * SQL code formatter
+  * SQL code completion
+  * Add SQL LEFT/INNER/RIGHT join utility
+* Mongo JavaScript editor, execute Mongo script (with NodeJs syntax)
+* Runs as application for Windows, Linux and Mac. Or in Docker container on server and in web Browser on client.
+* Import, export from/to CSV, Excel, JSON, XML
+* Free table editor - quick table data editing (cleanup data after import/before export, prototype tables etc.)
+* Archives - backup your data in JSON files on local filesystem (or on DbGate server, when using web application)
+* Charts, export chart to HTML page
+* Extensible plugin architecture
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@29da18f87fbac2bbe3e9321728c76c57dce0eb9a/automatic/dbgate/screenshot.png)
+
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/AddToDesktop` - add a desktop shortcut for DbGate.  The shortcut will only be added for the current user
+e.g. `choco install -y dbgate --package-parameters="/AddToDesktop"`
+* `/NoStartMenu`  - do not create a start menu entry for DbGate
+
+To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Notes
+
+* DbGate is only provided in a 64-bit version
+* The package will be installed for the current user only.  Please use the [portable package](https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/dbgate.portable)
+  to install for all users
+* If a new version is available it will be downloaded automatically by the Electron auto updater on startup
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]>
+    </description>
+    <releaseNotes>https://github.com/dbgate/dbgate/blob/master/CHANGELOG.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
