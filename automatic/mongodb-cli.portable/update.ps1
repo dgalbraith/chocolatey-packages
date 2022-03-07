@@ -32,4 +32,4 @@ function global:au_SearchReplace {
   }
 }
 
-update -ChecksumFor none -NoReadme
+update -ChecksumFor none -NoCheckUrl -NoReadme

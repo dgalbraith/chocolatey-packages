@@ -5,7 +5,7 @@ $ErrorActionPreference = 'STOP'
 function global:au_BeforeUpdate {
   $Latest.FileName64 = "$($Latest.FileName64Install)"
   $Latest.Url64      = "$($Latest.Url64Install)"
-  
+
   Get-RemoteFiles -Purge -NoSuffix
 }
 
@@ -31,4 +31,4 @@ function global:au_SearchReplace {
   }
 }
 
-update -ChecksumFor none -NoReadme
+update -ChecksumFor none -NoCheckUrl -NoReadme
