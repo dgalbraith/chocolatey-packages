@@ -29,7 +29,7 @@ function global:au_SearchReplace {
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      "$($re64)" = "`${1}$($Latest.Filename64)"
+      "$($re64)" = "$($Latest.Filename64)"
     }
   }
 }
@@ -41,7 +41,7 @@ function global:au_GetLatest {
   $filename64 = $url64 -split '/' | select-object -last 1
 
   $version = $url64 -match $reVersion | foreach-object { $Matches.Version }
-  
+
   # windows binaries are not released for all versions of this package so populate $version with the current version if
   # there are no windows binaries available.  The nuspec has not been parsed at this stage so the current version is not
   # available in the environment - hardcode here and use the package update process to rewrite
