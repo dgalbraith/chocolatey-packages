@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
-and download the package ms-python.python-2022.3.10701002.vsix using the Download Extension link
+and download the package ms-python.python-2022.3.10771003.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-python/vsextensions/python/2022.3.10701002/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-python/vsextensions/python/2022.3.10771003/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash ms-python.python-2022.3.10701002.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-python.python-2022.3.10701002.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash ms-python.python-2022.3.10771003.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-python.python-2022.3.10771003.vsix
 
   Type:     sha256
-  Checksum: 8CFEDC776E71C7356CA007F9B81FA1F5945E3C89BE9959C5B1D4B15C5A52701C
+  Checksum: C7830E24DBAC174D22F78197C7F4D9600C78C30266ED4FFC924A96F06145D25D
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-python.python/license
