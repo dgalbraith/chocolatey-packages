@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-spring-initializr</id>
-    <version>0.9.0</version>
+    <version>0.9.2022032503</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-spring-initializr</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Spring Initializr VSCode Extension</title>
@@ -33,7 +33,7 @@
 ## Notes
 
 * A JDK (version 1.8.0 or later) is required.
-* This package requires Visual Studio Code 1.37.0 or newer.
+* This package requires Visual Studio Code 1.63.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
