@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -extensionId 'ms-toolsai.jupyter@2022.3.1000861819'
+Install-VsCodeExtension -extensionId 'ms-toolsai.jupyter@2022.4.1000900406'
