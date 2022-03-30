@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://www.bluej.org/about/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v5.0.2-blue.svg)](https://www.bluej.org/index.html)
+[![Software version](https://img.shields.io/badge/Source-v5.0.3-blue.svg)](https://www.bluej.org/index.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/bluej?label=Chocolatey)](https://chocolatey.org/packages/bluej)
 
 BlueJ is a development environment that allows you to develop Java programs quickly and easily. Its main features are that it is:
