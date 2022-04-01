@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/mongodb/mongocli/releases/tag/v1.23.1
+  https://github.com/mongodb/mongocli/releases/tag/v1.24.0
 
-and download the archive mongocli_1.23.1_windows_x86_64.msi using the links in the relevant
+and download the archive mongocli_1.24.0_windows_x86_64.msi using the links in the relevant
 asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/mongodb/mongocli/releases/download/v1.23.1/mongocli_1.23.1_windows_x86_64.msi
+  https://github.com/mongodb/mongocli/releases/download/v1.24.0/mongocli_1.24.0_windows_x86_64.msi
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mongocli_1.23.1_windows_x86_64.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f mongocli_1.23.1_windows_x86_64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mongocli_1.24.0_windows_x86_64.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f mongocli_1.24.0_windows_x86_64.msi
 
-  File:     mongocli_1.23.1_windows_x86_64.msi
+  File:     mongocli_1.24.0_windows_x86_64.msi
   Type:     sha256
-  Checksum: 8870A9E36004CE8D2488C086D21ED3D348A989F65641841AA98D1E3AC9423CAF
+  Checksum: 0D73A543B32002891F79C4AE4D9448D7C640EC90A26739A910FEEE9B7345820B
 
 Contents of file LICENSE.txt is obtained from https://github.com/mongodb/mongocli/blob/master/LICENSE
