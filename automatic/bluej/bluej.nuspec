@@ -11,12 +11,12 @@
     <projectUrl>https://www.bluej.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/bluej.png</iconUrl>
     <copyright>M. Kölling and J. Rosenberg</copyright>
-    <licenseUrl>https://www.bluej.org/about/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://www.bluej.org/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://www.bluej.org/download/files/source/BlueJ-source-503.zip</projectSourceUrl>
     <docsUrl>https://www.bluej.org/doc/documentation.html</docsUrl>
     <mailingListUrl>http://blueroom.bluej.org/</mailingListUrl>
-    <bugTrackerUrl>http://bugs.bluej.org/projects/BLUEJ/issues</bugTrackerUrl>
+    <bugTrackerUrl>https://gitlab.bluej.org/bluej/bjgf</bugTrackerUrl>
     <tags>bluej java ide</tags>
     <summary>Beginners Java development environment that allows you to develop Java programs quickly and easily</summary>
     <description><![CDATA[
@@ -36,7 +36,7 @@ BlueJ is a development environment that allows you to develop Java programs quic
 
 * BlueJ requires a Java 11+ JDK which is bundled with the install.
 * Current versions of BlueJ provide 64-bit support only - for a 32-bit operating system use [BlueJ 4.1.4](https://chocolatey.org/packages/bluej/4.1.4).
-  
+
   ```powershell
   choco install bluej --version 4.1.4
   choco pin pin add -n=bluej --version 4.1.4
