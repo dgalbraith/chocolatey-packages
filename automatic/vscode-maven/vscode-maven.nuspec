@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-maven</id>
-    <version>0.35.2022031803</version>
+    <version>0.35.2022041103</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-maven</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Maven for Java VSCode Extension</title>
@@ -14,7 +14,7 @@
     <licenseUrl>https://marketplace.visualstudio.com/items/vscjava.vscode-maven/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/microsoft/vscode-maven/</projectSourceUrl>
-    <docsUrl>https://github.com/Microsoft/vscode-maven/blob/v0.35.1/README.md</docsUrl>
+    <docsUrl>https://github.com/Microsoft/vscode-maven/blob/v0.35.2022041103/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/microsoft/vscode-maven/issues</bugTrackerUrl>
     <tags>maven java vscode-maven vscode microsoft</tags>
     <summary>Maven extension for VS Code</summary>
