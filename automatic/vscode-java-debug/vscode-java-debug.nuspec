@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-java-debug</id>
-    <version>0.40.2022033102</version>
+    <version>0.40.2022041411</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-java-debug</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Debugger for Java VSCode Extension</title>
