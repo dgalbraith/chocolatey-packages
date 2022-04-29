@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-spring-boot-dashboard</id>
-    <version>0.3.2022032500</version>
+    <version>0.3.2022042900</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-spring-boot-dashboard</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Spring Boot Dashboard VSCode Extension</title>
