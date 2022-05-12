@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/en-us/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v6.14-blue)](https://docs.microsoft.com/sysinternals/downloads/accesschk)
+[![Software version](https://img.shields.io/badge/Source-v6.15-blue)](https://docs.microsoft.com/sysinternals/downloads/accesschk)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/accesschk?label=Chocolatey)](https://chocolatey.org/packages/accesschk)
 
 AccessChk is a command-line tool for viewing the effective permissions on files, registry keys, services, processes,

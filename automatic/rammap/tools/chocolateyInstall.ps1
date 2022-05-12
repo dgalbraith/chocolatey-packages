@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/RAMMap.zip'
-  checksum      = 'a003c2245a732e56dab1efc7273abb457f8054b9c9641d5d686de60b84533e98'
+  checksum      = '691fa6a7e43babc26e37f9d65a74e7e1ea17eb3d4440141aa7eab6cd5b4c39a9'
   checksumType  = 'sha256'
 }
 
