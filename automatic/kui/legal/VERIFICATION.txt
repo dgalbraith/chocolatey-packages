@@ -15,7 +15,7 @@ the links in the relevant assets section of the page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/IBM/kui/releases/download/v11.4.4/Kui-win32-x64.zip
+  https://github.com/IBM/kui/releases/download/v11.5.0/Kui-win32-x64.zip
 
 2. The installer can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Kui-win32-x64.zip
@@ -23,6 +23,6 @@ Alternatively the installer can be downloaded directly from
 
   File64:     Kui-win32-x64.zip
   Type64:     sha256
-  Checksum64: 6CA456D6EEADA046B683AD047F36D650B6F9391CAD1C20A7E0870136216B6F7A
+  Checksum64: E87886028810C64BCD3ABC4DC8E21C9D1031A990B24224183ACACB5B4D1400A4
 
 Contents of file LICENSE.txt is obtained from https://github.com/IBM/kui/blob/master/LICENSE
