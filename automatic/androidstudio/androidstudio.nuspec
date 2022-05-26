@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>androidstudio</id>
-    <version>2021.2.1.14</version>
+    <version>2021.2.1.15</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/androidstudio</packageSourceUrl>
     <owners>dgalbraith, Justin James, ludicrousByte</owners>
     <title>Android Studio (Install)</title>
