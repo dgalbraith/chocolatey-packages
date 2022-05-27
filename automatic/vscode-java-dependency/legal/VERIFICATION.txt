@@ -10,19 +10,19 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency
 
-and download the extension vscjava.vscode-java-dependency-0.19.2022050600.vsix using the Download Extension link
+and download the extension vscjava.vscode-java-dependency-0.19.2022052500.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-java-dependency/0.19.2022050600/
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-java-dependency/0.19.2022052500/
 vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-java-dependency-0.19.2022050600.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-java-dependency-0.19.2022050600.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-java-dependency-0.19.2022052500.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-java-dependency-0.19.2022052500.vsix
 
   Type:     sha256
-  Checksum: 75F0C8975BC92D66F5288841A0CEA68FC6ED94ED0F95BA00D3F5258C9B9F2818
+  Checksum: 0FD07DB12AE18FE2B758B1E2079BA9FBB6CC7A1780482FE5F37368566646B2C1
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscjava.vscode-java-dependency/license
