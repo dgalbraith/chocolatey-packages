@@ -24,13 +24,13 @@ Alternatively the archives can be downloaded directly from
 
   File32:         usbdeview.zip
   ChecksumType32: sha256
-  Checksum32:     6ED4ABB6A3E530E6352D74DF4E97C37961921D57B5850BBD804094CD491590B6
+  Checksum32:     C7E4787FC65F54E3F95522CD11667EADF8E265EE502D53D7522F73C7441DAFC5
 
   - Use powershell function 'Get-Filehash' - Get-Filehash usbdeview-x64.zip
   - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f usbdeview-x64.zip
 
   File64:         usbdeview-x64.zip
   ChecksumType64: sha256
-  Checksum64:     D42BC343BD09C324545B46DE69A0EE6B659FBA5299F9BE44BB06CA1129009F8D
+  Checksum64:     0ED3FAE58C46D70E5B8C1988C8780E5DE4310B80E23404669B8BB993D587BE48
 
   Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/usb_devices_view.html
