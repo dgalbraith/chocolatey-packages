@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-code-runner</id>
-    <version>0.11.7</version>
+    <version>0.11.8</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-code-runner</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Code Runner VSCode Extension</title>
