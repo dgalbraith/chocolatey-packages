@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\vscjava.vscode-spring-boot-dashboard-0.4.2022062200.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\vscjava.vscode-spring-boot-dashboard-0.4.2022062400.vsix"
