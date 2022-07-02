@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Free-green.svg)](https://www.mersenne.org/legal/#EULA)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v30.7.9-blue)](https://www.mersenne.org/download/)
+[![Software version](https://img.shields.io/badge/Source-v30.8.15-blue)](https://www.mersenne.org/download/)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/prime95?label=Chocolatey)](https://chocolatey.org/packages/prime95)
 
 The [Great Internet Mersenne Prime Search (GIMPS)](https://www.mersenne.org) is a collaborative project of volunteers
