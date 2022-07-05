@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cloc</id>
-    <version>1.92</version>
+    <version>1.94</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/cloc</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Count Lines of Code (CLOC)</title>
@@ -54,7 +54,7 @@ OpenBSD, Mac OS X, AIX, HP-UX, Solaris, IRIX, z/OS, and Windows.
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/AlDanial/cloc/releases/download/1.92/release_notes-1.92.txt</releaseNotes>
+    <releaseNotes>https://github.com/AlDanial/cloc/releases/download/1.94/release_notes-1.94.txt</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
