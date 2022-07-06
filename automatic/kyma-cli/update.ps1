@@ -5,7 +5,7 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/kyma-project/cli/releases/latest"
 
-$reVersion = '((?<=\\|-)(?<Version>([\d]+\.[\d]+\.[\d]+(\.[\d]+)?)))'
+$reVersion = '(?<Version>([\d]+\.[\d]+\.[\d]+(\.[\d]+)?))'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
