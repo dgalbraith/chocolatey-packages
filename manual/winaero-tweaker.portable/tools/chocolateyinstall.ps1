@@ -6,12 +6,12 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   fileType      = 'zip'
-  url           = 'https://winaero.com/downloads/winaerotweaker.zip'
-  checksum      = 'AFF82AE47D93DA0CA329D560A2B76FDBC47077B5DCA5B1BC840979AFBA5EE270'
+  url           = 'https://winaerotweaker.com/download/winaerotweaker.zip'
+  checksum      = '137A628D2CA222BA42FCFB3696FEFE93012A13ECCD4F4408E7FFDAC33CD7D56F'
   checksumType  = 'sha256'
   options = @{
     headers = @{
-      referer = "https://winaero.com/download-winaero-tweaker"
+      referer = 'https://winaerotweaker.com/'
     }
   }
 }
