@@ -6,10 +6,10 @@ $domain   = 'https://github.com'
 $releases = "${domain}/nushell/nushell/releases/latest"
 
 $reChecksum  = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
-$reCopyright = '(?<=(Copyright\s(?<CopyrightFrom>[\d]{4})-))(?<CopyrightTo>[\d]{4})'   
+$reCopyright = '(?<=(Copyright\s(?<CopyrightFrom>[\d]{4})-))(?<CopyrightTo>[\d]{4})'
 $reInstall   = "(?<=\d\/|\s|')(?<Filename>(n.+w.+msi))"
 $rePortable  = "(?<=\d\/|\s|')(?<Filename>(n.+w.+zip))"
-$reVersion   = '(?<=v|\[|\/|_)(?<Version>([\d]+\.[\d]+\.[\d](\.(?=\d)\d+)?))'
+$reVersion   = '(?<=v|\[|\/|-)(?<Version>([\d]+\.[\d]+\.[\d](\.(?=\d)\d+)?))'
 
 function global:au_BeforeUpdate {
 }
@@ -37,7 +37,7 @@ function global:au_GetLatest {
   $fileName64Portable = $url64Portable -split '/' | select-object -last 1
 
   $updateYear = (Get-Date).ToString('yyyy')
-  $version    = $fileName64Portable -replace '(?<Digits>\d+)_','${Digits}.' -match $reVersion | foreach-object { $Matches.Version }
+  $version    = $fileName64Portable -match $reVersion | foreach-object { $Matches.Version }
 
   return @{
     Url64Install       = $url64Install
