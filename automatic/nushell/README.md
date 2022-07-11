@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/github/license/nushell/nushell)](https://github.com/nushell/nushell/blob/main/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v0.63.0-blue.svg)](https://github.com/nushell/nushell/releases/tag/0.63.0)
+[![Software version](https://img.shields.io/badge/Source-v0.64.0-blue.svg)](https://github.com/nushell/nushell/releases/tag/0.64.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/nushell?label=Chocolatey)](https://chocolatey.org/packages/nushell)
 
 Nushell, or Nu for short, is a new shell that takes a modern, structured approach to your commandline. It works
@@ -25,13 +25,13 @@ plugin system
 
 The following package parameter can be set:
 
-* `/AddToDesktop` - add a desktop shortcuts for Nu Shell.  By default the shortcuts will be added for all users  
+* `/AddToDesktop` - add a desktop shortcuts for Nu Shell.  By default the shortcuts will be added for all users
 e.g. `choco install nushell.install --package-parameters="/AddToDesktop"`
 * `/AddToStartMenu` - add entries to the Start Menu for Koodoo Reader.  By default the shortcut will be added for all
-users  
+users
 e.g. `choco install nushell.install --package-parameters="/AddToStartMenu"`
 * `/User` - where the user parameter is specified any shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`)
-will only be added for the current user  
+will only be added for the current user
 e.g. `choco install nushell.install --package-parameters="/AddToDesktop /User"`
 
 To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.

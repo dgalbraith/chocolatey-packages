@@ -5,14 +5,14 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
   SoftwareName   = 'Nu'
-  File64         = Join-Path $toolsDir 'nu_0_63_0_windows.msi'
+  File64         = Join-Path $toolsDir 'nu-0.64.0-x86_64-pc-windows-msvc.msi'
   FileType       = 'msi'
   SilentArgs     = '/qn /norestart'
   ValidExitCodes = @(0, 3010, 1641)
 }
 
 # cache the path prior to package install so we can restore it - the installer
-# adds the bin directory form the install to the path but we will be using shims
+# adds the bin directory from the install to the path but we will be using shims
 # so this is not needed
 $path = Get-EnvironmentVariable -name 'Path' -scope 'Machine' -PreserveVariables
 
