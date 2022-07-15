@@ -8,22 +8,22 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/noDRM/DeDRM_tools/releases/tag/v10.0.2
+  https://github.com/noDRM/DeDRM_tools/releases/tag/v10.0.3
 
-and download the archive DeDRM_tools_10.0.2.zip using the relevant links in the
+and download the archive DeDRM_tools_10.0.3.zip using the relevant links in the
 asset section of the distribution page.
 
 Alternatively the distribution can be downloaded directly from
 
-  https://github.com/noDRM/DeDRM_tools/releases/tag/v10.0.2/DeDRM_tools_10.0.2.zip
+  https://github.com/noDRM/DeDRM_tools/releases/tag/v10.0.3/DeDRM_tools_10.0.3.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash DeDRM_tools_10.0.2.zip
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f DeDRM_tools_10.0.2.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash DeDRM_tools_10.0.3.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f DeDRM_tools_10.0.3.zip
 
-  File:         DeDRM_tools_10.0.2.zip
+  File:         DeDRM_tools_10.0.3.zip
   ChecksumType: sha256
-  Checksum:     2009ABE968460E41188454331901E62A57E459629B2DA9D7088FE003BF3E8CE3
+  Checksum:     8649E30EFB0C26E9CCA1131DF4C9D02D51ECCB5028D396CCE857F0FA75A62849
 
   Contents of file LICENSE.txt is obtained from https://github.com/noDRM/DeDRM_tools/blob/master/DeDRM_plugin/__init__.py
   and https://www.gnu.org/licenses/gpl-3.0.txt

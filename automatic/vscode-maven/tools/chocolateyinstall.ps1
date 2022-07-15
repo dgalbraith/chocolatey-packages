@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\vscjava.vscode-maven-0.36.2022071403.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\vscjava.vscode-maven-0.36.2022071503.vsix"

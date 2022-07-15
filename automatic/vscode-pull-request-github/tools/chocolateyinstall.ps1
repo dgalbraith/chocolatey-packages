@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\GitHub.vscode-pull-request-github-0.47.2022071309.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\GitHub.vscode-pull-request-github-0.47.2022071415.vsix"
