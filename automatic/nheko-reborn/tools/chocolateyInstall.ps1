@@ -4,7 +4,7 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  file          = "$toolsDir\nheko-v0.9.3-installer.exe"
+  file          = "$toolsDir\nheko-v0.10.0-installer.exe"
   silentArgs	= '--accept-licenses --confirm-command install'
 }
 
