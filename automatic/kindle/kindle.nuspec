@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kindle</id>
-    <version>1.37.65274</version>
+    <version>1.38.65290</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/kindle</packageSourceUrl>
     <owners>dgalbraith, Anthony Mastrean, mew1033</owners>
     <title>Kindle for PC - A Free Kindle Reader for your PC</title>
