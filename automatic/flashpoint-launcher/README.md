@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-green)](https://github.com/FlashpointProject/launcher/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v10.1.4-blue)](https://github.com/FlashpointProject/launcher/releases/tag/10.1.4)
+[![Software version](https://img.shields.io/badge/Source-v10.1.5-blue)](https://github.com/FlashpointProject/launcher/releases/tag/10.1.5)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/flashpoint-launcher?label=Chocolatey)](https://chocolatey.org/packages/flashpoint-launcher)
 
 The Flashpoint Launcher (FPL) is a desktop application made for browsing, storing and launching other applications
