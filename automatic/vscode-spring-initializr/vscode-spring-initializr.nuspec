@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-spring-initializr</id>
-    <version>0.10.2022072203</version>
+    <version>0.10.2022080203</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-spring-initializr</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Spring Initializr VSCode Extension</title>
