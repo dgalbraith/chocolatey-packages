@@ -4,9 +4,9 @@ $toolsDir   = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $installDir = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
 
 if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
-  $fileName = 'Flashpoint-10.1.5_win-ia32.7z'
+  $fileName = 'Flashpoint-10.1.6_win-ia32.7z'
 } else {
-  $fileName = 'Flashpoint-10.1.5_win-x64.7z'
+  $fileName = 'Flashpoint-10.1.6_win-x64.7z'
 }
 
 $archive = Join-Path $toolsDir $fileName
