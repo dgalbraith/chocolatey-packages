@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/dbgate/dbgate)](https://github.com/dbgate/dbgate/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v5.0.9-blue)](https://github.com/mongodb/mongocli/releases/tag/v5.0.9)
+[![Software version](https://img.shields.io/badge/Source-v5.1.0-blue)](https://github.com/mongodb/mongocli/releases/tag/v5.1.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/dbgate.portable?label=Chocolatey)](https://chocolatey.org/packages/dbgate.portable)
 
 DbGate is cross-platform database manager. It's designed to be simple to use and effective, when working
