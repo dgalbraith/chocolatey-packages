@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://github.com/microsoft/mssql-jdbc/blob/master/mssql-jdbc_auth_LICENSE)
 [![Maintenance status](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v10.2.1.0-blue.svg)](https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server)
+[![Software version](https://img.shields.io/badge/Source-v11.2.0.0-blue.svg)](https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/sqljdbc?label=Chocolatey)](https://chocolatey.org/packages/sqljdbc)
 
 Java Database Connectivity (JDBC) driver for use with SQL Server, and Azure SQL Database. The driver is available at no
