@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/en-us/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.52-blue)](https://docs.microsoft.com/sysinternals/downloads/coreinfo)
+[![Software version](https://img.shields.io/badge/Source-v3.53-blue)](https://docs.microsoft.com/sysinternals/downloads/coreinfo)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/coreinfo?label=Chocolatey)](https://chocolatey.org/packages/coreinfo)
 
 Coreinfo is a command-line utility that shows you the mapping between logical processors and the physical processor,
