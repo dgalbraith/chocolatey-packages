@@ -2,7 +2,7 @@
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$installer = Join-Path $toolsDir 'mongocli_1.25.0_windows_x86_64.msi'
+$installer = Join-Path $toolsDir 'mongocli_1.26.1_windows_x86_64.msi'
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
