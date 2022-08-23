@@ -51,7 +51,7 @@ following package parameter can be set:
 * `/AddToDesktop`     - add a desktop shortcut for the OpenVPN GUI
 * `/NoStartMenu`      - do not create start menu entries for OpenVPN
 * `/Gui`              - install the OpenVPN GUI by Mathias Sundman
-* `/OnLogon`          - launch the OpenVPN GUI on user logon
+* `/GuiOnLogon`       - launch the OpenVPN GUI on user logon
 * `/Service`          - install OpenVPN service wrappers
 * `/EasyRsa`          - install EasyRSA 3 scripts for X509 certificate management
 * `/TapDriver`        - install the TAP-Windows driver (NDIS6)
@@ -60,11 +60,11 @@ following package parameter can be set:
 * `/OpenSSL`          - install OpelSSL utilities for generating public/private key pairs
 * `/SampleConfig`     - install OpenVPN client/server configuration examples
 
-eg. `choco install -y openvpn --package-parameters="/InstallDir=C:\Tools\OpenVPN /AddToDesktop /Gui /OnLogon /EasyRsa /TapDriver /WintunDriver /OpenSSL"`
+eg. `choco install -y openvpn --package-parameters="/InstallDir=C:\Tools\OpenVPN /AddToDesktop /Gui /GuiOnLogon /EasyRsa /TapDriver /WintunDriver /OpenSSL"`
 
 An installation with no parameters specified will use the same defaults as the installer other than creating a desktop shortcut:
 
-`choco install -y openvpn --package-parameters="/Gui /OnLogon /TapDriver /WintunDriver /Documentation /OpenSSL /SampleConfig"`
+`choco install -y openvpn --package-parameters="/Gui /GuiOnLogon /TapDriver /WintunDriver /Documentation /OpenSSL /SampleConfig"`
 
 To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
