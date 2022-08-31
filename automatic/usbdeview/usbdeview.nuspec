@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>usbdeview</id>
-    <version>3.05</version>
+    <version>3.06</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/usbdeview</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>USBDeview - List USB Devices</title>
