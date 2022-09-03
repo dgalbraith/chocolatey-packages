@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/gephi/gephi/releases/tag/v0.9.5
+  https://github.com/gephi/gephi/releases/tag/v0.9.7
 
-and download the installer gephi-0.9.5-windows-x64.exe using the relevant links in
+and download the installer gephi-0.9.7-windows-x64.exe using the relevant links in
 the asset section of the distribution page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/gephi/gephi/releases/download/v0.9.5/gephi-0.9.5-windows-x64.exe
+  https://github.com/gephi/gephi/releases/download/v0.9.7/gephi-0.9.7-windows-x64.exe
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash gephi-0.9.5-windows-x64.exe
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f gephi-0.9.5-windows-x64.exe
+  - Use powershell function 'gephi-0.9.7-windows-x64.exe
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f gephi-0.9.7-windows-x64.exe
 
-  File:         gephi-0.9.5-windows-x64.exe
+  File:         gephi-0.9.7-windows-x64.exe
   ChecksumType: sha256
-  Checksum:     6132FC3D11378A164D78E72256978B7E422D0FDD3C206C9227D9DFCD1C26B0B1
+  Checksum:     7390F8C5159C69A9EA0BD3E3C9E92C071AC62661470C8E3B79B4346CA53C792B
 
 Contents of file LICENSE.txt is obtained from https://github.com/gephi/gephi/blob/master/modules/application/src/main/app-resources/COPYING.txt

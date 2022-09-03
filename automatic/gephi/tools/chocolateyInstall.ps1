@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir  = (Split-Path -parent $MyInvocation.MyCommand.Definition)
-$installer = Join-Path $toolsDir 'gephi-0.9.5-windows-x64.exe'
+$installer = Join-Path $toolsDir 'gephi-0.9.7-windows-x64.exe'
 
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 

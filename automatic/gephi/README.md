@@ -4,7 +4,7 @@
 [![Github license](https://img.shields.io/badge/GPLv3-blue.svg)](https://github.com/gephi/gephi/blob/master/gpl-3.0.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v0.9.5-blue)](https://github.com/gephi/gephi/releases/tag/v0.9.5)
+[![Software version](https://img.shields.io/badge/Source-v0.9.7-blue)](https://github.com/gephi/gephi/releases/tag/v0.9.7)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/gephi?label=Chocolatey)](https://chocolatey.org/packages/gephi)
 
 Gephi is an interactive visualization and exploration platform for all kinds of networks and complex systems, dynamic
