@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gephi</id>
-    <version>0.9.4</version>
+    <version>0.9.5</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/gephi</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Gephi - The Open Graph Viz Platform</title>
@@ -47,7 +47,7 @@ Platform and can be extended or reused easily through well-written APIs.
 If any package parameters are supplied no defaults will be used - only supplied parameters will be applied. The
 following package parameter can be set:
 
-* `/InstallDir`       -install Gephi to the specified folder.
+* `/InstallDir`       - install Gephi to the specified folder.
 * `/AddToDesktop`     - add a desktop shortcut
 * `/AddToQuickLaunch` - add a quick launch shortcut
 * `/AssociateGephi`   - add file association for Gephi Project files (.gephi)
@@ -63,18 +63,13 @@ To have Chocolatey remember parameters on upgrade, be sure to set `choco feature
 
 ## Notes
 
-* Requires an installation of Java 1.8+ to be available on the machine with `JDK_HOME` set to reflect the location.
-* This location will be written to `etc\gephi.conf` located under the install directory and will not be updated if
-  `JAVA_HOME` is subsequently modified
-* If `JAVA_HOME` is modified the install can be updated by editing the configuration file `etc\gephi.conf` directly
-  and updating the `jdkhome` setting to reflect or simply uninstalling and re-installing the Gephi package.
 * The installer is a combined installer containing both 32 and 64-bit versions and will always install according to the
   bitness of the OS.
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/gephi/gephi/releases/tag/v0.9.4</releaseNotes>
+    <releaseNotes>https://github.com/gephi/gephi/releases/tag/v0.9.5</releaseNotes>
     <dependencies />
   </metadata>
   <files>

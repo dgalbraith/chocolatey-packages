@@ -5,9 +5,9 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/gephi/gephi/releases/latest"
 
-$reChecksum = '(Checksum:\s*)(?<Checksum>(.+))'
-$reFileName = "(?<FileName>((?<=('|\s|\d\/))g.+\.exe))"
-$reUrl      = '.+\.exe'
+$reChecksum = '(?<=(Checksum:\s{5}))(?<Checksum>(.+))'
+$reFileName = "(?<FileName>((?<=('|\s|\d\/))g.+-x64\.exe))"
+$reUrl      = '.+x64\.exe'
 $reVersion  = '(?<Version>((?<=v)\d+\.\d+\.\d+))'
 
 function global:au_BeforeUpdate {
@@ -30,7 +30,7 @@ function global:au_SearchReplace {
 
     ".\legal\VERIFICATION.txt" = @{
       "$($reFileName)" = "$($Latest.Filename)"
-      "$($reChecksum)" = "`${1}$($Latest.Checksum64)"
+      "$($reChecksum)" = "$($Latest.Checksum64)"
       "$($reVersion)"  = "$($Latest.Version)"
     }
   }
@@ -46,8 +46,9 @@ function global:au_GetLatest {
   return @{
     Url64    = $url
     FileName = $fileName
+    FileType = 'exe'
     Version  = $version
   }
 }
 
-update -ChecksumFor none -NoReadme -NoCheckUrl
+update -ChecksumFor none -NoReadme
