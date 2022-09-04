@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  http://wsr.imagej.net/distros/win/
+
+and download the installer ij152-win-java8.zip using the relevant links in the
+asset section of the distribution page.
+
+Alternatively the distribution can be downloaded directly from
+
+  http://wsr.imagej.net/distros/win/ij152-win-java8.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash ij152-win-java8.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ij152-win-java8.zip
+
+  File:         ij152-win-java8.zip
+  ChecksumType: sha256
+  Checksum:     ACE9FAEDCB0BCCD9EE821A956CE52CAB295F781E70D7F62F0F6807EA98999ED9
+
+  Contents of file LICENSE.txt is obtained from https://imagej.nih.gov/ij/disclaimer.html
