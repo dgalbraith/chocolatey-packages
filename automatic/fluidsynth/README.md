@@ -27,5 +27,6 @@ instruments.
 
 ## Notes
 
+* Package files are extracted to the `$env:ChocolateyToolsLocation` as determined by the `Get-ToolsLocation` function
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
