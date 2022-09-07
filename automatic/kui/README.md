@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/IBM/kui)](https://github.com/IBM/kui/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v11.5.0-blue.svg)](https://github.com/IBM/kui/releases/tag/v11.5.0)
+[![Software version](https://img.shields.io/badge/Source-v12.0.0-blue.svg)](https://github.com/IBM/kui/releases/tag/v12.0.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/kui?label=Chocolatey)](https://chocolatey.org/packages/kui)
 
 We love CLIs, and think they are critical for interacting in a flexible way with the cloud. We need the power to go off
