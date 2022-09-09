@@ -4,24 +4,31 @@ Import-Module ..\..\scripts\vs-marketplace\VS-Marketplace.psd1
 $extension = 'vscode-maven'
 $publisher = 'vscjava'
 
+$reChecksum      = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
+$reCopyright     = '(?<=(<copyright>)).+(?=\<)'
+$reFileName32    = '(?<=\\|\s)(?<FileName>vscjava.+\.vsix)'
+$reVersion       = '(?<=\/)(?<Version>([\d]+\.[\d]+\.[\d]+\.?[\d]*))'
+$reVSCodeVersion = '(?<=(Visual Studio Code ))(?<Version>[0-9]+\.[0-9]+\.[0-9]+\.?[\d]*)(?=( or newer))'
+
 function global:au_SearchReplace {
   @{
     "$($Latest.PackageName).nuspec" = @{
-      "(/v)([0-9]+\.[0-9]+\.[0-9]+)(/)"                          = "`${1}$($Latest.Version)/"
-      "(Visual Studio Code )([0-9]+\.[0-9]+\.[0-9]+)( or newer)" = "`${1}$($Latest.VSCodeVersion)`${3}"
+      "$($reCopyright)"     = "$($Latest.Copyright)"
+      "$($reVSCodeVersion)" = "$($Latest.VSCodeVersion)"
     }
 
     ".\README.md" = @{
-      "(Visual Studio Code )([0-9]+\.[0-9]+\.[0-9]+)( or newer)" = "`${1}$($Latest.VSCodeVersion)`${3}"
+      "$($reVSCodeVersion)" = "$($Latest.VSCodeVersion)"
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      "([0-9]+\.[0-9]+\.[0-9]+)" = "$($Latest.Version)"
+      "$($reFileName32)" = "$($Latest.FileNameBase)"
     }
 
     ".\legal\VERIFICATION.txt"      = @{
-      "([0-9]+\.[0-9]+\.[0-9]+)" = "$($Latest.Version)"
-      "(Checksum:\s*)(.*)"       = "`${1}$($Latest.Checksum32)"
+      "$($reVersion)"    = "$($Latest.Version)"
+      "$($reFileName32)" = "$($Latest.FileNameBase)"
+      "$($reChecksum)"   = "$($Latest.Checksum32)"
     }
   }
 }

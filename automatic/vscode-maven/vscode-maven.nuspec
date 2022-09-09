@@ -14,7 +14,7 @@
     <licenseUrl>https://marketplace.visualstudio.com/items/vscjava.vscode-maven/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/microsoft/vscode-maven/</projectSourceUrl>
-    <docsUrl>https://github.com/Microsoft/vscode-maven/blob/v0.38.2022082703/README.md</docsUrl>
+    <docsUrl>https://github.com/Microsoft/vscode-maven#readme</docsUrl>
     <bugTrackerUrl>https://github.com/microsoft/vscode-maven/issues</bugTrackerUrl>
     <tags>maven java vscode-maven vscode microsoft</tags>
     <summary>Maven extension for VS Code</summary>
@@ -40,7 +40,7 @@
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/microsoft/vscode-maven/blob/master/CHANGELOG.md</releaseNotes>
+    <releaseNotes>https://marketplace.visualstudio.com/items/vscjava.vscode-maven/changelog</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.1.0" />
     </dependencies>
