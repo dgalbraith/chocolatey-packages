@@ -3,15 +3,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-edge-debug</id>
-    <version>1.0.14</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-edge-debug</packageSourceUrl>
+    <version>1.0.15</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/vscode-edge-debug</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Debugger for Edge VSCode Extension</title>
     <authors>Microsoft</authors>
-    <projectUrl>https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge</projectUrl>
+    <projectUrl>https://github.com/microsoft/vscode-edge-debug2</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@236a257aaf4920b7b1b4c6b0cd29eca8c5026e91/icons/vscode-edge-debug.png</iconUrl>
     <copyright>Copyright 2016-2020 Microsoft Corporation</copyright>
-    <licenseUrl>https://marketplace.visualstudio.com/items/msjsdiag.debugger-for-edge/license</licenseUrl>
+    <licenseUrl>https://github.com/microsoft/vscode-edge-debug2/blob/main/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/microsoft/vscode-edge-debug2</projectSourceUrl>
     <docsUrl>https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md</docsUrl>
@@ -20,7 +20,11 @@
     <summary>Debug your JavaScript code in the Microsoft Edge browser</summary>
     <description><![CDATA[A VS Code extension to debug your JavaScript code in the Microsoft Edge browser. This is also used to enable JavaScript debugging inside the Microsoft Edge browser when launched from ASP.Net Projects in Visual Studio.
 
-**Note:** This extension currently supports both Microsoft Edge (Chromium) and Microsoft Edge (EdgeHTML). This extension can debug any version of Microsoft Edge (Chromium) but only some versions of Microsoft Edge (EdgeHTML). To see if your Windows version supports debugging Microsoft Edge (EdgeHTML) via Edge DevTools Protocol, please refer [here](https://docs.microsoft.com/en-us/microsoft-edge/devtools-protocol/).
+**Note:** This extension has been deprecated as Visual Studio Code now has a [bundled JavaScript Debugger](https://github.com/microsoft/vscode-js-debug) that
+covers the same functionality. It is a debugger that debugs Node.js, Chrome, Edge (Chromium), WebView2, VS Code extensions, and more. You can safely
+un-install this extension and you will still be able to have the functionality you need.
+
+Note that the new bundled debugger only supports Edge (Chromium), and does not support legacy Microsoft Edge (EdgeHTML). For debugging legacy Edge, you will still need this extension.
 
 ## Supported features
 
@@ -35,7 +39,7 @@
 * Debugging web workers
 * Any features that aren't script debugging
 
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@236a257aaf4920b7b1b4c6b0cd29eca8c5026e91/automatic/vscode-edge-debug/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@2f53ef5e87499f4414ca9e86cf314e14b02ffedf/manual/vscode-edge-debug/screenshot.png)
 
 ## Notes
 
