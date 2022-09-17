@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-intellicode</id>
-    <version>1.2.25</version>
+    <version>1.2.27</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-intellicode</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>IntelliCode VSCode Extension</title>
