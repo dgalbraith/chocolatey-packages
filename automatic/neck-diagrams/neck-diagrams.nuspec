@@ -10,7 +10,7 @@
     <authors>Digital Software Technology Ltd</authors>
     <projectUrl>https://www.neckdiagrams.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@aaced40197b4b4f40922fd84260d77cd7214efc9/icons/neck-diagrams.png</iconUrl>
-    <copyright>2008-2020 Digital Software Technology Ltd</copyright>
+    <copyright>Copyright 2008-2020 Digital Software Technology Ltd</copyright>
     <licenseUrl>https://www.neckdiagrams.com/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>neck-diagrams fretboard-diagram chord-chart chord-box-creator fretboard chord-box diagram trial</tags>
@@ -30,7 +30,7 @@
 
 * This package installs a trial of Neck Diagrams which is fully functional apart from:
   * can be run up to 20 times
-  * up to 8 fret boards per page
+  * up to 12 fret boards per page
   * print & export watermarks after 10 prints / exports
   * scale generator can be used up to 10 times
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
