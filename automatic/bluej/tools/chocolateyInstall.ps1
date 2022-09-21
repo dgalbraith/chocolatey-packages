@@ -7,8 +7,8 @@ if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
   FileType       = 'msi'
-  Url64Bit       = 'https://www.bluej.org/download/files/BlueJ-windows-503.msi'
-  Checksum64     = '38b90aff427e4f6e6f49c8b1aac2e255c980762fd6a56061fc9866afe3210987'
+  Url64Bit       = 'https://www.bluej.org/download/files/BlueJ-windows-510.msi'
+  Checksum64     = 'fd3ab483f02b6544eaf51d1c56035ed1c9db2fd150807ef0d45311b77aa265b0'
   ChecksumType64 = 'sha256'
   SilentArgs     = '/quiet /qn /norestart'
   ValidExitCodes = @(0,3010)
