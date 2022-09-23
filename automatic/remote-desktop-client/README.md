@@ -32,5 +32,6 @@ Use and control a remote PC. With a Remote Desktop client, you can do all the th
 
 * This package is not for the Remote Desktop Connection (MSTSC) client that ships with Windows. It's for the new Remote Desktop (MSRDC) client.
 * This client currently only supports accessing remote apps and desktops from Azure Virtual Desktop and Windows 365.
+* The 32-bit version of the Remote Desktop Client will not run in a 64-bit environment and the installation will fail if forced with `--forceX86`
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

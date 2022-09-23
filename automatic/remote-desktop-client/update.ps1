@@ -9,11 +9,12 @@ $releases = 'https://learn.microsoft.com/en-us/windows-server/remote/remote-desk
 $re32         = 'W.+32-bit'
 $re64         = 'W.+64-bit'
 $reFileName   = '(?<FileName>Remote.+_(?<Version>[\d]+\.[\d]+\.[\d]+)\.[\d]+.+msi)'
-$reUrl32      = "(?<=url32[^']*')(?<Ur32>[^']*)"
-$reChecksum32 = "(?<=Checksum32[^']*')(?<Checksum>[^']*)"
+$reUrl32      = "(?<=url[^']*')(?<Ur32>[^']*)"
+$reChecksum32 = "(?<=Checksum[^']*')(?<Checksum>[^']*)"
 $reUrl64      = "(?<=url64[^']*')(?<Ur32>[^']*)"
 $reChecksum64 = "(?<=Checksum64[^']*')(?<Checksum>[^']*)"
 $reVersion    = "(?<=v)(?<Version>[\d]+\.[\d]+\.[\d]+\.?[\d]*)"
+
 function global:au_BeforeUpdate {
   $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32 -Algorithm 'sha256'
   $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64 -Algorithm 'sha256'
@@ -50,8 +51,8 @@ function global:au_GetLatest {
   $version    = $Matches.Version
 
   return @{
-    FileName32 = $fileName32
-    Url32      = $url32
+    FileName   = $fileName32
+    Url        = $url32
     FileName64 = $fileName64
     Url64      = $url64
     Version    = $version

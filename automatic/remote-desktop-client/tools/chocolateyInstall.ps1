@@ -1,5 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 
+if ((Get-ProcessorBits 64) -and $env:ChocolateyForceX86 -eq 'true') {
+  Write-Error -Message 'The x86 version of the Remote Desktop Cient cannot be installed on a 64-bit machine' -Category ResourceUnavailable
+}
+
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $silentArgs = '/qn /norestart'
@@ -18,9 +22,9 @@ $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
   SoftwareName   = $packageSearch
   FileType       = 'msi'
-  Url32          = 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE51gy7'
-  Checksum32     = '1429facaa9dc602514cef7247742b470e6b3c45e068034b8ade6cfdb1ff69954'
-  ChecksumType32 = 'sha256'
+  Url            = 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE51gy7'
+  Checksum       = '1429facaa9dc602514cef7247742b470e6b3c45e068034b8ade6cfdb1ff69954'
+  ChecksumType   = 'sha256'
   Url64          = 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE51gy5'
   Checksum64     = '570f83ef63cbbfb76a2e966d7031bf1b74eaf87fabe4e8d5cbd15717d3842f96'
   ChecksumType64 = 'sha256'
