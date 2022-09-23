@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>remote-desktop-client</id>
+    <version>1.2.3401</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/remote-desktop-client</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Remote Desktop Client (MSRDC)</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windowsdesktop</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@557720006f4961d40c36ae5ba129a6f923fb9a6e/icons/remote-desktop-client.png</iconUrl>
+    <copyright>Copyright Microsoft Corporation.  All Rights Reserved.</copyright>
+    <licenseUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ae31f3c2a0f3c01522a777ed8186a3b39f75c480/automatic/remote-desktop-client/legal/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windowsdesktop#workspaces</docsUrl>
+    <mailingListUrl>https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-client-faq</mailingListUrl>
+    <bugTrackerUrl>https://techcommunity.microsoft.com/t5/windows-server/ct-p/Windows-Server</bugTrackerUrl>
+    <tags>rds msrdc remote remote-desktop remote-desktop-client microsoft</tags>
+    <summary>Remote Desktop Services client (MSRDC)</summary>
+    <description><![CDATA[
+Use the Remote Desktop Services client (MSRDC) to access Windows apps and desktops remotely from a different Windows device.
+
+Use and control a remote PC. With a Remote Desktop client, you can do all the things with a remote PC that you can do with a physical PC, such as:
+
+* Use apps installed on the remote PC
+* Access files and network resources on the remote PC
+* Leave the apps open when you turn off the client
+
+## Package Parameters
+
+* `/User` - override the default behaviour and install the RDS Client for the current user only
+  e.g. `choco install -y remote-desktop-client --package-parameters="/User"`
+* `/AutoUpdate` - override the default package behaviour and configure the RDS Client to update automatically
+  e.g. `choco install -y remote-desktop-client --package-parameters="/AutoUpdate"`
+* `/AddToDesktop` - add a desktop shortcut for the RDS Client
+  e.g. `choco install -y remote-desktop-client --package-parameters="/AddToDesktop"`
+* `/NoStartMenu`  - do not create a start menu entry for the RDS Client
+  e.g. `choco install -y remote-desktop-client --package-parameters="/NoStartMenu"`
+
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@557720006f4961d40c36ae5ba129a6f923fb9a6e/automatic/remote-desktop-client/screenshot.png)
+
+## Notes
+
+* This package is not for the Remote Desktop Connection (MSTSC) client that ships with Windows. It's for the new Remote Desktop (MSRDC) client.
+* This client currently only supports accessing remote apps and desktops from Azure Virtual Desktop and Windows 365.
+* The 32-bit version of the Remote Desktop Client will not run in a 64-bit environment and the installation will fail if forced with `--forceX86`
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
+    <releaseNotes>https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windowsdesktop-whatsnew</releaseNotes>
+    <dependencies>
+        <dependency id="dotnetfx" version="4.6.2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
