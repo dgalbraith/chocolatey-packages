@@ -1,10 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
 
+$packageDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition | Split-Path -parent)"
+
 Uninstall-Binfile -name 'Authme' -path 'Authme.exe'
 
 Stop-Process -name 'Authme'
 
-Get-ChildItem $env:chocolateyPackageFolder\* -include authme*.Install.txt, authme*.txt | Foreach-Object {
+Get-ChildItem -Path "$packageDir\*" -include authme*.Install.txt, authme*.txt | Foreach-Object {
     $zipContentFile += Get-Content $_.fullname
   }
 
