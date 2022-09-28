@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>imagej</id>
-    <version>1.52</version>
+    <version>1.53</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/imagej</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>ImageJ - Image Processing and Analysis in Java</title>

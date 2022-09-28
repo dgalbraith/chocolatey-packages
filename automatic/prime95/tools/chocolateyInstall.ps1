@@ -7,7 +7,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
   $archive = Join-Path $toolsDir 'p95v308b15.win32.zip'
 } else {
-  $archive = Join-Path $toolsDir 'p95v308b15.win64.zip'
+  $archive = Join-Path $toolsDir 'p95v308b17.win64.zip'
 }
 
 $packageArgs = @{

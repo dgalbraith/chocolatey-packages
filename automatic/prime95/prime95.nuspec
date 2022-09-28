@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>prime95</id>
-    <version>30.8.15</version>
+    <version>30.8.17</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/prime95</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Great Internet Mersenne Prime Search (GIMPS)</title>

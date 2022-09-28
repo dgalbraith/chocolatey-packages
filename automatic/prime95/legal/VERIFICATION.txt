@@ -10,13 +10,13 @@ be verified by:
 
   https://www.mersenne.org/download/
 
-and download the package p95v308b15.win32.zip or p95v308b15.win64.zip using the
+and download the package p95v308b15.win32.zip or p95v308b17.win64.zip using the
 links in the relevant section of the page.
 
 Alternatively the packages can be downloaded directly from
 
   http://www.mersenne.org/ftp_root/gimps/p95v308b15.win32.zip
-  http://www.mersenne.org/ftp_root/gimps/p95v308b15.win64.zip
+  http://www.mersenne.org/ftp_root/gimps/p95v308b17.win64.zip
 
 2. The package can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash p95v308b15.win32.zip
@@ -26,12 +26,12 @@ Alternatively the packages can be downloaded directly from
   ChecksumType32: sha256
   Checksum32:     B44CB82305FBCA3749E525C71E22C065B0CC683C213918FE44B5F383C4F16591
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash p95v308b15.win64.zip
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f p95v308b15.win64.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash p95v308b17.win64.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f p95v308b17.win64.zip
 
-  File64:         p95v308b15.win64.zip
+  File64:         p95v308b17.win64.zip
   ChecksumType64: sha256
-  Checksum64:     F572714830FEEF12D6184557008704105D140372F319D0E91A1D2F8BA7F06F37
+  Checksum64:     200CE041D0E7F4BE04172BB3211B10831EEC465BE51FF4DE7F1AD93A3C1A5124
 
 Contents of file LICENSE.txt is obtained from https://www.mersenne.org/legal
 

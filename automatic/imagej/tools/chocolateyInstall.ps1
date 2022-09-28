@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir   = (Split-Path -parent $MyInvocation.MyCommand.Definition)
-$archive    = Join-Path $toolsDir 'ij152-win-java8.zip'
+$archive    = Join-Path $toolsDir 'ij153-win-java8.zip'
 $installDir = Get-ToolsLocation
 
 $packageArgs = @{
