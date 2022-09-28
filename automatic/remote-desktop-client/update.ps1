@@ -9,14 +9,14 @@ $releases = 'https://learn.microsoft.com/en-us/windows-server/remote/remote-desk
 $re32         = 'W.+32-bit'
 $re64         = 'W.+64-bit'
 $reFileName   = '(?<FileName>Remote.+_(?<Version>[\d]+\.[\d]+\.[\d]+)\.[\d]+.+msi)'
-$reUrl32      = "(?<=url[^']*')(?<Ur32>[^']*)"
-$reChecksum32 = "(?<=Checksum[^']*')(?<Checksum>[^']*)"
-$reUrl64      = "(?<=url64[^']*')(?<Ur32>[^']*)"
+$reUrl32      = "(?<=Url\s[^']*')(?<Url32>[^']*)"
+$reChecksum32 = "(?<=Checksum\s[^']*')(?<Checksum>[^']*)"
+$reUrl64      = "(?<=Url64[^']*')(?<Url64>[^']*)"
 $reChecksum64 = "(?<=Checksum64[^']*')(?<Checksum>[^']*)"
 $reVersion    = "(?<=v)(?<Version>[\d]+\.[\d]+\.[\d]+\.?[\d]*)"
 
 function global:au_BeforeUpdate {
-  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32 -Algorithm 'sha256'
+  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url   -Algorithm 'sha256'
   $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64 -Algorithm 'sha256'
 }
 
@@ -27,7 +27,7 @@ function global:au_SearchReplace {
     }
 
     ".\tools\chocolateyInstall.ps1" = @{
-      "$($reUrl32)"      = "$($Latest.Url32)"
+      "$($reUrl32)"      = "$($Latest.Url)"
       "$($reUrl64)"      = "$($Latest.Url64)"
       "$($reChecksum32)" = "$($Latest.Checksum32)"
       "$($reChecksum64)" = "$($Latest.Checksum64)"
