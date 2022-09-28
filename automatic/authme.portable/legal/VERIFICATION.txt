@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/Levminer/authme/releases/tag/3.3.3
+
+and download the archive authme-3.3.3-windows-x64-portable.zip using the links in the
+assets section of the page.
+
+Alternatively the archive can be downloaded directly from
+
+  https://github.com/Levminer/authme/releases/download/3.3.3/authme-3.3.3-windows-x64-portable.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-3.3.3-windows-x64-portable.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-3.3.3-windows-x64-portable.zip
+
+  File:     authme-3.3.3-windows-x64-portable.zip
+  Type:     sha256
+  Checksum: e2d3444d13c1b8e2e6e867303b9d6ad0f83cdd6f42f2253c9684b0191882d394
+
+Contents of file LICENSE.txt is obtained from https://github.com/Levminer/authme/blob/dev/LICENSE.md

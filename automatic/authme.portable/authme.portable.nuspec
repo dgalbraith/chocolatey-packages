@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>authme.portable</id>
+    <version>3.3.3</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/authme</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Authme - Simple 2FA Desktop Application</title>
+    <authors>Lőrik Levente</authors>
+    <projectUrl>https://authme.levminer.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@2dce4f4c50f91c7e2ed4b31988faaad635c19d44/icons/authme.png</iconUrl>
+    <copyright>Copyright Lőrik Levente</copyright>
+    <licenseUrl>https://github.com/Levminer/authme/blob/main/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Levminer/authme</projectSourceUrl>
+    <docsUrl>https://docs.authme.levminer.com/</docsUrl>
+    <bugTrackerUrl>https://github.com/Levminer/authme/issues</bugTrackerUrl>
+    <tags>authenticator 2fa 2fa-client 2fa-security totp google-authenticator electron</tags>
+    <summary>Simple 2FA desktop application</summary>
+    <description><![CDATA[
+
+Authme is a simple two-factor (2FA) authenticator application for the desktop with support for
+TOTP and Google Authenticator QR codes.
+
+## Features
+
+* **Secure** - codes are secured by AES 256-bit encryption + your own password
+* **Import Codes** - import codes from any TOTP 2FA QR code or directly from Google Authenticator
+* **Shortcuts** - easily open Authme with custom shortcuts
+* **Completely Offline** - data is stored locally
+* **Privacy** - Authme is hidden from video capture and screenshots
+* **Easy Export and Backup** - 2FA codes can be exported at any time and backups taken easily
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@2dce4f4c50f91c7e2ed4b31988faaad635c19d44/automatic/authme/screenshot.png)
+
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/InstalllDir` - install Authme to the specified folder
+eg. `choco install -y authme.portable --package-parameters="/InstallDir=C:\Tools\Authme"`
+* `/AddToDesktop` - add a desktop shortcut for Authme.  By default the shortcut will be added for all users
+e.g. `choco install -y authme.portable --package-parameters="/AddToDesktop"`
+* `/AddToStart` - add a shortcut to the start menu for Authme.  By default the shortcut will be added for all users
+e.g. `choco install -y authme.portable --package-parameters="/AddToStart"`
+* `/User` - where the user parameter is specified any shortcuts created (`/AddToDesktop` or `/AddToStart`) will be
+for the current user
+e.g. `choco install -y authme.portable --package-parameters="/AddToDesktop /User"`
+
+## Notes
+
+* Authme is ony provided as a 64-bit version
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly
+
+]]>
+    </description>
+    <releaseNotes>https://github.com/Levminer/authme/blob/dev/CHANGELOG.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
