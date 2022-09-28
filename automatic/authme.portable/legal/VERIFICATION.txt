@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/Levminer/authme/releases/tag/3.3.3
+  https://github.com/Levminer/authme/releases/tag/3.3.4
 
-and download the archive authme-3.3.3-windows-x64-portable.zip using the links in the
+and download the archive authme-3.3.4-windows-x64-portable.zip using the links in the
 assets section of the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://github.com/Levminer/authme/releases/download/3.3.3/authme-3.3.3-windows-x64-portable.zip
+  https://github.com/Levminer/authme/releases/download/3.3.4/authme-3.3.4-windows-x64-portable.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-3.3.3-windows-x64-portable.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-3.3.3-windows-x64-portable.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-3.3.4-windows-x64-portable.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-3.3.4-windows-x64-portable.zip
 
-  File:     authme-3.3.3-windows-x64-portable.zip
+  File:     authme-3.3.4-windows-x64-portable.zip
   Type:     sha256
-  Checksum: e2d3444d13c1b8e2e6e867303b9d6ad0f83cdd6f42f2253c9684b0191882d394
+  Checksum: CA0EB7AB67149FDF5729D764DE314FCCE1DD2B7E42A8A35D1EB237C9E83CA503
 
 Contents of file LICENSE.txt is obtained from https://github.com/Levminer/authme/blob/dev/LICENSE.md

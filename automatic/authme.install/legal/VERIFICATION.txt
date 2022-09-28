@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/Levminer/authme/releases/tag/3.3.3
+  https://github.com/Levminer/authme/releases/tag/3.3.4
 
-and download the installer authme-3.3.3-windows-x64-installer.exe using the links in the
+and download the installer authme-3.3.4-windows-x64-installer.exe using the links in the
 assets section of the page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/Levminer/authme/releases/download/3.3.3/authme-3.3.3-windows-x64-installer.exe
+  https://github.com/Levminer/authme/releases/download/3.3.4/authme-3.3.4-windows-x64-installer.exe
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-3.3.3-windows-x64-installer.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-3.3.3-windows-x64-installer.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-3.3.4-windows-x64-installer.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-3.3.4-windows-x64-installer.exe
 
-  File:     authme-3.3.3-windows-x64-installer.exe
+  File:     authme-3.3.4-windows-x64-installer.exe
   Type:     sha256
-  Checksum: bdc7f12fb482ea882a543fa9995a6296804d239d473acc0151bf23d0513b5a6b
+  Checksum: 6F27C23AA1D1AC28DA28BFAFE478CA0DCFCD607D18FC79728792F0E2A716CB8B
 
 Contents of file LICENSE.txt is obtained from https://github.com/Levminer/authme/blob/dev/LICENSE.md
