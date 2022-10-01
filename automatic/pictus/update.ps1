@@ -23,7 +23,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
-  $urls = $downloadPage.links | where-object href -match 'Pict.{4}\.[exe|zip]' | select-object -expand href | foreach-object { $domain + $_ }
+  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
+  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
+
+  $urls = $assetsPage.links | where-object href -match 'Pict.{4}\.[exe|zip]' | select-object -expand href | foreach-object { $domain + $_ }
 
   $urlInstall      = $urls -match '.*exe' | Select-Object -First 1
   $fileNameInstall = $urlInstall -split '/' | Select-Object -Last 1
@@ -34,8 +38,7 @@ function global:au_GetLatest {
   $urlPortable64      = $urls -match '.*64\.zip' | Select-Object -First 1
   $fileNamePortable64 = $urlPortable64 -split '/' | Select-Object -Last 1
 
-  $UrlInstall -Match $reversion
-  $version = $Matches.Version
+  $version = $UrlInstall -Match $reversion | ForEach-Object { $Matches.Version }
 
   return @{
     UrlInstall         = $urlInstall

@@ -10,7 +10,7 @@ be verified by:
 
   https://keys.pub
 
-and download the installer Keys-0.1.7.msi using the Download for Windows link
+and download the installer Keys-0.2.4.msi using the Download for Windows link
 in the Install section of the main page.
 
 Alternatively the distribution can be downloaded directly from
@@ -18,11 +18,11 @@ Alternatively the distribution can be downloaded directly from
   https://github.com/keys-pub/app/releases/download/v0.2.4/Keys-0.2.4.msi
 
 2. The installer can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash Keys-0.1.7.msi
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Keys-0.1.7.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash Keys-0.2.4.msi
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Keys-0.2.4.msi
 
+  File:     Keys-0.2.4.msi
   Type:     sha256
   Checksum: DA66C58F79787EDDF677A4A7C57A9E5C386A33A6E9482D067B5101266F2387F5
 
   Contents of file LICENSE.txt is obtained from https://github.com/keys-pub/keys/blob/master/LICENSE
-

@@ -27,11 +27,15 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
+  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
 
-  $url64Install      = $downloadPage.links | where-object href -match $reInstall | select-object -expand href | foreach-object { $domain + $_ }
+
+  $url64Install      = $assetsPage.links | where-object href -match $reInstall | select-object -expand href | foreach-object { $domain + $_ }
   $fileName64Install = $url64Install -split '/' | select-object -last 1
 
-  $url64Portable      = $downloadPage.links | where-object href -match $rePortable | select-object -expand href | foreach-object { $domain + $_ }
+  $url64Portable      = $assetsPage.links | where-object href -match $rePortable | select-object -expand href | foreach-object { $domain + $_ }
   $fileName64Portable = $url64Portable -split '/' | select-object -last 1
 
   $version = $url64Portable -match $reVersion | foreach-object { $Matches.Version }
@@ -46,5 +50,5 @@ function global:au_GetLatest {
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
-  update -ChecksumFor none -NoReadme -NoCheckUrl
+  update -ChecksumFor none -NoReadme
 }

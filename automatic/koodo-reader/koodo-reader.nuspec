@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>koodo-reader</id>
-    <version>1.3.3</version>
+    <version>1.3.9</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/koodo-reader</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Koodo Reader - All-in-one eBook Reader</title>
@@ -40,16 +40,12 @@ Koodo Reader is a full-featured ebook manager to help you better study and diges
 
 The following package parameter can be set:
 
-* `/AddToDesktop` - add desktop shortcuts for Koodoo Reader.  By default the shortcuts will be added for all users  
+* `/AddToDesktop` - add a desktop shortcuts for Koodoo Reader
 e.g. `choco install koodo-reader --package-parameters="/AddToDesktop"`
-* `/AddToStartMenu` - add entries to the Start Menu for Koodoo Reader.  By default the shortcut will be added for all
-users  
-e.g. `choco install koodo-reader --package-parameters="/AddToStartMenu"`
-* `/User` - where the user parameter is specified any shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`)
-will only be added for the current user  
-e.g. `choco install koodo-reader --package-parameters="/AddToDesktop /User"`
-
-To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+* `/NoStartMenu` - do not add a Start Menu entry for Koodoo Reader
+e.g. `choco install koodo-reader --package-parameters="/NoStartMenu"`
+* `/User` - where the user parameter is specified Koodo Reader will be installed for the current user only
+e.g. `choco install koodo-reader --package-parameters="/User"`
 
 ## Notes
 

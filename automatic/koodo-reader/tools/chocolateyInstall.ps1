@@ -1,58 +1,60 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'Koodo-Reader-1.3.3-Win.7z'
+$toolsDir   = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$unzipArgs = @{
-  PackageName  = $env:ChocolateyPackageName
-  FileFullPath = $archive
-  Destination  = $toolsDir
-}
-
-Get-ChocolateyUnzip @unzipArgs
+$installer  = Join-Path $toolsDir 'Koodo-Reader-1.3.9.exe'
+$silentArgs = '/S /AllUsers'
 
 $pp = Get-PackageParameters
 
-$paths = New-Object System.Collections.ArrayList
+if ($pp.User) {
+  $silentArgs = $silentArgs.Replace('AllUsers','CurrentUser')
+}
 
-if ($pp.count -gt 0) {
-  $pp.GetEnumerator() | foreach-object {
-    switch ($_.name) {
-        'AddToDesktop' {
-          Write-Verbose("Desktop shortcuts will be created for $env:ChocolateyPackageName")
-          if ($pp.User) {
-            $desktopPath = [Environment]::GetFolderPath('Desktop')
-          } else {
-            $desktopPath = [Environment]::GetFolderPath('CommonDesktopDirectory')
-          }
+$packageArgs = @{
+  PackageName    = $env:ChocolateyPackageName
+  File           = $installer
+  FileType       = 'exe'
+  SilentArgs     = $silentArgs
+  ValidExitCodes = @(0, 3010, 1641)
+}
 
-          $paths.add($desktopPath) | Out-Null
-        }
-        'AddToStartMenu' {
-          Write-Verbose("$env:ChocolateyPackageName will be added to the Start Menu")
-          if ($pp.User) {
-            $startMenuPath = [Environment]::GetFolderPath('StartMenu')
-          } else {
-            $startMenuPath = [Environment]::GetFolderPath('CommonStartMenu')
-          }
-         
-          $paths.Add($startMenuPath) | Out-Null
-        }
-        'User' {
-          # ignore - no need to handle independently as it is a qualifier for other options
-        }
-        Default {
-          Write-Verbose("Unknown parameter $_.name will be ignored")
-        }
-    }
+Install-ChocolateyInstallPackage @packageArgs
+
+# the desktop shortcut for Koodo Reader is added by default on install - remove unless retention has been specified with /AddToDesktop
+if (-not $addToDesktop) {
+  if ($pp.User) {
+    $desktopPath = [Environment]::GetFolderPath('Desktop')
+  } else {
+    $desktopPath = [Environment]::GetFolderPath('CommonDesktopDirectory')
   }
 
-  if ($paths.Count -gt 0) {
-    $executable = Join-Path $toolsDir 'Koodo Reader.exe'
-    
-    $paths.GetEnumerator() | foreach-object {
-      $shortcutPath = Join-Path $_ 'Koodo Reader.lnk'
-      Install-ChocolateyShortcut -ShortcutFilePath $shortcutPath -TargetPath $executable
-    }
+  $shortcutPath = "$desktopPath\Koodo Reader.lnk"
+
+  if (Test-Path -Path $shortcutPath) {
+    Remove-Item $shortcutPath -ErrorAction SilentlyContinue -Force | Out-Null
   }
 }
+
+# the start menu folder for Koodo Reader is added by default on install - remove if /NoStartMenu has been specifed
+if ($noStartMenu) {
+  if ($pp.User) {
+    $startMenuPath = [Environment]::GetFolderPath('StartMenu')
+  } else {
+    $startMenuPath = [Environment]::GetFolderPath('CommonStartMenu')
+  }
+
+  $shortcutPath = "$startMenuPath\Koodo Reader.lnk"
+
+  if (Test-Path -Path $shortcutPath) {
+    Remove-Item $shortcutPath -ErrorAction SilentlyContinue -Force | Out-Null
+  }
+}
+
+$uninstallKey    = Get-UninstallRegistryKey -SoftwareName 'Koodo Reader*'
+$uninstallString = $uninstallKey.UninstallString
+
+$installPath = $uninstallString -match '(?<=")(?<InstallPath>.+)(?=Uninstall\s)' | ForEach-Object { $Matches.InstallPath }
+$executable = '{0}{1}' -f $installPath, 'Koodo Reader.exe'
+
+Install-Binfile -name 'Koodo Reader' -path "$executable"

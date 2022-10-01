@@ -5,9 +5,12 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/jruby/jruby/releases/latest"
 
-$re32      = '(jruby_(?![^\s]+x64)[^\s]+\.exe)'
-$re64      = '(jruby_(?=[^\s]+x64)[^\s]+\.exe)'
-$reVersion = '(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]))'
+$re32         = '(jruby_(?![^\s]+x64)[^\s]+\.exe)'
+$re64         = '(jruby_(?=[^\s]+x64)[^\s]+\.exe)'
+$reChecksum32 = '(?<=Checksum32:\s*)((?<Checksum>([^\s].+)))'
+$reChecksum64 = '(?<=Checksum64:\s*)((?<Checksum>([^\s].+)))'
+$reVersion    = '(?<=\/|v|\s)(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]))'
+
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
 }
@@ -32,24 +35,27 @@ function global:au_SearchReplace {
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "$($re32)"            = "$($Latest.Filename32)"
-      "$($re64)"            = "$($Latest.Filename64)"
-      "(Checksum32:\s)(.+)" = "`${1}$($Latest.Checksum32)"
-      "(Checksum64:\s)(.+)" = "`${1}$($Latest.Checksum64)"
-      "$($reVersion)"       = "$($Latest.Version)"
+      "$($re32)"         = "$($Latest.Filename32)"
+      "$($re64)"         = "$($Latest.Filename64)"
+      "$($reChecksum32)" = "$($Latest.Checksum32)"
+      "$($reChecksum64)" = "$($Latest.Checksum64)"
+      "$($reVersion)"    = "$($Latest.Version)"
     }
   }
 }
 
 function global:au_GetLatest {
-  $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
+  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
 
-  $url32      = $downloadPage.links | where-object href -match $re32 | select-object -expand  href | select-object -first 1 | foreach-object { $domain + $_ }
+  $url32      = $assetsPage.links | where-object href -match $re32 | select-object -expand  href | select-object -first 1 | foreach-object { $domain + $_ }
   $fileName32 = $url32 -split '/' | select-object -last 1
-  $url64      = $downloadPage.links | where-object href -match $re64 | select-object -expand  href | select-object -first 1 | foreach-object { $domain + $_ }
+  $url64      = $assetsPage.links | where-object href -match $re64 | select-object -expand  href | select-object -first 1 | foreach-object { $domain + $_ }
   $fileName64 = $url64 -split '/' | select-object -last 1
 
-  $version = $downloadPage.Content -match "JRuby\s$($reVersion)" | select-object -first 1 | foreach-object { $Matches.Version }
+  $version = $url64 -match $reVersion | select-object -first 1 | foreach-object { $Matches.Version }
 
   return @{
     Url32      = $url32

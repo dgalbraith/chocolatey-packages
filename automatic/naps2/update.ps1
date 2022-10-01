@@ -29,11 +29,14 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
+  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
 
-  $urlInstall      = $downloadPage.links | where-object href -match $reInstall | select-object -expand href | foreach-object { $domain + $_ }
+  $urlInstall      = $assetsPage.links | where-object href -match $reInstall | select-object -expand href | foreach-object { $domain + $_ }
   $fileNameInstall = $urlInstall -split '/' | select-object -last 1
 
-  $urlPortable      = $downloadPage.links | where-object href -match $rePortable | select-object -expand href | foreach-object { $domain + $_ }
+  $urlPortable      = $assetsPage.links | where-object href -match $rePortable | select-object -expand href | foreach-object { $domain + $_ }
   $fileNamePortable = $urlPortable -split '/' | select-object -last 1
 
   $updateYear = (Get-Date).ToString('yyyy')

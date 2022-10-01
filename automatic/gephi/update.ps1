@@ -37,9 +37,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
+  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
 
-  $url      = $downloadPage.links | where-object href -match $reUrl | select-object -expand  href | foreach-object { $domain + $_ }
+  $url      = $assetsPage.links | where-object href -match $reUrl | select-object -expand  href | foreach-object { $domain + $_ }
   $fileName = $url -split '/' | select-object -last 1
   $version  = $fileName -split '-' | select-object -skip 1 -first 1
 

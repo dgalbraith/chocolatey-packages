@@ -42,14 +42,17 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
+  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
 
-  $url32      = $downloadPage.links | where-object href -match $reFile32 | select-object -expand href | foreach-object { $domain + $_ } | select-object -First 1
+  $url32      = $assetsPage.links | where-object href -match $reFile32 | select-object -expand href | foreach-object { $domain + $_ } | select-object -First 1
   $filename32 = $url32 -split '/' | select-object -Last 1
 
-  $url64      = $downloadPage.links | where-object href -match $reFile64 | select-object -expand href | foreach-object { $domain + $_ } | select-object -First 1
+  $url64      = $assetsPage.links | where-object href -match $reFile64 | select-object -expand href | foreach-object { $domain + $_ } | select-object -First 1
   $filename64 = $url64 -split '/' | select-object -Last 1
 
-  $version = $downloadPage.Content -match $reversion | foreach-object { $Matches.Version }
+  $version = $url64 -match $reVersion | foreach-object { $Matches.Version }
 
   return @{
     FileName32 = $filename32
@@ -60,4 +63,4 @@ function global:au_GetLatest {
   }
 }
 
-update -ChecksumFor none -NoReadme -NoCheckUrl
+update -ChecksumFor none -NoReadme

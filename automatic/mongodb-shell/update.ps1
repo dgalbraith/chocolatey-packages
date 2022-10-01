@@ -5,8 +5,9 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/mongodb-js/mongosh/releases/latest"
 
-$re64      = '(mongosh-.+win32-x64\.zip)' # despite the filename the archive contains a 64-bit executable
-$reVersion = '(v)(?<Version>([\d]+\.[\d]+\.[\d]+))'
+$re64       =  '(mongosh-.+win32-x64\.zip)' # despite the filename the archive contains a 64-bit executable
+$reChecksum = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
+$reVersion  = '(?<=v)(?<Version>([\d]+\.[\d]+\.[\d]+))'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
@@ -23,9 +24,9 @@ function global:au_SearchReplace {
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "$($re64)"          = "$($Latest.Filename64)"
-      "$($reVersion)"     = "`${1}$($Latest.Version)"
-      "(Checksum:\s)(.+)" = "`${1}$($Latest.Checksum64)"
+      "$($re64)"       = "$($Latest.Filename64)"
+      "$($reVersion)"  = "$($Latest.Version)"
+      "$($reChecksum)" = "$($Latest.Checksum64)"
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
@@ -35,9 +36,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
+  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
 
-  $url64      = $download_page.links | where-object href -match $re64 | select-object -expand href | foreach-object { $domain + $_ }
+  $url64      = $assetsPage.links | where-object href -match "$re64$" | select-object -expand href | foreach-object { $domain + $_ }
   $filename64 = $url64 -split '/' | select-object -last 1
 
   $version = $url64 -match $reversion | foreach-object { $Matches.Version }
