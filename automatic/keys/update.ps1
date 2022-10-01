@@ -5,6 +5,10 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/keys-pub/app/releases/latest"
 
+$reChecksum = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
+$reFileName = '(?<FileName>Keys.+msi)'
+$reVersion  = '(?<=v|n-)(?<Version>[\d]+\.[\d]+\.[\d]+)'
+
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
 }
@@ -12,33 +16,31 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "([\d]+\.[\d]+\.[\d]+)" = "$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      "(Keys.+msi)" = "$($Latest.Filename32)"
+      "$($reFileName)" = "$($Latest.Filename32)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "(\/v.*\/)(Keys.+msi)"       = "`${1}$($Latest.Filename32)"
-      "(Checksum:\s)(.+)"          = "`${1}$($Latest.Checksum32)"
-      "(\/v)([\d]+\.[\d]+\.[\d]+)" = "`${1}$($Latest.Version)"
+      "$($reFileName)" = "$($Latest.Filename32)"
+      "$($reChecksum)" = "$($Latest.Checksum32)"
+      "$($reVersion)"  = "$($Latest.Version)"
     }
   }
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
+  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
 
-  $reurl = '(Keys.+msi)'
-  $reversion = '(\/v(?<Version>([\d]+\.[\d]+\.[\d]+))\/)'
+  $url32      = $assetsPage.links | where-object href -match $reFileName | select-object -expand  href | foreach-object { $domain + $_ }
+  $fileName32 = $url32 -split '/' | select-object -last 1
 
-  $url32 = $download_page.links | where-object href -match $reurl | select-object -expand  href | select-object -first 1 | foreach-object { $domain + $_ }
-  $url32SegmentSize = $([System.Uri]$url32).Segments.Length
-  $fileName32       = $([System.Uri]$url32).Segments[$urlSegmentSize - 1]
-
-  $url32 -match $reversion
-  $version = $Matches.Version
+  $version = $url32-match $reVersion | foreach-object { $Matches.Version }
 
   return @{
     FileName32 = $fileName32
@@ -47,4 +49,4 @@ function global:au_GetLatest {
   }
 }
 
-update -ChecksumFor none -NoCheckUrl -NoReadme
+update -ChecksumFor none -NoReadme

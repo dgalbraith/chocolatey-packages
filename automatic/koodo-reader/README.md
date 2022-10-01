@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/github/license/troyeguo/koodo-reader)](https://github.com/troyeguo/koodo-reader/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.3.3-blue.svg)](https://github.com/troyeguo/koodo-reader/releases/tag/v1.3.3)
+[![Software version](https://img.shields.io/badge/Source-v1.3.9-blue.svg)](https://github.com/troyeguo/koodo-reader/releases/tag/v1.3.9)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/koodo-reader?label=Chocolatey)](https://chocolatey.org/packages/koodo-reader)
 
 Koodo Reader is a full-featured ebook manager to help you better study and digest your books.
@@ -26,16 +26,12 @@ Koodo Reader is a full-featured ebook manager to help you better study and diges
 
 The following package parameter can be set:
 
-* `/AddToDesktop` - add desktop shortcuts for Koodoo Reader.  By default the shortcuts will be added for all users  
+* `/AddToDesktop` - add a desktop shortcuts for Koodoo Reader
 e.g. `choco install koodo-reader --package-parameters="/AddToDesktop"`
-* `/AddToStartMenu` - add entries to the Start Menu for Koodoo Reader.  By default the shortcut will be added for all
-users  
-e.g. `choco install koodo-reader --package-parameters="/AddToStartMenu"`
-* `/User` - where the user parameter is specified any shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`)
-will only be added for the current user  
-e.g. `choco install koodo-reader --package-parameters="/AddToDesktop /User"`
-
-To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+* `/NoStartMenu` - do not add a Start Menu entry for Koodoo Reader
+e.g. `choco install koodo-reader --package-parameters="/NoStartMenu"`
+* `/User` - where the user parameter is specified Koodo Reader will be installed for the current user only
+e.g. `choco install koodo-reader --package-parameters="/User"`
 
 ## Notes
 

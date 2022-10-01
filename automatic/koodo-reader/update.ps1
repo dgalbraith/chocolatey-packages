@@ -5,9 +5,9 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/troyeguo/koodo-reader/releases/latest"
 
-$reFileName = "(?<FileName>((?<=\s|'|\d\/))(K.+\.7z))"
+$reFileName = "(?<=\s|'|\d\/)(?<FileName>K.+\d\.exe)"
 $reChecksum = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
-$reVersion  = '(?<Version>(?<=v|\/)([\d]+\.[\d]+\.[\d]+\.*[\d]*))'
+$reVersion  = '(?<=v|\/|-)(?<Version>[\d]+\.[\d]+\.[\d])'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
@@ -32,12 +32,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
+  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
 
-  $url32      = $downloadPage.links | where-object href -match $reFileName | select-object -expand href | foreach-object { $domain + $_ } 
-  $fileName32 = $Matches.FileName
+  $url32      = $assetsPage.links | where-object href -match "$reFileName$" | select-object -expand href | foreach-object { $domain + $_ }
+  $fileName32 = $url32 -split '/' | select-object -last 1
 
-  $version = $filename32 -split '-' | select-object -skip 2 -first 1
+  $version = $fileName32 -Match $reVersion | ForEach-Object { $Matches.Version}
 
   return @{
     Url32      = $url32

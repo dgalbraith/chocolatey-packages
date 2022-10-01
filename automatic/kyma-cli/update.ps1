@@ -5,7 +5,12 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/kyma-project/cli/releases/latest"
 
-$reVersion = '(?<Version>([\d]+\.[\d]+\.[\d]+(\.[\d]+)?))'
+$re32         = 'i386\.zip'
+$re64         = 'x86_64\.zip'
+$reChecksum32 = '(?<=Checksum32:\s*)((?<Checksum>([^\s].+)))'
+$reChecksum64 = '(?<=Checksum64:\s*)((?<Checksum>([^\s].+)))'
+$reUrl        = '(kyma_Windows_(i386|x86_64).+zip)'
+$reVersion    = '(?<Version>([\d]+\.[\d]+\.[\d]+(\.[\d]+)?))'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
@@ -14,37 +19,32 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$($reversion)" = "$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "$($reversion)"        = "$($Latest.Version)"
-      "(Checksum32:\s*)(.+)" = "`${1}$($Latest.Checksum32)"
-      "(Checksum64:\s*)(.+)" = "`${1}$($Latest.Checksum64)"
+      "$($reVersion)"    = "$($Latest.Version)"
+      "$($reChecksum32)" = "$($Latest.Checksum32)"
+      "$($reChecksum64)" = "$($Latest.Checksum64)"
     }
   }
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
+  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
 
-  $reurl = '(kyma_Windows_(i386|x86_64).+zip)'
-
-  $re32 = 'i386\.zip'
-  $re64 = 'x86_64\.zip'
-
-  $urls = $download_page.links | where-object href -match $reurl | select-object -expand href | foreach-object { $domain + $_ }
+  $urls = $assetsPage.links | where-object href -match $reurl | select-object -expand href | foreach-object { $domain + $_ }
 
   $url32 = $urls -match $re32 | select-object -first 1
-  $url32SegmentSize = $([System.Uri]$url32).Segments.Length
-  $filename32 = $([System.Uri]$url32).Segments[$url32SegmentSize - 1]
+  $filename32 = $url32 -split '/' | select-object -last 1
 
   $url64 = $urls -match $re64 | select-object -first 1
-  $url64SegmentSize = $([System.Uri]$url64).Segments.Length
-  $filename64 = $([System.Uri]$url64).Segments[$url64SegmentSize - 1]
+  $filename64 = $url36 -split '/' | select-object -last 1
 
-  $url64 -match $reVersion
-  $version = $Matches.Version
+  $version = $url64 -Match $reVersion | ForEach-Object { $Matches.Version }
 
   return @{
     FileType   = 'zip'
@@ -56,4 +56,4 @@ function global:au_GetLatest {
   }
 }
 
-update -ChecksumFor none -NoCheckUrl -NoReadme
+update -ChecksumFor none -NoReadme
