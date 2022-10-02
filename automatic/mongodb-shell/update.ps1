@@ -5,7 +5,7 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/mongodb-js/mongosh/releases/latest"
 
-$re64       =  '(mongosh-.+win32-x64\.zip)' # despite the filename the archive contains a 64-bit executable
+$re64       = '(mongosh-.+win32-x64\.zip)' # despite the filename the archive contains a 64-bit executable
 $reChecksum = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
 $reVersion  = '(?<=v)(?<Version>([\d]+\.[\d]+\.[\d]+))'
 
@@ -16,11 +16,11 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     "$($Latest.PackageName).nuspec" = @{
-      "$($reVersion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\README.md" = @{
-      "$($reVersion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
