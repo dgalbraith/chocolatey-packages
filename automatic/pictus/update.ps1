@@ -5,18 +5,22 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/poppeman/Pictus/releases/latest"
 
-$reversion = '(\/v|\[|-)(?<Version>([\d]+\.[\d]+\.[\d]+))'
+$reChecksum   = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
+$reChecksum32 = '(?<=Checksum32:\s*)((?<Checksum>([^\s].+)))'
+$reChecksum64 = '(?<=Checksum64:\s*)((?<Checksum>([^\s].+)))'
+$reVersion    = '(?<=\/v|\[|-)(?<Version>([\d]+\.[\d]+\.[\d]+))'
+
 function global:au_BeforeUpdate {
 }
 
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$($reversion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     "$($Latest.PackageName).nuspec" = @{
-      "$($reversion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
   }
 }
@@ -38,7 +42,7 @@ function global:au_GetLatest {
   $urlPortable64      = $urls -match '.*64\.zip' | Select-Object -First 1
   $fileNamePortable64 = $urlPortable64 -split '/' | Select-Object -Last 1
 
-  $version = $UrlInstall -Match $reversion | ForEach-Object { $Matches.Version }
+  $version = $UrlInstall -Match $reVersion | ForEach-Object { $Matches.Version }
 
   return @{
     UrlInstall         = $urlInstall

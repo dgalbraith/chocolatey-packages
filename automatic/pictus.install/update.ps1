@@ -12,12 +12,12 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$($reversion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "$($reversion)"      = "`${1}$($Latest.Version)"
-      "(Checksum:\s*)(.+)" = "`${1}$($Latest.Checksum32)"
+      "$($reVersion)"  = "$($Latest.Version)"
+      "$($reChecksum)" = "$($Latest.Checksum32)"
     }
   }
 }
