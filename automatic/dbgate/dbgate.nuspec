@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dbgate</id>
-    <version>5.1.3</version>
+    <version>5.1.4</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/dbgate</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>DbGate - The Smartest (no)SQL Database Client</title>
@@ -75,7 +75,7 @@ If you find it is out of date by more than a day or two, please contact the main
     </description>
     <releaseNotes>https://github.com/dbgate/dbgate/blob/master/CHANGELOG.md</releaseNotes>
     <dependencies>
-      <dependency id="dbgate.portable" version="[5.1.3]" />
+      <dependency id="dbgate.portable" version="[5.1.4]" />
     </dependencies>
   </metadata>
   <files>
