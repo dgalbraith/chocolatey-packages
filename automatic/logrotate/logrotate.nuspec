@@ -1,36 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <title>LogRotate</title>
-    <version>{{PackageVersion}}</version>
+    <id>logrotate</id>
+    <version>0.0.0.17</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/logrotate</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>logrotate - A Windows Implementation of logrotate</title>
     <authors>Ken Salter</authors>
-    <owners>dtgm</owners>
-    <summary>Implementation of logrotate utility for Windows Platform</summary>
-    <description>
-LogRotate is a Windows implementation of the logrotate utility found in Linux platforms. The goal is to use the same command line parameters and files as the Linux version.
-
-#### Community
-* [Forum](http://sourceforge.net/p/logrotatewin/discussion/general/)
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
-    <projectUrl>https://github.com/plecos/logrotatewin</projectUrl>
-    <projectSourceUrl>https://github.com/plecos/logrotatewin</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/plecos/logrotatewin/issues</bugTrackerUrl>
-    <docsUrl>http://sourceforge.net/p/logrotatewin/wiki/LogRotate/</docsUrl>
-    <tags>admin log rotation</tags>
-    <copyright>© 2012 Ken Salter</copyright>
-    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+    <projectUrl>https://sourceforge.net/projects/logrotatewin</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@aa1d2580c41e903fbe9137f2f4a0a30ee4773b58/icons/logrotate.png</iconUrl>
+    <copyright>Copyright Ken Salter</copyright>
+    <licenseUrl>https://github.com/plecos/logrotatewin/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
-* [Changelog](http://sourceforge.net/projects/logrotatewin/files/README.txt/download)
+    <projectSourceUrl>https://github.com/plecos/logrotatewin</projectSourceUrl>
+    <docsUrl>https://sourceforge.net/p/logrotatewin/wiki/LogRotate</docsUrl>
+    <bugTrackerUrl>https://github.com/plecos/logrotatewin/issues</bugTrackerUrl>
+    <tags>log logrotate</tags>
+    <summary>A Windows implementation of the logrotate utility</summary>
+    <description><![CDATA[
 
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+**logrotate** is designed to ease administration of systems that generate large numbers of log files. It allows
+automatic rotation, compression, removal, and mailing of log files. Each log file may be handled daily, weekly,
+monthly, or when it grows too large.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@aa1d2580c41e903fbe9137f2f4a0a30ee4773b58/automatic/logrotate/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly
+
+]]>
+    </description>
+    <releaseNotes>https://sourceforge.net/projects/logrotatewin/files/README.txt/download</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet" version="5.0.0" />
+    </dependencies>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
