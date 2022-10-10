@@ -5,9 +5,9 @@ $ErrorActionPreference = 'STOP'
 $domain    = 'https://sourceforge.net'
 $releases  = "${domain}/projects/logrotatewin/files"
 
-$reChecksum  = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
-$reFileName  = '(?<FileName>logrotateSetup_(?<Version>[\d]+\.[\d]+\.[\d]+\.[\d]+)_\d{8}\.zip)'
-$reVersion   = '(?<=v)(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]+))'
+$reChecksum = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
+$reInstall  = '(?<FileName>logrotateSetup_(?<Version>[\d]+\.[\d]+\.[\d]+\.[\d]+)_\d{8}\.zip)'
+$reVersion  = '(?<=v)(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]+))'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
