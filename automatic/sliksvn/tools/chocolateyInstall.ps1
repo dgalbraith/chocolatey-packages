@@ -14,8 +14,8 @@ if ($pp.InstallDir) {
 
 $unzipArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  FileFullPath   = Join-Path $toolsDir 'Slik-Subversion-1.14.1-win32.zip'
-  FileFullPath64 = Join-Path $toolsDir 'Slik-Subversion-1.14.1-x64.zip'
+  FileFullPath   = Join-Path $toolsDir 'Slik-Subversion-1.14.2-win32.zip'
+  FileFullPath64 = Join-Path $toolsDir 'Slik-Subversion-1.14.2-x64.zip'
   Destination    = $toolsDir
 }
 
@@ -23,8 +23,8 @@ Get-ChocolateyUnzip @unzipArgs
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  File           = Join-Path $toolsDir 'Slik-Subversion-1.14.1-win32.msi'
-  File64         = Join-Path $toolsDir 'Slik-Subversion-1.14.1-x64.msi'
+  File           = Join-Path $toolsDir 'Slik-Subversion-1.14.2-win32.msi'
+  File64         = Join-Path $toolsDir 'Slik-Subversion-1.14.2-x64.msi'
   FileType       = 'msi'
   SilentArgs     = $silentArgs
   ValidExitCodes = @(0, 3010, 1641)
