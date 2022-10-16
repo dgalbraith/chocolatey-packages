@@ -41,16 +41,16 @@ remote system, for instance a unix system with only shell access
 ## Package Parameters
 
 * `/AddToStartMenu` - add a Subversion documentation folder to the start menu
-  e.g. `choco install -y sliksvn --package-parameters="AddToStartMenu"`
+  e.g. `choco install -y sliksvn --package-parameters="/AddToStartMenu"`
 * `/InstallDir=[directory]` - set the installation directory to `[directory]`
-  e.g. `choco install -y sliksvn --package-parameters="InstallDir=C:\Tools"`
-* `/NoPath` - override the default behaviour and do not add the package `bin` folder to the system `PATH`
-  e.g. `choco install -y sliksvn --package-parameters="NoPath"`
-
-To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`
+  e.g. `choco install -y sliksvn --package-parameters="/InstallDir=C:\Tools\sliksvn"`
+* `/AddtoPath` - add the package `bin` folder to the system `PATH`
+  e.g. `choco install -y sliksvn --package-parameters="/AddToPath"`
 
 ## Notes
 
+* This package requires administrative access to install
+* Unless the package parameter `AddToPath` is passed shims will be generated for all executables in the package
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
