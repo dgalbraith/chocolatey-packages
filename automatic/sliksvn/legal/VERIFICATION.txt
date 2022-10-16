@@ -9,27 +9,27 @@ be verified by:
 1. Go to the binary distribution page
 
   https://sliksvn.com/pub/
-  
-and download the installers Slik-Subversion-1.14.1-win32.msi or Slik-Subversion-1.14.1-x64.msi
+
+and download the archives Slik-Subversion-1.14.1-win32.zip or Slik-Subversion-1.14.1-x64.zip
 using the relevant links.
 
 Alternatively the installers can be downloaded directly from
 
-  https://sliksvn.com/pub/Slik-Subversion-1.14.1-win32.msi or
-  https://sliksvn.com/pub/Slik-Subversion-1.14.1-x64.msi
+  https://sliksvn.com/pub/Slik-Subversion-1.14.1-win32.zip or
+  https://sliksvn.com/pub/Slik-Subversion-1.14.1-x64.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.14.1-win32.msi
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.14.1-win32.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.14.1-win32.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.14.1-win32.zip
 
-  File32:         Slik-Subversion-1.14.1-win32.msi
+  File32:         Slik-Subversion-1.14.1-win32.zip
   ChecksumType32: sha256
   Checksum32:     9BE8737D1357415ED286A1E68205F7CA932B6EE146DCFF97DB2EEFE86AD90B1D
- 
-  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.14.1-x64.msi
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.14.1-x64.msi
 
-  File64:         Slik-Subversion-1.14.1-x64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.14.1-x64.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.14.1-x64.zip
+
+  File64:         Slik-Subversion-1.14.1-x64.zip
   ChecksumType64: sha256
   Checksum64:     DB82F788DDA35B5374B7383722935067AF56F7B4420956EE9A2ECE526BCA5D3D
 
