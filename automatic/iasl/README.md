@@ -1,25 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>iasl</id>
-    <version>2021.12.17</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/iasl</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>iASL Compiler and ACPI Tools</title>
-    <authors>Intel Corporation</authors>
-    <projectUrl>https://acpica.org</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@fe977f362ae69c7f6ab164f87a9223d36538d3ed/icons/iasl.png</iconUrl>
-    <copyright>Copyright (c) 1999 - 2021, Intel Corp.  All rights reserved.</copyright>
-    <licenseUrl>https://acpica.org/sites/acpica/files/licensing.txt</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/acpica/acpica</projectSourceUrl>
-    <docsUrl>https://acpica.org/documentation</docsUrl>
-    <bugTrackerUrl>https://github.com/acpica/acpica/issues</bugTrackerUrl>
-    <mailingListUrl>https://lists.acpica.org/hyperkitty/list/devel@acpica.org</mailingListUrl>
-    <tags>iasl compiler decompiler asl aml acpi acpica intel</tags>
-    <summary>ASL source language compiler, ACPI table compiler, and AML disassembler</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@fe977f362ae69c7f6ab164f87a9223d36538d3ed/icons/iasl.png" width="48" height="48" />iASL Compiler and ACPI Tools](https://community.chocolatey.org/packages/iasl)
+
+[![Software license](https://img.shields.io/badge/license-Intel-lightgrey.svg)](https://acpica.org/sites/acpica/files/licensing.txt)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/source-v2021.12.17-blue.svg)](https://acpica.org/downloads/binary-tools)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/iasl?label=Chocolatey)](https://community.chocolatey.org/packages/iasl)
 
 The iASL compiler/disassembler is a fully-featured translator for the ACPI Source Language (ASL) and ACPI
 binary data tables. As part of the Intel ACPI Component Architecture, the Intel ASL compiler implements
@@ -53,14 +38,3 @@ tables such as the FADT, MADT, SRAT, etc.
 
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]>
-    </description>
-    <releaseNotes>https://github.com/acpica/acpica/blob/master/documents/changes.txt</releaseNotes>
-    <dependencies />
-  </metadata>
-  <files>
-    <file src="legal/**" target="legal" />
-    <file src="tools/**" target="tools" />
-  </files>
-</package>

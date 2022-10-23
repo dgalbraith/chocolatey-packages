@@ -1,0 +1,29 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://acpica.org/downloads/binary-tools
+
+and download the installer iasl-win-20211217.zip using the iASL compiler and Windows ACPI tools
+link in the Windows Binary Toos section of the page.
+
+Alternatively the build can be downloaded directly from
+
+  https://acpica.org/sites/acpica/files/iasl-win-20211217.zip
+
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 iasl-win-20211217.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f iasl-win-20211217.zip
+
+  File:     iasl-win-20211217.zip
+  Type:     sha256
+  Checksum: 3DF15592987350EF09A785CB17B39EC1913111687AF53C6254626D1D7AE7DC46
+
+Contents of file LICENSE.txt is obtained from https://acpica.org/sites/acpica/files/licensing.txt
