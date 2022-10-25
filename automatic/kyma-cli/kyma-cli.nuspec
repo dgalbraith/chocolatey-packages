@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kyma-cli</id>
-    <version>2.7.1</version>
+    <version>2.8.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/kyma-cli</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Kyma CLI - Install, Manage and Test Kyma</title>
