@@ -8,14 +8,14 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/printfn/fend/releases/tag/v1.1.1
+  https://github.com/printfn/fend/releases/tag/v1.1.2
 
 and download the installer fend-windows-x64.msi using the links in the asset
 section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/printfn/fend/releases/download/v1.1.1/fend-windows-x64.msi
+  https://github.com/printfn/fend/releases/download/v1.1.2/fend-windows-x64.msi
 
 2. The archive can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 fend-windows-x64.msi
@@ -23,6 +23,6 @@ Alternatively the build can be downloaded directly from
 
   File:     fend-windows-x64.msi
   Type:     sha256
-  Checksum: DC0938452E00F2B2A8B061C79307A555BE1F9319A956DB1A754278C08F5750FD
+  Checksum: 2A85A3318984020FC9DFA9107D98EFF503C1FE3B85EBFF46F99BEA20B3487142
 
 Contents of file LICENSE.txt is obtained from https://github.com/printfn/fend/blob/main/LICENSE.md
