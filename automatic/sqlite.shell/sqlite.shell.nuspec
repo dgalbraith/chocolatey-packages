@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sqlite.shell</id>
-    <version>3.39.4</version>
+    <version>3.40.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sqlite.shell</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>SQLite Shell</title>
