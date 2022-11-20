@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/troyeguo/koodo-reader/releases/tag/v1.4.9
+  https://github.com/troyeguo/koodo-reader/releases/tag/v1.5.0
 
-and download the installer Koodo-Reader-1.4.9.exe using the relevant link in the
+and download the installer Koodo-Reader-1.5.0.exe using the relevant link in the
 assets section on the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://github.com/troyeguo/koodo-reader/releases/download/v1.4.9/Koodo-Reader-1.4.9.exe
+  https://github.com/troyeguo/koodo-reader/releases/download/v1.5.0/Koodo-Reader-1.5.0.exe
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 Koodo-Reader-1.4.9.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Koodo-Reader-1.4.9.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 Koodo-Reader-1.5.0.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Koodo-Reader-1.5.0.exe
 
-  File:     Koodo-Reader-1.4.9.exe
+  File:     Koodo-Reader-1.5.0.exe
   Type:     sha256
-  Checksum: 74C930BC909D36040AE13A623EA96D437342635E1BEEC0DAEF1E9D36A13E2BE0
+  Checksum: E7A15A0E355EE1FAB9E25DD1F8312CF15E52A5D232329352F05F9B20CAC8582A
 
 Contents of file LICENSE.txt is obtained from https://github.com/troyeguo/koodo-reader/blob/master/LICENSE
