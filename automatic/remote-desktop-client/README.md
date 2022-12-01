@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-Proprietary-lightgrey)](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ae31f3c2a0f3c01522a777ed8186a3b39f75c480/automatic/remote-desktop-client/legal/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/source-v1.2.3577-blue)](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windowsdesktop)
+[![Software version](https://img.shields.io/badge/source-v1.2.3667-blue)](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windowsdesktop)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/remote-desktop-client?label=Chocolatey)](https://community.chocolatey.org/packages/remote-desktop-client)
 
 Use the Remote Desktop Services client (MSRDC) to access Windows apps and desktops remotely from a different Windows device.
