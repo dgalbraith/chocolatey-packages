@@ -9,18 +9,18 @@ public struct Language {
 "@
 
 $languageDefinitions =  @{
-    'br'    = [Language] @{ Name = 'Brazilian (Portuguese)'; Mapping = 'ptb'; Checksum = '07082162fa8dc89ce89c6a046b3a4cba908a5dacf130470d258bcb648113fe08' }
-    'de'    = [Language] @{ Name = 'German';                 Mapping = 'deu'; Checksum = '046309a94baad6a942c6b8235aabf7aa0357baee5f7ec490b5e4ce4d2da8064b' }
-    'en'    = [Language] @{ Name = 'English';                Mapping = 'enu'; Checksum = 'd87979856f1d7e753cbb873e534d2e02e2040df03e9f90592ad7a0b3ae630af0' }
-    'es'    = [Language] @{ Name = 'Spanish';                Mapping = 'esn'; Checksum = '0ff7d15a86d16c86edab6160e45f7f1811de27e11e2acdafae2825c0940c91d7' }
-    'fr'    = [Language] @{ Name = 'French';                 Mapping = 'fra'; Checksum = '95b46d8202f0dc2a9fdce46583e78df514eaaa97f7f4e60081d9f9963eac5c88' }
-    'it'    = [Language] @{ Name = 'Italian';                Mapping = 'ita'; Checksum = 'e513435933381244db94d0c3743b64b0536f22898797ddd5a21ff3d3b7e3c6c6' }
-    'ja'    = [Language] @{ Name = 'Japanese';               Mapping = 'jpn'; Checksum = '84f8b69a52063ec4fbc2fd93b1626fa6ed52257ecf5af1ad44d28b4ea246c486' }
-    'ko'    = [Language] @{ Name = 'Korean';                 Mapping = 'kor'; Checksum = '01d2f3bd606eda964f67608b87c534012762bb83ad25f8ce12c231f556d384c5' }
-    'ru'    = [Language] @{ Name = 'Russian';                Mapping = 'rus'; Checksum = '5f3af78d9398727ee210329f03371d4b3bded0334dea777008b39ce0b33c93a6' }
-    'zh'    = [Language] @{ Name = 'Chinese';                Mapping = 'chs'; Checksum = '48642dc6e9ae0ae6799ee726e8d36406c01a1a82a257ace13cd105bae848b3cc' }
-    'zh-CN' = [Language] @{ Name = 'Chinese (Simplified)';   Mapping = 'chs'; Checksum = '48642dc6e9ae0ae6799ee726e8d36406c01a1a82a257ace13cd105bae848b3cc' }
-    'zh-TW' = [Language] @{ Name = 'Chinese (Traditional)';  Mapping = 'cht'; Checksum = '0a408576e4fe392863c1ec1ad635bc8a48b8af2aed3fe45ad13be65d9eb8ae44' }
+    'br'    = [Language] @{ Name = 'Brazilian (Portuguese)'; Mapping = 'ptb'; Checksum = '51feae722d68a22124db2c7426f4cd9b46865468e3aff7f76d0dbfed443c72ee' }
+    'de'    = [Language] @{ Name = 'German';                 Mapping = 'deu'; Checksum = 'a40643dd3d35274674af7419dc574aca37938279dc11206520d6c10cb530ef7b' }
+    'en'    = [Language] @{ Name = 'English';                Mapping = 'enu'; Checksum = 'ee4bc95077374845c645a4ed6bf0249b966410ee4ed9a39f365a1d9df2174548' }
+    'es'    = [Language] @{ Name = 'Spanish';                Mapping = 'esn'; Checksum = '5c7f643b327fa619aed2ca1e777e59202c5f6dbeb508e9b24bd439db4f383b54' }
+    'fr'    = [Language] @{ Name = 'French';                 Mapping = 'fra'; Checksum = '5a1031a4e1a44e3c80cfabd53de1a7caa974a1811a3a4ffd79d7657cd4086f20' }
+    'it'    = [Language] @{ Name = 'Italian';                Mapping = 'ita'; Checksum = '5df68d30f2b59b0192db57b1ce8ed3faddde8173430db6aee45c13a8bb42b237' }
+    'ja'    = [Language] @{ Name = 'Japanese';               Mapping = 'jpn'; Checksum = '9371623ecae373744ee735e75fe16f4c9262311b29a13acd17b6f76a497370d5' }
+    'ko'    = [Language] @{ Name = 'Korean';                 Mapping = 'kor'; Checksum = 'f1461e3bd42ccfbbd8920190171467fcf1b2917b16582c5a54a956a98c5e7ecd' }
+    'ru'    = [Language] @{ Name = 'Russian';                Mapping = 'rus'; Checksum = 'e064990af72894252a2442af305ddac4c63858eb45768c9518f5d4859cbbdd5b' }
+    'zh'    = [Language] @{ Name = 'Chinese';                Mapping = 'chs'; Checksum = '023bfa8d332c3a96fd1cb3945ec0e92c8a73b1ab5e3f38aba17eb3e14a1d8ee5' }
+    'zh-CN' = [Language] @{ Name = 'Chinese (Simplified)';   Mapping = 'chs'; Checksum = '023bfa8d332c3a96fd1cb3945ec0e92c8a73b1ab5e3f38aba17eb3e14a1d8ee5' }
+    'zh-TW' = [Language] @{ Name = 'Chinese (Traditional)';  Mapping = 'cht'; Checksum = 'd4ebb72064532cf9a83fa1b752e7d20938046b9004e7814ac73fcf9c23a741f1' }
 }
 
 $base = 'https://download.microsoft.com/download/d/1/9/d194dc5c-4db6-4fb6-8ba2-219c93272b7b'

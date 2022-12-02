@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-prettier</id>
-    <version>9.9.0</version>
+    <version>9.10.3</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-prettier</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Prettier Code Formatter VSCode Extension</title>
