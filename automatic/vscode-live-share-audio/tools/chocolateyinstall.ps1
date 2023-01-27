@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId 'MS-vsliveshare.vsliveshare-audio@0.1.91'
+Install-VsCodeExtension -extensionId 'MS-vsliveshare.vsliveshare-audio@0.1.93'

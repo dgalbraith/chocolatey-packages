@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-code-runner</id>
-    <version>0.11.8</version>
+    <version>0.12.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-code-runner</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Code Runner VSCode Extension</title>
     <authors>Jun Han</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@4fa478d748b9e792ac48216d123cd3f90b3e543b/icons/vscode-code-runner.png</iconUrl>
-    <copyright>Copyright 2016-2022 Jun Han</copyright>
+    <copyright>Copyright 2016-2023 Jun Han</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/formulahendry.code-runner/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/formulahendry/vscode-code-runner</projectSourceUrl>

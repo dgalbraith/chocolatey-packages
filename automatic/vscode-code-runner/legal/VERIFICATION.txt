@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
 
-and download the extension formulahendry.code-runner-0.11.8.vsix using the Download Extension link
+and download the extension formulahendry.code-runner-0.12.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/formulahendry/vsextensions/code-runner/0.11.8/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/formulahendry/vsextensions/code-runner/0.12.0/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash formulahendry.code-runner-0.11.8.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f formulahendry.code-runner-0.11.8.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash formulahendry.code-runner-0.12.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f formulahendry.code-runner-0.12.0.vsix
 
   Type:     sha256
-  Checksum: 5D1CA413746E1A1FA5EF7118E9EDFDF515D5575565FAEAB96C93647DE8FD25C1
+  Checksum: 43681CB9C946ECD2D1F351E32A3FF4445D2333912A7B6BD931BA6869BA7FA2C8
 
   Contents of the file LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/formulahendry.code-runner/license
