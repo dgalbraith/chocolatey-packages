@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\vscjava.vscode-java-debug-0.47.2023020102.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\vscjava.vscode-java-debug-0.48.0.vsix"

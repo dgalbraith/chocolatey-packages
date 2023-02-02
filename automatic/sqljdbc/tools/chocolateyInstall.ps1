@@ -9,21 +9,21 @@ public struct Language {
 "@
 
 $languageDefinitions =  @{
-    'br'    = [Language] @{ Name = 'Brazilian (Portuguese)'; Mapping = 'ptb'; Checksum = 'f3cd0ca83cca7cf193acf29e3243f4658195a5a58346a1b23add56caa1900eb3' }
-    'de'    = [Language] @{ Name = 'German';                 Mapping = 'deu'; Checksum = 'f346d3f57d80ecdaa31150af84d1e47f756b39346995d46defd36df96e50567e' }
-    'en'    = [Language] @{ Name = 'English';                Mapping = 'enu'; Checksum = '1de08e567e0bc18cabc0f099bbe18571a5c4d405c828a4983f3268264dc4905f' }
-    'es'    = [Language] @{ Name = 'Spanish';                Mapping = 'esn'; Checksum = '5b9dc4c1e1f6aa81f2530762a2b650b550e34e7929687d1a29b33720ae481e3b' }
-    'fr'    = [Language] @{ Name = 'French';                 Mapping = 'fra'; Checksum = '98ff3e19ba8ffa9d65e0f74785bf852f255dc598f45749c0dfc0a00c5383f7bc' }
-    'it'    = [Language] @{ Name = 'Italian';                Mapping = 'ita'; Checksum = '8573ee7cdb679404e4fdb8f258afa1c16e2ea62a21c6a98b708f41c40d7190d7' }
-    'ja'    = [Language] @{ Name = 'Japanese';               Mapping = 'jpn'; Checksum = '627c9374373fc71cb8ba54723844440a2cac52cbc2e76991ff4bcb69421e12a4' }
-    'ko'    = [Language] @{ Name = 'Korean';                 Mapping = 'kor'; Checksum = '107215e1e17edf4eb1237eea9d388d0ff43834a864db379189bb01cdcf6baca6' }
-    'ru'    = [Language] @{ Name = 'Russian';                Mapping = 'rus'; Checksum = '7de525043f7703aacb40e38ac06a5558f567391b5e97c36260e5eaf6fbc5374b' }
-    'zh'    = [Language] @{ Name = 'Chinese';                Mapping = 'chs'; Checksum = '520a6a92e6c4701a04d9bed2076d52cc34127dc53129374c40ae2ed65b8be368' }
-    'zh-CN' = [Language] @{ Name = 'Chinese (Simplified)';   Mapping = 'chs'; Checksum = '520a6a92e6c4701a04d9bed2076d52cc34127dc53129374c40ae2ed65b8be368' }
-    'zh-TW' = [Language] @{ Name = 'Chinese (Traditional)';  Mapping = 'cht'; Checksum = '77f229372970197807ab11f423ae02218df694487f3280265bb215853c6a9456' }
+    'br'    = [Language] @{ Name = 'Brazilian (Portuguese)'; Mapping = 'ptb'; Checksum = '63fcfc1302398549cd34afa22271915b452511f42da96f1a568528e24733d93f' }
+    'de'    = [Language] @{ Name = 'German';                 Mapping = 'deu'; Checksum = '882e170fac702102f20e34d7b8149672145446794e285650c7c46dbe5a746b6a' }
+    'en'    = [Language] @{ Name = 'English';                Mapping = 'enu'; Checksum = '6d0e7681db71a680f98134a45a8ecf57e8b0c61c1f99bcf3e464fd6814e0feef' }
+    'es'    = [Language] @{ Name = 'Spanish';                Mapping = 'esn'; Checksum = '0b9e222bc1624c815f80f8e5de3aa9e5ef4f7d05dda2931e5bdc8d5fe7985db8' }
+    'fr'    = [Language] @{ Name = 'French';                 Mapping = 'fra'; Checksum = 'd9fb9e6ff29f39c731acaeb65f290da00ca73c90eae728b7b09d967057051f33' }
+    'it'    = [Language] @{ Name = 'Italian';                Mapping = 'ita'; Checksum = '663353269a32fc7db8765c6dcef0b6fadf29ab3b2a8c7053d736e7620585bb09' }
+    'ja'    = [Language] @{ Name = 'Japanese';               Mapping = 'jpn'; Checksum = 'd61e712dacfc83ff37a0672ac8d845b538f5e2e36d896f9a57e85a7cb47a28b3' }
+    'ko'    = [Language] @{ Name = 'Korean';                 Mapping = 'kor'; Checksum = '690432de16b1e92291ef15358c7d293d8befff42729f9405f11a7f2fd3d6af32' }
+    'ru'    = [Language] @{ Name = 'Russian';                Mapping = 'rus'; Checksum = '39ce7dd662a173d682dcdf219fa997518968e36634a05cea9651f19e573ad5da' }
+    'zh'    = [Language] @{ Name = 'Chinese';                Mapping = 'chs'; Checksum = 'b9dd3a6f80ebadcb883d9df5713e6c62141cee19d10171174324773b2d444ebe' }
+    'zh-CN' = [Language] @{ Name = 'Chinese (Simplified)';   Mapping = 'chs'; Checksum = 'b9dd3a6f80ebadcb883d9df5713e6c62141cee19d10171174324773b2d444ebe' }
+    'zh-TW' = [Language] @{ Name = 'Chinese (Traditional)';  Mapping = 'cht'; Checksum = 'c5ae19f35cb39548335599df2b4bd75c1580ffab7c7fea7fd79143fcce0dac07' }
 }
 
-$base = 'https://download.microsoft.com/download/d/1/9/d194dc5c-4db6-4fb6-8ba2-219c93272b7b'
+$base = 'https://download.microsoft.com/download/a/9/1/a91534b0-ed8c-4501-b491-e1dd0a20335a'
 
 $pp = Get-PackageParameters
 
