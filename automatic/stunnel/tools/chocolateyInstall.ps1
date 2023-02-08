@@ -4,7 +4,7 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  File           = "$toolsDir\stunnel-5.67-win64-installer.exe"
+  File           = "$toolsDir\stunnel-5.68-win64-installer.exe"
   SilentArgs     = '/S'
   ValidExitCodes = @(0)
 }
