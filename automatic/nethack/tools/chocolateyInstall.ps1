@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'nethack-366-win-x86-1_25_2021.zip'
+$archive  = Join-Path $toolsDir 'nethack-367-win-x86.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName

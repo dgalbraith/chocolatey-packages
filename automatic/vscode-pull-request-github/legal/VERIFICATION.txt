@@ -10,18 +10,18 @@ and can be verified by:
 
    https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github
 
-and download the extension GitHub.vscode-pull-request-github-0.59.2023020909.vsix using the Download Extension link
+and download the extension GitHub.vscode-pull-request-github-0.59.2023021609.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/vscode-pull-request-github/0.59.2023020909/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/vscode-pull-request-github/0.59.2023021609/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash GitHub.vscode-pull-request-github-0.59.2023020909.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f GitHub.vscode-pull-request-github-0.59.2023020909.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash GitHub.vscode-pull-request-github-0.59.2023021609.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f GitHub.vscode-pull-request-github-0.59.2023021609.vsix
 
   Type:     sha256
-  Checksum: EB6C6E95DFFDB9874E7FE2C23BF7E1D6940EBE22C7D261060770FA0379F959C2
+  Checksum: BC4AB5F8D9224C2421C05B1C34EBC754F042296E587E7CA7A10DC052BEE6AF63
 
   Contents of LICENSE.txt is obtained from https://github.com/microsoft/vscode-pull-request-github/blob/master/LICENSE

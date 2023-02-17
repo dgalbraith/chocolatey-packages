@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nethack</id>
-    <version>3.6.6.2021125</version>
+    <version>3.6.7</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/nethack</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Nethack - Single Player Dungeon Exploration</title>
@@ -14,7 +14,7 @@
     <licenseUrl>https://www.nethack.org/common/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/NetHack/NetHack</projectSourceUrl>
-    <docsUrl>https://nethack.org/v366/Guidebook.html</docsUrl>
+    <docsUrl>https://nethack.org/v367/Guidebook.html</docsUrl>
     <mailingListUrl>https://www.nethack.org/common/usenet.html</mailingListUrl>
     <bugTrackerUrl>https://github.com/NetHack/NetHack/issues</bugTrackerUrl>
     <tags>nethack game rogue roguelike rogue-like</tags>
@@ -53,7 +53,7 @@ console experience
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://nethack.org/v366/release.html</releaseNotes>
+    <releaseNotes>https://nethack.org/v367/release.html</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />

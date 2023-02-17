@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-Nethack-blue.svg)](https://nethack.org/common/license.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.6.6.2021125-blue.svg)](https://nethack.org/v366/downloads.html)
+[![Software version](https://img.shields.io/badge/Source-v3.6.7-blue.svg)](https://nethack.org/v367/downloads.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/nethack?label=Chocolatey)](https://chocolatey.org/packages/nethack)
 
 NetHack is a single player dungeon exploration game that runs on a wide variety of computer systems, with a variety of
