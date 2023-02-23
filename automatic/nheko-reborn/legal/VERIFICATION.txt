@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary archive page
 
-  https://github.com/Nheko-Reborn/nheko/releases/tag/v0.11.2
+  https://github.com/Nheko-Reborn/nheko/releases/tag/v0.11.3
 
-and download the file nheko-v0.11.2-installer.exe using the links on the page.
+and download the file nheko-v0.11.3-installer.exe using the links on the page.
 
 Alternatively the file can be downloaded directly from
 
-  https://github.com/Nheko-Reborn/nheko/releases/download/v0.11.2/nheko-v0.11.2-installer.exe
+  https://github.com/Nheko-Reborn/nheko/releases/download/v0.11.3/nheko-v0.11.3-installer.exe
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 nheko-v0.11.2-installer.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f nheko-v0.11.2-installer.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 nheko-v0.11.3-installer.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f nheko-v0.11.3-installer.exe
 
-  File:     nheko-v0.11.2-installer.exe
+  File:     nheko-v0.11.3-installer.exe
   Type:     sha256
-  Checksum: 615F098F944B7C2D47FD92B71F935B8394C3B010ACB49C79F27937E2D47A5EEB
+  Checksum: 693C3E977C67723BD9CCC8B41812AB896899FEF64C0ADA1C0A254F2FE818E0A1
 
 
 Contents of file LICENSE.txt is obtained from https://github.com/Nheko-Reborn/nheko/blob/master/COPYING
