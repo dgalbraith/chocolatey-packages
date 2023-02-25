@@ -10,27 +10,27 @@ be verified by:
 
   https://openvpn.net/community-downloads
 
-and download the installer OpenVPN-2.6.0-I003-x86.msi or
-OpenVPN-2.6.0-I003-amd64.msi using the relevant links on the page.
+and download the installer OpenVPN-2.6.0-I004-x86.msi or
+OpenVPN-2.6.0-I004-amd64.msi using the relevant links on the page.
 
 Alternatively the installers can be downloaded directly from
 
-  https://swupdate.OpenVPN-2.6.0-I003-x86.msi
-  https://swupdate.OpenVPN-2.6.0-I003-amd64.msi
+  https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.0-I004-x86.msi
+  https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.0-I004-amd64.msi
 
 2. The installers can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha512 OpenVPN-2.6.0-I003-x86.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f OpenVPN-2.6.0-I003-x86.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha512 OpenVPN-2.6.0-I004-x86.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f OpenVPN-2.6.0-I004-x86.msi
 
-  File32:     OpenVPN-2.6.0-I003-x86.msi
+  File32:     OpenVPN-2.6.0-I004-x86.msi
   Type32:     sha512
-  Checksum32: 13F9F2B05E1799D558AA8A92A2A27D88760D924A6EE0FE96D5AD5D74AE6500D361E49471529FC194C65262AE6D4F6AF4CA51DE793BBEF9DB3FBFA2D4DC187D9F
+  Checksum32: 67C6FC3D8A667492EA9806C459B4B99A224F014B049FB42E4C2955B046AAAE6D3C7377A802AB5EE155D6C59CDC4DA43E77EEB918F27B8E74276B4645831582F6
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha512 OpenVPN-2.6.0-I003-amd64.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f OpenVPN-2.6.0-I003-amd64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha512 OpenVPN-2.6.0-I004-amd64.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f OpenVPN-2.6.0-I004-amd64.msi
 
-  File64:     OpenVPN-2.6.0-I003-amd64.msi
+  File64:     OpenVPN-2.6.0-I004-amd64.msi
   Type64:     sha512
-  Checksum64: 11F70FC49E0EC0C70E2765128ECD47EA4CB7270112539538DE0E7F7FF6694AE85B1B03E5FD4D93366FFBD5F3C5B5FF77D1800AA31EDFE3F1C67D574E390457B1
+  Checksum64: 11E480F1109D941047A8B69B5D75106AA3A02251D1FF43149A936E497363F2911E294C852B237F9CA39D796E1E950D1FBF1220D3BEBE7CE46F8B7EA1C1B38C19
 
 Contents of file LICENSE.txt is obtained from https://openvpn.net/license
