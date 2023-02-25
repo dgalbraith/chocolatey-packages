@@ -1,5 +1,7 @@
 ﻿import-module au
 
+Import-Module ..\..\scripts\chocolatey-helpers\Chocolatey-Helpers.psd1
+
 $ErrorActionPreference = 'STOP'
 
 $domain   = 'https://github.com'
@@ -25,23 +27,26 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
-  
+  $downloadUri = Get-RedirectedUri -Uri $releases
+  $latestTag   = $downloadUri -split '\/' | Select-Object -Last 1
+  $assetsUri   = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
+  $assetsPage  = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
+
   $reUrl = '(B.+\.exe$)'
-  $urls  = $downloadPage.links | where-object href -match $reUrl | select-object -expand href | foreach-object { $domain + $_ }
-  
+  $urls  = $assetsPage.links | where-object href -match $reUrl | select-object -expand href | foreach-object { $domain + $_ }
+
   $urlInstall      = $urls -match $reInstall | Select-Object -First 1
   $fileNameInstall = $urlInstall -split '/'  | Select-Object -Last 1
 
   $urlPortable      = $urls -match $rePortable | Select-Object -First 1
   $fileNamePortable = $urlPortable -split '/'  | Select-Object -Last 1
 
-  $version = $downloadPage.Content -match $reversion | foreach-object { $Matches.Version }
+  $version = $assetsPage.Content -match $reversion | foreach-object { $Matches.Version }
 
   return @{
     UrlInstall       = $urlInstall
     FileNameInstall  = $fileNameInstall
-    UrlPortable      = $urlPortable 
+    UrlPortable      = $urlPortable
     FileNamePortable = $fileNamePortable
     Version          = $version
   }
