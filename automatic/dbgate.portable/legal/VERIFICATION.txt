@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/dbgate/dbgate/releases/tag/v5.2.2
+  https://github.com/dbgate/dbgate/releases/tag/v5.2.3
 
-and download the archive dbgate-5.2.2-win_x64.zip using the links in the relevant
+and download the archive dbgate-5.2.3-win_x64.zip using the links in the relevant
 asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/dbgate/dbgate/releases/download/v5.2.2/dbgate-5.2.2-win_x64.zip
+  https://github.com/dbgate/dbgate/releases/download/v5.2.3/dbgate-5.2.3-win_x64.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 dbgate-5.2.2-win_x64.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f dbgate-5.2.2-win_x64.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 dbgate-5.2.3-win_x64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f dbgate-5.2.3-win_x64.zip
 
-  File:     dbgate-5.2.2-win_x64.zip
+  File:     dbgate-5.2.3-win_x64.zip
   Type:     sha256
-  Checksum: 57063813388072FDB483D50B172200971BBBC206A047FFE7BC28F2A1FC572CA2
+  Checksum: D7307E0C2FB0B8729C5B1F40DA304DE07546C75E009CE0D95BA12B3CC3AA1014
 
 Contents of file LICENSE.txt is obtained from https://github.com/dbgate/dbgate/blob/master/LICENSE
