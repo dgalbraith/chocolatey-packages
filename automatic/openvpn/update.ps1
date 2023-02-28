@@ -6,11 +6,11 @@ $domain   = 'https://openvpn.net'
 $releases = "${domain}/community-downloads"
 
 $reUrl        = '.+?msi$'
-$re32         = 'OpenVPN.+-x86\.msi'
-$re64         = 'OpenVPN.+-amd64\.msi'
+$re32         = '(?-i)OpenVPN.+-x86\.msi'
+$re64         = '(?-i)OpenVPN.+-amd64\.msi'
 $reChecksum32 = '(?<=Checksum32:\s+)(.+)'
 $reChecksum64 = '(?<=Checksum64:\s+)(.+)'
-$reVersion    = '(?<=[v|-])(?<Version>(\d+\.\d+\.\d+(\.\d+)?))'
+$reVersion    = '(?<=[v|-])(?<Version>(?<Major>\d+)\.(?<Minor>\d+)\.(?<Patch>\d+)(-I(?<Increment>\d{3}))?)'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix -Algorithm $Latest.ChecksumType
@@ -19,11 +19,11 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     "$($Latest.PackageName).nuspec" = @{
-      "$($reVersion)" = "$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Tag)"
     }
 
     ".\README.md" = @{
-      "$($reVersion)" = "$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Tag)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
@@ -51,13 +51,16 @@ function global:au_GetLatest {
   $url64      = $urls -Match $re64 | select-object -First 1
   $fileName64 = $url64 -split '/' | select-object -Last 1
 
-  $version = $fileName64 -match $reVersion | foreach-object { $Matches.Version }
+  $fileName64 -match $reVersion
+  $tag     = '{0}.{1}.{2}'     -f $Matches.Major, $Matches.Minor, $Matches.Patch
+  $version = '{0}.{1}.{2}.{3}' -f $Matches.Major, $Matches.Minor, $Matches.Patch, $Matches.Increment
 
   return @{
     Url32        = $url32
     Url64        = $url64
     FileName32   = $fileName32
     FileName64   = $fileName64
+    Tag          = $tag
     Version      = $version
     ChecksumType = 'sha512'
   }
