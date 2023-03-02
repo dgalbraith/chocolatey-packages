@@ -1,9 +1,12 @@
 ﻿import-module au
 
+Import-Module ..\..\scripts\chocolatey-helpers\Chocolatey-Helpers.psd1
+
 $ErrorActionPreference = 'STOP'
 
-$domain   = 'https://github.com'
-$releases = "${domain}/facebook/watchman/releases/latest"
+$domain     = 'https://github.com'
+$user       = 'facebook'
+$repository = 'watchman'
 
 $re64      = '(watchman-v.*windows\.zip)'
 $reVersion = "(v|')(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]+))"
@@ -35,7 +38,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $downloadPage = Get-GitHubLatestReleasePage -User $user -Repository $repository
 
   $url64      = $downloadPage.links | where-object href -match $re64 | select-object -expand  href | select-object -first 1 | foreach-object { $domain + $_ }
   $filename64 = $url64 -split '/' | select-object -last 1
