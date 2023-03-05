@@ -10,18 +10,18 @@ be verified by:
 
   https://github.com/Levminer/authme/releases/tag/3.3.5
 
-and download the installer authme-3.3.5-windows-x64-installer.exe using the links in the
+and download the installer authme-3.3.5-windows-x64.msi using the links in the
 assets section of the page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/Levminer/authme/releases/download/3.3.5/authme-3.3.5-windows-x64-installer.exe
+  https://github.com/Levminer/authme/releases/download/3.3.5/authme-3.3.5-windows-x64.msi
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-3.3.5-windows-x64-installer.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-3.3.5-windows-x64-installer.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-3.3.5-windows-x64.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-3.3.5-windows-x64.msi
 
-  File:     authme-3.3.5-windows-x64-installer.exe
+  File:     authme-3.3.5-windows-x64.msi
   Type:     sha256
   Checksum: 47470657C6163EDAE5C90526431E36BC607E5848FA82792D8ED3FD6339AB2FD3
 

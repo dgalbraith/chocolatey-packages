@@ -5,7 +5,7 @@ $ErrorActionPreference = 'STOP'
 function global:au_BeforeUpdate {
   $Latest.FileName64 = "$($Latest.FileName64Install)"
   $Latest.Url64      = "$($Latest.Url64Install)"
-  $Latest.FileType   = 'exe'
+  $Latest.FileType   = 'msi'
 
   Get-RemoteFiles -Purge -NoSuffix
 }
