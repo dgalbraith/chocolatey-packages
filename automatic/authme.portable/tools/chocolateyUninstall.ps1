@@ -19,7 +19,7 @@ if (Test-Path -Path $zipTargetFile) {
   $parentDirectory = Split-Path $unzipDirectory
 }
 
-Uninstall-ChocolateyZipPackage 'authme.portable' 'authme-3.3.5-windows-x64.zip'
+Uninstall-ChocolateyZipPackage 'authme.portable' 'authme-4.0.3-windows-x64.zip'
 
 # Uninstall-ChocolateyZipPackage only removes child directories unpacked from
 # the archive so remove the main and parent directories if empty
