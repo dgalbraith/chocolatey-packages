@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\vscjava.vscode-spring-initializr-0.11.2023013003.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\vscjava.vscode-spring-initializr-0.11.2023030203.vsix"
