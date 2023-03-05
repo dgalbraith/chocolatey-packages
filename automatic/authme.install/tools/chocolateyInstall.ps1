@@ -2,7 +2,7 @@
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$installer  = Join-Path $toolsDir 'authme-3.3.5-windows-x64-installer.exe'
+$installer  = Join-Path $toolsDir 'authme-3.3.5-windows-x64.msi'
 $silentArgs = '/S /AllUsers'
 
 $pp = Get-PackageParameters
@@ -14,7 +14,7 @@ if ($pp.User) {
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
   File           = $installer
-  FileType       = 'exe'
+  FileType       = 'msi'
   SilentArgs     = $silentArgs
   ValidExitCodes = @(0, 3010, 1641)
 }
