@@ -6,7 +6,7 @@ if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$archive = Join-Path $toolsDir 'watchman-v2023.02.27.00-windows.zip'
+$archive = Join-Path $toolsDir 'watchman-v2023.03.06.00-windows.zip'
 
 $unzipArgs = @{
   PackageName = $env:ChocolateyPackageName
