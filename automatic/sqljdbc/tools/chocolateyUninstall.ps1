@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Get-ChildItem $env:chocolateyPackageFolder\* -include sqljdbc*.Install.txt, sqljdbc*.txt | Foreach-Object {
-    $zipContentFile += Get-Content $_.fullname 
+Get-ChildItem "Get-ChocolateyPath -PathType 'PackagePath'\*" -include sqljdbc*.Install.txt, sqljdbc*.txt | Foreach-Object {
+    $zipContentFile += Get-Content $_.fullname
   }
 
 if (($null -ne $zipContentFile) -and ($zipContentFile.Length -ge 1)) {
@@ -9,7 +9,7 @@ if (($null -ne $zipContentFile) -and ($zipContentFile.Length -ge 1)) {
 }
 
 if (Test-Path -Path $zipTargetFile) {
-  $unzipDirectory  = Split-Path $zipTargetFile 
+  $unzipDirectory  = Split-Path $zipTargetFile
   $parentDirectory = Split-Path $unzipDirectory
 }
 
@@ -22,5 +22,5 @@ if ((Get-ChildItem $unzipDirectory | Measure-Object).Count -eq 0) {
 }
 
 if ((Get-ChildItem $parentDirectory | Measure-Object).Count -eq 0) {
-  Remove-Item $parentDirectory -ErrorAction SilentlyContinue -Force | Out-Null    
+  Remove-Item $parentDirectory -ErrorAction SilentlyContinue -Force | Out-Null
 }
