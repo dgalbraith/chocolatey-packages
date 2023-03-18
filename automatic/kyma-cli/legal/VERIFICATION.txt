@@ -15,8 +15,8 @@ the links in the relevant assets section of the page.
 
 Alternatively the distributions can be downloaded directly from
 
-  https://github.com/kyma-project/cli/releases/download/2.11.2/kyma_Windows_i386.zip
-  https://github.com/kyma-project/cli/releases/download/2.11.2/kyma_Windows_x86_64.zip
+  https://github.com/kyma-project/cli/releases/download/2.12.0/kyma_Windows_i386.zip
+  https://github.com/kyma-project/cli/releases/download/2.12.0/kyma_Windows_x86_64.zip
 
 2. The installer can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash kyma_Windows_i386.zip
@@ -24,10 +24,10 @@ Alternatively the distributions can be downloaded directly from
 
   File32:         kyma_Windows_i386.zip
   ChecksumType32: sha256
-  Checksum32:     6CC9CFC9AADA95D49A5EDC3DDC528A73344935799A4B747323BCFE709B5CCDC7
+  Checksum32:     35D5CE45ADD578DC4C441CCC99588C02FFC4A50A03512B43F82306337E46785E
 
   File64:         kyma_Windows_x86_64.zip
   ChecksumType64: sha256
-  Checksum64:     ABB2F03EDCE9833D27DB203570FB8A34FF205B85C7D42F09FE034DD2EDE2D4D0
+  Checksum64:     D522FF6217F36351E0E90D2C1718BA73308DAC1EE54970E1B59F60EEFA51C733
 
   Contents of file LICENSE.txt is obtained from https://github.com/kyma-project/cli/blob/master/LICENCE

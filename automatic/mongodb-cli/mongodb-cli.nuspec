@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mongodb-cli</id>
-    <version>1.27.0</version>
+    <version>1.28.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mongodb-cli</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>MongoDB Command Line Interface (mongocli)</title>
@@ -14,7 +14,7 @@
     <licenseUrl>https://github.com/mongodb/mongocli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/mongodb/mongocli</projectSourceUrl>
-    <docsUrl>https://www.mongodb.com/docs/mongocli/v1.27</docsUrl>
+    <docsUrl>https://www.mongodb.com/docs/mongocli/v1.28</docsUrl>
     <bugTrackerUrl>https://github.com/mongodb/mongocli/issues</bugTrackerUrl>
     <tags>mongodb mongocli cli mongodb-atlas mongodb-cloud-manager mongodb-ops-manager</tags>
     <summary>Manage your MongoDB in the cloud</summary>
@@ -46,9 +46,9 @@ If you find it is out of date by more than a day or two, please contact the main
 
 ]]>
     </description>
-    <releaseNotes>https://www.mongodb.com/docs/mongocli/v1.27/release-notes</releaseNotes>
+    <releaseNotes>https://www.mongodb.com/docs/mongocli/v1.28/release-notes</releaseNotes>
     <dependencies>
-      <dependency id="mongodb-cli.portable" version="[1.27.0]" />
+      <dependency id="mongodb-cli.portable" version="[1.28.1]" />
     </dependencies>
   </metadata>
   <files>

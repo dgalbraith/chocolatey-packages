@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/nushell/nushell/releases/tag/0.77.0
+  https://github.com/nushell/nushell/releases/tag/0.77.1
 
-and download the archive nu-0.77.0-x86_64-pc-windows-msvc.msi using the relevant link in the
+and download the archive nu-0.77.1-x86_64-pc-windows-msvc.msi using the relevant link in the
 assets section on the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://github.com/nushell/nushell/releases/download/0.77.0/nu-0.77.0-x86_64-pc-windows-msvc.msi
+  https://github.com/nushell/nushell/releases/download/0.77.1/nu-0.77.1-x86_64-pc-windows-msvc.msi
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 nu-0.77.0-x86_64-pc-windows-msvc.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f nu-0.77.0-x86_64-pc-windows-msvc.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha256 nu-0.77.1-x86_64-pc-windows-msvc.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f nu-0.77.1-x86_64-pc-windows-msvc.msi
 
-  File:     nu-0.77.0-x86_64-pc-windows-msvc.msi
+  File:     nu-0.77.1-x86_64-pc-windows-msvc.msi
   Type:     sha256
-  Checksum: 389A92DF0A743A65445B5525F313BD4EC23BC88C6C3F3B33F4345A42D7C51E7D
+  Checksum: 02E6D9A4B5D6C14016CE1403834DA27191AE56C97649B545AAF5B42BF7CD7675
 
 Contents of file LICENSE.txt is obtained from https://github.com/nushell/nushell/blob/main/LICENSE
