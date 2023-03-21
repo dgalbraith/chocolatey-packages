@@ -2,7 +2,7 @@
 
 $toolsDir   = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$installer  = Join-Path $toolsDir 'Koodo-Reader-1.5.2.exe'
+$installer  = Join-Path $toolsDir 'Koodo-Reader-1.5.3.exe'
 $silentArgs = '/S /AllUsers'
 
 $pp = Get-PackageParameters
