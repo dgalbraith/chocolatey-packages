@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test
 
-and download the extension vscjava.vscode-java-test-0.38.2023030203.vsix using the Download Extension link
+and download the extension vscjava.vscode-java-test-0.38.2023032402.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vcsjava/vsextensions/vscode-java-test/0.38.2023030203/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vcsjava/vsextensions/vscode-java-test/0.38.2023032402/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-java-test-0.38.2023030203.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-java-test-0.38.2023030203.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-java-test-0.38.2023032402.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-java-test-0.38.2023032402.vsix
 
   Type:     sha256
-  Checksum: ACAB8D1FB901C7C0A9B1DE3C28EB26774F5E87B6C9EFC546D0FF7A958C505EDD
+  Checksum: E162ACC3E8AE38D68641130D3764C6777CC86289C780ECEF365795842C9815EB
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscjava.vscode-java-test/license
