@@ -14,7 +14,7 @@
     <licenseUrl>https://github.com/Levminer/authme/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Levminer/authme</projectSourceUrl>
-    <docsUrl>https://docs.authme.levminer.com/</docsUrl>
+    <docsUrl>https://github.com/Levminer/authme/blob/dev/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/Levminer/authme/issues</bugTrackerUrl>
     <tags>authenticator 2fa 2fa-client 2fa-security totp google-authenticator electron</tags>
     <summary>Simple 2FA desktop application</summary>
