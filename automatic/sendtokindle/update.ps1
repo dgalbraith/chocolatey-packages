@@ -1,4 +1,6 @@
 Import-Module au
+
+Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module ..\..\scripts\chocolatey-helpers\Chocolatey-Helpers.psd1
 
 $ErrorActionPreference = 'STOP'
