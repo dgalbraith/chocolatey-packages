@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/printfn/fend)](https://github.com/printfn/fend/blob/main/LICENSE.md)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.1.5-blue)](https://github.com/printfn/fend/releases/tag/v1.1.5)
+[![Software version](https://img.shields.io/badge/Source-v1.1.6-blue)](https://github.com/printfn/fend/releases/tag/v1.1.6)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/fend.portable?label=Chocolatey)](https://community.chocolatey.org/packages/fend.portable)
 
 [fend](https://printfn.github.io/fend) is an arbitrary-precision unit-aware calculator.
