@@ -60,18 +60,17 @@ Function Update-OnHeaderChanged() {
       $response = $null
     }
 
+    $result = . $OnHeaderChanged
     $saveResult = $false
+
     if (!(Test-Path $saveFile)) {
-      $result = . $OnHeaderChanged
       $saveResult = $true
     } else {
       $existingInfo = (Get-Content $SaveFile -Encoding UTF8 -TotalCount 1) -split '\|'
 
       if ($existingInfo[0] -ne $headerValue) {
-        $result = . $OnHeaderChanged
         $saveResult = $true
       } else {
-        $result = . $OnUpdated
         $result["Version"] = $existingInfo[1]
         $result[$headerName] = $existingInfo[0]
         $saveResult = $false

@@ -22,7 +22,7 @@ function global:au_SearchReplace {
     }
 
     ".\tools\chocolateyInstall.ps1" = @{
-      "$($reUrl)"      = "$($Latest.FileName32)"
+      "$($reUrl)"      = "$($Latest.Url32)"
       "$($reChecksum)" = "$($Latest.Checksum32)"
     }
   }
