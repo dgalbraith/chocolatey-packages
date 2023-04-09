@@ -1,28 +1,48 @@
 import-module au
 
-$releases = 'https://developer.android.com/studio/#downloads'
+$releases = 'https://developer.android.com/studio'
 
+$reChecksum   = "(?<=checksum\s*=\s*')(?<Checksum>[^']+)"
+$reCopyright  = '(?<=(Copyright.+(?<CopyrightFrom>[\d]{4})-))(?<CopyrightTo>[\d]{4})'
+$reExecutable = '\.exe$'
+$reUrl        = "(?<=[$]url\s*=\s*')(?<Url>[^']*)"
+$reVersion    = '(?<=v|\[)(?<Version>\d+\.\d+\.\d+\.\d+)'
 
+function global:au_BeforeUpdate {
+  $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
+}
 function global:au_SearchReplace {
     @{
-        ".\tools\chocolateyinstall.ps1" = @{
-            "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-        }
+      "$($Latest.PackageName).nuspec" = @{
+        "$($reCopyright)" = "$($Latest.UpdateYear)"
+      }
+
+      ".\README.md" = @{
+        "$($reVersion)" = "$($Latest.Version)"
+      }
+
+      ".\tools\chocolateyinstall.ps1" = @{
+        "$($reUrl)"      = "$($Latest.Url64)"
+        "$($reChecksum)" = "$($Latest.Checksum64)"
+      }
     }
 }
 
-
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    
-    $regex = '.exe$'
-    $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href
-       
-    $version = $url -split '/' | select -Last 1 -Skip 1
-    $build = $url -split '-' | select -Last 1 -Skip 1
-    
-    return @{ URL64 = $url; Version = $version; }
+    $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
+
+    $url      = $downloadPage.links | Where-Object href -match $reExecutable | Select-Object -expand href
+    $filename = $url -split '/' | Select-Object -Last 1
+
+    $updateYear = (Get-Date).ToString('yyyy')
+    $version   = $url -split '-' | Select-Object -Last 1 -Skip 1
+
+    return @{
+      Url64      = $url
+      FileName64 = $fileName
+      UpdateYear = $updateYear
+      Version    = $version
+    }
 }
 
-update -ChecksumFor 64
+update -ChecksumFor none -NoReadme
