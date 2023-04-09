@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>androidstudio</id>
-    <version>2021.3.1.17</version>
+    <version>2022.1.1.21</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/androidstudio</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Android Studio (Install)</title>
     <authors>Google JetBrains</authors>
     <projectUrl>https://developer.android.com/studio</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9cba6e3678771538f289e2459ce02c96de9ea842/icons/androidstudio.png</iconUrl>
-    <copyright>Copyright © 2000-2022 Google</copyright>
+    <copyright>Copyright © 2000-2023 Google</copyright>
     <licenseUrl>https://developer.android.com/studio/terms</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://android.googlesource.com/platform/tools/adt/idea</projectSourceUrl>
