@@ -1,25 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>androidstudio</id>
-    <version>2021.3.1.17</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/androidstudio</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>Android Studio (Install)</title>
-    <authors>Google JetBrains</authors>
-    <projectUrl>https://developer.android.com/studio</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9cba6e3678771538f289e2459ce02c96de9ea842/icons/androidstudio.png</iconUrl>
-    <copyright>Copyright © 2000-2022 Google</copyright>
-    <licenseUrl>https://developer.android.com/studio/terms</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://android.googlesource.com/platform/tools/adt/idea</projectSourceUrl>
-    <docsUrl>https://developer.android.com/docs</docsUrl>
-    <mailingListUrl>https://groups.google.com/g/android-platform</mailingListUrl>
-    <bugTrackerUrl>https://issuetracker.google.com/issues?q=componentid:192708</bugTrackerUrl>
-    <tags>google android studio androidstudio android-studio cross-platform</tags>
-    <summary>Android Studio is the official IDE for Android development</summary>
-    <description>
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9cba6e3678771538f289e2459ce02c96de9ea842/icons/androidstudio.png" width="48" height="48" />Android Studio - Official IDE for Android development](https://community.chocolatey.org/packages/androidstudio)
+
+[![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://developer.android.com/studio/terms)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/Source-v2021.3.1.17-blue)](https://developer.android.com/studio)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/androidstudio?label=Chocolatey)](https://community.chocolatey.org/packages/androidstudio)
+
 Android Studio is the official integrated development environment for Google's
 Android operating system, built on JetBrains' IntelliJ IDEA software and
 designed specifically for Android development.
@@ -54,12 +40,3 @@ e.g. `choco install -y androidstudio --package-parameters="/PinToTaskbar"`
 * The shim and shortcuts added will be based on the bitness of the OS or 32-bit if `--forceX86` is specifed on a 64-bit machine
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-    </description>
-    <releaseNotes>
-      * [Android Studio release notes](https://developer.android.com/studio/releases/)
-    </releaseNotes>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>

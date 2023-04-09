@@ -1,34 +1,88 @@
 ﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64      = 'https://redirector.gvt1.com/edgedl/android/studio/install/2021.3.1.17/android-studio-2021.3.1.17-windows.exe'
-$checksum64 = 'dd176791e15e921d4a3b3c9a251c61e5cfd28d75588fd717971dfbac030cd497'
 
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  fileType      = 'EXE'
-  url64bit      = $url64
-  softwareName  = 'Android Studio*'
-  checksum64    = $checksum64
-  checksumType64= 'sha256'
-  silentArgs   = '/S'
-  validExitCodes= @(0, 1223)
+$url        = 'https://redirector.gvt1.com/edgedl/android/studio/install/2021.3.1.17/android-studio-2021.3.1.17-windows.exe'
+$checksum   = 'dd176791e15e921d4a3b3c9a251c61e5cfd28d75588fd717971dfbac030cd497'
+$silentArgs = '/S'
+
+# the installer includes both 32 and 64-bit executables so set the correct executable
+# to be used based on the OS bitness
+if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
+  $executable = 'studio.exe'
+} else {
+  $executable = 'studio64.exe'
 }
 
 $pp = Get-PackageParameters
 
-Install-ChocolateyPackage @packageArgs
+$addToDesktop = $false
+$noStartMenu  = $false
+$pinToTaskBar = $false
 
-if ($pp.PinnedToTaskbar) {
-    Write-Host "Param: PinToTaskbar - Pinning Android Studio to Taskbar..."
-    Install-ChocolateyPinnedTaskBarItem -TargetFilePath "${env:ProgramFiles}\Android\Android Studio\bin\studio64.exe"
+if ($pp.count -gt 0) {
+  $pp.GetEnumerator() | foreach-object {
+  switch ($_.name) {
+      'AddToDesktop' {
+        $addToDesktop = $true
+      }
+      'NoStartMenu' {
+        $noStartMenu = $true
+      }
+      'PinToTaskBar' {
+        $pinToTaskBar = $true
+      }
+      Default {
+        Write-Verbose("Unknown parameter $_ will be ignored")
+      }
+    }
+  }
 }
 
-if ($pp.AddToDesktop) {
-    Write-Host "Param: AddToDesktop - Adding Android Studio Shortcut to Desktop..."
+$packageArgs = @{
+  PackageName    = $env:ChocolateyPackageName
+  FileType       = 'exe'
+  SoftwareName   = 'Android Studio'
+  Url            = $url
+  Checksum       = $checksum
+  ChecksumType   = 'sha256'
+  Url64bit       = $url
+  Checksum64     = $checksum
+  ChecksumType64 = 'sha256'
+  SilentArgs     = $silentArgs
+  validExitCodes = @(0, 1223)
+}
 
-    $desktopPath = [Environment]::GetFolderPath("Desktop")
+Install-ChocolateyPackage @packageArgs
 
-    Install-ChocolateyShortcut `
-        -ShortcutFilePath "$desktopPath\Android Studio.lnk" `
-        -TargetPath "${env:ProgramFiles}\Android\Android Studio\bin\studio64.exe"
+$uninstallKey    = Get-UninstallRegistryKey -SoftwareName 'Android Studio'
+$installLocation = Split-Path -Parent $uninstallKey.UninstallString
+$executable      = Get-ChildItem $installLocation -include $executable -recurse
+
+Install-Binfile -name ($executable.Name -Split '\.' | Select-Object -First 1) -Path $executable.FullName
+
+if ($addToDesktop) {
+  $desktopPath = [Environment]::GetFolderPath('CommonDesktopDirectory')
+
+  $shortcutPath = "$desktopPath\Android Studio.lnk"
+
+  if (Test-Path -Path $shortcutPath) {
+    Remove-Item $shortcutPath -ErrorAction SilentlyContinue -Force | Out-Null
+  }
+
+  Install-ChocolateyShortcut -ShortcutFilePath $shortcutPath -TargetPath $executable
+}
+
+# the start menu entry for Android Studio is added by default on install - remove if /NoStartMenu has been specifed
+if ($noStartMenu) {
+  $startMenuPath = [Environment]::GetFolderPath('CommonPrograms')
+
+  $startMenuLink = "$startMenuPath\Android Studio\Android Studio.lnk"
+
+  if (Test-Path -Path $startMenuLink) {
+    $startMenuFolder = Split-Path -Parent $startMenuLink
+    Remove-Item -LiteralPath $startMenuFolder -ErrorAction SilentlyContinue -Force -Recurse | Out-Null
+  }
+}
+
+if ($pinToTaskBar) {
+  Install-ChocolateyPinnedTaskBarItem -TargetFilePath $executable.FullName
 }
