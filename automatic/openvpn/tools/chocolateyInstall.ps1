@@ -33,6 +33,10 @@ if ($pp.count -gt 0) {
         Write-Verbose('EasyRSA3 X.509 certificate management scripts will be installed')
         $local += 'EasyRSA'
       }
+      'DcoDriver' {
+        Write-Verbose('The OpenVPN Data Channel Offload network driver will be installed')
+        $local += 'Drivers.OvpnDco'
+      }
       'TapDriver' {
         Write-Verbose('The TAP-Windows driver (NDIS-6) will be installed')
         $local += 'Drivers.TAPWindows6'
@@ -72,7 +76,7 @@ if ($pp.count -gt 0) {
   }
 } else {
   Write-Verbose('No parameters supplied - constructing a default parameter set')
-  $local = @('OpenVPN.GUI','OpenVPN.Documentation','OpenVPN.SampleCfg','OpenVPN','OpenVPN.GUI.OnLogon','Drivers.TAPWindows6','Drivers','Drivers.Wintun')
+  $local = @('OpenVPN.GUI','OpenVPN.Documentation','OpenVPN.SampleCfg','OpenVPN','OpenVPN.GUI.OnLogon','Drivers.OvpnDco', 'Drivers.TAPWindows6','Drivers','Drivers.Wintun')
 }
 
 $silentArgs += " ADDLOCAL=`"{0}`"" -f ($local -join ",")
