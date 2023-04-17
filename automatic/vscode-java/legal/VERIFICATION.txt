@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=redhat.java
 
-and download the extension redhat.java-1.17.2023041204.vsix using the Download Extension link
+and download the extension redhat.java-1.18.2023041413.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/redhat/vsextensions/java/1.17.2023041204/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/redhat/vsextensions/java/1.18.2023041413/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash redhat.java-1.17.2023041204.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f redhat.java-1.17.2023041204.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash redhat.java-1.18.2023041413.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f redhat.java-1.18.2023041413.vsix
 
   Type:     sha256
-  Checksum: 633E96D9F8942168430E4F9706EEA8F11640B0DB8790F2423E8F745FD6CAD48B
+  Checksum: 22E2C394D2742FEF758693A1885E3478EAA94D1F12BD373AFCBD1BECEA56CD44
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/redhat.java/license
