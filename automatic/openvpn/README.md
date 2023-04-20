@@ -40,17 +40,18 @@ following package parameter can be set:
 * `/GuiOnLogon`       - launch the OpenVPN GUI on user logon
 * `/Service`          - install OpenVPN service wrappers
 * `/EasyRsa`          - install EasyRSA 3 scripts for X509 certificate management
+* `/DcoDriver`        - install the OpenVPN Data Channel Offload driver
 * `/TapDriver`        - install the TAP-Windows driver (NDIS6)
 * `/WintunDriver`     - install the layer 3 TUN driver for Windows
 * `/Documentation`    - install the OpenVPN documentation
 * `/OpenSSL`          - install OpelSSL utilities for generating public/private key pairs
 * `/SampleConfig`     - install OpenVPN client/server configuration examples
 
-eg. `choco install -y openvpn --package-parameters="/InstallDir=C:\Tools\OpenVPN /AddToDesktop /Gui /GuiOnLogon /EasyRsa /TapDriver /WintunDriver /OpenSSL"`
+eg. `choco install -y openvpn --package-parameters="/InstallDir=C:\Tools\OpenVPN /AddToDesktop /Gui /GuiOnLogon /EasyRsa /DcoDriver /TapDriver /WintunDriver /OpenSSL"`
 
 An installation with no parameters specified will use the same defaults as the installer other than there will be no desktop shortcut to the OpenVPN GUI:
 
-`choco install -y openvpn --package-parameters="/Gui /GuiOnLogon /TapDriver /WintunDriver /Documentation /OpenSSL /SampleConfig"`
+`choco install -y openvpn --package-parameters="/Gui /GuiOnLogon /DcoDriver /TapDriver /WintunDriver /Documentation /OpenSSL /SampleConfig"`
 
 To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 

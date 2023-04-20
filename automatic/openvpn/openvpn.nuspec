@@ -54,13 +54,14 @@ following package parameter can be set:
 * `/GuiOnLogon`       - launch the OpenVPN GUI on user logon
 * `/Service`          - install OpenVPN service wrappers
 * `/EasyRsa`          - install EasyRSA 3 scripts for X509 certificate management
+* `/DcoDriver`        - install the OpenVPN Data Channel Offload driver
 * `/TapDriver`        - install the TAP-Windows driver (NDIS6)
 * `/WintunDriver`     - install the layer 3 TUN driver for Windows
 * `/Documentation`    - install the OpenVPN documentation
 * `/OpenSSL`          - install OpelSSL utilities for generating public/private key pairs
 * `/SampleConfig`     - install OpenVPN client/server configuration examples
 
-eg. `choco install -y openvpn --package-parameters="/InstallDir=C:\Tools\OpenVPN /AddToDesktop /Gui /GuiOnLogon /EasyRsa /TapDriver /WintunDriver /OpenSSL"`
+eg. `choco install -y openvpn --package-parameters="/InstallDir=C:\Tools\OpenVPN /AddToDesktop /Gui /GuiOnLogon /EasyRsa /DcoDriver /TapDriver /WintunDriver /OpenSSL"`
 
 An installation with no parameters specified will use the same defaults as the installer other than creating a desktop shortcut:
 
