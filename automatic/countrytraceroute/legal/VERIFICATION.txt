@@ -23,6 +23,6 @@ Alternatively the archive can be downloaded directly from
 
   File32:         countrytraceroute.zip
   ChecksumType32: sha256
-  Checksum32: B04D9D98834A814D79DFA39B1751DA122B5C8D415FE57CDF499866C974541D5F
+  Checksum32: 754572DC0385B0653CEB1D4F0F72272F46FDA9B7EA1C55C922D8ADFC8A1A1C99
 
   Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/country_traceroute.html
