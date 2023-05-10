@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/Levminer/authme/releases/tag/4.0.3
+  https://github.com/Levminer/authme/releases/tag/4.1.0
 
-and download the installer authme-4.0.3-windows-x64.msi using the links in the
+and download the installer authme-4.1.0-windows-x64.msi using the links in the
 assets section of the page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/Levminer/authme/releases/download/4.0.3/authme-4.0.3-windows-x64.msi
+  https://github.com/Levminer/authme/releases/download/4.1.0/authme-4.1.0-windows-x64.msi
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-4.0.3-windows-x64.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-4.0.3-windows-x64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-4.1.0-windows-x64.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-4.1.0-windows-x64.msi
 
-  File:     authme-4.0.3-windows-x64.msi
+  File:     authme-4.1.0-windows-x64.msi
   Type:     sha256
-  Checksum: 8D8D859DCFD7F3F88F242F5610F3500539E20E9DB10771DCCC4F8D0EB1415AC8
+  Checksum: A4FC8A8FA6335C9565B01D07B9BC994233C978C31F84FF272F6320A0D93395FB
 
 Contents of file LICENSE.txt is obtained from https://github.com/Levminer/authme/blob/dev/LICENSE.md
