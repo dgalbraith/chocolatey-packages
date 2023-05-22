@@ -42,6 +42,7 @@ following package parameter can be set:
 * `/EasyRsa`          - install EasyRSA 3 scripts for X509 certificate management
 * `/DcoDriver`        - install the OpenVPN Data Channel Offload driver
 * `/TapDriver`        - install the TAP-Windows driver (NDIS6)
+*  /PLAP              - activate Pre-Logon Access-Provider
 * `/WintunDriver`     - install the layer 3 TUN driver for Windows
 * `/Documentation`    - install the OpenVPN documentation
 * `/OpenSSL`          - install OpelSSL utilities for generating public/private key pairs

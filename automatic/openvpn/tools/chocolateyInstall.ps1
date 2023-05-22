@@ -45,6 +45,10 @@ if ($pp.count -gt 0) {
         Write-Verbose('The layer 3 TUN driver will be installed')
         $local += 'Drivers.Wintun'
       }
+      'PLAP' {
+	Write-Verbose('Pre-Logon Access-Provider will be activated')
+	$local += 'OpenVPN.PLAP'
+      }
       'Documentation' {
         Write-Verbose('OpenVPN documentation will be installed')
         $local += 'OpenVPN.Documentation'
