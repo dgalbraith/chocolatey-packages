@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-EPL%20v2.0%20%7C%20GPL%20v2%20%7C%20LGPL%20v2.1-blue)](https://github.com/jruby/jruby/blob/master/COPYING)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v9.4.2.0-blue)](https://github.com/jruby/jruby/releases/tag/9.4.2.0)
+[![Software version](https://img.shields.io/badge/Source-v9.4.3.0-blue)](https://github.com/jruby/jruby/releases/tag/9.4.3.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/jruby?label=Chocolatey)](https://chocolatey.org/packages/jruby)
 
 JRuby is a 100% Java implementation of the Ruby programming language. It is Ruby for the JVM.
