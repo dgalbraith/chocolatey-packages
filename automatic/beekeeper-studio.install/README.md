@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/beekeeper-studio/beekeeper-studio)](https://github.com/beekeeper-studio/beekeeper-studio/blob/master/LICENSE.md)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.9.14-blue.svg)](https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v3.9.14)
+[![Software version](https://img.shields.io/badge/Source-v3.9.17-blue.svg)](https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v3.9.17)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/beekeeper-studio.install?label=Chocolatey)](https://chocolatey.org/packages/beekeeper-studio.install)
 
 Beekeeper Studio is a free and open source SQL editor and database manager.
