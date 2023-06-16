@@ -10,27 +10,27 @@ be verified by:
 
   https://openvpn.net/community-downloads
 
-and download the installer OpenVPN-2.6.4-I001-x86.msi or
-OpenVPN-2.6.4-I001-amd64.msi using the relevant links on the page.
+and download the installer OpenVPN-2.6.5-I001-x86.msi or
+OpenVPN-2.6.5-I001-amd64.msi using the relevant links on the page.
 
 Alternatively the installers can be downloaded directly from
 
-  https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.4-I001-x86.msi
-  https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.4-I001-amd64.msi
+  https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.5-I001-x86.msi
+  https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.5-I001-amd64.msi
 
 2. The installers can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha512 OpenVPN-2.6.4-I001-x86.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f OpenVPN-2.6.4-I001-x86.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha512 OpenVPN-2.6.5-I001-x86.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f OpenVPN-2.6.5-I001-x86.msi
 
-  File32:     OpenVPN-2.6.4-I001-x86.msi
+  File32:     OpenVPN-2.6.5-I001-x86.msi
   Type32:     sha512
-  Checksum32: D8663048BB79ED4CC2CF7802063E21EC591A55A277F5937AA303C0EE71F3EB02499173DB5E9EB5804507ACA1E982460226B903E3BFBFFA341B6C79769D4FF8FE
+  Checksum32: 5C5960CFAFFE39B882CDF3A8AAB5C27751C4D20C57C525B125105F096A2FFA325D807B5436C827717C2B55C877273E476F0A60C938FA821A5435D34A5690C180
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha512 OpenVPN-2.6.4-I001-amd64.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f OpenVPN-2.6.4-I001-amd64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -algorithm sha512 OpenVPN-2.6.5-I001-amd64.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha512 -f OpenVPN-2.6.5-I001-amd64.msi
 
-  File64:     OpenVPN-2.6.4-I001-amd64.msi
+  File64:     OpenVPN-2.6.5-I001-amd64.msi
   Type64:     sha512
-  Checksum64: 25184BD969AED644E742B51989DAD00AF0443EE7228CAA1A5204F06504A79189F9F19EB8E17B130BED0EF9BB81654056338042EA447DED4E378509A7E3F9FF2A
+  Checksum64: 2BA0C5333E15CF6EE451F82606EE3F682B9B057E478DD8C960513349F8835443DE6404135E13D816324511509EBA02F30691EF3E4EC4F30FCBAAC5713FE6AB5A
 
 Contents of file LICENSE.txt is obtained from https://openvpn.net/license
