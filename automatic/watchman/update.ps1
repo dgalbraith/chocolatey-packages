@@ -49,7 +49,7 @@ function global:au_GetLatest {
   # there are no windows binaries available.  The nuspec has not been parsed at this stage so the current version is not
   # available in the environment - hardcode here and use the package update process to rewrite
   if ([string]::IsNullOrWhiteSpace($version)) {
-    $version = '2023.07.03.00'
+    $version = '2023.07.10.00'
   }
 
   return @{
