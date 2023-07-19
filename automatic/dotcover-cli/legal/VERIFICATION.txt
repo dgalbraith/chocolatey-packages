@@ -10,29 +10,29 @@ be verified by:
 
   https://www.jetbrains.com/dotcover/download/other.html
 
-and download the archive JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.3.zip or
-JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.3.zip using the relevant links.
+and download the archive JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.4.zip or
+JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.4.zip using the relevant links.
 
 Alternatively the installer can be downloaded directly from
 
-https://download.jetbrains.com/resharper/dotUltimate.2023.1.3/JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.3.zip
-https://download.jetbrains.com/resharper/dotUltimate.2023.1.3/JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.3.zip
+https://download.jetbrains.com/resharper/dotUltimate.2023.1.4/JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.4.zip
+https://download.jetbrains.com/resharper/dotUltimate.2023.1.4/JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.4.zip
 
 2. The archives can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.3.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.3.zip
-  - Download the checksums from https://download.jetbrains.com/resharper/dotUltimate.2023.1.3/JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.3.zip.sha256
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.4.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.4.zip
+  - Download the checksums from https://download.jetbrains.com/resharper/dotUltimate.2023.1.4/JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.4.zip.sha256
 
-  File32:         JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.3.zip
+  File32:         JetBrains.dotCover.CommandLineTools.windows-x86.2023.1.4.zip
   ChecksupType32: sha256
-  Checksum32:     4D8C0090452F376B1AD00DFF3AB1A021F56B7F34D9277BBDEABA04ADE3B30EDC
+  Checksum32:     0B9FC9E63142316D91500BC7ACFCD0AC9F46549DAE65B82C2DD0C626E59AE0DF
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.3.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.3.zip
-  - Download the checksums from https://download.jetbrains.com/resharper/dotUltimate.2023.1.3/JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.3.zip.sha256
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.4.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.4.zip
+  - Download the checksums from https://download.jetbrains.com/resharper/dotUltimate.2023.1.4/JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.4.zip.sha256
 
-  File64:         JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.3.zip
+  File64:         JetBrains.dotCover.CommandLineTools.windows-x64.2023.1.4.zip
   ChecksupType64: sha256
-  Checksum64:     46535A718B0344050C10F54AC2F09B0B42BB3474B949DED4EDD59086FEB67329
+  Checksum64:     7A57A9032604B0FCAD197EA78F03D352DA51CFD16FA3A12F1E8E776E38245C20
 
 Contents of file LICENSE.txt is obtained from https://www.jetbrains.com/legal/agreements/user.html
