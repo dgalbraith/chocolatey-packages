@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-jupyter</id>
-    <version>2023.7.1002011100</version>
+    <version>2023.7.1002021100</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-jupyter</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Visual Studio Jupyter VSCode Extension</title>
