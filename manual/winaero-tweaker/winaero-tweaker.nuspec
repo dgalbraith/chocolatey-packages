@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winaero-tweaker</id>
-    <version>1.40.0.0</version>
+    <version>1.55.0.0</version>
     <owners>bcurran3,dgalbraith</owners>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/winaero-tweaker</packageSourceUrl>
     <title>Winaero Tweaker</title>
     <authors>Sergey Tkachenko</authors>
     <projectUrl>https://winaerotweaker.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9cecfce145d52fe2e4539dbe5b0ad47254b5620f/icons/winaero-tweaker.png</iconUrl>
-    <copyright>Copyright 2015-2022 winaero.com</copyright>
+    <copyright>Copyright 2015-2023 winaero.com</copyright>
     <licenseUrl>https://winaerotweaker.com/#eula</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://winaero.com/winaero-tweaker-faq</docsUrl>
@@ -33,9 +33,9 @@ Winaero Tweaker is a freeware all-in-one application that comes with dozens of o
 * Versions released after the package will cause checksums to fail.  If this is the case please contact the maintainer(s) and let them know the package requires updating.
 
     </description>
-    <releaseNotes>https://winaero.com/winaero-tweaker-1-40-is-here-with-new-features-and-fixes</releaseNotes>
+    <releaseNotes>https://winaero.com/winaero-tweaker-1-55</releaseNotes>
     <dependencies>
-      <dependency id="winaero-tweaker.install" version="[1.40.0.0]" />
+      <dependency id="winaero-tweaker.install" version="[1.55.0.0]" />
     </dependencies>
   </metadata>
     <files>
