@@ -7,7 +7,7 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   fileType      = 'zip'
   url           = 'https://winaerotweaker.com/download/winaerotweaker.zip'
-  checksum      = '137A628D2CA222BA42FCFB3696FEFE93012A13ECCD4F4408E7FFDAC33CD7D56F'
+  checksum      = '370095778b69f763af03e553f5a83b192c7183d098cb0d87350f66fb525573b8'
   checksumType  = 'sha256'
   options = @{
     headers = @{
@@ -21,7 +21,7 @@ Install-ChocolateyZipPackage @packageArgs
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'exe'
-  file           = '{0}\WinaeroTweaker-{1}-setup.exe' -f $toolsDir, $env:packageVersion
+  file           = '{0}\WinaeroTweaker-{1}.0-setup.exe' -f $toolsDir, $env:packageVersion
   silentArgs     = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /PORTABLE  /DIR=`"$toolsDir`""
   validExitCodes = @(0)
 }
