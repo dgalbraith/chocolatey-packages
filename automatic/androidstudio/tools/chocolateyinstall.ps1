@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url        = 'https://redirector.gvt1.com/edgedl/android/studio/install/2022.3.1.18/android-studio-2022.3.1.18-windows.exe'
-$checksum   = 'd6dc7d802e7940bf182671718aa9b94be9eca3cf92a35a7b19ce54ee87201844'
+$url        = 'https://redirector.gvt1.com/edgedl/android/studio/install/2022.3.1.19/android-studio-2022.3.1.19-windows.exe'
+$checksum   = 'd9f21be76024a40395ed2c27baa4347e1765facf3c46294de69bc8452fe04f17'
 $silentArgs = '/S'
 
 # the installer includes both 32 and 64-bit executables so set the correct executable
