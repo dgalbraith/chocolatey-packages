@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'fend-1.2.0-windows-x64-exe.zip'
+$archive  = Join-Path $toolsDir 'fend-1.2.1-windows-x64-exe.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
