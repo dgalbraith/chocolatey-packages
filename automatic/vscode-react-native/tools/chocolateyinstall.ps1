@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -extensionId "msjsdiag.vscode-react-native@1.11.2"
+Install-VsCodeExtension -extensionId "msjsdiag.vscode-react-native@1.12.0"
