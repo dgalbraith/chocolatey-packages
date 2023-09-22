@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-freeware-orange)](https://www.nirsoft.net/utils/usb_devices_view.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.06-blue.svg)](https://www.nirsoft.net/utils/usb_devices_view.html)
+[![Software version](https://img.shields.io/badge/Source-v3.07-blue.svg)](https://www.nirsoft.net/utils/usb_devices_view.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/usbdeview?label=Chocolatey)](https://chocolatey.org/packages/usbdeview)
 
 USBDeview is a small utility that lists all USB devices that currently connected to your computer, as well as all USB devices that you previously used.
