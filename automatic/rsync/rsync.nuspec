@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rsync</id>
-    <version>6.2.8</version>
+    <version>6.2.10</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/rsync</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>cwRsync (Free Edition)</title>

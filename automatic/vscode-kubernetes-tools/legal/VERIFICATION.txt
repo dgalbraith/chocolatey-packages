@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools
 
-and download the extension ms-kubernetes-tools.vscode-kubernetes-tools-1.3.11.vsix using the Download Extension link
+and download the extension ms-kubernetes-tools.vscode-kubernetes-tools-1.3.14.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-kubernetes-tools/vsextensions/vscode-kubernetes-tools/1.3.11/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-kubernetes-tools/vsextensions/vscode-kubernetes-tools/1.3.14/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash ms-kubernetes-tools.vscode-kubernetes-tools-1.3.11.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-kubernetes-tools.vscode-kubernetes-tools-1.3.11.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash ms-kubernetes-tools.vscode-kubernetes-tools-1.3.14.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-kubernetes-tools.vscode-kubernetes-tools-1.3.14.vsix
 
   Type:     sha256
-  Checksum: 236B9DF5DE15B608A2213D0C7A868C4E18232D8B52B9FB455591D525332527CB
+  Checksum: 12593064D7F86D322E0503EA760774C07360948F1DC87A58D7F55C7E1047981A
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-kubernetes-tools.vscode-kubernetes-tools/license

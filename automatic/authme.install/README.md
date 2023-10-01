@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/Levminer/authme)](https://github.com/Levminer/authme/blob/main/LICENSE.md)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/source-v4.1.0-blue)](https://github.com/Levminer/authme/releases/tag/4.1.0)
+[![Software version](https://img.shields.io/badge/source-v4.2.0-blue)](https://github.com/Levminer/authme/releases/tag/4.2.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/authme.install?label=Chocolatey)](https://chocolatey.org/packages/authme.install)
 
 Authme is a simple two-factor (2FA) authenticator application for the desktop with support for
