@@ -43,6 +43,7 @@ following package parameter can be set:
 * `/DcoDriver`        - install the OpenVPN Data Channel Offload driver
 * `/TapDriver`        - install the TAP-Windows driver (NDIS6)
 * `/WintunDriver`     - install the layer 3 TUN driver for Windows
+* `/PLAP`             - install Pre-Logon Access-Provider
 * `/Documentation`    - install the OpenVPN documentation
 * `/OpenSSL`          - install OpelSSL utilities for generating public/private key pairs
 * `/SampleConfig`     - install OpenVPN client/server configuration examples
