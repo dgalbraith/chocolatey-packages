@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/license-proprietary-lightgrey)](https://www.microsoft.com/download/details.aspx?id=30709)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![Software version](https://img.shields.io/badge/Source-v4.0.8876.1-blue.svg)](https://www.microsoft.com/download/details.aspx?id=30709)
-[![Chocolatey package version](https://img.shields.io/chocolatey/v/go-fonts?label=Chocolatey)](https://chocolatey.org/packages/mssqlserver-compact4.0)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/mssqlserver-compact4.0?label=Chocolatey)](https://chocolatey.org/packages/mssqlserver-compact4.0)
 
 Microsoft SQL Server Compact 4.0 is a free, embedded database that software developers can use for building ASP.NET
 websites and Windows desktop applications. SQL Server Compact 4.0 has a small footprint and supports private
