@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/println/fend/releases/tag/v1.2.2
+  https://github.com/println/fend/releases/tag/v1.3.0
 
-and download the archive fend-1.2.2-windows-x64-exe.zip using the links in the asset
+and download the archive fend-1.3.0-windows-x64-exe.zip using the links in the asset
 section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/printfn/fend/releases/download/v1.2.2/fend-1.2.2-windows-x64-exe.zip
+  https://github.com/printfn/fend/releases/download/v1.3.0/fend-1.3.0-windows-x64-exe.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 fend-1.2.2-windows-x64-exe.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f fend-1.2.2-windows-x64-exe.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 fend-1.3.0-windows-x64-exe.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f fend-1.3.0-windows-x64-exe.zip
 
-  File:     fend-1.2.2-windows-x64-exe.zip
+  File:     fend-1.3.0-windows-x64-exe.zip
   Type:     sha256
-  Checksum: 082C4C038C17280171E464FB7F37A22D33D973B13CE39D7A7CAD11FC6F0779D2
+  Checksum: A2FD4EB0027DDAFEA369D89A28A72130273D8B8719227DB391F07A07C9B23360
 
 Contents of file LICENSE.txt is obtained from https://github.com/printfn/fend/blob/main/LICENSE.md
