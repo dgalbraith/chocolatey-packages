@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sendtokindle</id>
-    <version>1.1.1.254</version>
+    <version>1.1.1.255</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sendtokindle</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Send to Kindle</title>

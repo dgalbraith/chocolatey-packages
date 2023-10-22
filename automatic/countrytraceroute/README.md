@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-freeware-orange)](http://www.nirsoft.net/utils/country_traceroute.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.33-blue.svg)](http://www.nirsoft.net/utils/country_traceroute.html)
+[![Software version](https://img.shields.io/badge/Source-v1.50-blue.svg)](http://www.nirsoft.net/utils/country_traceroute.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/countrytraceroute?label=Chocolatey)](https://chocolatey.org/packages/countrytraceroute)
 
 CountryTraceRoute is a Traceroute utility, similar to the tracert tool of Windows, but with a graphical user interface, and it's also much faster than tracert of Windows.

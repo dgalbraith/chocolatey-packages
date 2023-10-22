@@ -3,7 +3,7 @@
 [![Software license ©Sergey Tkachenko](https://img.shields.io/badge/license-Copyright-lightgrey)](https://winaerotweaker.com/#eula)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-1.40.0.0-blue.svg)](https://winaerotweaker.com)
+[![Software version](https://img.shields.io/badge/Source-1.55.0.0-blue.svg)](https://winaerotweaker.com)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/winaero-tweaker?label=Chocolatey)](https://chocolatey.org/packages/winaero-tweaker)
 
 Winaero Tweaker is a freeware all-in-one application that comes with dozens of options for fine-grained tuning of various Windows settings and features.

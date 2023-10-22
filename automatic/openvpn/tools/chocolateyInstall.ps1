@@ -2,8 +2,8 @@
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$file32 = Join-Path $toolsDir 'OpenVPN-2.6.3-I001-x86.msi'
-$file64 = Join-Path $toolsDir 'OpenVPN-2.6.3-I001-amd64.msi'
+$file32 = Join-Path $toolsDir 'OpenVPN-2.6.6-I001-x86.msi'
+$file64 = Join-Path $toolsDir 'OpenVPN-2.6.6-I001-amd64.msi'
 
 $silentArgs = '/qn /norestart'
 
@@ -44,6 +44,10 @@ if ($pp.count -gt 0) {
       'WintunDriver' {
         Write-Verbose('The layer 3 TUN driver will be installed')
         $local += 'Drivers.Wintun'
+      }
+      'PLAP' {
+	      Write-Verbose('Pre-Logon Access-Provider will be activated')
+	      $local += 'OpenVPN.PLAP'
       }
       'Documentation' {
         Write-Verbose('OpenVPN documentation will be installed')

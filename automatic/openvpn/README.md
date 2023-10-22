@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://github.com/OpenVPN/openvpn/blob/master/COPYING)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/source-v2.6.3-blue.svg)](https://openvpn.net/community-downloads)
+[![Software version](https://img.shields.io/badge/source-v2.6.6-blue.svg)](https://openvpn.net/community-downloads)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/openvpn?label=Chocolatey)](https://chocolatey.org/packages/openvpn)
 
 OpenVPN is a full-featured open source SSL VPN solution that accommodates a wide
@@ -43,6 +43,7 @@ following package parameter can be set:
 * `/DcoDriver`        - install the OpenVPN Data Channel Offload driver
 * `/TapDriver`        - install the TAP-Windows driver (NDIS6)
 * `/WintunDriver`     - install the layer 3 TUN driver for Windows
+* `/PLAP`             - install Pre-Logon Access-Provider
 * `/Documentation`    - install the OpenVPN documentation
 * `/OpenSSL`          - install OpelSSL utilities for generating public/private key pairs
 * `/SampleConfig`     - install OpenVPN client/server configuration examples

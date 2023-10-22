@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://www.amazon.com/gp/help/customer/display.html/?nodeId=GLSBYFE9MGKKQXXM)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/version-v1.1.1.254-blue)](http://www.amazon.com/gp/sendtokindle/pc)
+[![Software version](https://img.shields.io/badge/version-v1.1.1.255-blue)](http://www.amazon.com/gp/sendtokindle/pc)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/sendtokindle?label=Chocolatey)](https://chocolatey.org/packages/sendtokindle)
 
 Reading your personal documents on a Kindle has never been easier.

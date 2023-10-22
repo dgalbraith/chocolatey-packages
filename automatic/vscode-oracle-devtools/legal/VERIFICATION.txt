@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=Oracle.oracledevtools
 
-and download the extension Oracle.oracledevtools-21.5.0.vsix using the Download Extension link
+and download the extension Oracle.oracledevtools-21.6.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Oracle/vsextensions/oracledevtools/21.5.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Oracle/vsextensions/oracledevtools/21.6.0/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash Oracle.oracledevtools-21.5.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Oracle.oracledevtools-21.5.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash Oracle.oracledevtools-21.6.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Oracle.oracledevtools-21.6.0.vsix
 
   Type:     sha256
-  Checksum: EAFFAF97DA56F610960BD6BE1FA03CF82C36DBA362DFCE81532A00AA416D3E6D
+  Checksum: 5C1BB5D98CBA9F42075900240663747A2F3A3D9D360F5C81B7EABE2858929A7E
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/Oracle.oracledevtools/license
