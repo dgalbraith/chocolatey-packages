@@ -13,9 +13,9 @@
     <copyright>M. Kölling and J. Rosenberg</copyright>
     <licenseUrl>https://www.bluej.org/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://www.bluej.org/download/files/source/BlueJ-source-510.zip</projectSourceUrl>
+    <projectSourceUrl>https://github.com/k-pet-group/BlueJ-Greenfoot</projectSourceUrl>
     <docsUrl>https://www.bluej.org/doc/documentation.html</docsUrl>
-    <mailingListUrl>http://blueroom.bluej.org/</mailingListUrl>
+    <mailingListUrl>https://blueroom.bluej.org/</mailingListUrl>
     <bugTrackerUrl>https://gitlab.bluej.org/bluej/bjgf</bugTrackerUrl>
     <tags>bluej java ide</tags>
     <summary>Beginners Java development environment that allows you to develop Java programs quickly and easily</summary>
