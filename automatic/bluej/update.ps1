@@ -13,10 +13,6 @@ function global:au_BeforeUpdate {
 
 function global:au_SearchReplace {
   @{
-    "$($Latest.PackageName).nuspec" = @{
-      "(BlueJ-source-)(\d{3})(.+zip)" = "`${1}$($Latest.RawVersion)`${3}"
-    }
-
     ".\README.md" = @{
       "(v)(?<Version>([\d]+\.[\d]+\.[\d]+))" = "`${1}$($Latest.Version)"
     }
