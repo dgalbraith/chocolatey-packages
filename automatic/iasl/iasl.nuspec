@@ -3,20 +3,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>iasl</id>
-    <version>2022.03.31</version>
+    <version>2022.10.20</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/iasl</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>iASL Compiler and ACPI Tools</title>
     <authors>Intel Corporation</authors>
-    <projectUrl>https://acpica.org</projectUrl>
+    <projectUrl>https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/overview.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@fe977f362ae69c7f6ab164f87a9223d36538d3ed/icons/iasl.png</iconUrl>
     <copyright>Copyright (c) 1999 - 2022, Intel Corp.  All rights reserved.</copyright>
-    <licenseUrl>https://acpica.org/sites/acpica/files/licensing.txt</licenseUrl>
+    <licenseUrl>https://www.intel.com/content/www/us/en/developer/articles/license/acpica-licensing.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/acpica/acpica</projectSourceUrl>
-    <docsUrl>https://acpica.org/documentation</docsUrl>
+    <docsUrl>https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/documentation.html</docsUrl>
     <bugTrackerUrl>https://github.com/acpica/acpica/issues</bugTrackerUrl>
-    <mailingListUrl>https://lists.acpica.org/hyperkitty/list/devel@acpica.org</mailingListUrl>
+    <mailingListUrl>https://lists.linuxfoundation.org/mailman/listinfo/acpica-devel</mailingListUrl>
     <tags>iasl compiler decompiler asl aml acpi acpica intel</tags>
     <summary>ASL source language compiler, ACPI table compiler, and AML disassembler</summary>
     <description><![CDATA[

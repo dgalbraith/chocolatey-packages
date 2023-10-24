@@ -8,22 +8,22 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://acpica.org/downloads/binary-tools
+  https://www.intel.com/content/www/us/en/download/774881/acpi-component-architecture-downloads-windows-binary-tools.html
 
-and download the installer iasl-win-20220331.zip using the iASL compiler and Windows ACPI tools
-link in the Windows Binary Toos section of the page.
+and download the installer iasl-win-20221020_Signed.zip using the Download button
+on the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://acpica.org/sites/acpica/files/iasl-win-20220331.zip
+  https://downloadmirror.intel.com/783546/iasl-win-20221020_Signed.zip
 
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 iasl-win-20220331.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f iasl-win-20220331.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 iasl-win-20221020_Signed.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f iasl-win-20221020_Signed.zip
 
-  File:     iasl-win-20220331.zip
+  File:     iasl-win-20221020_Signed.zip
   Type:     sha256
-  Checksum: E501C152DAF2D40763ABAA8F6923E690252BBE4F3F9718D2B20298BCA6CCC125
+  Checksum: 44b21aad479f3be710854cdc6c5072edcf0dbad36233172ffb7cc9b125cd54b7
 
-Contents of file LICENSE.txt is obtained from https://acpica.org/sites/acpica/files/licensing.txt
+Contents of file LICENSE.txt is obtained from https://github.com/acpica/acpica/blob/master/source/include/acpi.h
