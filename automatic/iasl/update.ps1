@@ -2,10 +2,10 @@
 
 $ErrorActionPreference = 'Stop'
 
-$domain   = 'https://acpica.org'
-$releases = "${domain}/downloads/binary-tools"
+$releases  = 'https://www.intel.com/content/www/us/en/download/774881/acpi-component-architecture-downloads-windows-binary-tools.html'
+$userAgent = 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/W.X.Y.Z Safari/537.36'
 
-$reFile      = '(iasl-win-\d{8}\.zip)'
+$reFile      = '(?<Filename>iasl-win-\d{8}.*\.zip)'
 $reChecksum  = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
 $reCopyright = '(?<=(Copyright.+(?<CopyrightFrom>[\d]{4})\s-\s))(?<CopyrightTo>[\d]{4})'
 $reVersion   = '(?<=v)(?<Version>(\d{4}\.\d{2}\.\d{2}))'
@@ -36,10 +36,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases -UserAgent $userAgent
 
-  $url32      = $downloadPage.links | Where-Object href -match $reFile | Select-Object -expand href
-  $fileName32 = $url32 -split '/' | Select-Object -Last 1
+  $downloadPage.Content -match "(?<Url>https:\/\/.+$reFile)"
+  $url32      = $Matches.Url
+  $fileName32 = $Matches.Filename
 
   $fileName32 -match '(?<Year>\d{4})(?<Month>\d{2})(?<Day>\d{2})'
   $version = '{0}.{1}.{2}' -f $Matches.Year, $Matches.Month, $Matches.Day

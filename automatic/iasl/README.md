@@ -1,9 +1,9 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@fe977f362ae69c7f6ab164f87a9223d36538d3ed/icons/iasl.png" width="48" height="48" />iASL Compiler and ACPI Tools](https://community.chocolatey.org/packages/iasl)
 
-[![Software license](https://img.shields.io/badge/license-Intel-lightgrey.svg)](https://acpica.org/sites/acpica/files/licensing.txt)
+[![Software license](https://img.shields.io/badge/license-Intel-lightgrey.svg)](https://www.intel.com/content/www/us/en/developer/articles/license/acpica-licensing.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/source-v2022.03.31-blue.svg)](https://acpica.org/downloads/binary-tools)
+[![Software version](https://img.shields.io/badge/source-v2022.10.20-blue.svg)](https://www.intel.com/content/www/us/en/download/774881/acpi-component-architecture-downloads-windows-binary-tools.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/iasl?label=Chocolatey)](https://community.chocolatey.org/packages/iasl)
 
 The iASL compiler/disassembler is a fully-featured translator for the ACPI Source Language (ASL) and ACPI
