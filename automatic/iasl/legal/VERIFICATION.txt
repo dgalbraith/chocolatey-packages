@@ -10,20 +10,20 @@ be verified by:
 
   https://www.intel.com/content/www/us/en/download/774881/acpi-component-architecture-downloads-windows-binary-tools.html
 
-and download the installer iasl-win-20221020_Signed.zip using the Download button
+and download the installer iasl-win-20230628.zip using the Download button
 on the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://downloadmirror.intel.com/783546/iasl-win-20221020_Signed.zip
+  https://downloadmirror.intel.com/783546/iasl-win-20230628.zip
 
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 iasl-win-20221020_Signed.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f iasl-win-20221020_Signed.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 iasl-win-20230628.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f iasl-win-20230628.zip
 
-  File:     iasl-win-20221020_Signed.zip
+  File:     iasl-win-20230628.zip
   Type:     sha256
-  Checksum: 44b21aad479f3be710854cdc6c5072edcf0dbad36233172ffb7cc9b125cd54b7
+  Checksum: 8011AA38B49A277466BE70317BCA1C8FBF1551DC44EF856A99BF1C9FAAD1DBB2
 
 Contents of file LICENSE.txt is obtained from https://github.com/acpica/acpica/blob/master/source/include/acpi.h
