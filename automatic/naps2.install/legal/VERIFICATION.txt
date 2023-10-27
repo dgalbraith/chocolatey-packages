@@ -8,29 +8,29 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/cyanfish/naps2/releases/tag/v7.1.0
+  https://github.com/cyanfish/naps2/releases/tag/v7.1.2
 
-and download the archive naps2-7.1.0-win-x86.msi or naps2-7.1.0-win-x64.msi using
+and download the archive naps2-7.1.2-win-x64.msi using
 the links in the asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/cyanfish/naps2/releases/download/v7.1.0/naps2-7.1.0-win-x86.msi
-  https://github.com/cyanfish/naps2/releases/download/v7.1.0/naps2-7.1.0-win-x64.msi
+  https://github.com/cyanfish/naps2/releases/download/v7.1.2/naps2-7.1.2-win-x86.msi
+  https://github.com/cyanfish/naps2/releases/download/v7.1.2/naps2-7.1.2-win-x64.msi
 
 2. The archives can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-7.1.0-win-x86.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-7.1.0-win-x86.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-7.1.2-win-x86.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-7.1.2-win-x86.msi
 
-  File:       naps2-7.1.0-win-x86.msi
+  File:       naps2-7.1.2-win-x86.msi
   Type:       sha256
-  Checksum32: b694101d7d12b574a1caa774f5e42e82da6ba350a25bd72d437b0dca403de6ed
+  Checksum32: D6B3AF16C6DB96FA29D997E146B42F95EA6A00C09A4D944BA86C9212FCF036B4
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-7.1.0-win-x64.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-7.1.0-win-x64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-7.1.2-win-x64.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-7.1.2-win-x64.msi
 
-  File:       naps2-7.1.0-win-x64.msi
+  File:       naps2-7.1.2-win-x64.msi
   Type:       sha256
-  Checksum64: cec4e565b141ac7f799f755844240b1302ca3983d2e5c8d344e12ef69c9f5eaf
+  Checksum64: B8D43DA85E21F43FCB3DF811E0A9F28F71A3506DC8619D7216FE231A9A5E5367
 
 Contents of file LICENSE.txt is obtained from https://github.com/cyanfish/naps2/blob/master/LICENSE
