@@ -4,7 +4,7 @@ $ErrorActionPreference = 'STOP'
 
 function global:au_BeforeUpdate {
   $Latest.FileName32 = "$($Latest.FileNamePortable)"
-  $Latest.FileType   = '7z'
+  $Latest.FileType   = 'zip'
   $Latest.Url32      = "$($Latest.UrlPortable)"
 
   Get-RemoteFiles -Purge -NoSuffix
@@ -33,4 +33,4 @@ function global:au_SearchReplace {
   }
 }
 
-update -ChecksumFor none -NoReadme
+update -ChecksumFor none -NoReadme -NoCheckUrl

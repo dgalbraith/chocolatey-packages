@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/cyanfish/naps2/releases/tag/v6.1.2
+  https://github.com/cyanfish/naps2/releases/tag/v7.1.0
 
-and download the archive naps2-6.1.2-portable.7z using the links in the asset
+and download the archive naps2-7.1.0-win.zip using the links in the asset
 section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/cyanfish/naps2/releases/download/v6.1.2/naps2-6.1.2-portable.7z
+  https://github.com/cyanfish/naps2/releases/download/v7.1.0/naps2-7.1.0-win.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-6.1.2-portable.7z
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-6.1.2-portable.7z
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-7.1.0-win.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-7.1.0-win.zip
 
-  File:     naps2-6.1.2-portable.7z
+  File:     naps2-7.1.0-win.zip
   Type:     sha256
-  Checksum: 2B2EBB144716774505C8ABF6B121CBB2684BE9EA273299681178F1BC7C75E166
+  Checksum: bc629c2afdca52fa4398b82445c80bcf7fb498f733bade6ce5e1eff3cc7ad058
 
 Contents of file LICENSE.txt is obtained from https://github.com/cyanfish/naps2/blob/master/LICENSE
