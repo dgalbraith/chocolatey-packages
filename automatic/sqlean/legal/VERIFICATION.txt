@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/nalgeon/sqlean/releases/tag/0.21.7
+
+and download the archive sqlean-win-x64.zip using the link on the page.
+
+Alternatively the archive can be downloaded directly from
+
+  https://github.com/nalgeon/sqlean/releases/download/0.21.7/sqlean-win-x64.zip
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 sqlean-win-x64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f sqlean-win-x64.zip
+
+  File:     sqlean-win-x64.zip
+  Type:     sha256
+  Checksum: a4edf752a4abef5618ba1e2352eb5f6202044e075cbbb4ae60fe202d542a0ec2
+
+Contents of file LICENSE.txt is obtained from https://github.com/nalgeon/sqlean/blob/main/LICENSE.

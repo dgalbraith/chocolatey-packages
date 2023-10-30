@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sqlean</id>
+    <version>0.21.7</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sqlean</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>sqlean - all the missing sqlite functions</title>
+    <authors>Anton Zhiyanov</authors>
+    <projectUrl>https://github.com/nalgeon/sqlean/blob/main/README.md</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@5c00af62769ca23287f09747288b62b554e35d06/icons/sqlean.png</iconUrl>
+    <copyright>Copyright 2021+ Anton Zhiyanov</copyright>
+    <licenseUrl>https://github.com/nalgeon/sqlean/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/nalgeon/sqlean</projectSourceUrl>
+    <docsUrl>https://github.com/nalgeon/sqlean/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/nalgeon/sqlean/issues</bugTrackerUrl>
+    <tags>sqlite sqlean sql db database embedded</tags>
+    <summary>The ultimate set of SQLite extensions</summary>
+    <description><![CDATA[
+
+SQLite has few functions compared to other database management systems. SQLite
+authors see this as a feature rather than a problem, because SQLite has an
+extension mechanism in place.
+
+There are a lot of SQLite extensions out there, but they are incomplete,
+inconsistent and scattered across the internet. sqlean brings them together,
+neatly packaged into domain modules, documented and tested.
+
+SQLean provides a well-thought set of domain modules with a convenient API - a
+kind of standard library for SQLite.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@5c00af62769ca23287f09747288b62b554e35d06/automatic/sqlean/screenshot.png)
+
+## Package Parameters
+
+* `/InstallDir=[directory]` - set the installation directory to `[directory]`
+  e.g. `choco install -y sqlean --package-parameters="/InstallDir=C:\Tools\sqlean"`
+
+## Notes
+
+* Extensions distributed with sqlean are compiled in 64-bit and require a
+  64-bit SQLite version.
+* A 64-bit SQLite shell is currently not available from source but there is one
+  availabe pre-bundled with the sqlean extensions in the [sqlean-shell](https://community.chocolatey.org/packages/sqlean-shell)
+  package.
+* A stand-alone 64-bit SQLite shell binary is available in the [sqlite-64](https://community.chocolatey.org/packages/sqlite-64)
+  package.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact
+  the maintainer(s) and let them know the package is no longer updating
+  correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/nalgeon/sqlean/releases/tag/0.21.7</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
