@@ -31,7 +31,7 @@ kind of standard library for SQLite.
 * A 64-bit SQLite shell is currently not available from source but there is one
   available pre-bundled with the sqlean extensions in the [sqlean-shell](https://community.chocolatey.org/packages/sqlean-shell)
   package.
-* A stand-alone 64-bit SQLite shell binary is available in the [sqlite-64](https://community.chocolatey.org/packages/sqlite-64)
+* A stand-alone 64-bit SQLite shell binary is available in the [sqlite-shell-x64](https://community.chocolatey.org/packages/sqlite-shell-x64)
   package.
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact
