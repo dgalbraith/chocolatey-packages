@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sqlite-shell-x64</id>
+    <version>3.43.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sqlean-shell-x64</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>SQLite shell bundled with essential sqlean extensions</title>
+    <authors>Anton Zhiyanov</authors>
+    <projectUrl>https://github.com/nalgeon/sqlite/blob/main/README.md</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9bd285a368d17e0f4fd8763fdf679d621b4a9657/icons/sqlean-shell-x64.png</iconUrl>
+    <copyright>Copyright 2021 Anton Zhiyanov</copyright>
+    <licenseUrl>https://github.com/nalgeon/sqlite/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/nalgeon/sqlite</projectSourceUrl>
+    <docsUrl>https://github.com/nalgeon/sqlean/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/nalgeon/sqlite/issues</bugTrackerUrl>
+    <tags>sqlite sqlean sql db database embedded bundled-extensions</tags>
+    <summary>SQLite shell bundled with essential extensions</summary>
+    <description><![CDATA[
+
+sqlean shell is SQLite shell bundled with a collection of [essential extensions](https://github.com/nalgeon/sqlean#main-set)
+ranging from regular expressions and math statistics to file I/O and dynamic SQL.
+
+sqlean = sqlite +
+$\begin{pmatrix}
+  crypto & ipaddr & text \\
+  define & math & unicode \\
+  fileio & regexp & uuid \\
+  fuzzy & stats & vsv
+\end{pmatrix}$
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9bd285a368d17e0f4fd8763fdf679d621b4a9657/automatic/sqlean-shell/screenshot.png)
+
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/AddToDesktop` - add a desktop shortcut for sqlite3.  By default the shortcut will be added for all users  
+e.g. `choco install -y sqlite-shell-x64 --package-parameters="/AddToDesktop"`
+* `/AddToStart` - add a shortcut to the start menu for sqlite3.  By default the shortcut will be added for all users  
+e.g. `choco install -y sqlite-shell-x64 --package-parameters="/AddToStart"`
+* `/User` - where the user parameter is specified any shortcuts created (`/AddToDesktop` or `/AddToStart`) will be
+for the current user only  
+e.g. `choco install -y sqlite-shell-x64 --package-parameters="/AddToDesktop /User"`
+
+## Notes
+
+* sqlite-shell-x64 is only available as a 64-bit version.
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact
+  the maintainer(s) and let them know the package is no longer updating
+  correctly.
+
+]]></description>
+    <releaseNotes>https://github.com/nalgeon/sqlite/releases/tag/3.43.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

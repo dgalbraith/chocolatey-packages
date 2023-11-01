@@ -1,0 +1,27 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://github.com/nalgeon/sqlite/releases/tag/3.43.0
+
+and download the file sqlite3.exe using the link on the page.
+
+Alternatively the file can be downloaded directly from
+
+  https://github.com/nalgeon/sqlite/releases/tag/3.43.0/sqlite3.exe
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 sqlite3.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f sqlite3.exe
+
+  File:     sqlite3.exe
+  Type:     sha256
+  Checksum: 27ef5fea7da2a48b2a9ede2b14eb26a5759a93ec04dd2e0fbe90663c27273c41
+
+Contents of file LICENSE.txt is obtained from https://github.com/nalgeon/sqlite/blob/main/LICENSE.
