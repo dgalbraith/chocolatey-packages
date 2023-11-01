@@ -23,14 +23,6 @@
 sqlean shell is SQLite shell bundled with a collection of [essential extensions](https://github.com/nalgeon/sqlean#main-set)
 ranging from regular expressions and math statistics to file I/O and dynamic SQL.
 
-sqlean = sqlite +
-$\begin{pmatrix}
-  crypto & ipaddr & text \\
-  define & math & unicode \\
-  fileio & regexp & uuid \\
-  fuzzy & stats & vsv
-\end{pmatrix}$
-
 ![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ee024e32bd615c9597654203de1907c6533027f8/automatic/sqlean-shell/screenshot.png)
 
 ## Package Parameters
