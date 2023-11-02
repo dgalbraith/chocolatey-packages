@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9bd285a368d17e0f4fd8763fdf679d621b4a9657/icons/sqlite-shell-x64.png" width="48" height="48" />sqlean-shell-x64 - 64-bit SQLite shell](https://chocolatey.org/packages/sqlite-shell-x64)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9bd285a368d17e0f4fd8763fdf679d621b4a9657/icons/sqlite-shell-x64.png" width="48" height="48" />sqlite-shell-x64 - 64-bit SQLite shell](https://chocolatey.org/packages/sqlite-shell-x64)
 
 [![Software license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/nalgeon/sqlite/blob/main/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
@@ -31,22 +31,3 @@ e.g. `choco install -y sqlite-shell-x64 --package-parameters="/AddToDesktop /Use
 * sqlite-shell-x64 is only available as a 64-bit version.
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-sqlean = sqlite +
-$\begin{pmatrix}
-  crypto & ipaddr & text \\
-  define & math & unicode \\
-  fileio & regexp & uuid \\
-  fuzzy & stats & vsv
-\end{pmatrix}$
-
-![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@TODO/automatic/sqlean-shell/screenshot.png)
-
-
-## Notes
-
-* sqlean-shell is only available as a 64-bit version.
-* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
-  If you find it is out of date by more than a day or two, please contact
-  the maintainer(s) and let them know the package is no longer updating
-  correctly.
