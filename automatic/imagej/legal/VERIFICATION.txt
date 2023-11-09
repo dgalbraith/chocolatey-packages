@@ -10,19 +10,19 @@ be verified by:
 
   http://wsr.imagej.net/distros/win/
 
-and download the installer ij153-win-java8.zip using the relevant links in the
+and download the installer ij154-win-java8.zip using the relevant links in the
 asset section of the distribution page.
 
 Alternatively the distribution can be downloaded directly from
 
-  http://wsr.imagej.net/distros/win/ij153-win-java8.zip
+  http://wsr.imagej.net/distros/win/ij154-win-java8.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash ij153-win-java8.zip
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ij153-win-java8.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash ij154-win-java8.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ij154-win-java8.zip
 
-  File:         ij153-win-java8.zip
+  File:         ij154-win-java8.zip
   ChecksumType: sha256
-  Checksum:     1A66D80B6D0A41E6C381AD0AC83DD92B266F939F7E39EBB096CA420737A9B72F
+  Checksum:     32B05356D3A7906E10CA91491C2BE06BFE0397C9E7A3D3B52FDAD9E3EF48276C
 
   Contents of file LICENSE.txt is obtained from https://imagej.nih.gov/ij/disclaimer.html

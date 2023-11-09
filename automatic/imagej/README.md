@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://imagej.nih.gov/ij/disclaimer.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.53-blue)](http://wsr.imagej.net/distros/win/ij152-win-java8.zip)
+[![Software version](https://img.shields.io/badge/Source-v1.54-blue)](http://wsr.imagej.net/distros/win/ij152-win-java8.zip)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/imagej?label=Chocolatey)](https://chocolatey.org/packages/imagej)
 
 Public domain software for processing and analyzing scientific images – a.k.a. ImageJ 1.x.
