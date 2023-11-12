@@ -8,7 +8,7 @@
     <owners>dgalbraith</owners>
     <title>Office 365 Professional Plus</title>
     <authors>Microsoft</authors>
-    <projectUrl>http://office.microsoft.com/</projectUrl>
+    <projectUrl>https://www.microsoft.com/microsoft-365</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@1a42aea114ac76b846a2356e26672b6a97cfd279/icons/office365proplus.png</iconUrl>
     <copyright>Copyright Microsoft Corporation</copyright>
     <licenseUrl>https://www.microsoft.com/servicesagreement</licenseUrl>
