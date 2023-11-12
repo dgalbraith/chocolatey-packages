@@ -21,7 +21,7 @@ if ($configPath)
 elseif ($language)
 {
     Write-Output "Language specified: $language"
-    
+
     $file = $configFile
     $x = [xml] (Get-Content $file)
     $nodes = $x.SelectNodes("/Configuration/Add/Product/Language")
@@ -29,7 +29,7 @@ elseif ($language)
         $node.SetAttribute("ID", $language)
     }
     $x.Save($file)
-    
+
     $file = $configFile64
     $x = [xml] (Get-Content $file)
     $nodes = $x.SelectNodes("/Configuration/Add/Product/Language")
@@ -47,8 +47,8 @@ else
 $packageArgs                = @{
     packageName             = 'Office365DeploymentTool'
     fileType                = 'exe'
-    url                     = 'https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_16026-20170.exe'
-    checksum                = 'EE53C839F8CEC8FD9773A79C4DC4755ACDC7E25821E9657133425B2022B81424'
+    url                     = 'https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_16731-20354.exe'
+    checksum                = 'f37ee507114362407a7a7ff90acca1d3683ad105c2a4830b71b0de651d6eb18f'
     checksumType            = 'sha256'
     softwareName            = 'Microsoft Office 365 ProPlus*'
     silentArgs              = "/extract:`"$officetempfolder`" /log:`"$officetempfolder\OfficeInstall.log`" /quiet /norestart"
