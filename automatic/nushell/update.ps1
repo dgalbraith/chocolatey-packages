@@ -7,8 +7,8 @@ $releases = "${domain}/nushell/nushell/releases/latest"
 
 $reChecksum  = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
 $reCopyright = '(?<=(Copyright\s(?<CopyrightFrom>[\d]{4})-))(?<CopyrightTo>[\d]{4})'
-$reInstall   = "(?<=\d\/|\s|')(?<Filename>(n.+x86_64.+w.+msi))"
-$rePortable  = "(?<=\d\/|\s|')(?<Filename>(n.+x86_64.+w.+zip))"
+$reInstall   = "(?<=\d\/|\s|')(?<Filename>(n.+x86_64.+w.+msvc\.msi))"
+$rePortable  = "(?<=\d\/|\s|')(?<Filename>(n.+x86_64.+w.+msvc\.zip))"
 $reVersion   = '(?<=v|\[|\/|-)(?<Version>([\d]+\.[\d]+\.[\d](\.(?=\d)\d+)?))'
 
 function global:au_BeforeUpdate {
