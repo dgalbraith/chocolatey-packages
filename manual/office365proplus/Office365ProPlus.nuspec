@@ -6,7 +6,7 @@
     <version>16731.20354</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/office365proplus</packageSourceUrl>
     <owners>dgalbraith</owners>
-    <title>Office 365 Proofessional Plus</title>
+    <title>Office 365 Professional Plus</title>
     <authors>Microsoft</authors>
     <projectUrl>http://office.microsoft.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@1a42aea114ac76b846a2356e26672b6a97cfd279/icons/office365proplus.png</iconUrl>
