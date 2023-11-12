@@ -8,13 +8,13 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/nalgeon/sqlite/releases/tag/3.43.0
+  https://github.com/nalgeon/sqlite/releases/tag/3.44.0
 
 and download the file sqlite3.exe using the link on the page.
 
 Alternatively the file can be downloaded directly from
 
-  https://github.com/nalgeon/sqlite/releases/tag/3.43.0/sqlite3.exe
+  https://github.com/nalgeon/sqlite/releases/tag/3.44.0/sqlite3.exe
 
 2. The archive can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 sqlite3.exe
@@ -22,6 +22,6 @@ Alternatively the file can be downloaded directly from
 
   File:     sqlite3.exe
   Type:     sha256
-  Checksum: 27ef5fea7da2a48b2a9ede2b14eb26a5759a93ec04dd2e0fbe90663c27273c41
+  Checksum:61D7932C25023EF87A00809A72C954EBF71C13C2B259C009ECD4A3B643F02BD4
 
 Contents of file LICENSE.txt is obtained from https://github.com/nalgeon/sqlite/blob/main/LICENSE.
