@@ -33,5 +33,12 @@ utilization of a particular database file.
 
 * The `sqlite3_analyzer.exe` program is a [TCL](http://www.tcl.tk/) program that uses the [dbstat virtual table](https://www.sqlite.org/dbstat.html)
   to gather information about the database file and then format that information neatly.
+* Current versions of sqlite analyzer provide 64-bit support only - for a 32-bit version use [sqlite.analyzer 3.43.2](https://chocolatey.org/packages/sqlite.analyzer/3.43.2).
+
+  ```powershell
+  choco install sqlite.analyzer --version 3.43.2
+  choco pin add -n=sqlite.analyzer --version 3.43.2
+  ```
+
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

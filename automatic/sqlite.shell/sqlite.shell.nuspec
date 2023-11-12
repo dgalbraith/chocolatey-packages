@@ -27,6 +27,13 @@ SQLite Shell is a command-line shell that allows the user to manually enter and 
 
 ## Notes
 
+* Current versions of sqlite shell provide 64-bit support only - for a 32-bit version use [sqlite.shell 3.43.2](https://chocolatey.org/packages/sqlite.shell/3.43.2).
+
+  ```powershell
+  choco install sqlite.shell --version 3.43.2
+  choco pin add -n=sqlite.shell --version 3.43.2
+  ```
+
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
