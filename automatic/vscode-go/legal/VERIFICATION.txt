@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=golang.Go
 
-and download the extension golang.Go-0.39.1.vsix using the Download Extension link
+and download the extension golang.Go-0.40.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/golang/vsextensions/Go/0.39.1/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/golang/vsextensions/Go/0.40.0/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash golang.Go-0.39.1.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f golang.Go-0.39.1.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash golang.Go-0.40.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f golang.Go-0.40.0.vsix
 
   Type:     sha256
-  Checksum: 8006930A605FC8F33976D43A1D28F5B9E5BA388B9CECDE72942B44A7C3D1484E
+  Checksum: A2D02AEAE97697AE33A5125D7A409BED7662136BE0A4B51F3383547513D95FCC
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/golang.Go/license
