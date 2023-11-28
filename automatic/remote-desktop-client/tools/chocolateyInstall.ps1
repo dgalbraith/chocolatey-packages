@@ -52,8 +52,12 @@ if (-Not (Test-Path -Path $registryPath)) {
 
 Set-ItemProperty -Path $registryPath -Name $name -Value $value -Type DWORD -Force | Out-Null
 
-$uninstallKey    = Get-UninstallRegistryKey -SoftwareName $packageArgs.SoftwareName
-$installLocation = $uninstallKey.InstallLocation
+
+# get install location based on the MSI GUID of the x64 OR x86 version of the app
+# x64 = 37482C7A-E958-455E-938E-0692B5C28708
+# x86 = 74E5B442-57F5-4097-95EA-38E8DBA1EBF1
+
+$installLocation = (Get-WmiObject -Class Win32_Product -Filter 'IdentifyingNumber like "{37482C7A-E958-455E-938E-0692B5C28708}" OR IdentifyingNumber like "{74E5B442-57F5-4097-95EA-38E8DBA1EBF1}"').InstallLocation
 
 Get-ChildItem $installLocation -recurse -include '*.exe' | foreach-object {
   Install-BinFile -Name ($_.Name -Replace '\..*') -Path $_.FullName

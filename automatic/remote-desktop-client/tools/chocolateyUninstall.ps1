@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageSearch  = 'Remote Desktop'
+$localisedName = $installLocation = (Get-WmiObject -Class Win32_Product -Filter 'IdentifyingNumber like "{37482C7A-E958-455E-938E-0692B5C28708}" OR IdentifyingNumber like "{74E5B442-57F5-4097-95EA-38E8DBA1EBF1}"').Name
 $silentArgs     = '/qn /norestart'
 $validExitCodes = @(0, 1614, 1641, 3010)
 
-$uninstallKey = Get-UninstallRegistryKey -SoftwareName $packageSearch
+$uninstallKey = Get-UninstallRegistryKey -SoftwareName $localisedName
 
 if ($null -ne $uninstallKey) {
   $installLocation = $uninstallKey.InstallLocation
