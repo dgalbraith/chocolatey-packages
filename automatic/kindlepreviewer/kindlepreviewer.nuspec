@@ -3,15 +3,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kindlepreviewer</id>
-    <version>3.52</version>
+    <version>3.74</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/kindlepreviewer</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Kindle Previewer</title>
     <authors>Amazon</authors>
-    <projectUrl>http://www.amazon.com/gp/feature.html?docId=1000765261</projectUrl>
+    <projectUrl>https://www.amazon.com/Kindle-Previewer/b?ie=UTF8&node=21381691011</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@53619ae4c9b43750b7f5801f620a5c94155a641d/icons/kindlepreviewer.png</iconUrl>
-    <copyright>Copyright Amazon.com 2020</copyright>
-    <licenseUrl>https://www.amazon.com/gp/feature.html?docId=1000599251</licenseUrl>
+    <copyright>Copyright Amazon.com 2023</copyright>
+    <licenseUrl>https://www.amazon.com/b?node=23972708011</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>http://kindlepreviewer3.s3.amazonaws.com/UserGuide320_EN.pdf</docsUrl>
     <mailingListUrl>https://www.amazonforum.com/s/global-search/previewer</mailingListUrl>
