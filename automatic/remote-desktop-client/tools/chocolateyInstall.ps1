@@ -57,7 +57,18 @@ Set-ItemProperty -Path $registryPath -Name $name -Value $value -Type DWORD -Forc
 # x64 = 37482C7A-E958-455E-938E-0692B5C28708
 # x86 = 74E5B442-57F5-4097-95EA-38E8DBA1EBF1
 
-$installLocation = (Get-WmiObject -Class Win32_Product -Filter 'IdentifyingNumber like "{37482C7A-E958-455E-938E-0692B5C28708}" OR IdentifyingNumber like "{74E5B442-57F5-4097-95EA-38E8DBA1EBF1}"').InstallLocation
+$localisedName = Get-ItemPropertyValue "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\{37482C7A-E958-455E-938E-0692B5C28708}\" -Name "DisplayName" -ErrorAction SilentlyContinue
+
+if($localisedName -eq $Null){
+	$displayName = Get-ItemPropertyValue "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\{74E5B442-57F5-4097-95EA-38E8DBA1EBF1}\" -Name "DisplayName" -ErrorAction SilentlyContinue
+}
+
+if($localisedName -eq $Null){
+	throw "The package MSI GUID was not found in registry!"
+}
+
+$uninstallKey    = Get-UninstallRegistryKey -SoftwareName $localisedName
+$installLocation = $uninstallKey.InstallLocation
 
 Get-ChildItem $installLocation -recurse -include '*.exe' | foreach-object {
   Install-BinFile -Name ($_.Name -Replace '\..*') -Path $_.FullName
