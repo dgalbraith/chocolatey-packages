@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
-and download the package ms-python.python-2023.21.13351006.vsix using the Download Extension link
+and download the package ms-python.python-2023.23.13391009.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-python/vsextensions/python/2023.21.13351006/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-python/vsextensions/python/2023.23.13391009/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash ms-python.python-2023.21.13351006.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-python.python-2023.21.13351006.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash ms-python.python-2023.23.13391009.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-python.python-2023.23.13391009.vsix
 
   Type:     sha256
-  Checksum: 7E34CD35732F0F728051688493F6A24AA9C3F17770812FB51AAD5A91A899349B
+  Checksum: CAA99115949416C06DFF8D3F494853E90863E4D65B1235E05905DA83FF9B634E
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-python.python/license
