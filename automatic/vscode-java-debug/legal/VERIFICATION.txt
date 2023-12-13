@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug
 
-and download the extension vscjava.vscode-java-debug-0.55.0.vsix using the Download Extension link
+and download the extension vscjava.vscode-java-debug-0.55.2023121302.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vcsjava/vsextensions/vscode-java-debug/0.55.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vcsjava/vsextensions/vscode-java-debug/0.55.2023121302/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-java-debug-0.55.0.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-java-debug-0.55.0.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-java-debug-0.55.2023121302.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-java-debug-0.55.2023121302.vsix
 
   Type:     sha256
-  Checksum: 9402A81B2D92E32655C0D633BEF15CF525AD2B86184DE04E123BB7E4A2602CF8
+  Checksum: F24C15E4BB00A1A77ED7AFCF01516A179361E936EB2DECEE452F9BBA1FF0145A
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscjava.vscode-java-debug/license
