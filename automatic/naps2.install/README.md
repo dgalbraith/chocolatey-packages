@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://github.com/cyanfish/naps2/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v7.1.2-blue)](https://github.com/cyanfish/naps2/releases/tag/v7.1.2)
+[![Software version](https://img.shields.io/badge/Source-v7.2.0-blue)](https://github.com/cyanfish/naps2/releases/tag/v7.2.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/naps2.install?label=Chocolatey)](https://chocolatey.org/packages/naps2.install)
 
 NAPS2 is a document scanning application with a focus on simplicity and ease of use. Scan your documents from WIA- and
