@@ -47,7 +47,7 @@ if ($pp.count -gt 0) {
       }
       'PLAP' {
 	      Write-Verbose('Pre-Logon Access-Provider will be activated')
-	      $local += 'OpenVPN.PLAP'
+	      $local += 'OpenVPN.PLAP.Register'
       }
       'Documentation' {
         Write-Verbose('OpenVPN documentation will be installed')
