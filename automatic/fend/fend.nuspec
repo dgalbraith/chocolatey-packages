@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fend</id>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/fend</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>fend - Arbitary-Precision Unit-Aware Calculator</title>
     <authors>printfn</authors>
     <projectUrl>https://github.com/printfn/fend</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@49a00ae931effc89c2d837be01e09bf86ca2ea1a/icons/fend.png</iconUrl>
-    <copyright>Copyright printfn 2020-2023</copyright>
+    <copyright>Copyright printfn 2020-2024</copyright>
     <licenseUrl>https://github.com/printfn/fend/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/printfn/fend</projectSourceUrl>
@@ -54,9 +54,9 @@ If you find it is out of date by more than a day or two, please contact the main
 
 ]]>
     </description>
-    <releaseNotes>https://github.com/printfn/fend/releases/tag/v1.4.0</releaseNotes>
+    <releaseNotes>https://github.com/printfn/fend/releases/tag/v1.4.1</releaseNotes>
     <dependencies>
-      <dependency id="fend.install" version="[1.4.0]" />
+      <dependency id="fend.install" version="[1.4.1]" />
     </dependencies>
   </metadata>
   <files>
