@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>office365proplus</id>
-    <version>16731.20354</version>
+    <version>17126.20132</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/office365proplus</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Office 365 Professional Plus</title>

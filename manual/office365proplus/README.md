@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-proprietary-lightgrey)](https://www.microsoft.com/servicesagreement)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/source-v16731.20354-blue.svg)](https://www.microsoft.com/en-us/download/details.aspx?id=49117)
+[![Software version](https://img.shields.io/badge/source-v17126.20132-blue.svg)](https://www.microsoft.com/en-us/download/details.aspx?id=49117)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/office365proplus?label=Chocolatey)](https://community.chocolatey.org/packages/office365proplus)
 
 Get the latest versions of your familiar Office programs, such as Word, Excel and PowerPoint, and more, all in one convenient
