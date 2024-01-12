@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-python</id>
-    <version>2023.25.10101826</version>
+    <version>2023.25.10111009</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-maven</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Python VSCode Extension</title>
