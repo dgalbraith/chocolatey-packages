@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/nalgeon/sqlite/blob/main/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.44.0-blue.svg)](https://github.com/nalgeon/sqlite/releases/tag/3.44.0)
+[![Software version](https://img.shields.io/badge/Source-v3.45.0-blue.svg)](https://github.com/nalgeon/sqlite/releases/tag/3.45.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/sqlean-shell?label=Chocolatey)](https://chocolatey.org/packages/sqlean-shell)
 
 sqlean shell is SQLite shell bundled with a collection of [essential extensions](https://github.com/nalgeon/sqlean#main-set)
