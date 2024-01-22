@@ -24,13 +24,13 @@ Alternatively the archives can be downloaded directly from
 
   File32:         lsasecretsview.zip
   ChecksumType32: sha256
-  Checksum32: FEF35C3ACAD8BA0C7771F922AE08270AA10D0CFCCDCAC141C4E963D945796033
+  Checksum32: A657DC525EDD15474F6E0449A52A418FC525CA2C2237BE71EF5F032A5C6FFDB9
 
   - Use powershell function 'Get-Filehash' - Get-Filehash lsasecretsview-x64.zip
   - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f lsasecretsview-x64.zip
 
   File64:         lsasecretsview-x64.zip
   ChecksumType64: sha256
-  Checksum64: 7E17CA28E57ADF46BC8C6F27544FA2BC68B27E8945742F8058C63436CDD0877C
+  Checksum64: 0CB712678EC4F4F3D96FA1F9EC005D1E8633061408C2F922E15C026670702A63
   
   Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/lsa_secrets_view.html
