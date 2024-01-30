@@ -1,0 +1,5 @@
+﻿==================== MAME ====================
+
+The MAME binary is downloaded by BCURRAN3 directory from the MAME developer site at mamedev.org and packaged for Chocolatey.
+
+==================== MAME ====================
