@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mongodb-cli</id>
-    <version>1.31.0</version>
+    <version>1.31.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mongodb-cli</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>MongoDB Command Line Interface (mongocli)</title>
@@ -48,7 +48,7 @@ If you find it is out of date by more than a day or two, please contact the main
     </description>
     <releaseNotes>https://www.mongodb.com/docs/mongocli/v1.31/release-notes</releaseNotes>
     <dependencies>
-      <dependency id="mongodb-cli.portable" version="[1.31.0]" />
+      <dependency id="mongodb-cli.portable" version="[1.31.1]" />
     </dependencies>
   </metadata>
   <files>
