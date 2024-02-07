@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mongodb-cli.install</id>
-    <version>1.31.0</version>
+    <version>1.31.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mongodb-cli.install</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>MongoDB Command Line Interface (Install)</title>
