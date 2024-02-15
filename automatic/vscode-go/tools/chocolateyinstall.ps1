@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\golang.Go-0.40.3.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\golang.Go-0.41.0.vsix"
