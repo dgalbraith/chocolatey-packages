@@ -2,7 +2,7 @@
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$installer  = Join-Path $toolsDir 'authme-5.0.0-windows-x64.msi'
+$installer  = Join-Path $toolsDir 'authme-5.0.1-windows-x64.msi'
 $silentArgs = '/S /AllUsers'
 
 $pp = Get-PackageParameters
