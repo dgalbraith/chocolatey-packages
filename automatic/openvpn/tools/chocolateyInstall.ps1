@@ -80,7 +80,7 @@ if ($pp.count -gt 0) {
   }
 } else {
   Write-Verbose('No parameters supplied - constructing a default parameter set')
-  $local = @('OpenVPN.GUI','OpenVPN.Documentation','OpenVPN.SampleCfg','OpenVPN','OpenVPN.GUI.OnLogon','Drivers.OvpnDco', 'Drivers.TAPWindows6','Drivers','Drivers.Wintun')
+  $local = @('OpenVPN.GUI','OpenVPN.Documentation','OpenVPN.SampleCfg','OpenVPN','OpenVPN.GUI.OnLogon','Drivers.OvpnDco','Drivers.TAPWindows6','Drivers','Drivers.Wintun','OpenSSL')
 }
 
 $silentArgs += " ADDLOCAL=`"{0}`"" -f ($local -join ",")
