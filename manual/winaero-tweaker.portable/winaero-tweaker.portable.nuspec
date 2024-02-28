@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winaero-tweaker.portable</id>
-    <version>1.55.0.0</version>
+    <version>1.62.1.0</version>
     <owners>bcurran3,dgalbraith</owners>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/winaero-tweaker.portable</packageSourceUrl>
     <title>Winaero Tweaker (Portable)</title>
