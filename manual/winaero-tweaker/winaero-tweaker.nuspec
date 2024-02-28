@@ -35,7 +35,7 @@ Winaero Tweaker is a freeware all-in-one application that comes with dozens of o
     </description>
     <releaseNotes>https://winaero.com/winaero-tweaker-1-55</releaseNotes>
     <dependencies>
-      <dependency id="winaero-tweaker.install" version="[1.55.0.0]" />
+      <dependency id="winaero-tweaker.install" version="[1.62.1.0]" />
     </dependencies>
   </metadata>
     <files>
