@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>androidstudio</id>
-    <version>2023.1.1.28</version>
+    <version>2023.2.1.23</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/androidstudio</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Android Studio (Install)</title>
