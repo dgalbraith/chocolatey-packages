@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>watchman</id>
-    <version>2023.10.09.00</version>
+    <version>2024.03.04.00</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/watchman</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Watchman - A file watching service</title>
