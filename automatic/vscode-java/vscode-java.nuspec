@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-java</id>
-    <version>1.29.2024031908</version>
+    <version>1.29.2024032008</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-java</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Java Language Support VSCode Extension</title>
