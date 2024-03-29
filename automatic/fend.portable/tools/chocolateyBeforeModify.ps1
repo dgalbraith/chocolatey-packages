@@ -25,7 +25,7 @@ $paths.GetEnumerator() | ForEach-Object {
 
 Uninstall-BinFile -Name 'fend' -Path 'fend.exe'
 
-$zipFileName = "$packageDir/fend-1.4.5-windows-x64-exe.zip"
+$zipFileName = "$packageDir/fend-1.4.6-windows-x64-exe.zip"
 
 $packageArgs = @{
   PackageName = $env:ChocolateyPackageName

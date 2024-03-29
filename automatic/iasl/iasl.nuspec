@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>iasl</id>
-    <version>2023.06.28</version>
+    <version>2024.03.21</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/iasl</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>iASL Compiler and ACPI Tools</title>
     <authors>Intel Corporation</authors>
     <projectUrl>https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/overview.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@fe977f362ae69c7f6ab164f87a9223d36538d3ed/icons/iasl.png</iconUrl>
-    <copyright>Copyright (c) 1999 - 2023, Intel Corp.  All rights reserved.</copyright>
+    <copyright>Copyright (c) 1999 - 2024, Intel Corp.  All rights reserved.</copyright>
     <licenseUrl>https://www.intel.com/content/www/us/en/developer/articles/license/acpica-licensing.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/acpica/acpica</projectSourceUrl>
