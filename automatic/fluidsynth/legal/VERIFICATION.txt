@@ -10,27 +10,27 @@ be verified by:
 
   https://github.com/FluidSynth/fluidsynth/releases/latest
 
-and download the archives fluidsynth-2.3.4-winXP-x86.zip or fluidsynth-2.3.4-win10-x64.zip using the
+and download the archives fluidsynth-2.3.5-winXP-x86.zip or fluidsynth-2.3.5-win10-x64.zip using the
 links on the page.
 
 Alternatively the files can be downloaded directly from
 
-  https://github.com/FluidSynth/fluidsynth/releases/download/v2.3.4/fluidsynth-2.3.4-winXP-x86.zip
-  https://github.com/FluidSynth/fluidsynth/releases/download/v2.3.4/fluidsynth-2.3.4-win10-x64.zip
+  https://github.com/FluidSynth/fluidsynth/releases/download/v2.3.5/fluidsynth-2.3.5-winXP-x86.zip
+  https://github.com/FluidSynth/fluidsynth/releases/download/v2.3.5/fluidsynth-2.3.5-win10-x64.zip
 
 2. The archives can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 fluidsynth-2.3.4-winXP-x86.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f fluidsynth-2.3.4-winXP-x86.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 fluidsynth-2.3.5-winXP-x86.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f fluidsynth-2.3.5-winXP-x86.zip
 
-  File32:     fluidsynth-2.3.4-winXP-x86.zip
+  File32:     fluidsynth-2.3.5-winXP-x86.zip
   Type32:     sha256
-  Checksum32: 75C32C343C08CF8A4E35B986F3F6BFB634F699605DED01FE1513B99C96F0093B
+  Checksum32: 8E10D500B9540335F8A88D4777739C681C8163669BC35DA892413A7BC592FBF9
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 fluidsynth-2.3.4-win10-x64.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f fluidsynth-2.3.4-win10-x64.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 fluidsynth-2.3.5-win10-x64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f fluidsynth-2.3.5-win10-x64.zip
 
-  File64:     fluidsynth-2.3.4-win10-x64.zip
+  File64:     fluidsynth-2.3.5-win10-x64.zip
   Type64:     sha256
-  Checksum64: E12EC080379C8A0E470C1E7CD1E067B9A1EB938B3DEB7E2F7874BD835017CB8A
+  Checksum64: 8AD9E91FD18501426D5283B5A700A667796E9FA140FB3CBD80F3A4F50106ED26
 
 Contents of file LICENSE.txt is obtained from https://github.com/FluidSynth/fluidsynth/blob/master/LICENSE
