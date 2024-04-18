@@ -2,8 +2,8 @@
 
 $toolsDir  = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$archive32 = Join-Path $toolsDir 'JetBrains.dotCover.CommandLineTools.windows-x86.2024.1.zip'
-$archive64 = Join-Path $toolsDir 'JetBrains.dotCover.CommandLineTools.windows-x64.2024.1.zip'
+$archive32 = Join-Path $toolsDir 'JetBrains.dotCover.CommandLineTools.windows-x86.2024.1.1.zip'
+$archive64 = Join-Path $toolsDir 'JetBrains.dotCover.CommandLineTools.windows-x64.2024.1.1.zip'
 
 if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
   $archive = $archive32
