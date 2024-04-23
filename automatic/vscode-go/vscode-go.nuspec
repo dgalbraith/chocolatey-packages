@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-go</id>
-    <version>0.41.2</version>
+    <version>0.41.3</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-go</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Go VSCode Extension</title>
