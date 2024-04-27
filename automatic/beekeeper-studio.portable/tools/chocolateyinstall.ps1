@@ -8,6 +8,6 @@ foreach ($file in $files) {
   New-Item "$file.ignore" -type file -force | Out-Null
 }
 
-$executable = Join-Path $toolsDir 'Beekeeper-Studio-4.2.9-portable.exe'
+$executable = Join-Path $toolsDir 'Beekeeper-Studio-4.3.0-portable.exe'
 
 Install-BinFile -UseStart -Name 'BeekeeperStudio' -Path "$executable"
