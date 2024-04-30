@@ -10,19 +10,19 @@ be verified by:
 
   https://github.com/beekeeper-studio/beekeeper-studio/releases
 
-and download the application Beekeeper-Studio-4.3.0-portable.exe using
+and download the application Beekeeper-Studio-4.3.1-portable.exe using
 the links in the relevant assets section of the page.
 
 Alternatively the application can be downloaded directly from
 
-https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v4.3.0/Beekeeper-Studio-4.3.0-portable.exe
+https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v4.3.1/Beekeeper-Studio-4.3.1-portable.exe
 
 2. The application can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Beekeeper-Studio-4.3.0-portable.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Beekeeper-Studio-4.3.0-portable.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Beekeeper-Studio-4.3.1-portable.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Beekeeper-Studio-4.3.1-portable.exe
 
-  File64:     Beekeeper-Studio-4.3.0-portable.exe
+  File64:     Beekeeper-Studio-4.3.1-portable.exe
   Type64:     sha256
-  Checksum64: FA077B2D95EC52AA05E57E645442FF8873E4C58DFE2CDF7708BF9E6AEEEAF36B
+  Checksum64: 3968732CD5B2D63F9E11AC5858BB0534E188EB8CE649C80F9C7C389CD62AE5C5
 
 Contents of file LICENSE.txt is obtained from https://github.com/beekeeper-studio/beekeeper-studio/blob/master/LICENSE.md
