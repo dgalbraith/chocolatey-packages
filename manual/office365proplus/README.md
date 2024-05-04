@@ -24,5 +24,6 @@ e.g. `choco install office365proplus --params '/Language:de-de'`
 
 ## Notes
 
+* Office 365 Professional requires Windows 10 or newer.
 * This package is  manually updated.
 * If the package does not represent the latest version please contact the maintainer(s) and let them know the package requires updating.
