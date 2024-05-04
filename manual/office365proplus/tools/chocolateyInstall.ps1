@@ -1,13 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$script                     = $MyInvocation.MyCommand.Definition
-$packageName                = 'Office365ProPlus'
-$configFile                 = Join-Path $(Split-Path -parent $script) 'configuration.xml'
-$configFile64               = Join-Path $(Split-Path -parent $script) 'configuration64.xml'
-$bitCheck                   = Get-ProcessorBits
-$forceX86                   = $env:chocolateyForceX86
-$configurationFile          = if ($BitCheck -eq 32 -Or $forceX86) { $configFile } else { $configFile64 }
-$officetempfolder           = Join-Path $env:Temp 'chocolatey\Office365ProPlus'
+$script            = $MyInvocation.MyCommand.Definition
+$packageName       = 'Office365ProPlus'
+$configFile        = Join-Path $(Split-Path -parent $script) 'configuration.xml'
+$configFile64      = Join-Path $(Split-Path -parent $script) 'configuration64.xml'
+$bitCheck          = Get-ProcessorBits
+$forceX86          = $env:chocolateyForceX86
+$configurationFile = if ($BitCheck -eq 32 -Or $forceX86) { $configFile } else { $configFile64 }
+$officetempfolder  = Join-Path $env:Temp 'chocolatey\Office365ProPlus'
 
 $pp = Get-PackageParameters
 $configPath = $pp["ConfigPath"]
@@ -44,15 +44,15 @@ else
     Write-Output 'No language specified. Defaulting to OS language.'
 }
 
-$packageArgs                = @{
-    packageName             = 'Office365DeploymentTool'
-    fileType                = 'exe'
-    url                     = 'https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_16731-20354.exe'
-    checksum                = 'f37ee507114362407a7a7ff90acca1d3683ad105c2a4830b71b0de651d6eb18f'
-    checksumType            = 'sha256'
-    softwareName            = 'Microsoft Office 365 ProPlus*'
-    silentArgs              = "/extract:`"$officetempfolder`" /log:`"$officetempfolder\OfficeInstall.log`" /quiet /norestart"
-    validExitCodes          = @(
+$packageArgs = @{
+    packageName    = 'Office365DeploymentTool'
+    fileType       = 'exe'
+    url            = 'https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_17531-20046.exe'
+    checksum       = '0f9e6df376853154e05d81e2550183ed621ec97fc3f0c290666683a057086b92'
+    checksumType   = 'sha256'
+    softwareName   = 'Microsoft Office 365 ProPlus*'
+    silentArgs     = "/extract:`"$officetempfolder`" /log:`"$officetempfolder\OfficeInstall.log`" /quiet /norestart"
+    validExitCodes = @(
         0, # success
         3010, # success, restart required
         2147781575, # pending restart required

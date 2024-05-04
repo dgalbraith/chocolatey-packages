@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>office365proplus</id>
-    <version>16731.20354</version>
+    <version>17531.20046</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/office365proplus</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Office 365 Proofessional Plus</title>
@@ -38,6 +38,7 @@ e.g. `choco install office365proplus --params '/Language:de-de'`
 
 ## Notes
 
+* Office 365 Professional requires Windows 10 or newer.
 * This package is  manually updated.
 * If the package does not represent the latest version please contact the maintainer(s) and let them know the package requires updating.
 
