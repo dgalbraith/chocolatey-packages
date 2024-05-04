@@ -14,7 +14,7 @@
     <licenseUrl>https://marketplace.visualstudio.com/items/VisualStudioExptTeam.vscodeintellicode/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/MicrosoftDocs/intellicode</projectSourceUrl>
-    <docsUrl>https://github.com/MicrosoftDocs/intellicode/blob/master/docs/intellicode-visual-studio-code.md</docsUrl>
+    <docsUrl>https://visualstudio.microsoft.com/services/intellicode/</docsUrl>
     <bugTrackerUrl>https://github.com/MicrosoftDocs/intellicode/issues</bugTrackerUrl>
     <tags>java javascript javascript-react python sql typescript typescript-react vscode-intellicode vscode microsoft</tags>
     <summary>AI-assisted development</summary>
