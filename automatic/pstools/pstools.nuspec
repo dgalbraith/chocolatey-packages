@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pstools</id>
+    <version>1.2012.04.12</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/pstools</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>PsTools - Sysinternals System Management Suite</title>
+    <authors>Mark Russinovich</authors>
+    <projectUrl>https://learn.microsoft.com/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f1075d8ebcef438242228bccd7320aff28f82ed0/icons/sysinternals.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://learn.microsoft.com/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://learn.microsoft.com/sysinternals/downloads/pstools</docsUrl>
+    <mailingListUrl>https://learn.microsoft.com/answers/tags/435/sysinternals</mailingListUrl>
+    <tags>pstools ps psexec psfile psgetsid psinfo psping pskill pslist psloggedon psloglist pspasswd psservice psshutdown pssuspend sysinternals</tags>
+    <summary>PsTools suite of utilities for local and remote systems management</summary>
+    <description><![CDATA[
+
+The Windows NT and Windows 2000 Resource Kits come with a number of command-line tools that help you administer
+your Windows NT/2K systems. Over time, I've grown a collection of similar tools, including some not included in the
+Resource Kits. What sets these tools apart is that they all allow you to manage remote systems as well as the local one.
+The first tool in the suite was PsList, a tool that lets you view detailed information about processes, and the suite is
+continually growing. The "Ps" prefix in PsList relates to the fact that the standard UNIX process listing command-line tool
+is named "ps", so I've adopted this prefix for all the tools in order to tie them together into a suite of tools named
+*PsTools*.
+
+## Features
+
+The tools included in the PsTools suite, which are downloadable as a package, are:
+
+* PsExec - execute processes remotely
+* PsFile - shows files opened remotely
+* PsGetSid - display the SID of a computer or a user
+* PsInfo - list information about a system
+* PsPing - measure network performance
+* PsKill - kill processes by name or process ID
+* PsList - list detailed information about processes
+* PsLoggedOn - see who's logged on locally and via resource sharing (full source is included)
+* PsLogList - dump event log records
+* PsPasswd - changes account passwords
+* PsService - view and control services
+* PsShutdown - shuts down and optionally reboots a computer
+* PsSuspend - suspends processes
+
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/AcceptEula` - set the EULA for the tools to accepted on installation.  This is at a user level so will only be for the *current user*.
+e.g. `choco install -y pstools --package-parameters="/AcceptEula"`
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly
+
+]]>
+    </description>
+    <releaseNotes>https://learn.microsoft.com/en-us/sysinternals/#whats-new-rss-icon</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
