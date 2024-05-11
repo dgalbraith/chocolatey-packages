@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pstools</id>
-    <version>1.2012.04.12</version>
+    <version>1.2023.04.11</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/pstools</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>PsTools - Sysinternals System Management Suite</title>

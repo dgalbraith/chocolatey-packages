@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://learn.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.2012.04.12-blue)](https://learn.microsoft.com/en-gb/sysinternals/downloads/pstools)
+[![Software version](https://img.shields.io/badge/Source-v1.2023.04.11-blue)](https://learn.microsoft.com/en-gb/sysinternals/downloads/pstools)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/pstools?label=Chocolatey)](https://community.chocolatey.org/packages/pstools)
 
 The Windows NT and Windows 2000 Resource Kits come with a number of command-line tools that help you administer
