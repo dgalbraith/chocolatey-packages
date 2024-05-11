@@ -1,23 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>pstools</id>
-    <version>1.2012.04.12</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/pstools</packageSourceUrl>
-    <owners>dgalbraith</owners>
-    <title>PsTools - Sysinternals System Management Suite</title>
-    <authors>Mark Russinovich</authors>
-    <projectUrl>https://learn.microsoft.com/sysinternals</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f1075d8ebcef438242228bccd7320aff28f82ed0/icons/sysinternals.png</iconUrl>
-    <copyright>Mark Russinovich</copyright>
-    <licenseUrl>https://learn.microsoft.com/sysinternals/license-terms</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://learn.microsoft.com/sysinternals/downloads/pstools</docsUrl>
-    <mailingListUrl>https://learn.microsoft.com/answers/tags/435/sysinternals</mailingListUrl>
-    <tags>pstools ps psexec psfile psgetsid psinfo psping pskill pslist psloggedon psloglist pspasswd psservice psshutdown pssuspend sysinternals</tags>
-    <summary>PsTools suite of utilities for local and remote systems management</summary>
-    <description><![CDATA[
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f1075d8ebcef438242228bccd7320aff28f82ed0/icons/sysinternals.png" width="48" height="48" />PsTools - Sysinternals System Management Suite](https://community.chocolatey.org/packages/pstools)
+
+[![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://learn.microsoft.com/sysinternals/license-terms)
+[![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
+[![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
+[![Software version](https://img.shields.io/badge/Source-v1.2012.04.12-blue)](https://learn.microsoft.com/en-gb/sysinternals/downloads/pstools)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/pstools?label=Chocolatey)](https://community.chocolatey.org/packages/pstools)
 
 The Windows NT and Windows 2000 Resource Kits come with a number of command-line tools that help you administer
 your Windows NT/2K systems. Over time, I've grown a collection of similar tools, including some not included in the
@@ -56,12 +43,3 @@ e.g. `choco install -y pstools --package-parameters="/AcceptEula"`
 
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly
-
-]]>
-    </description>
-    <releaseNotes>https://learn.microsoft.com/en-us/sysinternals/#whats-new-rss-icon</releaseNotes>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
