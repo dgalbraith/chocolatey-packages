@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/Levminer/authme/releases/tag/5.1.0
+  https://github.com/Levminer/authme/releases/tag/5.1.1
 
-and download the archive authme-5.1.0-windows-x64.zip using the links in the
+and download the archive authme-5.1.1-windows-x64.zip using the links in the
 assets section of the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://github.com/Levminer/authme/releases/download/5.1.0/authme-5.1.0-windows-x64.zip
+  https://github.com/Levminer/authme/releases/download/5.1.1/authme-5.1.1-windows-x64.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-5.1.0-windows-x64.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-5.1.0-windows-x64.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-5.1.1-windows-x64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-5.1.1-windows-x64.zip
 
-  File:     authme-5.1.0-windows-x64.zip
+  File:     authme-5.1.1-windows-x64.zip
   Type:     sha256
-  Checksum: 7D80EEF4F5F0AC79ED2342EA68C48D1ABA5A51F960BFB33DABCF3CDCA455990B
+  Checksum: BF3F6453F0AC58BE24D6E636968A8E6E02CBEB66EE43ACC3B3625A190145C58D
 
 Contents of file LICENSE.txt is obtained from https://github.com/Levminer/authme/blob/dev/LICENSE.md
