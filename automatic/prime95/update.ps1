@@ -5,10 +5,13 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://www.mersenne.org'
 $releases = "${domain}/download"
 
-$reurl     = '.+?zip'
-$re32      = 'p95v\d{3}b\d{1,}\.win32\.zip'
-$re64      = 'p95v\d{3}b\d{1,}\.win64\.zip'
-$reversion = '(>P.+(?<Version>(\d{2,}\.\d+))).*?(?<Build>(\d+))'
+$re32         = '(?<=\s|)(?<Filename>p95v\d{3,}b\d{1,}\.win32\.zip)'
+$re64         = '(?<=\s|)(?<Filename>p95v\d{3,}b\d{1,}\.win64\.zip)'
+$reUrl32      = "https:.+$re32"
+$reUrl64      = "https:.+$re64"
+$reChecksum32 = '(?<=Checksum32:\s*)(?<Checksum>[^\s]+)'
+$reChecksum64 = '(?<=Checksum64:\s*)(?<Checksum>[^\s]+)'
+$reVersion    = '(?<=Prime95\sVersion\s)(?<Version>\d{2,}\.\d{1,})(\sbuild\s)(?<Build>\d{1,})'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
@@ -17,14 +20,16 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "(v)(\d+\.\d+.\d+)" = "`${1}$($Latest.Version)"
+      "(?<=v)(?<Version>\d+\.\d+.\d+)" = "$($Latest.Version)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "$($re32)"             = "$($Latest.FileName32)"
-      "(Checksum32:\s*)(.+)" = "`${1}$($Latest.Checksum32)"
-      "$($re64)"             = "$($Latest.FileName64)"
-      "(Checksum64:\s*)(.+)" = "`${1}$($Latest.Checksum64)"
+      "$($re32)"         = "$($Latest.FileName32)"
+      "$($reUrl32)"      = "$($Latest.Url32)"
+      "$($reChecksum32)" = "$($Latest.Checksum32)"
+      "$($re64)"         = "$($Latest.FileName64)"
+      "$($reUrl64)"      = "$($Latest.Url64)"
+      "$($reChecksum64)" = "$($Latest.Checksum64)"
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
@@ -35,14 +40,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
-  $urls = $download_page.links | where-object href -Match $reurl | select-object -Expand href
-
-  $url32  = $urls -Match $re32 | select-object -First 1
+  $url32      = $downloadPage.links | where-object href -Match $re32 | select-object -First 1 -Expand href # first match only to avoid pulling in the legacy Windows XP version
   $filename32 = $url32 -split '/' | select-object -Last 1
 
-  $url64  = $urls -Match $re64 | select-object -First 1
+  $url64      = $downloadPage.links | where-object href -Match $re64 | select-object -Expand href
   $fileName64 = $url64 -split '/' | select-object -Last 1
 
   $download_page.Content -Match $reversion
@@ -53,6 +56,7 @@ function global:au_GetLatest {
     Url64          = $url64
     FileName32     = $fileName32
     FileName64     = $fileName64
+    FileType       = 'zip'
     Version        = $version
   }
 }
