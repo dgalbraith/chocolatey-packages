@@ -1,9 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$installDir = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
-$instance   = '{0}-{1}' -f  $Env:ChocolateyPackageName,$Env:ChocolateyPackageVersion
+$installDir  = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
+$instance    = '{0}-{1}' -f  $Env:ChocolateyPackageName,$Env:ChocolateyPackageVersion
+$instanceDir = Join-Path $installDir $instance
 
-$source = Join-Path $installDir $instance | Join-Path -ChildPath 'lib' | Join-Path -ChildPath 'user'
+$source = $instanceDir | Join-Path -ChildPath 'lib' | Join-Path -ChildPath 'user'
 
 if (Test-Path -Path $source) {
   $target = $installDir

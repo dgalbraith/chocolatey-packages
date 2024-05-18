@@ -3,7 +3,9 @@
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 $archive  = Join-Path $toolsDir 'Angband-4.2.4-win.zip'
 
-$installDir = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
+$installDir  = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
+$instance    = '{0}-{1}' -f $Env:ChocolateyPackageName, $Env:ChocolateyPackageVersion
+$instanceDir = Join-Path $installDir $instance
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
@@ -13,13 +15,13 @@ $unzipArgs = @{
 
 Get-ChocolateyUnzip @unzipArgs
 
-$executable = Get-ChildItem $installDir -include angband.exe -recurse
+$executable  = Get-ChildItem $instanceDir -include angband.exe -recurse
 
 $pp = Get-PackageParameters
 
 if ($pp.AddToDesktop) {
     if ($pp.User) {
-        $desktopPath  = [Environment]::GetFolderPath('Desktop')
+        $desktopPath = [Environment]::GetFolderPath('Desktop')
     } else {
         $desktopPath = [Environment]::GetFolderPath('CommonDesktopDirectory')
     }
@@ -31,19 +33,17 @@ if ($pp.AddToDesktop) {
 
 Install-Binfile -Name 'Angband' -Path $executable -UseStart
 
-$files = Get-ChildItem $installDir -recurse -include 'delete.me'
+$files = Get-ChildItem $instanceDir -recurse -include 'delete.me'
 
 foreach ($file in $files) {
   Remove-Item $file -Force -ErrorAction SilentlyContinue | Out-Null
 }
 
-$instance  = '{0}-{1}' -f $Env:ChocolateyPackageName, $Env:ChocolateyPackageVersion
-
 $source = Join-Path $installDir 'user'
 
 if (Test-Path -Path $source) {
-  $target = Join-Path $installDir $instance | Join-Path -ChildPath 'lib'
-  
-  Copy-Item -Force -Recurse -Path $source $target
-  Remove-Item -Force -Recurse $source
+  $target = Join-Path $instanceDir -ChildPath 'lib'
+
+  Copy-Item -Path $source -Destination $target -recurse -force
+  Remove-Item $source -recurse -force
 }
