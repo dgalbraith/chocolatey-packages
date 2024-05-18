@@ -4,36 +4,15 @@ Import-Module ..\..\scripts\vs-marketplace\VS-Marketplace.psd1
 $extension = 'vscode-arduino'
 $publisher = 'vsciot-vscode'
 
-function global:au_SearchReplace {
-  @{
-    "$($Latest.PackageName).nuspec" = @{
-      "(Visual Studio Code )([0-9]+\.[0-9]+\.[0-9]+)( or newer)" = "`${1}$($Latest.VSCodeVersion)`${3}"
-    }
+$reChecksum = '(?<=Checksum:\s+)(?<Checksum>[^\s]*)'
+$reFileName = '(?<Filename>(.*))(.vsix)'
+$reVersion  = '(?<=\s|-)(?<Version>[0-9]+\.[0-9]+\.[0-9]+)'
 
-    ".\README.md" = @{
-      "(Visual Studio Code )([0-9]+\.[0-9]+\.[0-9]+)( or newer)" = "`${1}$($Latest.VSCodeVersion)`${3}"
-    }
-
-    ".\tools\chocolateyinstall.ps1" = @{
-      "([0-9]+\.[0-9]+\.[0-9]+)" = "$($Latest.Version)"
-    }
-
-    ".\tools\chocolateyunstall.ps1" = @{
-      "([0-9]+\.[0-9]+\.[0-9]+)" = "$($Latest.Version)"
-    }
-
-    ".\legal\VERIFICATION.txt"      = @{
-      "([0-9]+\.[0-9]+\.[0-9]+)" = "$($Latest.Version)"
-      "(Checksum:\s*)(.*)"       = "`${1}$($Latest.Checksum32)"
-    }
-  }
-}
 function global:au_BeforeUpdate {
   mkdir tools -ea 0 | Out-Null
   $toolsPath = Resolve-Path tools
 
-  Write-Host 'Purging ' $Latest.FileType
-  Remove-Item -Force "$toolsPath\*.$Latest.FileType" -ea ignore
+  Remove-Item -Force "$toolsPath\*.$Latest.FileType" -ea ignore | Out-Null
 
   $outputFile = "{0}\{1}.{2}" -f $toolsPath, $Latest.FilenameBase, $Latest.FileType
   Invoke-WebRequest -uri $Latest.Url32 -OutFile $outputFile
@@ -42,15 +21,39 @@ function global:au_BeforeUpdate {
   $global:Latest.FileName32 = $outputFile
 }
 
+function global:au_SearchReplace {
+  @{
+    "$($Latest.PackageName).nuspec" = @{
+      "$reVersion" = "$($Latest.VSCodeVersion)"
+    }
+
+    ".\README.md" = @{
+      "$reVersion" = "$($Latest.VSCodeVersion)"
+    }
+
+    ".\tools\chocolateyinstall.ps1" = @{
+      "$reVersion" = "$($Latest.Version)"
+    }
+
+    ".\tools\chocolateyuninstall.ps1" = @{
+      "$reVersion" = "$($Latest.Version)"
+    }
+
+    ".\legal\VERIFICATION.txt" = @{
+      "$reVersion"  = "$($Latest.Version)"
+      "$reChecksum" = "$($Latest.Checksum32)"
+    }
+  }
+}
+
 function global:au_GetLatest {
-  Write-Host('Running GetLatest')
   $extensionInfo = Get-VSMarketplaceExtensionDetails -Extension $extension -Publisher $publisher
 
   @{
     Version        = $extensionInfo.Version
     VSCodeVersion  = $extensionInfo.VSCodeVersion
     URL32          = $extensionInfo.DownloadUrl
-    FileNameBase   = $extensionInfo.Filename -match '(?<Filename>(.*))(.vsix)' | ForEach-Object { $Matches['Filename'] }
+    FileNameBase   = $extensionInfo.Filename -match $reFileName | ForEach-Object { $Matches['Filename'] }
     FileType       = 'vsix'
     ChecksumType32 = 'sha256'
   }
