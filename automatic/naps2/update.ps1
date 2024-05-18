@@ -5,13 +5,14 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://github.com'
 $releases = "${domain}/cyanfish/naps2/releases/latest"
 
-$reChecksum32   = '(?<=Checksum32:\s*)((?<Checksum>([^\s].+)))'
-$reChecksum64   = '(?<=Checksum64:\s*)((?<Checksum>([^\s].+)))'
-$reCopyright    = '(?<=(Copyright.+(?<CopyrightFrom>[\d]{4})-))(?<CopyrightTo>[\d]{4})'
-$reInstall32    = "(?<=\d\/|\s|')(?<Filename>(n.+x86\.msi))"
-$reInstall64    = "(?<=\d\/|\s|')(?<Filename>(n.+x64\.msi))"
-$rePortable     = "(?<=\d\/|\s|')(?<Filename>(n.+zip))"
-$reVersion      = '(?<=v|\[)(?<Version>([\d]+\.[\d]+\.[\d]+\.?[\d]*))'
+$reChecksum   = '(?<=Checksum:\s*)(?<Checksum>[^\s]+)'
+$reChecksum32 = '(?<=Checksum32:\s*)(?<Checksum>[^\s]+)'
+$reChecksum64 = '(?<=Checksum64:\s*)(?<Checksum>[^\s]+)'
+$reCopyright  = '(?<=(Copyright.+(?<CopyrightFrom>[\d]{4})-))(?<CopyrightTo>[\d]{4})'
+$rePortable   = "(?<=\d\/|\s|')(?<Filename>n.+zip)"
+$reInstall32  = "(?<=\d\/|\s|')(?<Filename>n.+x86\.msi)"
+$reInstall64  = "(?<=\d\/|\s|')(?<Filename>n.+x64\.msi)"
+$reVersion    = '(?<=v|\[)(?<Version>[\d]+\.[\d]+\.[\d]+\.?[\d]*)'
 
 function global:au_BeforeUpdate {
 }
