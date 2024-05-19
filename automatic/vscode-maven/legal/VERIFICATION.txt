@@ -10,7 +10,7 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=vscjava.maven
 
-and download the extension vscjava.vscode-maven-0.38.2022090603 using the Download Extension link
+and download the extension vscjava.vscode-maven-0.38.2022090603.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
@@ -18,8 +18,8 @@ Alternatively the package can be downloaded directly from
   https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-maven/0.38.2022090603/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-maven-0.38.2022090603
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-maven-0.38.2022090603
+  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-maven-0.38.2022090603.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-maven-0.38.2022090603.vsix
 
   Type:     sha256
   Checksum: E1E2CD90C6F7616D2F97DB93F06002B1781747EC4EBFA7A58803DC78B1CED912
