@@ -48,7 +48,7 @@ function global:au_GetLatest {
   $url64      = $downloadPage.links | where-object href -Match $re64 | select-object -Expand href
   $fileName64 = $url64 -split '/' | select-object -Last 1
 
-  $download_page.Content -Match $reversion
+  $downloadPage.Content -Match $reversion
   $version = "$($Matches.Version).$($Matches.Build)"
 
   return @{
