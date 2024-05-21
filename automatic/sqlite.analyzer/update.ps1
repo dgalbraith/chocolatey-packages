@@ -5,6 +5,13 @@ $ErrorActionPreference = 'STOP'
 $base     = 'https://sqlite.org'
 $releases = "${base}/download.html"
 
+$reArchive    = '(sqlite-.+win.+\.zip)'
+$reChecksum   = '(?<=Checksum:\s*)((?<Checksum>([^\s]+)))'
+$reDownload   = '(?<DownloadUrl>(([\d]{4}\/(?<FileName>(.+tools-win-x64.+(?<Version>([\d]{7}))\.zip)))))'
+$reExecutable = '(sqlite\d_analyzer\.exe)'
+$reRawVersion = '(?<Series>[\d])(?<Major>[\d]{2})(?<Minor>[\d]{2})(?<Patch>[\d]{2})'
+$reVersion    = '(?<=v)(?<Version>([\d]+\.[\d]+\.[\d]+\.*\d*))'
+
 $toolsDir = Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'tools'
 
 function global:au_BeforeUpdate {
@@ -12,28 +19,27 @@ function global:au_BeforeUpdate {
 
   $archive = Join-Path $toolsDir $Latest.FileName64
 
-  Expand-Archive -Path $archive -DestinationPath $toolsDir
+  Expand-Archive -Path $archive -DestinationPath $toolsDir -Force
 
-  $executable = Get-ChildItem -Path $toolsDir 'sqlite?_analyzer.exe' -Recurse
+  $executable = Get-ChildItem -Recurse -Path $toolsDir 'sqlite?_analyzer.exe'
   $Latest.Executable = $executable.Name
   $Latest.Checksum64 = (Get-Filehash -algorithm sha256 $executable.FullName).Hash
 
   Move-Item -Path $executable.FullName $toolsDir
 
-  Remove-Item $archive -ea 0 -Force | Out-Null
-  Remove-Item -Path $executable.Directory -Recurse -Force | Out-Null
+  Get-ChildItem $executable.Directory -Recurse -Exclude ('*.ps1', 'sqlite?_analyzer.exe') | Remove-Item -Force -ea 0 | Out-Null
 }
 
 function global:au_SearchReplace {
   @{
      ".\README.md" = @{
-       "(v)(?<Version>([\d]+\.[\d]+\.[\d]+\.*\d*))" = "`${1}$($Latest.Version)"
+       "$reVersion" = "$($Latest.Version)"
      }
 
     ".\legal\VERIFICATION.txt" = @{
-      '(sqlite\d_analyzer.exe)' = "$($Latest.Executable)"
-      '(sqlite-.+win.+\.zip)'   = "$($Latest.Filename64)"
-      '(Checksum:\s*)(.+)'      = "`${1}$($Latest.Checksum64)"
+      "$reExecutable" = "$($Latest.Executable)"
+      "$reArchive"    = "$($Latest.Filename64)"
+      "$reChecksum"   = "$($Latest.Checksum64)"
     }
   }
 }
@@ -43,7 +49,7 @@ function getVersion {
 
   # SQLite versions are encoded so that filenames sort in order of increasing version number when viewed using "ls".
   # For version 3.X.Y the filename encoding is 3XXYY00. For branch version 3.X.Y.Z, the encoding is 3XXYYZZ.
-  $rawVersion -match '(?<Series>[\d])(?<Major>[\d]{2})(?<Minor>[\d]{2})(?<Patch>[\d]{2})' | Out-Null
+  $rawVersion -match $reRawVersion | Out-Null
 
   $series = $Matches.Series
   $major  = $Matches.Major
@@ -72,7 +78,7 @@ function getVersion {
 function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
-  $downloadPage.Content -match '(?<DownloadUrl>(([\d]{4}\/(?<FileName>(.+tools-win-x64.+(?<Version>([\d]{7}))\.zip)))))'
+  $downloadPage.Content -match $reDownload
 
   $url64      = ("{0}/{1}" -f $base, $Matches.DownloadUrl)
   $fileName64 = $matches.FileName
