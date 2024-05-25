@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://learn.microsoft.com/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v2.11-blue)](https://learn.microsoft.com/en-gb/sysinternals/downloads/pstools)
+[![Software version](https://img.shields.io/badge/Source-v2.12-blue)](https://learn.microsoft.com/en-gb/sysinternals/downloads/pstools)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/pstools?label=Chocolatey)](https://community.chocolatey.org/packages/psping)
 
 PsPing implements Ping functionality, TCP ping, latency and bandwidth measurement.
