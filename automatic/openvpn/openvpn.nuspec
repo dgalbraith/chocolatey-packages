@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>openvpn</id>
-    <version>2.6.10.002</version>
+    <version>2.6.10.003</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/openvpn</packageSourceUrl>
     <owners>dgalbraith,wget,Okhoshi</owners>
     <title>OpenVPN - Open Source SSL VPN Solution</title>
