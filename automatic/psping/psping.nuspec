@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>psping</id>
+    <version>2.11</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/psping</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>PsPing - Windows Sysinternals</title>
+    <authors>Mark Russinovich</authors>
+    <projectUrl>https://learn.microsoft.com/sysinternals</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f1075d8ebcef438242228bccd7320aff28f82ed0/icons/sysinternals.png</iconUrl>
+    <copyright>Mark Russinovich</copyright>
+    <licenseUrl>https://learn.microsoft.com/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://learn.microsoft.com/sysinternals/downloads/psping</docsUrl>
+    <mailingListUrl>https://learn.microsoft.com/answers/tags/435/sysinternals</mailingListUrl>
+    <tags>ping latency bandwidth sysinternals</tags>
+    <summary>Measure network performance</summary>
+    <description><![CDATA[
+PsPing implements Ping functionality, TCP ping, latency and bandwidth measurement.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@24fea36a195c2c0f2ab7b70a195b03607cc45991/automatic/psping/screenshot.png)
+
+## Package Parameters
+
+The following package parameter can be set:
+
+* `/AcceptEula` - set the EULA for the tools to accepted on installation.  This is at a user level so will only be for the *current user*.
+e.g. `choco install -y pstools --package-parameters="/AcceptEula"`
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly
+]]>
+    </description>
+    <releaseNotes>https://learn.microsoft.com/sysinternals/#whats-new-rss-icon</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
