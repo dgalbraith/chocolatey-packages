@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>coreinfo</id>
-    <version>3.53</version>
+    <version>3.6</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/coreinfo</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Coreinfo - Windows Sysinternals</title>
     <authors>Mark Russinovich</authors>
     <projectUrl>https://docs.microsoft.com/sysinternals</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f1075d8ebcef438242228bccd7320aff28f82ed0/icons/sysinternals.png</iconUrl>
     <copyright>Mark Russinovich</copyright>
     <licenseUrl>https://docs.microsoft.com/sysinternals/license-terms</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

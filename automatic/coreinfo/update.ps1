@@ -1,34 +1,38 @@
 import-module au
 
-$releases = 'https://docs.microsoft.com/sysinternals/downloads/coreinfo'
+$releases = 'https://learn.microsoft.com/sysinternals/downloads/coreinfo'
 $download = 'https://download.sysinternals.com/files/Coreinfo.zip'
 
-$reVersion = '(v)(?<Version>(\d+\.\d+))'
+$reChecksum = "(?<=checksum\s*=\s*')((?<Checksum>([^\s']+)))"
+$reUrl      = "(?<=url\s*=\s*')((?<Url>([^\s']+)))"
+$reVersion  = '(?<=<h1.*>Coreinfo v)(?<Version>\d+\.\d+)(?=</h1>)'
 
 function global:au_BeforeUpdate {
-  $Latest.Checksum = Get-RemoteChecksum $download
+  $Latest.Checksum = Get-RemoteChecksum $Latest.Url32
 }
 
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$reVersion" = "`${1}$($Latest.Version)"
+      '(?<=v)(?<Version>\d+\.\d+)' = "$($Latest.Version)"
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      "(checksum\s*=\s*)(.+)" = "`${1}'$($Latest.Checksum)'"
+      "$reChecksum" = "$($Latest.Checksum)"
+      "$reUrl"      = "$($Latest.Url32)"
     }
   }
 }
 
 function global:au_GetLatest {
-    $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $releasePage = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $version = $downloadPage.Content -match $reversion | foreach-object { $Matches.Version }
+    $version  = $releasePage.Content -match $reVersion | foreach-object { $Matches.Version }
 
     return @{
+      Url32   = $download
       Version = $version
     }
 }
 
-update -ChecksumFor none -NoReadme -NoCheckUrl
+update -ChecksumFor none -NoReadme

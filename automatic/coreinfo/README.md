@@ -1,9 +1,9 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@024a0e31a291ceea63f7af5e63e2679403c5aa8f/icons/sysinternals.png" width="48" height="48" />Coreinfo - Windows Sysinternals](https://chocolatey.org/packages/coreinfo)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f1075d8ebcef438242228bccd7320aff28f82ed0/icons/sysinternals.png" width="48" height="48" />Coreinfo - Windows Sysinternals](https://chocolatey.org/packages/coreinfo)
 
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://docs.microsoft.com/en-us/sysinternals/license-terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.53-blue)](https://docs.microsoft.com/sysinternals/downloads/coreinfo)
+[![Software version](https://img.shields.io/badge/Source-v3.6-blue)](https://docs.microsoft.com/sysinternals/downloads/coreinfo)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/coreinfo?label=Chocolatey)](https://chocolatey.org/packages/coreinfo)
 
 Coreinfo is a command-line utility that shows you the mapping between logical processors and the physical processor,
