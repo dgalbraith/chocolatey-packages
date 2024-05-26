@@ -1,10 +1,10 @@
-# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@172818799a8c19127ae166c7b6168b0f57d256df/icons/mousewithoutborders.png" width="48" height="48" />Mouse Without Borders](https://chocolatey.org/packages/mousewithoutborders)
+# [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@172818799a8c19127ae166c7b6168b0f57d256df/icons/mousewithoutborders.png" width="48" height="48" />Mouse Without Borders](https://community.chocolatey.org/packages/mousewithoutborders)
 
 [![Software license](https://img.shields.io/badge/License-proprietary-lightgrey)](https://github.com/dgalbraith/chocolatey-packages/blob/master/automatic/mousewithoutborders/legal/LICENSE.pdf)
 [![Maintenance status](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
 [![Software version](https://img.shields.io/badge/version-2.2.1.327-blue)](https://www.microsoft.com/download/details.aspx?id=35460)
-[![Chocolatey package version](https://img.shields.io/chocolatey/v/mousewithoutborders?label=Chocolatey)](https://chocolatey.org/packages/mousewithoutborders)
+[![Chocolatey package version](https://img.shields.io/chocolatey/v/mousewithoutborders?label=Chocolatey)](https://community.chocolatey.org/packages/mousewithoutborders)
 
 [Mouse Without Borders](http://aka.ms/mm) is a product that makes you the captain of your computer fleet by allowing
 you to control up to four computers from a single mouse and keyboard. This means that with Mouse without Borders you
