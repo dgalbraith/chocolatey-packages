@@ -3,11 +3,9 @@ import-module au
 $base      = 'https://www.microsoft.com/download/'
 $productId = '35460'
 
-$detail       = "${base}details.aspx?id=${productId}"
-$download     = "${base}confirmation.aspx?id=${productId}"
+$detail   = "${base}details.aspx?id=${productId}"
 
 $reChecksum  = "(?<=Checksum\s*=\s*')((?<Checksum>([^']+)))"
-$reInstaller = '(?<Installer>((?<=p>)(.+\.msi)))'
 $reUrl       = '(?<Url>(h.+\.msi))'
 $reVersion   = '(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]+))'
 
@@ -30,16 +28,13 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $detailPage   = Invoke-WebRequest -UseBasicParsing -Uri $detail
-  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $download
 
+  $url      = $detailPage.Links | where-object { $_ -match $reUrl } | select-object -ExpandProperty href | select-object -First 1
   $version  = $detailPage.Content -match $reVersion   | foreach-object { $Matches.Version }
-  $filename = $detailPage.Content -match $reInstaller | foreach-object { $Matches.Installer}
-
-  $url = $downloadPage.Links | where-object { $_ -match $filename } | select-object -ExpandProperty href | select-object -First 1
 
   @{
-    Version = $version
     Url     = $url
+    Version = $version
   }
 }
 
