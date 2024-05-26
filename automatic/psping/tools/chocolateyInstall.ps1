@@ -1,26 +1,55 @@
-﻿$packageName = '{{PackageName}}'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
-$checksumType = 'sha256'
-$url64 = "$url"
-$checksum64 = "$checksum"
-$checksumType64 = "checksumType"
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-Install-ChocolateyZipPackage -PackageName "$packageName" `
-                             -Url "$url" `
-                             -UnzipLocation "$toolsDir" `
-                             -Url64bit "$url64" `
-                             -Checksum "$checksum" `
-                             -ChecksumType "$checksumType" `
-                             -Checksum64 "$checksum64" `
-                             -ChecksumType64 "$checksumType64"
-Write-Verbose "Accepting license..."
+﻿$ErrorActionPreference = 'Stop'
+
+$toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
+
 $regRoot = 'HKCU:\Software\Sysinternals'
-$regPkg = 'PsPing'
-$regPath = Join-Path $regRoot $regPkg
-if (!(Test-Path $regRoot)) {New-Item -Path "$regRoot"}
-if (!(Test-Path $regPath)) {New-Item -Path "$regRoot" -Name "$regPkg"}
-Set-ItemProperty -Path "$regPath" -Name EulaAccepted -Value 1
-if ((Get-ItemProperty -Path "$regPath").EulaAccepted -ne 1) {
-  throw "Failed setting registry value."
+$regPkg  = 'PsPing'
+
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  unzipLocation = $toolsDir
+  url           = 'https://download.sysinternals.com/files/PSTools.zip'
+  checksum      = '56536bff1e9da136a53f68c6f4f1cd51f79be919a27249a193a2bc8fc472e89a'
+  checksumType  = 'sha256'
+}
+
+Install-ChocolateyZipPackage @packageArgs
+
+Get-ChildItem $toolsDir -Recurse -Exclude ('*.ps1', 'psping.exe', 'psping64.exe') | Remove-Item -Force -ea 0 | Out-Null
+
+$pp = Get-PackageParameters
+
+$acceptEula = $false
+
+if ($pp.count -gt 0) {
+  $pp.GetEnumerator() | foreach-object {
+  
+    switch ($_.name) {
+      'AcceptEula' {
+        $acceptEula = $true
+      } 
+      Default {
+        Write-Verbose("Unknown parameter $_ will be ignored")
+      }
+    }
+  }
+  
+  if ($true -eq $acceptEula) {
+   
+    if (!(Test-Path $regRoot)) {
+      New-Item -Path "$regRoot" | Out-Null
+    }
+    
+    $regPath = Join-Path $regRoot $regPkg
+      
+    if (!(Test-Path $regPath)) {
+      New-Item -Path "$regRoot" -Name "$regPkg" | Out-Null
+    }
+      
+    Set-ItemProperty -Path "$regPath" -Name EulaAccepted -Value 1
+      
+    if ((Get-ItemProperty -Path "$regPath").EulaAccepted -ne 1) {
+      throw "Failure updating registry to indicate EULA acceptance"
+    }
+  }
 }
