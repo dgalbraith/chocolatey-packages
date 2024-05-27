@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard
 
-and download the package vscjava.vscode-spring-boot-dashboard-0.13.2024042402.vsix using the Download Extension link
+and download the package vscjava.vscode-spring-boot-dashboard-0.14.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-spring-boot-dashboard/0.13.2024042402/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-spring-boot-dashboard/0.14.0/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-spring-boot-dashboard-0.13.2024042402.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-spring-boot-dashboard-0.13.2024042402.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash vscjava.vscode-spring-boot-dashboard-0.14.0.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscjava.vscode-spring-boot-dashboard-0.14.0.vsix
 
   Type:     sha256
-  Checksum: F39AF5EBE6B46F1FE2C8F4188609B23347DF6D7D979BBE746109549AC5F467BA
+  Checksum: 030709AC28CA8E5062E4C7026EBD0C188062DE02109F89AD72AE5E2BCE58CA54
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscjava.vscode-spring-boot-dashboard/license
