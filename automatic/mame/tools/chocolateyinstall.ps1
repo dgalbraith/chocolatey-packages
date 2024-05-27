@@ -1,25 +1,70 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName    = 'mame' 
-$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$TodaysVersion  = ($env:ChocolateyPackageVersion -replace '[.]','')
 
-$packageArgs = @{
-  packageName    = $packageName
-  Destination    = $toolsDir
-  FileFullPath64 = "$toolsDir\mame" + $TodaysVersion + "b_64bit.exe"
+$toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
+$archive  = Join-Path $toolsDir 'mame0264b_64bit.exe'
+
+$pp = Get-PackageParameters
+
+if ($pp.InstallDir) {
+  $installDir = $pp.InstallDir
+} else {
+  $installDir  = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
 }
 
-Get-ChocolateyUnzip @packageArgs
+$unzipArgs = @{
+  PackageName    = $env:ChocolateyPackageName
+  FileFullPath64 = $archive
+  Destination    = $installDir
+}
 
-Install-ChocolateyShortcut -shortcutFilePath "$env:Public\Desktop\MAME.lnk" -targetPath "$toolsDir\mame.exe" -WorkingDirectory "$toolsDir"
-Install-ChocolateyShortcut -shortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\MAME.lnk" -targetPath "$toolsDir\mame.exe" -WorkingDirectory "$toolsDir"
+Get-ChocolateyUnzip @unzipArgs
 
-Remove-Item $toolsDir\mame*_64bit.exe | Out-Null
+if ($pp.count -gt 0) {
+  $paths = New-Object System.Collections.ArrayList
 
-$WhoAmI=whoami
-icacls.exe $toolsDir /grant $WhoAmI":"'(OI)(CI)'F /T | Out-Null
+  $pp.GetEnumerator() | foreach-object {
+    switch ($_.name) {
+        'AddToDesktop' {
+          if ($pp.User) {
+            $desktopPath = [Environment]::GetFolderPath('Desktop')
+          } else {
+            $desktopPath = [Environment]::GetFolderPath('CommonDesktopDirectory')
+          }
 
-Get-ChildItem -Path $toolsDir -Recurse | Where {
- $_.Extension -eq '.exe'} | % {
- New-Item $($_.FullName + '.ignore') -Force -ItemType file
-} | Out-Null
+          $paths.add($desktopPath) | Out-Null
+        }
+        'AddToStart' {
+          if ($pp.User) {
+            $startMenuPath = [Environment]::GetFolderPath('StartMenu')
+          } else {
+            $startMenuPath = [Environment]::GetFolderPath('CommonStartMenu')
+          }
+
+          $paths.Add($startMenuPath) | Out-Null
+        }
+        'User' {
+          # ignore - no need to handle independently as it is a qualifier for other options
+        }
+        Default {
+          Write-Verbose("Unknown parameter $_.name will be ignored")
+        }
+    }
+  }
+
+  $executable = Get-ChildItem $installDir -include mame.exe -recurse
+
+  if ($paths.Count -gt 0) {
+    $paths.GetEnumerator() | foreach-object {
+      $shortcutPath = Join-Path $_ 'MAME.lnk'
+      Install-ChocolateyShortcut -ShortcutFilePath $shortcutPath -TargetPath $executable -WorkingDirectory $unzipDir
+    }
+  }
+}
+
+Get-ChildItem $toolsDir -recurse -include '*.exe' | foreach-object {
+  New-Item "$_.Name.ignore" -type file -force | Out-Null
+}
+
+Get-ChildItem $installDir -recurse -include '*.exe' | foreach-object {
+  Install-BinFile -Name ($_.Name -Replace '\..*') -Path $_.FullName
+}

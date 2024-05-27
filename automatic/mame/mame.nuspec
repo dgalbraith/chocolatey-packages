@@ -3,62 +3,63 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mame</id>
-    <version>0.247</version>
-    <owners>bcurran3</owners>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/mame</packageSourceUrl>
-    <title>MAME (Portable)</title>
+    <version>0.264</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mame</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>MAME - Emulation Framework</title>
     <authors>hundreds of developers</authors>
-    <projectUrl>http://mamedev.org/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/mame/mame_icon.png</iconUrl>
-    <copyright>hundreds of developers</copyright>
-    <licenseUrl>http://mamedev.org/legal.html</licenseUrl>
+    <projectUrl>https://www.mamedev.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e184f68c9b0399f6ed12453be4b6dd5f79beeaa2/icons/mame.png</iconUrl>
+    <copyright>Copyright 1997-2024 MAMEdev and contributors</copyright>
+    <licenseUrl>https://www.mamedev.org/legal.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>http://mamedev.org/release.html</projectSourceUrl>
-    <docsUrl>http://docs.mamedev.org/</docsUrl>
-    <mailingListUrl>http://forum.mamedev.org/</mailingListUrl>
+    <projectSourceUrl>https://github.com/mamedev/mame</projectSourceUrl>
+    <docsUrl>https://docs.mamedev.org</docsUrl>
     <bugTrackerUrl>https://github.com/mamedev/mame/issues</bugTrackerUrl>
-    <tags>mame arcade emulator game games gaming nintendo nes snes famicom gameboy sega portable binary</tags>
-    <summary>Multiple Arcade Machine Emulator</summary>
-    <description>
----
+    <mailingListUrl>https://forum.mamedev.org/</mailingListUrl>
+    <tags>mame mess arcade emulator emulation preservation history bcurran3</tags>
+    <summary>MAME is a multi-purpose emulation framework</summary>
+    <description><![CDATA[
+    
+MAME’s purpose is to preserve decades of software history. As electronic
+technology continues to rush forward, MAME prevents this important "vintage"
+software from being lost and forgotten. This is achieved by documenting the
+hardware and how it functions. The source code to MAME serves as this
+documentation. The fact that the software is usable serves primarily to
+validate the accuracy of the documentation (how else can you prove that you
+have recreated the hardware faithfully?). Over time, MAME (originally stood
+for Multiple Arcade Machine Emulator) absorbed the sister-project MESS (Multi
+Emulator Super System), so MAME now documents a wide variety of (mostly
+vintage) computers, video game consoles and calculators, in addition to the
+arcade video games that were its initial focus.
 
-### [choco://mame](choco://mame)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@80973991692dc8557725ecef9caefba958369241/automatic/mame/screenshot.png)
 
----
+## Package Parameters
 
-	
-### What is MAME
-MAME originally stood for Multiple Arcade Machine Emulator.
+* `/AddToDesktop` - add a desktop shortcut for MAME.  By default the shortcut will be added for all users
+e.g. `choco install -y mame --package-parameters="/AddToDesktop"`
+* `/AddToStart` - add a shortcut to the start menu for DbGate.  By default the shortcut will be added for all users
+e.g. `choco install -y mame --package-parameters="/AddToStart"`
+* `/User` - where the user parameter is specified any shortcuts created (`/AddToDesktop` or `/AddToStart`) will only
+be added for the current user
+e.g. `choco install -y mame --package-parameters="/AddToDesktop /AddToStart /User"`
+* `/InstallDir=[directory]` - set the installation directory to `[directory]`
+  e.g. `choco install -y mame --package-parameters="/InstallDir=C:\Tools\MAME"`
 
-MAME's purpose is to preserve decades of software history. As electronic technology continues to rush forward, MAME prevents this important "vintage" software from being lost and forgotten. This is achieved by documenting the hardware and how it functions. The source code to MAME serves as this documentation. The fact that the software is usable serves primarily to validate the accuracy of the documentation (how else can you prove that you have recreated the hardware faithfully?). Over time, MAME absorbed the sister-project MESS (Multi Emulator Super System), so MAME now documents a wide variety of (mostly vintage) computers, video game consoles and calculators, in addition to the arcade video games that were its initial focus.	
+## Notes
 
-## Purpose
-MAME's main purpose is to be a refefence to the inner workings of the emulated machines. This is done both for educational purposes and for preservation purposes, in order to prevent historical software from disappearing forever once the hardware it runs on stops working. Of course, in order to preserve the software and demonstrate that the emulated behavior matches the original, you must also be able to actually use the software. This is considered a nice side effect, and is not MAME's primary focus.
+* Mame only provides a 64-bit version
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-It is not our intention to infringe on any copyrights or patents on the original games. All of MAME's source code is either our own or freely available. To operate, the emulator requires images of the original ROMs, CDs, hard disks or other media from the machines, which must be provided by the user. No portions of the original game code are included in the executable.
-
-## Cost
-MAME is free. Its source code is free. The project as whole is under distributed under the GNU General Public License, version 2 (GPL-2.0), but most of code (including core functionality) is available under the BSD-3-clause license.
-
-Legal ROM Sources:
-[mamedev.org](http://mamedev.org/roms/)
-[archived gaelco.com](https://web.archive.org/web/20160402171815/http://www.gaelco.com/english/pages/hablando/frhablan.htm)
-
-MAME is mostly programmed in C with some core components in C++. MAME can currently emulate over 32000 individual systems from the last 5 decades. [Supported systems](http://www.mess.org/supported_systems)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/mame/readme.md)**
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
-
-</description>
-    <releaseNotes>https://www.mamedev.org/releases/whatsnew_0235.txt</releaseNotes>
+]]>
+    </description>
+    <releaseNotes>https://www.mamedev.org/releases/whatsnew_0264.txt</releaseNotes>
+    <dependencies />
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

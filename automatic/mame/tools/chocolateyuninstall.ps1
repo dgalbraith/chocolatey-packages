@@ -1,5 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName= 'mame' 
 
-Remove-Item "$ENV:Public\Desktop\MAME.lnk" -Force -ErrorAction SilentlyContinue
-Remove-Item "$ENV:ProgramData\Microsoft\Windows\Start Menu\Programs\MAME.lnk" -Force -ErrorAction SilentlyContinue
+Get-ChildItem $installLocation -recurse -include '*.exe' | foreach-object {
+    Uninstall-BinFile -Name ($_.Name -Replace '\..*') -Path $_.FullName
+  }
+
+Uninstall-ChocolateyZipPackage $env:ChocolateyPackageName 'mame0264b_64bit.exe'
