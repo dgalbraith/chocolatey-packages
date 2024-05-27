@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mame</id>
+    <version>0.264</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mame</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>MAME - Emulation Framework</title>
+    <authors>hundreds of developers</authors>
+    <projectUrl>https://www.mamedev.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e184f68c9b0399f6ed12453be4b6dd5f79beeaa2/icons/mame.png</iconUrl>
+    <copyright>Copyright 1997-2024 MAMEdev and contributors</copyright>
+    <licenseUrl>https://www.mamedev.org/legal.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/mamedev/mame</projectSourceUrl>
+    <docsUrl>https://docs.mamedev.org</docsUrl>
+    <bugTrackerUrl>https://github.com/mamedev/mame/issues</bugTrackerUrl>
+    <mailingListUrl>https://forum.mamedev.org/</mailingListUrl>
+    <tags>mame mess arcade emulator emulation preservation history bcurran3</tags>
+    <summary>MAME is a multi-purpose emulation framework</summary>
+    <description><![CDATA[
+    
+MAME’s purpose is to preserve decades of software history. As electronic
+technology continues to rush forward, MAME prevents this important "vintage"
+software from being lost and forgotten. This is achieved by documenting the
+hardware and how it functions. The source code to MAME serves as this
+documentation. The fact that the software is usable serves primarily to
+validate the accuracy of the documentation (how else can you prove that you
+have recreated the hardware faithfully?). Over time, MAME (originally stood
+for Multiple Arcade Machine Emulator) absorbed the sister-project MESS (Multi
+Emulator Super System), so MAME now documents a wide variety of (mostly
+vintage) computers, video game consoles and calculators, in addition to the
+arcade video games that were its initial focus.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@80973991692dc8557725ecef9caefba958369241/automatic/mame/screenshot.png)
+
+## Package Parameters
+
+* `/AddToDesktop` - add a desktop shortcut for MAME.  By default the shortcut will be added for all users
+e.g. `choco install -y mame --package-parameters="/AddToDesktop"`
+* `/AddToStart` - add a shortcut to the start menu for DbGate.  By default the shortcut will be added for all users
+e.g. `choco install -y mame --package-parameters="/AddToStart"`
+* `/User` - where the user parameter is specified any shortcuts created (`/AddToDesktop` or `/AddToStart`) will only
+be added for the current user
+e.g. `choco install -y mame --package-parameters="/AddToDesktop /AddToStart /User"`
+* `/InstallDir=[directory]` - set the installation directory to `[directory]`
+  e.g. `choco install -y mame --package-parameters="/InstallDir=C:\Tools\MAME"`
+
+## Notes
+
+* Mame only provides a 64-bit version
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]>
+    </description>
+    <releaseNotes>https://www.mamedev.org/releases/whatsnew_0264.txt</releaseNotes>
+    <dependencies />
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
