@@ -2,7 +2,7 @@
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$archive = Join-Path $toolsDir 'dbgate-5.2.8-win_x64.zip'
+$archive = Join-Path $toolsDir 'dbgate-5.2.9-win_x64.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
