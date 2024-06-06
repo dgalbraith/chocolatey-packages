@@ -2,38 +2,39 @@
 
 $ErrorActionPreference = 'STOP'
 
-$releases = 'https://www.amazon.com/gp/feature.html?docId=1000765261'
+$releases = 'https://www.amazon.com/Kindle-Previewer/b?node=21381691011'
+$download = 'https://d2bzeorukaqrvt.cloudfront.net/KindlePreviewerInstaller.exe'
 
-$re64      = '(?<Url>(https://s.+exe))'
-$reVersion = '(>K|-v).*?(?<Version>(\d\.\d+))'
+$reChecksum = "(?<=checksum\s*=\s*')(?<Checksum>[^']+)"
+$reVersion  = '(?<=v).*?(?<Version>(\d+\.\d+\.\d+))'
+
+function global:au_BeforeUpdate {
+  $Latest.Checksum64 = Get-RemoteChecksum $download
+}
 
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$($reVersion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
-    ".\tools\chocolateyinstall.ps1" = @{
-      "(url\s*=\s*)('.*')"      = "`$1'$($Latest.Url64)'"
-      "(checksum\s*=\s*)('.*')" = "`$1'$(Get-RemoteChecksum $Latest.Url64)'"
+    ".\tools\chocolateyInstall.ps1" = @{
+      "$($reChecksum)" = "$($Latest.Checksum64)"
     }
   }
 }
 
 function global:au_GetLatest {
-  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases -MaximumRedirection 0 -ErrorAction SilentlyContinue
-
-  $downloadPage.Content -match $re64
-  $url64 = $Matches.Url
+  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
   $downloadPage.Content -match $reVersion
   $version = $Matches.Version
 
   return @{
-    URL64          = $url64
+    URL64          = $download
     ChecksumType64 = 'sha256'
     Version        = $version
   }
 }
 
-update -ChecksumFor none -NoReadme
+update -ChecksumFor none -NoReadme -NoCheckUrl -NoCheckChocoVersion
