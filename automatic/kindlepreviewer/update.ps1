@@ -5,7 +5,7 @@ $ErrorActionPreference = 'STOP'
 $releases = 'https://www.amazon.com/Kindle-Previewer/b?node=21381691011'
 $download = 'https://d2bzeorukaqrvt.cloudfront.net/KindlePreviewerInstaller.exe'
 
-$reChecksum = "(?<=checksum\s*=\s*')(?<Checksum>[^']+)"
+$reChecksum = "(?<=checksum64\s*=\s*')(?<Checksum>[^']+)"
 $reVersion  = '(?<=v).*?(?<Version>(\d+\.\d+\.\d+))'
 
 function global:au_BeforeUpdate {
