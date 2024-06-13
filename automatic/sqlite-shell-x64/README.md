@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/nalgeon/sqlite/blob/main/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.45.1-blue.svg)](https://github.com/nalgeon/sqlite/releases/tag/3.45.1)
+[![Software version](https://img.shields.io/badge/Source-v3.46.0-blue.svg)](https://github.com/nalgeon/sqlite/releases/tag/3.46.0)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/sqlite-shell-x64?label=Chocolatey)](https://chocolatey.org/packages/sqlite-shell-x64)
 
 SQLite Shell is a command-line shell that allows the user to manually enter and
