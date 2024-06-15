@@ -6,7 +6,7 @@ if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$archive = Join-Path $toolsDir 'mongosh-2.2.6-win32-x64.zip'
+$archive = Join-Path $toolsDir 'mongosh-2.2.9-win32-x64.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
