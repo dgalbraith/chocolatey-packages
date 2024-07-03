@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>jruby</id>
-    <version>9.4.7.0</version>
+    <version>9.4.8.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/jruby</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>JRuby - The Ruby Programming Language on the JVM</title>
@@ -57,7 +57,7 @@ To have Chocolatey remember parameters on upgrade, be sure to set `choco feature
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/jruby/jruby/releases/tag/9.4.7.0</releaseNotes>
+    <releaseNotes>https://github.com/jruby/jruby/releases/tag/9.4.8.0</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
