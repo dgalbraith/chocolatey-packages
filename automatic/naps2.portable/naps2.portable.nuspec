@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>naps2.portable</id>
-    <version>7.4.2</version>
+    <version>7.4.3</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/naps2.portable</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>NAPS2 (Not Another PDF Scanner 2) (Portable)</title>
@@ -46,7 +46,7 @@ If you find it is out of date by more than a day or two, please contact the main
 
 ]]>
     </description>
-    <releaseNotes>https://github.com/cyanfish/naps2/releases/tag/v7.4.2</releaseNotes>
+    <releaseNotes>https://github.com/cyanfish/naps2/releases/tag/v7.4.3</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.8.0.0" />
     </dependencies>
