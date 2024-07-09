@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/facebook/watchman)](https://github.com/facebook/watchman/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/source-v2024.06.17.00-blue.svg)](https://github.com/facebook/watchman/releases/tag/v2024.06.17.00)
+[![Software version](https://img.shields.io/badge/source-v2024.07.08.00-blue.svg)](https://github.com/facebook/watchman/releases/tag/v2024.07.08.00)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/watchman?label=Chocolatey)](https://chocolatey.org/packages/watchman)
 
 Watchman exists to watch files and record when they change. It can also trigger actions (such as
