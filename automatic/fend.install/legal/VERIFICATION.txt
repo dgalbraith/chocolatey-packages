@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/printfn/fend/releases/tag/v1.4.9
+  https://github.com/printfn/fend/releases/tag/v1.5.0
 
-and download the installer fend-1.4.9-windows-x64.msi using the links in the asset
+and download the installer fend-1.5.0-windows-x64.msi using the links in the asset
 section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/printfn/fend/releases/download/v1.4.9/fend-1.4.9-windows-x64.msi
+  https://github.com/printfn/fend/releases/download/v1.5.0/fend-1.5.0-windows-x64.msi
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 fend-1.4.9-windows-x64.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f fend-1.4.9-windows-x64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 fend-1.5.0-windows-x64.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f fend-1.5.0-windows-x64.msi
 
-  File:     fend-1.4.9-windows-x64.msi
+  File:     fend-1.5.0-windows-x64.msi
   Type:     sha256
-  Checksum: B1179C6E6ECDAAEC2ED5E00C4FFFC8818FF3A09A921892E1E404BEAC8A9803D1
+  Checksum: 77923F912A54D7242BF3F3E9F2099166ED94EC7FD81A8DAAF56C099A58359CA7
 
 Contents of file LICENSE.txt is obtained from https://github.com/printfn/fend/blob/main/LICENSE.md
