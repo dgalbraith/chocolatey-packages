@@ -8,13 +8,13 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/nalgeon/sqlean/releases/tag/0.24.1
+  https://github.com/nalgeon/sqlean/releases/tag/0.24.2
 
 and download the archive sqlean-win-x64.zip using the link on the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://github.com/nalgeon/sqlean/releases/download/0.24.1/sqlean-win-x64.zip
+  https://github.com/nalgeon/sqlean/releases/download/0.24.2/sqlean-win-x64.zip
 
 2. The archive can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 sqlean-win-x64.zip
@@ -22,6 +22,6 @@ Alternatively the archive can be downloaded directly from
 
   File:     sqlean-win-x64.zip
   Type:     sha256
-  Checksum:56F6270DA4821B87870C4BE3CA72507236EA8EB330E8F6729B72D18D018CC176
+  Checksum:2D5C752878C0042FD67082C0EB41893E19E13A12F24D0A894073518E7CBAC440
 
 Contents of file LICENSE.txt is obtained from https://github.com/nalgeon/sqlean/blob/main/LICENSE.
