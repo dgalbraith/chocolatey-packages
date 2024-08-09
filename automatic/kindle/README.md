@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-Proprietary-lightgrey)](https://www.amazon.com/gp/help/customer/display.html?nodeId=200499360)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/source-2.4.70904-blue.svg)](https://www.amazon.com/kindle-dbs/fd/kcp)
+[![Software version](https://img.shields.io/badge/source-2.4.70946-blue.svg)](https://www.amazon.com/kindle-dbs/fd/kcp)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/kindle?label=Chocolatey)](https://chocolatey.org/packages/beekeeper-studio)
 
 Your library on your PC - read your books on your PC with the free Kindle app.

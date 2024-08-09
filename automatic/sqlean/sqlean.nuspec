@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sqlean</id>
-    <version>0.26.0</version>
+    <version>0.27.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sqlean</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>sqlean - all the missing sqlite functions</title>
@@ -53,7 +53,7 @@ kind of standard library for SQLite.
   correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/nalgeon/sqlean/releases/tag/0.26.0</releaseNotes>
+    <releaseNotes>https://github.com/nalgeon/sqlean/releases/tag/0.27.0</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
