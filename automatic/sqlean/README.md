@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/nalgeon/sqlean/blob/main/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v0.27.0-blue.svg)](https://github.com/nalgeon/sqlean/releases/tag/0.27.0)
+[![Software version](https://img.shields.io/badge/Source-v0.27.1-blue.svg)](https://github.com/nalgeon/sqlean/releases/tag/0.27.1)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/sqlean?label=Chocolatey)](https://chocolatey.org/packages/sqlean)
 
 SQLite has few functions compared to other database management systems. SQLite
