@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
-and download the package ms-python.python-2024.15.2024091201.vsix using the Download Extension link
+and download the package ms-python.python-2024.15.2024091202.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-python/vsextensions/python/2024.15.2024091201/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-python/vsextensions/python/2024.15.2024091202/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash ms-python.python-2024.15.2024091201.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-python.python-2024.15.2024091201.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash ms-python.python-2024.15.2024091202.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f ms-python.python-2024.15.2024091202.vsix
 
   Type:     sha256
-  Checksum: 860BA638E09D98F8D7C893863B0EAD6CEE18C4FBB935C6C602C6027D22EFE8AA
+  Checksum: 06A1E7083700F3A464A47B627BD0A4C30D92C5EDED1C0B3A8C9C320288E15470
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/ms-python.python/license
