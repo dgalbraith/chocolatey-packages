@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/mongodb/mongocli)](https://github.com/mongodb/mongocli/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v2.0.1-blue)](https://github.com/mongodb/mongocli/releases/tag/v2.0.1)
+[![Software version](https://img.shields.io/badge/Source-v2.0.2-blue)](https://github.com/mongodb/mongocli/releases/tag/v2.0.2)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/mongodb-cli.portable?label=Chocolatey)](https://chocolatey.org/packages/mongodb-cli.portable)
 
 Create and manage MongoDB Cloud resources from your command line and easily automate them using scripts
