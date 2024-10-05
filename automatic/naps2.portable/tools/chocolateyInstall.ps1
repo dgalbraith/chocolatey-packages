@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'naps2-7.5.1-win.zip'
+$archive  = Join-Path $toolsDir 'naps2-7.5.2-win.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
