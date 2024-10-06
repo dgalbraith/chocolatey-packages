@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fend</id>
-    <version>1.5.2</version>
+    <version>1.5.3</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/fend</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>fend - Arbitary-Precision Unit-Aware Calculator</title>
@@ -54,9 +54,9 @@ If you find it is out of date by more than a day or two, please contact the main
 
 ]]>
     </description>
-    <releaseNotes>https://github.com/printfn/fend/releases/tag/v1.5.2</releaseNotes>
+    <releaseNotes>https://github.com/printfn/fend/releases/tag/v1.5.3</releaseNotes>
     <dependencies>
-      <dependency id="fend.install" version="[1.5.2]" />
+      <dependency id="fend.install" version="[1.5.3]" />
     </dependencies>
   </metadata>
   <files>
