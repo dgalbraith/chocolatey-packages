@@ -29,7 +29,7 @@ Works with any Kubernetes anywhere (Azure, Minikube, AWS, GCP and more!).
 
 ## Notes
 
-* This package requires Visual Studio Code 1.82.0 or newer.
+* This package requires Visual Studio Code 1.93.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.
