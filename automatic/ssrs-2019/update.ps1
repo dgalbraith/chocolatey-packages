@@ -1,13 +1,17 @@
-import-module au
+Import-Module au
+
+Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
+Import-Module ..\..\scripts\chocolatey-helpers\Chocolatey-Helpers.psd1
 
 $base      = 'https://www.microsoft.com/download/'
 $productId = '100122'
 
-$detail       = "${base}details.aspx?id=${productId}"
-$download     = "${base}confirmation.aspx?id=${productId}"
+$detail = "${base}details.aspx?id=${productId}"
 
-$reversion    = '(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]+))'
-$reexecutable = 'p>(?<Executable>(.*\.exe))<'
+$reChecksum = "(?<=checksum64\s*=\s*')(?<Checksum>[^']+)"
+$reUrl      = '(?<Url>(https.+\.exe))'
+$reVersion  = '(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]+))'
+
 
 function au_BeforeUpdate {
   $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64Bit
@@ -16,35 +20,55 @@ function au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$($reversion)" = "$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     'tools\ChocolateyInstall.ps1' = @{
-      "(\s*url64bit\s*=\s*)('.*')"       = "`$1'$($Latest.URL64Bit)'"
-      "(\s*checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
-      "(\s*checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+      "$($reUrl)"      = "$($Latest.Url64)"
+      "$($reChecksum)" = "$($Latest.Checksum64)"
     }
   }
 }
 
-function global:au_GetLatest {
-  $detail_page   = Invoke-WebRequest -UseBasicParsing -Uri $detail
-  $download_page = Invoke-WebRequest -UseBasicParsing -Uri $download
+function GetVersionInformation([string] $url64) {
+  $fileName64  = $url64 -split '\/' | Select-Object -Last 1
+  $destination = "$env:TEMP\{0}" -f $fileName64
 
-  $detail_page.Content -match $reversion
-  $version = $Matches.Version
+  Get-WebFile `
+    -Url $download `
+    -FileName $destination | Out-Null
 
-  $detail_page.Content -match $reexecutable
-  $filename = $Matches.Executable
+  try {
+    $versionInfo = (Get-Item $destination).VersionInfo
 
-  $url = $download_page.Links | where-object { $_ -Match $filename } | Select-Object -ExpandProperty href | Select-Object -First 1
+    $versionMajor   = $versionInfo.FileMajorPart
+    $versionMinor   = $versionInfo.FileMinorPart
+    $versionBuild   = $versionInfo.FileBuildPart
+    $versionPrivate = $versionInfo.FilePrivatePart
 
-  @{
-    Version        = $version
-    URL64Bit       = $url
-    Filename64     = $filename
-    ChecksumType64 = 'sha256'
+    $version = '{0}.{1}.{2}.{3}' -f $versionMajor, $versionMinor, $versionBuild, $versionPrivate
+
+    return @{
+      Url64      = $url64
+      FileName64 = $fileName64
+      Checksum64 = Get-FileHash $destination | ForEach-Object Hash
+      Version    = $version
+    }
+  } finally {
+    Remove-Item -Force $destination
   }
+}
+
+function global:au_GetLatest {
+  $detailPage   = Invoke-WebRequest -UseBasicParsing -Uri $detail
+
+  $download = $detailPage.Links | where-object { $_ -Match $reUrl } | Select-Object -ExpandProperty href | Select-Object -First 1
+
+  $result = Update-OnETagChanged -Uri $download -OnETagChanged {
+    GetVersionInformation $download
+  }
+
+  return $result
 }
 
 update -ChecksumFor none -NoReadme
