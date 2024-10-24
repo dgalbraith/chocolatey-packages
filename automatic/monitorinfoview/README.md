@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/license-freeware-orange)](http://www.nirsoft.net/utils/monitor_info_view.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.22-blue.svg)](http://www.nirsoft.net/utils/monitor_info_view.html)
+[![Software version](https://img.shields.io/badge/Source-v1.25-blue.svg)](http://www.nirsoft.net/utils/monitor_info_view.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/monitorinfoview?label=Chocolatey)](https://chocolatey.org/packages/monitorinfoview)
 
 MonitorInfoView is a small utility that displays essential information about your monitor: manufacture week/year, monitor manufacturer, monitor model, supported display modes, and more...

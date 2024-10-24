@@ -23,6 +23,6 @@ Alternatively the archive can be downloaded directly from
 
   File32:         monitorinfoview.zip
   ChecksumType32: sha256
-  Checksum32: 1D9B7093B42F491BB13098649538D3516B8DF318BACA2773736AE48281AE1AEF
+  Checksum32: C5DAFC3524EC161889AE39D158CEF53EF66FA6B51B5F95248D5A7DAB3BAE9B2C
 
   Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/monitor_info_view.html

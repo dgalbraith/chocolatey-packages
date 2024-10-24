@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>monitorinfoview</id>
-    <version>1.22</version>
+    <version>1.25</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/monitorinfoview</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>MonitorInfoView - View Monitor Information</title>
