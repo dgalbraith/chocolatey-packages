@@ -8,13 +8,13 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/nalgeon/sqlite/releases/tag/3.46.0
+  https://github.com/nalgeon/sqlite/releases/tag/3.47.0
 
 and download the file sqlean.exe using the link on the page.
 
 Alternatively the file can be downloaded directly from
 
-  https://github.com/nalgeon/sqlite/releases/tag/3.46.0/sqlean.exe
+  https://github.com/nalgeon/sqlite/releases/tag/3.47.0/sqlean.exe
 
 2. The archive can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 sqlean.exe
@@ -22,6 +22,6 @@ Alternatively the file can be downloaded directly from
 
   File:     sqlean.exe
   Type:     sha256
-  Checksum:839666732A1F1DDA3723A19E4196B234629FE0D892A2F38FB86D8B0BBD82E1C5
+  Checksum:9DCBC11F860AE7F7563FA95A2922BF5B74DFE7C14355BFEDE37642F2E6BF17DA
 
 Contents of file LICENSE.txt is obtained from https://github.com/nalgeon/sqlite/blob/main/LICENSE.

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sqlite-shell-x64</id>
-    <version>3.46.0</version>
+    <version>3.47.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/sqlite-shell-x64</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>SQLite shell 64-bit</title>
@@ -47,7 +47,7 @@ e.g. `choco install -y sqlite-shell-x64 --package-parameters="/AddToDesktop /Use
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/nalgeon/sqlite/releases/tag/3.46.0</releaseNotes>
+    <releaseNotes>https://github.com/nalgeon/sqlite/releases/tag/3.47.0</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
