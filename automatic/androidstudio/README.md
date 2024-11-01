@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Proprietary-grey.svg)](https://developer.android.com/studio/terms)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v2024.2.1.10-blue)](https://developer.android.com/studio)
+[![Software version](https://img.shields.io/badge/Source-v2024.2.1.11-blue)](https://developer.android.com/studio)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/androidstudio?label=Chocolatey)](https://community.chocolatey.org/packages/androidstudio)
 
 Android Studio is the official integrated development environment for Google's

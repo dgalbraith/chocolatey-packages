@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/mamedev/mame/releases/tag/mame0270
+  https://github.com/mamedev/mame/releases/tag/mame0271
 
-and download the archive mame0270b_64bit.exe using the links in the asset
+and download the archive mame0271b_64bit.exe using the links in the asset
 section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/mamedev/mame/releases/download/mame0270/mame0270b_64bit.exe
+  https://github.com/mamedev/mame/releases/download/mame0271/mame0271b_64bit.exe
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mame0270b_64bit.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f mame0270b_64bit.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mame0271b_64bit.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f mame0271b_64bit.exe
 
-  File:     mame0270b_64bit.exe
+  File:     mame0271b_64bit.exe
   Type:     sha256
-  Checksum: F4B04AB3AEB43F9C19F88B56E8850BF52A3A4ABA83BA26835B6368B36610EC40
+  Checksum: 4F04426367F4FE0511FD927176789260D26166D472DD441AB437A05195DE4F9A
 
 Contents of file LICENSE.txt is obtained from https://github.com/mamedev/mame/blob/master/COPYING
