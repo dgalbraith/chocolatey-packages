@@ -21,8 +21,8 @@ $silentArgs = '-q -overwrite -dir {0} {1}' -f $installDir, $pathArgs
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  File           = Join-Path $toolsDir 'jruby_windows_9_4_8_0.exe'
-  File64         = Join-Path $toolsDir 'jruby_windows_x64_9_4_8_0.exe'
+  File           = Join-Path $toolsDir 'jruby_windows_9_4_9_0.exe'
+  File64         = Join-Path $toolsDir 'jruby_windows_x64_9_4_9_0.exe'
   SilentArgs     = $silentArgs
   ValidExitCodes = @(0)
 }
