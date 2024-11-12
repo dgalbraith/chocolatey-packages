@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-java-test</id>
-    <version>0.42.2024102102</version>
+    <version>0.43.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-java-test</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Java Test Runner VSCode Extension</title>
