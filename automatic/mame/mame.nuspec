@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mame</id>
-    <version>0.272</version>
+    <version>0.273</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mame</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>MAME - Emulation Framework</title>
     <authors>hundreds of developers</authors>
     <projectUrl>https://www.mamedev.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e184f68c9b0399f6ed12453be4b6dd5f79beeaa2/icons/mame.png</iconUrl>
-    <copyright>Copyright 1997-2024 MAMEdev and contributors</copyright>
+    <copyright>Copyright 1997-2025 MAMEdev and contributors</copyright>
     <licenseUrl>https://www.mamedev.org/legal.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/mamedev/mame</projectSourceUrl>
