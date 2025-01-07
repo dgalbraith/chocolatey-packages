@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-pull-request-github</id>
-    <version>0.103.2024121904</version>
+    <version>0.103.2025010610</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-pull-request-github</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>GitHub Pull Requests and Issues VSCode Extension</title>
     <authors>Microsoft</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@26571f0d41c79f663383da0b4ba7c65854da63c0/icons/vscode-pull-request-github.png</iconUrl>
-    <copyright>Copyright 2018-2024 Microsoft Corporation</copyright>
+    <copyright>Copyright 2018-2025 Microsoft Corporation</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/GitHub.vscode-pull-request-github/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Microsoft/vscode-pull-request-github</projectSourceUrl>
