@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fluidsynth</id>
-    <version>2.4.2</version>
+    <version>2.4.3</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/fluidsynth</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>FluidSynth SoundFont Synthesizer</title>
@@ -47,7 +47,7 @@ instruments.
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.2</releaseNotes>
+    <releaseNotes>https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
