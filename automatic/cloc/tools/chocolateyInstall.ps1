@@ -9,7 +9,7 @@ Remove-Item -Path $legacy -Force -ErrorAction SilentlyContinue | Out-Null
 
 $binArgs = @{
   name = $env:ChocolateyPackageName
-  path = "$toolsDir\cloc-2.02.exe"
+  path = "$toolsDir\cloc-2.04.exe"
 }
 
 Install-BinFile @binArgs

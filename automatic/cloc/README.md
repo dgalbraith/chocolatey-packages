@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://github.com/AlDanial/cloc/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v2.02-blue.svg)](https://github.com/AlDanial/cloc/releases/tag/2.02)
+[![Software version](https://img.shields.io/badge/Source-v2.04-blue.svg)](https://github.com/AlDanial/cloc/releases/tag/2.04)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/cloc?label=Chocolatey)](https://chocolatey.org/packages/cloc)
 
 cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.  Given two
