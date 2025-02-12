@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/Levminer/authme/releases/tag/6.0.2
+  https://github.com/Levminer/authme/releases/tag/6.0.3
 
-and download the installer authme-6.0.2-windows-x64.msi using the links in the
+and download the installer authme-6.0.3-windows-x64.msi using the links in the
 assets section of the page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/Levminer/authme/releases/download/6.0.2/authme-6.0.2-windows-x64.msi
+  https://github.com/Levminer/authme/releases/download/6.0.3/authme-6.0.3-windows-x64.msi
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-6.0.2-windows-x64.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-6.0.2-windows-x64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 authme-6.0.3-windows-x64.msi
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f authme-6.0.3-windows-x64.msi
 
-  File:     authme-6.0.2-windows-x64.msi
+  File:     authme-6.0.3-windows-x64.msi
   Type:     sha256
-  Checksum: 6CC05796FCB71D44EC1BA9A7E9D572F6446AB7354A3DD62B88C31CF618A9A97B
+  Checksum: 0DE40DB488E6AB4494F2754FE593C501338DA3DD72A66F3991EB66FBCBD6B789
 
 Contents of file LICENSE.txt is obtained from https://github.com/Levminer/authme/blob/dev/LICENSE.md
