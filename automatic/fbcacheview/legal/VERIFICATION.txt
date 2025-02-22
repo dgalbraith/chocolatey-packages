@@ -23,6 +23,6 @@ Alternatively the archive can be downloaded directly from
 
   File32:         fbcacheview.zip
   ChecksumType32: sha256
-  Checksum32: 80A215F47752523893999B5A77E5DA75B9E83AF51A435454BEFA969F26C38EFF
+  Checksum32: 1D4EC412D7C2EEFE312674120F1C29B133BE0DE7246D15D5853CBA294086B447
 
   Contents of file LICENSE.txt is obtained from https://www.nirsoft.net/utils/facebook_cache_viewer.html
