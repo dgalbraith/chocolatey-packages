@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winaero-tweaker.install</id>
-    <version>1.62.1.0</version>
+    <version>1.63.0.0</version>
     <owners>bcurran3,dgalbraith</owners>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/winaero-tweaker.install</packageSourceUrl>
     <title>Winaero Tweaker (Install)</title>
@@ -33,7 +33,7 @@ Winaero Tweaker is a freeware all-in-one application that comes with dozens of o
 * Versions released after the package will cause checksums to fail.  If this is the case please contact the maintainer(s) and let them know the package requires updating.
 
     </description>
-    <releaseNotes>https://winaero.com/winaero-tweaker-1-62-is-available-with-fixes-and-one-new-feature/#v1621</releaseNotes>
+    <releaseNotes>https://winaero.com/winaero-tweaker-1-63-is-available</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
