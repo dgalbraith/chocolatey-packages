@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>simple-sticky-notes</id>
+    <title>Simple Sticky Notes (Install)</title>
+    <version>6.3.0.0</version>
+    <authors>Simnet Limited</authors>
+    <owners>bcurran3</owners>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/simple-sticky-notes</packageSourceUrl>
+    <summary>Simple Sticky Notes - fast free sticky notes for your Windows desktop.</summary>
+    <description>
+---
+
+### [choco://simple-sticky-notes](choco://simple-sticky-notes)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of Simple Sticky Notes](http://www.simplestickynotes.com/images/simple-sticky-notes-screenshot-2.png)	
+
+What is Simple Sticky Notes? It's a simple, easy-to-use, absolutely free, fast and efficient note taking software.
+
+Minimum Requirements: Windows® 11 / 10 / 8.1 / 8 / 7 / Vista / XP PC with a 1 GHz Intel or AMD processor and 512 MB of RAM
+
+**SOCIAL MEDIA:**
+[Facebook](https://www.facebook.com/SimpleStickyNotes) | [Google+](https://plus.google.com/+SimpleStickyNotes) | [Twitter](https://twitter.com/SimpleSticky)
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/simple-sticky-notes/readme.md)**
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---
+
+</description>
+    <projectUrl>https://www.simplestickynotes.com</projectUrl>
+    <docsUrl>https://www.simplestickynotes.com/help/</docsUrl>
+    <tags>simple sticky notes postit post-it stickies binary</tags>
+    <copyright>Simnet Limited</copyright>
+    <licenseUrl>https://www.simplestickynotes.com/eula/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/simple-sticky-notes/simple-sticky-notes_icon.png</iconUrl>
+    <releaseNotes>https://www.simplestickynotes.com/simple-sticky-notes-version-history/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

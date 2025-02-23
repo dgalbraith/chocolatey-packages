@@ -1,0 +1,5 @@
+﻿========================= Simple Sticky Notes =========================
+
+bcurran3 downloads and packages the executable for Simple Sticky Notes from the developer's site at: https://www.simplestickynotes.com/setup/Setup_SimpleStickyNotes.exe
+
+========================= Simple Sticky Notes =========================
