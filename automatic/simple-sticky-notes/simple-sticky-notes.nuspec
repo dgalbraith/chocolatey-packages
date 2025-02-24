@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>simple-sticky-notes</id>
-    <version>6.3.0</version>
+    <version>6.7.5</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/simple-sticky-notes</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Simple Sticky Notes</title>
