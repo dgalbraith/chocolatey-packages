@@ -1,20 +1,15 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName = 'simple-sticky-notes'
-$toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$file        = "$toolsDir\Setup_SimpleStickyNotes.exe"
+
+$toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
+
+$installer = Join-Path $toolsDir 'Setup_SimpleStickyNotes.exe'
 
 $packageArgs = @{
-  packageName    = $packageName
-  fileType       = 'EXE'
-  file           = $file
-  validExitCodes = @(0,1)
-  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-  softwareName   = 'Simple Sticky Notes*'
-  }
-  
-Install-ChocolateyInstallPackage @packageArgs
-Remove-Item $toolsDir\*.exe -Force | Out-Null
-Remove-Item $toolsDir\*.ignore -Force | Out-Null
+  PackageName    = $env:ChocolateyPackageName
+  File           = $installer
+  FileType       = 'exe'
+  SilentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+  ValidExitCodes = @(0, 1)
+}
 
-# UPDATE INSTRUCTIONS:
-# Replace .EXE file
+Install-ChocolateyInstallPackage @packageArgs
