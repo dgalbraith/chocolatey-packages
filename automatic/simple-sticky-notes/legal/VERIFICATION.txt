@@ -1,0 +1,27 @@
+﻿VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.simplestickynotes.com/download
+
+and download the installer Setup_SimpleStickyNotes.exe using the download button on the page.
+
+Alternatively the installer can be downloaded directly from
+
+  https://www.simplestickynotes.com/setup/Setup_SimpleStickyNotes.exe
+
+2. The archive can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Setup_SimpleStickyNotes.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Setup_SimpleStickyNotes.exe
+
+  File:     Setup_SimpleStickyNotes.exe
+  Type:     sha256
+  Checksum: 27ae4fde0a1cbaf80822b0aaf69d40dad1731550f435fed46e9504c4682f2e85
+
+Contents of file LICENSE.txt is obtained from https://www.simplestickynotes.com/eula

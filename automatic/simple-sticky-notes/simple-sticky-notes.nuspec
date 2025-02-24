@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>simple-sticky-notes</id>
+    <version>6.3.0</version>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/simple-sticky-notes</packageSourceUrl>
+    <owners>dgalbraith</owners>
+    <title>Simple Sticky Notes</title>
+    <authors>Simnet Limited</authors>
+    <projectUrl>https://www.simplestickynotes.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@38202fa3453e0d3af40543d0886b8ef12cad3e8d/icons/simple-sticky-notes.png</iconUrl>
+    <copyright>Copyright (c) 2025 Simnet Ltd. All rights reserved.</copyright>
+    <licenseUrl>https://www.simplestickynotes.com/eula</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.simplestickynotes.com/help</docsUrl>
+    <tags>simple sticky notes note note-taking simnet</tags>
+    <summary>Simple note taking software</summary>
+    <description><![CDATA[
+
+Simple Sticky Notes is simple, easy-to-use, absolutely free, fast and efficent note taking software.
+
+![screenshot](https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@f60dca3928c6583862a2ed57e1d0c3ac65920f7d/automatic/simple-sticky-notes/screenshot.png)
+
+## Notes
+
+* This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
+  If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+]]></description>
+    <releaseNotes>https://www.simplestickynotes.com/simple-sticky-notes-version-history</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
