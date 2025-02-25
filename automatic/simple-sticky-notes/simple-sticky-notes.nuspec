@@ -31,6 +31,7 @@ Simple Sticky Notes is simple, easy-to-use, absolutely free, fast and efficent n
     <releaseNotes>https://www.simplestickynotes.com/simple-sticky-notes-version-history</releaseNotes>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
