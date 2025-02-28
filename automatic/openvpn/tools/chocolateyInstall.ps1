@@ -2,8 +2,8 @@
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$file32 = Join-Path $toolsDir 'OpenVPN-2.6.13-I001-x86.msi'
-$file64 = Join-Path $toolsDir 'OpenVPN-2.6.13-I001-amd64.msi'
+$file32 = Join-Path $toolsDir 'OpenVPN-2.6.13-I002-x86.msi'
+$file64 = Join-Path $toolsDir 'OpenVPN-2.6.13-I002-amd64.msi'
 
 $silentArgs = '/qn /norestart'
 
