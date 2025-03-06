@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-Proprietary-grey)](http://www.elby.ch/download/SetupVirtualCloneDrive5.xml)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v5.5.2.0-blue)](https://www.elby.ch/en/products/vcd.html)
+[![Software version](https://img.shields.io/badge/Source-v5.5.3.0-blue)](https://www.elby.ch/en/products/vcd.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/virtualclonedrive?label=Chocolatey)](https://chocolatey.org/packages/virtualclonedrive)
 
 Virtual CloneDrive works and behaves just like a physical CD, DVD, or Blu-ray drive, although it only exists virtually.

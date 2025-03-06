@@ -5,7 +5,7 @@ DetectHiddenText, off
 DetectHiddenWindows, off
 
 ; wait for the install process to commence
-Process, Wait, SetupVCD5520.exe
+Process, Wait, SetupVirtualCloneDrive5530.exe
 
 ;install failure notification on Windows 8/Windows Server 2012 
 ;no impact to install but the dialog needs to be dismissed

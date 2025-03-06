@@ -4,8 +4,8 @@ $toolsDir     = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url            = 'https://www.elby.ch/download/SetupVCD5520.exe'
-  checksum       = 'b69ab416fa1c2db43d9d4a900abbf5e1ad6daf0ab914afcdfa74b25af390747f'
+  url            = 'https://www.elby.ch/download/SetupVirtualCloneDrive5530.exe'
+  checksum       = 'c676e1cad4d505e3511715efc3be72617053dfb08812e24e0706238be6b8c627'
   checksumType   = 'sha256'
   silentArgs     = '/S /noreboot'
   validExitCodes = @(0)
