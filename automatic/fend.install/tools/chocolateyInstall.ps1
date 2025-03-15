@@ -2,7 +2,7 @@
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$installer  = Join-Path $toolsDir 'fend-1.5.5-windows-x64.msi'
+$installer  = Join-Path $toolsDir 'fend-1.5.6-windows-x64.msi'
 $silentArgs = '/qn /norestart'
 
 $pp = Get-PackageParameters
