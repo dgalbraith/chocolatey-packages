@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>koodo-reader</id>
-    <version>1.8.7</version>
+    <version>1.8.8</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/koodo-reader</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Koodo Reader - All-in-one eBook Reader</title>
