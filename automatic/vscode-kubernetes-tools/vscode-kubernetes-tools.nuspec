@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-kubernetes-tools</id>
-    <version>1.3.20</version>
+    <version>1.3.21</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-kubernetes-tools</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Kubernetes Tools VSCode Extension</title>
@@ -41,7 +41,7 @@ Works with any Kubernetes anywhere (Azure, Minikube, AWS, GCP and more!).
 
 ## Notes
 
-* This package requires Visual Studio Code 1.96.0 or newer.
+* This package requires Visual Studio Code 1.98.0 or newer.
   You can install either the [vscode](https://chocolatey.org/packages/vscode) or [vscode-insiders](https://chocolatey.org/packages/vscode-insiders) package.
 * The extension will be installed in all editions of Visual Studio Code which can be found.
 * While this package installs a specific version of the extension, Visual Studio Code by default will update the extension to the latest version on startup if there's a newer version available on the marketplace.

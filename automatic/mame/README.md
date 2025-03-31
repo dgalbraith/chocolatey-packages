@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/mamedev/mame)](https://github.com/dbgate/dbgate/blob/master/COPYING)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v0.275-blue)](https://github.com/mamedev/mame/releases/tag/mame0275)
+[![Software version](https://img.shields.io/badge/Source-v0.276-blue)](https://github.com/mamedev/mame/releases/tag/mame0276)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/mame?label=Chocolatey)](https://community.chocolatey.org/packages/mame)
 
 MAME’s purpose is to preserve decades of software history. As electronic
