@@ -2,15 +2,13 @@
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$installer = Join-Path $toolsDir 'mcwin32-build214-setup.exe'
-
 $silentArgs= '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 
 $pp = Get-PackageParameters
 
-#if ($pp.Count > 0) {
-  $parameters = @()
+$parameters = @()
 
+if ($pp.Count -gt 0) {
   $pp.GetEnumerator() | ForEach-Object {
     switch ($_.name) {
         'desktopicon' {
@@ -26,15 +24,16 @@ $pp = Get-PackageParameters
             Write-Warning("Unknown parameter $_ will be ignored")
         }
     }
- }
+  }
+}
 
-  $silentArgs += " /TASKS=`"{0}`"" -f ($parameters -join ",")
-  Write-Verbose("Constructed silent args $silentArgs")
-#}
+$silentArgs += " /TASKS=`"{0}`"" -f ($parameters -join ",")
+Write-Verbose("Constructed silent args $silentArgs")
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  File           = $installer
+  File32         = Join-Path $toolsDir 'mcwin32-build230-setup.exe'
+  File64         = Join-Path $toolsDir 'mcwin32-build230-x64-setup.exe'
   FileType       = 'exe'
   SilentArgs     = $silentArgs
   ValidExitCodes = @(0)

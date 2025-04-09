@@ -3,20 +3,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mc</id>
-    <version>4.17.0.214</version>
+    <version>4.8.31.230</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mc</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Midnight Commander</title>
     <authors>adamy</authors>
-    <projectUrl>https://sourceforge.net/projects/mcwin32</projectUrl>
+    <projectUrl>https://github.com/adamyg/mcwin32</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/mc.png</iconUrl>
     <copyright>The Free Software Foundation, Inc.</copyright>
     <licenseUrl>https://github.com/adamyg/mcwin32/blob/master/mcsrc/doc/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/adamyg/mcwin32</projectSourceUrl>
-    <docsUrl>https://midnight-commander.org/wiki/doc</docsUrl>
-    <mailingListUrl>https://sourceforge.net/p/mcwin32/discussion</mailingListUrl>
-    <bugTrackerUrl>https://sourceforge.net/p/mcwin32/tickets</bugTrackerUrl>
+    <docsUrl>https://github.com/MidnightCommander/mc/wiki</docsUrl>
+    <mailingListUrl>https://github.com/MidnightCommander/mc/discussions</mailingListUrl>
+    <bugTrackerUrl>https://github.com/adamyg/mcwin32/issues</bugTrackerUrl>
     <tags>files file-manager console mc midnight-commander adamy</tags>
     <summary>Cross-platform, orthodox file manager and clone of Norton Commander</summary>
     <description><![CDATA[
@@ -51,13 +51,14 @@ Midnight Commander (also known as mc) is a free cross-platform orthodox file man
 
 ## Notes
 
+* The binaries are a native port of GNU Midnight Commander for Windows/Win32, based on the 4.8.31 release.
 * An uninstaller is provided for the package to ensure silent removal - the flags registered with the installation for a silent removal are not complete
   and result in the automatic uninstaller displaying gui elements
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
     ]]></description>
-    <releaseNotes>http://sourceforge.net/projects/mcwin32/files/changelog.txt</releaseNotes>
+    <releaseNotes>https://github.com/adamyg/mcwin32/releases</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
