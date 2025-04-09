@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/adamyg/mcwin32/blob/master/mcsrc/doc/COPYING)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v4.8.31.230-blue.svg)](https://github.com/adamyg/mcwin32)
+[![Software version](https://img.shields.io/badge/Source-v4.8.33.231-blue.svg)](https://github.com/adamyg/mcwin32)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/mc?label=Chocolatey)](https://chocolatey.org/packages/mc)
 
 Midnight Commander (also known as mc) is a free cross-platform orthodox file manager and a clone of Norton Commander.
@@ -42,7 +42,7 @@ Midnight Commander can also rename groups of files, move files to a different di
 
 ## Notes
 
-* The binaries are a native port of GNU Midnight Commander for Windows/Win32, based on the 4.8.31 release.
+* The binaries are a native port of GNU Midnight Commander for Windows/Win32, based on the 4.8.33 release.
 * An uninstaller is provided for the package to ensure silent removal - the flags registered with the installation for a silent removal are not complete
   and result in the automatic uninstaller displaying gui elements
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).

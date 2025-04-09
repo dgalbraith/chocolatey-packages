@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mc</id>
-    <version>4.8.31.230</version>
+    <version>4.8.33.231</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mc</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Midnight Commander</title>
@@ -51,7 +51,7 @@ Midnight Commander (also known as mc) is a free cross-platform orthodox file man
 
 ## Notes
 
-* The binaries are a native port of GNU Midnight Commander for Windows/Win32, based on the 4.8.31 release.
+* The binaries are a native port of GNU Midnight Commander for Windows/Win32, based on the 4.8.33 release.
 * An uninstaller is provided for the package to ensure silent removal - the flags registered with the installation for a silent removal are not complete
   and result in the automatic uninstaller displaying gui elements
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
