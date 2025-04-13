@@ -11,12 +11,12 @@
     <projectUrl>https://www.itefix.net/cwrsync</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@2b1c888fbc68d148d638cae0b6f0222b97f156db/icons/rsync.png</iconUrl>
     <copyright>Copyright itefix.net</copyright>
-    <licenseUrl>https://www.itefix.net/cwrsync?qt-cwrsync=1&amp;qt-cwrsync_client=3#qt-cwrsync_client</licenseUrl>
+    <licenseUrl>https://itefix.net/simplified-bsd-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/WayneD/rsync</projectSourceUrl>
-    <docsUrl>https://www.itefix.net/cwrsync</docsUrl>
+    <projectSourceUrl>https://github.com/RsyncProject/rsync</projectSourceUrl>
+    <docsUrl>https://www.itefix.net/cwrsync/client</docsUrl>
     <mailingListUrl>https://rsync.samba.org/FAQ.html</mailingListUrl>
-    <bugTrackerUrl>https://github.com/WayneD/rsync/issues</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/RsyncProject/rsync/issues</bugTrackerUrl>
     <tags>rsync tool file copy cygwin itefix</tags>
     <summary>cwRsync is a minimal distribution of rsync packaged with Cygwin libraries</summary>
     <description><![CDATA[
@@ -45,7 +45,7 @@ normally requires local access to both files.
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://www.itefix.net/cwrsync?qt-cwrsync=1&amp;qt-cwrsync_client=3#qt-cwrsync_client</releaseNotes>
+    <releaseNotes>https://www.itefix.net/cwrsync/client/releases</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
