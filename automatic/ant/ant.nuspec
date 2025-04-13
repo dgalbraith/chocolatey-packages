@@ -10,10 +10,10 @@
     <authors>Apache</authors>
     <projectUrl>https://ant.apache.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@170f8cefaff042f0fb37731acc25ce804e878d88/icons/ant.png</iconUrl>
-    <copyright>Copyright 1999-2021 The Apache Software Foundation</copyright>
-    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <copyright>Copyright 1999-2024 The Apache Software Foundation</copyright>
+    <licenseUrl>https://github.com/apache/ant/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://gitbox.apache.org/repos/asf/ant.git</projectSourceUrl>
+    <projectSourceUrl>https://github.com/apache/ant</projectSourceUrl>
     <docsUrl>https://ant.apache.org/manual/index.html</docsUrl>
     <mailingListUrl>http://ant.apache.org/mail.html</mailingListUrl>
     <bugTrackerUrl>http://issues.apache.org/bugzilla/buglist.cgi?product=Ant</bugTrackerUrl>
