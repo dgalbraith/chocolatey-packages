@@ -1,12 +1,17 @@
 ﻿import-module au
 
+Import-Module ..\..\scripts\chocolatey-helpers\Chocolatey-Helpers.psd1
+
 $ErrorActionPreference = 'STOP'
 
-$base      = 'https://www.bluej.org'
-$releases  = "${base}/index.html"
+$domain     = 'https://github.com'
+$user       = 'k-pet-group'
+$repository = 'BlueJ-Greenfoot'
 
-$reurl64   = '(Bluej-windows-.+\.msi)'
-
+$reFilename64 = '(?<Filename64>Bluej-windows-.+\.msi)'
+$reChecksum64 = "(?<=Checksum64\s*=\s*)((?<Checksum64>([^'].+)))"
+$reUrl64      = "(?<=Url64Bit\s*=\s*)((?<Url64>([^'].+)))"
+$reVersion    = '(?<=[-|v])(?<Version>([\d]+\.[\d]+\.[\d]+))'
 function global:au_BeforeUpdate {
   $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
 }
@@ -14,32 +19,30 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "(v)(?<Version>([\d]+\.[\d]+\.[\d]+))" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\tools\chocolateyInstall.ps1" = @{
-      "(Url64Bit\s*=\s*)('.+')"   = "`${1}'$($Latest.Url64)'"
-      "(Checksum64\s*=\s*)('.+')" = "`$1'$($Latest.Checksum64)'"
+      "$($reUrl64)"      = "$($Latest.Url64)'"
+      "$($reChecksum64)" = "$($Latest.Checksum64)'"
     }
   }
 }
 
 function global:au_GetLatest {
-  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
+  $downloadPage = Get-GitHubLatestReleasePage -User $user -Repository $repository
 
-  $url64      = $downloadPage.links | where-object href -match $reurl64 | select -First 1 -expand href
-  $filename64 = $url64 -split '/' | select -Last 1
+  $url64      = $downloadPage.links | Where-Object href -match $reFileName64 | select-object -expand href | foreach-object { $domain + $_ }
+  $fileName64 = $Matches.FileName64
 
-  $filename64 -match '(?<Version>(\d{3}))'
-  $rawVersion = $Matches.Version
-  $version = '{0}.{1}.{2}' -f $rawVersion.Substring(0,1), $rawVersion.Substring(1,1), $rawVersion.Substring(2,1)
+  $fileName64 -Match $reversion
+  $version = $Matches.Version
 
   return @{
     Url64      = $url64
     FileName64 = $filename64
     Version    = $version
-    RawVersion = $rawVersion
   }
 }
 
-update -ChecksumFor none -NoReadme
+update -ChecksumFor none -NoCheckUrl -NoReadme
