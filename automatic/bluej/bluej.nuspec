@@ -11,12 +11,12 @@
     <projectUrl>https://www.bluej.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/bluej.png</iconUrl>
     <copyright>M. Kölling and J. Rosenberg</copyright>
-    <licenseUrl>https://www.bluej.org/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://github.com/k-pet-group/BlueJ-Greenfoot/blob/main/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/k-pet-group/BlueJ-Greenfoot</projectSourceUrl>
     <docsUrl>https://www.bluej.org/doc/documentation.html</docsUrl>
-    <mailingListUrl>https://blueroom.bluej.org/</mailingListUrl>
-    <bugTrackerUrl>https://gitlab.bluej.org/bluej/bjgf</bugTrackerUrl>
+    <mailingListUrl>https://bluej.org/faq.html</mailingListUrl>
+    <bugTrackerUrl>https://github.com/k-pet-group/BlueJ-Greenfoot/issues</bugTrackerUrl>
     <tags>bluej java ide</tags>
     <summary>Beginners Java development environment that allows you to develop Java programs quickly and easily</summary>
     <description><![CDATA[

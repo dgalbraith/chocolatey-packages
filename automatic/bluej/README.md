@@ -1,6 +1,6 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@ec1652f85e86682fba61efdbeb5a556dd6ad0284/icons/bluej.png" width="48" height="48"/>BlueJ - Beginners Java Development Environment](https://chocolatey.org/packages/bluej)
 
-[![Software license](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://www.bluej.org/about/LICENSE.txt)
+[![Software license](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://github.com/k-pet-group/BlueJ-Greenfoot/blob/main/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
 [![Software version](https://img.shields.io/badge/Source-v5.4.1-blue.svg)](https://www.bluej.org/index.html)
