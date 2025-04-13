@@ -1,6 +1,6 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@170f8cefaff042f0fb37731acc25ce804e878d88/icons/ant.png" width="48" height="48" />Apache Ant](https://chocolatey.org/packages/ant)
 
-[![Software license](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://gitbox.apache.org/repos/asf?p=ant.git;a=blob;f=LICENSE)
+[![Software license](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://github.com/apache/ant/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
 [![Software version](https://img.shields.io/badge/Source-v1.10.14-blue.svg)](https://ant.apache.org/bindownload.cgi)

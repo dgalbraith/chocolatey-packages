@@ -5,8 +5,9 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://ant.apache.org'
 $releases = "${domain}/bindownload.cgi" 
 
-$refile    = '(apache-ant-.+\.zip)'
-$reversion = '(v|-)(?<Version>([\d]+\.[\d]+\.[\d]+))'
+$reFile     =  '(apache-ant-.+\.zip)'
+$reVersion  =  '(?<=[v|-])(?<Version>([\d]+\.[\d]+\.[\d]+))'
+$reChecksum = '(?<=Checksum:\s*)(?<Checksum>[^\s]+)'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix -Algorithm $Latest.ChecksumType32
@@ -15,21 +16,21 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$($reversion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "$($refile)"         = "$($Latest.FileName32)"
-      "(Checksum:\s*)(.+)" = "`${1}$($Latest.Checksum32)"
+      "$($reFile)"     = "$($Latest.FileName32)"
+      "$($reChecksum)" = "$($Latest.Checksum32)"
     }
 
     ".\tools\chocolateyInstall.ps1" = @{
-      "$($refile)"    = "$($Latest.FileName32)"
-      "$($reversion)" = "`${1}$($Latest.Version)"
+      "$($reFile)"    = "$($Latest.FileName32)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\tools\chocolateyUninstall.ps1" = @{
-      "$($reversion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
   }
@@ -38,8 +39,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
-  $url      = $downloadPage.links | where-object outerHTML -match $refile | select -Skip 3 -First 1 -expand href
-  $fileName = $url -split '/' | select -Last 1
+  $url      = $downloadPage.links | Where-Object href -Match $refile | Select-Object -First 1 -Expand href
+  $fileName = $url -split '/' | Select-Object -Last 1
 
   $fileName -Match $reversion
   $version = $Matches.Version

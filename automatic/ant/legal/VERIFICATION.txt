@@ -8,13 +8,13 @@ be verified by:
 
 1. Go to the binary archive page
 
-  https://archive.apache.org/dist/ant/binaries/
+  https://downloads.apache.org/ant/binaries/
 
 and download the archive apache-ant-1.10.14-bin.zip using the links on the page.
 
 Alternatively the archive can be downloaded directly from
 
-  https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.14-bin.zip
+  https://downloads.apache.org/ant/binaries/apache-ant-1.10.14-bin.zip
 
 2. The archive can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha512 apache-ant-1.10.14-bin.zip
@@ -25,4 +25,4 @@ Alternatively the archive can be downloaded directly from
   Type:     sha512
   Checksum: 6E85CF45726EE88C916976ABA07488B79DA84BE1A31B5C5441A65C28BB4436B5A5A373402C78AC6A3827BD261FB924124BB9534E52D6429162EAF57B9737124C
 
-Contents of file LICENSE.txt is obtained from https://gitbox.apache.org/repos/asf?p=ant.git;a=blob;f=LICENSE
+Contents of file LICENSE.txt is obtained from https://github.com/apache/ant/blob/master/LICENSE
