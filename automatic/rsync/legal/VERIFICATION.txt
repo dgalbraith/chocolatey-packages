@@ -8,13 +8,12 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://www.itefix.net/cwrsync?qt-cwrsync_client=1&qt-cwrsync=1#qt-cwrsync
+  https://itefix.net/cwrsync/client/downloads
 
 and download the archive cwrsync_6.3.0_x64_free.zip using the link on the page.
 
 Alternatively the archive can be downloaded directly from
-
-  https://itefix.net/dl/free-software/cwrsync_6.3.0_x64_free.zip
+  https://itefix.net/download/free/cwrsync_6.3.0_x64_free.zip
 
 2. The archive can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 cwrsync_6.3.0_x64_free.zip
@@ -25,4 +24,4 @@ Alternatively the archive can be downloaded directly from
   Checksum: D1A0622F9C4DC50B661B9114945EAF4F9DEDA7187130284E15ACFE8299D788CA
 
 Contents of file LICENSE.txt is obtained from https://itefix.net/simplified-bsd-license as referenced
-from https://www.itefix.net/content/cwrsync-license-version.
+from https://www.itefix.net/cwrsync/client/releases.

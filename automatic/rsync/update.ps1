@@ -3,10 +3,11 @@
 $ErrorActionPreference = 'STOP'
 
 $domain   = 'https://www.itefix.net'
-$releases = "${domain}/cwrsync"
+$releases = "${domain}/cwrsync/client/downloads"
 
-$re64      = 'cwrsync_.+\.zip'
-$reVersion = '([v|_])(?<Version>([\d]+.[\d]+.[\d]+))'
+$re64         = 'cwrsync_.+\.zip'
+$reChecksum64 = '(?<=Checksum:\s*)(?<Checksum64>[^\s]+)'
+$reVersion    = '(?<=[v|_])(?<Version>([\d]+.[\d]+.[\d]+))'
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
@@ -15,15 +16,15 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     ".\README.md" = @{
-      "$($reVersion)" = "`${1}$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "$($re64)"             = "$($Latest.FileName64)"
-      "(Checksum:\s*)(.+)" = "`${1}$($Latest.Checksum64)"
+      "$($re64)"         = "$($Latest.FileName64)"
+      "$($reChecksum64)" = "$($Latest.Checksum64)"
     }
 
-    ".\tools\chocolateyinstall.ps1" = @{
+    ".\tools\chocolateyInstall.ps1" = @{
       "$($re64)" = "$($Latest.FileName64)"
     }
   }
@@ -44,4 +45,4 @@ function global:au_GetLatest {
   }
 }
 
-update -ChecksumFor none -NoReadme
+update -ChecksumFor none -NoCheckUrl -NoReadme
