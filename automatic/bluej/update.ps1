@@ -9,8 +9,8 @@ $user       = 'k-pet-group'
 $repository = 'BlueJ-Greenfoot'
 
 $reFilename64 = '(?<Filename64>Bluej-windows-.+\.msi)'
-$reChecksum64 = "(?<=Checksum64\s*=\s*)((?<Checksum64>([^'].+)))"
-$reUrl64      = "(?<=Url64Bit\s*=\s*)((?<Url64>([^'].+)))"
+$reChecksum64 = "(?<=Checksum64\s*=\s*')((?<Checksum64>([^'].+)))"
+$reUrl64      = "(?<=Url64Bit\s*=\s*')((?<Url64>([^'].+)))"
 $reVersion    = '(?<=[-|v])(?<Version>([\d]+\.[\d]+\.[\d]+))'
 function global:au_BeforeUpdate {
   $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
