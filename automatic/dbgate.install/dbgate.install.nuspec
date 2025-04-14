@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dbgate.install</id>
-    <version>5.3.4</version>
+    <version>6.3.3</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/dbgate.install</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>DbGate - The Smartest (no)SQL Database Client (Install)</title>
