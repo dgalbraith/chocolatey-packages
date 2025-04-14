@@ -3,9 +3,10 @@
 $ErrorActionPreference = 'STOP'
 
 function global:au_BeforeUpdate {
-  $Latest.FileName64 = "$($Latest.FileName64Install)"
   $Latest.Url64      = "$($Latest.Url64Install)"
-
+  $Latest.FileName64 = "$($Latest.FileName64Install)"
+  $Latest.FileType   = 'exe'
+  
   Get-RemoteFiles -Purge -NoSuffix
 }
 
@@ -21,10 +22,10 @@ function global:au_SearchReplace {
       "$($reVersion)"  = "$($Latest.Version)"
     }
 
-    ".\tools\chocolateyinstall.ps1" = @{
+    ".\tools\chocolateyInstall.ps1" = @{
       "$($reInstall)" = "$($Latest.FileName64)"
     }
   }
 }
 
-update -ChecksumFor none -NoReadme
+update -ChecksumFor none -NoCheckUrl -NoReadme
