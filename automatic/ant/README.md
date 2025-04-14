@@ -1,9 +1,9 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@170f8cefaff042f0fb37731acc25ce804e878d88/icons/ant.png" width="48" height="48" />Apache Ant](https://chocolatey.org/packages/ant)
 
-[![Software license](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://gitbox.apache.org/repos/asf?p=ant.git;a=blob;f=LICENSE)
+[![Software license](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://github.com/apache/ant/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.10.14-blue.svg)](https://ant.apache.org/bindownload.cgi)
+[![Software version](https://img.shields.io/badge/Source-v1.10.15-blue.svg)](https://ant.apache.org/bindownload.cgi)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/ant?label=Chocolatey)](https://chocolatey.org/packages/ant)
 
 [Apache Ant](https://ant.apache.org/index.html) is a Java library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other. The main known usage of Ant is the build of Java applications. Ant supplies a number of built-in tasks allowing to compile, assemble, test and run Java applications. Ant can also be used effectively to build non Java applications, for instance C or C++ applications. More generally, Ant can be used to pilot any type of process which can be described in terms of targets and tasks.
