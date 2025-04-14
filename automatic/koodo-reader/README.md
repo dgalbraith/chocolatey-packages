@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/github/license/troyeguo/koodo-reader)](https://github.com/troyeguo/koodo-reader/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.9.1-blue.svg)](https://github.com/troyeguo/koodo-reader/releases/tag/v1.9.1)
+[![Software version](https://img.shields.io/badge/Source-v1.9.2-blue.svg)](https://github.com/troyeguo/koodo-reader/releases/tag/v1.9.2)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/koodo-reader?label=Chocolatey)](https://chocolatey.org/packages/koodo-reader)
 
 Koodo Reader is a full-featured ebook manager to help you better study and digest your books.

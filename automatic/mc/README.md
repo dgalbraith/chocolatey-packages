@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/adamyg/mcwin32/blob/master/mcsrc/doc/COPYING)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v4.8.33.231-blue.svg)](https://github.com/adamyg/mcwin32)
+[![Software version](https://img.shields.io/badge/Source-v4.8.33.232-blue.svg)](https://github.com/adamyg/mcwin32)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/mc?label=Chocolatey)](https://chocolatey.org/packages/mc)
 
 Midnight Commander (also known as mc) is a free cross-platform orthodox file manager and a clone of Norton Commander.
