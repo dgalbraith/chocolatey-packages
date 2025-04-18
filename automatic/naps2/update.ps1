@@ -2,15 +2,13 @@
 
 $ErrorActionPreference = 'STOP'
 
-$domain   = 'https://github.com'
-$releases = "${domain}/cyanfish/naps2/releases/latest"
+$domain     = 'https://github.com'
+$user       = 'cyanfish'
+$repository = 'naps2'
 
 $reChecksum   = '(?<=Checksum:\s*)(?<Checksum>[^\s]+)'
-$reChecksum32 = '(?<=Checksum32:\s*)(?<Checksum>[^\s]+)'
-$reChecksum64 = '(?<=Checksum64:\s*)(?<Checksum>[^\s]+)'
 $reCopyright  = '(?<=(Copyright.+(?<CopyrightFrom>[\d]{4})-))(?<CopyrightTo>[\d]{4})'
 $rePortable   = "(?<=\d\/|\s|')(?<Filename>n.+zip)"
-$reInstall32  = "(?<=\d\/|\s|')(?<Filename>n.+x86\.msi)"
 $reInstall64  = "(?<=\d\/|\s|')(?<Filename>n.+x64\.msi)"
 $reVersion    = '(?<=v|\[)(?<Version>[\d]+\.[\d]+\.[\d]+\.?[\d]*)'
 
@@ -31,27 +29,20 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
-  $latestTag    = $downloadPage.BaseResponse.ResponseUri -split '\/' | Select-Object -Last 1
-  $assetsUri    = "{0}/expanded_assets/{1}" -f ($releases.Substring(0, $releases.LastIndexOf('/'))), $latestTag
-  $assetsPage   = Invoke-WebRequest -UseBasicParsing -Uri $assetsUri
+  $downloadPage = Get-GitHubLatestReleasePage -User $user -Repository $repository
 
-  $urlInstall32      = $assetsPage.links | where-object href -match $reInstall32 | select-object -expand href | foreach-object { $domain + $_ }
-  $fileNameInstall32 = $urlInstall32 -split '/' | select-object -last 1
-  $urlInstall64      = $assetsPage.links | where-object href -match $reInstall64 | select-object -expand href | foreach-object { $domain + $_ }
-  $fileNameInstall64 = $urlInstall64 -split '/' | select-object -last 1
+  $url64      = $downloadPage.links | Where-Object href -match $reInstall64 | Select-Object -first 1 -expand href | ForEach-Object { $domain + $_ }
+  $fileName64 = $Matches.FileName
 
-  $urlPortable      = $assetsPage.links | where-object href -match $rePortable | select-object -expand href | foreach-object { $domain + $_ }
-  $fileNamePortable = $urlPortable -split '/' | select-object -last 1
+  $urlPortable      = $downloadPage.links | Where-Object href -match $rePortable | Select-Object -expand href | ForEach-Object { $domain + $_ }
+  $fileNamePortable = $Matches.FileName
 
   $updateYear = (Get-Date).ToString('yyyy')
   $version    = $urlPortable -match $reVersion | foreach-object { $Matches.Version }
 
   return @{
-    UrlInstall32      = $urlInstall32
-    FileNameInstall32 = $fileNameInstall32
-    UrlInstall64      = $urlInstall64
-    FileNameInstall64 = $fileNameInstall64
+    Url64             = $url64
+    FileName64        = $fileName64
     UrlPortable       = $urlPortable
     FileNamePortable  = $fileNamePortable
     UpdateYear        = $updateYear
@@ -60,5 +51,5 @@ function global:au_GetLatest {
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
-  update -ChecksumFor none -NoReadme
+  update -ChecksumFor none -NoCheckUrl -NoReadme
 }
