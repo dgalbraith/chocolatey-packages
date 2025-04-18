@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>neck-diagrams</id>
-    <version>2.3.4</version>
+    <version>2.4.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/neck-diagrams</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Neck Diagrams</title>
     <authors>Digital Software Technology Ltd</authors>
     <projectUrl>https://www.neckdiagrams.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@aaced40197b4b4f40922fd84260d77cd7214efc9/icons/neck-diagrams.png</iconUrl>
-    <copyright>Copyright 2008-2022 Digital Software Technology Ltd</copyright>
+    <copyright>Copyright 2008-2025 Digital Software Technology Ltd</copyright>
     <licenseUrl>https://www.neckdiagrams.com/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>neck-diagrams fretboard-diagram chord-chart chord-box-creator fretboard chord-box diagram trial</tags>

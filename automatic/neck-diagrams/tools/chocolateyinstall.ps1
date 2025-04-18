@@ -2,11 +2,11 @@
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url32          = 'https://neckdiagrams.com/download-files/NeckDiagrams-2.3.4-Setup-32bit.exe'
-  url64          = 'https://neckdiagrams.com/download-files/NeckDiagrams-2.3.4-Setup-64bit.exe'
-  checksum32     = '6ad036df24b986d6c59d42286b5ff2dcb84f51ba1fd880bd05b657fcaa9139bd'
+  url32          = 'https://neckdiagrams.com/download-files/NeckDiagrams-2.4.0-Setup-32bit.exe'
+  url64          = 'https://neckdiagrams.com/download-files/NeckDiagrams-2.4.0-Setup-64bit.exe'
+  checksum32     = 'dbd7e7fd765a2ffb834121ee6013d30d6f61ffd13dcd3fcddf447eb111c22a55'
   checksumType32 = 'sha256'
-  checksum64     = '0cbe5ff94834f2eaea4219946b0f0ca8e677347c84504d56ac045466fba07862'
+  checksum64     = 'af00022244089157b52bf55b45d93488e29af8b6a2d658963f7e8f6ac22005db'
   checksumType64 = 'sha256'
   silentArgs     = '/S'
   validExitCodes = @(0)
