@@ -1,5 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 
+if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
+  Write-Error -Message '32-bit version of naps2.portable not available' -Category ResourceUnavailable
+}
+
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 $archive  = Join-Path $toolsDir 'naps2-8.1.4-win-x64.zip'
 
