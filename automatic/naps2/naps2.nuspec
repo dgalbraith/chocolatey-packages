@@ -15,8 +15,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/cyanfish/naps2</projectSourceUrl>
     <docsUrl>https://www.naps2.com/support.html</docsUrl>
-    <bugTrackerUrl>https://sourceforge.net/p/naps2/tickets</bugTrackerUrl>
-    <mailingListUrl>https://sourceforge.net/p/naps2/discussion/general</mailingListUrl>
+    <bugTrackerUrl>https://github.com/cyanfish/naps2/issues</bugTrackerUrl>
+    <mailingListUrl>https://github.com/cyanfish/naps2/discussions</mailingListUrl>
     <tags>naps2 scanner pdf wia twain ocr cli scan</tags>
     <summary>Scan documents to PDF and other file types, as simply as possible</summary>
     <description><![CDATA[
@@ -42,6 +42,12 @@ formats.
 
 ## Notes
 
+* If support for 32-bit Windows is required use the legacy version [naps2 7.5.3](https://chocolatey.org/packages/naps2/7.5.3).
+
+  ```powershell
+  choco install naps2 --version 7.5.3
+  choco pin add -n=naps2 --version 7.5.3
+  ```
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 

@@ -27,5 +27,11 @@ formats.
 
 ## Notes
 
+* If support for 32-bit Windows is required use the legacy version [naps2 7.5.3](https://chocolatey.org/packages/naps2.portable/7.5.3).
+
+  ```powershell
+  choco install naps2.portable --version 7.5.3
+  choco pin add -n=naps2.portable --version 7.5.3
+  ```
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

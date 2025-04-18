@@ -3,9 +3,9 @@
 $ErrorActionPreference = 'STOP'
 
 function global:au_BeforeUpdate {
-  $Latest.FileName32 = "$($Latest.FileNamePortable)"
+  $Latest.FileName64 = "$($Latest.FileNamePortable)"
   $Latest.FileType   = 'zip'
-  $Latest.Url32      = "$($Latest.UrlPortable)"
+  $Latest.Url64      = "$($Latest.UrlPortable)"
 
   Get-RemoteFiles -Purge -NoSuffix
 }
@@ -22,15 +22,15 @@ function global:au_SearchReplace {
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "$($reChecksum)" = "$($Latest.Checksum32)"
-      "$($rePortable)" = "$($Latest.FileName32)"
+      "$($reChecksum)" = "$($Latest.Checksum64)"
+      "$($rePortable)" = "$($Latest.FileName64)"
       "$($reVersion)"  = "$($Latest.Version)"
     }
 
-    ".\tools\chocolateyinstall.ps1" = @{
-      "$($rePortable)" = "$($Latest.FileName32)"
+    ".\tools\chocolateyInstall.ps1" = @{
+      "$($rePortable)" = "$($Latest.FileName64)"
     }
   }
 }
 
-update -ChecksumFor none -NoReadme -NoCheckUrl
+update -ChecksumFor none -NoCheckUrl -NoReadme
