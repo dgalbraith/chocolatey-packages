@@ -15,22 +15,14 @@ the links in the asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/cyanfish/naps2/releases/download/v7.5.3/naps2-7.5.3-win-x86.msi
   https://github.com/cyanfish/naps2/releases/download/v7.5.3/naps2-7.5.3-win-x64.msi
 
 2. The archives can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-7.5.3-win-x86.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-7.5.3-win-x86.msi
-
-  File:       naps2-7.5.3-win-x86.msi
-  Type:       sha256
-  Checksum32: FAB7EDC926B48DD75AED1B067EC84838657C520AD0485FD1D42F64348A40A04B
-
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-7.5.3-win-x64.msi
   - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-7.5.3-win-x64.msi
 
-  File:       naps2-7.5.3-win-x64.msi
-  Type:       sha256
-  Checksum64: D66FD9EBCD5A3878E21F2AEBCF9CAA29AEA3465A0C1922AE61B53CC997E8C011
+  File:     naps2-7.5.3-win-x64.msi
+  Type:     sha256
+  Checksum: D66FD9EBCD5A3878E21F2AEBCF9CAA29AEA3465A0C1922AE61B53CC997E8C011
 
 Contents of file LICENSE.txt is obtained from https://github.com/cyanfish/naps2/blob/master/LICENSE
