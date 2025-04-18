@@ -1,5 +1,7 @@
 ﻿import-module au
 
+Import-Module ..\..\scripts\chocolatey-helpers\Chocolatey-Helpers.psd1
+
 $ErrorActionPreference = 'STOP'
 
 $domain     = 'https://github.com'
