@@ -4,26 +4,31 @@ Import-Module ..\..\scripts\vs-marketplace\VS-Marketplace.psd1
 $ErrorActionPreference = 'Stop'
 
 $extension = 'vscode-spring-boot'
-$publisher = 'Pivotal'
+$publisher = 'vmware'
+
+$reChecksum      = '(?<=Checksum:\s+)(?<Checksum>[^\s]*)'
+$reCopyright     = '(?<=copyright>)(?<Copyright>.*)(?=<\/copyright>)'
+$reVsCodeVersion = '(?<=Code\s>=)(?<Version>\d+(\.*\d*)*)'
+$reVersion       = '(?<Version>\d+\.\d*\.\d*)'
 
 function global:au_SearchReplace {
   @{
     "$($Latest.PackageName).nuspec" = @{
-      "(copyright>)(.*)(<\/copyright>)"                          = "`${1}$($Latest.Copyright)`${3}"
-      "(Visual Studio Code )([0-9]+\.[0-9]+\.[0-9]+)( or newer)" = "`${1}$($Latest.VSCodeVersion)`${3}"
+      "$($reCopyright)"     = "$($Latest.Copyright)"
+      "$($reVsCodeVersion)" = "$($Latest.VSCodeVersion)"
     }
 
     ".\README.md" = @{
-      "(Visual Studio Code )([0-9]+\.[0-9]+\.[0-9]+)( or newer)" = "`${1}$($Latest.VSCodeVersion)`${3}"
+      "$($reVsCodeVersion)" = "$($Latest.VSCodeVersion)"
     }
 
     ".\tools\chocolateyinstall.ps1" = @{
-      "([0-9]+\.[0-9]+\.[0-9]+)" = "$($Latest.Version)"
+      "$($reVersion)" = "$($Latest.Version)"
     }
 
     ".\legal\VERIFICATION.txt"      = @{
-      "([0-9]+\.[0-9]+\.[0-9]+)" = "$($Latest.Version)"
-      "(Checksum:\s*)(.*)"       = "`${1}$($Latest.Checksum32)"
+      "$($reVersion)"  = "$($Latest.Version)"
+      "$($reChecksum)" = "$($Latest.Checksum32)"
     }
   }
 }

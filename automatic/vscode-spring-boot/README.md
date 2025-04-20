@@ -1,9 +1,9 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0bf6a976385899a2fff0d6c1adb822da42a08d10/icons/vscode-spring-boot.png" width="48" height="48" />Spring Boot Tools VSCode Extension](<https://chocolatey.org/packages/vscode-spring-boot>)
 
-[![Software license](https://img.shields.io/badge/license-EPL--1.0-red)](https://github.com/spring-projects/sts4/blob/master/license.txt)
+[![Software license](https://img.shields.io/badge/license-EPL--1.0-red)](https://marketplace.visualstudio.com/items/vmware.vscode-spring-boot/license)
 [![Maintenance status](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/Pivotal.vscode-spring-boot?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-spring-boot)
+[![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/vmware.vscode-spring-boot?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/vscode-spring-boot?label=Chocolatey)](https://chocolatey.org/packages/vscode-spring-boot)
 
 VSCode extension and Language Server providing support for working with Spring Boot `application.properties`, `application.yml` and `.java` files.
