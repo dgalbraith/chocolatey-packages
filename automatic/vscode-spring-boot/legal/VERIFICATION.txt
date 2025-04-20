@@ -8,14 +8,13 @@ and can be verified by:
 
 1. Go to the Visual Studio Marketplace page for the extension
 
-   https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-spring-boot
+   https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot
 
-and download the extension Pivotal.vscode-spring-boot-1.31.0.vsix using the Download Extension link
+and download the extension vmware.vscode-spring-boot-1.31.0.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
-
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Pivotal/vsextensions/vscode-spring-boot/1.31.0/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vmware/vsextensions/vscode-spring-boot/1.31.0/vspackage
 
 2. The extension can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash Pivotal.vscode-spring-boot-1.31.0.vsix
@@ -24,4 +23,4 @@ Alternatively the package can be downloaded directly from
   Type:     sha256
   Checksum: 837BF7E2D8D4697084C26AE3CCD925F100B78F59B7EE1849D163EC5EDC65D4A1
 
-  Contents of LICENSE.txt is obtained from https://github.com/spring-projects/sts4/blob/master/license.txt
+  Contents of LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vmware.vscode-spring-boot/license

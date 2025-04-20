@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Uninstall-VsCodeExtension -extensionId 'Pivotal.vscode-spring-boot'
+Uninstall-VsCodeExtension -extensionId 'vmware.vscode-spring-boot'
