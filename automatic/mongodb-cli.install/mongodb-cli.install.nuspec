@@ -4,31 +4,29 @@
   <metadata>
     <id>mongodb-cli.install</id>
     <version>2.0.3</version>
-    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mongodb-cli.install</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/mongodb-cli</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>MongoDB Command Line Interface (Install)</title>
     <authors>MongoDB</authors>
-    <projectUrl>https://www.mongodb.com/cloud/cli</projectUrl>
+    <projectUrl>https://github.com/mongodb/mongodb-cli</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0be6f44308aeb981f08bca54c9e9a38ed158a326/icons/mongodb-cli.png</iconUrl>
     <copyright>Copyright MongoDB Inc</copyright>
-    <licenseUrl>https://github.com/mongodb/mongocli/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/mongodb/mongodb-cli/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/mongodb/mongocli</projectSourceUrl>
+    <projectSourceUrl>https://github.com/mongodb/mongodb-cli</projectSourceUrl>
     <docsUrl>https://www.mongodb.com/docs/mongocli/v2.0</docsUrl>
-    <bugTrackerUrl>https://github.com/mongodb/mongocli/issues</bugTrackerUrl>
-    <tags>mongodb mongocli cli mongodb-atlas mongodb-cloud-manager mongodb-ops-manager</tags>
-    <summary>Manage your MongoDB in the cloud</summary>
+    <bugTrackerUrl>https://github.com/mongodb/mongodb-cli/issues</bugTrackerUrl>
+    <tags>mongodb mongocli cli mongodb-cloud-manager mongodb-ops-manager</tags>
+    <summary>MongoDB CLI for Cloud Manager and Ops Manager</summary>
     <description><![CDATA[
 
-Create and manage MongoDB Cloud resources from your command line and easily automate them using scripts
-
-The MongoDB CLI is the most seamless way to create and manage MongoDB Cloud resources. Spin up new database
-environments, create users, manage network access, and much more, all while avoiding repetitive tasks.
+The MongoDB CLI is a modern command line interface that enables you to manage your MongoDB services
+from the terminal.  Test, script, and execute other actions — all from one tool.
 
 ## Features
 
-* **Unified control plane** Manage MongoDB Cloud services from MongoDB Atlas and Atlas Data Lake to management platforms
-such as MongoDB Ops Manager
+* **Simple commands** Use simple, one-line commands to interact with MongoDB Cloud Manager or Ops Manager, and
+to automate management tasks for your deployments
 
 * **Organize your resources** Create organizations and projects within your MongoDB Cloud account to easily isolate
 resources and manage access by team
@@ -41,14 +39,12 @@ commands and syntax
 ## Notes
 
 * MongoDB CLI is only provided in a 64-bit version
-* The package installer deploys the executables to the `[Environment]::GetFolderPath("ProgramFilesX86")` folder
-(ie. the system install location for 32-bit applications) even though the binary is 64-bit
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]>
     </description>
-    <releaseNotes>https://www.mongodb.com/docs/mongocli/v2.0/release-notes</releaseNotes>
+    <releaseNotes>https://www.mongodb.com/docs/mongocli/current/release-notes</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />

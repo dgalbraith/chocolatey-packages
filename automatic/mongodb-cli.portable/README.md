@@ -1,15 +1,13 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@0be6f44308aeb981f08bca54c9e9a38ed158a326/icons/mongodb-cli.png" width="48" height="48" />MongoDB Command Line Interface (Portable)](https://chocolatey.org/packages/mongodb-cli.portable)
 
-[![GitHub license](https://img.shields.io/github/license/mongodb/mongocli)](https://github.com/mongodb/mongocli/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/mongodb/mongodb-cli)](https://github.com/mongodb/mongodb-cli/blob/main/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v2.0.3-blue)](https://github.com/mongodb/mongocli/releases/tag/v2.0.3)
+[![Software version](https://img.shields.io/badge/Source-v2.0.3-blue)](https://github.com/mongodb/mongodb-cli/releases/tag/mongocli/v2.0.3)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/mongodb-cli.portable?label=Chocolatey)](https://chocolatey.org/packages/mongodb-cli.portable)
 
-Create and manage MongoDB Cloud resources from your command line and easily automate them using scripts
-
-The MongoDB CLI is the most seamless way to create and manage MongoDB Cloud resources. Spin up new database
-environments, create users, manage network access, and much more, all while avoiding repetitive tasks.
+The MongoDB CLI is a modern command line interface that enables you to manage your MongoDB services
+from the terminal.  Test, script, and execute other actions — all from one tool.
 
 ## Features
 

@@ -8,14 +8,14 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/mongodb/mongocli/releases/tag/v2.0.3
+  https://github.com/mongodb/mongodb-cli/releases/tag/mongocli/v2.0.3
 
 and download the archive mongocli_2.0.3_windows_x86_64.msi using the links in the relevant
 asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/mongodb/mongocli/releases/download/v2.0.3/mongocli_2.0.3_windows_x86_64.msi
+  https://github.com/mongodb/mongodb-cli/releases/download/mongocli/v2.0.3/mongocli_2.0.3_windows_x86_64.msi
 
 2. The archive can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mongocli_2.0.3_windows_x86_64.msi
