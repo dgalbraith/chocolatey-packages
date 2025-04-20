@@ -44,7 +44,7 @@ Function Get-GitHubLatestReleaseUri() {
     $downloadUri = Get-RedirectedUri -Uri $releases
     Write-Verbose('Redirected URL for latest repository releases is ' + $downloadUri)
 
-    $latestTag   = $downloadUri -split '\/' | Select-Object -Last 1
+    $latestTag   = $downloadUri -split 'tag\/' | Select-Object -Last 1
     Write-Verbose('Tag for latest version is ' + $latestTag)
 
     $latestUri   = 'https://github.com/{0}/{1}/releases/expanded_assets/{2}' -f $User, $Repository, $latestTag
