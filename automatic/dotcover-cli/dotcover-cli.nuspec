@@ -30,6 +30,7 @@ can be integrated with a Continuous Integration server.
 
 * Related package: [dotcover](https://chocolatey.org/packages/dotCover)
 * The 64-bit version of the pacakge supports generatinv coverage for both 32 and 64-bit applications.
+* The package installs a universal archive which contains the 32-bit and 64-bit versions of the tools.
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
