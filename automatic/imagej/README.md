@@ -1,9 +1,9 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@a306a1daa4f210fa0a5421f2a3c996804629256a/icons/imagej.png" width="48" height="48" />ImageJ - Image Processing and Analysis in Java](https://chocolatey.org/packages/imagej)
 
-[![Software license](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://imagej.nih.gov/ij/disclaimer.html)
+[![Software license](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://imagej.net/ij/disclaimer.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.54-blue)](http://wsr.imagej.net/distros/win/ij152-win-java8.zip)
+[![Software version](https://img.shields.io/badge/Source-v1.54-blue)](https://imagej.net/ij/download.html)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/imagej?label=Chocolatey)](https://chocolatey.org/packages/imagej)
 
 Public domain software for processing and analyzing scientific images – a.k.a. ImageJ 1.x.

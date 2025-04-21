@@ -15,7 +15,7 @@ asset section of the distribution page.
 
 Alternatively the distribution can be downloaded directly from
 
-  http://wsr.imagej.net/distros/win/ij154-win-java8.zip
+  https://wsr.imagej.net/distros/win/ij154-win-java8.zip
 
 2. The archive can be validated by comparing checksums
   - Use powershell function 'Get-Filehash' - Get-Filehash ij154-win-java8.zip
@@ -25,4 +25,4 @@ Alternatively the distribution can be downloaded directly from
   ChecksumType: sha256
   Checksum:     32B05356D3A7906E10CA91491C2BE06BFE0397C9E7A3D3B52FDAD9E3EF48276C
 
-  Contents of file LICENSE.txt is obtained from https://imagej.nih.gov/ij/disclaimer.html
+  Contents of file LICENSE.txt is obtained from https://imagej.net/ij/disclaimer.html
