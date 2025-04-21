@@ -2,7 +2,7 @@
 
 $ErrorActionPreference = 'Stop'
 
-$releases = "https://imagej.nih.gov/ij/download.html"
+$releases = 'https://imagej.net/ij/download.html'
 
 $reArchive    = "(?<=\/|\s|')(?<Filename>(ij.+win.+zip))"
 $reChecksum   = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
@@ -51,4 +51,4 @@ function global:au_GetLatest {
   }
 }
 
-update -ChecksumFor none -NoReadme
+update -ChecksumFor none -NoCheckUrl -NoReadme

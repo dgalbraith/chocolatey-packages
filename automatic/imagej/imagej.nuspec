@@ -8,14 +8,14 @@
     <owners>dgalbraith</owners>
     <title>ImageJ - Image Processing and Analysis in Java</title>
     <authors>Wayne Rasband</authors>
-    <projectUrl>https://imagej.nih.gov/ij</projectUrl>
+    <projectUrl>https://imagej.net/ij</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@a306a1daa4f210fa0a5421f2a3c996804629256a/icons/imagej.png</iconUrl>
     <copyright>ImageJ is dedicated to the public domain</copyright>
-    <licenseUrl>https://imagej.nih.gov/ij/disclaimer.html</licenseUrl>
+    <licenseUrl>https://imagej.net/ij/disclaimer.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/imagej/ImageJ</projectSourceUrl>
-    <docsUrl>https://imagej.nih.gov/ij/docs/index.html</docsUrl>
-    <mailingListUrl>https://imagej.nih.gov/ij/list.html</mailingListUrl>
+    <docsUrl>https://imagej.net/ij/docs/index.html</docsUrl>
+    <mailingListUrl>https://imagej.net/ij/list.html</mailingListUrl>
     <bugTrackerUrl>https://github.com/imagej/ImageJ/issues</bugTrackerUrl>
     <tags>imagej computer-vision image-analysis image-processing</tags>
     <summary>Image processing and analysis in Java</summary>
@@ -70,7 +70,7 @@ If you find it is out of date by more than a day or two, please contact the main
 
 ]]>
     </description>
-    <releaseNotes>https://imagej.nih.gov/ij/notes.html</releaseNotes>
+    <releaseNotes>https://imagej.net/ij/notes.html</releaseNotes>
     <dependencies />
   </metadata>
   <files>
