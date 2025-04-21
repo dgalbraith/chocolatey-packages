@@ -1,13 +1,14 @@
-﻿import-module au
-
+﻿
 $ErrorActionPreference = 'Stop'
 
 $releases  = 'https://www.intel.com/content/www/us/en/download/774881/acpi-component-architecture-downloads-windows-binary-tools.html'
-$userAgent = 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/W.X.Y.Z Safari/537.36'
+
+$userAgent = 'curl/7.85.0'
 
 $reFile      = '(?<Filename>iasl-win-\d{8}.*\.zip)'
 $reChecksum  = '(?<=Checksum:\s*)((?<Checksum>([^\s].+)))'
 $reCopyright = '(?<=(Copyright.+(?<CopyrightFrom>[\d]{4})\s-\s))(?<CopyrightTo>[\d]{4})'
+$reUrl       = "(?<Url>https:\/\/.+$reFile)"
 $reVersion   = '(?<=v)(?<Version>(\d{4}\.\d{2}\.\d{2}))'
 
 function global:au_BeforeUpdate {
@@ -38,7 +39,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases -UserAgent $userAgent
 
-  $downloadPage.Content -match "(?<Url>https:\/\/.+$reFile)"
+  $downloadPage.Content -match $reUrl
+  
   $url32      = $Matches.Url
   $fileName32 = $Matches.Filename
 
@@ -47,12 +49,20 @@ function global:au_GetLatest {
 
   $updateYear = (Get-Date).ToString('yyyy')
 
+  $httpHeaders = @{
+    'Referrer'   = $url32
+    'User-Agent' = $userAgent
+  }
+
   return @{
     FileName32 = $fileName32
     Url32      = $url32
     Version    = $version
     UpdateYear = $updateYear
+    Options    = @{
+                   Headers = $httpHeaders 
+                 }
   }
 }
 
-update -ChecksumFor none -NoReadme
+update -ChecksumFor none -NoCheckUrl -NoReadme
