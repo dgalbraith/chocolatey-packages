@@ -12,7 +12,7 @@ $reVersion = '(?<Version>([\d]+\.[\d]+\.[\d]+\.[\d]+))'
 function global:au_BeforeUpdate {
   $Latest.Downloads = @{}
 
-  $languageMappings = @{
+  $localeMappings = @{
     'br'    = 'ptb'
     'de'    = 'deu'
     'en'    = 'enu'
@@ -27,12 +27,15 @@ function global:au_BeforeUpdate {
     'zh-TW' = 'cht'
   }
 
-  foreach ($code in $languageMappings.Keys) {
-    $url32    = "$($Latest.BaseUrl32)/$($Latest.FileName32)" -f $Latest.Version, $languageMappings[$code]
+  foreach ($locale in $localeMappings.Keys) {
+    $language = $localeMappings[$locale]
+    $fileName = "$($Latest.FileName32)" -f $Latest.Version, $language
+    $url32    = "$($Latest.BaseUrl32)/{0}/$fileName" -f $language
+
     $checkSum = Get-RemoteChecksum -Url $url32 -Algorithm $Latest.ChecksumType32
-    $language = New-Object PSObject -Property @{ Url = $Url32; Checksum = $checkSum }
+    $download = New-Object PSObject -Property @{ Url = $Url32; Checksum = $checkSum }
     
-    $Latest.Downloads.Add($code, $language)
+    $Latest.Downloads.Add($locale, $download)
   }
 }
 
@@ -70,7 +73,7 @@ function global:au_GetLatest {
   $downloadUri = $downloadPage.Links | where-object { $_ -match 'Download Microsoft JDBC Driver.*zip' } | select-object -expand href
 
   $Url32      = Get-RedirectedUri -Uri $downloadUri
-  $baseUrl32  = $url32 -split ($Url32 -split '/' | select-object -last 1) -replace ".{1}$" | select-object -first 1
+  $baseUrl32  = $url32 -replace '/[^/]+/[^/]+$', ''
   $fileName32 = $url32 -split '/'  -replace $reVersion, '{0}' -replace 'enu', '{1}' | select-object -last 1 
   $version    = $url32 -match $reVersion | foreach-object { $Matches.Version }
 
