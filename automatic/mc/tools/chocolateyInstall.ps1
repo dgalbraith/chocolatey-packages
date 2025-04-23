@@ -32,8 +32,8 @@ Write-Verbose("Constructed silent args $silentArgs")
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  File32         = Join-Path $toolsDir 'mcwin32-build232-setup.exe'
-  File64         = Join-Path $toolsDir 'mcwin32-build232-x64-setup.exe'
+  File32         = Join-Path $toolsDir 'mcwin32-build233-setup.exe'
+  File64         = Join-Path $toolsDir 'mcwin32-build233-x64-setup.exe'
   FileType       = 'exe'
   SilentArgs     = $silentArgs
   ValidExitCodes = @(0)

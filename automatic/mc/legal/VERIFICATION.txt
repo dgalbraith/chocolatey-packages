@@ -8,30 +8,30 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/adamyg/mcwin32/releases/tag/4.8.33.232
+  https://github.com/adamyg/mcwin32/releases/tag/4.8.33.233
   
-and download the installer  mcwin32-build232-setup.exe or mcwin32-build232-x64-setup.exe using
+and download the installer  mcwin32-build233-setup.exe or mcwin32-build233-x64-setup.exe using
 the links in the relevant asset section of the page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/adamyg/mcwin32/releases/download/4.8.33.232/mcwin32-build232-setup.exe
-  https://github.com/adamyg/mcwin32/releases/download/4.8.33.232/mcwin32-build232-x64-setup.exe
+  https://github.com/adamyg/mcwin32/releases/download/4.8.33.233/mcwin32-build233-setup.exe
+  https://github.com/adamyg/mcwin32/releases/download/4.8.33.233/mcwin32-build233-x64-setup.exe
 
 
 2. The installer can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash mcwin32-build232-setup.exe
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f mcwin32-build232-setup.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash mcwin32-build233-setup.exe
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f mcwin32-build233-setup.exe
 
-  File32:         mcwin32-build232-setup.exe
+  File32:         mcwin32-build233-setup.exe
   ChecksumType32: sha256
-  Checksum32:     A55DB5ABE164D9158B48FA2EBCF49D7CD799E61B39B2482B75C54974D68B3050
+  Checksum32:     F3218FCA424E02E9C79A3BF8F33CA854672DAA458083D40B6C9EB17696FBDC2F
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash mcwin32-build232-x64-setup.exe
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f mcwin32-build232-x64-setup.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash mcwin32-build233-x64-setup.exe
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f mcwin32-build233-x64-setup.exe
 
-  File64:         mcwin32-build232-x64-setup.exe
+  File64:         mcwin32-build233-x64-setup.exe
   ChecksumType64: sha256
-  Checksum64:     2413BC98BD6F1A0745B2FFA22AE04B54FCBA3372552311F2D36A409D62E2153F
+  Checksum64:     56D7E7867E655C4855E99A2F51AF4489DE21906FAD7F6511F01EAE9233AFB110
 
 Contents of file LICENSE.txt is obtained from https://github.com/adamyg/mcwin32/blob/master/mcsrc/doc/COPYING

@@ -9,21 +9,21 @@ public struct Language {
 "@
 
 $languageDefinitions =  @{
-    'br'    = [Language] @{ Name = 'Brazilian (Portuguese)'; Mapping = 'ptb'; Checksum = '63fcfc1302398549cd34afa22271915b452511f42da96f1a568528e24733d93f' }
-    'de'    = [Language] @{ Name = 'German';                 Mapping = 'deu'; Checksum = '882e170fac702102f20e34d7b8149672145446794e285650c7c46dbe5a746b6a' }
-    'en'    = [Language] @{ Name = 'English';                Mapping = 'enu'; Checksum = '6d0e7681db71a680f98134a45a8ecf57e8b0c61c1f99bcf3e464fd6814e0feef' }
-    'es'    = [Language] @{ Name = 'Spanish';                Mapping = 'esn'; Checksum = '0b9e222bc1624c815f80f8e5de3aa9e5ef4f7d05dda2931e5bdc8d5fe7985db8' }
-    'fr'    = [Language] @{ Name = 'French';                 Mapping = 'fra'; Checksum = 'd9fb9e6ff29f39c731acaeb65f290da00ca73c90eae728b7b09d967057051f33' }
-    'it'    = [Language] @{ Name = 'Italian';                Mapping = 'ita'; Checksum = '663353269a32fc7db8765c6dcef0b6fadf29ab3b2a8c7053d736e7620585bb09' }
-    'ja'    = [Language] @{ Name = 'Japanese';               Mapping = 'jpn'; Checksum = 'd61e712dacfc83ff37a0672ac8d845b538f5e2e36d896f9a57e85a7cb47a28b3' }
-    'ko'    = [Language] @{ Name = 'Korean';                 Mapping = 'kor'; Checksum = '690432de16b1e92291ef15358c7d293d8befff42729f9405f11a7f2fd3d6af32' }
-    'ru'    = [Language] @{ Name = 'Russian';                Mapping = 'rus'; Checksum = '39ce7dd662a173d682dcdf219fa997518968e36634a05cea9651f19e573ad5da' }
-    'zh'    = [Language] @{ Name = 'Chinese';                Mapping = 'chs'; Checksum = 'b9dd3a6f80ebadcb883d9df5713e6c62141cee19d10171174324773b2d444ebe' }
-    'zh-CN' = [Language] @{ Name = 'Chinese (Simplified)';   Mapping = 'chs'; Checksum = 'b9dd3a6f80ebadcb883d9df5713e6c62141cee19d10171174324773b2d444ebe' }
-    'zh-TW' = [Language] @{ Name = 'Chinese (Traditional)';  Mapping = 'cht'; Checksum = 'c5ae19f35cb39548335599df2b4bd75c1580ffab7c7fea7fd79143fcce0dac07' }
+    'br'    = [Language] @{ Name = 'Brazilian (Portuguese)'; Mapping = 'ptb'; Checksum = 'c1f8c502c09b8cba24b199a4b8e63446796baabaedd07654b0ea4d5f1a3eee5f' }
+    'de'    = [Language] @{ Name = 'German';                 Mapping = 'deu'; Checksum = 'b4b79a74acfffe6695afdee652ed0df1e1a4710fcbca4c18bb3665b5549c9b96' }
+    'en'    = [Language] @{ Name = 'English';                Mapping = 'enu'; Checksum = 'c8a0fbfa69b20e48fb01b91d6cf4dd790c3017df1aa5355d8ff534b360ccbbf9' }
+    'es'    = [Language] @{ Name = 'Spanish';                Mapping = 'esn'; Checksum = '28c055908ae7436e70ed3ce06dad3aa8b1985f56836aaf7afa645687f562c5eb' }
+    'fr'    = [Language] @{ Name = 'French';                 Mapping = 'fra'; Checksum = '9bac6f88f7ebb372b9a40d45dedde2fbcb962738e5b23b4616dc23695d7f38d8' }
+    'it'    = [Language] @{ Name = 'Italian';                Mapping = 'ita'; Checksum = '9ea4ccdcad59b8e4df10d1e12c2912817e4b67868c41b93712b59f3bf5934e63' }
+    'ja'    = [Language] @{ Name = 'Japanese';               Mapping = 'jpn'; Checksum = '71b8c737e455a2f02519059ed6e1985d1c3ecbfc62fecab92c7a96b5256d2272' }
+    'ko'    = [Language] @{ Name = 'Korean';                 Mapping = 'kor'; Checksum = 'ef217793951afef6c0e7a401e51a3ae8afdf29886d6460983db4d011617febdb' }
+    'ru'    = [Language] @{ Name = 'Russian';                Mapping = 'rus'; Checksum = 'c9e44ac3b87555323a9406160b20a028fe32f7d93178ff106d70473cf49a2c20' }
+    'zh'    = [Language] @{ Name = 'Chinese';                Mapping = 'chs'; Checksum = '1a386aa5a007932eab3d2c187c16715b052ac8f6179e74378d20f54327b728fd' }
+    'zh-CN' = [Language] @{ Name = 'Chinese (Simplified)';   Mapping = 'chs'; Checksum = '1a386aa5a007932eab3d2c187c16715b052ac8f6179e74378d20f54327b728fd' }
+    'zh-TW' = [Language] @{ Name = 'Chinese (Traditional)';  Mapping = 'cht'; Checksum = '59464887c3e91421fe74e43fc6e07e5e3588ff36a094c81bbf34555b7a564857' }
 }
 
-$base = 'https://download.microsoft.com/download/a/9/1/a91534b0-ed8c-4501-b491-e1dd0a20335a'
+$base = 'https://download.microsoft.com/download/745da347-bd51-4bf0-a84e-3465608d8856'
 
 $pp = Get-PackageParameters
 
