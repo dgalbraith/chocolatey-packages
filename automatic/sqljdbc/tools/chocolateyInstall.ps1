@@ -48,17 +48,26 @@ if ($null -eq $languages -or $languages -eq '') {
 
 $reLang = “(?i)^(br|de|en|es|fr|it|ja|ko|ru|zh|zh-CN|zh-TW)$”
 
+$version = $Env:PackageVersion
+
+# check for a three-part version and append a tr4ailing zero if needed
+if ($version -match '^\d+\.\d+\.\d+$') {
+  $version = $version + '.0'
+}
+
 foreach ($language in $languages -split ',') {
   if ($language -notmatch $reLang) {
     Write-Error "Unsupported language $($language)"
   }
   
-  $fileName = 'sqljdbc_{0}_{1}.zip' -f $Env:PackageVersion, $languageDefinitions[$language].Mapping
+  $language = $languageDefinitions[$language].Mapping
+  $fileName = 'sqljdbc_{0}_{1}.zip' -f $version, $language
+  $url      =  "$base/$language/$fileName"
 
   $packageArgs = @{
     PackageName   = $env:ChocolateyPackageName
     UnzipLocation = $installDir
-    Url           = "${base}/${fileName}"
+    Url           = $url
     Checksum      = $languageDefinitions[$language].Checksum
     ChecksumType  = 'sha256'
   }

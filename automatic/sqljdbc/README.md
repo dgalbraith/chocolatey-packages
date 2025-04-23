@@ -21,10 +21,10 @@ specified the install will default to English.
 
 Multiple languages can be installed by providing a comma-separated list of language codes.
 
-* `/Languages=[language-codes]` - installs the package using the specified languages.  The languages must be supplied
-as a comma-separated listSupported languages are:
+* `/Languages=[language-codes]` - installs the package using the specified locales.  The locales must be supplied
+as a comma-separated list.  Supported locales are:
 
-|Language              |Code   |Mapping |Parameters                    |
+|Language              |Locale |Mapping |Parameters                    |
 |----------------------|:-----:|:------:|------------------------------|
 Brazilian (Portuguese) | br    | ptb    |`--params "/Languages=br"`
 German                 | de    | deu    |`--params "/Languages=de"`
