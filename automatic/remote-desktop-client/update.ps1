@@ -8,12 +8,11 @@ $releases = 'https://learn.microsoft.com/en-us/windows-server/remote/remote-desk
 
 $re32         = 'W.+32-bit'
 $re64         = 'W.+64-bit'
-$reFileName   = '(?<FileName>Remote.+_(?<Version>[\d]+\.[\d]+\.[\d]+)\.[\d]+.+msi)'
 $reUrl32      = "(?<=Url\s[^']*')(?<Url32>[^']*)"
 $reChecksum32 = "(?<=Checksum\s[^']*')(?<Checksum>[^']*)"
 $reUrl64      = "(?<=Url64[^']*')(?<Url64>[^']*)"
 $reChecksum64 = "(?<=Checksum64[^']*')(?<Checksum>[^']*)"
-$reVersion    = "(?<=v)(?<Version>[\d]+\.[\d]+\.[\d]+\.?[\d]*)"
+$reVersion    = "(?<=v|_)(?<Version>[\d]+\.[\d]+\.[\d]+\.?[\d]*)"
 
 function global:au_BeforeUpdate {
   $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url   -Algorithm 'sha256'
@@ -40,16 +39,14 @@ function global:au_GetLatest {
 
   $downloadUri = $downloadPage.links | Where-Object outerHTML -match $re32 | select-object -expand href
   $url32       = Get-RedirectedUri -Uri $downloadUri
-  $apiResponse = Invoke-WebRequest -Method Head -UseBasicParsing -Uri $url32 -MaximumRedirection 0
-  $fileName32  = $apiResponse.Headers['Content-Disposition'] -match $reFileName | ForEach-Object { $Matches.FileName}
+  $fileName32  = $url32 -split '/' | select-object -last 1
 
   $downloadUri = $downloadPage.links | Where-Object outerHTML -match $re64 | Select-Object -expand href
   $url64       = Get-RedirectedUri -Uri $downloadUri
-  $apiResponse = Invoke-WebRequest -Method Head -UseBasicParsing -Uri $url64 -MaximumRedirection 0
-  $fileName64  = $apiResponse.Headers['Content-Disposition'] -match $reFileName | ForEach-Object { $Matches.FileName }
+  $fileName64  = $url64 -split '/' | select-object -last 1
 
-  $version    = $Matches.Version
-
+  $version = $fileName32 -match $reVersion | foreach-object { $Matches.Version }
+  
   return @{
     FileName   = $fileName32
     Url        = $url32
@@ -59,4 +56,4 @@ function global:au_GetLatest {
   }
 }
 
-update -ChecksumFor none -NoReadme
+update -ChecksumFor none -NoCheckUrl -NoReadme
