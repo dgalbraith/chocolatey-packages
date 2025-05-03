@@ -1,9 +1,9 @@
 # [<img src="https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@37a39ec04193c88886db685779f97edac192b21b/icons/vscode-arduino.png" width="48" height="48" />Arduino VSCode Extension](https://chocolatey.org/packages/vscode-arduino)
 
-[![GitHub License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/microsoft/vscode-arduino/blob/main/LICENSE.txt)
+[![GitHub License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/microsoft/vscode-arduino/vscode-arduino/blob/main/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/vsciot-vscode.vscode-arduino?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino)
+[![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/vscode-arduino.vscode-arduino-community?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=vscode-arduino.vscode-arduino-community)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/vscode-arduino?label=Chocolatey)](https://chocolatey.org/packages/vscode-arduino)
 
 The Arduino extension makes it easy to develop, build, deploy and debug your Arduino sketches in Visual Studio Code, with a rich set of functionalities

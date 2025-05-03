@@ -1,12 +1,18 @@
 Import-Module au
+
 Import-Module ..\..\scripts\vs-marketplace\VS-Marketplace.psd1
 
-$extension = 'vscode-arduino'
-$publisher = 'vsciot-vscode'
+$ErrorActionPreference = 'STOP'
 
-$reChecksum = '(?<=Checksum:\s+)(?<Checksum>[^\s]*)'
-$reFileName = '(?<Filename>(.*))(.vsix)'
-$reVersion  = '(?<=\s|-)(?<Version>[0-9]+\.[0-9]+\.[0-9]+)'
+$extension = 'vscode-arduino-community'
+$publisher = 'vscode-arduino'
+
+$reChecksum  = '(?<=Checksum:\s+)(?<Checksum>[^\s]*)'
+$reCopyright = '(?<=\<copyright\>).+(?=\<\/copyright\>)'
+$reFileName  = '(?<Filename>(.*))(.vsix)'
+$reVersion   = '(?<=\s|-)(?<Version>[0-9]+\.[0-9]+\.[0-9]+)'
+
+#/vscode-arduino/vscode-arduino/releases/download/v0.7.1/vscode-arduino-win32-x64.vsix
 
 function global:au_BeforeUpdate {
   mkdir tools -ea 0 | Out-Null
@@ -24,18 +30,15 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     "$($Latest.PackageName).nuspec" = @{
-      "$reVersion" = "$($Latest.VSCodeVersion)"
+      "$reVersion"   = "$($Latest.VSCodeVersion)"
+      "$reCopyright" = "$($Latest.Copyright)"
     }
 
     ".\README.md" = @{
       "$reVersion" = "$($Latest.VSCodeVersion)"
     }
 
-    ".\tools\chocolateyinstall.ps1" = @{
-      "$reVersion" = "$($Latest.Version)"
-    }
-
-    ".\tools\chocolateyuninstall.ps1" = @{
+    ".\tools\chocolateyInstall.ps1" = @{
       "$reVersion" = "$($Latest.Version)"
     }
 
@@ -56,6 +59,7 @@ function global:au_GetLatest {
     FileNameBase   = $extensionInfo.Filename -match $reFileName | ForEach-Object { $Matches['Filename'] }
     FileType       = 'vsix'
     ChecksumType32 = 'sha256'
+    Copyright      = $extensionInfo.Copyright
   }
 }
 
