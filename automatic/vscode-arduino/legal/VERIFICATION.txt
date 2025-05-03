@@ -10,7 +10,7 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=vscode-arduino.vscode-arduino-community
 
-and download the extension vscode-arduino.vscode-arduino-community-0.7.1.vsix using the Download Extension link
+and download the extension vscode-arduino.vscode-arduino-community-0.7.2.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
@@ -18,11 +18,11 @@ Alternatively the package can be downloaded directly from
   https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscode-arduino/vsextensions/vscode-arduino-community/0.7.1/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash vscode-arduino.vscode-arduino-community-0.7.1.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscode-arduino.vscode-arduino-community-0.7.1.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash vscode-arduino.vscode-arduino-community-0.7.2.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f vscode-arduino.vscode-arduino-community-0.7.2.vsix
 
-  File:     vscode-arduino.vscode-arduino-community-0.7.1.vsix
+  File:     vscode-arduino.vscode-arduino-community-0.7.2.vsix
   Type:     sha256
-  Checksum: 1a08e0864d33b459ea4e426458234fe8d8e62144fc666afbef21a63560294c23
+  Checksum: FC774F27A2C19F23E1CFB8DE27430B4573B62F76DC03333B27AE672AC5EC69C6
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscode-arduino.vscode-arduino-community/license
