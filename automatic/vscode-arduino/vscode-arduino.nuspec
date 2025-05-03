@@ -8,17 +8,20 @@
     <owners>dgalbraith</owners>
     <title>Arduino VSCode Extension</title>
     <authors>Microsoft</authors>
-    <projectUrl>https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino</projectUrl>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=vscode-arduino.vscode-arduino-community</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@37a39ec04193c88886db685779f97edac192b21b/icons/vscode-arduino.png</iconUrl>
-    <copyright>Copyright 2017-2022 Microsoft Corporation</copyright>
-    <licenseUrl>https://marketplace.visualstudio.com/items/vsciot-vscode.vscode-arduino/license</licenseUrl>
+    <copyright>Copyright 2024 vscode-arduino</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/vscode-arduino.vscode-arduino-community/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/Microsoft/vscode-arduino</projectSourceUrl>
-    <docsUrl>https://github.com/microsoft/vscode-arduino/blob/main/README.md</docsUrl>
-    <bugTrackerUrl>https://github.com/microsoft/vscode-arduino/issues</bugTrackerUrl>
-    <tags>arduino debugger sketch vscode microsoft</tags>
+    <projectSourceUrl>https://github.com/vscode-arduino/vscode-arduino</projectSourceUrl>
+    <docsUrl>https://github.com/vscode-arduino/vscode-arduino/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/vscode-arduino/vscode-arduino/issues</bugTrackerUrl>
+    <mailingListUrl>https://github.com/vscode-arduino/vscode-arduino/discussions</mailingListUrl>
+    <tags>arduino debugger sketch vscode arduino-community</tags>
     <summary>Arduino for Visual Studio Code</summary>
-    <description><![CDATA[The Arduino extension makes it easy to develop, build, deploy and debug your Arduino sketches in Visual Studio Code, with a rich set of functionalities
+    <description><![CDATA[
+The Arduino extension makes it easy to develop, build, deploy and debug your Arduino sketches in Visual Studio Code,
+with a rich set of functionalities
 
 ## Features
 * IntelliSense and syntax highlighting for Arduino sketches
@@ -46,7 +49,7 @@
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://marketplace.visualstudio.com/items/vsciot-vscode.vscode-arduino/changelog</releaseNotes>
+    <releaseNotes>https://marketplace.visualstudio.com/items/vscode-arduino.vscode-arduino-community/changelog</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.1.0" />
     </dependencies>
