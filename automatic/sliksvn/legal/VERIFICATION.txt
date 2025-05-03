@@ -10,27 +10,27 @@ be verified by:
 
   https://sliksvn.com/pub/
 
-and download the archives Slik-Subversion-1.14.2-win32.zip or Slik-Subversion-1.14.2-x64.zip
+and download the archives Slik-Subversion-1.14.5-win32.zip or Slik-Subversion-1.14.5-x64.zip
 using the relevant links.
 
 Alternatively the installers can be downloaded directly from
 
-  https://sliksvn.com/pub/Slik-Subversion-1.14.2-win32.zip or
-  https://sliksvn.com/pub/Slik-Subversion-1.14.2-x64.zip
+  https://sliksvn.com/pub/Slik-Subversion-1.14.5-win32.zip or
+  https://sliksvn.com/pub/Slik-Subversion-1.14.5-x64.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.14.2-win32.zip
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.14.2-win32.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.14.5-win32.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.14.5-win32.zip
 
-  File32:         Slik-Subversion-1.14.2-win32.zip
+  File32:         Slik-Subversion-1.14.5-win32.zip
   ChecksumType32: sha256
-  Checksum32:     D1EA5453DB6BFDF6A1886B1F1A5FADBB87D30EE4558CC60356F195E849897F07
+  Checksum32:     033A4CFD484B6BB43F08D52D99C93748C40E2CB3BCBC30B63912872B6EB8CACC
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.14.2-x64.zip
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.14.2-x64.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash Slik-Subversion-1.14.5-x64.zip
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Slik-Subversion-1.14.5-x64.zip
 
-  File64:         Slik-Subversion-1.14.2-x64.zip
+  File64:         Slik-Subversion-1.14.5-x64.zip
   ChecksumType64: sha256
-  Checksum64:     9348C4B28762C9E852429105C20BABDB94414524EB03A03E20EFD66DB5FCABBD
+  Checksum64:     77D4FE02999DDA3BDC3A20E86243AE6EDE99AAF072B4C12B0CDEDB54D88E954A
 
 Contents of the file LICENSE.txt is obtained from https://svn.apache.org/repos/asf/subversion/trunk/LICENSE

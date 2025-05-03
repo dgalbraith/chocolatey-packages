@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://svn.apache.org/repos/asf/subversion/trunk/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v1.14.2-blue)](https://sliksvn.com/download)
+[![Software version](https://img.shields.io/badge/Source-v1.14.5-blue)](https://sliksvn.com/download)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/sliksvn?label=Chocolatey)](https://chocolatey.org/packages/sliksvn)
 
 A standalone command-line Subversion client for Windows. The installer contains all command line tools (svn, svnadmin,
