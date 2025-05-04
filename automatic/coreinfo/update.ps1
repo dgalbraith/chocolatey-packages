@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://learn.microsoft.com/sysinternals/downloads/coreinfo'
 $download = 'https://download.sysinternals.com/files/Coreinfo.zip'

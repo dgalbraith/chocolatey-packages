@@ -1,4 +1,4 @@
-Import-Module au
+import-module chocolatey-au
 Import-Module ..\..\scripts\vs-marketplace\VS-Marketplace.psd1
 
 $extension = 'vscode-spring-boot-dashboard'

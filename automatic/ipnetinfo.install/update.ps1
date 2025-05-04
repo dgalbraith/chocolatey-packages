@@ -1,4 +1,4 @@
-﻿import-module au
+﻿import-module chocolatey-au
 
 $base      = 'https://www.nirsoft.net/utils'
 $releases  = "${base}/ipnetinfo.html"

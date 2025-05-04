@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck'
 $download = 'https://download.sysinternals.com/files/Sigcheck.zip'

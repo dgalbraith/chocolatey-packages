@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://docs.microsoft.com/sysinternals/downloads/rammap'
 $download = 'https://download.sysinternals.com/files/RAMMap.zip'
