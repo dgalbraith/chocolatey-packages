@@ -54,10 +54,7 @@ install:
 - choco upgrade chocolatey -y --no-progress
 - git --version
 - choco --version
-- ps: |
-    git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
-    . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
-
+- choco install chocolatey-au --confirm
 - ps: |
     "Build info"
     '  {0,-20} {1}' -f 'SCHEDULED BUILD:', ($Env:APPVEYOR_SCHEDULED_BUILD -eq 'true')

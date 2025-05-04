@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://docs.microsoft.com/sysinternals/downloads/whois'
 $download = 'https://download.sysinternals.com/files/WhoIs.zip'

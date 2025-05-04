@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $base      = 'https://www.microsoft.com/download/'
 $productId = '35460'

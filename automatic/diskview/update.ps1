@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://docs.microsoft.com/sysinternals/downloads/diskview'
 $download = 'https://download.sysinternals.com/files/DiskView.zip'

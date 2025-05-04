@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 Import-Module ..\..\scripts\chocolatey-helpers\Chocolatey-Helpers.psd1
 

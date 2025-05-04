@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://docs.microsoft.com/sysinternals/downloads/winobj'
 $download = 'https://download.sysinternals.com/files/WinObj.zip'

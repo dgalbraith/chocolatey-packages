@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://docs.microsoft.com/sysinternals/downloads/accesschk'
 $download = 'https://download.sysinternals.com/files/AccessChk.zip'
