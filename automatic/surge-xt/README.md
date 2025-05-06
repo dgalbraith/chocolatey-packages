@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/surge-synthesizer/releases-xt)](https://github.com/surge-synthesizer/releases-xt/blob/master/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.1.3-blue.svg)](https://github.com/surge-synthesizer/releases-xt/releases/tag/1.3.3)
+[![Software version](https://img.shields.io/badge/Source-v1.3.4-blue.svg)](https://github.com/surge-synthesizer/releases-xt/releases/tag/1.3.4)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/surge-xt?label=Chocolatey)](https://community.chocolatey.org/packages/surge-xt)
 
 Surge XT is a free and open source hybrid synthesizer. It is a fork of the original Surge Synthesizer, which was

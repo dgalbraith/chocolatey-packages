@@ -56,8 +56,8 @@ if ((Get-ProcessorBits 32) -or ($env:ChocolateyForceX86 -eq 'true')) {
     packageName    = $env:ChocolateyPackageName
     fileType       = 'exe'
     softwareName   = 'Surge XT'
-    url            = 'https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.3/surge-xt-win32-1.3.3-setup.exe'
-    checksum       = '16055d15e3041d9b5bb7a0cd7ce76be4acdb8554e30d79f140fd48c274003e9c'
+    url            = 'https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-win32-1.3.4-setup.exe'
+    checksum       = '6fe3fb20ef21672666dddb816ad73f2966e98b70edad9189183451a255c2b2d1'
     checksumType   = 'sha256'
     silentArgs     = $silentArgs
     validExitCodes = @(0)
@@ -68,7 +68,7 @@ if ((Get-ProcessorBits 32) -or ($env:ChocolateyForceX86 -eq 'true')) {
     packageName    = $env:ChocolateyPackageName
     fileType       = 'exe'
     softwareName   = 'Surge XT'
-    file64         = "$toolsDir\surge-xt-win64-1.3.3-setup.exe"
+    file64         = "$toolsDir\surge-xt-win64-1.3.4-setup.exe"
     silentArgs     = $silentArgs
     validExitCodes = @(0)
   }

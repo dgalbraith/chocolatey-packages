@@ -12,8 +12,8 @@ if ($pp.InstallDir) {
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.3/surge-xt-win64-1.3.3-portable-install.zip'
-  checksum64     = '8817d3f0c6d55e33f37f9b5d1ca8cb4cb7e288626c7bebd721a4e547710c2e68'
+  url64          = 'https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-win64-1.3.4-portable-install.zip'
+  checksum64     = 'a5f2376702ad218c0382640ed0c7b9ebb222ba2410a210879899c0f726859d8e'
   checksumType64 = 'sha256'
   fileType       = 'zip'
   unzipLocation  = $unzipDir
