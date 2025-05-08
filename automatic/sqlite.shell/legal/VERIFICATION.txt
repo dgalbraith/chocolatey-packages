@@ -10,12 +10,12 @@ be verified by:
 
   https://sqlite.org/download.html
   
-and download the archive sqlite-tools-win-x64-3490100.zip using the link in
+and download the archive sqlite-tools-win-x64-3490200.zip using the link in
 the Precompiled Binaries for Windows section.
 
 Alternatively the archives can be downloaded directly from
 
-  https://sqlite.org/2021/sqlite-tools-win-x64-3490100.zip
+  https://sqlite.org/2021/sqlite-tools-win-x64-3490200.zip
 
 2. Extract the file sqlite3.exe from the archive
 
@@ -25,6 +25,6 @@ Alternatively the archives can be downloaded directly from
 
   File:         sqlite3.exe
   ChecksumType: sha256
-  Checksum:     C2B38111E9028F421127698A54B4ACE706A9D69510863E03DC40CE9AFCE21EFB
+  Checksum:     3F5779EE51F0D4978641CFFEA27A3F798E7E2B28B5C4D7AFEE53AAB480428F4E
  
   Contents of file LICENSE.txt is obtained from http://www.sqlite.org/copyright.html
