@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The application has been downloaded from the official distribution and can
+be verified by:
+
+1. Go to the binary distribution page
+
+  https://www.ophthalmostar.de/freeware/#netradio
+
+and download the installer NetRadioSetup.exe using the NetRadioSetup.exe
+download button on the page.
+
+Alternatively the installer can be downloaded directly from
+
+  https://www.ophthalmostar.de/NetRadioSetup.exe
+
+2. The installer can be validated by comparing checksums
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 NetRadioSetup.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f NetRadioSetup.exe
+
+  File64:     NetRadioSetup.exe
+  Type64:     sha256
+  Checksum64: 90dafa4ea51c0496e7a12eb438c3633d15fffadd0f924f464653ae358e1698fb
+
+Contents of file LICENSE.txt is obtained from https://github.com/ophthalmos/NetRadio/blob/master/LicenseAgreement.txt
