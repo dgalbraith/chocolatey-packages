@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>spyder</id>
-    <version>6.0.5</version>
+    <version>6.0.7</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/spyder</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Spyder - The Scientific Python Development Environment</title>
@@ -62,7 +62,7 @@ projects with full regex support.
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
     ]]></description>
-    <releaseNotes>https://github.com/spyder-ide/spyder/releases/tag/v6.0.5</releaseNotes>
+    <releaseNotes>https://github.com/spyder-ide/spyder/releases/tag/v6.0.7</releaseNotes>
     <dependencies />
   </metadata>
   <files>
