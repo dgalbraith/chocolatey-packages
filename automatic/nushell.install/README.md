@@ -30,11 +30,10 @@ e.g. `choco install nushell.install --package-parameters="/AddToDesktop"`
 * `/AddToStartMenu` - add entries to the Start Menu for Koodoo Reader.  By default the shortcut will be added for all
 users
 e.g. `choco install nushell.install --package-parameters="/AddToStartMenu"`
-* `/User` - where the user parameter is specified any shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`)
-will only be added for the current user
+* `/User` - install the package for the current user only
+eg. `choco install nushell.install --package-parameters='"/User"'`.  Where the user parameter is specified any shortcuts
+created (using `/AddToDesktop` or `/AddToStartMenu`) will only be added for the current user
 e.g. `choco install nushell.install --package-parameters="/AddToDesktop /User"`
-
-To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ## Notes
 

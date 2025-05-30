@@ -19,3 +19,17 @@ $paths.GetEnumerator() | ForEach-Object {
     Remove-Item $_ -ErrorAction SilentlyContinue -Force | Out-Null
   }
 }
+
+$uninstallKey = Get-UninstallRegistryKey -SoftwareName 'Nushell'
+
+if ($uninstallKey) {
+  $installLocation = $uninstallKey.InstallLocation
+
+  if (($installLocation) -and ($installLocation -ne '') -and (Test-Path $installLocation)) {
+    Get-ChildItem -Path $installLocation -Recurse -Filter '*.exe' | foreach-object {
+      Uninstall-BinFile -Name ($_.Name -Replace '\.exe$','') -Path $_.FullName
+    }
+  }
+} else {
+  Write-Error "The uninstall key could not be found - shims have not been automatically removed."
+}

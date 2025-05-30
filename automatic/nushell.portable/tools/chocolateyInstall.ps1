@@ -25,7 +25,7 @@ if ($pp.count -gt 0) {
             $desktopPath = [Environment]::GetFolderPath('CommonDesktopDirectory')
           }
 
-          $paths.add($desktopPath) | Out-Null
+          $paths.Add($desktopPath) | Out-Null
         }
         'AddToStartMenu' {
           Write-Verbose("$env:ChocolateyPackageName will be added to the Start Menu")
@@ -47,12 +47,12 @@ if ($pp.count -gt 0) {
   }
 
   if ($paths.Count -gt 0) {
-    $executable = Get-ChildItem $toolsDir -recurse -include 'nu.exe' | foreach-object { $_.FullName }
+    $executable = Get-ChildItem $toolsDir -Recurse -Filter 'nu.exe' | Select-Object -First 1 | ForEach-Object { $_.FullName }
     $icon       = Join-Path $toolsDir 'nushell.ico'
 
     $paths.GetEnumerator() | foreach-object {
       $shortcutPath = Join-Path $_ 'Nu Shell.lnk'
-      Install-ChocolateyShortcut -ShortcutFilePath $shortcutPath -TargetPath $executable -WorkingDirectory '%userprofile%' -IconLocation $icon
+      Install-ChocolateyShortcut -ShortcutFilePath $shortcutPath -TargetPath $executable -WorkingDirectory '%USERPROFILE%' -IconLocation $icon
     }
   }
 }
