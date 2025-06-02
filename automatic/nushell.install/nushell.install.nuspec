@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nushell.install</id>
-    <version>0.104.1</version>
+    <version>0.104.1.20250529</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/nushell</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Nushell - A new type of shell</title>
-    <authors>Jonathan Turner, Yehuda Katz, Andrés Robalino, Nushell Contributors</authors>
+    <authors>Jonathan Turner, Yehuda Katz, Andrés Robalino, Nushell Project Developers</authors>
     <projectUrl>https://www.nushell.sh</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e1f9ccab58bbb3818c8b08f2ed977c0cbfae1d87/icons/nushell.png</iconUrl>
-    <copyright>Copyright 2019-2025 Yehuda Katz, Jonathan Turner</copyright>
+    <copyright>Copyright 2019-2025 The Nushell Project Developers</copyright>
     <licenseUrl>https://github.com/nushell/nushell/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/nushell/nushell</projectSourceUrl>
@@ -45,11 +45,10 @@ e.g. `choco install nushell.install --package-parameters="/AddToDesktop"`
 * `/AddToStartMenu` - add entries to the Start Menu for Koodoo Reader.  By default the shortcut will be added for all
 users
 e.g. `choco install nushell.install --package-parameters="/AddToStartMenu"`
-* `/User` - where the user parameter is specified any shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`)
-will only be added for the current user
+* `/User` - install the package for the current user only
+eg. `choco install nushell.install --package-parameters='"/User"'`.  Where the user parameter is specified any shortcuts
+created (using `/AddToDesktop` or `/AddToStartMenu`) will only be added for the current user
 e.g. `choco install nushell.install --package-parameters="/AddToDesktop /User"`
-
-To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ## Notes
 

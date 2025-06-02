@@ -34,8 +34,6 @@ e.g. `choco install nushell.install --package-parameters="/AddToStartMenu"`
 will only be added for the current user
 e.g. `choco install nushell.install --package-parameters="/AddToDesktop /User"`
 
-To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
-
 ## Notes
 
 * Nushell only provides a 64-bit version
