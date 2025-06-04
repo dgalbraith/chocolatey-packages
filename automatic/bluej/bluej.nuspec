@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bluej</id>
-    <version>5.4.2</version>
+    <version>5.5.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/bluej</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>BlueJ - Beginners Java Development Environment</title>
