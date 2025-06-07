@@ -10,19 +10,19 @@ be verified by:
 
   https://github.com/beekeeper-studio/beekeeper-studio/releases
 
-and download the application Beekeeper-Studio-5.2.10-portable.exe using
+and download the application Beekeeper-Studio-5.2.12-portable.exe using
 the links in the relevant assets section of the page.
 
 Alternatively the application can be downloaded directly from
 
-https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.2.10/Beekeeper-Studio-5.2.10-portable.exe
+https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.2.12/Beekeeper-Studio-5.2.12-portable.exe
 
 2. The application can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Beekeeper-Studio-5.2.10-portable.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Beekeeper-Studio-5.2.10-portable.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 Beekeeper-Studio-5.2.12-portable.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f Beekeeper-Studio-5.2.12-portable.exe
 
-  File64:     Beekeeper-Studio-5.2.10-portable.exe
+  File64:     Beekeeper-Studio-5.2.12-portable.exe
   Type64:     sha256
-  Checksum64: 3F798D377A512C1D204480969E8A268E8D9FC803BE7B69915233FC2FBCAFC17E
+  Checksum64: B7E205F93173964BA878CB2A315BE654E94A98ED0041FF55150DE74403BA075D
 
 Contents of file LICENSE.txt is obtained from https://github.com/beekeeper-studio/beekeeper-studio/blob/master/LICENSE.md
