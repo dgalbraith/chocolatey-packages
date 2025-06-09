@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/cyanfish/naps2/releases/tag/v8.1.4
+  https://github.com/cyanfish/naps2/releases/tag/v8.2.0
 
-and download the archive naps2-8.1.4-win-x64.zip using the links in the asset
+and download the archive naps2-8.2.0-win-x64.zip using the links in the asset
 section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/cyanfish/naps2/releases/download/v8.1.4/naps2-8.1.4-win-x64.zip
+  https://github.com/cyanfish/naps2/releases/download/v8.2.0/naps2-8.2.0-win-x64.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-8.1.4-win-x64.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-8.1.4-win-x64.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-8.2.0-win-x64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-8.2.0-win-x64.zip
 
-  File:     naps2-8.1.4-win-x64.zip
+  File:     naps2-8.2.0-win-x64.zip
   Type:     sha256
-  Checksum: 3432447639183A40C8C9190669DBD26601E320C40E409E7CE45852E04B05D333
+  Checksum: 56455677B99E173DAEBA0088B3D5046F515EF96C83F711BED25BCA0ADB017AA1
 
 Contents of file LICENSE.txt is obtained from https://github.com/cyanfish/naps2/blob/master/LICENSE
