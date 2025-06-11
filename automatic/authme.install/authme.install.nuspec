@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>authme.install</id>
-    <version>6.1.0</version>
+    <version>6.1.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/authme</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Authme (Install) - Simple 2FA Desktop Application</title>
