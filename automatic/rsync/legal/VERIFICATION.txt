@@ -10,18 +10,18 @@ be verified by:
 
   https://itefix.net/cwrsync/client/downloads
 
-and download the archive cwrsync_6.4.2_x64_free.zip using the link on the page.
+and download the archive cwrsync_6.4.3_x64_free.zip using the link on the page.
 
 Alternatively the archive can be downloaded directly from
-  https://itefix.net/download/free/cwrsync_6.4.2_x64_free.zip
+  https://itefix.net/download/free/cwrsync_6.4.3_x64_free.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 cwrsync_6.4.2_x64_free.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f cwrsync_6.4.2_x64_free.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 cwrsync_6.4.3_x64_free.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f cwrsync_6.4.3_x64_free.zip
 
-  File:     cwrsync_6.4.2_x64_free.zip
+  File:     cwrsync_6.4.3_x64_free.zip
   Type:     sha256
-  Checksum: 623B65AA157C0BEEF8CFA8026FFC4E671BBB20291821273300BBBFD7FE61AF95
+  Checksum: 9A97C32C3756952CE370E19D5286BAC517B1D261D0BE89721005A365AE1C91ED
 
 Contents of file LICENSE.txt is obtained from https://itefix.net/simplified-bsd-license as referenced
 from https://www.itefix.net/cwrsync/client/releases.
