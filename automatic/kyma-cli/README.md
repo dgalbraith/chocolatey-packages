@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/kyma-project/kyma-cli)](https://github.com/kyma-project/cli/blob/master/LICENCE/)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/version-3.0.0-blue)](https://github.com/kyma-project/cli/releases/tags/3.0.0)
+[![Software version](https://img.shields.io/badge/version-3.0.1-blue)](https://github.com/kyma-project/cli/releases/tags/3.0.1)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/kyma-cli?label=Chocolatey)](https://chocolatey.org/packages/kyma-cli)
 
 [Kyma CLI](https://github.com/kyma-project/cli) is a command line tool that supports [Kyma](https://kyma-project.io/) developers. It provides a set of commands you can use to install and manage [Kyma](https://kyma-project.io/).
