@@ -10,19 +10,19 @@ be verified by:
 
   https://github.com/AlDanial/cloc/releases/
 
-and download the file cloc-2.04.exe using the links on the page.
+and download the file cloc-2.06.exe using the links on the page.
 
 Alternatively the file can be downloaded directly from
 
-  https://github.com/AlDanial/cloc/releases/download/2.04/cloc-2.04.exe
+  https://github.com/AlDanial/cloc/releases/download/2.06/cloc-2.06.exe
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 cloc-2.04.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f cloc-2.04.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 cloc-2.06.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f cloc-2.06.exe
 
-  File:     cloc-2.04.exe
+  File:     cloc-2.06.exe
   Type:     sha256
-  Checksum: 89CDA0038BF4E13C6C13EBC1E60BEC4DFAD362E69AC8A5B8E2D5EBE3020359E1
+  Checksum: E65A631E3A981B86537D1278028857B2BB799E6E80EF2D11B477BDDBF84B2DEE
 
 
 Contents of file LICENSE.txt is obtained from https://github.com/AlDanial/cloc/blob/master/LICENSE
