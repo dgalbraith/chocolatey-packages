@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://sqlite.org/copyright.html)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v3.50.1-blue)](https://sqlite.org)
+[![Software version](https://img.shields.io/badge/Source-v3.50.2-blue)](https://sqlite.org)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/sqlite.analyzer?label=Chocolatey)](https://chocolatey.org/packages/sqlite.analyzer)
 
 SQLite Analyzer is a command-line utility program that measures and displays how much and how efficiently space is used
