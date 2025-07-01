@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-spring-boot</id>
-    <version>1.64.2025062800</version>
+    <version>1.64.2025070100</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-spring-boot</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Spring Boot Tools VSCode Extension</title>

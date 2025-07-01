@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'mame0277b_64bit.exe'
+$archive  = Join-Path $toolsDir 'mame0278b_64bit.exe'
 
 $pp = Get-PackageParameters
 
