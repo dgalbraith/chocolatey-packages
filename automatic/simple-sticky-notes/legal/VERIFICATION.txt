@@ -22,6 +22,6 @@ Alternatively the installer can be downloaded directly from
 
   File:     Setup_SimpleStickyNotes.exe
   Type:     sha256
-  Checksum: 27AE4FDE0A1CBAF80822B0AAF69D40DAD1731550F435FED46E9504C4682F2E85
+  Checksum: 3006B9FB069A87000132444CEA02BD4B45F76D8C96C4C0DDFDC8AC7C0C022861
 
 Contents of file LICENSE.txt is obtained from https://www.simplestickynotes.com/eula
