@@ -16,3 +16,5 @@ Get-ItemProperty -Path @( 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentV
                                                  -SilentArgs "$($silentArgs)" `
                                                  -File "$($_.UninstallString.Replace('"',''))" `
                                                  -ValidExitCodes $validExitCodes }
+
+Uninstall-BinFile -Name 'mc'
