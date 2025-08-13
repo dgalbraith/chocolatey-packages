@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>authme.portable</id>
-    <version>6.1.2</version>
+    <version>6.2.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/authme</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Authme - Simple 2FA Desktop Application</title>
