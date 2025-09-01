@@ -5,7 +5,7 @@ if ((Get-ProcessorBits 32) -or $env:ChocolateyForceX86 -eq 'true') {
 }
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'naps2-8.2.0-win-x64.zip'
+$archive  = Join-Path $toolsDir 'naps2-8.2.1-win-x64.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
