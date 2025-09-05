@@ -10,20 +10,20 @@ be verified by:
 
   https://www.jetbrains.com/dotcover/download/#section=commandline
 
-and download the archive JetBrains.dotCover.CommandLineTools.2025.2.0.1.tar.gz
+and download the archive JetBrains.dotCover.CommandLineTools.2025.2.1.tar.gz
 using the download button.
 
 Alternatively the installer can be downloaded directly from
 
-  https://download.jetbrains.com/resharper/dotUltimate.2025.2.0.1/JetBrains.dotCover.CommandLineTools.2025.2.0.1.tar.gz
+  https://download.jetbrains.com/resharper/dotUltimate.2025.2.1/JetBrains.dotCover.CommandLineTools.2025.2.1.tar.gz
 
 2. The archives can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 JetBrains.dotCover.CommandLineTools.2025.2.0.1.tar.gz
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f JetBrains.dotCover.CommandLineTools.2025.2.0.1.tar.gz
-  - Download the checksums from https://download.jetbrains.com/resharper/dotUltimate.2025.2.0.1/JetBrains.dotCover.CommandLineTools.2025.2.0.1.tar.gz.sha256
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 JetBrains.dotCover.CommandLineTools.2025.2.1.tar.gz
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f JetBrains.dotCover.CommandLineTools.2025.2.1.tar.gz
+  - Download the checksums from https://download.jetbrains.com/resharper/dotUltimate.2025.2.1/JetBrains.dotCover.CommandLineTools.2025.2.1.tar.gz.sha256
 
-  File:         JetBrains.dotCover.CommandLineTools.2025.2.0.1.tar.gz
+  File:         JetBrains.dotCover.CommandLineTools.2025.2.1.tar.gz
   ChecksupType: sha256
-  Checksum:     0C264C0BCF73480E35AEB93BD1B7FB2BE74AD80FECE83F778BADA975C632530B
+  Checksum:     1FFAC737C1CF4410BEA4B81206EC1E6C112A752E6B39408EF791AE79137FAB61
 
 Contents of file LICENSE.txt is obtained from https://www.jetbrains.com/legal/agreements/user.html
