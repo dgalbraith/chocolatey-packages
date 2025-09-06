@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>iasl</id>
-    <version>2025.04.04</version>
+    <version>2025.08.07</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/iasl</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>iASL Compiler and ACPI Tools</title>
