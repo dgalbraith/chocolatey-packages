@@ -40,3 +40,7 @@ $packageArgs = @{
 }
 
 Install-ChocolateyInstallPackage @packageArgs
+
+# Create Shim
+$exePath = Join-Path "$env:ProgramFiles\Midnight Commander" 'mc.exe'
+Install-BinFile -Name 'mc' -Path $exePath
