@@ -2,7 +2,7 @@
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$installer = Join-Path $toolsDir 'dbgate-6.6.3-win_x64.exe'
+$installer = Join-Path $toolsDir 'dbgate-6.6.4-win_x64.exe'
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
