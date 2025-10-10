@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/mongodb/mongodb-cli)](https://github.com/mongodb/mongodb-cli/blob/main/LICENSE)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v2.0.4-blue)](https://github.com/mongodb/mongodb-cli/releases/tag/mongocli/v2.0.4)
+[![Software version](https://img.shields.io/badge/Source-v2.0.6-blue)](https://github.com/mongodb/mongodb-cli/releases/tag/mongocli/v2.0.6)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/mongodb-cli?label=Chocolatey)](https://chocolatey.org/packages/mongodb-cli)
 
 The MongoDB CLI is a modern command line interface that enables you to manage your MongoDB services
