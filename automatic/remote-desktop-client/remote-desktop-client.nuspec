@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>remote-desktop-client</id>
-    <version>1.2.6597.0</version>
+    <version>1.2.6599.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/remote-desktop-client</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Remote Desktop Client (MSRDC)</title>
