@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-java-dependency</id>
-    <version>0.26.2025101705</version>
+    <version>0.26.2025102014</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-java-dependency</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Java Dependency Viewer VSCode Extension</title>
