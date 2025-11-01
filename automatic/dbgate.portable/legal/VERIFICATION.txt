@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/dbgate/dbgate/releases/tag/v6.6.7
+  https://github.com/dbgate/dbgate/releases/tag/v6.6.9
 
-and download the archive dbgate-6.6.7-win_x64.zip using the links in the relevant
+and download the archive dbgate-6.6.9-win_x64.zip using the links in the relevant
 asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/dbgate/dbgate/releases/download/v6.6.7/dbgate-6.6.7-win_x64.zip
+  https://github.com/dbgate/dbgate/releases/download/v6.6.9/dbgate-6.6.9-win_x64.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 dbgate-6.6.7-win_x64.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f dbgate-6.6.7-win_x64.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 dbgate-6.6.9-win_x64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f dbgate-6.6.9-win_x64.zip
 
-  File:     dbgate-6.6.7-win_x64.zip
+  File:     dbgate-6.6.9-win_x64.zip
   Type:     sha256
-  Checksum: 93FCCE997ED7E42D1527D91C2C0974A5649FA6E244554D59CB4AC6846B9749FF
+  Checksum: 1806CBF1E39C7F99D67E997740EFA26A6A7AC0C30CB40E8C7E42530C4041E506
 
 Contents of file LICENSE.txt is obtained from https://github.com/dbgate/dbgate/blob/master/LICENSE
