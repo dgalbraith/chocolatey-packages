@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-Simplified%20BSD-green.svg)](https://itefix.net/simplified-bsd-license)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v6.4.5-blue.svg)](https://www.itefix.net/cwrsync/client)
+[![Software version](https://img.shields.io/badge/Source-v6.4.6-blue.svg)](https://www.itefix.net/cwrsync/client)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/rsync?label=Chocolatey)](https://chocolatey.org/packages/rsync)
 
 Rsync is a fast and extraordinarily versatile file copying tool for both remote and local files.
