@@ -3,7 +3,7 @@
 [![Software license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/spyder-ide/spyder/blob/master/LICENSE.txt)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v6.1.0-blue.svg)](https://github.com/spyder-ide/spyder/releases/tag/v6.1.0)
+[![Software version](https://img.shields.io/badge/Source-v6.1.1-blue.svg)](https://github.com/spyder-ide/spyder/releases/tag/v6.1.1)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/spyder?label=Chocolatey)](https://chocolatey.org/packages/spyder)
 
 Spyder is an open source, community-developed scientific environment and IDE written in Python, for Python

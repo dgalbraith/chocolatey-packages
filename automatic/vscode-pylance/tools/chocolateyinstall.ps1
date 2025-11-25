@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -extensionId "ms-python.vscode-pylance@2025.9.104"
+Install-VsCodeExtension -extensionId "ms-python.vscode-pylance@2025.10.1"
