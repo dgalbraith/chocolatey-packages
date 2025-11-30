@@ -22,7 +22,7 @@ if ($pp.User) {
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
   SoftwareName   = 'Nushell'
-  File64         = Join-Path $toolsDir 'nu-0.108.0-x86_64-pc-windows-msvc.msi'
+  File64         = Join-Path $toolsDir 'nu-0.109.0-x86_64-pc-windows-msvc.msi'
   FileType       = 'msi'
   SilentArgs     = $silentArgs
   ValidExitCodes = @(0, 3010, 1641)
