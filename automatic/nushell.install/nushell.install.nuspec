@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nushell.install</id>
-    <version>0.109.0</version>
+    <version>0.109.1</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/nushell</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Nushell - A new type of shell</title>
@@ -57,7 +57,7 @@ e.g. `choco install nushell.install --package-parameters="/AddToDesktop /User"`
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/nushell/nushell/releases/tag/0.109.0</releaseNotes>
+    <releaseNotes>https://github.com/nushell/nushell/releases/tag/0.109.1</releaseNotes>
     <dependencies>
     </dependencies>
   </metadata>
