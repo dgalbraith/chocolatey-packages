@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>beekeeper-studio</id>
-    <version>5.4.12</version>
+    <version>5.5.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/beekeeper-studio</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Beekeeper Studio - SQL Editor and Database Manager</title>
@@ -38,9 +38,9 @@
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v5.4.12</releaseNotes>
+    <releaseNotes>https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v5.5.0</releaseNotes>
     <dependencies>
-      <dependency id="beekeeper-studio.install" version="[5.4.12]" />
+      <dependency id="beekeeper-studio.install" version="[5.5.0]" />
     </dependencies>
   </metadata>
   <files>
