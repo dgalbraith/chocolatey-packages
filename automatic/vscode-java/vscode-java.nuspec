@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-java</id>
-    <version>1.51.2025123108</version>
+    <version>1.51.2026010511</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-java</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Java Language Support VSCode Extension</title>
     <authors>Red Hat</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=redhat.java</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@27cefa4e9cecaae41e719fb7ed7564439eb46c46/icons/vscode-java.png</iconUrl>
-    <copyright>Copyright 2016-2025 Red Hat</copyright>
+    <copyright>Copyright 2016-2026 Red Hat</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/redhat.java/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/redhat-developer/vscode-java</projectSourceUrl>
