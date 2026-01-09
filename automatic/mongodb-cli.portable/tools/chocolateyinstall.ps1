@@ -2,7 +2,7 @@
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$archive = Join-Path $toolsDir 'mongocli_2.0.6_windows_x86_64.zip'
+$archive = Join-Path $toolsDir 'mongocli_2.0.7_windows_x86_64.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
