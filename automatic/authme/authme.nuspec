@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>authme</id>
-    <version>6.3.2</version>
+    <version>7.0.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/authme</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Authme - Simple 2FA Desktop Application</title>
@@ -55,7 +55,7 @@ If you find it is out of date by more than a day or two, please contact the main
     </description>
     <releaseNotes>https://github.com/Levminer/authme/blob/dev/CHANGELOG.md</releaseNotes>
     <dependencies>
-      <dependency id="authme.install" version="[6.3.2]" />
+      <dependency id="authme.install" version="[7.0.0]" />
     </dependencies>
   </metadata>
   <files>
