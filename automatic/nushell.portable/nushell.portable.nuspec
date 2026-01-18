@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nushell.portable</id>
-    <version>0.109.1</version>
+    <version>0.110.0</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/nushell</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Nushell - A new type of shell (Portable)</title>
     <authors>Jonathan Turner, Yehuda Katz, Andrés Robalino, Nushell Project Developers</authors>
     <projectUrl>https://www.nushell.sh</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@e1f9ccab58bbb3818c8b08f2ed977c0cbfae1d87/icons/nushell.png</iconUrl>
-    <copyright>Copyright 2019-2025 The Nushell Project Developers</copyright>
+    <copyright>Copyright 2019-2026 The Nushell Project Developers</copyright>
     <licenseUrl>https://github.com/nushell/nushell/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/nushell/nushell</projectSourceUrl>
@@ -56,7 +56,7 @@ e.g. `choco install nushell.install --package-parameters="/AddToDesktop /User"`
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/nushell/nushell/releases/tag/0.109.1</releaseNotes>
+    <releaseNotes>https://github.com/nushell/nushell/releases/tag/0.110.0</releaseNotes>
     <dependencies>
     </dependencies>
   </metadata>
