@@ -4,7 +4,7 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $binArgs = @{
   name = $env:ChocolateyPackageName
-  path = "$toolsDir\cloc-2.06.exe"
+  path = "$toolsDir\cloc-2.08.exe"
 }
 
 Remove-BinFile @binArgs
