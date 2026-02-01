@@ -2,6 +2,6 @@
 
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$executable = Join-Path $toolsDir 'Beekeeper-Studio-5.5.5-portable.exe'
+$executable = Join-Path $toolsDir 'Beekeeper-Studio-5.5.6-portable.exe'
 
 Uninstall-BinFile -Name 'BeekeeperStudio' -Path "$executable"
