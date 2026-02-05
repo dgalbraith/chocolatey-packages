@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rammap</id>
-    <version>1.61</version>
+    <version>1.62</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/rammap</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>RAMMap - Windows Sysinternals</title>
