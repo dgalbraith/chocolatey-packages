@@ -43,8 +43,8 @@ $silentArgs += ($installParams.GetEnumerator() | ForEach-Object { " /$($_.name)=
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/spyder-ide/spyder/releases/download/v6.1.2/Spyder-Windows-x86_64.exe'
-  checksum64     = 'e682b501cb26be8ddd08dcf8e1374c54ebbdf91e32557337629e43f3e5440cf6'
+  url64          = 'https://github.com/spyder-ide/spyder/releases/download/v6.1.3/Spyder-Windows-x86_64.exe'
+  checksum64     = 'ea6bebb450540869c22ccdb330a754e5e246d613036edac6deca2470ae682757'
   checksumType64 = 'sha256'
   fileType       = 'exe'
   silentArgs     = $silentArgs

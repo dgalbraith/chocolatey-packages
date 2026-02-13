@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>spyder</id>
-    <version>6.1.2</version>
+    <version>6.1.3</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/spyder</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Spyder - The Scientific Python Development Environment</title>
     <authors>Spyder Project Contributors</authors>
     <projectUrl>https://www.spyder-ide.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@5785414d03bfed56c0b1c6e3d9a5ce32a043d30d/icons/spyder.png</iconUrl>
-    <copyright>Copyright (c) 2009-2025 Spyder Project Contributors</copyright>
+    <copyright>Copyright (c) 2009-2026 Spyder Project Contributors</copyright>
     <licenseUrl>https://github.com/spyder-ide/spyder/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/spyder-ide/spyder</projectSourceUrl>
@@ -62,7 +62,7 @@ projects with full regex support.
   If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
     ]]></description>
-    <releaseNotes>https://github.com/spyder-ide/spyder/releases/tag/v6.1.2</releaseNotes>
+    <releaseNotes>https://github.com/spyder-ide/spyder/releases/tag/v6.1.3</releaseNotes>
     <dependencies />
   </metadata>
   <files>
