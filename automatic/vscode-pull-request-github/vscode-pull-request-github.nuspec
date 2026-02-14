@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-pull-request-github</id>
-    <version>0.129.2026021304</version>
+    <version>0.129.2026021313</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-pull-request-github</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>GitHub Pull Requests and Issues VSCode Extension</title>
