@@ -2,8 +2,8 @@
 
 $ErrorActionPreference = 'STOP'
 
-$domain   = 'https://openvpn.net'
-$releases = "${domain}/community-downloads"
+$domain   = 'https://build.openvpn.net'
+$releases = "${domain}/downloads/releases/?C=M&O=D"
 
 $reUrl        = '.+?msi$'
 $re32         = '(?-i)OpenVPN.+-x86\.msi'
@@ -43,7 +43,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
-  $urls = $downloadPage.links | where-object href -Match $reUrl | select-object -Expand href
+  $urls = $downloadPage.links | Where-Object { $_.href -match $reUrl } | Select-Object -ExpandProperty href | Where-Object { $_ -notmatch '[-_](beta|rc|alpha)' } | ForEach-Object { "$domain/downloads/releases/$_" }
 
   $url32      = $urls -Match $re32 | select-object -First 1
   $filename32 = $url32 -split '/' | select-object -Last 1
