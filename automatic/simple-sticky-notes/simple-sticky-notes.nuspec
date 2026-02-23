@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>simple-sticky-notes</id>
-    <version>6.8.5</version>
+    <version>6.9</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/simple-sticky-notes</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Simple Sticky Notes</title>
     <authors>Simnet Limited</authors>
     <projectUrl>https://www.simplestickynotes.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@38202fa3453e0d3af40543d0886b8ef12cad3e8d/icons/simple-sticky-notes.png</iconUrl>
-    <copyright>Copyright (c) 2025 Simnet Ltd. All rights reserved.</copyright>
+    <copyright>Copyright (c) 2026 Simnet Ltd. All rights reserved.</copyright>
     <licenseUrl>https://www.simplestickynotes.com/eula</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.simplestickynotes.com/help</docsUrl>

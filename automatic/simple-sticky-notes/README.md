@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/license-freeware-orange)](https://www.simplestickynotes.com/eula)
 [![Maintenance status](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://gitHub.com/dgalbraith/chocolatey-packages/graphs/commit-activity)
 [![AppVeyor build](https://img.shields.io/appveyor/ci/dgalbraith/chocolatey-packages)](https://ci.appveyor.com/project/dgalbraith/chocolatey-packages)
-[![Software version](https://img.shields.io/badge/Source-v6.8.5-blue)](https://www.simplestickynotes.com/)
+[![Software version](https://img.shields.io/badge/Source-v6.9-blue)](https://www.simplestickynotes.com/)
 [![Chocolatey package version](https://img.shields.io/chocolatey/v/simple-sticky-notes?label=Chocolatey)](https://chocolatey.org/packages/simple-sticky-notes)
 
 Simple Sticky Notes is simple, easy-to-use, absolutely free fast and efficent note taking software.
