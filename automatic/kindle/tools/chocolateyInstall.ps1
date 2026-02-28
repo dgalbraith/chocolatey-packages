@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'exe'
-  url           = 'https://kindleforpc.s3.us-east-1.amazonaws.com/70987/KindleForPC-installer-2.8.70987.exe'
-  checksum      = 'f870ee876a40d9957925525bbf96b229a960d6a2fc394e2b03a183d12e0203f0'
+  url           = 'https://kindleforpc.s3.us-east-1.amazonaws.com/70995/KindleForPC-installer-2.8.70995.exe'
+  checksum      = 'e5bda18ad4d57999de18372c94416c99bf85c7183d99ba52b2982df8fbe119e0'
   checksumType  = 'sha256'
   silentArgs    = '/S'
   validExitCodes= @(0)
