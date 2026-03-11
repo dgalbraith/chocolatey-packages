@@ -3,7 +3,7 @@
 Set-Service -Name 'Spooler' -StartupType 'Automatic'
 
 $url      = 'https://s3.amazonaws.com/sendtokindle/SendToKindleForPC-installer.exe'
-$checksum = 'CC688D26FBFD128FB46D72800DBBAE3D307649BDC0C1CC04D738780FB895799B'
+$checksum = '9F828E94884ED1AA2C7634183783538EF5E493402F3C9F6A97F690F47BD045B3'
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
