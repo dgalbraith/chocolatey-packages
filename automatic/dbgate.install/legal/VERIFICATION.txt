@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/dbgate/dbgate/releases/tag/v7.1.5
+  https://github.com/dbgate/dbgate/releases/tag/v7.1.6
 
-and download the installer dbgate-7.1.5-win_x64.exe using the links in the relevant
+and download the installer dbgate-7.1.6-win_x64.exe using the links in the relevant
 asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/dbgate/dbgate/releases/download/v7.1.5/dbgate-7.1.5-win_x64.exe
+  https://github.com/dbgate/dbgate/releases/download/v7.1.6/dbgate-7.1.6-win_x64.exe
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 dbgate-7.1.5-win_x64.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f dbgate-7.1.5-win_x64.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 dbgate-7.1.6-win_x64.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f dbgate-7.1.6-win_x64.exe
 
-  File:     dbgate-7.1.5-win_x64.exe
+  File:     dbgate-7.1.6-win_x64.exe
   Type:     sha256
-  Checksum: 4C03C1E9F71F1B3A92B979F4E937EF0A01C999B0EDC4D6113AD9244C72A912A6
+  Checksum: FF35D2BD880A39E707DE6FF89AF7E2BC04E01C924B32A83948F8410F83C8D714
 
 Contents of file LICENSE.txt is obtained from https://github.com/dbgate/dbgate/blob/master/LICENSE
