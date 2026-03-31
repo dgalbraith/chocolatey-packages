@@ -2,13 +2,13 @@
 
 $toolsDir  = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$archive = Join-Path $toolsDir 'JetBrains.dotCover.CommandLineTools.2025.3.4.tar.gz'
+$archive = Join-Path $toolsDir 'JetBrains.dotCover.CommandLineTools.2026.1.tar.gz'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
   FileFullPath = $archive
   Destination  = $toolsDir
-  Checksum     = '85E8576C513B3DFBCDD38050FAEEC8BCD5FD6B9675207224673EF82EC30A0F1F'
+  Checksum     = '34F872946F28BFB6835F70A99802FAB96079D06CCB58131E8C7573835D1079E5'
   ChecksumType = 'sha256'
 }
 
