@@ -2,7 +2,7 @@
 
 $toolsDir  = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-$archive = Join-Path $toolsDir 'iasl-win-20251212.zip'
+$archive = Join-Path $toolsDir 'iasl-win-20260408.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
