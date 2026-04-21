@@ -10,17 +10,17 @@ and can be verified by:
 
    https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot
 
-and download the extension vmware.vscode-spring-boot-2.2.2026041600.vsix using the Download Extension link
+and download the extension vmware.vscode-spring-boot-2.2.2026042100.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vmware/vsextensions/vscode-spring-boot/2.2.2026041600/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vmware/vsextensions/vscode-spring-boot/2.2.2026042100/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash Pivotal.vscode-spring-boot-2.2.2026041600.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Pivotal.vscode-spring-boot-2.2.2026041600.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash Pivotal.vscode-spring-boot-2.2.2026042100.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f Pivotal.vscode-spring-boot-2.2.2026042100.vsix
 
   Type:     sha256
-  Checksum: B22D92D7EC180E367494266FDE574BEA51759CFA0CEFD70DF05E7E00B07823FA
+  Checksum: 053D4BD717A7B823D16C77AE9217A62728A54A2FBC84CCAB22EDAEA1B97AD8CD
 
   Contents of LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vmware.vscode-spring-boot/license
