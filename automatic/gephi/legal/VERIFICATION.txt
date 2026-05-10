@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/gephi/gephi/releases/tag/v0.11.1
+  https://github.com/gephi/gephi/releases/tag/v0.11.2
 
-and download the installer gephi-0.11.1-windows-x64.exe using the relevant links in
+and download the installer gephi-0.11.2-windows-x64.exe using the relevant links in
 the asset section of the distribution page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://github.com/gephi/gephi/releases/download/v0.11.1/gephi-0.11.1-windows-x64.exe
+  https://github.com/gephi/gephi/releases/download/v0.11.2/gephi-0.11.2-windows-x64.exe
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'gephi-0.11.1-windows-x64.exe
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f gephi-0.11.1-windows-x64.exe
+  - Use powershell function 'gephi-0.11.2-windows-x64.exe
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f gephi-0.11.2-windows-x64.exe
 
-  File:         gephi-0.11.1-windows-x64.exe
+  File:         gephi-0.11.2-windows-x64.exe
   ChecksumType: sha256
-  Checksum:     98D7184242922E044EB12CBF7FF4ED3A9BBC2963AA59968DDEA881EAD462E15B
+  Checksum:     D6FB32D8304F8A5C37E584FAB2CB02699809904D621C5BB8F887CE09839D864A
 
 Contents of file LICENSE.txt is obtained from https://github.com/gephi/gephi/blob/master/modules/application/src/main/app-resources/COPYING.txt
