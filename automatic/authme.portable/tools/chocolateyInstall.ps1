@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
-$archive  = Join-Path $toolsDir 'authme-7.0.0-windows-x64.zip'
+$archive  = Join-Path $toolsDir 'authme-7.1.0-windows-x64.zip'
 
 $pp = Get-PackageParameters
 
