@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=vscjava.maven
 
-and download the extension C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\vscjava.vscode-maven-0.45.2026050103.vsix using the Download Extension link
+and download the extension C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\vscjava.vscode-maven-0.45.2026051303.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-maven/0.45.2026050103/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vscjava/vsextensions/vscode-maven/0.45.2026051303/vspackage
 
 2. The package can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\vscjava.vscode-maven-0.45.2026050103.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\vscjava.vscode-maven-0.45.2026050103.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\vscjava.vscode-maven-0.45.2026051303.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\C:\projects\chocolatey-packages\automatic\vscode-maven\tools\vscjava.vscode-maven-0.45.2026051303.vsix
 
   Type:     sha256
-  Checksum: 5787AEC1ADF3FEAA620E479556EB291FDA74D2045502698D893FF62AD9CD8A22
+  Checksum: A2922B87BD0C15A3D32A2D3222C2A669E12FB8E8055CDB8391421F51BED64935
 
   File LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/vscjava.vscode-maven/license
