@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/Coreinfo.zip'
-  checksum      = 'b7e10a0cc124991fab2d0f99bf7d9ed6b8fb3f78795a78969394c8a14ba07357'
+  checksum      = '5de9656002628025bef65c83838bba14263c033106ac54d58c100df859278c2f'
   checksumType  = 'sha256'
 }
 
