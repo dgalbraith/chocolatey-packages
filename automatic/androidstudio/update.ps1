@@ -35,7 +35,7 @@ function global:au_GetLatest {
     $filename = $url -split '/' | Select-Object -Last 1
 
     $updateYear = (Get-Date).ToString('yyyy')
-    $version   = $url -split '-' | Select-Object -Last 1 -Skip 1
+    $version   = $url -split '/' | Where-Object { $_ -match '^\d+\.\d+\.\d+\.\d+$' } | Select-Object -Last 1
 
     return @{
       Url64      = $url
