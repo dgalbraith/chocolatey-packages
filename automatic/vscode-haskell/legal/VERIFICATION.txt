@@ -10,18 +10,18 @@ and can be verified by:
 
   https://marketplace.visualstudio.com/items?itemName=haskell.haskell
 
-and download the extension haskell.haskell-2.8.1.vsix using the Download Extension link
+and download the extension haskell.haskell-2.8.2.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/haskell/vsextensions/haskell/2.8.1/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/haskell/vsextensions/haskell/2.8.2/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash haskell.haskell-2.8.1.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hhaskell.haskell-2.8.1.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash haskell.haskell-2.8.2.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hhaskell.haskell-2.8.2.vsix
 
   Type:     sha256
-  Checksum: 980944CB96BCDC1461521036D802A178FE8F3E97DBADD193E87B1329B170258B
+  Checksum: 75A4C16934A6CAD00D792FE877110BA9CE0607B15E05AEBA9F514350A20394A7
 
   Contents of the file LICENSE.txt is obtained from https://marketplace.visualstudio.com/items/haskell.haskell/license
