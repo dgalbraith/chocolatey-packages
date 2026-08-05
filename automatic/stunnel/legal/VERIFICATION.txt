@@ -10,18 +10,18 @@ be verified by:
 
   https://www.stunnel.org/downloads.html
 
-and download the installer stunnel-5.79-win64-installer.exe using the links in the relevant assets section of the page.
+and download the installer stunnel-5.80-win64-installer.exe using the links in the relevant assets section of the page.
 
 Alternatively the installer can be downloaded directly from
 
-  https://www.stunnel.org/downloads/stunnel-5.79-win64-installer.exe
+  https://www.stunnel.org/downloads/stunnel-5.80-win64-installer.exe
 
 2. The installer can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm stunnel-5.79-win64-installer.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f stunnel-5.79-win64-installer.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm stunnel-5.80-win64-installer.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f stunnel-5.80-win64-installer.exe
 
-  File64:     stunnel-5.79-win64-installer.exe
+  File64:     stunnel-5.80-win64-installer.exe
   Type64:     sha256
-  Checksum64: 3D946E9759D5A6C6FC5AADB6B56E7DE1A81D210AD028235340616E471AFEB6F6
+  Checksum64: 25947BD268E2E670E1C7F915CEFD54585AAA440D09EB20C6109CDBEAF3140BC4
 
 Contents of file LICENSE.txt is obtained from https://www.stunnel.org/COPYING.html
