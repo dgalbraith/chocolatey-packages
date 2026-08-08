@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\vmware.vscode-spring-boot-2.4.2026080600.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\vmware.vscode-spring-boot-2.4.2026080800.vsix"
