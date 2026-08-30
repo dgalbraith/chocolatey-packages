@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>winaero</id>
+    <version>0.0.0.0</version>
+    <owners>bcurran3,dgalbraith</owners>
+    <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/manual/winaero-tweaker</packageSourceUrl>
+    <title>Winaero</title>
+    <authors>Sergey Tkachenko</authors>
+    <projectUrl>http://winaero.com/index.php</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/winaero-tweaker/winaero-tweaker_icon.png</iconUrl>
+    <copyright>© Winaero.com</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://winaero.com/blog/winaero-tweaker-faq/</docsUrl>
+    <bugTrackerUrl>http://winaero.com/comment.php?comment.news.1836</bugTrackerUrl>
+    <tags>winaero tweaker windows aero system utility</tags>
+    <summary>Winaero Tweaker allows you to customize the appearance and behavior of the operating system in a flexible way.</summary>
+    <description></description>
+    <dependencies>
+      <dependency id="" version="" />
+    </dependencies>
+    <releaseNotes>https://winaero.com/blog/winaero-tweaker-0-15-is-here-with-fixes-and-improvements/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="" target="" />
+  </files>
+</package>
