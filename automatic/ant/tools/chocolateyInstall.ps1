@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-$archive  = Join-Path $toolsDir 'apache-ant-1.10.17-bin.zip'
+$archive  = Join-Path $toolsDir 'apache-ant-1.10.18-bin.zip'
 
 $unzipArgs = @{
   PackageName  = $env:ChocolateyPackageName
