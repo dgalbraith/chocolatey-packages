@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\hediet.vscode-drawio-1.11.260924036.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\hediet.vscode-drawio-1.11.260926037.vsix"
