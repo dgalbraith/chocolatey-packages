@@ -8,21 +8,21 @@ be verified by:
 
 1. Go to the binary distribution page
 
-  https://github.com/mongodb/mongodb-cli/releases/tag/mongocli/v2.0.8
+  https://github.com/mongodb/mongodb-cli/releases/tag/mongocli/v2.0.9
 
-and download the archive mongocli_2.0.8_windows_x86_64.zip using the links in the relevant
+and download the archive mongocli_2.0.9_windows_x86_64.zip using the links in the relevant
 asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/mongodb/mongodb-cli/releases/download/mongocli/v2.0.8/mongocli_2.0.8_windows_x86_64.zip
+  https://github.com/mongodb/mongodb-cli/releases/download/mongocli/v2.0.9/mongocli_2.0.9_windows_x86_64.zip
 
 2. The archive can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mongocli_2.0.8_windows_x86_64.zip
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f mongocli_2.0.8_windows_x86_64.zip
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 mongocli_2.0.9_windows_x86_64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f mongocli_2.0.9_windows_x86_64.zip
 
-  File:     mongocli_2.0.8_windows_x86_64.zip
+  File:     mongocli_2.0.9_windows_x86_64.zip
   Type:     sha256
-  Checksum: C8E4EDC726838122B170D5D93E25FB6B09F9BDE3CA840BE1A6258490427D8F91
+  Checksum: BF550C2FC2DD7D160A683743EF4CB3E9D4448C0BB1316809CD8F66040A407B03
 
 Contents of file LICENSE.txt is obtained from https://github.com/mongodb/mongocli/blob/master/LICENSE
