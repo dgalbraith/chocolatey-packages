@@ -42,8 +42,7 @@ if ($pp.count -gt 0) {
         $local += 'Drivers.TAPWindows6'
       }
       'WintunDriver' {
-        Write-Verbose('The layer 3 TUN driver will be installed')
-        $local += 'Drivers.Wintun'
+        Write-Warning('The Wintun driver is no longer distributed with OpenVPN as of version 2.7 - /WintunDriver will be ignored')
       }
       'PLAP' {
 	      Write-Verbose('Pre-Logon Access-Provider will be activated')
@@ -80,7 +79,7 @@ if ($pp.count -gt 0) {
   }
 } else {
   Write-Verbose('No parameters supplied - constructing a default parameter set')
-  $local = @('OpenVPN.GUI','OpenVPN.Documentation','OpenVPN.SampleCfg','OpenVPN','OpenVPN.GUI.OnLogon','Drivers.OvpnDco','Drivers.TAPWindows6','Drivers','Drivers.Wintun','OpenSSL')
+  $local = @('OpenVPN.GUI','OpenVPN.Documentation','OpenVPN.SampleCfg','OpenVPN','OpenVPN.GUI.OnLogon','Drivers.OvpnDco','Drivers.TAPWindows6','Drivers','OpenSSL')
 }
 
 $silentArgs += " ADDLOCAL=`"{0}`"" -f ($local -join ",")

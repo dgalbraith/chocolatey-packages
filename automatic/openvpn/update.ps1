@@ -45,15 +45,20 @@ function global:au_GetLatest {
 
   $urls = $downloadPage.links | Where-Object { $_.href -match $reUrl } | Select-Object -ExpandProperty href | Where-Object { $_ -notmatch '[-_](beta|rc|alpha)' } | ForEach-Object { "$domain/downloads/releases/$_" }
 
-  $url32      = $urls -Match $re32 | select-object -First 1
-  $filename32 = $url32 -split '/' | select-object -Last 1
-
-  $url64      = $urls -Match $re64 | select-object -First 1
+  # releases for multiple version lines (eg. 2.6 and 2.7) are interleaved on the page so select by version rather than date
+  $url64 = $urls -Match $re64 | Sort-Object -Unique -Descending -Property {
+    $null = ($_ -split '/' | Select-Object -Last 1) -match $reVersion
+    [version]('{0}.{1}.{2}.{3}' -f $Matches.Major, $Matches.Minor, $Matches.Patch, [int]$Matches.Increment)
+  } | Select-Object -First 1
   $fileName64 = $url64 -split '/' | select-object -Last 1
 
-  $fileName64 -match $reVersion
+  $null = $fileName64 -match $reVersion
   $tag     = '{0}.{1}.{2}'     -f $Matches.Major, $Matches.Minor, $Matches.Patch
   $version = '{0}.{1}.{2}.{3}' -f $Matches.Major, $Matches.Minor, $Matches.Patch, $Matches.Increment
+  $release = $Matches[0]
+
+  $url32      = $urls -Match $re32 | Where-Object { $_ -like "*-$release-x86.msi" } | select-object -First 1
+  $filename32 = $url32 -split '/' | select-object -Last 1
 
   return @{
     Url32        = $url32
