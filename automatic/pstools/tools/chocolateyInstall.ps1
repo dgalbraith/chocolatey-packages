@@ -22,7 +22,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/PSTools.zip'
-  checksum      = '2b10b3d9dae0403b06d90b13bfb53e723a8b14a788f78cdfd43a445d8991415e'
+  checksum      = 'c26c6ba44997e650a733df257c8feb83898d3faef2d2e391869d107e40863553'
   checksumType  = 'sha256'
 }
 

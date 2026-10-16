@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = 'https://download.sysinternals.com/files/Sigcheck.zip'
-  checksum      = 'b8a41256612b7d9c8821fb4d71e24d314c8f631118d076be601b7df90ef4cf7b'
+  checksum      = '8756099c1ce3d3f450245c0d4b39aeb5b29309f56bf77f8c18f1469c418abf12'
   checksumType  = 'sha256'
 }
 
