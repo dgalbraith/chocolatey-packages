@@ -5,6 +5,9 @@ $ErrorActionPreference = 'STOP'
 $domain   = 'https://build.openvpn.net'
 $releases = "${domain}/downloads/releases/?C=M&O=D"
 
+# oldest release line maintained as a stream - newer lines are added automatically
+$minStream = [version]'2.6'
+
 $reUrl        = '.+?msi$'
 $re32         = '(?-i)OpenVPN.+-x86\.msi'
 $re64         = '(?-i)OpenVPN.+-amd64\.msi'
@@ -45,30 +48,38 @@ function global:au_GetLatest {
 
   $urls = $downloadPage.links | Where-Object { $_.href -match $reUrl } | Select-Object -ExpandProperty href | Where-Object { $_ -notmatch '[-_](beta|rc|alpha)' } | ForEach-Object { "$domain/downloads/releases/$_" }
 
-  # releases for multiple version lines (eg. 2.6 and 2.7) are interleaved on the page so select by version rather than date
-  $url64 = $urls -Match $re64 | Sort-Object -Unique -Descending -Property {
+  # releases for each line (eg. 2.6 and 2.7) are interleaved on the page so select by version rather than date, with a
+  # stream per release line from $minStream onwards - new lines are added on their first final release
+  $releases64 = $urls -Match $re64 | Sort-Object -Unique | ForEach-Object {
     $null = ($_ -split '/' | Select-Object -Last 1) -match $reVersion
-    [version]('{0}.{1}.{2}.{3}' -f $Matches.Major, $Matches.Minor, $Matches.Patch, [int]$Matches.Increment)
-  } | Select-Object -First 1
-  $fileName64 = $url64 -split '/' | select-object -Last 1
+    [pscustomobject]@{
+      Url     = $_
+      Release = $Matches[0]
+      Stream  = '{0}.{1}'         -f $Matches.Major, $Matches.Minor
+      Tag     = '{0}.{1}.{2}'     -f $Matches.Major, $Matches.Minor, $Matches.Patch
+      Version = '{0}.{1}.{2}.{3}' -f $Matches.Major, $Matches.Minor, $Matches.Patch, $Matches.Increment
+      Order   = [version]('{0}.{1}.{2}.{3}' -f $Matches.Major, $Matches.Minor, $Matches.Patch, [int]$Matches.Increment)
+    }
+  } | Where-Object { [version]$_.Stream -ge $minStream }
 
-  $null = $fileName64 -match $reVersion
-  $tag     = '{0}.{1}.{2}'     -f $Matches.Major, $Matches.Minor, $Matches.Patch
-  $version = '{0}.{1}.{2}.{3}' -f $Matches.Major, $Matches.Minor, $Matches.Patch, $Matches.Increment
-  $release = $Matches[0]
+  $streams = [ordered]@{}
 
-  $url32      = $urls -Match $re32 | Where-Object { $_ -like "*-$release-x86.msi" } | select-object -First 1
-  $filename32 = $url32 -split '/' | select-object -Last 1
+  $releases64 | Group-Object Stream | Sort-Object { [version]$_.Name } -Descending | ForEach-Object {
+    $newest = $_.Group | Sort-Object Order -Descending | Select-Object -First 1
+    $url32  = $urls -Match $re32 | Where-Object { $_ -like "*-$($newest.Release)-x86.msi" } | Select-Object -First 1
 
-  return @{
-    Url32        = $url32
-    Url64        = $url64
-    FileName32   = $fileName32
-    FileName64   = $fileName64
-    Tag          = $tag
-    Version      = $version
-    ChecksumType = 'sha512'
+    $streams.Add($_.Name, @{
+      Url32        = $url32
+      Url64        = $newest.Url
+      FileName32   = ($url32 -split '/' | Select-Object -Last 1)
+      FileName64   = ($newest.Url -split '/' | Select-Object -Last 1)
+      Tag          = $newest.Tag
+      Version      = $newest.Version
+      ChecksumType = 'sha512'
+    })
   }
+
+  return @{ Streams = $streams }
 }
 
 update -ChecksumFor none -NoReadme

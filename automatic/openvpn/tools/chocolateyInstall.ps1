@@ -7,12 +7,28 @@ $file64 = Join-Path $toolsDir 'OpenVPN-2.7.8-I001-amd64.msi'
 
 $silentArgs = '/qn /norestart'
 
+# returns the names of the features provided by an MSI installer
+function Get-MsiFeature([string] $Path) {
+  $installer = New-Object -ComObject WindowsInstaller.Installer
+  $database  = $installer.GetType().InvokeMember('OpenDatabase', 'InvokeMethod', $null, $installer, @($Path, 0))
+  $view      = $database.GetType().InvokeMember('OpenView', 'InvokeMethod', $null, $database, @('SELECT `Feature` FROM `Feature`'))
+  $view.GetType().InvokeMember('Execute', 'InvokeMethod', $null, $view, $null) | Out-Null
+
+  while ($record = $view.GetType().InvokeMember('Fetch', 'InvokeMethod', $null, $view, $null)) {
+    $record.GetType().InvokeMember('StringData', 'GetProperty', $null, $record, 1)
+  }
+
+  $view.GetType().InvokeMember('Close', 'InvokeMethod', $null, $view, $null) | Out-Null
+  $view, $database, $installer | ForEach-Object { [void][System.Runtime.InteropServices.Marshal]::ReleaseComObject($_) }
+}
+
 $pp = Get-PackageParameters
 
 $addToDesktop = $false
 $noStartMenu  = $false
 
-$local = @()
+$local    = @()
+$defaults = $false
 
 if ($pp.count -gt 0) {
   $pp.GetEnumerator() | foreach-object {
@@ -42,7 +58,8 @@ if ($pp.count -gt 0) {
         $local += 'Drivers.TAPWindows6'
       }
       'WintunDriver' {
-        Write-Warning('The Wintun driver is no longer distributed with OpenVPN as of version 2.7 - /WintunDriver will be ignored')
+        Write-Verbose('The layer 3 TUN driver will be installed')
+        $local += 'Drivers.Wintun'
       }
       'PLAP' {
 	      Write-Verbose('Pre-Logon Access-Provider will be activated')
@@ -79,7 +96,28 @@ if ($pp.count -gt 0) {
   }
 } else {
   Write-Verbose('No parameters supplied - constructing a default parameter set')
-  $local = @('OpenVPN.GUI','OpenVPN.Documentation','OpenVPN.SampleCfg','OpenVPN','OpenVPN.GUI.OnLogon','Drivers.OvpnDco','Drivers.TAPWindows6','Drivers','OpenSSL')
+  $local    = @('OpenVPN.GUI','OpenVPN.Documentation','OpenVPN.SampleCfg','OpenVPN','OpenVPN.GUI.OnLogon','Drivers.OvpnDco','Drivers.TAPWindows6','Drivers','Drivers.Wintun','OpenSSL')
+  $defaults = $true
+}
+
+# features differ between release lines (eg. Wintun was removed in 2.7) - skip any not provided by the installer
+$file = if ((Get-OSArchitectureWidth 64) -and ($env:ChocolateyForceX86 -ne 'true')) { $file64 } else { $file32 }
+
+try {
+  $available = @(Get-MsiFeature -Path $file)
+} catch {
+  Write-Warning("Unable to read the features provided by $file - requested features will not be validated: $_")
+}
+
+if ($available) {
+  $missing = @($local | Where-Object { ($_ -match '^[\w.]+$') -and ($available -notcontains $_) })
+
+  foreach ($feature in $missing) {
+    $message = "The $feature feature is not provided by OpenVPN $env:ChocolateyPackageVersion and will not be installed"
+    if ($defaults) { Write-Verbose($message) } else { Write-Warning($message) }
+  }
+
+  $local = @($local | Where-Object { $missing -notcontains $_ })
 }
 
 $silentArgs += " ADDLOCAL=`"{0}`"" -f ($local -join ",")
