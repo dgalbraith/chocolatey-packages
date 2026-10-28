@@ -2,4 +2,4 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-VsCodeExtension -extensionId "$toolsDir\redhat.java-1.59.2026102408.vsix"
+Install-VsCodeExtension -extensionId "$toolsDir\redhat.java-1.59.2026102708.vsix"
