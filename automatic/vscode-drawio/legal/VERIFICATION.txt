@@ -10,18 +10,18 @@ and can be verified by:
 
    https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
 
-and download the extension hediet.vscode-drawio-1.17.261027058.vsix using the Download Extension link
+and download the extension hediet.vscode-drawio-1.18.261030061.vsix using the Download Extension link
 in the Resources section of the sidebar.
 
 Alternatively the package can be downloaded directly from
 
-  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vsciot-vscode/vsextensions/vscode-drawio/1.17.261027058/vspackage
+  https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vsciot-vscode/vsextensions/vscode-drawio/1.18.261030061/vspackage
 
 2. The extension can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash hediet.vscode-drawio-1.17.261027058.vsix
-  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hediet.vscode-drawio-1.17.261027058.vsix
+  - Use powershell function 'Get-Filehash' - Get-Filehash hediet.vscode-drawio-1.18.261030061.vsix
+  - Use chocolatey utility 'checksum.exe' - checksum -t sha256 -f hediet.vscode-drawio-1.18.261030061.vsix
 
   Type:     sha256
-  Checksum: 2BF971D1FAEA54924BBEB100FABBC1239D228D6EF5EE1C0B33D03F42C8B9D87E
+  Checksum: A9DDE9F7EBA282314A9ECC0EBF981A607CD7A68B9E270335B11F62F77A4316D4
 
   Contents of LICENSE.txt is obtained from https://github.com/hediet/vscode-drawio/blob/master/LICENSE.md
