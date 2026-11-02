@@ -16,7 +16,7 @@ $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
   FileType       = 'msi'
   SoftwareName   = 'NAPS2'
-  File64         = Join-Path $toolsDir 'naps2-8.1.4-win-x64.zip'
+  File64         = Join-Path $toolsDir 'naps2-8.6.0-win-x64.msi'
   SilentArgs     = $silentArgs
   ValidExitCodes = @(0, 1641, 3010)
 }
