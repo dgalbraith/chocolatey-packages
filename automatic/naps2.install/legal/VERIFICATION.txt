@@ -10,18 +10,18 @@ be verified by:
 
   https://github.com/cyanfish/naps2/releases/tag/v8.6.0
 
-and download the installer naps2-8.6.0-win-x64.msi using
+and download the installer naps2-8.6.0-win-x64.zip using
 the links in the asset section of the page.
 
 Alternatively the build can be downloaded directly from
 
-  https://github.com/cyanfish/naps2/releases/download/v8.6.0/naps2-8.6.0-win-x64.msi
+  https://github.com/cyanfish/naps2/releases/download/v8.6.0/naps2-8.6.0-win-x64.zip
 
 2. The installer can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-8.6.0-win-x64.msi
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-8.6.0-win-x64.msi
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 naps2-8.6.0-win-x64.zip
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f naps2-8.6.0-win-x64.zip
 
-  File:     naps2-8.6.0-win-x64.msi
+  File:     naps2-8.6.0-win-x64.zip
   Type:     sha256
   Checksum: 37CA3798BFD414AA2D101D64F1F249A05CC6A1710A7F5B90BFE7303EF3537F26
 
