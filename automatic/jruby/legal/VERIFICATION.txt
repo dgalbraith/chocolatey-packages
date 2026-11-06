@@ -10,27 +10,27 @@ be verified by:
 
   https://github.com/jruby/jruby/releases
 
-and download the installer jruby_windows_10_0_7_0.exe or jruby_windows_x64_10_0_7_0.exe using
+and download the installer jruby_windows_10_1_3_0.exe or jruby_windows_x64_10_1_3_0.exe using
 the links in the relevant assets section of the page.
 
 Alternatively the installers can be downloaded directly from
 
-  https://github.com/jruby/jruby/releases/download/10.1.2.0/jruby_windows_10_0_7_0.exe
-  https://github.com/jruby/jruby/releases/download/10.1.2.0/jruby_windows_x64_10_0_7_0.exe
+  https://github.com/jruby/jruby/releases/download/10.1.3.0/jruby_windows_10_1_3_0.exe
+  https://github.com/jruby/jruby/releases/download/10.1.3.0/jruby_windows_x64_10_1_3_0.exe
 
 2. The installer can be validated by comparing checksums
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 jruby_windows_10_0_7_0.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f jruby_windows_10_0_7_0.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 jruby_windows_10_1_3_0.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f jruby_windows_10_1_3_0.exe
 
-  File32:     jruby_windows_10_0_7_0.exe
+  File32:     jruby_windows_10_1_3_0.exe
   Type32:     sha256
-  Checksum32: 06EB761B598CFDBA4F40FABD8A3A005FFED153C446FE6D974FE9674BCD7D1B35
+  Checksum32: 5074C8042B1EEDA589A81BDEB07E5D03FDAAE884A0B273B9880240EDF4CBAA68
 
-  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 jruby_windows_x64_10_0_7_0.exe
-  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f jruby_windows_x64_10_0_7_0.exe
+  - Use powershell function 'Get-Filehash' - Get-Filehash -Algorithm sha256 jruby_windows_x64_10_1_3_0.exe
+  - Use chocolatey utility 'checksum.exe'  - checksum -t sha256 -f jruby_windows_x64_10_1_3_0.exe
 
-  File64:     jruby_windows_x64_10_0_7_0.exe
+  File64:     jruby_windows_x64_10_1_3_0.exe
   Type64:     sha256
-  Checksum64: 0F85D2D12A7CEFF3E394A5B8EF2564F6ADDB714C4B3EB4B593B3CA4A8499508D
+  Checksum64: 15EC4C38E92F5E421D368B7245CBE283B7F4318F3FE06654AD748C63E40B54DC
 
 Contents of file LICENSE.txt is obtained from https://github.com/jruby/jruby/blob/master/COPYING
