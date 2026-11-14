@@ -12,6 +12,26 @@ Get-ChocolateyUnzip @unzipArgs
 
 $pp = Get-PackageParameters
 
+# a shim terminates nu on Ctrl+C rather than letting it handle the signal so prevent
+# chocolatey generating shims for the executables and add the directory to the path instead
+$binDir = Join-Path $env:ChocolateyInstall 'bin'
+
+Get-ChildItem -Path $toolsDir -Recurse -Filter '*.exe' | ForEach-Object {
+  New-Item -ItemType File -Path "$($_.FullName).ignore" -Force | Out-Null
+
+  # shims created by earlier versions are not removed on upgrade - remove those pointing at this package
+  $shim = Join-Path $binDir $_.Name
+  if (Test-Path $shim) {
+    $match = & $shim --shimgen-help 2>$null | Select-String -Pattern "Target: '(.+)'"
+    if ($match -and ($match.Matches[0].Groups[1].Value -eq $_.FullName)) {
+      Uninstall-BinFile -Name $_.BaseName -Path $_.FullName
+    }
+  }
+}
+
+$pathType = if ($pp.User) { 'User' } else { 'Machine' }
+Install-ChocolateyPath -PathToInstall $toolsDir -PathType $pathType
+
 if ($pp.count -gt 0) {
   $paths = New-Object System.Collections.ArrayList
 

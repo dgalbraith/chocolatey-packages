@@ -20,16 +20,19 @@ $paths.GetEnumerator() | ForEach-Object {
   }
 }
 
-$uninstallKey = Get-UninstallRegistryKey -SoftwareName 'Nushell'
+# remove the bin directory from the path - the installer only removes the entry it added itself
+$uninstallKey = Get-UninstallRegistryKey -SoftwareName 'Nushell' -ErrorAction SilentlyContinue
 
-if ($uninstallKey) {
-  $installLocation = $uninstallKey.InstallLocation
+if (($uninstallKey) -and ($uninstallKey.InstallLocation)) {
+  $binDir = (Join-Path $uninstallKey.InstallLocation 'bin').TrimEnd('\')
 
-  if (($installLocation) -and ($installLocation -ne '') -and (Test-Path $installLocation)) {
-    Get-ChildItem -Path $installLocation -Recurse -Filter '*.exe' | foreach-object {
-      Uninstall-BinFile -Name ($_.Name -Replace '\.exe$','') -Path $_.FullName
+  foreach ($scope in 'Machine', 'User') {
+    $path      = Get-EnvironmentVariable -Name 'Path' -Scope $scope -PreserveVariables
+    $entries   = @($path -split ';' | Where-Object { $_ })
+    $remaining = @($entries | Where-Object { $_.TrimEnd('\') -ne $binDir })
+
+    if ($remaining.Count -ne $entries.Count) {
+      Install-ChocolateyEnvironmentVariable -VariableName 'Path' -VariableValue ($remaining -join ';') -VariableType $scope
     }
   }
-} else {
-  Write-Error "The uninstall key could not be found - shims have not been automatically removed."
 }

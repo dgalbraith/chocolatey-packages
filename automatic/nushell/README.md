@@ -27,11 +27,11 @@ The following package parameter can be set:
 
 * `/AddToDesktop` - add a desktop shortcuts for Nu Shell.  By default the shortcuts will be added for all users
 e.g. `choco install nushell.install --package-parameters="/AddToDesktop"`
-* `/AddToStartMenu` - add entries to the Start Menu for Koodoo Reader.  By default the shortcut will be added for all
+* `/AddToStartMenu` - add entries to the Start Menu for Nu Shell.  By default the shortcut will be added for all
 users
 e.g. `choco install nushell.install --package-parameters="/AddToStartMenu"`
-* `/User` - where the user parameter is specified any shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`)
-will only be added for the current user
+* `/User` - where the user parameter is specified `nu` is added to the user `PATH` rather than the machine `PATH` and any
+shortcuts created (using `/AddToDesktop` or `/AddToStartMenu`) will only be added for the current user
 e.g. `choco install nushell.install --package-parameters="/AddToDesktop /User"`
 
 To have Chocolatey remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
@@ -39,5 +39,7 @@ To have Chocolatey remember parameters on upgrade, be sure to set `choco feature
 ## Notes
 
 * Nushell only provides a 64-bit version
+* Shims are not created for `nu`, its plugins or `less` as a shim terminates the shell on Ctrl+C.  The installation
+directory is added to the `PATH` instead - open a new terminal after installing or upgrading to pick up the change
 * This package is automatically updated using the [Chocolatey Automatic Package Update Model (AU)](https://github.com/majkinetor/au/blob/master/README.md).
 If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

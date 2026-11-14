@@ -28,15 +28,9 @@ $packageArgs = @{
   ValidExitCodes = @(0, 3010, 1641)
 }
 
-# cache the path prior to package install so we can restore it - the installer
-# adds the bin directory from the install to the path but we will be using shims
-# so this is not needed
-$path = Get-EnvironmentVariable -name 'Path' -scope $pathScope -PreserveVariables
-
+# the installer adds the bin directory to the path - no shims are created as a shim
+# terminates nu on Ctrl+C rather than letting it handle the signal
 Install-ChocolateyInstallPackage @packageArgs
-
-# restore the cached path
-Install-ChocolateyEnvironmentVariable -VariableName 'Path' -VariableValue $path -VariableType $pathScope
 
 $uninstallKey = Get-UninstallRegistryKey -SoftwareName 'Nushell' -ErrorAction SilentlyContinue
 
@@ -44,9 +38,10 @@ if ($uninstallKey) {
   $installLocation = $uninstallKey.InstallLocation
 
   if (($installLocation) -and ($installLocation -ne '') -and (Test-Path $installLocation)) {
-    Get-ChildItem -Path $installLocation -Recurse -Filter '*.exe' | foreach-object {
-      Install-BinFile -Name ($_.Name -Replace '\.exe$','') -Path $_.FullName
-    }
+    # interim backstop - the installer does not add the bin directory to the path when run over an existing
+    # install of the same version, as when upgrading from 0.117.0 (which removed the path entry in favour of
+    # shims) to 0.117.0.20261114 - so ensure it is present.  Can be removed once past that release
+    Install-ChocolateyPath -PathToInstall (Join-Path $installLocation 'bin') -PathType $pathScope
 
     if ($pp.count -gt 0) {
       $paths = New-Object System.Collections.ArrayList
