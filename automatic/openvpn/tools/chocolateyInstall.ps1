@@ -4,6 +4,15 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $file32 = Join-Path $toolsDir 'OpenVPN-2.7.9-I002-x86.msi'
 $file64 = Join-Path $toolsDir 'OpenVPN-2.7.9-I002-amd64.msi'
+$fileArm64 = Join-Path $toolsDir 'OpenVPN-2.7.9-I002-arm64.msi'
+
+# the amd64 drivers cannot be loaded on ARM64 Windows, so use the ARM64 installer there.  The native architecture is
+# read from the machine environment because an emulated process reports its own architecture in PROCESSOR_ARCHITECTURE
+$envKey = 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment'
+if ((Get-ItemProperty -Path $envKey -Name PROCESSOR_ARCHITECTURE).PROCESSOR_ARCHITECTURE -eq 'ARM64') {
+  Write-Verbose('ARM64 Windows detected - the ARM64 installer will be used')
+  $file64 = $fileArm64
+}
 
 $silentArgs = '/qn /norestart'
 
