@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url        = 'https://edgedl.me.gvt1.com/android/studio/install/2026.2.2.10/android-studio-rabbit2-patch2-windows.exe'
-$checksum   = '0134413486f97a31ba42f12281e759f9c5985040a966898c8388fb05f01dc7b9'
+$url        = 'https://edgedl.me.gvt1.com/android/studio/install/2026.2.2.11/android-studio-rabbit2-patch3-windows.exe'
+$checksum   = '0e790c951d19e34e1cf4dbbeb7441c18e445bf594be08c9176b150229134c7fd'
 $silentArgs = '/S'
 
 # the installer includes both 32 and 64-bit executables so set the correct executable
