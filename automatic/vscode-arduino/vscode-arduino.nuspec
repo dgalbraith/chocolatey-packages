@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vscode-arduino</id>
-    <version>0.7.2</version>
+    <version>0.8.16</version>
     <packageSourceUrl>https://github.com/dgalbraith/chocolatey-packages/tree/master/automatic/vscode-arduino</packageSourceUrl>
     <owners>dgalbraith</owners>
     <title>Arduino VSCode Extension</title>
     <authors>Microsoft</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=vscode-arduino.vscode-arduino-community</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@37a39ec04193c88886db685779f97edac192b21b/icons/vscode-arduino.png</iconUrl>
-    <copyright>Copyright 2024 vscode-arduino</copyright>
+    <copyright>Copyright 2024-2026 vscode-arduino</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/vscode-arduino.vscode-arduino-community/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/vscode-arduino/vscode-arduino</projectSourceUrl>
